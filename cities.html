@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moroccan Cities Directory</title>
+    <meta name="description" id="seo-meta-desc" content="Browse the complete directory of stunning Moroccan destinations. From Red Marrakech to Blue Chefchaouen, explore attractions, riads, and transportation guides." />
+    
+    <!-- Importing our Moroccan Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Lucide Icons via CDN for lightweight native icons styling -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Page-specific styling for pristine grid layout & responsive elements */
+      .directory-header {
+        margin: 40px 0 20px 0;
+        text-align: center;
+      }
+      .directory-title {
+        font-family: var(--font-serif);
+        font-size: 36px;
+        color: var(--color-charcoal);
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+      }
+      .directory-title .ar-subtitle {
+        font-family: var(--font-sans);
+        font-size: 18px;
+        color: var(--color-terracotta);
+        font-weight: 500;
+      }
+      .directory-desc {
+        max-width: 650px;
+        margin: 0 auto;
+        font-size: 15px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+      }
+
+      /* Search & Filter bar for beautiful interaction */
+      .toolbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin: 30px 0;
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 16px 24px;
+      }
+      @media (max-width: 768px) {
+        .toolbar-container {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+      .search-wrapper {
+        position: relative;
+        flex: 1;
+        max-width: 450px;
+      }
+      .search-icon-dir {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-charcoal-light);
+        pointer-events: none;
+      }
+      .search-input-dir {
+        width: 100%;
+        padding: 10px 14px 10px 42px;
+        font-family: var(--font-sans);
+        font-size: 14px;
+        background: white;
+        border: 1px solid var(--color-border);
+        border-radius: 30px;
+        transition: var(--transition-smooth);
+        color: var(--color-charcoal);
+      }
+      .search-input-dir:focus {
+        outline: none;
+        border-color: var(--color-terracotta);
+        box-shadow: 0 0 0 3px rgba(211, 94, 53, 0.1);
+      }
+      .search-clear-dir-btn {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        color: var(--color-charcoal-light);
+        cursor: pointer;
+        display: none;
+        padding: 2px;
+        border-radius: 50%;
+      }
+      .search-clear-dir-btn:hover {
+        background: rgba(0, 0, 0, 0.05);
+        color: var(--color-charcoal);
+      }
+
+      /* Counter Badge */
+      .count-badge {
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--color-terracotta-dark);
+        background: var(--color-terracotta-light);
+        padding: 6px 14px;
+        border-radius: 20px;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      /* Cities directory grid */
+      .dir-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+      }
+      
+      .dir-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: var(--transition-smooth);
+      }
+      .dir-card:hover {
+        transform: translateY(-6px);
+        border-color: var(--color-terracotta);
+        box-shadow: 0 12px 30px rgba(42, 33, 30, 0.07);
+      }
+      
+      .dir-card-photo-wrapper {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+      }
+      .dir-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .dir-card:hover .dir-card-img {
+        transform: scale(1.05);
+      }
+      .dir-card-days-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: rgba(211, 94, 53, 0.9);
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 20px;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .dir-card-body {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .dir-card-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 6px;
+        gap: 8px;
+      }
+      .dir-card-name {
+        font-family: var(--font-serif);
+        font-size: 22px;
+        color: var(--color-charcoal);
+        font-weight: 500;
+      }
+      .dir-card-ar-name {
+        font-family: var(--font-sans);
+        font-size: 16px;
+        color: var(--color-terracotta);
+        font-weight: 600;
+      }
+      .dir-card-region {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--color-chefchaouen-dark);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .dir-card-desc {
+        font-size: 14px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+        margin-bottom: 20px;
+        flex: 1;
+      }
+      
+      .dir-card-footer {
+        border-top: 1px dashed var(--color-border);
+        padding-top: 16px;
+        margin-top: auto;
+      }
+      .dir-card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        text-decoration: none;
+        padding: 10px 16px;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 700;
+        border-radius: 30px;
+        background: transparent;
+        color: var(--color-terracotta-dark);
+        border: 2px solid var(--color-terracotta-light);
+        transition: var(--transition-smooth);
+      }
+      .dir-card:hover .dir-card-btn {
+        background: var(--color-terracotta);
+        border-color: var(--color-terracotta);
+        color: white;
+      }
+
+      /* Home Link */
+      .btn-back-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-terracotta-dark);
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 8px 16px;
+        background: var(--color-terracotta-light);
+        border: 1px solid rgba(211, 94, 53, 0.15);
+        border-radius: 30px;
+        transition: var(--transition-smooth);
+      }
+      .btn-back-home:hover {
+        background: var(--color-terracotta);
+        color: white;
+        border-color: var(--color-terracotta);
+      }
+      
+      /* RTL overrides */
+      html[dir="rtl"] .search-input-dir {
+        padding: 10px 42px 10px 14px;
+      }
+      html[dir="rtl"] .search-icon-dir {
+        right: 14px;
+        left: auto;
+      }
+      html[dir="rtl"] .search-clear-dir-btn {
+        left: 14px;
+        right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/" class="app-logo">MOROCCO</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically via auth-nav.js -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      
+      <!-- Directory Top Section Title -->
+      <section class="directory-header">
+        <h1 class="directory-title" id="lbl-dir-title">
+          <span>Explore All Cities</span>
+        </h1>
+        <p class="directory-desc" id="lbl-dir-desc">
+          Browse our curated catalog of spectacular imperial cities, azure mountaintops, windswept beach harbors, and ancient medinas. Choose your destination to start planning.
+        </p>
+      </section>
+
+      <!-- Search & Stats Widget Bar -->
+      <section class="toolbar-container">
+        <div class="search-wrapper">
+          <i data-lucide="search" class="search-icon-dir" style="width: 18px; height: 18px;"></i>
+          <input type="text" id="dir-search-input" class="search-input-dir" placeholder="Search cities structure (e.g. Fez, Chefchaouen...)" />
+          <button id="dir-search-clear" class="search-clear-dir-btn" aria-label="Clear search">
+            <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+          </button>
+        </div>
+        <div class="count-badge" id="lbl-count-badge">
+          Showing 4 destinations
+        </div>
+      </section>
+
+      <!-- Dynamic Directory Grid -->
+      <section class="dir-grid" id="cities-directory-grid">
+        <!-- Rendered dynamically by js/cities.js -->
+        <div style="text-align: center; grid-column: 1 / -1; padding: 40px;" id="lbl-dir-loading">
+          <p>Loading destination catalogs...</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer-credits" id="lbl-foot-credit-dir">Morocco Tourism Explorer • Curated Directory Index crafted in Pure Vanilla JS.</p>
+      </div>
+    </footer>
+
+    <!-- Importing Javascript Module specifically executing the directory layout & routing logic -->
+    <script type="module" src="/js/cities.js"></script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>

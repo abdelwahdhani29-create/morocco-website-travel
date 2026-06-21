@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dynamic Title & SEO Metas will be injected here via /js/city.js -->
+    <title>City Details • Morocco Tourism Portal</title>
+    <meta name="description" id="seo-meta-desc" content="Discover cities of Morocco: historical attractions, authentic riads and lodgings, and key local transit guides." />
+    
+    <!-- Importing our Moroccan Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Lucide Icons via CDN for lightweight native icons styling -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Page-specific styling for pristine tab layout & dynamic contents */
+      .back-nav-row {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .btn-back-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-terracotta-dark);
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 8px 16px;
+        background: var(--color-terracotta-light);
+        border: 1px solid rgba(211, 94, 53, 0.15);
+        border-radius: 30px;
+        transition: var(--transition-smooth);
+      }
+      .btn-back-home:hover {
+        background: var(--color-terracotta);
+        color: white;
+        border-color: var(--color-terracotta);
+      }
+      
+      /* Detail Grid Layout */
+      .city-detail-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 32px;
+        margin-top: 24px;
+        margin-bottom: 60px;
+      }
+      @media (max-width: 992px) {
+        .city-detail-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Tabs Navigation bar */
+      .tabs-navigation-panel {
+        display: flex;
+        border-bottom: 2px solid var(--color-border);
+        margin-bottom: 30px;
+        gap: 8px;
+        overflow-x: auto;
+      }
+      .tab-trigger-btn {
+        background: none;
+        border: none;
+        font-family: var(--font-sans);
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-charcoal-light);
+        padding: 12px 24px;
+        cursor: pointer;
+        position: relative;
+        transition: var(--transition-smooth);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+      .tab-trigger-btn::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-terracotta);
+        transform: scaleX(0);
+        transition: var(--transition-smooth);
+      }
+      .tab-trigger-btn:hover {
+        color: var(--color-terracotta);
+      }
+      .tab-trigger-btn.active {
+        color: var(--color-terracotta-dark);
+      }
+      .tab-trigger-btn.active::after {
+        transform: scaleX(1);
+      }
+
+      /* Tab Content Panels */
+      .tab-content-panel {
+        display: none;
+        animation: fadeIn 0.4s ease;
+      }
+      .tab-content-panel.active {
+        display: block;
+      }
+
+      /* Transitions */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Detail Sights / Place Cards CSS overrides */
+      .places-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .place-detail-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        transition: var(--transition-smooth);
+      }
+      @media (max-width: 640px) {
+        .place-detail-card {
+          grid-template-columns: 1fr;
+        }
+      }
+      .place-detail-card:hover {
+        border-color: var(--color-terracotta);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(42, 33, 30, 0.05);
+      }
+      .place-detail-img {
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+        object-fit: cover;
+      }
+      .place-detail-body {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .place-detail-name {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        color: var(--color-charcoal);
+        margin-bottom: 12px;
+      }
+      .place-detail-desc {
+        font-size: 14px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+      }
+
+      /* Hotel Tiers Cards style */
+      .hotel-tier-deck {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .hotel-tier-box {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: var(--transition-smooth);
+      }
+      .hotel-tier-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 36px rgba(42, 33, 30, 0.06);
+      }
+      .hotel-tier-box.luxury-card {
+        border-color: var(--color-gold);
+        background: radial-gradient(circle at top right, #fffdfa 0%, #fffdfb 100%);
+      }
+      .hotel-tier-badge {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 16px;
+        width: fit-content;
+        text-transform: uppercase;
+      }
+      .hotel-tier-badge.budget {
+        background: rgba(30, 107, 167, 0.1);
+        color: var(--color-chefchaouen-dark);
+      }
+      .hotel-tier-badge.mid_range {
+        background: rgba(211, 94, 53, 0.1);
+        color: var(--color-terracotta-dark);
+      }
+      .hotel-tier-badge.luxury {
+        background: rgba(194, 154, 56, 0.15);
+        color: var(--color-gold-dark);
+        border: 1px solid rgba(194, 154, 56, 0.3);
+      }
+      .hotel-top-name {
+        font-family: var(--font-serif);
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: var(--color-charcoal);
+      }
+      .hotel-p-rate {
+        font-size: 26px;
+        font-weight: 800;
+        color: var(--color-charcoal);
+        margin: 16px 0;
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+      }
+      .hotel-p-rate span {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--color-charcoal-light);
+      }
+      .hotel-amenity-pill {
+        background: var(--color-sand);
+        border-radius: var(--border-radius-sm);
+        padding: 12px 16px;
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        margin-top: auto;
+        display: flex;
+        gap: 8px;
+        line-height: 1.5;
+      }
+      .hotel-amenity-pill i {
+        flex-shrink: 0;
+        color: var(--color-gold);
+      }
+
+      /* Transit styling */
+      .transit-tier-deck {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .transit-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        transition: var(--transition-smooth);
+      }
+      .transit-card:hover {
+        border-color: var(--color-chefchaouen);
+        box-shadow: 0 6px 20px rgba(30, 107, 167, 0.05);
+      }
+      @media (max-width: 640px) {
+        .transit-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      .transit-details {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .transit-avatar {
+        background: var(--color-chefchaouen-light);
+        color: var(--color-chefchaouen-dark);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .transit-title-text {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        margin-bottom: 4px;
+      }
+      .transit-text-desc {
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+      }
+      .transit-price-tag {
+        background: var(--color-chefchaouen-light);
+        color: var(--color-chefchaouen-dark);
+        padding: 8px 16px;
+        font-size: 13px;
+        font-weight: 700;
+        border-radius: 30px;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      /* Error placeholder */
+      .error-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 60px 40px;
+        text-align: center;
+        max-width: 600px;
+        margin: 60px auto;
+        box-shadow: 0 10px 30px rgba(42, 33, 30, 0.03);
+      }
+      .error-card i {
+        color: var(--color-terracotta);
+        margin-bottom: 16px;
+      }
+      
+      /* Arabic layout overrides */
+      html[dir="rtl"] .place-detail-card {
+        grid-template-columns: 1fr 320px;
+      }
+      @media (max-width: 640px) {
+        html[dir="rtl"] .place-detail-card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/" class="app-logo">MOROCCO</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically via auth-nav.js -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      
+      <!-- Back Navigation Row -->
+      <div class="back-nav-row">
+        <a href="/" class="btn-back-home">
+          <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+          <span id="lbl-back-home-text">Back to Home Portal</span>
+        </a>
+        
+        <div class="color-swatch-badge">
+          <span id="lbl-pal-label">Palette:</span>
+          <div class="color-dots">
+            <span class="dot terracotta" title="Terracotta Sunset"></span>
+            <span class="dot blue" title="Chefchaouen Cobalt"></span>
+            <span class="dot gold" title="Imperial Gold"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- City Hero Section Container -->
+      <section class="global-hero" id="city-panoramic-hero" style="background-image: url('https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1600&q=80');">
+        <div class="global-hero-overlay"></div>
+        <div class="global-hero-motif"></div>
+        <div class="global-hero-inner">
+          <div class="global-hero-tagline" id="city-meta-badge">Moroccan Imperial Destination</div>
+          <h1 class="global-hero-title" id="city-title-display">
+            Loading Selected City...
+          </h1>
+          <p class="global-hero-desc" id="city-desc-display">
+            Fetching authentic historical data, regional details, cultural etiquette protocols, riads lists, and local transportation guidelines...
+          </p>
+        </div>
+      </section>
+
+      <!-- Grid Dashboard Wrapper for Detailed Data Tabs and Side Panel -->
+      <div class="city-detail-grid" id="city-detail-container" style="display: none;">
+        
+        <!-- Main Area: Tabs & Active Panel Content -->
+        <section class="detail-main-workspace">
+          
+          <!-- Tabs Navigation Buttons -->
+          <div class="tabs-navigation-panel" role="tablist">
+            <button class="tab-trigger-btn active" id="tab-btn-places" role="tab" aria-selected="true" data-tab-panel="panel-places">
+              <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i>
+              <span id="lbl-tab-places">Top Places</span>
+            </button>
+            <button class="tab-trigger-btn" id="tab-btn-hotels" role="tab" aria-selected="false" data-tab-panel="panel-hotels">
+              <i data-lucide="hotel" style="width: 18px; height: 18px;"></i>
+              <span id="lbl-tab-hotels">Accommodations</span>
+            </button>
+            <button class="tab-trigger-btn" id="tab-btn-transit" role="tab" aria-selected="false" data-tab-panel="panel-transit">
+              <i data-lucide="bus" style="width: 18px; height: 18px;"></i>
+              <span id="lbl-tab-transit">Transportation</span>
+            </button>
+          </div>
+
+          <!-- TAB PANEL 1: Top Places / Attractions -->
+          <div class="tab-content-panel active" id="panel-places" role="tabpanel">
+            <div id="places-list" class="places-grid">
+              <!-- Inline JavaScript dynamic rendering -->
+            </div>
+          </div>
+
+          <!-- TAB PANEL 2: Accommodations Tier List -->
+          <div class="tab-content-panel" id="panel-hotels" role="tabpanel">
+            <div id="hotels-deck" class="hotel-tier-deck">
+              <!-- Inline JavaScript dynamic rendering -->
+            </div>
+          </div>
+
+          <!-- TAB PANEL 3: Local Transportation -->
+          <div class="tab-content-panel" id="panel-transit" role="tabpanel">
+            <div id="transit-deck" class="transit-tier-deck">
+              <!-- Inline JavaScript dynamic rendering -->
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Aside Side Panel: Local Fast Facts & Cultural Rules -->
+        <aside class="sidebar-panel">
+          
+          <div class="card-frame">
+            <h3 class="card-title">
+              <span id="lbl-sidebar-title">Local Fast Facts</span>
+            </h3>
+            
+            <div class="meta-list">
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-fact-duration">Suggested Stay</span>
+                <span id="fact-duration-val" class="meta-value">...</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-fact-region">Government Region</span>
+                <span id="fact-region-val" class="meta-value">...</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-fact-languages">Spoken Tongues</span>
+                <span id="fact-languages-val" class="meta-value">Standard Moroccan Arabic, Berber (Tamazight) & French</span>
+              </div>
+            </div>
+
+            <!-- Beautiful Cultural Notes Banner -->
+            <div class="cultural-note-box" style="margin-top: 24px;">
+              <div class="cultural-note-header" id="cultural-title-lbl">
+                <i data-lucide="shield-alert" style="width: 16px; height: 16px; color: var(--color-gold);"></i>
+                Cultural Insights
+              </div>
+              <div id="cultural-text-display" class="cultural-note-text">
+                Loading deep custom-tailored local neighborhood guides & respectful behavior guidelines for this city destination...
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- Handle Empty or Error State gracefully inside container -->
+      <div id="error-fallback-view" class="error-card" style="display: none;">
+        <i data-lucide="alert-triangle" style="width: 56px; height: 56px;"></i>
+        <h2 style="font-family: var(--font-serif); font-size: 24px; margin-bottom: 12px;" id="lbl-err-title">City Profile Not Found</h2>
+        <p style="color: var(--color-charcoal-light); margin-bottom: 24px;" id="lbl-err-desc">We couldn't retrieve the localized profile request for the city parameters provided in url query. Return home to choose other destinations.</p>
+        <a href="/" class="btn-primary-ai" style="display: inline-flex; text-decoration: none; justify-content: center;">
+          <i data-lucide="home" style="width: 16px; height: 16px;"></i>
+          <span id="lbl-err-btn">Return Back to Map</span>
+        </a>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer-credits" id="lbl-foot-credit-city">Morocco Tourism Explorer • Dedicated City Detail Engine crafted in Pure Vanilla JS.</p>
+      </div>
+    </footer>
+
+    <!-- Importing Javascript Module specifically executing the custom routing logic and tab rendering -->
+    <script type="module" src="/js/city.js"></script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>

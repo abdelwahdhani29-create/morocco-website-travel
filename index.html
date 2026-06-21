@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morocco Tourism</title>
+    <!-- Importing our Moroccan Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Lucide Icons via CDN for lightweight native icons styling -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Simple Top Navigation Bar -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">MOROCCO</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically via auth-nav.js -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      
+      <!-- Moroccan Welcome Hero Section -->
+      <section class="global-hero" style="background-image: url('https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1600&q=80');">
+        <div class="global-hero-overlay"></div>
+        <div class="global-hero-motif"></div>
+        <div class="global-hero-inner">
+          <div class="global-hero-tagline" id="lbl-hero-tagline">Welcome to the Kingdom of Light</div>
+          <h1 class="global-hero-title" id="lbl-hero-title">
+            Discover Morocco
+          </h1>
+          <p class="global-hero-desc" id="lbl-hero-desc">
+            Vibrant labyrinth souks, sweeping Sahara sands, majestic snow-capped Atlas peaks, and windswept ocean fortresses. Plan your bespoke adventure with local depth.
+          </p>
+          
+          <div class="cta-group" style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 24px;">
+            <!-- Quick City Search Bar -->
+            <div class="search-container" style="max-width: 480px; margin: 0 auto; width: 100%;">
+              <i data-lucide="search" class="search-icon" style="width: 18px; height: 18px;"></i>
+              <input type="text" id="city-search" class="search-input" placeholder="Search cities (e.g. Marrakech, Fez...)" />
+              <button id="search-clear" class="search-clear-btn" aria-label="Clear search">
+                <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+              </button>
+            </div>
+
+            <!-- "Plan Your Trip" button (navigates to trip-planner.html) -->
+            <div style="display: flex; justify-content: center; width: 100%;">
+              <a href="/trip-planner.html" class="btn-primary-ai" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 25px; font-weight: 700; font-size: 14px; background: linear-gradient(135deg, var(--color-terracotta) 0%, var(--color-gold) 100%); border: 2px solid var(--color-gold); color: white; transition: var(--transition-smooth); box-shadow: 0 4px 15px rgba(211, 94, 53, 0.3);">
+                <i data-lucide="sparkles" style="width: 16px; height: 16px; color: var(--color-gold-light);"></i>
+                <span id="lbl-hero-plan-btn">Plan Your Trip</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Cities Section (3-4 Cards Grid) -->
+      <section>
+        <div class="featured-section-header">
+          <h2 class="featured-section-title" id="lbl-featured-title">Featured Moroccan Cities</h2>
+          <span style="font-size: 13px; color: var(--color-charcoal-light); font-weight: 600;" id="lbl-featured-sub">Click a city to load active directory dashboard</span>
+        </div>
+        
+        <div id="featured-cities-grid" class="featured-grid">
+          <!-- Dynamically populated via main.js with cards for Marrakech, Chefchaouen, Fez, Essaouira -->
+        </div>
+
+        <!-- See All link to cities.html -->
+        <div class="see-all-container" style="display: flex; justify-content: center; margin-top: 24px; margin-bottom: 8px;">
+          <a href="/cities.html" class="btn-secondary" style="text-decoration: none; padding: 12px 24px; border-radius: 25px; display: inline-flex; align-items: center; gap: 8px;" id="btn-see-all-cities">
+            <span id="lbl-see-all-cities">See All Cities</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Panoramic Active City Explorer Banner (Header of selected city) -->
+      <section class="hero-wrapper" id="explorer-header-section">
+        <div id="hero-img-bg" class="hero-cover">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-meta-badge" id="lbl-subtitle">Active Explorer Dashboard</div>
+            <div class="hero-title-container">
+              <div>
+                <h1 id="hero-title-en" class="hero-title">Marrakech</h1>
+                <div id="hero-title-sub" class="hero-subtitle">Imperial Red Medina</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid Dashboard Wrapper -->
+      <div class="explorer-grid" id="explorer-interactive-dashboard">
+        
+        <!-- Sidebar: Facts & Small Interactive Widgetry -->
+        <aside class="sidebar-panel">
+          
+          <!-- City Facts Board -->
+          <div class="card-frame" id="stats-board">
+            <h3 class="card-title">
+              <span id="lbl-explore-marrakech">Explore Marrakech</span>
+            </h3>
+            
+            <div class="meta-list">
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-days-to-visit">Suggested Duration</span>
+                <span id="val-days" class="meta-value">3 Days</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-region">Region</span>
+                <span id="val-region" class="meta-value">Marrakech-Safi</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label" id="lbl-languages">Official Languages</span>
+                <span id="val-languages-val" class="meta-value">Arabic & Berber</span>
+              </div>
+            </div>
+
+            <!-- Dedicated Detailed City Page Link -->
+            <div style="margin-top: 20px; border-top: 1px dashed var(--color-border); padding-top: 16px;">
+              <a id="btn-view-dedicated" href="/city.html?id=marrakech" class="btn-primary-ai" style="display: flex; justify-content: center; text-decoration: none; font-size: 13px; font-weight: 700; align-items: center; gap: 8px; box-shadow: none;">
+                <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                <span id="lbl-dedicated-btn">Open Dedicated Profile Page ↗</span>
+              </a>
+            </div>
+
+            <!-- Authentic Cultural Note Block -->
+            <div class="cultural-note-box">
+              <div class="cultural-note-header" id="lbl-culture-title">
+                <i data-lucide="shield-alert" style="width: 16px; height: 16px; color: var(--color-gold);"></i>
+                Cultural Etiquette
+              </div>
+              <div id="val-culture-text" class="cultural-note-text">
+                When visiting Marrakech, bargaining in the souks is secondary to mutual respect. Start with a friendly "Salam Alaykum" (Peace be upon you), ask for prices respectfully, and enjoy the bargaining process as a lively, polite social interaction. Modest dress is appreciated, particularly around historical neighborhoods.
+              </div>
+            </div>
+          </div>
+
+          <!-- Currency Exchange Calculator -->
+          <div class="card-frame currency-widget">
+            <h3 class="card-title" id="lbl-calc-title">Moroccan Dirham Exchange</h3>
+            <div class="calculator-body">
+              <div class="calculator-row">
+                <label class="calc-label" id="lbl-calc-usd">Amount in USD ($)</label>
+                <div class="calc-input-wrapper">
+                  <span class="calc-symbol">USD $</span>
+                  <input type="number" id="calc-input-usd" class="calc-input" value="100" min="0" />
+                </div>
+              </div>
+              
+              <!-- slider handle -->
+              <input type="range" id="currency-slider" class="calc-slider" min="1" max="1000" value="100" />
+              
+              <div class="calculator-row">
+                <label class="calc-label" id="lbl-calc-mad">Equivalent in Moroccan Dirham (MAD)</label>
+                <div class="calc-input-wrapper">
+                  <span class="calc-symbol" style="color: var(--color-chefchaouen-dark)">MAD</span>
+                  <input type="text" id="calc-input-mad" class="calc-input" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- Main Workspace: Sights, Lodging, Transit, Route itinerary -->
+        <section class="main-stage">
+          
+          <!-- Section Area: Sights / Attractions -->
+          <div>
+            <div class="section-label" id="lbl-attractions">Must-Visit Attractions</div>
+            <div id="attractions-grid" class="attractions-list">
+              <!-- Dynamically populated via main.js -->
+            </div>
+          </div>
+
+          <!-- Section Area: Suggested Accommodations tier toggle -->
+          <div>
+            <div class="section-label" id="lbl-accommodation">Suggested Accommodation</div>
+            <div class="hotel-card">
+              <!-- Toggle switch for tiers -->
+              <div class="hotel-toggle-row">
+                <button id="btn-toggle-budget" class="hotel-toggle-btn">Budget</button>
+                <button id="btn-toggle-mid" class="hotel-toggle-btn active">Mid-Range</button>
+                <button id="btn-toggle-luxury" class="hotel-toggle-btn">Luxury</button>
+              </div>
+
+              <!-- Display cards -->
+              <div class="hotel-display">
+                <div class="hotel-details">
+                  <div id="hotel-card-tier" class="hotel-tier">MID-RANGE</div>
+                  <h4 id="hotel-card-name" class="hotel-name">Riad Kniza</h4>
+                  <div class="hotel-amenity">
+                    <i data-lucide="check" style="width: 16px; height: 16px; color: var(--color-gold);"></i>
+                    <span><strong id="lbl-hotel-amenity-header">Key Amenity:</strong> <span id="lbl-hotel-amenity-val">Authentic 18th-century heritage architecture & rooftop terrace</span></span>
+                  </div>
+                </div>
+                <div id="hotel-card-price" class="hotel-price-badge">
+                  <!-- Pricing values from JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section Area: Transportation -->
+          <div>
+            <div class="section-label" id="lbl-transportation">Transportation Hub</div>
+            <div id="transit-list" class="transit-board">
+              <!-- Dynamically populated via main.js -->
+            </div>
+          </div>
+
+          <!-- Section Area: Suggested Day Itinerary -->
+          <div>
+            <div class="section-label" id="lbl-itinerary-title">Suggested Route Itinerary</div>
+            <div class="itinerary-board">
+              <div id="itinerary-timeline" class="itinerary-timeline">
+                <!-- Dynamically populated via main.js -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+
+
+    </main>
+
+
+
+    <footer>
+      <div class="container">
+        <p class="footer-credits" id="lbl-footer-credits">Morocco Tourism Explorer • Crafted using Pure HTML, CSS, and vanilla JavaScript.</p>
+      </div>
+    </footer>
+
+    <!-- Marked Library via CDN for high fidelity client side markdown translation -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Importing App Core logic -->
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>

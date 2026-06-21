@@ -1,0 +1,18 @@
+{
+  "collections": {
+    "users": {
+      "schema": {
+        "uid": "string",
+        "fullName": "string",
+        "email": "string",
+        "plan": "string",
+        "createdAt": "timestamp",
+        "savedTrips": "array"
+      },
+      "rules": {
+        "read": "request.auth != null && request.auth.uid == resource.data.uid",
+        "write": "request.auth != null && (request.auth.uid == userId || !exists(/databases/$(database)/documents/users/$(userId)))"
+      }
+    }
+  }
+}

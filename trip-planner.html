@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Trip Planner — Beta - Morocco Tourism Portal</title>
+    <meta name="description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
+    
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <!-- Lucide icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+      /* Page specific enhancements */
+      .planner-container {
+        display: grid;
+        grid-template-columns: 1.2fr 1.8fr;
+        gap: 32px;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 24px;
+        align-items: start;
+      }
+
+      @media (max-width: 968px) {
+        .planner-container {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
+
+      /* Tactile tile checkboxes */
+      .interest-tile {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        background-color: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-sm);
+        padding: 16px;
+        transition: var(--transition-smooth);
+        user-select: none;
+      }
+
+      .interest-tile:hover {
+        border-color: var(--color-gold);
+        background-color: var(--color-gold-light);
+      }
+
+      .interest-tile input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .interest-tile-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .interest-tile-icon {
+        color: var(--color-terracotta);
+        flex-shrink: 0;
+      }
+
+      .interest-tile input:checked ~ .interest-tile-content .interest-tile-icon {
+        color: var(--color-gold);
+      }
+
+      .interest-tile input:checked {
+        border-color: var(--color-gold);
+      }
+
+      .interest-selected-indicator {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: var(--transition-smooth);
+      }
+
+      .interest-tile input:checked + .interest-selected-indicator {
+        background-color: var(--color-gold);
+        box-shadow: 0 0 8px var(--color-gold);
+      }
+
+      .interest-tile.active-checked {
+        border-color: var(--color-gold);
+        background-color: var(--color-gold-light);
+      }
+
+      /* Plan outcome layout */
+      .blueprint-paper {
+        background-color: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-lg);
+        position: relative;
+        padding: 40px;
+        box-shadow: 0 8px 30px rgba(42, 33, 30, 0.03);
+      }
+
+      .blueprint-paper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--color-terracotta) 0%, var(--color-gold) 50%, var(--color-chefchaouen) 100%);
+        border-top-left-radius: var(--border-radius-lg);
+        border-top-right-radius: var(--border-radius-lg);
+      }
+
+      /* Day timeline styling */
+      .itinerary-timeline {
+        position: relative;
+        padding-left: 24px;
+        margin-top: 32px;
+      }
+
+      .itinerary-timeline::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        bottom: 8px;
+        width: 2px;
+        background-color: var(--color-border);
+      }
+
+      .timeline-node {
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+      .timeline-node-point {
+        position: absolute;
+        left: -24px;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--color-gold);
+        border: 2px solid var(--color-cream);
+        box-shadow: 0 0 0 3px var(--color-border);
+      }
+
+      .timeline-node:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline-day-badge {
+        display: inline-block;
+        font-family: var(--font-mono), monospace;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-terracotta-dark);
+        background-color: var(--color-terracotta-light);
+        padding: 4px 10px;
+        border-radius: 12px;
+        margin-bottom: 8px;
+      }
+
+      .node-attraction-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      @media (max-width: 640px) {
+        .node-attraction-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+      }
+
+      /* Custom budget bars */
+      .budget-cat-row {
+        margin-bottom: 16px;
+      }
+
+      .budget-cat-hdr {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .budget-bar-bg {
+        height: 8px;
+        background-color: var(--color-border);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .budget-bar-fill {
+        height: 100%;
+        border-radius: 4px;
+        transition: width 1s ease-out;
+      }
+
+      .budget-fill-hotels {
+        background-color: var(--color-terracotta);
+      }
+
+      .budget-fill-transit {
+        background-color: var(--color-chefchaouen);
+      }
+
+      .budget-fill-spending {
+        background-color: var(--color-gold);
+      }
+
+      /* Beta Ribbon */
+      .beta-ribbon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: var(--color-gold-light);
+        border: 1px solid var(--color-gold);
+        color: var(--color-gold-dark);
+        font-family: var(--font-mono), monospace;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 4px;
+        text-transform: uppercase;
+      }
+
+      .spinner-amber {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(194, 154, 56, 0.2);
+        border-top-color: var(--color-terracotta);
+        border-radius: 50%;
+        animation: spin-anim 0.8s linear infinite;
+        vertical-align: middle;
+      }
+
+      @keyframes spin-anim {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body class="bg-sand text-charcoal">
+
+    <!-- Top Global Dynamic Header -->
+    <header class="navbar-wrapper">
+      <div class="logo-area">
+        <a href="/index.html" class="logo-display" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+          <!-- SVG Morocco Star Emblem -->
+          <svg style="width: 24px; height: 24px; fill: var(--color-terracotta);" viewBox="0 0 24 24">
+            <path d="M12,2L14.7,8.6L21.8,7.9L16.8,13L18.6,20L12,16L5.4,20L7.2,13L2.2,7.9L9.3,8.6L12,2Z" />
+          </svg>
+          <span class="logo-title-bold" id="lbl-logo-title">MOROCCO TOURISM</span>
+        </a>
+      </div>
+      <div id="header-nav-controls">
+        <!-- Injected dynamically via auth-nav.js -->
+      </div>
+    </header>
+
+    <!-- Page Title Header -->
+    <section class="container" style="margin-top: 40px; text-align: center; padding: 0 24px;">
+      <span class="meta-label terracotta" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px;">
+        <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+        <span id="planner-beta-badge">Bespoke Travel Generator • Beta</span>
+      </span>
+      <h1 style="font-size: 36px; font-weight: 800; color: var(--color-charcoal); margin-top: 12px; margin-bottom: 8px;" id="planner-main-title">
+        Plan Your Dream Moroccan Escape
+      </h1>
+      <p style="color: var(--color-charcoal-light); font-size: 16px; max-width: 650px; margin: 0 auto; line-height: 1.6;" id="planner-main-desc">
+        Customize your budget, duration, and personal travel style. Our smart local router will align historical wonders, coastal breezes, or desert sands into a tailored visual day-by-day planner.
+      </p>
+    </section>
+
+    <!-- Main Live Planner Application Grid -->
+    <main class="planner-container">
+      
+      <!-- Left Column: Parameters Input Panel -->
+      <section class="card shadow-layered" style="padding: 28px; background-color: var(--color-cream); border: 2px solid var(--color-border); border-radius: var(--border-radius-md);">
+        <h2 style="font-size: 20px; font-weight: 700; color: var(--color-charcoal); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid var(--color-border); padding-bottom: 12px;">
+          <i data-lucide="sliders" style="width: 20px; height: 20px; color: var(--color-terracotta);"></i>
+          <span id="lbl-input-header">Planner Settings</span>
+        </h2>
+
+        <form id="escape-planner-form" onsubmit="handleFormSubmission(event)">
+          
+          <!-- Departure Location -->
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label for="departure-city" style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 8px; letter-spacing: 0.5px;">
+              <i data-lucide="plane-takeoff" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-chefchaouen);"></i>
+              <span id="lbl-departure">Leaving From</span>
+            </label>
+            <input type="text" id="departure-city" class="search-input" style="width: 100%; box-sizing: border-box; background-color: #565353;" placeholder="e.g. France, Paris, New York, London..." required />
+          </div>
+
+          <!-- Currency & Budget Panel -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+            <div class="form-group">
+              <label for="currency-select" style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 8px; letter-spacing: 0.5px;">
+                <span id="lbl-currency">Currency</span>
+              </label>
+              <select id="currency-select" class="search-input" style="width: 100%; box-sizing: border-box; height: 46px; background-color: #565353;" onchange="updateCurrencySymbol()">
+                <option value="USD">$ (USD)</option>
+                <option value="EUR">€ (EUR)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="budget-number" style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 8px; letter-spacing: 0.5px;">
+                <span id="lbl-max-budget">Max Budget</span>
+              </label>
+              <input type="number" id="budget-number" class="search-input" style="width: 100%; box-sizing: border-box; height: 46px; border-color: #565353; background-color: #565353;" min="200" max="15000" value="1500" required />
+            </div>
+          </div>
+
+          <!-- Stay Duration Slider -->
+          <div class="form-group" style="margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <label style="font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); letter-spacing: 0.5px;">
+                <i data-lucide="calendar" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-gold);"></i>
+                <span id="lbl-duration">Trip Duration</span>
+              </label>
+              <span id="days-count-bubble" style="font-family: var(--font-mono), monospace; font-weight: 700; color: var(--color-terracotta-dark); background-color: var(--color-terracotta-light); padding: 2px 8px; border-radius: 4px; font-size: 12px;">7 Days</span>
+            </div>
+            <input type="range" id="trip-days-slider" min="3" max="14" value="7" style="width: 100%; accent-color: var(--color-terracotta);" oninput="syncDaysSlider(this.value)" />
+            <div style="display: flex; justify-content: space-between; font-size: 11px; font-family: var(--font-mono), monospace; color: var(--color-charcoal-light); margin-top: 4px;">
+              <span>3 days</span>
+              <span>14 days</span>
+            </div>
+          </div>
+
+          <!-- Multi-select Interests Checkboxes -->
+          <div class="form-group" style="margin-bottom: 28px;">
+            <label style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 12px; letter-spacing: 0.5px;">
+              <i data-lucide="heart" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-terracotta);"></i>
+              <span id="lbl-interests">Travel Style & Interests</span>
+            </label>
+            
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              
+              <!-- Hist Architecture -->
+              <label class="interest-tile" id="tile-history_arch">
+                <input type="checkbox" name="interests" value="history_arch" onchange="toggleTileClass(this)" checked />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="landmark"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-history">History & Architecture</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-history">Imperial palaces, historic medina lanes & monumental gates</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Sahara Desert -->
+              <label class="interest-tile" id="tile-sahara_desert">
+                <input type="checkbox" name="interests" value="sahara_desert" onchange="toggleTileClass(this)" />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="sun"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-desert">Sahara & Desert Dunes</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-desert">Camel riding, starry nights in oasis camps & grand canyons</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Mountains Nature -->
+              <label class="interest-tile" id="tile-mountains_nature">
+                <input type="checkbox" name="interests" value="mountains_nature" onchange="toggleTileClass(this)" />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="mountain"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-nature">Mountains & Nature</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-nature">Atlas hiking paths, valleys, waterfalls & blue-washed trails</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Beaches Ocean -->
+              <label class="interest-tile" id="tile-beaches_ocean">
+                <input type="checkbox" name="interests" value="beaches_ocean" onchange="toggleTileClass(this)" />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="waves"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-beaches">Beaches & Ocean coasts</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-beaches">Seafood dinings, old seaside ramparts, surfing & sea winds</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Souks Shopping -->
+              <label class="interest-tile" id="tile-souks_shopping">
+                <input type="checkbox" name="interests" value="souks_shopping" onchange="toggleTileClass(this)" checked />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="shopping-bag"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-souks">Souks, Crafts & Shopping</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-souks">Spices stalls, woven rugs, leather slippers & artisan guilds</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Food Cuisine -->
+              <label class="interest-tile" id="tile-food_cuisine">
+                <input type="checkbox" name="interests" value="food_cuisine" onchange="toggleTileClass(this)" checked />
+                <div class="interest-selected-indicator"></div>
+                <div class="interest-tile-content">
+                  <div class="interest-tile-icon"><i data-lucide="utensils"></i></div>
+                  <div>
+                    <strong style="font-size: 14px; display: block;" id="text-style-food">Food, Tajines & Spices</strong>
+                    <span style="font-size: 11px; color: var(--color-charcoal-light);" id="desc-style-food">Bespoke street food courts, traditional tea riads & tajines cooking</span>
+                  </div>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Buttons area -->
+          <button type="submit" class="btn-primary-ai" style="width: 100%; padding: 14px; font-weight: 700; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; gap: 8px;" id="btn-generate-itinerary">
+            <i class="spinner-amber" style="display: none;" id="loading-spinner"></i>
+            <span id="btn-generate-text">Generate Bespoke Plan</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- Right Column: Live Plan Outputs and Previews -->
+      <section id="plan-display-root">
+        
+        <!-- Placeholder Greeting Card prior to generation -->
+        <article class="blueprint-paper" id="planner-placeholder-card" style="text-align: center; padding: 60px 40px; border-style: dashed;">
+          <div class="beta-ribbon" id="lbl-beta-rib">Beta Engine</div>
+          
+          <div style="background-color: var(--color-terracotta-light); color: var(--color-terracotta); display: inline-flex; width: 64px; height: 64px; border-radius: 50%; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <i data-lucide="compass" style="width: 32px; height: 32px;"></i>
+          </div>
+
+          <h3 style="font-size: 24px; font-weight: 800; color: var(--color-charcoal); margin-bottom: 12px;" id="placeholder-title">
+            Your Bespoke Blueprint Awaits
+          </h3>
+          <p style="color: var(--color-charcoal-light); font-size: 15px; max-width: 480px; margin: 0 auto 28px auto; line-height: 1.6;" id="placeholder-desc">
+            Define your travel dates, maximum budget cap, and favorite activities. Our smart localized scoring router is ready to assemble an optimal itinerary!
+          </p>
+          
+          <div style="border-top: 1px solid var(--color-border); padding-top: 24px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-charcoal-light); font-weight: 600;">
+              <i data-lucide="check-circle" style="color: var(--color-gold); width: 18px; height: 18px;"></i>
+              <span id="feat-custom">Custom Budgeting</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-charcoal-light); font-weight: 600;">
+              <i data-lucide="check-circle" style="color: var(--color-gold); width: 18px; height: 18px;"></i>
+              <span id="feat-scoring">Scoring Match Algorithm</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-charcoal-light); font-weight: 600;">
+              <i data-lucide="check-circle" style="color: var(--color-gold); width: 18px; height: 18px;"></i>
+              <span id="feat-itinerary">Instant Day Timeline</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dynamic Output Itinerary Paper Container -->
+        <article class="blueprint-paper" id="planner-blueprint-result" style="display: none;">
+          <div class="beta-ribbon">Smart Model Match</div>
+          
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+            <div style="background-color: var(--color-gold-light); color: var(--color-gold-dark); display: inline-flex; width: 44px; height: 44px; border-radius: 50%; align-items: center; justify-content: center;">
+              <i data-lucide="scroll" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 22px; font-weight: 800; color: var(--color-charcoal); margin: 0;" id="result-page-title">Custom Morocco Blueprint</h3>
+              <p style="font-size: 12px; font-family: var(--font-mono), monospace; color: var(--color-gold-dark); margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;" id="result-indicator-lbl">Itinerary mapped with local logistics</p>
+            </div>
+          </div>
+
+          <!-- Departure flights notice banner -->
+          <div id="flight-advice-notice" style="background-color: var(--color-terracotta-light); border-left: 4px solid var(--color-terracotta); padding: 16px; border-radius: 6px; margin-bottom: 28px; display: flex; align-items: flex-start; gap: 12px;">
+            <i data-lucide="info" style="color: var(--color-terracotta-dark); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+            <div>
+              <h4 style="margin: 0 0 4px 0; font-size: 14px; font-weight: 700; color: var(--color-terracotta-dark);" id="lbl-flight-title">Flight Advisory Warning</h4>
+              <p id="flight-description" style="margin: 0; font-size: 13px; color: var(--color-charcoal); line-height: 1.5;">Flight cost estimation calculations...</p>
+            </div>
+          </div>
+
+          <!-- Timeline items deck -->
+          <h4 style="font-size: 15px; font-weight: 700; color: var(--color-charcoal); border-bottom: 1px solid var(--color-border); padding-bottom: 8px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;" id="lbl-time-flow">
+            Your Day-by-Day Journey
+          </h4>
+          
+          <div class="itinerary-timeline" id="generated-timeline-box">
+            <!-- Populated via Javascript -->
+          </div>
+
+          <!-- Financial and Budget break down panel -->
+          <div style="background-color: var(--color-sand); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; margin-top: 40px;">
+            <h4 style="font-size: 16px; font-weight: 800; color: var(--color-charcoal); margin-top: 0; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;" id="lbl-breakdown-hdr">
+              <i data-lucide="piggy-bank" style="color: var(--color-gold); width: 20px; height: 20px;"></i>
+              Estimated Financial Breakdown
+            </h4>
+
+            <div id="hotel-tier-alert" style="font-size: 12px; color: var(--color-terracotta-dark); font-weight: 600; margin-bottom: 16px; display:none;">
+              💡 Auto-adjusted to economy hotels to align with maximum budget target!
+            </div>
+
+            <div id="budget-breakdown-bars">
+              <!-- Rendered via JavaScript -->
+            </div>
+
+            <!-- Total stats row -->
+            <div style="border-top: 2px solid var(--color-border); padding-top: 16px; margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <span id="lbl-grand-target" style="font-size: 12px; text-transform: uppercase; color: var(--color-charcoal-light); font-weight: 700; letter-spacing: 0.5px;">Max Intended Budget</span>
+                <div id="v-grand-target" style="font-family: var(--font-mono), monospace; font-size: 18px; font-weight: 700; color: var(--color-charcoal-light);">$1,500.00</div>
+              </div>
+              <div style="text-align: right;">
+                <span id="lbl-grand-spent" style="font-size: 12px; text-transform: uppercase; color: var(--color-charcoal-light); font-weight: 700; letter-spacing: 0.5px;">Estimated Total Cost</span>
+                <div id="v-grand-spent" style="font-family: var(--font-mono), monospace; font-size: 24px; font-weight: 800; color: var(--color-terracotta-dark);">$1,430.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Generate New / Back button -->
+          <div style="display: flex; justify-content: center; margin-top: 32px;">
+            <button class="btn-secondary" style="padding: 12px 28px; border-radius: 25px; display: inline-flex; align-items: center; gap: 8px;" onclick="resetPlanner()" id="btn-reset-planner">
+              <i data-lucide="refresh-cw" style="width: 16px; height: 16px;"></i>
+              <span id="btn-reset-text">Configure New Horizon</span>
+            </button>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <!-- Global Dynamic Footer Component -->
+    <footer>
+      <!-- Injected dynamically via auth-nav.js -->
+    </footer>
+
+    <!-- Scripts setup -->
+    <script type="module" src="/js/auth-nav.js"></script>
+    <script>
+      // Localization variables
+      const translations = {
+        en: {
+          nav_logo: "MOROCCO TOURISM",
+          beta_badge: "Bespoke Travel Generator • Beta",
+          main_title: "Plan Your Dream Moroccan Escape",
+          main_desc: "Customize your budget, duration, and personal travel style. Our smart local router will align historical wonders, coastal breezes, or desert sands into a tailored visual day-by-day planner.",
+          input_header: "Planner Settings",
+          lbl_departure: "Leaving From",
+          lbl_currency: "Currency",
+          lbl_max_budget: "Max Budget",
+          lbl_duration: "Trip Duration",
+          lbl_interests: "Travel Style & Interests",
+          btn_generate_plan: "Generate Bespoke Plan",
+          btn_generating_text: "Plotting Itinerary...",
+          placeholder_ribbon: "Beta Engine",
+          placeholder_title: "Your Bespoke Blueprint Awaits",
+          placeholder_desc: "Define your travel dates, maximum budget cap, and favorite activities. Our smart localized scoring router is ready to assemble an optimal itinerary!",
+          feat_custom: "Custom Budgeting",
+          feat_scoring: "Scoring Match Algorithm",
+          feat_itinerary: "Instant Day Timeline",
+          flight_title: "Flight Advisory Note",
+          flight_p1: "Direct flights from",
+          flight_p2: "to Morocco typically require approx.",
+          time_flow_hdr: "Your Day-by-Day Journey",
+          financial_hdr: "Estimated Financial Breakdown",
+          hotel_auto_downgrade: "💡 Auto-adjusted to budget lodging rates to fit inside your spending boundaries!",
+          spent_hotels: "Accommodations Estimate",
+          spent_transit: "Transit & Transfers",
+          spent_spending: "Remaining Spending Funds",
+          label_target: "Your Intended Budget",
+          label_total: "Estimated Tour Cost",
+          btn_reset: "Configure New Horizon",
+          days_text: "Days",
+          nights_text: "per night",
+          sec_warning: "Average flight price is excluded from this local budget calculation.",
+          regions: {
+            "Marrakech-Safi": "Marrakech-Safi Region",
+            "Tanger-Tetouan-Al Hoceima": "Tangier-Tetouan-Al Hoceima",
+            "Fes-Meknes": "Fes-Meknes Region",
+            "Casablanca-Settat": "Casablanca-Settat Region",
+            "Rabat-Sale-Kenitra": "Rabat-Sale-Kenitra Region",
+            "Souss-Massa": "Souss-Massa Region",
+            "Draa-Tafilalet": "Draa-Tafilalet Region",
+            "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab Region"
+          },
+          amenity_title: "Key Included Feature"
+        },
+        fr: {
+          nav_logo: "TOURISME MAROC",
+          beta_badge: "Planificateur de Voyage • Version Bêta",
+          main_title: "Planifiez Votre Voyage d'Évasion au Maroc",
+          main_desc: "Spécifiez votre budget, durée et activités favorites. Notre algorithme d'ajustement local assemblera des merveilles impériales, des sables fins ou des brises marines en un itinéraire visuel complet.",
+          input_header: "Configuration",
+          lbl_departure: "Ville de départ",
+          lbl_currency: "Devise",
+          lbl_max_budget: "Budget Maximum",
+          lbl_duration: "Durée de Séjour",
+          lbl_interests: "Style de Voyage & Intérêts",
+          btn_generate_plan: "Générer mon Itinéraire",
+          btn_generating_text: "Calcul de l'itinéraire...",
+          placeholder_ribbon: "Moteur IA Bêta",
+          placeholder_title: "Votre Plan Sur-Mesure est Prêt",
+          placeholder_desc: "Indiquez votre point de départ, vos dates idéales ainsi que le budget envisagé pour que notre algorithme vous dresse la route parfaite !",
+          feat_custom: "Planification Financière",
+          feat_scoring: "Scoring par Centres d'Intérêt",
+          feat_itinerary: "Ligne Temporelle Directe",
+          flight_title: "Avis sur les Vols Aériens",
+          flight_p1: "Les vols directs depuis",
+          flight_p2: "vers le Maroc requièrent en moyenne",
+          time_flow_hdr: "Le Déroulement de Votre Voyage",
+          financial_hdr: "Estimation du Budget Prévisionnel",
+          hotel_auto_downgrade: "💡 Adaptation automatique aux tarifs économiques pour correspondre à votre budget maximum !",
+          spent_hotels: "Estimation Hébergements",
+          spent_transit: "Transports & Liaisons",
+          spent_spending: "Argent de Poche Restant",
+          label_target: "Budget Souhaité",
+          label_total: "Coût Local Estimé",
+          btn_reset: "Planifier une nouvelle évasion",
+          days_text: "jours",
+          nights_text: "par nuit",
+          sec_warning: "Le prix indicatif des billets d'avion est exclu de cette évaluation locale.",
+          regions: {
+            "Marrakech-Safi": "Région de Marrakech-Safi",
+            "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",
+            "Fes-Meknes": "Fès-Meknès",
+            "Casablanca-Settat": "Région de Casablanca-Settat",
+            "Rabat-Sale-Kenitra": "Rabat-Salé-Kénitra",
+            "Souss-Massa": "Souss-Massa",
+            "Draa-Tafilalet": "Drâa-Tafilalet",
+            "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab"
+          },
+          amenity_title: "Atout Majeur de l'Hôtel"
+        }
+      };
+
+      // Cities interest taxonomy mapping
+      const cityInterestTags = {
+        marrakech: ["history_arch", "souks_shopping", "food_cuisine"],
+        chefchaouen: ["mountains_nature", "souks_shopping", "history_arch", "food_cuisine"],
+        fez: ["history_arch", "souks_shopping", "food_cuisine"],
+        essaouira: ["beaches_ocean", "food_cuisine", "souks_shopping"],
+        casablanca: ["history_arch", "food_cuisine", "souks_shopping"],
+        tangier: ["beaches_ocean", "history_arch", "food_cuisine"],
+        rabat: ["history_arch", "beaches_ocean", "food_cuisine"],
+        agadir: ["beaches_ocean", "mountains_nature", "food_cuisine"],
+        ouarzazate: ["sahara_desert", "history_arch", "mountains_nature"],
+        merzouga: ["sahara_desert", "mountains_nature"],
+        meknes: ["history_arch", "food_cuisine"],
+        tetouan: ["history_arch", "beaches_ocean", "food_cuisine"],
+        alhoceima: ["beaches_ocean", "mountains_nature"],
+        ifrane: ["mountains_nature", "history_arch"],
+        dakhla: ["beaches_ocean", "sahara_desert"],
+        eljadida: ["history_arch", "beaches_ocean"]
+      };
+
+      let activeLanguage = localStorage.getItem('preferred_language') || 'en';
+      let databaseCities = [];
+
+      // Load initial local data
+      document.addEventListener('DOMContentLoaded', async () => {
+        // Hydrate localized texts
+        renderStaticTexts();
+        
+        // Load custom active tile style checking
+        const checkedLabels = document.querySelectorAll('.interest-tile input:checked');
+        checkedLabels.forEach(chk => {
+          chk.closest('.interest-tile').classList.add('active-checked');
+        });
+
+        // Fetch city profiles data
+        try {
+          const response = await fetch('/data/cities.json');
+          if (response.ok) {
+            databaseCities = await response.json();
+          } else {
+            console.error('Failed to load cities JSON profiles database');
+          }
+        } catch (err) {
+          console.error('Network mistake trying to read data profiles:', err);
+        }
+
+        // Listener to real-time navbar language toggles
+        window.addEventListener('languageChanged', (e) => {
+          activeLanguage = e.detail.lang;
+          renderStaticTexts();
+          // If already has outputs, recheck and regenerate to change result translation
+          if (document.getElementById('planner-blueprint-result').style.display === 'block') {
+            generateBespokePlanLogic();
+          }
+        });
+      });
+
+      function t(key) {
+        return translations[activeLanguage]?.[key] || translations['en']?.[key] || key;
+      }
+
+      function renderStaticTexts() {
+        const setEl = (id, text) => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = text;
+        };
+
+        setEl('lbl-logo-title', t('nav_logo'));
+        setEl('planner-beta-badge', t('beta_badge'));
+        setEl('planner-main-title', t('main_title'));
+        setEl('planner-main-desc', t('main_desc'));
+        setEl('lbl-input-header', t('input_header'));
+        setEl('lbl-departure', t('lbl_departure'));
+        setEl('lbl-currency', t('lbl_currency'));
+        setEl('lbl-max-budget', t('lbl_max_budget'));
+        setEl('lbl-duration', t('lbl_duration'));
+        setEl('lbl-interests', t('lbl_interests'));
+        
+        // Form submit btn
+        const loadingSpinner = document.getElementById('loading-spinner');
+        if (loadingSpinner && loadingSpinner.style.display === 'none') {
+          setEl('btn-generate-text', t('btn_generate_plan'));
+        }
+
+        setEl('lbl-beta-rib', t('placeholder_ribbon'));
+        setEl('placeholder-title', t('placeholder_title'));
+        setEl('placeholder-desc', t('placeholder_desc'));
+        setEl('feat-custom', t('feat_custom'));
+        setEl('feat-scoring', t('feat_scoring'));
+        setEl('feat-itinerary', t('feat_itinerary'));
+
+        // Result title (if visible)
+        setEl('result-page-title', t('nav_logo') + ' Blueprint');
+        setEl('lbl-flight-title', t('flight_title'));
+        setEl('lbl-time-flow', t('time_flow_hdr'));
+        setEl('lbl-breakdown-hdr', t('financial_hdr'));
+        setEl('lbl-grand-target', t('label_target'));
+        setEl('lbl-grand-spent', t('label_total'));
+        setEl('btn-reset-text', t('btn_reset'));
+
+        // Style tile strings translation
+        if (activeLanguage === 'fr') {
+          setEl('text-style-history', 'Histoire & Architecture');
+          setEl('desc-style-history', 'Palais impériaux, ruelles de médinas millénaires et portes monumentales');
+          setEl('text-style-desert', 'Sahara & Dunes de Sable');
+          setEl('desc-style-desert', 'Dromadaire, bivouacs sous les étoiles et paysages désertiques grandioses');
+          setEl('text-style-nature', 'Montagnes & Nature sauvage');
+          setEl('desc-style-nature', 'Randonnées de l\'Atlas, vallées, lacs glaciaires et chemins verdoyants');
+          setEl('text-style-beaches', 'Littoral & Brise Marine');
+          setEl('desc-style-beaches', 'Dégustations de poissons frais, ports bleutés et vagues de windsurf');
+          setEl('text-style-souks', 'Souks, Artisanat & Échoppes');
+          setEl('desc-style-souks', 'Épices dorées, tanneries médiévales, maroquinerie et tapis tissés main');
+          setEl('text-style-food', 'Gastronomie, Tajines & Thés');
+          setEl('desc-style-food', 'Cours de cuisine marocaine, rituels du thé à la menthe et stands salés-sucrés');
+        } else {
+          setEl('text-style-history', 'History & Architecture');
+          setEl('desc-style-history', 'Imperial palaces, historic medina lanes & monumental gates');
+          setEl('text-style-desert', 'Sahara & Desert Dunes');
+          setEl('desc-style-desert', 'Camel riding, starry nights in oasis camps & grand canyons');
+          setEl('text-style-nature', 'Mountains & Nature');
+          setEl('desc-style-nature', 'Atlas hiking paths, valleys, waterfalls & blue-washed trails');
+          setEl('text-style-beaches', 'Beaches & Ocean coasts');
+          setEl('desc-style-beaches', 'Seafood dinings, old seaside ramparts, surfing & sea winds');
+          setEl('text-style-souks', 'Souks, Crafts & Shopping');
+          setEl('desc-style-souks', 'Spices stalls, woven rugs, leather slippers & artisan guilds');
+          setEl('text-style-food', 'Food, Tajines & Spices');
+          setEl('desc-style-food', 'Bespoke street food courts, traditional tea riads & tajines cooking');
+        }
+
+        // Sync duration text indicator template
+        const sliderValue = document.getElementById('trip-days-slider').value;
+        document.getElementById('days-count-bubble').textContent = `${sliderValue} ${t('days_text')}`;
+
+        // Redraw currency input selection
+        updateCurrencySymbol();
+      }
+
+      function syncDaysSlider(val) {
+        document.getElementById('days-count-bubble').textContent = `${val} ${t('days_text')}`;
+      }
+
+      function toggleTileClass(input) {
+        const tile = input.closest('.interest-tile');
+        if (input.checked) {
+          tile.classList.add('active-checked');
+        } else {
+          tile.classList.remove('active-checked');
+        }
+      }
+
+      function updateCurrencySymbol() {
+        const select = document.getElementById('currency-select');
+        const symbol = select.value === 'EUR' ? '€' : '$';
+        
+        // Update number input placeholder/min style indicator
+        const budgetInput = document.getElementById('budget-number');
+        if (budgetInput) {
+          // Adjust value standard equivalents on switch
+          const prevValue = parseFloat(budgetInput.value);
+          if (select.value === 'EUR' && prevValue === 1500) {
+            budgetInput.value = 1400;
+          } else if (select.value === 'USD' && prevValue === 1400) {
+            budgetInput.value = 1500;
+          }
+        }
+      }
+
+      // Action when form executes
+      function handleFormSubmission(event) {
+        event.preventDefault();
+        
+        // Show aesthetic loading transition spinner
+        const btnText = document.getElementById('btn-generate-text');
+        const spinner = document.getElementById('loading-spinner');
+        const submitBtn = document.getElementById('btn-generate-itinerary');
+
+        submitBtn.disabled = true;
+        spinner.style.display = 'inline-block';
+        btnText.textContent = t('btn_generating_text');
+
+        setTimeout(() => {
+          generateBespokePlanLogic();
+          submitBtn.disabled = false;
+          spinner.style.display = 'none';
+          btnText.textContent = t('btn_generate_plan');
+        }, 750);
+      }
+
+      // Core Scoring & Travel Fit algorithm
+      function generateBespokePlanLogic() {
+        if (!databaseCities || databaseCities.length === 0) {
+          console.error("No loaded cities database found to score");
+          return;
+        }
+
+        const departureLocation = document.getElementById('departure-city').value.trim() || "France";
+        const currency = document.getElementById('currency-select').value;
+        const symbol = currency === 'EUR' ? '€' : '$';
+        const rawBudget = parseFloat(document.getElementById('budget-number').value) || 1200;
+        const requestedDays = parseInt(document.getElementById('trip-days-slider').value) || 7;
+
+        // Collect checked travel interests
+        const checkedInterests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(cb => cb.value);
+
+        // 1. Flight Advisory Note custom calculation (1 EUR = approx 1.10 USD)
+        const avgFlightCost = currency === 'EUR' ? 220 : 250;
+        const flightMsg = `${t('flight_p1')} <strong>${departureLocation}</strong> ${t('flight_p2')} <strong>${symbol}${avgFlightCost}</strong>. ${t('sec_warning')}`;
+        document.getElementById('flight-description').innerHTML = flightMsg;
+
+        // 2. Score cities based on custom checked interest tags
+        let scoredCities = databaseCities.map(city => {
+          const tags = cityInterestTags[city.id] || [];
+          let matchCount = 0;
+          
+          if (checkedInterests.length > 0) {
+            checkedInterests.forEach(interest => {
+              if (tags.includes(interest)) {
+                matchCount += 1;
+              }
+            });
+          } else {
+            // standard neutral layout score
+            matchCount = 1;
+          }
+
+          return {
+            ...city,
+            interestsScore: matchCount
+          };
+        });
+
+        // Group & Sort based on highest interests match score
+        scoredCities.sort((a, b) => b.interestsScore - a.interestsScore);
+
+        // 3. Assemble fitting cities within total days cap constraints (using raw city suggested_days)
+        let selectedCities = [];
+        let accumulatedDays = 0;
+        let hotelTierPreference = 'mid_range'; // Default sweet spot
+
+        // First dry-run cost estimation to see if we require direct economy downgrade
+        let estimateTestCost = 0;
+        scoredCities.forEach(city => {
+          if (accumulatedDays + city.suggested_days <= requestedDays) {
+            selectedCities.push(city);
+            accumulatedDays += city.suggested_days;
+          }
+        });
+
+        // Guard: if no cities fits perfectly or days left vacant, add largest best fit
+        if (selectedCities.length === 0 && scoredCities.length > 0) {
+          selectedCities.push(scoredCities[0]);
+          accumulatedDays = scoredCities[0].suggested_days;
+        }
+
+        // Auto fitting rest of remaining empty days of the itinerary to the primary city
+        let leftoverDays = requestedDays - accumulatedDays;
+        if (leftoverDays > 0 && selectedCities.length > 0) {
+          // Stretch stay inside the core recommended city (likely the first one with highest match score)
+          selectedCities[0].itinerary_custom_days = selectedCities[0].suggested_days + leftoverDays;
+        } else {
+          selectedCities.forEach(c => {
+            c.itinerary_custom_days = c.suggested_days;
+          });
+        }
+
+        // Calculate Cost Breakdown
+        let totalHotelCostUsd = 0;
+        let totalTransitCostUsd = 0;
+        let conversionRate = currency === 'EUR' ? 0.92 : 1.0;
+
+        // Total calculated transit estimate: $25 USD / day local taxi & inter-city high-speed trains
+        const localTransitDailyUsd = 20;
+        const intercityTransferFeeUsd = selectedCities.length > 1 ? (selectedCities.length - 1) * 45 : 15;
+        totalTransitCostUsd = (localTransitDailyUsd * requestedDays) + intercityTransferFeeUsd;
+
+        // Function to sum hotel nights cost based on tier
+        const sumHotels = (tier) => {
+          let sum = 0;
+          selectedCities.forEach(c => {
+            const price = c.hotels[tier]?.price_approx || 60;
+            sum += price * (c.itinerary_custom_days || c.suggested_days);
+          });
+          return sum;
+        };
+
+        // Decide hotel tier comfort matching total budget
+        let hotelSumMid = sumHotels('mid_range');
+        let totalSumMidSelected = (hotelSumMid + totalTransitCostUsd) * conversionRate;
+
+        if (totalSumMidSelected > rawBudget) {
+          // Downgrade to budget tier to accommodate maximum budget boundaries
+          hotelTierPreference = 'budget';
+          document.getElementById('hotel-tier-alert').style.display = 'block';
+          if (document.getElementById('hotel-tier-alert')) {
+            document.getElementById('hotel-tier-alert').textContent = t('hotel_auto_downgrade');
+          }
+        } else {
+          // Check if budget is extremely premium to recommend 'luxury' palais lodging!
+          let hotelSumLuxury = sumHotels('luxury');
+          let totalSumLuxSelected = (hotelSumLuxury + totalTransitCostUsd) * conversionRate;
+          if (totalSumLuxSelected <= rawBudget && rawBudget >= 3000) {
+            hotelTierPreference = 'luxury';
+            document.getElementById('hotel-tier-alert').style.display = 'none';
+          } else {
+            hotelTierPreference = 'mid_range';
+            document.getElementById('hotel-tier-alert').style.display = 'none';
+          }
+        }
+
+        // final costs calculation using selected lodging tier
+        const finalHotelCostConvert = Math.round(sumHotels(hotelTierPreference) * conversionRate);
+        const finalTransitCostConvert = Math.round(totalTransitCostUsd * conversionRate);
+        const totalLocalSpentConvert = finalHotelCostConvert + finalTransitCostConvert;
+        
+        let remainingSpendingFunds = rawBudget - totalLocalSpentConvert;
+        if (remainingSpendingFunds < 0) remainingSpendingFunds = 0; // Guard floor negative
+
+        // Sum up total display values
+        const totalEstimatedBill = totalLocalSpentConvert;
+
+        // Draw progress bars for financial breakdown columns
+        const totalPool = finalHotelCostConvert + finalTransitCostConvert + remainingSpendingFunds;
+        const hotelPct = totalPool > 0 ? Math.round((finalHotelCostConvert / totalPool) * 100) : 33;
+        const transitPct = totalPool > 0 ? Math.round((finalTransitCostConvert / totalPool) * 100) : 33;
+        const spendingPct = 100 - hotelPct - transitPct;
+
+        const breakdownContainer = document.getElementById('budget-breakdown-bars');
+        breakdownContainer.innerHTML = `
+          <!-- Bar 1: Lodgings -->
+          <div class="budget-cat-row">
+            <div class="budget-cat-hdr">
+              <span style="color: var(--color-charcoal-light); font-weight: 600;">🏨 ${t('spent_hotels')} (${hotelTierPreference.toUpperCase()})</span>
+              <strong style="color: var(--color-charcoal); font-family: var(--font-mono), monospace;">${symbol}${finalHotelCostConvert}</strong>
+            </div>
+            <div class="budget-bar-bg">
+              <div class="budget-bar-fill budget-fill-hotels" style="width: ${hotelPct}%"></div>
+            </div>
+          </div>
+
+          <!-- Bar 2: Transits -->
+          <div class="budget-cat-row">
+            <div class="budget-cat-hdr">
+              <span style="color: var(--color-charcoal-light); font-weight: 600;">🚖 ${t('spent_transit')} (ONCF Trains & Taxis)</span>
+              <strong style="color: var(--color-charcoal); font-family: var(--font-mono), monospace;">${symbol}${finalTransitCostConvert}</strong>
+            </div>
+            <div class="budget-bar-bg">
+              <div class="budget-bar-fill budget-fill-transit" style="width: ${transitPct}%"></div>
+            </div>
+          </div>
+
+          <!-- Bar 3: Pocket cash -->
+          <div class="budget-cat-row">
+            <div class="budget-cat-hdr">
+              <span style="color: var(--color-charcoal-light); font-weight: 600;">🛍️ ${t('spent_spending')} (Souks, Dining, Guides)</span>
+              <strong style="color: var(--color-gold-dark); font-family: var(--font-mono), monospace;">${symbol}${remainingSpendingFunds}</strong>
+            </div>
+            <div class="budget-bar-bg">
+              <div class="budget-bar-fill budget-fill-spending" style="width: ${spendingPct}%"></div>
+            </div>
+          </div>
+        `;
+
+        document.getElementById('v-grand-target').textContent = `${symbol}${Math.round(rawBudget)}`;
+        document.getElementById('v-grand-spent').textContent = `${symbol}${Math.round(totalEstimatedBill)}`;
+
+        // 4. Render day-by-day Itinerary timeline with photos
+        const timelineBox = document.getElementById('generated-timeline-box');
+        timelineBox.innerHTML = '';
+
+        let dayProgressAccumulator = 1;
+
+        selectedCities.forEach((city, index) => {
+          const stayNights = city.itinerary_custom_days;
+          const dayStart = dayProgressAccumulator;
+          const dayEnd = dayProgressAccumulator + stayNights - 1;
+          
+          let dayDisplayLabel = "";
+          if (stayNights === 1) {
+            dayDisplayLabel = `Day ${dayStart}`;
+          } else {
+            dayDisplayLabel = `Days ${dayStart} — ${dayEnd}`;
+          }
+
+          // advance accumulator
+          dayProgressAccumulator += stayNights;
+
+          // Localized name & parameters
+          let localizedCityName = city.name;
+          let localizedTextRegion = translations[activeLanguage].regions[city.region] || city.region;
+
+          // Hotel lodging info
+          const selectedHotel = city.hotels[hotelTierPreference] || city.hotels['mid_range'];
+          const convertedRatePerNight = Math.round((selectedHotel.price_approx || 70) * conversionRate);
+
+          // Build attraction list items layout
+          let attractionCardsHtml = "";
+          if (city.attractions && city.attractions.length > 0) {
+            // Get top 2 attractions
+            city.attractions.slice(0, 2).forEach(attr => {
+              attractionCardsHtml += `
+                <div style="background-color: white; border: 1px solid var(--color-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                  <img src="${attr.image}" alt="${attr.name}" referrerPolicy="no-referrer" style="width: 100%; height: 110px; object-fit: cover;" />
+                  <div style="padding: 12px; flex-grow: 1;">
+                    <h5 style="margin: 0 0 4px 0; font-size: 13px; font-weight: 700; color: var(--color-charcoal);">${attr.name}</h5>
+                    <p style="margin: 0; font-size: 11px; color: var(--color-charcoal-light); line-height: 1.4;">${attr.description}</p>
+                  </div>
+                </div>
+              `;
+            });
+          }
+
+          const node = document.createElement('div');
+          node.className = 'timeline-node';
+          node.innerHTML = `
+            <div class="timeline-node-point"></div>
+            <div class="timeline-day-badge">${dayDisplayLabel}</div>
+            
+            <h4 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 800; color: var(--color-charcoal);">
+              ${localizedCityName}
+              <span style="font-size: 12px; font-family: var(--font-sans), sans-serif; color: var(--color-gold-dark); font-weight: 600; margin-left: 6px;">
+                (${localizedTextRegion})
+              </span>
+            </h4>
+
+            <p style="margin: 0 0 12px 0; font-size: 13px; color: var(--color-charcoal-light); font-style: italic; display: flex; align-items: center; gap: 4px;">
+              <i data-lucide="map-pin" style="width: 13px; height: 13px; color: var(--color-terracotta);"></i>
+              Stay duration: ${stayNights} ${t('days_text')}
+            </p>
+
+            <div style="background-color: var(--color-sand); border:1px solid var(--color-border); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; font-size: 12px;">
+              <span style="display : inline-block; background-color: var(--color-gold-light); color: var(--color-gold-dark); padding: 2px 6px; border-radius:4px; font-weight:700; font-family:var(--font-mono), monospace; margin-bottom: 4px; text-transform:uppercase;">
+                🏨 ${hotelTierPreference.toUpperCase()} LODGING
+              </span>
+              <div style="font-weight: 700; color: var(--color-charcoal);">${selectedHotel.name}</div>
+              <div style="color: var(--color-charcoal-light); line-height: 1.4;">
+                <strong>${t('amenity_title')}:</strong> ${selectedHotel.amenity} • ${symbol}${convertedRatePerNight} / ${t('nights_text')}
+              </div>
+            </div>
+
+            <!-- Attractions micro grid -->
+            <div class="node-attraction-grid">
+              ${attractionCardsHtml}
+            </div>
+
+            <!-- Authentic cultural note -->
+            <div style="margin-top: 14px; padding: 12px 16px; background-color: #FBF9F6; border-left: 2px solid var(--color-gold); border-radius: 4px; font-size: 12px; color: var(--color-charcoal-light); line-height: 1.5;">
+              <strong>💡 Etiquette:</strong> ${city.cultural_note}
+            </div>
+          `;
+
+          timelineBox.appendChild(node);
+        });
+
+        // Hide Placeholder & Show Dynamic Result Paper
+        document.getElementById('planner-placeholder-card').style.display = 'none';
+        document.getElementById('planner-blueprint-result').style.display = 'block';
+
+        // Re-compile vector icons
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+
+        // Scroll outcome into reader focus
+        document.getElementById('plan-display-root').scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function resetPlanner() {
+        document.getElementById('escape-planner-form').reset();
+        
+        // Remove selection color styles on checks
+        const tiles = document.querySelectorAll('.interest-tile');
+        tiles.forEach(tile => {
+          const chk = tile.querySelector('input');
+          if (chk && chk.checked) {
+            tile.classList.add('active-checked');
+          } else {
+            tile.classList.remove('active-checked');
+          }
+        });
+
+        document.getElementById('planner-placeholder-card').style.display = 'block';
+        document.getElementById('planner-blueprint-result').style.display = 'none';
+        
+        // Dynamic Lucide drawing
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Morocco Tourism</title>
+    <meta name="description" content="Learn more about Morocco Tourism — helping travelers discover the historic cities, culture, and hidden treasures of the Kingdom of Morocco." />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .about-hero-card {
+        background: white;
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-lg);
+        padding: 48px 40px;
+        margin: 40px auto;
+        box-shadow: 0 4px 20px rgba(42, 33, 30, 0.02);
+        max-width: 820px;
+      }
+      .about-heading {
+        font-family: var(--font-serif), serif;
+        font-size: 38px;
+        color: var(--color-charcoal);
+        margin-bottom: 24px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 12px;
+      }
+      .about-heading::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-terracotta) 0%, var(--color-gold) 100%);
+        border-radius: var(--border-radius-full);
+      }
+      .about-paragraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 24px;
+      }
+      .about-paragraph {
+        font-size: 15px;
+        color: var(--color-charcoal-light);
+        line-height: 1.8;
+        text-align: justify;
+      }
+      .section-offer {
+        margin: 60px auto;
+        max-width: 1100px;
+      }
+      .offer-title {
+        font-family: var(--font-serif), serif;
+        font-size: 28px;
+        color: var(--color-charcoal);
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .offer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      @media (max-width: 900px) {
+        .offer-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .about-hero-card {
+          padding: 32px 20px;
+        }
+      }
+      .offer-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 32px 24px;
+        transition: var(--transition-smooth);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .offer-card-icon-box {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1.5px solid var(--color-border);
+        color: var(--color-terracotta);
+        box-shadow: 0 4px 10px rgba(42, 33, 30, 0.02);
+        transition: var(--transition-smooth);
+      }
+      .offer-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(211, 94, 53, 0.06);
+        border-color: var(--color-terracotta-hover);
+        background-color: white;
+      }
+      .offer-card:hover .offer-card-icon-box {
+        background-color: var(--color-terracotta);
+        color: white;
+        border-color: var(--color-terracotta);
+        transform: rotate(10deg);
+      }
+      .offer-card-title {
+        font-family: var(--font-sans), sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--color-charcoal);
+      }
+      .offer-card-desc {
+        font-size: 14px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- App Header -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">MOROCCO</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Distinctive modern bio block of Morocco Tourism -->
+      <section class="about-hero-card">
+        <h1 class="about-heading" id="about-heading">About Morocco Tourism</h1>
+        <div class="about-paragraphs">
+          <p class="about-paragraph" id="about-p1">
+            Welcome to the Morocco Tourism Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.
+          </p>
+          <p class="about-paragraph" id="about-p2">
+            Whether you want to discover the deep historical traditions of local artisans, search for the best traditional riads and local delicacies, or map out custom tour schedules, our platform provides comprehensive, manually verified local registries to make your journey safe and remarkable.
+          </p>
+          <p class="about-paragraph" id="about-p3">
+            We are deeply committed to sustainable and respectful travel experiences. By highlighting historical coordinates, correct cultural etiquette guidelines, and local cooperative trade links, we strive to foster tourism that directly supports the communities, guides, and craft industries of Morocco.
+          </p>
+        </div>
+      </section>
+
+      <!-- Custom what we offer 3 grids block -->
+      <section class="section-offer">
+        <h2 class="offer-title" id="about-offer-title">What We Offer</h2>
+        <div class="offer-grid">
+          <!-- Card 1 -->
+          <div class="offer-card">
+            <div class="offer-card-icon-box">
+              <i data-lucide="compass" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 class="offer-card-title" id="about-card1-title">Explore Cities</h3>
+            <p class="offer-card-desc" id="about-card1-desc">
+              Browse our hand-curated directories of Moroccan destinations, from historic imperial medinas like Marrakech to azure mountain towns like Chefchaouen.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="offer-card">
+            <div class="offer-card-icon-box" style="color: var(--color-gold-dark);">
+              <i data-lucide="scroll" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 class="offer-card-title" id="about-card2-title">Discover Culture</h3>
+            <p class="offer-card-desc" id="about-card2-desc">
+              Immerse yourself in Morocco's extraordinary pluralistic heritage, celebrating indigenous Amazigh art, Arab-Andalusian design, and delicious regional gastronomy.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="offer-card">
+            <div class="offer-card-icon-box" style="color: var(--color-chefchaouen);">
+              <i data-lucide="sparkles" style="width: 24px; height: 24px;"></i>
+            </div>
+            <h3 class="offer-card-title" id="about-card3-title">Plan Your Trip</h3>
+            <p class="offer-card-desc" id="about-card3-desc">
+              Use our interactive trip customization engine to outline the perfect travel route and receive dynamic suggestions tailored to your stay duration.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Dynamically loaded site-footer automatically populates here on load -->
+    <footer></footer>
+
+    <!-- Shared page language controller -->
+    <script type="module">
+      import { getNavLanguage } from "/js/auth-nav.js";
+      import { translations } from "/js/translations.js";
+
+      function applyPageLanguage() {
+        const currentLang = getNavLanguage();
+        const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+
+        // Apply page title
+        document.title = t('about_tourism_title') + " | Morocco Tourism";
+
+        // Apply individual elements
+        const heading = document.getElementById('about-heading');
+        if (heading) heading.textContent = t('about_tourism_title');
+
+        const p1 = document.getElementById('about-p1');
+        const p2 = document.getElementById('about-p2');
+        const p3 = document.getElementById('about-p3');
+        if (p1) p1.textContent = t('about_p1');
+        if (p2) p2.textContent = t('about_p2');
+        if (p3) p3.textContent = t('about_p3');
+
+        const offerTitle = document.getElementById('about-offer-title');
+        if (offerTitle) offerTitle.textContent = t('about_offer_title');
+
+        const card1Title = document.getElementById('about-card1-title');
+        const card1Desc = document.getElementById('about-card1-desc');
+        const card2Title = document.getElementById('about-card2-title');
+        const card2Desc = document.getElementById('about-card2-desc');
+        const card3Title = document.getElementById('about-card3-title');
+        const card3Desc = document.getElementById('about-card3-desc');
+
+        if (card1Title) card1Title.textContent = t('about_card1_title');
+        if (card1Desc) card1Desc.textContent = t('about_card1_desc');
+        if (card2Title) card2Title.textContent = t('about_card2_title');
+        if (card2Desc) card2Desc.textContent = t('about_card2_desc');
+        if (card3Title) card3Title.textContent = t('about_card3_title');
+        if (card3Desc) card3Desc.textContent = t('about_card3_desc');
+      }
+
+      applyPageLanguage();
+      document.addEventListener('DOMContentLoaded', applyPageLanguage);
+      document.addEventListener('languageChanged', applyPageLanguage);
+    </script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>

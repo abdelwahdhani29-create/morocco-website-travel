@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Morocco Tourism</title>
+    <meta name="description" content="Reach out to the Morocco Tourism team for details regarding partnership cooperatives, city listings, and travel guidance." />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .contact-container {
+        display: grid;
+        grid-template-columns: 1.2fr 1.8fr;
+        gap: 40px;
+        margin: 40px auto 60px auto;
+        max-width: 1100px;
+      }
+      @media (max-width: 768px) {
+        .contact-container {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+      }
+      .info-rail {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        box-shadow: 0 4px 15px rgba(42, 33, 30, 0.01);
+      }
+      .info-item {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .info-icon {
+        background: white;
+        color: var(--color-terracotta);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid var(--color-border);
+        flex-shrink: 0;
+        box-shadow: 0 4px 10px rgba(42, 33, 30, 0.02);
+      }
+      .form-card {
+        background: white;
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 40px;
+        box-shadow: 0 4px 20px rgba(42, 33, 30, 0.02);
+      }
+      @media (max-width: 640px) {
+        .form-card {
+          padding: 24px;
+        }
+      }
+      .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .form-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .form-input, .form-textarea {
+        width: 100%;
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-sm);
+        padding: 12px 16px;
+        font-family: var(--font-sans);
+        font-size: 14px;
+        color: var(--color-charcoal);
+        outline: none;
+        box-sizing: border-box;
+        transition: var(--transition-smooth);
+        background-color: #fcfbfa;
+      }
+      .form-input:focus, .form-textarea:focus {
+        border-color: var(--color-terracotta);
+        background: white;
+        box-shadow: 0 0 0 3px rgba(211, 94, 53, 0.15);
+      }
+      .btn-submit {
+        background: linear-gradient(135deg, var(--color-terracotta) 0%, var(--color-gold) 100%);
+        color: white;
+        font-family: var(--font-sans);
+        font-weight: 700;
+        border: none;
+        padding: 14px 28px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        transition: var(--transition-smooth);
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+        box-shadow: 0 4px 15px rgba(211, 94, 53, 0.2);
+      }
+      .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(211, 94, 53, 0.3);
+      }
+      .success-box {
+        background: #ebfef4;
+        color: #10b981;
+        border: 2px solid #a7f3d0;
+        padding: 20px;
+        border-radius: var(--border-radius-md);
+        margin-bottom: 24px;
+        display: none;
+        align-items: flex-start;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- App Header -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">MOROCCO</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      
+      <div class="contact-container">
+        
+        <!-- Info Sidebar -->
+        <div class="info-rail">
+          <div>
+            <h1 id="contact-main-title" style="font-family: var(--font-serif); font-size: 32px; color: var(--color-charcoal); margin-bottom: 12px;">Get in Touch</h1>
+            <p id="contact-main-desc" style="font-size: 14px; color: var(--color-charcoal-light); line-height: 1.7; margin-bottom: 8px;">
+              Have questions regarding tourist regulations, cultural festivals, or require support listing a verified guide cooperative? Please contact us.
+            </p>
+          </div>
+
+          <!-- Phone -->
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="phone" style="width: 18px; height: 18px;"></i></div>
+            <div>
+              <div id="lbl-contact-phone" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Phone Support</div>
+              <div style="font-weight: 700; margin-top: 4px; font-size: 15px; color: var(--color-charcoal);">+212 537-200300</div>
+            </div>
+          </div>
+
+          <!-- Email - contact@moroccotourism.com -->
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="mail" style="width: 18px; height: 18px;"></i></div>
+            <div>
+              <div id="lbl-contact-email" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Partnerships Email</div>
+              <div style="font-weight: 700; margin-top: 4px; font-size: 15px; color: var(--color-terracotta);">
+                <a href="mailto:contact@moroccotourism.com" style="text-decoration: none; color: inherit; transition: var(--transition-smooth);">contact@moroccotourism.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Headquarters -->
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="map-pin" style="width: 18px; height: 18px;"></i></div>
+            <div>
+              <div id="lbl-contact-address" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Office Address</div>
+              <div id="val-contact-address" style="font-size: 14px; margin-top: 4px; color: var(--color-charcoal-light); line-height: 1.5;">
+                Avenue Mohammed V, Rabat, Morocco
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card Unit -->
+        <div class="form-card">
+          <!-- Successful box status layout -->
+          <div id="contact-success-frame" class="success-box">
+            <i data-lucide="badge-check" style="width: 24px; height: 24px; flex-shrink: 0; color: #10b981;"></i>
+            <div>
+              <h3 id="lbl-success-title" style="font-size: 14px; font-weight: 700; margin-bottom: 4px;">Thank you! Message Sent Successfully</h3>
+              <p id="lbl-success-desc" style="font-size: 13px; margin: 0; color: #047857;">Our regional support officers will review your proposal and get back to you within 24 working hours.</p>
+            </div>
+          </div>
+
+          <form id="contact-form">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label class="form-label" id="lbl-form-name">Full Name</label>
+              <input type="text" id="contact-name" class="form-input" required placeholder="Abdellah El Fassi" />
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label class="form-label" id="lbl-form-email">Email Address</label>
+              <input type="email" id="contact-email-input" class="form-input" required placeholder="name@domain.com" />
+            </div>
+
+            <!-- Subject Topic Selection -->
+            <div class="form-group">
+              <label class="form-label" id="lbl-form-topic">Topic Interest</label>
+              <select id="contact-subject" class="form-input" style="height: 48px; background: white;">
+                <option value="directory" id="topic-opt-1">Tourism Directory Cooperatives</option>
+                <option value="cultural" id="topic-opt-2">Cultural Archives Correction</option>
+                <option value="transit" id="topic-opt-3">Feedback & General tourism</option>
+              </select>
+            </div>
+
+            <!-- Message Details -->
+            <div class="form-group">
+              <label class="form-label" id="lbl-form-msg">Message Details</label>
+              <textarea id="contact-text" rows="5" class="form-textarea" required placeholder="How can our Morocco Explorer portal help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              <span id="lbl-form-submit-text">Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Dynamically loaded site-footer automatically populates here on load -->
+    <footer></footer>
+
+    <!-- Form Handler and Page Language helper -->
+    <script type="module">
+      import { getNavLanguage } from "/js/auth-nav.js";
+      import { translations } from "/js/translations.js";
+
+      function applyPageLanguage() {
+        const currentLang = getNavLanguage();
+        const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+
+        // Apply page title
+        document.title = t('contact_nav') + " | Morocco Tourism";
+
+        // Localize headings and descriptives
+        const titleEl = document.getElementById('contact-main-title');
+        const descEl = document.getElementById('contact-main-desc');
+        if (titleEl) titleEl.textContent = t('contact_title');
+        if (descEl) descEl.textContent = t('contact_desc');
+
+        // Phone & Email labels
+        const phoneLabel = document.getElementById('lbl-contact-phone');
+        const emailLabel = document.getElementById('lbl-contact-email');
+        const addrLabel = document.getElementById('lbl-contact-address');
+        const addrVal = document.getElementById('val-contact-address');
+
+        if (phoneLabel) phoneLabel.textContent = t('contact_phone');
+        if (emailLabel) emailLabel.textContent = t('contact_email');
+        if (addrLabel) addrLabel.textContent = t('contact_address_lbl');
+        if (addrVal) addrVal.textContent = t('contact_address_val');
+
+        // Success dialog content
+        const successTitle = document.getElementById('lbl-success-title');
+        const successDesc = document.getElementById('lbl-success-desc');
+        if (successTitle) successTitle.textContent = t('contact_success_title');
+        if (successDesc) successDesc.textContent = t('contact_success_desc');
+
+        // Form fields & submit
+        const nameLabel = document.getElementById('lbl-form-name');
+        const emailFormLabel = document.getElementById('lbl-form-email');
+        const topicLabel = document.getElementById('lbl-form-topic');
+        const msgLabel = document.getElementById('lbl-form-msg');
+        const btnSubmitText = document.getElementById('lbl-form-submit-text');
+
+        if (nameLabel) nameLabel.textContent = t('contact_form_name');
+        if (emailFormLabel) emailFormLabel.textContent = t('contact_form_email');
+        if (topicLabel) topicLabel.textContent = t('contact_form_topic');
+        if (msgLabel) msgLabel.textContent = t('contact_form_msg');
+        if (btnSubmitText) btnSubmitText.textContent = t('contact_send_btn');
+
+        // Option categories
+        const opt1 = document.getElementById('topic-opt-1');
+        const opt2 = document.getElementById('topic-opt-2');
+        const opt3 = document.getElementById('topic-opt-3');
+        if (opt1) opt1.textContent = t('topic_opt_1');
+        if (opt2) opt2.textContent = t('topic_opt_2');
+        if (opt3) opt3.textContent = t('topic_opt_3');
+
+        // Placeholders based on language profile
+        const nameInput = document.getElementById('contact-name');
+        const emailInput = document.getElementById('contact-email-input');
+        const textInput = document.getElementById('contact-text');
+
+        if (nameInput) nameInput.placeholder = currentLang === 'fr' ? 'Par ex. Abdellah El Fassi' : 'e.g. Abdellah El Fassi';
+        if (emailInput) emailInput.placeholder = 'you@example.com';
+        if (textInput) textInput.placeholder = currentLang === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can our Morocco Explorer portal help you?';
+      }
+
+      // Handle the contact form submit actions locally and cleanly
+      const contactForm = document.getElementById('contact-form');
+      const successFrame = document.getElementById('contact-success-frame');
+
+      if (contactForm && successFrame) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          // Clear inputs
+          document.getElementById('contact-name').value = '';
+          document.getElementById('contact-email-input').value = '';
+          document.getElementById('contact-text').value = '';
+          
+          // Show successful animation
+          successFrame.style.display = 'flex';
+          
+          // Scroll dynamically
+          successFrame.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      applyPageLanguage();
+      document.addEventListener('DOMContentLoaded', applyPageLanguage);
+      document.addEventListener('languageChanged', applyPageLanguage);
+    </script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>
