@@ -23,6 +23,7 @@ export default defineConfig(() => {
           privacy: path.resolve(__dirname, 'privacy.html'),
           terms: path.resolve(__dirname, 'terms.html'),
           planner: path.resolve(__dirname, 'trip-planner.html'),
+          404: path.resolve(__dirname, '404.html'),
         },
       },
     },

@@ -198,6 +198,19 @@ async function initApp() {
 
   } catch (error) {
     console.error('Error initializing Morocco Guide:', error);
+    const grid = document.getElementById('featured-cities-grid');
+    if (grid) {
+      grid.innerHTML = `
+        <div style="text-align: center; grid-column: 1 / -1; padding: 40px; border: 2px dashed var(--color-terracotta-dark); border-radius: 12px; background-color: rgba(211, 94, 53, 0.05);">
+          <p style="color: var(--color-terracotta-dark); font-weight: bold; font-family: var(--font-serif); font-size: 18px;">
+            ${appLanguage === 'fr' ? "Impossible de charger la base de données des villes" : "Could not load cities database"}
+          </p>
+          <p style="color: var(--color-charcoal-light); margin-top: 8px; font-size: 14px;">
+            ${appLanguage === 'fr' ? "Veuillez vérifier que le fichier de données '/data/cities.json' existe et est accessible." : "Please ensure the data file '/data/cities.json' is present and fully accessible."}
+          </p>
+        </div>
+      `;
+    }
   }
 }
 
