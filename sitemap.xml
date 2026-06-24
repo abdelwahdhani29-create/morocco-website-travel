@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- GoMoroccoAI Portal Main Indexes -->
   <url>
-    <loc>https://morocco-website-travel.vercel.app/</loc>
+    <loc>https://gomoroccoai.com/</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/index.html</loc>
+    <loc>https://gomoroccoai.com/index.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/cities.html</loc>
+    <loc>https://gomoroccoai.com/cities.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/city.html</loc>
+    <loc>https://gomoroccoai.com/city.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/culture.html</loc>
+    <loc>https://gomoroccoai.com/culture.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/trip-planner.html</loc>
+    <loc>https://gomoroccoai.com/trip-planner.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -40,25 +40,25 @@
 
   <!-- Editorial Utility pages -->
   <url>
-    <loc>https://morocco-website-travel.vercel.app/about.html</loc>
+    <loc>https://gomoroccoai.com/about.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/contact.html</loc>
+    <loc>https://gomoroccoai.com/contact.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/privacy.html</loc>
+    <loc>https://gomoroccoai.com/privacy.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://morocco-website-travel.vercel.app/terms.html</loc>
+    <loc>https://gomoroccoai.com/terms.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

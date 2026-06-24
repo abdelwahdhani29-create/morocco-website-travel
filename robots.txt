@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://morocco-website-travel.vercel.app/sitemap.xml
+Sitemap: https://gomoroccoai.com/sitemap.xml

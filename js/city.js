@@ -246,7 +246,7 @@ function updateSEO(city) {
   descMeta.content = descText;
 
   // 2. Canonical URL Link
-  const canonicalUrl = `https://morocco-website-travel.vercel.app/city.html?id=${city.id.toLowerCase()}`;
+  const canonicalUrl = `https://gomoroccoai.com/city.html?id=${city.id.toLowerCase()}`;
   let canonicalLink = document.querySelector('link[rel="canonical"]');
   if (!canonicalLink) {
     canonicalLink = document.createElement('link');
@@ -306,13 +306,13 @@ function updateSEO(city) {
         "@type": "ListItem",
         "position": 1,
         "name": isFr ? "Accueil" : "Home",
-        "item": "https://morocco-website-travel.vercel.app/"
+        "item": "https://gomoroccoai.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": isFr ? "Villes" : "Cities",
-        "item": "https://morocco-website-travel.vercel.app/cities.html"
+        "item": "https://gomoroccoai.com/cities.html"
       },
       {
         "@type": "ListItem",
