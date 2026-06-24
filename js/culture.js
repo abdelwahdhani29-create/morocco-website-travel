@@ -43,7 +43,7 @@ const translations = {
     proverb_label: "Moroccan Wisdom",
 
     // Footer
-    credit: "Morocco Tourism Explorer • Cultural Diversity Showcase crafted with care.",
+    credit: "GoMoroccoAI Explorer • Cultural Diversity Showcase crafted with care.",
     planner_nav: "AI Planner"
   },
   fr: {
@@ -84,7 +84,7 @@ const translations = {
     next_proverb_btn: "Obtenir un autre proverbe",
     proverb_label: "Sagesse Marocaine",
 
-    credit: "Morocco Tourism Explorer • Portail de découverte culturelle réalisé avec soin.",
+    credit: "GoMoroccoAI Explorer • Portail de découverte culturelle réalisé avec soin.",
     planner_nav: "Planificateur IA"
   }
 };

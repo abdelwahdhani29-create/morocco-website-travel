@@ -83,7 +83,7 @@ export function updateHeaderNavControls() {
     <div id="mobile-nav-overlay" class="mobile-nav-overlay">
       <div class="mobile-nav-overlay-header">
         <a href="/index.html" class="mobile-nav-overlay-logo">
-          MOROCCO
+          GoMoroccoAI
         </a>
         <button id="mobile-nav-close" class="close-overlay-btn" aria-label="Close global menu">
           <i data-lucide="x" style="width: 24px; height: 24px;"></i>
@@ -227,12 +227,12 @@ export function updateGlobalFooterLinks() {
   
   const footerVocabulary = {
     en: {
-      brand_title: "Morocco Tourism",
+      brand_title: "GoMoroccoAI",
       tagline: "Discover the magic of historic imperial cities, sandy desert vistas, and rich living cultural legacy of the Moroccan Kingdom.",
       explore_title: "Explore Destinations",
       legal_title: "Legal Directory",
       powered_by: "Powered by local knowledge",
-      copyright_msg: "© 2025 Morocco Tourism. All rights reserved.",
+      copyright_msg: "© 2025 GoMoroccoAI. All rights reserved.",
       home: "Home Portal",
       browse_cities: "Browse Cities",
       culture: "Moroccan Culture",
@@ -243,12 +243,12 @@ export function updateGlobalFooterLinks() {
       terms: "Terms of Service"
     },
     fr: {
-      brand_title: "Tourisme Maroc",
+      brand_title: "GoMoroccoAI",
       tagline: "Découvrez la magie des cités impériales, des sables fins du Sahara et de l'héritage d'hospitalité du Royaume marocain.",
       explore_title: "Découvertes",
       legal_title: "Informations Légales",
       powered_by: "Inspiré par le savoir local",
-      copyright_msg: "© 2025 Tourisme Maroc. Tous droits réservés.",
+      copyright_msg: "© 2025 GoMoroccoAI. Tous droits réservés.",
       home: "Portail d'Accueil",
       browse_cities: "Découvrir les Villes",
       culture: "Culture Marocaine",

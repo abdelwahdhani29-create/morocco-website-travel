@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found • GoMoroccoAI</title>
+    <meta name="description" content="Oops! The page you are looking for on GoMoroccoAI cannot be found. Navigate back to discover the beautiful cities, heritage, and culture of Morocco." />
+    
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://morocco-website-travel.vercel.app/404.html" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Page Not Found • GoMoroccoAI" />
+    <meta property="og:description" content="Oops! The page you are looking for on GoMoroccoAI cannot be found. Navigate back to discover the beautiful cities, heritage, and culture of Morocco." />
+    <meta property="og:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+    <meta property="og:url" content="https://morocco-website-travel.vercel.app/404.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Page Not Found • GoMoroccoAI" />
+    <meta name="twitter:description" content="Oops! The page you are looking for on GoMoroccoAI cannot be found. Navigate back to discover the beautiful cities, heritage, and culture of Morocco." />
+    <meta name="twitter:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .error-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 60vh;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .error-icon-box {
+        color: var(--color-terracotta);
+        margin-bottom: 24px;
+      }
+      .error-heading {
+        font-family: var(--font-serif);
+        font-size: 42px;
+        color: var(--color-charcoal);
+        margin-bottom: 16px;
+      }
+      .error-text {
+        font-size: 16px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+        margin-bottom: 32px;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 16px;
+        flex-wrap: wrap;
+      }
+      .footer-links a {
+        color: var(--color-charcoal-light);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        transition: var(--transition-smooth);
+      }
+      .footer-links a:hover {
+        color: var(--color-terracotta);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- App Header -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="error-container">
+        <div class="error-icon-box">
+          <i data-lucide="alert-triangle" style="width: 72px; height: 72px;"></i>
+        </div>
+        <h1 class="error-heading" id="error-title">Page Not Found</h1>
+        <p class="error-text" id="error-desc">
+          The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Let us guide you back to the treasures of Morocco.
+        </p>
+        <a href="/index.html" class="btn-primary-ai" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 25px; font-weight: 700;">
+          <i data-lucide="home" style="width: 16px; height: 16px;"></i>
+          <span id="btn-back-home">Back to Homepage</span>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="text-align: center;">
+        <p class="footer-credits" id="lbl-footer-credits" style="margin-bottom: 12px;">GoMoroccoAI Explorer • All rights reserved 2026.</p>
+        <div class="footer-links" id="app-footer-links">
+          <!-- Populated dynamically under JS -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Page Language and footer helper -->
+    <script type="module">
+      import { getNavLanguage } from "/js/auth-nav.js";
+      import { translations } from "/js/translations.js";
+
+      function applyPageLanguage() {
+        const currentLang = getNavLanguage();
+        const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+
+        // Apply translations for 404 texts if they exist, otherwise provide default bilingual mapping
+        const isFr = currentLang === 'fr';
+        
+        document.title = (isFr ? 'Page Non Trouvée' : 'Page Not Found') + ' • GoMoroccoAI';
+        
+        const titleEl = document.getElementById('error-title');
+        const descEl = document.getElementById('error-desc');
+        const backBtnEl = document.getElementById('btn-back-home');
+
+        if (titleEl) {
+          titleEl.textContent = isFr ? 'Page Non Trouvée' : 'Page Not Found';
+        }
+        if (descEl) {
+          descEl.textContent = isFr 
+            ? 'La page que vous recherchez a peut-être été supprimée, a changé de nom ou est temporairement indisponible. Laissez-nous vous guider vers les merveilles du Maroc.' 
+            : 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Let us guide you back to the treasures of Morocco.';
+        }
+        if (backBtnEl) {
+          backBtnEl.textContent = isFr ? 'Retour à l\'Accueil' : 'Back to Homepage';
+        }
+
+        // Render localized links in footer
+        const linksContainer = document.getElementById('app-footer-links');
+        if (linksContainer) {
+          const links = [
+            { href: `/index.html`, text_en: 'Home', text_fr: 'Accueil' },
+            { href: `/about.html`, text_en: 'About Us', text_fr: 'À Propos' },
+            { href: `/contact.html`, text_en: 'Contact', text_fr: 'Contact' },
+            { href: `/privacy.html`, text_en: 'Privacy Policy', text_fr: 'Politique de Confidentialité' },
+            { href: `/terms.html`, text_en: 'Terms of Service', text_fr: 'Conditions d\'Utilisation' }
+          ];
+          linksContainer.innerHTML = links.map(l => `
+            <a href="${l.href}">${isFr ? l.text_fr : l.text_en}</a>
+          `).join(' • ');
+        }
+      }
+
+      applyPageLanguage();
+      document.addEventListener('DOMContentLoaded', applyPageLanguage);
+      document.addEventListener('languageChanged', applyPageLanguage);
+    </script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>

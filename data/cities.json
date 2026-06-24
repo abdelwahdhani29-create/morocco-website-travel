@@ -4,19 +4,19 @@
     "name": "Marrakech",
     "arabic_name": "مراكش",
     "region": "Marrakech-Safi",
-    "cover_image": "src/assets/images/regenerated_image_1782049701261.jpg",
+    "cover_image": "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 3,
     "cultural_note": "When visiting Marrakech, bargaining in the souks is secondary to mutual respect. Start with a friendly 'Salam Alaykum', ask for prices respectfully, and enjoy the bargaining process. Dressing modestly is highly appreciated.",
     "attractions": [
       {
         "name": "Jemaa el-Fnaa",
         "description": "A legendary, sprawling square that morphs at twilight into an open-air theater filled with storytellers, musicians, and aromatic food stalls.",
-        "image": "src/assets/images/regenerated_image_1782050270832.jpg"
+        "image": "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "name": "Jardin Majorelle",
         "description": "A botanical oasis designed by painter Jacques Majorelle, featuring electric Cobalt blue villa, towering cacti, and bamboo pathways.",
-        "image": "src/assets/images/regenerated_image_1782050302022.jpg"
+        "image": "https://images.unsplash.com/photo-1773501934878-104c1e234ba0?auto=format&fit=crop&w=800&q=80"
       }
     ],
     "hotels": {
@@ -59,19 +59,19 @@
     "name": "Chefchaouen",
     "arabic_name": "شفشاون",
     "region": "Tanger-Tetouan-Al Hoceima",
-    "cover_image": "https://images.unsplash.com/photo-1548786811-dd6e453ccca7?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=800&q=80",
     "suggested_days": 2,
     "cultural_note": "Chefchaouen is known for its serene, slow-paced atmosphere. It is custom here to ask for permission before photographing residents or their strikingly blue doorway entries.",
     "attractions": [
       {
         "name": "The Blue Medina Pathways",
         "description": "Wander through pristine labyrinth alleys completely bathed in calming shades of powder-blue wash.",
-        "image": "https://images.unsplash.com/photo-1536701140974-061664e837ea?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800&q=80"
       },
       {
         "name": "Ras El Maa Waterfall",
         "description": "A refreshing mountain spring waterfall just outside the ancient walls, where locals gather to socialize.",
-        "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/94/7f/74/photo0jpg.jpg?w=1100&h=-1&s=1"
       }
     ],
     "hotels": {
@@ -109,19 +109,19 @@
     "name": "Fez",
     "arabic_name": "فاس",
     "region": "Fes-Meknes",
-    "cover_image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://plus.unsplash.com/premium_photo-1697729887553-b0392581a691?auto=format&fit=crop&w=800&q=80",
     "suggested_days": 3,
     "cultural_note": "Fez is Morocco's spiritual heart. Hire a certified guide when exploring Fes El Bali—it is the world's largest active car-free medina with over 9,000 winding lanes.",
     "attractions": [
       {
         "name": "Chouara Tannery",
         "description": "A spectacular sensory portal dating back to the 11th century, displaying leather dyeing in clay honeycomb basins.",
-        "image": "https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.pexels.com/photos/38112658/pexels-photo-38112658.jpeg?auto=compress&cs=tinysrgb&w=800"
       },
       {
         "name": "Al-Qarawiyyin University",
         "description": "Founded in 859 AD, recognized by UNESCO as the oldest continuously operating university in the world.",
-        "image": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.pexels.com/photos/35070809/pexels-photo-35070809.jpeg?auto=compress&cs=tinysrgb&w=800"
       }
     ],
     "hotels": {
@@ -159,19 +159,19 @@
     "name": "Essaouira",
     "arabic_name": "الصويرة",
     "region": "Marrakech-Safi",
-    "cover_image": "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1624802704371-c76faa34c3a0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "Called the 'Wind City of Africa', Essaouira offers a laidback coastal welcome. Extremely safe medina to explore. Enjoy the Gnaoua music and maritime scenery.",
     "attractions": [
       {
         "name": "Skala de la Ville",
         "description": "An awe-inspiring seawall battlement featuring rows of 18th-century brass Spanish cannons guarding the blue Atlantic.",
-        "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+        "image": "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,height=385,dpr=2/tour_img/b36d0ad759487476ead14b4e63b005c9c5d60253be08c763df3287a1b7a90906.jpg"
       },
       {
         "name": "The Fishing Port",
         "description": "A bustling harbor packed with iconic bright blue wooden trawlers, seafood grills, and wheeling gulls.",
-        "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/26/94/c3/puerto.jpg?w=1000&h=-1&s=1"
       }
     ],
     "hotels": {
@@ -209,19 +209,19 @@
     "name": "Casablanca",
     "arabic_name": "الدار البيضاء",
     "region": "Casablanca-Settat",
-    "cover_image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1642952568203-7c39131d0bf6?q=80&w=1510&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "As Morocco's dynamic economic engine, Casablanca is fast and modern. Dress respectfully when visiting the Hassan II Mosque. Use red Petit Taxis and always request metered fares.",
     "attractions": [
       {
         "name": "Hassan II Mosque",
         "description": "A breathtaking architectural masterpiece built on the ocean's edge, featuring a grand 210m minaret and zellige tilework.",
-        "image": "https://images.unsplash.com/photo-1553549216-291702f37c78?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1538230575309-59dfc388ae36?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "The Habous Quarter",
         "description": "A charming neighborhood created in the 1920s containing stone arches, booksellers, and famous Moroccan bakeries.",
-        "image": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80"
+        "image": "https://www.casablancacity.ma/couvertures/article/VHJxttdLS5Apk1JoMXG8q9LO05rEv6MPf2NynFhl.jpeg"
       }
     ],
     "hotels": {
@@ -259,19 +259,19 @@
     "name": "Tangier",
     "arabic_name": "طنجة",
     "region": "Tanger-Tetouan-Al Hoceima",
-    "cover_image": "https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1519741641280-af0bfbbb2a31?q=80&w=1629&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "The historic 'Gateway to Africa' bridging the Mediterranean and Atlantic Oceans. Tangier is multilingual, literary, and very inviting. Watch the sweeping straits from local cafes.",
     "attractions": [
       {
         "name": "Hercules Caves",
         "description": "Legendary coastal caves famous for their sea-facing opening that resembles the silhouette map of Africa.",
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+        "image": "https://lebleuresort.com/wp-content/uploads/2025/09/cave-of-hercules-tangier.webp"
       },
       {
         "name": "The Kasbah",
         "description": "Clifftop medina fortress overlooking Spain and the Strait of Gibraltar, full of whitewashed pathways.",
-        "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1711971725727-aa6e812eb45d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "hotels": {
@@ -309,19 +309,19 @@
     "name": "Rabat",
     "arabic_name": "الرباط",
     "region": "Rabat-Sale-Kenitra",
-    "cover_image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1724864944268-3f4e6a96c38d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "Morocco's elegant, clean, and organized political capital. Rabat has a relaxed, upscale feel in comparison to other major cities. Enjoy walks along the Bouregreg valley marina.",
     "attractions": [
       {
         "name": "Kasbah of the Udayas",
         "description": "A magnificent fortress on cliffs above the sea, featuring peaceful blue-and-white residential alleys.",
-        "image": "https://images.unsplash.com/photo-1594146191771-419b48995a94?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1647998926037-b69d2be7ad8a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "Hassan Tower & Mausoleum",
         "description": "Imperial red-stone minaret dating back to 1199 AD alongside the marble mausoleum of King Mohammed V.",
-        "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1658494277601-b9395c4ff937?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "hotels": {
@@ -359,19 +359,19 @@
     "name": "Agadir",
     "arabic_name": "أكادير",
     "region": "Souss-Massa",
-    "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg/1920px-South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg",
     "suggested_days": 2,
     "cultural_note": "Famed for its year-long sun and sweeping 10km beach. Rebuilt modernly after a 1960 earthquake. Heavily Amazigh (Berber) in culture, specializing in surfing and argan crafts.",
     "attractions": [
       {
         "name": "Agadir Oufella Kasbah",
         "description": "Breathtaking medieval ruins on a high hill, supplying unbeatable panoramic views of the entire bay.",
-        "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/61/d3/5a/agadir-oufella-at-sunset.jpg?w=1400&h=-1&s=1"
       },
       {
         "name": "Souk El Had",
         "description": "One of Africa's largest urban markets, brimming with spices, fabrics, and pure Moroccan argan oil.",
-        "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlQ9cvp6aso9O2g02NrCB4l7MR4sfVQOS40Pwq20wXB0Hk_n74a06ulY&s=10"
       }
     ],
     "hotels": {
@@ -409,19 +409,19 @@
     "name": "Ouarzazate",
     "arabic_name": "ورزازات",
     "region": "Draa-Tafilalet",
-    "cover_image": "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1737927427538-9f9b4ea4ab02?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "Known as the 'Gateway to the Desert', Ouarzazate is Morocco's cinematic core. Explore Hollywood historic sets where Gladiator and Game of Thrones were filmed. Warm desert people.",
     "attractions": [
       {
         "name": "Ait Benhaddou Kasbah",
         "description": "UNESCO World Heritage fortified clay village, masterpiece of traditional earth architecture.",
-        "image": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1627895455412-9d4bcf481378?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "Atlas Film Studios",
         "description": "A sprawling cinema studio hosting colossal sets from legendary Egyptian, Roman, and desert movies.",
-        "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+        "image": "https://i0.wp.com/theorangebackpack.nl/wp-content/uploads/2019/02/Atlas-Studios-Ouarzazate-scaled.jpg?resize=1600%2C600&ssl=1"
       }
     ],
     "hotels": {
@@ -459,19 +459,19 @@
     "name": "Merzouga",
     "arabic_name": "مرزوكة",
     "region": "Draa-Tafilalet",
-    "cover_image": "https://images.unsplash.com/photo-1542332213-9b5a5a3fab35?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1559586616-361e18714958?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "Home of the majestic Erg Chebbi dunes. Merzouga represents the ultimate Saharan desert experience. Community is Berber and Sahrawi, famous for nomad fires and night star-scapes.",
     "attractions": [
       {
         "name": "Erg Chebbi Dunes",
         "description": "Striking wind-swept golden dunes rising 150m. Perfect for camel tours and dusk walks.",
-        "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1613223716452-37f720b2556e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "Khamlia Village",
         "description": "A peaceful desert hamlet where descendants of former Saharan travelers perform spiritual Gnawa songs.",
-        "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80"
+        "image": "https://cdn.kimkim.com/files/a/images/251c7bb873f18d27d9b5d5681a1b7f3b74e48235/big-c9d4abd385b8f638d9eb2ec6abbb3704.jpg"
       }
     ],
     "hotels": {
@@ -509,19 +509,19 @@
     "name": "Meknes",
     "arabic_name": "مكناس",
     "region": "Fes-Meknes",
-    "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1612171579482-daee4955f5ea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "An imperial capital raised by Sultan Moulay Ismail. Meknes is defined by monumental clay bastions, Spanish-Andalusian doors, and a quieter historical charm in comparison to nearby Fez.",
     "attractions": [
       {
         "name": "Bab Mansour Gate",
         "description": "North Africa's grandest imperial portal, decorated with monumental marble pillars and zellige tiling.",
-        "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/71/bd/76/bab-mansour-gate.jpg?w=700&h=400&s=1"
       },
       {
         "name": "Roman Ruins of Volubilis",
         "description": "UNESCO-listed ancient Roman ruins featuring remarkably-preserved mosaics, baths, and stone columns.",
-        "image": "https://images.unsplash.com/photo-1625492922105-5914617fd869?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1730387711262-bf3b67179817?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "hotels": {
@@ -559,19 +559,19 @@
     "name": "Tetouan",
     "arabic_name": "تطوان",
     "region": "Tanger-Tetouan-Al Hoceima",
-    "cover_image": "https://images.unsplash.com/photo-1568292342316-60aa3d36f52a?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://worldheritagesites.net/wp-content/uploads/2024/11/Tetouan-1.jpg",
     "suggested_days": 2,
     "cultural_note": "A highly refined, artistic city known as the 'White Dove'. Tucked under Mount Dersa, its UNESCO-listed medina features unique Spanish-Andalusian architectural influences with whitewashed streets.",
     "attractions": [
       {
         "name": "UNESCO Medina of Tetouan",
         "description": "Virtually unaltered medieval city layout with Spanish archways and leather craft bazaars.",
-        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1635190662504-0271db21d22c?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "School of Traditional Arts",
         "description": "Renowned royal school safeguarding centuries of stucco carvings and zellige patterns.",
-        "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80"
+        "image": "https://exploretetouan.com/wp-content/uploads/elementor/thumbs/MuseeMoArt1-qzbmh4208al56dlz4401y056txgxzjj1dugpusb6v0.jpg"
       }
     ],
     "hotels": {
@@ -609,19 +609,19 @@
     "name": "Al Hoceima",
     "arabic_name": "الحسيمة",
     "region": "Tanger-Tetouan-Al Hoceima",
-    "cover_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1660972288441-18e89c4ec325?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "A Mediterranean jewel in the Rif mountains. Famous for pristine white sandy bays, turquoise waters, and fresh local sardine grilling. Deeply hospitable Amazigh community.",
     "attractions": [
       {
         "name": "Quemado Beach",
         "description": "A magnificent sapphire-green Mediterranean beach cove situated underneath dramatic grey cliffs.",
-        "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80"
+        "image": "https://img5.digsty.com/6P7WRWci216D3FOdewgRxJHnR7PX7o4ZATtPKPR4jeU/rs:fit:800:800:1/g:fp:0.5:0.5/czM6Ly9hcm91bmR1cy82Mi8xNzcwODM5MDUtMDU1MjVlNjYuanBn.jpg"
       },
       {
         "name": "Al Hoceima National Park",
         "description": "Coastal nature reserve combining red limestone cliffs, cedar woodlands, and rare marine reefs.",
-        "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+        "image": "https://nationalparksassociation.org/wp-content/uploads/2024/02/Jotunheimen-National-Park-mountain.webp"
       }
     ],
     "hotels": {
@@ -659,19 +659,19 @@
     "name": "Ifrane",
     "arabic_name": "إفران",
     "region": "Fes-Meknes",
-    "cover_image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1611358382200-5baf13de1b40?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 2,
     "cultural_note": "Nicknamed 'Little Switzerland' due to its crisp alpine climate, red-roofed stone cottages, and heavy winter blizzards. Famously tidy, eco-friendly environment in Atlas Cedar valleys.",
     "attractions": [
       {
         "name": "The Ifrane Stone Lion",
         "description": "Grand stone-carved lion sculpture created in WWII to pay homage to the historic Atlas lions.",
-        "image": "https://images.unsplash.com/photo-1602491453977-1b39913160a7?auto=format&fit=crop&w=800&q=80"
+        "image": "https://thumbs.dreamstime.com/b/stone-lion-ifrane-morocco-africa-45101556.jpg?w=992"
       },
       {
         "name": "Cedre Gouraud Forest",
         "description": "Ancient woodland inhabited by friendly wild Barbary Macaques, great for nature hiking.",
-        "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.pexels.com/photos/4853831/pexels-photo-4853831.jpeg"
       }
     ],
     "hotels": {
@@ -709,19 +709,19 @@
     "name": "Dakhla",
     "arabic_name": "الداخلة",
     "region": "Dakhla-Oued Ed-Dahab",
-    "cover_image": "https://images.unsplash.com/photo-1661426795053-08140bc5c688?q=80&w=1471&auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.unsplash.com/photo-1661426795053-08140bc5c688?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "suggested_days": 3,
     "cultural_note": "Where Sahara's desert ridges face the turquoise Atlantic lagoon waves. Highly famous worldwide for windsurfing. Inherit the Sahrawi tea ceremonies and fresh local oyster meals.",
     "attractions": [
       {
         "name": "The White Dune",
         "description": "An spectacular, isolated sand ridge standing right inside the turquoise lagoon waves.",
-        "image": "https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1514975440715-7b6852af4ee7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "name": "Dragon Island",
         "description": "A pristine sandbar island shaped like a sleeping dragon, ideal for hiking during low tide.",
-        "image": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1772766898468-0828b0bd50a1?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "hotels": {
@@ -759,19 +759,19 @@
     "name": "El Jadida",
     "arabic_name": "الجديدة",
     "region": "Casablanca-Settat",
-    "cover_image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80",
+    "cover_image": "https://images.pexels.com/photos/19069277/pexels-photo-19069277.jpeg?_gl=1*9x42bw*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODIyMzM3NjUkbzE2JGcwJHQxNzgyMjMzNzY1JGo2MCRsMCRoMA..",
     "suggested_days": 2,
     "cultural_note": "A historical fortress enclave named 'Mazagan' founded by the Portuguese. Renowned for sea gates, massive masonry walls, and subterranean chambers. Friendly Atlantic fishing lifestyle.",
     "attractions": [
       {
         "name": "Portuguese Cistern",
         "description": "Subterranean vaulted stone chamber reflecting rays of light off shallow waters. Famous film location.",
-        "image": "https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=800&q=80"
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFpcyQ-XhlzS_HRTShS-_J1dcSrzydw2xict3wsv52Zp5k50zoBtMdRDoq9Gh0cGBrjYFwATLs57-IUU6WFmOBaqLPAVu-y5H2Z-n3msOqvEnoWILq1WA4rJtnLkN8ugZ9r7vXyNA=s1360-w1360-h1020-rw"
       },
       {
         "name": "Cite Portugaise Ramparts",
         "description": "Fortified defensive stone walls equipped with old bronze lookouts facing the maritime horizon.",
-        "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/b4/15/5f/photo1jpg.jpg?w=800&h=500&s=1"
       }
     ],
     "hotels": {

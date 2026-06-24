@@ -1,5 +1,5 @@
 {
-  "name": "Morocco Tourism",
+  "name": "GoMoroccoAI",
   "description": "An elegant, interactive travel explorer for Morocco, highlighting city attractions, culture, hotels, transportation, and custom local themes.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

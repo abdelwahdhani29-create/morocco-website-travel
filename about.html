@@ -3,8 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Morocco Tourism</title>
-    <meta name="description" content="Learn more about Morocco Tourism — helping travelers discover the historic cities, culture, and hidden treasures of the Kingdom of Morocco." />
+    <title>About Us • GoMoroccoAI</title>
+    <meta name="description" content="Learn more about GoMoroccoAI — helping travelers discover the historic cities, culture, and hidden treasures of the Kingdom of Morocco." />
+    
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://morocco-website-travel.vercel.app/about.html" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="About Us • GoMoroccoAI" />
+    <meta property="og:description" content="Learn more about GoMoroccoAI — helping travelers discover the historic cities, culture, and hidden treasures of the Kingdom of Morocco." />
+    <meta property="og:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+    <meta property="og:url" content="https://morocco-website-travel.vercel.app/about.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us • GoMoroccoAI" />
+    <meta name="twitter:description" content="Learn more about GoMoroccoAI — helping travelers discover the historic cities, culture, and hidden treasures of the Kingdom of Morocco." />
+    <meta name="twitter:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -130,7 +147,7 @@
     <header id="app-header">
       <div class="container header-inner">
         <div class="logo-section">
-          <a href="/index.html" class="app-logo">MOROCCO</a>
+          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
           <div class="logo-sub">Official Tourism Portal</div>
         </div>
         <div class="nav-controls" id="header-nav-controls">
@@ -142,10 +159,10 @@
     <main class="container">
       <!-- Distinctive modern bio block of Morocco Tourism -->
       <section class="about-hero-card">
-        <h1 class="about-heading" id="about-heading">About Morocco Tourism</h1>
+        <h1 class="about-heading" id="about-heading">About GoMoroccoAI</h1>
         <div class="about-paragraphs">
           <p class="about-paragraph" id="about-p1">
-            Welcome to the Morocco Tourism Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.
+            Welcome to the GoMoroccoAI Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.
           </p>
           <p class="about-paragraph" id="about-p2">
             Whether you want to discover the deep historical traditions of local artisans, search for the best traditional riads and local delicacies, or map out custom tour schedules, our platform provides comprehensive, manually verified local registries to make your journey safe and remarkable.
@@ -209,7 +226,7 @@
         const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
 
         // Apply page title
-        document.title = t('about_tourism_title') + " | Morocco Tourism";
+        document.title = t('about_tourism_title') + " | GoMoroccoAI";
 
         // Apply individual elements
         const heading = document.getElementById('about-heading');

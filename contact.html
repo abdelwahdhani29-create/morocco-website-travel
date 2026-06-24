@@ -3,8 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Morocco Tourism</title>
-    <meta name="description" content="Reach out to the Morocco Tourism team for details regarding partnership cooperatives, city listings, and travel guidance." />
+    <title>Contact Us • GoMoroccoAI</title>
+    <meta name="description" content="Reach out to the GoMoroccoAI support team for questions regarding partnerships, travel recommendations, city listings, and general guidance." />
+    
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://morocco-website-travel.vercel.app/contact.html" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Contact Us • GoMoroccoAI" />
+    <meta property="og:description" content="Reach out to the GoMoroccoAI support team for questions regarding partnerships, travel recommendations, city listings, and general guidance." />
+    <meta property="og:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+    <meta property="og:url" content="https://morocco-website-travel.vercel.app/contact.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Us • GoMoroccoAI" />
+    <meta name="twitter:description" content="Reach out to the GoMoroccoAI support team for questions regarding partnerships, travel recommendations, city listings, and general guidance." />
+    <meta name="twitter:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -118,7 +135,7 @@
       }
       .success-box {
         background: #ebfef4;
-        color: #10b981;
+        color: #065f46;
         border: 2px solid #a7f3d0;
         padding: 20px;
         border-radius: var(--border-radius-md);
@@ -134,7 +151,7 @@
     <header id="app-header">
       <div class="container header-inner">
         <div class="logo-section">
-          <a href="/index.html" class="app-logo">MOROCCO</a>
+          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
           <div class="logo-sub">Official Tourism Portal</div>
         </div>
         <div class="nav-controls" id="header-nav-controls">
@@ -156,33 +173,13 @@
             </p>
           </div>
 
-          <!-- Phone -->
-          <div class="info-item">
-            <div class="info-icon"><i data-lucide="phone" style="width: 18px; height: 18px;"></i></div>
-            <div>
-              <div id="lbl-contact-phone" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Phone Support</div>
-              <div style="font-weight: 700; margin-top: 4px; font-size: 15px; color: var(--color-charcoal);">+212 537-200300</div>
-            </div>
-          </div>
-
-          <!-- Email - contact@moroccotourism.com -->
+          <!-- Email - gomoroccoai@gmail.com -->
           <div class="info-item">
             <div class="info-icon"><i data-lucide="mail" style="width: 18px; height: 18px;"></i></div>
             <div>
               <div id="lbl-contact-email" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Partnerships Email</div>
               <div style="font-weight: 700; margin-top: 4px; font-size: 15px; color: var(--color-terracotta);">
-                <a href="mailto:contact@moroccotourism.com" style="text-decoration: none; color: inherit; transition: var(--transition-smooth);">contact@moroccotourism.com</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Headquarters -->
-          <div class="info-item">
-            <div class="info-icon"><i data-lucide="map-pin" style="width: 18px; height: 18px;"></i></div>
-            <div>
-              <div id="lbl-contact-address" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Office Address</div>
-              <div id="val-contact-address" style="font-size: 14px; margin-top: 4px; color: var(--color-charcoal-light); line-height: 1.5;">
-                Avenue Mohammed V, Rabat, Morocco
+                <a href="mailto:gomoroccoai@gmail.com" style="text-decoration: none; color: inherit; transition: var(--transition-smooth);">gomoroccoai@gmail.com</a>
               </div>
             </div>
           </div>
@@ -252,7 +249,7 @@
         const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
 
         // Apply page title
-        document.title = t('contact_nav') + " | Morocco Tourism";
+        document.title = t('contact_nav') + " | GoMoroccoAI";
 
         // Localize headings and descriptives
         const titleEl = document.getElementById('contact-main-title');

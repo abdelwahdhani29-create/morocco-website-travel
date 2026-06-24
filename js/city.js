@@ -23,7 +23,7 @@ const translations = {
     error_btn: "Return Back to Map",
     approx_night: "approx. per night",
     amenity_lbl: "Key Amenity",
-    credits: "Morocco Tourism Explorer • Dedicated City Detail Engine crafted in Pure Vanilla JS.",
+    credits: "GoMoroccoAI Explorer • Dedicated City Detail Engine crafted in Pure Vanilla JS.",
     budget: "Budget",
     mid_range: "Mid-Range",
     luxury: "Luxury",
@@ -63,7 +63,7 @@ const translations = {
     error_btn: "Retourner à l'Accueil",
     approx_night: "environ par nuit",
     amenity_lbl: "Atout Principal",
-    credits: "Morocco Tourism Explorer • Répertoire détaillé développé en JavaScript Pur.",
+    credits: "GoMoroccoAI Explorer • Répertoire détaillé développé en JavaScript Pur.",
     budget: "Budget",
     mid_range: "Standard",
     luxury: "Luxe",
@@ -92,8 +92,8 @@ const localizedCityData = {
       desc: "Découvrez Marrakech, joyau impérial mondialement célèbre. Admirez ses palais d'argile, aventurez-vous au gré des souks traditionnels et savourez la légendaire hospitalité marocaine.",
       cultural_note: "Lors de vos visites à Marrakech, négocier dans les souks se fait d'abord avec respect. Commencez par un chaleureux 'Salam Alaykum' (Que la paix soit sur vous), demandez les prix poliment et appréciez l'échange comme une interaction sociale vivante. Une tenue décente est très appréciée, en particulier autour des quartiers historiques.",
       attractions: [
-        { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.unsplash.com/photo-1597212618440-806262de4eb6?auto=format&fit=crop&w=400&q=80" },
-        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1549118544-245ed7e79391?auto=format&fit=crop&w=400&q=80" }
+        { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800" },
+        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1773501934878-104c1e234ba0?auto=format&fit=crop&w=800&q=80" }
       ],
       hotels: {
         budget: { name: "Riad Diana", price_approx: 45, amenity: "Patio traditionnel marocain, bassin de fraîcheur & accueil au thé traditionnel" },
@@ -114,8 +114,8 @@ const localizedCityData = {
       desc: "Embarquez vers le calme envoûtant du Rif. Une balade inoubliable au milieu de ruelles blanchies d'un bleu magique et des sommets montagneux verdoyants.",
       cultural_note: "Chefchaouen est célèbre pour son atmosphère sereine. Il convient ici de solliciter l'accord des habitants avant de photographier les façades ou les jolies portes bleutées.",
       attractions: [
-        { name: "La Médina Bleue", description: "Promenez-vous au cœur d'un labyrinthe de ruelles entièrement baignées de nuances de bleu azuré fardé de chaux.", image: "https://images.unsplash.com/photo-1548625361-155de6c7f54d?auto=format&fit=crop&w=400&q=80" },
-        { name: "La Cascade de Ras El Maa", description: "Une rafraîchissante source d'eau douce de montagne juste à la sortie des murs de la ville, où les habitants se rassemblent.", image: "https://images.unsplash.com/photo-1553142282-aba9d538b9a0?auto=format&fit=crop&w=400&q=80" }
+        { name: "La Médina Bleue", description: "Promenez-vous au cœur d'un labyrinthe de ruelles entièrement baignées de nuances de bleu azuré fardé de chaux.", image: "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800&q=80" },
+        { name: "La Cascade de Ras El Maa", description: "Une rafraîchissante source d'eau douce de montagne juste à la sortie des murs de la ville, où les habitants se rassemblent.", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/94/7f/74/photo0jpg.jpg?w=1100&h=-1&s=1" }
       ],
       hotels: {
         budget: { name: "Hostel Baraka", price_approx: 25, amenity: "Toit-terrasse de style bohème dominant les crêtes majestueuses du Rif" },
@@ -136,8 +136,8 @@ const localizedCityData = {
       desc: "Visitez Fès, mémoire vivante de l'art de vivre et de l'artisanat du Maroc. Flânez à l'ombre de la plus monumentale médina préservée au monde.",
       cultural_note: "Fès est le sanctuaire de la spiritualité et de l'artisanat marocain. Prenez votre temps dans les ruelles étroites, parlez de manière posée et respectez la quiétude des édifices religieux.",
       attractions: [
-        { name: "La Médina de Fès el-Bali", description: "Explorez un dédale incroyable de 9 400 ruelles piétonnes, le plus grand espace urbain sans voiture au monde.", image: "https://images.unsplash.com/photo-1590757591694-81ae17671b56?auto=format&fit=crop&w=400&q=80" },
-        { name: "Les Tanneries de Chouara", description: "Les célèbres bassins en nid d'abeille médiévaux où l'on teint le cuir selon des méthodes ancestrales.", image: "https://images.unsplash.com/photo-1590757591694-81ae17671b56?auto=format&fit=crop&w=400&q=80" }
+        { name: "Les Tanneries de Chouara", description: "Les célèbres bassins en nid d'abeille médiévaux où l'on teint le cuir selon des méthodes ancestrales.", image: "https://images.pexels.com/photos/38112658/pexels-photo-38112658.jpeg?auto=compress&cs=tinysrgb&w=800" },
+        { name: "L'Université Al-Qarawiyyin", description: "Fondée en 859 par Fatima al-Fihri, elle est officiellement reconnue par l'UNESCO comme la plus ancienne université encore en activité au monde.", image: "https://images.pexels.com/photos/35070809/pexels-photo-35070809.jpeg?auto=compress&cs=tinysrgb&w=800" }
       ],
       hotels: {
         budget: { name: "Riad Verus", price_approx: 35, amenity: "Toit-terrasse dynamique offrant une vue à 360° sur toute la Médina" },
@@ -158,8 +158,8 @@ const localizedCityData = {
       desc: "Respirez le parfum de la mer à Essaouira. Admirez ses fortifications portugaises, son port d'embarcation bleu et laissez-vous emporter par ses galeries de peinture.",
       cultural_note: "Essaouira se distingue par sa douceur de vivre marine. Adressez des saluts chaleureux aux pêcheurs du port historique et encouragez les sculpteurs de bois précieux de thuya.",
       attractions: [
-        { name: "La Sqala de la Kasbah", description: "Une promenade spectaculaire le long des anciens bastions royaux flanqués de fiers canons orientés vers la mer.", image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=400&q=80" },
-        { name: "Le Port de Pêche", description: "Un port bleu et animé où chalutiers, odeurs de poisson grillé et harmonies musicales Gnaoua forment un spectacle constant.", image: "https://images.unsplash.com/photo-1590757591694-81ae17671b56?auto=format&fit=crop&w=400&q=80" }
+        { name: "La Sqala de la Kasbah", description: "Une promenade spectaculaire le long des anciens bastions royaux flanqués de fiers canons orientés vers la mer.", image: "https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,height=385,dpr=2/tour_img/b36d0ad759487476ead14b4e63b005c9c5d60253be08c763df3287a1b7a90906.jpg" },
+        { name: "Le Port de Pêche", description: "Un port bleu et animé où chalutiers, odeurs de poisson grillé et harmonies musicales Gnaoua forment un spectacle constant.", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/26/94/c3/puerto.jpg?w=1000&h=-1&s=1" }
       ],
       hotels: {
         budget: { name: "Riad Zahra", price_approx: 40, amenity: "Riad familial chaleureux situé à quelques mètres de la longue plage de sable" },
@@ -226,10 +226,111 @@ async function initCityDetail() {
 
 // Dynamically sets title, metadata and description for SEO compliance
 function updateSEO(city) {
-  const titleText = currentLang === 'fr' 
+  const isFr = currentLang === 'fr';
+  const titleText = isFr 
     ? `Voyage à ${city.name} - Meilleurs Lieux, Hébergements & Guide Local`
     : `Explore ${city.name} - Best Sights, Riad Lodgings & Local Guides • Portal`;
   document.title = titleText;
+
+  // 1. Meta description (between 120 and 160 characters)
+  const descText = isFr
+    ? `Découvrez ${city.name}, Maroc. Explorez les meilleurs lieux historiques, les recommandations de riads authentiques et les transports locaux.`
+    : `Discover ${city.name}, Morocco. Explore top historical sights, authentic traditional riad lodging recommendations, and local transit networks for a safe journey.`;
+  
+  let descMeta = document.querySelector('meta[name="description"]');
+  if (!descMeta) {
+    descMeta = document.createElement('meta');
+    descMeta.name = "description";
+    document.head.appendChild(descMeta);
+  }
+  descMeta.content = descText;
+
+  // 2. Canonical URL Link
+  const canonicalUrl = `https://morocco-website-travel.vercel.app/city.html?id=${city.id.toLowerCase()}`;
+  let canonicalLink = document.querySelector('link[rel="canonical"]');
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link');
+    canonicalLink.rel = "canonical";
+    document.head.appendChild(canonicalLink);
+  }
+  canonicalLink.href = canonicalUrl;
+
+  // 3. Open Graph Tags
+  const setOgTag = (property, content) => {
+    let tag = document.querySelector(`meta[property="${property}"]`);
+    if (!tag) {
+      tag = document.createElement('meta');
+      tag.setAttribute('property', property);
+      document.head.appendChild(tag);
+    }
+    tag.content = content;
+  };
+
+  setOgTag('og:title', titleText);
+  setOgTag('og:description', descText);
+  setOgTag('og:image', city.cover_image);
+  setOgTag('og:url', canonicalUrl);
+  setOgTag('og:type', 'website');
+
+  // 4. Twitter Card Tags
+  const setTwitterTag = (name, content) => {
+    let tag = document.querySelector(`meta[name="${name}"]`);
+    if (!tag) {
+      tag = document.createElement('meta');
+      tag.name = name;
+      document.head.appendChild(tag);
+    }
+    tag.content = content;
+  };
+
+  setTwitterTag('twitter:card', 'summary_large_image');
+  setTwitterTag('twitter:title', titleText);
+  setTwitterTag('twitter:description', descText);
+  setTwitterTag('twitter:image', city.cover_image);
+
+  // 5. JSON-LD Schema Markup (TouristDestination and BreadcrumbList)
+  const touristSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": city.name,
+    "description": descText,
+    "image": city.cover_image,
+    "url": canonicalUrl
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": isFr ? "Accueil" : "Home",
+        "item": "https://morocco-website-travel.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": isFr ? "Villes" : "Cities",
+        "item": "https://morocco-website-travel.vercel.app/cities.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": city.name,
+        "item": canonicalUrl
+      }
+    ]
+  };
+
+  let schemaScript = document.getElementById('dynamic-jsonld-schema');
+  if (!schemaScript) {
+    schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.id = 'dynamic-jsonld-schema';
+    document.head.appendChild(schemaScript);
+  }
+  schemaScript.text = JSON.stringify([touristSchema, breadcrumbSchema], null, 2);
 }
 
 function t(key) {
@@ -483,7 +584,7 @@ function showErrorState() {
   document.getElementById('city-detail-container').style.display = 'none';
   document.getElementById('error-fallback-view').style.display = 'block';
   
-  const fallbackTitle = currentLang === 'fr' ? "Cité Introuvable • Portail" : "City Profile Not Found • Morocco Tourism Portal";
+  const fallbackTitle = currentLang === 'fr' ? "Cité Introuvable • Portail" : "City Profile Not Found • GoMoroccoAI Portal";
   document.title = fallbackTitle;
   
   setElText('lbl-error-title', t('error_title'));

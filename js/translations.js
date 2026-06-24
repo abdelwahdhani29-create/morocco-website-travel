@@ -19,13 +19,13 @@ export const translations = {
     back_home_text: "Back to Home Portal",
 
     // Cookie Banner
-    cookie_text: "We use cookies and basic telemetry to guarantee a perfect and secure local guide experience on the Moroccan Tourism Portal. By continuing, you agree to our policies.",
+    cookie_text: "We use cookies and basic telemetry to guarantee a perfect and secure local guide experience on the GoMoroccoAI Portal. By continuing, you agree to our policies.",
     cookie_accept: "Accept",
     cookie_policy: "Privacy Policy",
 
     // Footer
-    credits: "Morocco Tourism Explorer • Crafted with care using Pure HTML, CSS, and Vanilla JavaScript.",
-    copyright: "Morocco Tourism Explorer • All rights reserved 2026.",
+    credits: "GoMoroccoAI Explorer • Crafted with care using Pure HTML, CSS, and Vanilla JavaScript.",
+    copyright: "GoMoroccoAI Explorer • All rights reserved 2026.",
 
     // Index Page Hero / Search / Options
     hero_tagline: "Welcome to the Kingdom of Light",
@@ -123,8 +123,8 @@ export const translations = {
     proverb_label: "Moroccan Wisdom",
 
     // About Us Page (about.html)
-    about_tourism_title: "About Morocco Tourism",
-    about_p1: "Welcome to the Morocco Tourism Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.",
+    about_tourism_title: "About GoMoroccoAI",
+    about_p1: "Welcome to the GoMoroccoAI Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.",
     about_p2: "Whether you want to discover the deep historical traditions of local artisans, search for the best traditional riads and local delicacies, or map out custom tour schedules, our platform provides comprehensive, manually verified local registries to make your journey safe and remarkable.",
     about_p3: "We are deeply committed to sustainable and respectful travel experiences. By highlighting historical coordinates, correct cultural etiquette guidelines, and local cooperative trade links, we strive to foster tourism that directly supports the communities, guides, and craft industries of Morocco.",
     about_offer_title: "What We Offer",
@@ -182,7 +182,7 @@ export const translations = {
     // Terms of Service Page (terms.html)
     terms_title_header: "Terms of Service",
     terms_section_h2_1: "1. Acceptable Use of our Portal",
-    terms_section_p1: "By accessing the Morocco Tourism Portal, you agree to utilize our curated directory info, transit grids, and cultural dossiers responsibly. You are forbidden from attempting to scrape payload arrays or inject malicious script protocols into our dynamic UI boards.",
+    terms_section_p1: "By accessing the GoMoroccoAI Portal, you agree to utilize our curated directory info, transit grids, and cultural dossiers responsibly. You are forbidden from attempting to scrape payload arrays or inject malicious script protocols into our dynamic UI boards.",
     terms_section_h2_2: "2. Accuracy & Limitation of Responsibility",
     terms_section_p2: "While we curate daily itineraries, public transit schedules, and regional details with care, we advise all travelers to cross-verify physical timetables locally (such as train stations or active souk hours). We are not responsible for direct tourist losses due to schedule adaptations during holidays or seasonal weather changes.",
     terms_section_h2_3: "3. Cultural Etiquette & Code of Respect",
@@ -208,13 +208,13 @@ export const translations = {
     back_home_text: "Retour au Portail d'Accueil",
 
     // Cookie Banner
-    cookie_text: "Nous utilisons des cookies et de la télémétrie de base pour garantir une expérience de guide local parfaite et sécurisée sur le Portail Touristique du Maroc. En continuant, vous acceptez nos politiques.",
+    cookie_text: "Nous utilisons des cookies et de la télémétrie de base pour garantir une expérience de guide local parfaite et sécurisée sur le Portail GoMoroccoAI. En continuant, vous acceptez nos politiques.",
     cookie_accept: "Accepter",
     cookie_policy: "Politique de Confidentialité",
 
     // Footer
-    credits: "Morocco Tourism Explorer • Conçu avec soin en pur HTML, CSS et JavaScript vanilla.",
-    copyright: "Morocco Tourism Explorer • Tous droits réservés 2026.",
+    credits: "GoMoroccoAI Explorer • Conçu avec soin en pur HTML, CSS et JavaScript vanilla.",
+    copyright: "GoMoroccoAI Explorer • Tous droits réservés 2026.",
 
     // Index Page Hero / Search / Options
     hero_tagline: "Bienvenue au Royaume de la Lumière",
@@ -312,8 +312,8 @@ export const translations = {
     proverb_label: "Sagesse Marocaine",
 
     // About Us Page (about.html)
-    about_tourism_title: "À Propos de Morocco Tourism",
-    about_p1: "Bienvenue sur le Portail Touristique du Maroc, votre passerelle numérique ultime pour explorer l'un des royaumes les plus beaux et les plus vibrants d'Afrique du Nord. Notre objectif est d'aider les voyageurs à découvrir l'esprit authentique du Maroc, en vous guidant des ruelles impériales ancestrales aux majestueuses baies côtières sauvages.",
+    about_tourism_title: "À Propos de GoMoroccoAI",
+    about_p1: "Bienvenue sur le Portail GoMoroccoAI, votre passerelle numérique ultime pour explorer l'un des royaumes les plus beaux et les plus vibrants d'Afrique du Nord. Notre objectif est d'aider les voyageurs à découvrir l'esprit authentique du Maroc, en vous guidant des ruelles impériales ancestrales aux majestueuses baies côtières sauvages.",
     about_p2: "Que vous cherchiez à découvrir les profondes traditions historiques des artisans locaux, à rechercher les meilleurs riads traditionnels et spécialités culinaires, ou à planifier des itinéraires personnalisés, notre plateforme vous propose des répertoires locaux complets et vérifiés avec soin pour rendre votre voyage sûr et mémorable.",
     about_p3: "Nous sommes profondément engagés en faveur d'expériences de voyage durables et respectueuses. En mettant en valeur les repères historiques, les règles de bienséance culturelle et les liens vers les coopératives locales, nous nous efforçons d'encourager un tourisme qui soutient directement les communautés, les guides et le savoir-faire artisanal du Maroc.",
     about_offer_title: "Ce Que Nous Offrons",
@@ -371,7 +371,7 @@ export const translations = {
     // Terms of Service Page (terms.html)
     terms_title_header: "Conditions d'Utilisation",
     terms_section_h2_1: "1. Utilisation autorisée du Portail",
-    terms_section_p1: "En accédant au Portail Touristique du Maroc, vous acceptez de consulter nos informations de répertoires d'artisans, réseaux de transport et guides culturels de manière responsable. Toute tentative de siphonnage de données ou d'injection de scripts est formellement interdite.",
+    terms_section_p1: "En accédant au Portail GoMoroccoAI, vous acceptez de consulter nos informations de répertoires d'artisans, réseaux de transport et guides culturels de manière responsable. Toute tentative de siphonnage de données ou d'injection de scripts est formellement interdite.",
     terms_section_h2_2: "2. Exactitude et limitation de responsabilité",
     terms_section_p2: "Bien que nous collections avec rigueur les itinéraires de voyage et fiches de transports, nous vous engageons à valider les horaires physiquement auprès des réseaux concernés (ex. gares ferroviaires). Nous ne saurions être tenus responsables d'un imprévu d'horaire lié aux jours fériés ou variations météo.",
     terms_section_h2_3: "3. Code de bienséance culturelle",

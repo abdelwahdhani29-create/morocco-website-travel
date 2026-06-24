@@ -13,7 +13,7 @@ const translations = {
     suggested_stay: "Suggested Stay",
     days: "Days",
     view_details: "Explore Destination ↗",
-    credits: "Morocco Tourism Explorer • Curated Directory Index crafted in Pure Vanilla JS.",
+    credits: "GoMoroccoAI Explorer • Curated Directory Index crafted in Pure Vanilla JS.",
     no_results: "No destinations match your search parameters. Try another term!",
     culture_nav: "Moroccan Culture",
     planner_nav: "AI Planner",
@@ -39,7 +39,7 @@ const translations = {
     suggested_stay: "Séjour Conseillé",
     days: "jours",
     view_details: "Explorer la destination ↗",
-    credits: "Morocco Tourism Explorer • Index complet réalisé en JavaScript pur.",
+    credits: "GoMoroccoAI Explorer • Index complet réalisé en JavaScript pur.",
     no_results: "Aucun résultat ne correspond à votre recherche. Essayez un autre mot !",
     culture_nav: "Culture Marocaine",
     planner_nav: "Planificateur IA",
@@ -283,7 +283,7 @@ function renderAll() {
       return;
     }
 
-    filtered.forEach(city => {
+    filtered.forEach((city, index) => {
       // Choose translated name & description if french is active
       let displayName = city.name;
       const descObj = cityDescriptions[city.id.toLowerCase()];
@@ -318,6 +318,18 @@ function renderAll() {
         </div>
       `;
       grid.appendChild(card);
+
+      // Insert an ad slot after the first row of cards (usually 3 cards wide on desktop)
+      if (index === 2) {
+        const adContainer = document.createElement('div');
+        adContainer.className = 'ad-slot';
+        adContainer.style.gridColumn = '1 / -1';
+        adContainer.style.width = '100%';
+        adContainer.style.minHeight = '90px';
+        adContainer.style.margin = '20px 0';
+        adContainer.style.boxSizing = 'border-box';
+        grid.appendChild(adContainer);
+      }
     });
 
     // Re-generate Icons

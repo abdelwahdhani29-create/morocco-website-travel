@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Trip Planner — Beta - Morocco Tourism Portal</title>
+    <title>Interactive AI Trip Planner • GoMoroccoAI</title>
     <meta name="description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
     
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://morocco-website-travel.vercel.app/trip-planner.html" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Interactive AI Trip Planner • GoMoroccoAI" />
+    <meta property="og:description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
+    <meta property="og:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+    <meta property="og:url" content="https://morocco-website-travel.vercel.app/trip-planner.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Interactive AI Trip Planner • GoMoroccoAI" />
+    <meta name="twitter:description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
+    <meta name="twitter:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+
     <!-- External stylesheet -->
     <link rel="stylesheet" href="/css/style.css" />
     
@@ -256,19 +272,17 @@
   </head>
   <body class="bg-sand text-charcoal">
 
-    <!-- Top Global Dynamic Header -->
-    <header class="navbar-wrapper">
-      <div class="logo-area">
-        <a href="/index.html" class="logo-display" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
-          <!-- SVG Morocco Star Emblem -->
-          <svg style="width: 24px; height: 24px; fill: var(--color-terracotta);" viewBox="0 0 24 24">
-            <path d="M12,2L14.7,8.6L21.8,7.9L16.8,13L18.6,20L12,16L5.4,20L7.2,13L2.2,7.9L9.3,8.6L12,2Z" />
-          </svg>
-          <span class="logo-title-bold" id="lbl-logo-title">MOROCCO TOURISM</span>
-        </a>
-      </div>
-      <div id="header-nav-controls">
-        <!-- Injected dynamically via auth-nav.js -->
+    <!-- Simple Top Navigation Bar -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically via auth-nav.js -->
+        </div>
       </div>
     </header>
 
@@ -559,7 +573,7 @@
       // Localization variables
       const translations = {
         en: {
-          nav_logo: "MOROCCO TOURISM",
+          nav_logo: "GoMoroccoAI",
           beta_badge: "Bespoke Travel Generator • Beta",
           main_title: "Plan Your Dream Moroccan Escape",
           main_desc: "Customize your budget, duration, and personal travel style. Our smart local router will align historical wonders, coastal breezes, or desert sands into a tailored visual day-by-day planner.",
@@ -605,7 +619,7 @@
           amenity_title: "Key Included Feature"
         },
         fr: {
-          nav_logo: "TOURISME MAROC",
+          nav_logo: "GoMoroccoAI",
           beta_badge: "Planificateur de Voyage • Version Bêta",
           main_title: "Planifiez Votre Voyage d'Évasion au Maroc",
           main_desc: "Spécifiez votre budget, durée et activités favorites. Notre algorithme d'ajustement local assemblera des merveilles impériales, des sables fins ou des brises marines en un itinéraire visuel complet.",
@@ -1053,7 +1067,7 @@
             city.attractions.slice(0, 2).forEach(attr => {
               attractionCardsHtml += `
                 <div style="background-color: white; border: 1px solid var(--color-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
-                  <img src="${attr.image}" alt="${attr.name}" referrerPolicy="no-referrer" style="width: 100%; height: 110px; object-fit: cover;" />
+                  <img src="${attr.image}" alt="${attr.name}" loading="lazy" referrerPolicy="no-referrer" style="width: 100%; height: 110px; object-fit: cover;" />
                   <div style="padding: 12px; flex-grow: 1;">
                     <h5 style="margin: 0 0 4px 0; font-size: 13px; font-weight: 700; color: var(--color-charcoal);">${attr.name}</h5>
                     <p style="margin: 0; font-size: 11px; color: var(--color-charcoal-light); line-height: 1.4;">${attr.description}</p>

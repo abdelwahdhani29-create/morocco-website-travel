@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Dynamic Title & SEO Metas will be injected here via /js/city.js -->
-    <title>City Details • Morocco Tourism Portal</title>
+    <title>City Details • GoMoroccoAI</title>
     <meta name="description" id="seo-meta-desc" content="Discover cities of Morocco: historical attractions, authentic riads and lodgings, and key local transit guides." />
     
     <!-- Importing our Moroccan Style Sheet -->
@@ -47,11 +47,19 @@
         gap: 32px;
         margin-top: 24px;
         margin-bottom: 60px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       @media (max-width: 992px) {
         .city-detail-grid {
           grid-template-columns: 1fr;
         }
+      }
+      .detail-main-workspace {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       /* Tabs Navigation bar */
@@ -61,6 +69,9 @@
         margin-bottom: 30px;
         gap: 8px;
         overflow-x: auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       .tab-trigger-btn {
         background: none;
@@ -119,6 +130,9 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 24px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       .place-detail-card {
         background: var(--color-cream);
@@ -126,12 +140,44 @@
         border-radius: var(--border-radius-md);
         overflow: hidden;
         display: grid;
-        grid-template-columns: 320px 1fr;
+        grid-template-columns: 320px minmax(0, 1fr);
         transition: var(--transition-smooth);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       @media (max-width: 640px) {
         .place-detail-card {
-          grid-template-columns: 1fr;
+          grid-template-columns: 35% minmax(0, 1fr);
+        }
+        .place-detail-img {
+          height: 100%;
+          min-height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+        .place-detail-body {
+          padding: 12px 16px;
+          justify-content: flex-start;
+          min-width: 0;
+          overflow: hidden;
+        }
+        .place-detail-name {
+          font-size: 15px;
+          margin-bottom: 4px;
+          line-height: 1.2;
+          white-space: normal !important;
+          word-break: break-word !important;
+        }
+        .place-detail-desc {
+          font-size: 11px;
+          line-height: 1.35;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          white-space: normal !important;
+          word-break: break-word !important;
         }
       }
       .place-detail-card:hover {
@@ -150,24 +196,33 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        min-width: 0;
+        box-sizing: border-box;
       }
       .place-detail-name {
         font-family: var(--font-serif);
         font-size: 20px;
         color: var(--color-charcoal);
         margin-bottom: 12px;
+        white-space: normal;
+        word-break: break-word;
       }
       .place-detail-desc {
         font-size: 14px;
         color: var(--color-charcoal-light);
         line-height: 1.6;
+        white-space: normal;
+        word-break: break-word;
       }
 
       /* Hotel Tiers Cards style */
       .hotel-tier-deck {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       .hotel-tier-box {
         background: var(--color-cream);
@@ -252,6 +307,8 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 100%;
+        box-sizing: border-box;
       }
       .transit-card {
         background: var(--color-cream);
@@ -263,6 +320,8 @@
         align-items: center;
         gap: 20px;
         transition: var(--transition-smooth);
+        width: 100%;
+        box-sizing: border-box;
       }
       .transit-card:hover {
         border-color: var(--color-chefchaouen);
@@ -329,11 +388,11 @@
       
       /* Arabic layout overrides */
       html[dir="rtl"] .place-detail-card {
-        grid-template-columns: 1fr 320px;
+        grid-template-columns: minmax(0, 1fr) 320px;
       }
       @media (max-width: 640px) {
         html[dir="rtl"] .place-detail-card {
-          grid-template-columns: 1fr;
+          grid-template-columns: minmax(0, 1fr) 35%;
         }
       }
     </style>
@@ -343,7 +402,7 @@
     <header id="app-header">
       <div class="container header-inner">
         <div class="logo-section">
-          <a href="/" class="app-logo">MOROCCO</a>
+          <a href="/" class="app-logo">GoMoroccoAI</a>
           <div class="logo-sub">Official Tourism Portal</div>
         </div>
         
@@ -393,6 +452,9 @@
         <!-- Main Area: Tabs & Active Panel Content -->
         <section class="detail-main-workspace">
           
+          <!-- Ad Slot 1: Above Tabs -->
+          <div class="ad-slot" style="width:100%;min-height:90px;margin:0 0 20px 0;"></div>
+
           <!-- Tabs Navigation Buttons -->
           <div class="tabs-navigation-panel" role="tablist">
             <button class="tab-trigger-btn active" id="tab-btn-places" role="tab" aria-selected="true" data-tab-panel="panel-places">
@@ -429,6 +491,9 @@
               <!-- Inline JavaScript dynamic rendering -->
             </div>
           </div>
+
+          <!-- Ad Slot 2: Below Tab Content -->
+          <div class="ad-slot" style="width:100%;min-height:90px;margin:20px 0 0 0;"></div>
 
         </section>
 
@@ -485,7 +550,7 @@
 
     <footer>
       <div class="container">
-        <p class="footer-credits" id="lbl-foot-credit-city">Morocco Tourism Explorer • Dedicated City Detail Engine crafted in Pure Vanilla JS.</p>
+        <p class="footer-credits" id="lbl-foot-credit-city">GoMoroccoAI Explorer • Dedicated City Detail Engine crafted in Pure Vanilla JS.</p>
       </div>
     </footer>
 
