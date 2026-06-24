@@ -47,6 +47,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  padding-top: 82px; /* Accounts for fixed #app-header (80px height + 2px border) to prevent content overlap */
 }
 
 /* Custom Scrollbars */
@@ -1996,7 +1997,7 @@ footer {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 100px; /* Provides beautiful breathing space below the fixed header when scrolling to section targets */
   overflow-x: hidden;
   width: 100%;
 }
