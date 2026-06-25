@@ -1,6 +1,7 @@
 // Morocco Tourism - Vanilla JS Application Core (Bilingual English / Français)
 import { translations } from './translations.js';
 import { getNavLanguage } from './auth-nav.js';
+import { blogPosts } from './blog-posts.js';
 
 // Global App State
 let appLanguage = getNavLanguage();
@@ -187,6 +188,7 @@ async function initApp() {
     setTimeout(() => {
       renderCityDashboard();
       renderFeaturedCitiesGrid();
+      renderHomepageBlogWidget();
     }, 450);
     
     // Listen to bilingual real-time updates from Navbar toggle
@@ -194,6 +196,7 @@ async function initApp() {
       appLanguage = e.detail.lang;
       renderCityDashboard();
       renderFeaturedCitiesGrid();
+      renderHomepageBlogWidget();
     });
 
   } catch (error) {
@@ -691,4 +694,87 @@ function setupEventListeners() {
       filterCityCards('');
     });
   }
+}
+
+// Generate homepage latest blog posts section (3 most recent)
+function renderHomepageBlogWidget() {
+  const grid = document.getElementById('homepage-blog-grid');
+  if (!grid) return;
+
+  // Localize labels
+  const lblBlogTitle = document.getElementById('lbl-latest-blog-title');
+  const lblBlogSub = document.getElementById('lbl-latest-blog-sub');
+  const lblSeeAllBlog = document.getElementById('lbl-see-all-blog');
+
+  if (lblBlogTitle) lblBlogTitle.textContent = t('latest_blog_title');
+  if (lblBlogSub) lblBlogSub.textContent = t('latest_blog_sub');
+  if (lblSeeAllBlog) lblSeeAllBlog.textContent = t('read_more').replace('&rarr;', '').trim();
+
+  // Slice top 3 most recent articles
+  const latestPosts = blogPosts.slice(0, 3);
+  
+  let html = '';
+  latestPosts.forEach(post => {
+    const postTitle = post.title[appLanguage] || post.title.en;
+    const postExcerpt = post.excerpt[appLanguage] || post.excerpt.en;
+    const postCategory = post.categories[appLanguage] || post.categories.en;
+    const postReadTime = post.readTime[appLanguage] || post.readTime.en;
+    const formattedDate = new Date(post.date).toLocaleDateString(appLanguage === 'fr' ? 'fr-FR' : 'en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    html += `
+      <div class="city-card" style="display: flex; flex-direction: column; overflow: hidden; border: 2px solid var(--color-border); background-color: white; border-radius: var(--border-radius-md); transition: var(--transition-smooth);" id="home-post-${post.id}">
+        <div class="city-card-image-container" style="position: relative; height: 180px; overflow: hidden; background-color: #eee;">
+          <img class="city-card-image" src="${post.image}" alt="${postTitle}" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" loading="lazy" referrerPolicy="no-referrer" />
+          <span style="position: absolute; top: 12px; left: 12px; background: var(--color-terracotta); color: white; padding: 4px 10px; font-size: 10px; font-weight: 700; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px; z-index: 2;">
+            ${postCategory}
+          </span>
+        </div>
+        <div class="city-card-info" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; gap: 10px;">
+          <div>
+            <div style="font-size: 11px; color: var(--color-charcoal-light); font-weight: 500; display: flex; gap: 8px; margin-bottom: 8px;">
+              <span>${formattedDate}</span>
+              <span>•</span>
+              <span>${postReadTime}</span>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 18px; font-weight: 700; line-height: 1.4; margin: 0; color: var(--color-charcoal); transition: var(--transition-smooth);">
+              <a href="/blog.html?id=${post.id}" style="color: inherit; text-decoration: none;">${postTitle}</a>
+            </h3>
+            <p style="font-size: 13px; color: var(--color-charcoal-light); line-height: 1.6; margin: 8px 0 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+              ${postExcerpt}
+            </p>
+          </div>
+          <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--color-border); display: flex; justify-content: flex-end;">
+            <a href="/blog.html?id=${post.id}" style="font-size: 12px; font-weight: 700; color: var(--color-terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-smooth);">
+              <span>${t('read_more').replace('&rarr;', '').trim()}</span> &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  grid.innerHTML = html;
+
+  // Add card hover effect transitions
+  grid.querySelectorAll('.city-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px)';
+      card.style.borderColor = 'var(--color-terracotta)';
+      const img = card.querySelector('img');
+      if (img) img.style.transform = 'scale(1.05)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.borderColor = 'var(--color-border)';
+      const img = card.querySelector('img');
+      if (img) img.style.transform = 'scale(1)';
+    });
+  });
+
+  // Re-trigger icons refresh
+  if (window.lucide) window.lucide.createIcons();
 }

@@ -55,6 +55,9 @@ export function updateHeaderNavControls() {
       <a href="/culture.html" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px;">
         <span>${t('culture')}</span>
       </a>
+      <a href="/blog.html" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px;">
+        <span>${t('blog')}</span>
+      </a>
       <a href="/trip-planner.html" class="nav-link-desktop highlighted-trip-planner" style="font-size: 13px; text-decoration: none; font-weight: 700; color: var(--color-terracotta); background-color: rgba(211, 94, 53, 0.08); border: 1.5px solid var(--color-gold); border-radius: var(--border-radius-md); display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; height: 38px; box-sizing: border-box; transition: var(--transition-smooth);">
         <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--color-gold-dark);"></i>
         <span>${t('trip_planner')}</span>
@@ -101,6 +104,10 @@ export function updateHeaderNavControls() {
         <a href="/culture.html" class="mobile-nav-link">
           <i data-lucide="scroll" style="width: 20px; height: 20px; color: var(--color-gold);"></i>
           <span>${t('culture')}</span>
+        </a>
+        <a href="/blog.html" class="mobile-nav-link">
+          <i data-lucide="book-open" style="width: 20px; height: 20px; color: var(--color-chefchaouen);"></i>
+          <span>${t('blog')}</span>
         </a>
         <a href="/trip-planner.html" class="mobile-nav-link" style="border: 1.5px solid var(--color-gold); background: rgba(194, 154, 56, 0.1);">
           <i data-lucide="sparkles" style="width: 20px; height: 20px; color: var(--color-gold-dark);"></i>
@@ -237,6 +244,7 @@ export function updateGlobalFooterLinks() {
       browse_cities: "Browse Cities",
       culture: "Moroccan Culture",
       plan_your_trip: "AI Custom Planner",
+      blog: "Blog",
       about: "About Us",
       contact: "Contact Directory",
       privacy: "Privacy Policy",
@@ -253,6 +261,7 @@ export function updateGlobalFooterLinks() {
       browse_cities: "Découvrir les Villes",
       culture: "Culture Marocaine",
       plan_your_trip: "Planificateur de Voyage",
+      blog: "Blog",
       about: "À Propos de Nous",
       contact: "Contactez-nous",
       privacy: "Politique de Confidentialité",
@@ -316,6 +325,12 @@ export function updateGlobalFooterLinks() {
             <a href="/trip-planner.html">
               <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--color-gold);"></i>
               <span style="font-weight: 700; color: var(--color-gold-hover);">${strings.plan_your_trip}</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog.html">
+              <i data-lucide="book-open" style="width: 14px; height: 14px; color: var(--color-chefchaouen);"></i>
+              <span>${strings.blog}</span>
             </a>
           </li>
         </ul>

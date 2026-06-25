@@ -18,6 +18,25 @@ export const translations = {
     back_home: "Back to Home",
     back_home_text: "Back to Home Portal",
 
+    // Blog Translations
+    blog: "Blog",
+    blog_title: "GoMoroccoAI Blog",
+    blog_desc: "Discover expert travel guides, historic insights, gastronomy journeys, and hidden gems of the Moroccan Kingdom.",
+    search_blog: "Search articles...",
+    all_categories: "All Categories",
+    read_more: "Read Article &rarr;",
+    latest_blog_title: "Inspiration & Travel Guides",
+    latest_blog_sub: "Discover stories, cultural insights, and expert tips to perfect your Moroccan journey",
+    latest_posts: "Latest Articles",
+    no_posts: "No articles found matching your criteria.",
+    blog_author: "By",
+    back_to_blog: "Back to Blog Directory",
+    author_label: "Written by:",
+    published_on: "Published on:",
+    share_article: "Share this article:",
+    related_articles: "Related Articles",
+    load_more: "Load More Articles",
+
     // Cookie Banner
     cookie_text: "We use cookies and basic telemetry to guarantee a perfect and secure local guide experience on the GoMoroccoAI Portal. By continuing, you agree to our policies.",
     cookie_accept: "Accept",
@@ -206,6 +225,25 @@ export const translations = {
     home: "Accueil",
     back_home: "Retour à l'Accueil",
     back_home_text: "Retour au Portail d'Accueil",
+
+    // Blog Translations
+    blog: "Blog",
+    blog_title: "Blog GoMoroccoAI",
+    blog_desc: "Découvrez nos guides de voyage, récits historiques, aventures culinaires et joyaux cachés du Royaume marocain.",
+    search_blog: "Rechercher des articles...",
+    all_categories: "Toutes les catégories",
+    read_more: "Lire l'article &rarr;",
+    latest_blog_title: "Inspiration & Guides de Voyage",
+    latest_blog_sub: "Découvrez des récits, éclairages culturels et conseils d'experts pour parfaire votre voyage au Maroc",
+    latest_posts: "Derniers Articles",
+    no_posts: "Aucun article ne correspond à vos critères.",
+    blog_author: "Par",
+    back_to_blog: "Retour au Répertoire Blog",
+    author_label: "Rédigé par :",
+    published_on: "Publié le :",
+    share_article: "Partager cet article :",
+    related_articles: "Articles Similaires",
+    load_more: "Charger plus d'articles",
 
     // Cookie Banner
     cookie_text: "Nous utilisons des cookies et de la télémétrie de base pour garantir une expérience de guide local parfaite et sécurisée sur le Portail GoMoroccoAI. En continuant, vous acceptez nos politiques.",

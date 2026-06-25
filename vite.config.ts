@@ -18,6 +18,7 @@ export default defineConfig(() => {
           city: path.resolve(__dirname, 'city.html'),
           cities: path.resolve(__dirname, 'cities.html'),
           culture: path.resolve(__dirname, 'culture.html'),
+          blog: path.resolve(__dirname, 'blog.html'),
           about: path.resolve(__dirname, 'about.html'),
           contact: path.resolve(__dirname, 'contact.html'),
           privacy: path.resolve(__dirname, 'privacy.html'),

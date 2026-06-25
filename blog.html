@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4J96GR996"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B4J96GR996');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspiration & Travel Guides • GoMoroccoAI Blog</title>
+    <meta name="description" content="Discover expert travel guides, historic insights, gastronomy journeys, and hidden treasures of the Kingdom of Morocco." />
+    
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://gomoroccoai.com/blog.html" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Inspiration & Travel Guides • GoMoroccoAI Blog" />
+    <meta property="og:description" content="Discover expert travel guides, historic insights, gastronomy journeys, and hidden treasures of the Kingdom of Morocco." />
+    <meta property="og:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+    <meta property="og:url" content="https://gomoroccoai.com/blog.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Inspiration & Travel Guides • GoMoroccoAI Blog" />
+    <meta name="twitter:description" content="Discover expert travel guides, historic insights, gastronomy journeys, and hidden treasures of the Kingdom of Morocco." />
+    <meta name="twitter:image" content="https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg" />
+
+    <!-- Importing our Moroccan Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Lucide Icons via CDN for lightweight native icons styling -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+      /* --- Custom Blog Specific Styles --- */
+      .blog-breadcrumb-container {
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+      .blog-breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+      }
+      
+      /* Header & Search UI */
+      .blog-header-section {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .blog-headline {
+        font-family: var(--font-serif), serif;
+        font-size: 42px;
+        color: var(--color-charcoal);
+        margin-bottom: 16px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .blog-subheadline {
+        font-size: 16px;
+        color: var(--color-charcoal-light);
+        line-height: 1.6;
+      }
+      .blog-controls-card {
+        background: white;
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-lg);
+        padding: 24px;
+        margin-bottom: 48px;
+        box-shadow: 0 4px 20px rgba(42, 33, 30, 0.02);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .blog-search-wrapper {
+        position: relative;
+        width: 100%;
+      }
+      .blog-search-input {
+        width: 100%;
+        height: 48px;
+        padding: 12px 20px 12px 48px;
+        font-size: 15px;
+        font-family: var(--font-sans);
+        border: 2px solid var(--color-border);
+        border-radius: 24px;
+        background-color: var(--color-sand);
+        color: var(--color-charcoal);
+        transition: var(--transition-smooth);
+        outline: none;
+      }
+      .blog-search-input:focus {
+        border-color: var(--color-terracotta);
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(211, 94, 53, 0.06);
+      }
+      .blog-search-icon {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-charcoal-light);
+        pointer-events: none;
+      }
+      .blog-categories-wrapper {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Hide standard Firefox scrollbar */
+      }
+      .blog-categories-wrapper::-webkit-scrollbar {
+        display: none; /* Hide Chrome scrollbar */
+      }
+      
+      /* Grid System: Responsive Layout */
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 32px;
+        margin-bottom: 48px;
+      }
+      @media (min-width: 640px) {
+        .blog-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (min-width: 1024px) {
+        .blog-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .pagination-container {
+        text-align: center;
+        margin-bottom: 64px;
+      }
+      .blog-btn-primary {
+        background-color: var(--color-terracotta);
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 12px 32px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: var(--transition-smooth);
+        box-shadow: 0 4px 12px rgba(211, 94, 53, 0.15);
+      }
+      .blog-btn-primary:hover {
+        background-color: var(--color-terracotta-hover);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 15px rgba(211, 94, 53, 0.25);
+      }
+      
+      /* Single Article Reading View */
+      .article-container {
+        max-width: 1100px;
+        margin: 0 auto 64px auto;
+      }
+      .article-back-link {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-charcoal-light);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 24px;
+        transition: var(--transition-smooth);
+      }
+      .article-back-link:hover {
+        color: var(--color-terracotta);
+      }
+      .article-hero-header {
+        margin-bottom: 32px;
+      }
+      .article-category-badge {
+        display: inline-block;
+        padding: 6px 16px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+      }
+      .article-main-title {
+        font-family: var(--font-serif), serif;
+        font-size: 44px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: var(--color-charcoal);
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .article-main-title {
+          font-size: 32px;
+        }
+      }
+      .article-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        font-weight: 500;
+      }
+      .article-hero-img-wrapper {
+        width: 100%;
+        height: 480px;
+        border-radius: var(--border-radius-lg);
+        overflow: hidden;
+        border: 2px solid var(--color-border);
+        margin-bottom: 40px;
+        box-shadow: 0 4px 20px rgba(42, 33, 30, 0.02);
+      }
+      @media (max-width: 768px) {
+        .article-hero-img-wrapper {
+          height: 280px;
+        }
+      }
+      .article-hero-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      /* Grid for reading content & side widgets */
+      .article-layout-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      @media (min-width: 1024px) {
+        .article-layout-grid {
+          grid-template-columns: 2.2fr 1fr;
+        }
+      }
+      
+      /* Rich Article Content Body styling */
+      .article-rich-body {
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--color-charcoal);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .article-rich-body p {
+        margin: 0;
+      }
+      .article-rich-body .blog-lead {
+        font-size: 19px;
+        line-height: 1.7;
+        font-weight: 500;
+        color: var(--color-charcoal);
+        border-left: 4px solid var(--color-terracotta);
+        padding-left: 18px;
+        margin-bottom: 8px;
+      }
+      .article-rich-body h3 {
+        font-family: var(--font-serif), serif;
+        font-size: 24px;
+        color: var(--color-charcoal);
+        margin-top: 24px;
+        font-weight: 700;
+      }
+      .article-rich-body ul {
+        padding-left: 24px;
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .article-rich-body li strong {
+        color: var(--color-terracotta-dark);
+      }
+      .article-rich-body .blog-highlight {
+        background-color: var(--color-sand);
+        border: 1.5px solid var(--color-border);
+        padding: 20px;
+        border-radius: var(--border-radius-md);
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+      .blog-internal-link {
+        color: var(--color-chefchaouen);
+        text-decoration: underline;
+        font-weight: 700;
+        transition: var(--transition-smooth);
+      }
+      .blog-internal-link:hover {
+        color: var(--color-chefchaouen-hover);
+      }
+      
+      /* Sidebar Widgets */
+      .article-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      .article-widget-card {
+        background: white;
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 24px;
+        box-shadow: 0 4px 15px rgba(42, 33, 30, 0.01);
+      }
+      .widget-title {
+        font-family: var(--font-serif), serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--color-border);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Simple Top Navigation Bar -->
+    <header id="app-header">
+      <div class="container header-inner">
+        <div class="logo-section">
+          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
+          <div class="logo-sub">Official Tourism Portal</div>
+        </div>
+        
+        <div class="nav-controls" id="header-nav-controls">
+          <!-- Populated dynamically via auth-nav.js -->
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Breadcrumbs navigation -->
+      <div class="blog-breadcrumb-container">
+        <ul id="blog-breadcrumbs-list" class="blog-breadcrumbs">
+          <!-- Populated dynamically via blog.js -->
+        </ul>
+      </div>
+
+      <!-- SECTION 1: BLOG DIRECTORY (All posts listing) -->
+      <section id="blog-directory-section">
+        <div class="blog-header-section animate-fade-in">
+          <h1 id="blog-main-title" class="blog-headline">GoMoroccoAI Blog</h1>
+          <p id="blog-main-desc" class="blog-subheadline">Discover expert travel guides, historic insights, gastronomy journeys, and hidden treasures of the Kingdom of Morocco.</p>
+        </div>
+
+        <div class="blog-controls-card">
+          <!-- Search Row -->
+          <div class="blog-search-wrapper">
+            <i data-lucide="search" class="blog-search-icon" style="width: 20px; height: 20px;"></i>
+            <input type="text" id="blog-search-input" class="blog-search-input" placeholder="Search articles..." />
+          </div>
+          
+          <!-- Category Row -->
+          <div id="blog-categories-filter" class="blog-categories-wrapper">
+            <!-- Populated dynamically via blog.js -->
+          </div>
+        </div>
+
+        <!-- Blog posts responsive grid card deck -->
+        <div id="blog-posts-grid" class="blog-grid">
+          <!-- Populated dynamically via blog.js -->
+        </div>
+
+        <!-- Load More Pagination button -->
+        <div class="pagination-container">
+          <button id="blog-load-more-btn" class="blog-btn-primary">
+            <span>Load More Articles</span>
+            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- SECTION 2: BLOG SINGLE ARTICLE DETAIL VIEW -->
+      <section id="blog-article-section" style="display: none;">
+        <div class="article-container animate-fade-in">
+          <!-- Back button -->
+          <a id="article-back-btn" href="/blog.html" class="article-back-link">
+            &larr; Back to Blog Directory
+          </a>
+
+          <!-- Article Header details -->
+          <header class="article-hero-header">
+            <span id="article-category" class="article-category-badge">Travel Guides</span>
+            <h1 id="article-title" class="article-main-title">Article Title</h1>
+            
+            <div class="article-meta-row">
+              <span id="article-date"><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> June 25, 2026</span>
+              <span>•</span>
+              <span id="article-read-time"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 5 min read</span>
+            </div>
+          </header>
+
+          <!-- Big Hero Image banner -->
+          <div class="article-hero-img-wrapper">
+            <img id="article-hero-image" src="" alt="Featured image" referrerPolicy="no-referrer" />
+          </div>
+
+          <!-- Main Layout Split -->
+          <div class="article-layout-grid">
+            <!-- Left Side: Article Content Body -->
+            <article id="article-content-body" class="article-rich-body">
+              <!-- Content injected dynamically via blog.js -->
+            </article>
+
+            <!-- Right Side: Sidebar Widgets -->
+            <aside class="article-sidebar">
+              <!-- Widget 1: Author card -->
+              <div class="article-widget-card" style="display: flex; gap: 16px; align-items: center;">
+                <div style="width: 54px; height: 54px; border-radius: 50%; background-color: var(--color-terracotta-light); color: var(--color-terracotta); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 20px; font-family: var(--font-serif); border: 2px solid var(--color-border); flex-shrink: 0;">
+                  <i data-lucide="user" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h4 id="article-author" style="font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--color-charcoal); margin: 0 0 4px 0;">Author Name</h4>
+                  <p id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Verified Guide Blogger</p>
+                </div>
+              </div>
+
+              <!-- Widget 2: Social sharing widget -->
+              <div id="article-share-links" class="article-widget-card" style="display: flex; flex-direction: column; gap: 14px;">
+                <!-- Populated dynamically via blog.js -->
+              </div>
+
+              <!-- Widget 3: Related articles recommendation deck -->
+              <div class="article-widget-card">
+                <h3 id="related-articles-heading" class="widget-title">Related Articles</h3>
+                <div id="related-articles-grid" style="display: flex; flex-direction: column; gap: 20px;">
+                  <!-- Populated dynamically via blog.js -->
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Dynamically loaded site-footer automatically populates here on load -->
+    <footer></footer>
+
+    <!-- Scripts configuration -->
+    <script type="module" src="/js/blog.js"></script>
+    <script type="module" src="/js/auth-nav.js"></script>
+  </body>
+</html>
