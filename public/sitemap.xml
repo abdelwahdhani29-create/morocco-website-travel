@@ -46,6 +46,12 @@
 
   <!-- Individual Blog Articles for Search Engine Indexing -->
   <url>
+    <loc>https://gomoroccoai.com/blog.html?id=best-time-to-visit-morocco</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gomoroccoai.com/blog.html?id=marrakech-souks-guide</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>

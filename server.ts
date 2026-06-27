@@ -23,8 +23,27 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath));
+
+    // Support clean/pretty URLs by trying to append .html if requested without extension
+    app.get("*", (req, res, next) => {
+      if (req.path.endsWith("/") || req.path.includes(".")) {
+        return next();
+      }
+      const cleanPath = path.join(distPath, `${req.path}.html`);
+      res.sendFile(cleanPath, (err) => {
+        if (err) {
+          next();
+        }
+      });
+    });
+
+    // Fallback to 404.html if route not found
     app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
+      res.status(404).sendFile(path.join(distPath, "404.html"), (err) => {
+        if (err) {
+          res.status(404).sendFile(path.join(distPath, "index.html"));
+        }
+      });
     });
   }
 
