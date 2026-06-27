@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background rounded square with comfortable margin -->
+  <rect width="512" height="512" rx="120" fill="#FAF5F0" />
+  <!-- Traditional Moroccan 8-Pointed Star (Rub el Hizb) -->
+  <g transform="translate(256, 256)">
+    <!-- Outer Terracotta Base Squares -->
+    <rect x="-145" y="-145" width="290" height="290" rx="24" fill="#D35E35" transform="rotate(0)" />
+    <rect x="-145" y="-145" width="290" height="290" rx="24" fill="#D35E35" transform="rotate(45)" />
+    
+    <!-- Middle Gold Accent Squares -->
+    <rect x="-120" y="-120" width="240" height="240" rx="18" fill="#C29A38" transform="rotate(0)" />
+    <rect x="-120" y="-120" width="240" height="240" rx="18" fill="#C29A38" transform="rotate(45)" />
+    
+    <!-- Inner Deep Charcoal Squares for stark, high-contrast legibility -->
+    <rect x="-92" y="-92" width="184" height="184" rx="12" fill="#2A211E" transform="rotate(0)" />
+    <rect x="-92" y="-92" width="184" height="184" rx="12" fill="#2A211E" transform="rotate(45)" />
+    
+    <!-- Center elegant Gold Compass/Star Pointer -->
+    <circle cx="0" cy="0" r="48" fill="#C29A38" />
+    <polygon points="0,-48 13,-13 48,0 13,13 0,48 -13,13 -48,0 -13,-13" fill="#FAF5F0" />
+    
+    <!-- Small central focal point -->
+    <circle cx="0" cy="0" r="9" fill="#D35E35" />
+  </g>
+</svg>
