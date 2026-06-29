@@ -176,11 +176,18 @@ const localizedCityData = {
 };
 
 let currentLang = getNavLanguage();
+if (currentLang !== 'en' && currentLang !== 'fr') {
+  currentLang = 'en';
+}
 let activeCityData = null;
 
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initCityDetail();
+  });
+} else {
   initCityDetail();
-});
+}
 
 async function initCityDetail() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -214,7 +221,11 @@ async function initCityDetail() {
 
     // Listen to real-time navbar language toggling event
     window.addEventListener('languageChanged', (e) => {
-      currentLang = e.detail.lang;
+      let lang = e.detail.lang;
+      if (lang !== 'en' && lang !== 'fr') {
+        lang = 'en';
+      }
+      currentLang = lang;
       renderCityProfile();
     });
 
@@ -423,7 +434,7 @@ function renderCityProfile() {
   // Render Sidebar Facts
   setElText('fact-duration-val', `${activeCityData.suggested_days} ${t('days')}`);
   
-  const displayRegion = translations[currentLang].regions[activeCityData.region] || activeCityData.region;
+  const displayRegion = (translations[currentLang]?.regions?.[activeCityData.region]) || (translations['en']?.regions?.[activeCityData.region]) || activeCityData.region;
   setElText('fact-region-val', displayRegion);
 
   // Render Cultural note

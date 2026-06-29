@@ -119,9 +119,13 @@ const proverbs = [
 let currentLang = getNavLanguage();
 let currentProverbIndex = 0;
 
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initCulturePage();
+  });
+} else {
   initCulturePage();
-});
+}
 
 function initCulturePage() {
   setupProverbHandler();

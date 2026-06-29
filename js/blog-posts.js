@@ -8,8 +8,10 @@ import { postMerzouga } from "./posts/merzouga.js";
 import { postFez } from "./posts/fez.js";
 import { postEssaouira } from "./posts/essaouira.js";
 import { postRabat } from "./posts/rabat.js";
+import { postSafetyEtiquette } from "./posts/safety-etiquette.js";
 
 export const blogPosts = [
+  postSafetyEtiquette,
   postBestTime,
   postMarrakech,
   postChefchaouen,

@@ -1818,15 +1818,80 @@ footer {
 .site-footer {
   background-color: var(--color-charcoal);
   color: #F5EFEB;
-  padding: 64px 0 32px 0;
+  padding: 80px 0 40px 0;
   border-top: 4px solid var(--color-terracotta);
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
+/* Trust Badges Bar Styling */
+.footer-trust-section {
+  max-width: 1200px;
+  margin: 0 auto 48px auto;
+  padding: 0 24px 48px 24px;
+  border-bottom: 1px solid rgba(232, 223, 216, 0.08);
+}
+
+.footer-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(232, 223, 216, 0.04);
+  transition: var(--transition-smooth);
+}
+
+.trust-badge:hover, .trust-badge:focus {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(197, 160, 89, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.trust-badge-icon {
+  color: var(--color-gold);
+  background: rgba(197, 160, 89, 0.08);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-badge-icon i {
+  width: 20px;
+  height: 20px;
+}
+
+.trust-badge-content h4 {
+  margin: 0 0 4px 0;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFDFB;
+  letter-spacing: 0.3px;
+}
+
+.trust-badge-content p {
+  margin: 0;
+  font-size: 13px;
+  color: #C2B6B0;
+  line-height: 1.4;
+}
+
+/* Footer Grid & Main Structure */
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  gap: 64px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
@@ -1838,12 +1903,12 @@ footer {
   gap: 16px;
 }
 
-.footer-col h3, .footer-col h4 {
+.footer-col h3 {
   color: var(--color-gold);
   font-family: var(--font-serif), serif;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   letter-spacing: 0.5px;
 }
 
@@ -1862,9 +1927,45 @@ footer {
   line-height: 1.6;
   color: #C2B6B0;
   max-width: 380px;
-  margin-top: 4px;
+  margin: 4px 0 8px 0;
 }
 
+/* Email styling with icon and interactive background */
+.footer-contact-info {
+  margin: 4px 0;
+}
+
+.footer-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #F5EFEB;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(232, 223, 216, 0.05);
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.footer-email-link i {
+  width: 16px;
+  height: 16px;
+  color: var(--color-gold);
+}
+
+.footer-email-link:hover, .footer-email-link:focus {
+  background: rgba(211, 94, 53, 0.1);
+  border-color: var(--color-terracotta);
+  color: var(--color-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 94, 53, 0.15);
+  outline: none;
+}
+
+/* Social media connections */
 .footer-social-links {
   display: flex;
   gap: 12px;
@@ -1875,23 +1976,70 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--color-charcoal-light);
   color: #F5EFEB;
   text-decoration: none;
   transition: var(--transition-smooth);
-  border: 1px solid rgba(232, 223, 216, 0.1);
+  border: 1px solid rgba(232, 223, 216, 0.06);
 }
 
-.footer-social-icon:hover {
+.footer-social-icon i {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social-icon:hover, .footer-social-icon:focus {
   background: var(--color-terracotta);
   color: #FFFDFB;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(211, 94, 53, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(211, 94, 53, 0.3);
+  border-color: var(--color-terracotta);
+  outline: none;
 }
 
+/* Destinations list grid style */
+.footer-destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+  margin-top: 8px;
+}
+
+.footer-dest-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #C2B6B0;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-dest-link i {
+  width: 13px;
+  height: 13px;
+  color: var(--color-terracotta);
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+}
+
+.footer-dest-link:hover, .footer-dest-link:focus {
+  color: var(--color-gold-hover);
+  transform: translateX(4px);
+  outline: none;
+}
+
+.footer-dest-link:hover i {
+  color: var(--color-gold-hover);
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Link highlighting with visual cues */
 .footer-nav-links {
   list-style: none;
   padding: 0;
@@ -1909,18 +2057,51 @@ footer {
   transition: var(--transition-smooth);
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
-.footer-nav-links a:hover {
+.footer-nav-links a i {
+  width: 14px;
+  height: 14px;
+  color: var(--color-chefchaouen);
+  transition: var(--transition-smooth);
+}
+
+.footer-nav-links a:hover, .footer-nav-links a:focus {
   color: var(--color-gold-hover);
   transform: translateX(4px);
+  outline: none;
 }
 
+.footer-nav-links a:hover i {
+  transform: scale(1.15);
+}
+
+/* Custom premium badge highlight for AI planner */
+.planner-highlight-link {
+  color: var(--color-gold-hover) !important;
+  font-weight: 700 !important;
+  background: rgba(197, 160, 89, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  width: fit-content;
+}
+
+.planner-highlight-link i {
+  color: var(--color-gold-hover) !important;
+}
+
+.planner-highlight-link:hover {
+  background: rgba(197, 160, 89, 0.15) !important;
+  border-color: var(--color-gold-hover) !important;
+}
+
+/* Bottom Bar Credits & Copyrights */
 .footer-bottom-bar {
-  border-top: 1px solid rgba(232, 223, 216, 0.1);
-  margin-top: 48px;
-  padding-top: 24px;
+  border-top: 1px solid rgba(232, 223, 216, 0.08);
+  margin-top: 64px;
+  padding-top: 32px;
   font-size: 13px;
   color: #9C8E88;
 }
@@ -1936,17 +2117,123 @@ footer {
   gap: 16px;
 }
 
+.footer-copyright-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.footer-author-credit {
+  font-size: 12px;
+  color: rgba(245, 239, 235, 0.45);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-powered-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-style: italic;
+  color: #9C8E88;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-powered-by i {
+  width: 16px;
+  height: 16px;
+  color: var(--color-gold);
+}
+
+/* Smooth Floating Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-terracotta);
+  color: #FFFDFB;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(15px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover, .back-to-top-btn:focus {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(211, 94, 53, 0.45);
+  outline: none;
+}
+
+.back-to-top-btn i {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top-btn:hover i {
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE FOOTER STYLING */
+@media (max-width: 1024px) {
+  .footer-trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 0 32px 0;
+  }
+  .footer-trust-section {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+  }
+  .footer-trust-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 40px;
+  }
+  .footer-destinations-grid {
+    grid-template-columns: 1fr 1fr;
   }
   .footer-bottom-container {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
-  .site-footer {
-    padding: 48px 0 24px 0;
+  .footer-copyright-info {
+    text-align: center;
+  }
+  .back-to-top-btn {
+    bottom: 24px;
+    right: 24px;
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -2167,6 +2454,7 @@ body {
   /* Any cities-directory-grid or dir-grid on directory page */
   .dir-grid, #cities-directory-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-flow: row dense !important;
     gap: 12px !important;
     box-sizing: border-box !important;
   }
@@ -2202,7 +2490,7 @@ body {
     overflow: visible !important;
   }
 
-  .city-card-name, .dir-card-title, .attraction-name {
+  .city-card-name, .dir-card-name, .attraction-name {
     font-size: 13px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;

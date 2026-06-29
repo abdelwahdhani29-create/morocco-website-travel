@@ -236,10 +236,12 @@ export function updateGlobalFooterLinks() {
     en: {
       brand_title: "GoMoroccoAI",
       tagline: "Discover the magic of historic imperial cities, sandy desert vistas, and rich living cultural legacy of the Moroccan Kingdom.",
-      explore_title: "Explore Destinations",
+      explore_title: "Explore Portal",
       legal_title: "Legal Directory",
-      powered_by: "Powered by local knowledge",
-      copyright_msg: "© 2025 GoMoroccoAI. All rights reserved.",
+      destinations_title: "Popular Destinations",
+      powered_by: "Built with AI, Inspired by Morocco.",
+      copyright_msg: "© 2026 GoMoroccoAI. All rights reserved.",
+      designed_by: "Designed & Developed by Abdelwahd Hani",
       home: "Home Portal",
       browse_cities: "Browse Cities",
       culture: "Moroccan Culture",
@@ -248,15 +250,33 @@ export function updateGlobalFooterLinks() {
       about: "About Us",
       contact: "Contact Directory",
       privacy: "Privacy Policy",
-      terms: "Terms of Service"
+      terms: "Terms of Service",
+      trust_ai_title: "AI Travel Planner",
+      trust_ai_desc: "Custom tailored expert routes",
+      trust_local_title: "Local Recommendations",
+      trust_local_desc: "Verified spots & hidden gems",
+      trust_weekly_title: "Updated Weekly",
+      trust_weekly_desc: "Always fresh travel insights",
+      trust_guides_title: "Free Travel Guides",
+      trust_guides_desc: "No fees, unlimited planning",
+      marrakech: "Marrakech",
+      fez: "Fes",
+      chefchaouen: "Chefchaouen",
+      merzouga: "Merzouga",
+      essaouira: "Essaouira",
+      tangier: "Tangier",
+      agadir: "Agadir",
+      casablanca: "Casablanca"
     },
     fr: {
       brand_title: "GoMoroccoAI",
       tagline: "Découvrez la magie des cités impériales, des sables fins du Sahara et de l'héritage d'hospitalité du Royaume marocain.",
-      explore_title: "Découvertes",
+      explore_title: "Portail d'Exploration",
       legal_title: "Informations Légales",
-      powered_by: "Inspiré par le savoir local",
-      copyright_msg: "© 2025 GoMoroccoAI. Tous droits réservés.",
+      destinations_title: "Destinations Populaires",
+      powered_by: "Conçu avec l'IA, Inspiré par le Maroc.",
+      copyright_msg: "© 2026 GoMoroccoAI. Tous droits réservés.",
+      designed_by: "Conçu & Développé par Abdelwahd Hani",
       home: "Portail d'Accueil",
       browse_cities: "Découvrir les Villes",
       culture: "Culture Marocaine",
@@ -265,7 +285,23 @@ export function updateGlobalFooterLinks() {
       about: "À Propos de Nous",
       contact: "Contactez-nous",
       privacy: "Politique de Confidentialité",
-      terms: "Conditions d'Utilisation"
+      terms: "Conditions d'Utilisation",
+      trust_ai_title: "Planificateur d'IA",
+      trust_ai_desc: "Itinéraires personnalisés sur mesure",
+      trust_local_title: "Conseils Locaux",
+      trust_local_desc: "Lieux vérifiés & trésors cachés",
+      trust_weekly_title: "Mis à Jour Hebdomadaire",
+      trust_weekly_desc: "Des infos de voyage fraîches",
+      trust_guides_title: "Guides de Voyage Gratuits",
+      trust_guides_desc: "Aucun frais, planification illimitée",
+      marrakech: "Marrakech",
+      fez: "Fès",
+      chefchaouen: "Chefchaouen",
+      merzouga: "Merzouga",
+      essaouira: "Essaouira",
+      tangier: "Tanger",
+      agadir: "Agadir",
+      casablanca: "Casablanca"
     }
   };
 
@@ -274,93 +310,180 @@ export function updateGlobalFooterLinks() {
   // Update outer footer styling and replace inner HTML
   footer.className = 'site-footer';
   footer.innerHTML = `
+    <!-- Trust Badges Section -->
+    <div class="footer-trust-section">
+      <div class="footer-trust-grid">
+        <div class="trust-badge" tabindex="0">
+          <div class="trust-badge-icon" aria-hidden="true">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div class="trust-badge-content">
+            <h4>${strings.trust_ai_title}</h4>
+            <p>${strings.trust_ai_desc}</p>
+          </div>
+        </div>
+        <div class="trust-badge" tabindex="0">
+          <div class="trust-badge-icon" aria-hidden="true">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <div class="trust-badge-content">
+            <h4>${strings.trust_local_title}</h4>
+            <p>${strings.trust_local_desc}</p>
+          </div>
+        </div>
+        <div class="trust-badge" tabindex="0">
+          <div class="trust-badge-icon" aria-hidden="true">
+            <i data-lucide="calendar"></i>
+          </div>
+          <div class="trust-badge-content">
+            <h4>${strings.trust_weekly_title}</h4>
+            <p>${strings.trust_weekly_desc}</p>
+          </div>
+        </div>
+        <div class="trust-badge" tabindex="0">
+          <div class="trust-badge-icon" aria-hidden="true">
+            <i data-lucide="book-open"></i>
+          </div>
+          <div class="trust-badge-content">
+            <h4>${strings.trust_guides_title}</h4>
+            <p>${strings.trust_guides_desc}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Grid -->
     <div class="footer-grid">
-      <!-- Column 1: Brand & Socials -->
-      <div class="footer-col" style="display: flex; flex-direction: column; gap: 16px;">
-        <a href="/index.html" class="footer-brand-title" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-          <svg style="width: 26px; height: 26px; fill: var(--color-gold);" viewBox="0 0 24 24">
+      <!-- Column 1: Brand & Contact & Socials -->
+      <div class="footer-col brand-col">
+        <a href="/index.html" class="footer-brand-title" aria-label="GoMoroccoAI Home">
+          <svg style="width: 28px; height: 28px; fill: var(--color-gold);" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12,2L14.7,8.6L21.8,7.9L16.8,13L18.6,20L12,16L5.4,20L7.2,13L2.2,7.9L9.3,8.6L12,2Z" />
           </svg>
           <span style="font-family: var(--font-sans), sans-serif; font-weight: 800; letter-spacing: 0.5px;">${strings.brand_title}</span>
         </a>
-        <p class="footer-tagline" style="margin: 0; line-height: 1.6; font-size: 14px; color: #C2B6B0; max-width: 360px;">
+        <p class="footer-tagline">
           ${strings.tagline}
         </p>
-        <div class="footer-social-links" style="display: flex; gap: 10px; margin-top: 8px;">
+        
+        <!-- Contact Email -->
+        <div class="footer-contact-info">
+          <a href="mailto:gomoroccoai@gmail.com" class="footer-email-link" aria-label="Email support: gomoroccoai@gmail.com">
+            <i data-lucide="mail"></i>
+            <span>gomoroccoai@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- Social Links (Facebook, Instagram, X/Twitter, YouTube, Pinterest) -->
+        <div class="footer-social-links">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">
-            <i data-lucide="facebook" style="width: 16px; height: 16px;"></i>
+            <i data-lucide="facebook"></i>
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
-            <i data-lucide="instagram" style="width: 16px; height: 16px;"></i>
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="X (formerly Twitter)">
+            <i data-lucide="twitter"></i>
           </a>
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube">
-            <i data-lucide="youtube" style="width: 16px; height: 16px;"></i>
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Pinterest">
+            <i data-lucide="pinterest"></i>
           </a>
         </div>
       </div>
 
-      <!-- Column 2: Explore links -->
-      <div class="footer-col">
+      <!-- Column 2: Popular Destinations (8 cities grid) -->
+      <div class="footer-col destinations-col">
+        <h3>${strings.destinations_title}</h3>
+        <div class="footer-destinations-grid">
+          <a href="/city.html?id=marrakech" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.marrakech}</span>
+          </a>
+          <a href="/city.html?id=fez" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.fez}</span>
+          </a>
+          <a href="/city.html?id=chefchaouen" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.chefchaouen}</span>
+          </a>
+          <a href="/city.html?id=merzouga" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.merzouga}</span>
+          </a>
+          <a href="/city.html?id=essaouira" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.essaouira}</span>
+          </a>
+          <a href="/city.html?id=tangier" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.tangier}</span>
+          </a>
+          <a href="/city.html?id=agadir" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.agadir}</span>
+          </a>
+          <a href="/city.html?id=casablanca" class="footer-dest-link">
+            <i data-lucide="map-pin"></i><span>${strings.casablanca}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 3: Quick Links (Explore Portal & Legal) -->
+      <div class="footer-col directory-col">
         <h3>${strings.explore_title}</h3>
         <ul class="footer-nav-links">
           <li>
             <a href="/index.html">
-              <i data-lucide="home" style="width: 14px; height: 14px; color: var(--color-terracotta);"></i>
+              <i data-lucide="home"></i>
               <span>${strings.home}</span>
             </a>
           </li>
           <li>
             <a href="/cities.html">
-              <i data-lucide="compass" style="width: 14px; height: 14px; color: var(--color-chefchaouen);"></i>
+              <i data-lucide="compass"></i>
               <span>${strings.browse_cities}</span>
             </a>
           </li>
           <li>
             <a href="/culture.html">
-              <i data-lucide="scroll" style="width: 14px; height: 14px; color: var(--color-gold);"></i>
+              <i data-lucide="scroll"></i>
               <span>${strings.culture}</span>
             </a>
           </li>
           <li>
-            <a href="/trip-planner.html">
-              <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--color-gold);"></i>
-              <span style="font-weight: 700; color: var(--color-gold-hover);">${strings.plan_your_trip}</span>
+            <a href="/trip-planner.html" class="planner-highlight-link">
+              <i data-lucide="sparkles"></i>
+              <span>${strings.plan_your_trip}</span>
             </a>
           </li>
           <li>
             <a href="/blog.html">
-              <i data-lucide="book-open" style="width: 14px; height: 14px; color: var(--color-chefchaouen);"></i>
+              <i data-lucide="book-open"></i>
               <span>${strings.blog}</span>
             </a>
           </li>
         </ul>
-      </div>
 
-      <!-- Column 3: Legal stuff -->
-      <div class="footer-col">
-        <h3>${strings.legal_title}</h3>
+        <h3 style="margin-top: 24px;">${strings.legal_title}</h3>
         <ul class="footer-nav-links">
           <li>
             <a href="/about.html">
-              <i data-lucide="info" style="width: 14px; height: 14px; color: var(--color-terracotta);"></i>
+              <i data-lucide="info"></i>
               <span>${strings.about}</span>
             </a>
           </li>
           <li>
             <a href="/contact.html">
-              <i data-lucide="mail" style="width: 14px; height: 14px; color: var(--color-chefchaouen);"></i>
+              <i data-lucide="mail"></i>
               <span>${strings.contact}</span>
             </a>
           </li>
           <li>
             <a href="/privacy.html">
-              <i data-lucide="shield-check" style="width: 14px; height: 14px; color: var(--color-gold);"></i>
+              <i data-lucide="shield-check"></i>
               <span>${strings.privacy}</span>
             </a>
           </li>
           <li>
             <a href="/terms.html">
-              <i data-lucide="file-text" style="width: 14px; height: 14px; color: var(--color-terracotta);"></i>
+              <i data-lucide="file-text"></i>
               <span>${strings.terms}</span>
             </a>
           </li>
@@ -371,14 +494,41 @@ export function updateGlobalFooterLinks() {
     <!-- Bottom copyrights bar -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-container">
-        <span style="color: #9C8E88; font-size: 13px;">${strings.copyright_msg}</span>
-        <span style="display: inline-flex; align-items: center; gap: 6px; font-style: italic; color: #9C8E88; font-size: 13px;">
-          <i data-lucide="award" style="width: 14px; height: 14px; color: var(--color-gold);"></i>
-          ${strings.powered_by}
+        <div class="footer-copyright-info">
+          <span>${strings.copyright_msg}</span>
+          <span class="footer-author-credit">${strings.designed_by}</span>
+        </div>
+        <span class="footer-powered-by">
+          <i data-lucide="award" aria-hidden="true"></i>
+          <span>${strings.powered_by}</span>
         </span>
       </div>
     </div>
   `;
+
+  // Dynamically initialize the "Back to Top" smooth button if it doesn't already exist in document
+  if (!document.getElementById('back-to-top-btn')) {
+    const bttBtn = document.createElement('button');
+    bttBtn.id = 'back-to-top-btn';
+    bttBtn.className = 'back-to-top-btn';
+    bttBtn.setAttribute('aria-label', 'Back to top');
+    bttBtn.innerHTML = `<i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>`;
+    document.body.appendChild(bttBtn);
+
+    // Click handler to scroll back smoothly
+    bttBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Check visibility on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        bttBtn.classList.add('visible');
+      } else {
+        bttBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+  }
 
   // Dynamic Lucide parsing of newly added elements
   if (window.lucide) {
@@ -462,7 +612,7 @@ export function initViewportReveal() {
   }, observerOptions);
 
   // Auto-detect and observe section blocks & interactive divs
-  const selectors = 'section, .adventure-grid, .culture-row, .card, .transit-item, .attraction-card, .dir-card, .city-card';
+  const selectors = 'section:not(#blog-article-section), .adventure-grid, .culture-row, .card, .transit-item, .attraction-card, .dir-card, .city-card';
   document.querySelectorAll(selectors).forEach(el => {
     if (!el.classList.contains('reveal-section')) {
       el.classList.add('reveal-section');

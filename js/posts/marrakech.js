@@ -2,7 +2,7 @@
 export const postMarrakech = {
   id: "marrakech-souks-guide",
   cityId: "marrakech",
-  image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=2673&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-20",
   categories: {
     en: "Travel Guides",

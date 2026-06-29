@@ -125,12 +125,19 @@ const cityDescriptions = {
 };
 
 let currentLang = getNavLanguage();
+if (currentLang !== 'en' && currentLang !== 'fr') {
+  currentLang = 'en';
+}
 let allCities = [];
 let searchQuery = '';
 
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initCitiesDirectory();
+  });
+} else {
   initCitiesDirectory();
-});
+}
 
 async function initCitiesDirectory() {
   try {
@@ -147,7 +154,11 @@ async function initCitiesDirectory() {
     
     // Listen to real-time navbar language toggling event
     window.addEventListener('languageChanged', (e) => {
-      currentLang = e.detail.lang;
+      let lang = e.detail.lang;
+      if (lang !== 'en' && lang !== 'fr') {
+        lang = 'en';
+      }
+      currentLang = lang;
       renderAll();
     });
 
@@ -288,7 +299,7 @@ function renderAll() {
       let displayName = city.name;
       const descObj = cityDescriptions[city.id.toLowerCase()];
       const displayDesc = descObj ? (descObj[currentLang] || descObj['en']) : city.cultural_note;
-      const displayRegion = translations[currentLang].regions[city.region] || city.region;
+      const displayRegion = (translations[currentLang]?.regions?.[city.region]) || (translations['en']?.regions?.[city.region]) || city.region;
 
       const card = document.createElement('div');
       card.className = 'dir-card';

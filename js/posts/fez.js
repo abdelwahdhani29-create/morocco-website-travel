@@ -2,7 +2,7 @@
 export const postFez = {
   id: "flavors-of-fez-culinary",
   cityId: "fez",
-  image: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2023/08/iStock-1356907123.jpg",
+  image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-05",
   categories: {
     en: "Gastronomy",

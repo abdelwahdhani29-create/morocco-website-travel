@@ -144,9 +144,13 @@ const customItineraries = {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initApp();
+  });
+} else {
   initApp();
-});
+}
 
 // Skeleton helper for visual loader shimmers
 function showSkeletons(gridId, count = 3) {

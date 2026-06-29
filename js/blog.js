@@ -37,11 +37,22 @@ function renderView() {
   
   if (activePostId) {
     // Show single post view
+    document.body.classList.add('article-view');
+    document.body.classList.remove('directory-view');
     if (directorySection) directorySection.style.display = 'none';
     if (articleSection) articleSection.style.display = 'block';
     renderSingleArticle(activePostId);
+    
+    // Ensure the page automatically scrolls to the beginning of the article after it loads
+    window.scrollTo(0, 0);
+    // Extra guard for mobile browsers (Safari/Chrome on touch devices)
+    if (articleSection) {
+      articleSection.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
   } else {
     // Show directory view
+    document.body.classList.add('directory-view');
+    document.body.classList.remove('article-view');
     if (directorySection) directorySection.style.display = 'block';
     if (articleSection) articleSection.style.display = 'none';
     renderDirectory();
@@ -136,7 +147,7 @@ function renderDirectory() {
     });
 
     gridHtml += `
-      <article class="blog-card" style="background: white; border: 2px solid var(--color-border); border-radius: var(--border-radius-md); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition-smooth); box-shadow: 0 4px 15px rgba(42,33,30,0.01);" id="post-${post.id}">
+      <article class="blog-card" style="background: white; border: 2px solid var(--color-border); border-radius: var(--border-radius-md); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition-smooth); box-shadow: 0 4px 15px rgba(42,33,30,0.01); cursor: pointer;" id="post-${post.id}">
         <div class="blog-card-img-wrapper" style="position: relative; height: 220px; width: 100%; overflow: hidden; background-color: #eee;">
           <img src="${post.image}" alt="${postTitle}" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" loading="lazy" referrerPolicy="no-referrer" />
           <span class="blog-card-badge" style="position: absolute; top: 16px; left: 16px; background-color: var(--color-terracotta); color: white; padding: 4px 12px; font-size: 11px; font-weight: 700; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">
@@ -175,7 +186,7 @@ function renderDirectory() {
   gridContainer.innerHTML = gridHtml;
   if (window.lucide) window.lucide.createIcons();
 
-  // Add hover effects dynamically
+  // Add hover effects and click navigation dynamically
   document.querySelectorAll('.blog-card').forEach(card => {
     card.addEventListener('mouseenter', () => {
       card.style.transform = 'translateY(-6px)';
@@ -188,6 +199,17 @@ function renderDirectory() {
       card.style.borderColor = 'var(--color-border)';
       const img = card.querySelector('img');
       if (img) img.style.transform = 'scale(1)';
+    });
+
+    // Handle full card clicks to make tapping easy and reliable on mobile
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+      const link = card.querySelector('.blog-card-title a');
+      if (link) {
+        link.click();
+      }
     });
   });
 
@@ -246,7 +268,7 @@ function renderCategoriesFilter() {
 }
 
 // Wire search input listener
-document.addEventListener('DOMContentLoaded', () => {
+function setupBlogEventListeners() {
   const searchInput = document.getElementById('blog-search-input');
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
@@ -265,7 +287,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   initBlog();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupBlogEventListeners);
+} else {
+  setupBlogEventListeners();
+}
 
 
 // --------------------------------------------------------------------------
@@ -449,7 +477,7 @@ function renderShareButtons(title, url) {
 
   container.innerHTML = `
     <span style="font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-charcoal-light);">${t('share_article')}</span>
-    <div style="display: flex; gap: 8px;">
+    <div style="display: flex; gap: 8px; align-items: center; position: relative;">
       <a href="https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}" target="_blank" rel="noopener noreferrer" class="share-icon-btn" aria-label="Share on X" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--color-border); color: var(--color-charcoal); transition: var(--transition-smooth); background: white;">
         <i data-lucide="twitter" style="width: 14px; height: 14px;"></i>
       </a>
@@ -459,8 +487,11 @@ function renderShareButtons(title, url) {
       <a href="https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}" target="_blank" rel="noopener noreferrer" class="share-icon-btn" aria-label="Share on WhatsApp" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--color-border); color: var(--color-charcoal); transition: var(--transition-smooth); background: white;">
         <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
       </a>
-      <button onclick="navigator.clipboard.writeText('${url}').then(() => alert('${currentLang === 'fr' ? 'Lien copié !' : 'Link copied to clipboard!'}'))" class="share-icon-btn" aria-label="Copy link" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--color-border); color: var(--color-charcoal); cursor: pointer; transition: var(--transition-smooth); background: white;">
-        <i data-lucide="copy" style="width: 14px; height: 14px;"></i>
+      <button id="btn-copy-article-link" class="share-icon-btn" aria-label="Copy link" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--color-border); color: var(--color-charcoal); cursor: pointer; transition: var(--transition-smooth); background: white; outline: none; position: relative;">
+        <i data-lucide="copy" id="icon-copy-link" style="width: 14px; height: 14px;"></i>
+        <span id="copy-tooltip" style="position: absolute; bottom: 42px; left: 50%; transform: translateX(-50%) scale(0.9); background: var(--color-charcoal); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px; pointer-events: none; opacity: 0; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); white-space: nowrap; z-index: 10;">
+          ${currentLang === 'fr' ? 'Lien copié !' : 'Link copied!'}
+        </span>
       </button>
     </div>
   `;
@@ -478,6 +509,38 @@ function renderShareButtons(title, url) {
       btn.style.backgroundColor = 'white';
     });
   });
+
+  // Attach clipboard copy handler with feedback
+  const copyBtn = container.querySelector('#btn-copy-article-link');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(url).then(() => {
+        const tooltip = container.querySelector('#copy-tooltip');
+        const icon = container.querySelector('#icon-copy-link');
+        
+        // Show tooltip and change icon temporarily
+        if (tooltip) {
+          tooltip.style.opacity = '1';
+          tooltip.style.transform = 'translateX(-50%) scale(1)';
+        }
+        if (icon) {
+          icon.setAttribute('data-lucide', 'check');
+          if (window.lucide) window.lucide.createIcons();
+        }
+        
+        setTimeout(() => {
+          if (tooltip) {
+            tooltip.style.opacity = '0';
+            tooltip.style.transform = 'translateX(-50%) scale(0.9)';
+          }
+          if (icon) {
+            icon.setAttribute('data-lucide', 'copy');
+            if (window.lucide) window.lucide.createIcons();
+          }
+        }, 2000);
+      });
+    });
+  }
 }
 
 function renderRelatedArticles(activePost) {

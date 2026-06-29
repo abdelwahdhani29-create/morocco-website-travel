@@ -2,7 +2,7 @@
 export const postEssaouira = {
   id: "essaouira-coastal-sanctuary",
   cityId: "essaouira",
-  image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2671&auto=format&fit=crop",
+  image: "https://images.unsplash.com/photo-1624802704371-c76faa34c3a0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   date: "2026-06-01",
   categories: {
     en: "Travel Guides",
