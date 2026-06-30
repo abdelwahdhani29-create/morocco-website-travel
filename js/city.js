@@ -472,7 +472,9 @@ function renderTabPlacesContent() {
     const card = document.createElement('div');
     card.className = 'place-detail-card';
     card.innerHTML = `
-      <img class="place-detail-img" src="${place.image}" alt="${displayName}" referrerPolicy="no-referrer" />
+      <div class="attraction-img-frame" style="position: relative; width: 100%; overflow: hidden; background-color: #f7f5f3;">
+        <img class="place-detail-img lazy-img" src="${place.image}" alt="${displayName}" loading="lazy" onload="this.classList.add('loaded')" referrerPolicy="no-referrer" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
       <div class="place-detail-body">
         <h4 class="place-detail-name">${displayName}</h4>
         <p class="place-detail-desc">${displayDesc}</p>

@@ -2232,8 +2232,8 @@ footer {
   .back-to-top-btn {
     bottom: 24px;
     right: 24px;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -2534,6 +2534,41 @@ body {
   
   section {
     padding: 24px 0 !important;
+  }
+
+  /* Optimized card paddings for mobile */
+  .card-frame, .hotel-card, .itinerary-board {
+    padding: 20px !important;
+  }
+  
+  .hero-content {
+    padding: 24px !important;
+  }
+}
+
+/* Extra small mobile screen layout adjustments (e.g. 320px - 500px) */
+@media (max-width: 500px) {
+  .featured-grid, #featured-cities-grid, .attractions-list, #attractions-grid, .dir-grid, #cities-directory-grid, #homepage-blog-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .city-card, .dir-card, .attraction-card {
+    min-height: auto !important;
+  }
+  .city-card-cover-frame, .dir-card-photo-wrapper, .attraction-img-frame {
+    height: 160px !important;
+    min-height: 160px !important;
+  }
+  .city-card-name, .dir-card-name, .attraction-name {
+    font-size: 15px !important;
+    white-space: normal !important;
+  }
+  .city-card-region, .dir-card-region, .attraction-desc {
+    font-size: 12px !important;
+    white-space: normal !important;
+  }
+  .card-frame, .hotel-card, .itinerary-board {
+    padding: 16px !important;
   }
 }
 

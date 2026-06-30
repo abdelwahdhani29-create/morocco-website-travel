@@ -411,6 +411,20 @@
           grid-template-columns: minmax(0, 1fr) 35%;
         }
       }
+      @media (max-width: 500px) {
+        .place-detail-card, html[dir="rtl"] .place-detail-card {
+          grid-template-columns: 1fr !important;
+        }
+        .place-detail-img {
+          height: 180px !important;
+          min-height: 180px !important;
+          width: 100% !important;
+        }
+        .tab-trigger-btn {
+          padding: 10px 14px !important;
+          font-size: 14px !important;
+        }
+      }
     </style>
   </head>
   <body>

@@ -46,6 +46,12 @@
 
   <!-- Individual Blog Articles for Search Engine Indexing -->
   <url>
+    <loc>https://gomoroccoai.com/blog.html?id=is-morocco-safe-to-visit-2026</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gomoroccoai.com/blog.html?id=morocco-travel-safety-etiquette-tips</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>

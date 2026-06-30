@@ -63,6 +63,20 @@
         }
       }
 
+      .planner-form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 500px) {
+        .planner-form-row {
+          grid-template-columns: 1fr !important;
+          gap: 12px;
+        }
+      }
+
       /* Tactile tile checkboxes */
       .interest-tile {
         display: block;
@@ -210,8 +224,11 @@
       }
 
       @media (max-width: 640px) {
+        .blueprint-paper {
+          padding: 20px !important;
+        }
         .node-attraction-grid {
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr !important;
           gap: 12px;
         }
       }
@@ -284,6 +301,15 @@
       @keyframes spin-anim {
         to { transform: rotate(360deg); }
       }
+      @media (max-width: 500px) {
+        #planner-main-title {
+          font-size: 26px !important;
+        }
+        .planner-container {
+          padding: 0 12px !important;
+          margin: 20px auto !important;
+        }
+      }
     </style>
   </head>
   <body class="bg-sand text-charcoal">
@@ -334,16 +360,16 @@
               <i data-lucide="plane-takeoff" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; color: var(--color-chefchaouen);"></i>
               <span id="lbl-departure">Leaving From</span>
             </label>
-            <input type="text" id="departure-city" class="search-input" style="width: 100%; box-sizing: border-box; background-color: #565353;" placeholder="e.g. France, Paris, New York, London..." required />
+            <input type="text" id="departure-city" class="form-input-text" style="width: 100%; box-sizing: border-box;" placeholder="e.g. France, Paris, New York, London..." required />
           </div>
 
           <!-- Currency & Budget Panel -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+          <div class="planner-form-row">
             <div class="form-group">
               <label for="currency-select" style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 8px; letter-spacing: 0.5px;">
                 <span id="lbl-currency">Currency</span>
               </label>
-              <select id="currency-select" class="search-input" style="width: 100%; box-sizing: border-box; height: 46px; background-color: #565353;" onchange="updateCurrencySymbol()">
+              <select id="currency-select" class="form-select" style="width: 100%; box-sizing: border-box; height: 46px;" onchange="updateCurrencySymbol()">
                 <option value="USD">$ (USD)</option>
                 <option value="EUR">€ (EUR)</option>
               </select>
@@ -353,7 +379,7 @@
               <label for="budget-number" style="display: block; font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--color-charcoal-light); margin-bottom: 8px; letter-spacing: 0.5px;">
                 <span id="lbl-max-budget">Max Budget</span>
               </label>
-              <input type="number" id="budget-number" class="search-input" style="width: 100%; box-sizing: border-box; height: 46px; border-color: #565353; background-color: #565353;" min="200" max="15000" value="1500" required />
+              <input type="number" id="budget-number" class="form-input-text" style="width: 100%; box-sizing: border-box; height: 46px;" min="200" max="15000" value="1500" required />
             </div>
           </div>
 
