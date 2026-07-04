@@ -52,7 +52,37 @@
         "approx_cost": "4 MAD ($0.40 USD)",
         "description": "Public bus routes linking the old Medina to Gueliz and Majorelle."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Warm days and cool evenings with blooming gardens. Perfect for sightseeing.",
+      "summer": "Very hot and dry, often exceeding 40°C. Best to explore in early morning or late evening.",
+      "autumn": "Pleasantly warm and sunny. Excellent for walking tours and cultural festivals.",
+      "winter": "Cool days with bright sunshine, though nights can get cold. Great for budget travel.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€30 - €50",
+        "food": "€10 - €20",
+        "transport": "€3 - €7",
+        "activities": "€5 - €15"
+      },
+      "midRange": {
+        "accommodation": "€80 - €140",
+        "food": "€25 - €50",
+        "transport": "€12 - €25",
+        "activities": "€20 - €45"
+      },
+      "luxury": {
+        "accommodation": "€400 - €800",
+        "food": "€70 - €150",
+        "transport": "€40 - €90",
+        "activities": "€60 - €150"
+      }
+    }
   },
   {
     "id": "chefchaouen",
@@ -102,7 +132,38 @@
         "approx_cost": "50 MAD ($5 USD)",
         "description": "Shared transit vehicles connecting Chefchaouen to Tetouan and Tangier."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Lush green hills and mild, sunny days. Ideal for hiking in the Rif Mountains.",
+      "summer": "Warm and pleasant, offering a cool mountain escape from the hotter inland cities.",
+      "autumn": "Mild and pleasant weather with fewer tourists. Great for peaceful exploration.",
+      "winter": "Cold and often rainy with occasional mountain snow. Cozy but requires warm clothing.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€15 - €30",
+        "food": "€8 - €15",
+        "transport": "€2 - €5",
+        "activities": "€3 - €10"
+      },
+      "midRange": {
+        "accommodation": "€60 - €100",
+        "food": "€18 - €35",
+        "transport": "€8 - €18",
+        "activities": "€12 - €30"
+      },
+      "luxury": {
+        "accommodation": "€150 - €250",
+        "food": "€40 - €80",
+        "transport": "€25 - €60",
+        "activities": "€40 - €90"
+      }
+    }
   },
   {
     "id": "fez",
@@ -152,7 +213,37 @@
         "approx_cost": "120 MAD ($12 USD)",
         "description": "Comfortable train routes linking Fez directly to Rabat, Casablanca, and Marrakech."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Delightfully mild and sunny. Perfect for navigating the thousands of medina lanes.",
+      "summer": "Intensely hot and dry. Best avoided or kept for indoor museum visits.",
+      "autumn": "Cooler, pleasant temperatures return. Fantastic for cultural tours.",
+      "winter": "Chilly and occasionally damp, though sunny intervals are common. Quieter streets.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €40",
+        "food": "€9 - €18",
+        "transport": "€2 - €6",
+        "activities": "€4 - €12"
+      },
+      "midRange": {
+        "accommodation": "€70 - €120",
+        "food": "€20 - €40",
+        "transport": "€10 - €22",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€250 - €500",
+        "food": "€55 - €110",
+        "transport": "€35 - €80",
+        "activities": "€50 - €110"
+      }
+    }
   },
   {
     "id": "essaouira",
@@ -202,7 +293,37 @@
         "approx_cost": "90 MAD ($9 USD)",
         "description": "Premium coach connection between Essaouira and Marrakech rail station."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Pleasantly warm but breezy. Great for walking along the beach and ramparts.",
+      "summer": "Mild and breezy, providing a perfect escape from the scorching inland heat.",
+      "autumn": "Warm and sunny with calmer winds. Ideal for ocean views and seafood dining.",
+      "winter": "Mild and damp with occasional atlantic storms. Dramatic seascapes.",
+      "recommended": [
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €45",
+        "food": "€9 - €18",
+        "transport": "€2 - €5",
+        "activities": "€5 - €15"
+      },
+      "midRange": {
+        "accommodation": "€70 - €110",
+        "food": "€20 - €40",
+        "transport": "€8 - €20",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€180 - €350",
+        "food": "€50 - €100",
+        "transport": "€30 - €70",
+        "activities": "€40 - €100"
+      }
+    }
   },
   {
     "id": "casablanca",
@@ -252,7 +373,38 @@
         "approx_cost": "8 MAD ($0.80 USD)",
         "description": "Comfortable, modern tram system linking major districts quickly."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Mild, comfortable temperatures with sunny skies. Great for city walks.",
+      "summer": "Warm and humid, with pleasant sea breezes. Excellent for oceanfront strolls.",
+      "autumn": "Mild, clear weather with thinner crowds. Great for exploring the architecture.",
+      "winter": "Cool and occasionally rainy, but with many crisp, clear days.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €45",
+        "food": "€12 - €22",
+        "transport": "€3 - €8",
+        "activities": "€5 - €15"
+      },
+      "midRange": {
+        "accommodation": "€75 - €130",
+        "food": "€25 - €55",
+        "transport": "€12 - €28",
+        "activities": "€15 - €40"
+      },
+      "luxury": {
+        "accommodation": "€250 - €500",
+        "food": "€65 - €140",
+        "transport": "€40 - €100",
+        "activities": "€45 - €110"
+      }
+    }
   },
   {
     "id": "tangier",
@@ -302,7 +454,38 @@
         "approx_cost": "150 MAD ($15 USD)",
         "description": "High-speed rail taking you to Rabat & Casablanca in record times."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Beautiful green landscapes and comfortable coastal temperatures. Ideal for sightseeing.",
+      "summer": "Warm and sunny, perfect for beach trips and dining at open-air cafes.",
+      "autumn": "Very pleasant and warm, with fewer tourists. Excellent for walking the Kasbah.",
+      "winter": "Mild but windy and damp. Moody, romantic views of the Strait of Gibraltar.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €35",
+        "food": "€10 - €18",
+        "transport": "€2 - €6",
+        "activities": "€4 - €12"
+      },
+      "midRange": {
+        "accommodation": "€65 - €110",
+        "food": "€22 - €45",
+        "transport": "€10 - €22",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€160 - €300",
+        "food": "€50 - €110",
+        "transport": "€30 - €75",
+        "activities": "€40 - €100"
+      }
+    }
   },
   {
     "id": "rabat",
@@ -352,12 +535,43 @@
         "approx_cost": "6 MAD ($0.65 USD)",
         "description": "Pristine modern tram networks crossing Bouregreg river to Salé."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Perfect, mild temperatures and blooming gardens. Great for historical walks.",
+      "summer": "Warm and breezy, moderated by the Atlantic. A very pleasant coastal summer.",
+      "autumn": "Comfortable temperatures and sunny skies. Ideal for peaceful exploration.",
+      "winter": "Cool and damp with occasional rain, but generally mild and relaxed.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €40",
+        "food": "€10 - €18",
+        "transport": "€2 - €6",
+        "activities": "€4 - €12"
+      },
+      "midRange": {
+        "accommodation": "€75 - €120",
+        "food": "€22 - €45",
+        "transport": "€10 - €22",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€200 - €380",
+        "food": "€55 - €110",
+        "transport": "€30 - €75",
+        "activities": "€40 - €100"
+      }
+    }
   },
   {
     "id": "agadir",
     "name": "Agadir",
-    "arabic_name": "أكادير",
+    "arabic_name": "أكadير",
     "region": "Souss-Massa",
     "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg/1920px-South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg",
     "suggested_days": 2,
@@ -402,7 +616,39 @@
         "approx_cost": "5 MAD ($0.50 USD)",
         "description": "Bus transit connect to Taghazout and northern beach towns."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Sunny and warm. Wonderful for beach walks and browsing the markets.",
+      "summer": "Hot but tempered by coastal winds. Perfect for water sports and surfing.",
+      "autumn": "Warm, sunny, and calm. The best time for relaxing by the ocean.",
+      "winter": "Mild and sunny. Excellent winter escape with pleasant daytime temperatures.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€15 - €30",
+        "food": "€8 - €16",
+        "transport": "€2 - €5",
+        "activities": "€5 - €15"
+      },
+      "midRange": {
+        "accommodation": "€55 - €95",
+        "food": "€18 - €38",
+        "transport": "€8 - €18",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€180 - €320",
+        "food": "€45 - €95",
+        "transport": "€25 - €65",
+        "activities": "€40 - €95"
+      }
+    }
   },
   {
     "id": "ouarzazate",
@@ -445,14 +691,44 @@
       {
         "type": "Petit Taxi",
         "approx_cost": "15 - 30 MAD ($1.50 - $3 USD)",
-        "description": "Red petit taxis servicing central town areas. Establish flat rates."
+        "description": "Red petit taxis. Always ensure the meter (compteur) is turned on immediately."
       },
       {
         "type": "Grand Taxi",
         "approx_cost": "50 MAD ($5 USD)",
         "description": "Shared sedan vehicle transport towards valleys and Ait Benhaddou."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Mild and sunny desert weather. Great for exploring Ait Benhaddou and movie sets.",
+      "summer": "Scorching hot and dry. Outdoor activities should be limited to early mornings.",
+      "autumn": "Warm days and crisp desert nights. Perfect for sightseeing and photography.",
+      "winter": "Crisp, sunny days but freezing cold nights. Majestic views of snow-capped Atlas peaks.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €35",
+        "food": "€8 - €15",
+        "transport": "€2 - €5",
+        "activities": "€5 - €12"
+      },
+      "midRange": {
+        "accommodation": "€50 - €85",
+        "food": "€18 - €35",
+        "transport": "€8 - €18",
+        "activities": "€15 - €30"
+      },
+      "luxury": {
+        "accommodation": "€130 - €220",
+        "food": "€40 - €85",
+        "transport": "€25 - €60",
+        "activities": "€35 - €80"
+      }
+    }
   },
   {
     "id": "merzouga",
@@ -502,7 +778,37 @@
         "approx_cost": "150 - 300 MAD ($15 - $30 USD)",
         "description": "The timeless desert transit. Walk over sand ridges at sunrise."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Warm and pleasant, though sandstorms can occur. Outstanding for dune trekking.",
+      "summer": "Extremely hot, with temperatures often over 45°C. Unsuitable for outdoor activities.",
+      "autumn": "Sunny, warm days and cool, comfortable nights. The optimal desert camping season.",
+      "winter": "Sunny but cool days and near-freezing nights. Warm desert gear is essential.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€30 - €55",
+        "food": "€9 - €18",
+        "transport": "€10 - €25",
+        "activities": "€10 - €25"
+      },
+      "midRange": {
+        "accommodation": "€80 - €140",
+        "food": "€20 - €40",
+        "transport": "€25 - €50",
+        "activities": "€25 - €55"
+      },
+      "luxury": {
+        "accommodation": "€220 - €400",
+        "food": "€50 - €100",
+        "transport": "€50 - €110",
+        "activities": "€60 - €140"
+      }
+    }
   },
   {
     "id": "meknes",
@@ -552,7 +858,37 @@
         "approx_cost": "100 - 150 MAD ($10 - $15 USD)",
         "description": "A retro carriage ride circling the incredible old city ramparts."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Mild, sunny, and surrounded by green valleys. Perfect for historical excursions.",
+      "summer": "Very hot and dry. Sightseeing is best done early in the day.",
+      "autumn": "Comfortable, pleasant weather returns. Ideal for exploring Roman Volubilis.",
+      "winter": "Cool and occasionally rainy, but with beautiful clear winter afternoons.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €40",
+        "food": "€8 - €15",
+        "transport": "€2 - €5",
+        "activities": "€3 - €10"
+      },
+      "midRange": {
+        "accommodation": "€55 - €95",
+        "food": "€18 - €35",
+        "transport": "€8 - €18",
+        "activities": "€12 - €28"
+      },
+      "luxury": {
+        "accommodation": "€160 - €280",
+        "food": "€40 - €85",
+        "transport": "€25 - €60",
+        "activities": "€30 - €80"
+      }
+    }
   },
   {
     "id": "tetouan",
@@ -602,7 +938,38 @@
         "approx_cost": "20 MAD ($2 USD)",
         "description": "Shared white sedans linking to sandy beaches of Martil and Fnideq."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Beautiful green mountain backdrops and very comfortable, mild weather.",
+      "summer": "Warm and sunny. Perfect for combining medina tours with nearby beach trips.",
+      "autumn": "Mild and pleasant, with tranquil, relaxing streets in the white medina.",
+      "winter": "Cool, damp, and windy, but the white streets retain their clean, crisp charm.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €45",
+        "food": "€8 - €15",
+        "transport": "€2 - €5",
+        "activities": "€3 - €10"
+      },
+      "midRange": {
+        "accommodation": "€65 - €105",
+        "food": "€18 - €35",
+        "transport": "€8 - €18",
+        "activities": "€12 - €28"
+      },
+      "luxury": {
+        "accommodation": "€300 - €550",
+        "food": "€45 - €90",
+        "transport": "€25 - €60",
+        "activities": "€30 - €85"
+      }
+    }
   },
   {
     "id": "alhoceima",
@@ -652,7 +1019,37 @@
         "approx_cost": "200 MAD ($20 USD)",
         "description": "Rent standard fishing boats to tour secret sea cliff coves."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Comfortably warm, surrounded by blossoming green hills. Excellent for hiking.",
+      "summer": "Perfect hot and sunny beach weather. Ideal for swimming in Quemado Cove.",
+      "autumn": "Warm, calm waters and quiet, relaxing beaches. Ideal for a tranquil getaway.",
+      "winter": "Cool and breezy. Excellent for enjoying fresh fish in a peaceful coastal town.",
+      "recommended": [
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €45",
+        "food": "€8 - €16",
+        "transport": "€2 - €5",
+        "activities": "€4 - €12"
+      },
+      "midRange": {
+        "accommodation": "€70 - €115",
+        "food": "€18 - €38",
+        "transport": "€8 - €18",
+        "activities": "€12 - €30"
+      },
+      "luxury": {
+        "accommodation": "€140 - €250",
+        "food": "€45 - €95",
+        "transport": "€25 - €60",
+        "activities": "€35 - €85"
+      }
+    }
   },
   {
     "id": "ifrane",
@@ -702,7 +1099,37 @@
         "approx_cost": "100 MAD ($10 USD)",
         "description": "The perfect green travel alternative to roll down pine-tree lined lanes."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Lush green forests and cool, crisp weather. Ideal for nature walks and picnics.",
+      "summer": "Refreshingly cool and sunny. A fantastic mountain escape from scorching cities.",
+      "autumn": "Golden fall colors and fresh alpine breezes. Great for hiking the national park.",
+      "winter": "Cold and snowy, transforming the town into a winter wonderland perfect for skiing.",
+      "recommended": [
+        "summer",
+        "winter"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€30 - €55",
+        "food": "€10 - €18",
+        "transport": "€2 - €6",
+        "activities": "€5 - €12"
+      },
+      "midRange": {
+        "accommodation": "€65 - €110",
+        "food": "€22 - €42",
+        "transport": "€8 - €20",
+        "activities": "€15 - €35"
+      },
+      "luxury": {
+        "accommodation": "€240 - €420",
+        "food": "€50 - €105",
+        "transport": "€25 - €65",
+        "activities": "€40 - €100"
+      }
+    }
   },
   {
     "id": "dakhla",
@@ -752,7 +1179,38 @@
         "approx_cost": "100 MAD ($10 USD)",
         "description": "Boat shuttles ferry hikers towards Dragon Island and back."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Pleasantly warm and very windy. Ideal for world-class kitesurfing.",
+      "summer": "Warm and breezy, providing a unique desert-meets-ocean climate escape.",
+      "autumn": "Perfect warm weather with calm waters and excellent winds for surfing.",
+      "winter": "Mild and breezy. Great for viewing the white dune under sunny winter skies.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€40 - €70",
+        "food": "€12 - €22",
+        "transport": "€10 - €25",
+        "activities": "€15 - €35"
+      },
+      "midRange": {
+        "accommodation": "€90 - €160",
+        "food": "€25 - €50",
+        "transport": "€20 - €45",
+        "activities": "€35 - €80"
+      },
+      "luxury": {
+        "accommodation": "€220 - €380",
+        "food": "€55 - €115",
+        "transport": "€45 - €90",
+        "activities": "€80 - €180"
+      }
+    }
   },
   {
     "id": "eljadida",
@@ -802,6 +1260,37 @@
         "approx_cost": "50 MAD ($5 USD)",
         "description": "A beautiful old carriage ride along coastal harbors and medina."
       }
-    ]
+    ],
+    "bestTime": {
+      "spring": "Mild, sunny, and very comfortable for exploring the old Portuguese ramparts.",
+      "summer": "Warm beach weather, cooled by a lovely coastal breeze. Lively atmosphere.",
+      "autumn": "Comfortable temperatures and calm seas. Ideal for historical walks.",
+      "winter": "Cool and breezy, with dramatic Atlantic waves crash against the ramparts.",
+      "recommended": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€25 - €45",
+        "food": "€9 - €16",
+        "transport": "€2 - €5",
+        "activities": "€4 - €12"
+      },
+      "midRange": {
+        "accommodation": "€60 - €100",
+        "food": "€18 - €38",
+        "transport": "€8 - €18",
+        "activities": "€12 - €30"
+      },
+      "luxury": {
+        "accommodation": "€200 - €350",
+        "food": "€45 - €95",
+        "transport": "€25 - €60",
+        "activities": "€35 - €85"
+      }
+    }
   }
 ]

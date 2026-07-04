@@ -40,7 +40,25 @@ const translations = {
       "Souss-Massa": "Souss-Massa Region",
       "Draa-Tafilalet": "Draa-Tafilalet Region",
       "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab Region"
-    }
+    },
+    best_time_title: "Best Time to Visit",
+    spring: "Spring",
+    summer: "Summer",
+    autumn: "Autumn",
+    winter: "Winter",
+    recommended: "Recommended",
+    months_spring: "March - May",
+    months_summer: "June - August",
+    months_autumn: "September - November",
+    months_winter: "December - February",
+    budget_estimator_title: "Daily Budget Estimator",
+    budget_estimator_subtitle: "Estimated daily travel costs per person in Euros (€)",
+    col_expense: "Expense Category",
+    row_accommodation: "Accommodation",
+    row_food: "Food & Dining",
+    row_transport: "Local Transport",
+    row_activities: "Activities & Sightseeing",
+    row_total: "Total"
   },
   fr: {
     back_home: "Retour",
@@ -80,7 +98,25 @@ const translations = {
       "Souss-Massa": "Souss-Massa",
       "Draa-Tafilalet": "Drâa-Tafilalet",
       "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab"
-    }
+    },
+    best_time_title: "Meilleure Période pour Visiter",
+    spring: "Printemps",
+    summer: "Été",
+    autumn: "Automne",
+    winter: "Hiver",
+    recommended: "Recommandé",
+    months_spring: "Mars - Mai",
+    months_summer: "Juin - Août",
+    months_autumn: "Septembre - Novembre",
+    months_winter: "Décembre - Février",
+    budget_estimator_title: "Estimateur de Budget Quotidien",
+    budget_estimator_subtitle: "Coûts quotidiens estimés par personne en Euros (€)",
+    col_expense: "Catégorie de Dépense",
+    row_accommodation: "Hébergement",
+    row_food: "Restauration",
+    row_transport: "Transports Locaux",
+    row_activities: "Activités & Loisirs",
+    row_total: "Total"
   }
 };
 
@@ -104,7 +140,13 @@ const localizedCityData = {
         { type: "Petit Taxi", approx_cost: "20 - 50 MAD (2 - 5 USD)", description: "Petits taxis de couleur beige idéaux pour se déplacer rapidement. Activez le compteur." },
         { type: "Calèche Traditionnelle", approx_cost: "120 - 200 MAD (12 - 20 USD)/h", description: "Une promenade romantique et historique entourant les remparts de la Médina." },
         { type: "Bus ALSA", approx_cost: "4 MAD (0.40 USD)", description: "Trajets de transports publics reliant la Médina à Guéliz et Majorelle." }
-      ]
+      ],
+      bestTime: {
+        spring: "Journées douces et soirées fraîches, jardins en fleurs. Idéal pour les visites.",
+        summer: "Très chaud et sec, dépassant souvent 40°C. Privilégiez les visites tôt le matin ou tard le soir.",
+        autumn: "Agréablement chaud et ensoleillé. Excellent pour les balades et festivals culturels.",
+        winter: "Journées fraîches sous un grand soleil, mais les nuits sont froides. Parfait pour les petits budgets."
+      }
     }
   },
   chefchaouen: {
@@ -126,7 +168,13 @@ const localizedCityData = {
         { type: "Petit Taxi", approx_cost: "15 - 30 MAD (1.50 - 3 USD)", description: "Taxis bleus abordables circulant dans toute la ville et desservant les hauteurs du Rif." },
         { type: "Minibus Partagé (Grand Taxi)", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Navettes de transport partagé à tarif fixe très pratiques pour explorer le Rif." },
         { type: "Lignes CTM", approx_cost: "45 MAD (4.50 USD)", description: "Service d'autocars confortables et réguliers desservant Fès, Tanger et Tétouan." }
-      ]
+      ],
+      bestTime: {
+        spring: "Collines verdoyantes et douces journées ensoleillées. Idéal pour la randonnée dans le Rif.",
+        summer: "Chaud et agréable, offrant une échappée fraîche par rapport aux plaines intérieures.",
+        autumn: "Climat doux avec moins de touristes. Superbe pour explorer la ville dans le calme.",
+        winter: "Froid et souvent pluvieux avec parfois de la neige. Prévoir des vêtements chauds."
+      }
     }
   },
   fez: {
@@ -148,7 +196,13 @@ const localizedCityData = {
         { type: "Petit Taxi", approx_cost: "15 - 35 MAD (1.50 - 3.50 USD)", description: "Taxis rouges très compacts reliant l'ancienne et la nouvelle ville de Fès." },
         { type: "Bus National (CTM)", approx_cost: "100 - 150 MAD (10 - 15 USD)", description: "Réseau national d'autobus tout confort desservant l'ensemble des cités royales." },
         { type: "Trains ONCF", approx_cost: "90 - 140 MAD (9 - 14 USD)", description: "Réseau ferroviaire direct très confortable de la gare de Fès vers Meknès et Rabat." }
-      ]
+      ],
+      bestTime: {
+        spring: "Délicieusement doux et ensoleillé. Idéal pour parcourir les milliers de ruelles de la médina.",
+        summer: "Chaleur intense et sèche. À éviter pour les longues marches en plein soleil.",
+        autumn: "Le retour de températures agréables. Fantastique pour les circuits culturels.",
+        winter: "Frais et parfois humide, mais les belles après-midis ensoleillées sont fréquentes."
+      }
     }
   },
   essaouira: {
@@ -170,7 +224,13 @@ const localizedCityData = {
         { type: "Petit Taxi", approx_cost: "7 - 15 MAD (0.70 - 1.50 USD)", description: "Petits taxis bleus très abordables pour tous vos déplacements urbains." },
         { type: "Autocar Supratours", approx_cost: "80 - 120 MAD (8 - 12 USD)", description: "Lignes de bus rapides et climatisées assurant des navettes quotidiennes vers Marrakech." },
         { type: "Calèche Traditionnelle", approx_cost: "80 - 120 MAD (8 - 12 USD)/h", description: "Promenades à cheval pittoresques le long de la grande plage et de la promenade maritime." }
-      ]
+      ],
+      bestTime: {
+        spring: "Agréablement doux mais venteux. Idéal pour flâner sur la plage et les remparts.",
+        summer: "Doux et venté, offrant un refuge idéal contre les fortes chaleurs de l'intérieur.",
+        autumn: "Ensoleillé avec des vents apaisés. Parfait pour admirer l'océan et déguster du poisson frais.",
+        winter: "Doux et humide avec quelques tempêtes atlantiques. Les paysages marins y sont spectaculaires."
+      }
     }
   }
 };
@@ -194,7 +254,7 @@ async function initCityDetail() {
   const cityId = urlParams.get('id') || 'marrakech'; 
 
   try {
-    const response = await fetch('/data/cities.json');
+    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`Failed to load cities.json database file: ${response.statusText}`);
     }
@@ -444,11 +504,70 @@ function renderCityProfile() {
   renderTabPlacesContent();
   renderTabHotelsContent();
   renderTabTransitContent();
+  renderBudgetEstimator();
+  renderBestTimeContent();
 
   // Refresh Lucide Icons inside the new views
   if (window.lucide) {
     window.lucide.createIcons();
   }
+}
+
+// 0. Renders the Best Time to Visit section (4 season cards in a grid)
+function renderBestTimeContent() {
+  const container = document.getElementById('seasons-grid');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const bestTime = activeCityData.bestTime;
+  if (!bestTime) {
+    const el = document.getElementById('best-time-section');
+    if (el) el.style.display = 'none';
+    return;
+  } else {
+    const el = document.getElementById('best-time-section');
+    if (el) el.style.display = 'block';
+  }
+
+  const titleEl = document.getElementById('lbl-best-time-title');
+  if (titleEl) titleEl.textContent = t('best_time_title');
+
+  const seasons = ['spring', 'summer', 'autumn', 'winter'];
+  const seasonIcons = {
+    spring: 'sprout',
+    summer: 'sun',
+    autumn: 'leaf',
+    winter: 'snowflake'
+  };
+
+  seasons.forEach(season => {
+    let desc = bestTime[season];
+    if (currentLang === 'fr') {
+      if (localizedCityData[activeCityData.id]?.fr?.bestTime?.[season]) {
+        desc = localizedCityData[activeCityData.id].fr.bestTime[season];
+      }
+    }
+
+    const isRec = bestTime.recommended && bestTime.recommended.includes(season);
+
+    const card = document.createElement('div');
+    card.className = `season-card ${isRec ? 'recommended-card' : ''}`;
+
+    card.innerHTML = `
+      <div class="season-header">
+        <div class="season-badge-row">
+          ${isRec ? `<span class="season-rec-badge">${t('recommended')}</span>` : ''}
+        </div>
+        <div class="season-name-row">
+          <i class="season-icon" data-lucide="${seasonIcons[season]}" style="width: 22px; height: 22px;"></i>
+          <h4 class="season-name">${t(season)}</h4>
+        </div>
+        <span class="season-months">${t('months_' + season)}</span>
+      </div>
+      <p class="season-desc">${desc}</p>
+    `;
+    container.appendChild(card);
+  });
 }
 
 // 1. Renders the Top Places view of Attractions (with French support if active)
@@ -482,6 +601,109 @@ function renderTabPlacesContent() {
     `;
     container.appendChild(card);
   });
+}
+
+function renderBudgetEstimator() {
+  const container = document.getElementById('budget-estimator-section');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const est = activeCityData.budgetEstimate;
+  if (!est) {
+    container.style.display = 'none';
+    return;
+  }
+  container.style.display = 'block';
+
+  // Helper to parse "€15 - €30" or "15 - 30"
+  const parseRange = (str) => {
+    if (!str) return { min: 0, max: 0 };
+    const numbers = str.replace(/[^0-9\-]/g, '').split('-');
+    const min = parseInt(numbers[0]) || 0;
+    const max = parseInt(numbers[1]) || min || 0;
+    return { min, max };
+  };
+
+  // Helper to format ranges nicely with €
+  const formatRange = (min, max) => {
+    if (min === max) return `€${min}`;
+    return `€${min} - €${max}`;
+  };
+
+  // Extract values
+  const rows = [
+    { key: 'row_accommodation', field: 'accommodation' },
+    { key: 'row_food', field: 'food' },
+    { key: 'row_transport', field: 'transport' },
+    { key: 'row_activities', field: 'activities' }
+  ];
+
+  // Sum calculations
+  let budgetTotalMin = 0, budgetTotalMax = 0;
+  let midTotalMin = 0, midTotalMax = 0;
+  let luxTotalMin = 0, luxTotalMax = 0;
+
+  rows.forEach(row => {
+    const budgetVal = parseRange(est.budget?.[row.field]);
+    budgetTotalMin += budgetVal.min;
+    budgetTotalMax += budgetVal.max;
+
+    const midVal = parseRange(est.midRange?.[row.field]);
+    midTotalMin += midVal.min;
+    midTotalMax += midVal.max;
+
+    const luxVal = parseRange(est.luxury?.[row.field]);
+    luxTotalMin += luxVal.min;
+    luxTotalMax += luxVal.max;
+  });
+
+  // Table HTML construction
+  let tableRowsHtml = '';
+  rows.forEach(row => {
+    tableRowsHtml += `
+      <tr>
+        <td style="font-weight: 500;">${t(row.key)}</td>
+        <td>${est.budget?.[row.field] || '—'}</td>
+        <td>${est.midRange?.[row.field] || '—'}</td>
+        <td>${est.luxury?.[row.field] || '—'}</td>
+      </tr>
+    `;
+  });
+
+  // Total Row Html
+  tableRowsHtml += `
+    <tr class="total-row">
+      <td>${t('row_total')}</td>
+      <td>${formatRange(budgetTotalMin, budgetTotalMax)}</td>
+      <td>${formatRange(midTotalMin, midTotalMax)}</td>
+      <td>${formatRange(luxTotalMin, luxTotalMax)}</td>
+    </tr>
+  `;
+
+  container.className = 'budget-estimator-section';
+  container.innerHTML = `
+    <h3 class="budget-estimator-title">
+      <i data-lucide="calculator" style="width: 20px; height: 20px; color: var(--color-terracotta);"></i>
+      <span>${t('budget_estimator_title')}</span>
+    </h3>
+    <p class="budget-estimator-desc">${t('budget_estimator_subtitle')}</p>
+    
+    <div class="budget-table-wrapper">
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th>${t('col_expense')}</th>
+            <th>${t('budget')}</th>
+            <th>${t('mid_range')}</th>
+            <th>${t('luxury')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${tableRowsHtml}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 // 2. Renders the Accommodations options (with French support if active)

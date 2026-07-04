@@ -141,7 +141,7 @@ if (document.readyState === 'loading') {
 
 async function initCitiesDirectory() {
   try {
-    const response = await fetch('/data/cities.json');
+    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`Failed to read cities.json file data: ${response.statusText}`);
     }

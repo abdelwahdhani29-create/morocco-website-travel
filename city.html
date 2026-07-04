@@ -318,6 +318,94 @@
         color: var(--color-gold);
       }
 
+      /* Daily Budget Estimator Section */
+      .budget-estimator-section {
+        margin-bottom: 40px;
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 24px;
+        box-sizing: border-box;
+      }
+      .budget-estimator-title {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .budget-estimator-desc {
+        font-family: var(--font-sans);
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        margin-bottom: 20px;
+      }
+      .budget-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 4px;
+        border-radius: var(--border-radius-sm);
+        border: 1px solid var(--color-border);
+        background-color: var(--color-cream);
+      }
+      .budget-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        min-width: 500px;
+      }
+      .budget-table th {
+        background-color: var(--color-sand);
+        color: var(--color-charcoal-dark);
+        font-family: var(--font-sans);
+        font-weight: 700;
+        font-size: 14px;
+        padding: 12px 16px;
+        border-bottom: 2px solid var(--color-border);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        white-space: nowrap;
+      }
+      .budget-table td {
+        font-family: var(--font-sans);
+        font-size: 14px;
+        color: var(--color-charcoal);
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--color-border);
+        white-space: nowrap;
+      }
+      .budget-table tr:last-child td {
+        border-bottom: none;
+      }
+      .budget-table tr:hover td {
+        background-color: rgba(245, 242, 238, 0.5);
+      }
+      .budget-table tr.total-row td {
+        font-weight: 700;
+        background-color: var(--color-sand);
+        border-top: 2px solid var(--color-border);
+        color: var(--color-terracotta-dark);
+      }
+      
+      /* Mobile optimization rules for budget table */
+      @media (max-width: 640px) {
+        .budget-estimator-section {
+          padding: 16px;
+        }
+        .budget-table td, .budget-table th {
+          padding: 10px 12px;
+          font-size: 13px;
+        }
+        .budget-table {
+          min-width: 450px;
+        }
+      }
+
       /* Transit styling */
       .transit-tier-deck {
         display: flex;
@@ -425,6 +513,159 @@
           font-size: 14px !important;
         }
       }
+
+      /* Best Time to Visit Section Styles */
+      .best-time-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .best-time-title {
+        font-family: var(--font-serif);
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .seasons-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2x2 on mobile */
+        gap: 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      @media (min-width: 768px) {
+        .seasons-grid {
+          grid-template-columns: repeat(4, 1fr); /* 4 columns in a single row on tablet/desktop */
+          gap: 20px;
+        }
+      }
+      .season-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: relative;
+        transition: var(--transition-smooth);
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 220px; /* Touch target minimum height / card size consistency */
+      }
+      .season-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--color-terracotta);
+        box-shadow: 0 10px 30px rgba(42, 33, 30, 0.05);
+      }
+      .season-card.recommended-card {
+        border-color: var(--color-gold);
+        background: linear-gradient(145deg, var(--color-cream) 0%, var(--color-gold-light) 100%);
+      }
+      .season-card.recommended-card:hover {
+        border-color: var(--color-terracotta);
+      }
+      .season-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 12px;
+        position: relative;
+      }
+      .season-badge-row {
+        height: 24px; /* Fix height to avoid overlap and ensure consistent spacing */
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+      }
+      .season-rec-badge {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        background: var(--color-gold-light);
+        color: var(--color-gold-dark);
+        border: 1px solid rgba(194, 154, 56, 0.3);
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        height: 20px;
+      }
+      .season-name-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .season-icon {
+        color: var(--color-terracotta);
+        flex-shrink: 0;
+      }
+      .season-name {
+        font-family: var(--font-serif);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        line-height: 1.2;
+      }
+      .season-months {
+        font-family: var(--font-sans);
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color-charcoal-light);
+        background: rgba(82, 71, 67, 0.05);
+        padding: 2px 6px;
+        border-radius: 4px;
+        width: fit-content;
+        margin-top: 4px;
+      }
+      .season-desc {
+        font-family: var(--font-sans);
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        line-height: 1.5;
+        margin-top: auto; /* Push to bottom if header is smaller */
+        word-break: break-word;
+      }
+      
+      /* Mobile optimization adjustments for 320px screens */
+      @media (max-width: 480px) {
+        .best-time-title {
+          font-size: 20px;
+        }
+        .seasons-grid {
+          gap: 10px;
+        }
+        .season-card {
+          padding: 12px;
+          min-height: 190px;
+        }
+        .season-name {
+          font-size: 15px;
+        }
+        .season-months {
+          font-size: 10px;
+          padding: 1px 4px;
+        }
+        .season-desc {
+          font-size: 11px;
+          line-height: 1.4;
+        }
+        .season-rec-badge {
+          font-size: 9px;
+          padding: 1px 6px;
+          height: 18px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -521,6 +762,20 @@
               <!-- Inline JavaScript dynamic rendering -->
             </div>
           </div>
+
+          <!-- Daily Budget Estimator Section (Always visible) -->
+          <div id="budget-estimator-section" style="margin-top: 40px;"></div>
+
+          <!-- BEST TIME TO VISIT SECTION (4 Season cards in grid) -->
+          <section class="best-time-section" id="best-time-section">
+            <h3 class="best-time-title">
+              <i data-lucide="compass" style="width: 24px; height: 24px; color: var(--color-terracotta);"></i>
+              <span id="lbl-best-time-title">Best Time to Visit</span>
+            </h3>
+            <div class="seasons-grid" id="seasons-grid">
+              <!-- Dynamic population via js/city.js based on selected city details -->
+            </div>
+          </section>
 
           <!-- Ad Slot 2: Below Tab Content -->
           <div class="ad-slot" style="width:100%;min-height:90px;margin:20px 0 0 0;"></div>

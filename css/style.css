@@ -2572,4 +2572,69 @@ body {
   }
 }
 
+/* Global Daily Budget Estimator Section */
+.budget-estimator-section {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  background: var(--color-cream);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 24px;
+  box-sizing: border-box;
+}
+.budget-estimator-title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.budget-estimator-desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-charcoal-light);
+  margin-bottom: 20px;
+}
+.budget-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 4px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-cream);
+}
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+  min-width: 480px;
+}
+.budget-table th {
+  background: var(--color-gold-light);
+  color: var(--color-charcoal);
+  font-weight: 700;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--color-border);
+}
+.budget-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: var(--color-charcoal);
+}
+.budget-table tr:last-child td {
+  border-bottom: none;
+}
+.budget-table tr.total-row td {
+  font-weight: 700;
+  background: rgba(228, 110, 68, 0.08);
+  color: var(--color-terracotta);
+  border-top: 2px solid var(--color-border);
+}
+
+
 

@@ -744,7 +744,7 @@
 
         // Fetch city profiles data
         try {
-          const response = await fetch('/data/cities.json');
+          const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
           if (response.ok) {
             databaseCities = await response.json();
           } else {

@@ -173,7 +173,7 @@ function showSkeletons(gridId, count = 3) {
 
 async function initApp() {
   try {
-    const response = await fetch('/data/cities.json');
+    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`Failed to load cities.json: ${response.statusText}`);
     }
@@ -534,6 +534,9 @@ function renderCityDashboard() {
     });
   }
 
+  // Render Daily Budget Estimator
+  renderBudgetEstimator();
+
   // Render Itinerary Sequence
   renderItineraryTimeline();
   
@@ -623,6 +626,103 @@ function renderItineraryTimeline() {
     `;
     container.appendChild(el);
   });
+}
+
+function renderBudgetEstimator() {
+  const container = document.getElementById('budget-estimator-section');
+  if (!container || !activeCityData) return;
+  container.innerHTML = '';
+
+  const est = activeCityData.budgetEstimate;
+  if (!est) {
+    container.style.display = 'none';
+    return;
+  }
+  container.style.display = 'block';
+
+  const parseRange = (str) => {
+    if (!str) return { min: 0, max: 0 };
+    const numbers = str.replace(/[^0-9\-]/g, '').split('-');
+    const min = parseInt(numbers[0]) || 0;
+    const max = parseInt(numbers[1]) || min || 0;
+    return { min, max };
+  };
+
+  const formatRange = (min, max) => {
+    if (min === max) return `€${min}`;
+    return `€${min} - €${max}`;
+  };
+
+  const rows = [
+    { key: 'row_accommodation', field: 'accommodation' },
+    { key: 'row_food', field: 'food' },
+    { key: 'row_transport', field: 'transport' },
+    { key: 'row_activities', field: 'activities' }
+  ];
+
+  let budgetTotalMin = 0, budgetTotalMax = 0;
+  let midTotalMin = 0, midTotalMax = 0;
+  let luxTotalMin = 0, luxTotalMax = 0;
+
+  rows.forEach(row => {
+    const budgetVal = parseRange(est.budget?.[row.field]);
+    budgetTotalMin += budgetVal.min;
+    budgetTotalMax += budgetVal.max;
+
+    const midVal = parseRange(est.midRange?.[row.field]);
+    midTotalMin += midVal.min;
+    midTotalMax += midVal.max;
+
+    const luxVal = parseRange(est.luxury?.[row.field]);
+    luxTotalMin += luxVal.min;
+    luxTotalMax += luxVal.max;
+  });
+
+  let tableRowsHtml = '';
+  rows.forEach(row => {
+    tableRowsHtml += `
+      <tr>
+        <td style="font-weight: 500;">${t(row.key)}</td>
+        <td>${est.budget?.[row.field] || '—'}</td>
+        <td>${est.midRange?.[row.field] || '—'}</td>
+        <td>${est.luxury?.[row.field] || '—'}</td>
+      </tr>
+    `;
+  });
+
+  tableRowsHtml += `
+    <tr class="total-row">
+      <td>${t('row_total')}</td>
+      <td>${formatRange(budgetTotalMin, budgetTotalMax)}</td>
+      <td>${formatRange(midTotalMin, midTotalMax)}</td>
+      <td>${formatRange(luxTotalMin, luxTotalMax)}</td>
+    </tr>
+  `;
+
+  container.className = 'budget-estimator-section';
+  container.innerHTML = `
+    <h3 class="budget-estimator-title">
+      <i data-lucide="calculator" style="width: 20px; height: 20px; color: var(--color-terracotta);"></i>
+      <span>${t('budget_estimator_title')}</span>
+    </h3>
+    <p class="budget-estimator-desc">${t('budget_estimator_subtitle')}</p>
+    
+    <div class="budget-table-wrapper">
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th>${t('col_expense')}</th>
+            <th>${t('budget')}</th>
+            <th>${t('mid_range')}</th>
+            <th>${t('luxury')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${tableRowsHtml}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 function setupEventListeners() {

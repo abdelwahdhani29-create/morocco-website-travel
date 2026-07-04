@@ -15,6 +15,14 @@ async function startServer() {
 
   // Hot Module Replacement/Middleware setup with Vite
   if (process.env.NODE_ENV !== "production") {
+    // Support clean/pretty URLs in development mode by rewriting them to .html before passing to Vite
+    app.use((req, res, next) => {
+      if (!req.path.includes(".") && !req.path.endsWith("/")) {
+        req.url = `${req.path}.html${req.url.substring(req.path.length)}`;
+      }
+      next();
+    });
+
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",

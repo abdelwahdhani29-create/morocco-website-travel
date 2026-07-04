@@ -97,16 +97,25 @@ function renderDirectory() {
       categoryEn === selectedCategory.toLowerCase() || 
       categoryFr === selectedCategory.toLowerCase();
 
-    // Search query match (bilingual titles / excerpts)
-    const titleEn = post.title.en.toLowerCase();
-    const titleFr = post.title.fr.toLowerCase();
-    const excerptEn = post.excerpt.en.toLowerCase();
-    const excerptFr = post.excerpt.fr.toLowerCase();
-    const isSearchMatch = !searchQuery || 
-      titleEn.includes(searchQuery.toLowerCase()) || 
-      titleFr.includes(searchQuery.toLowerCase()) || 
-      excerptEn.includes(searchQuery.toLowerCase()) || 
-      excerptFr.includes(searchQuery.toLowerCase());
+    // Search query match (bilingual titles / excerpts / content / categories / author)
+    const q = searchQuery.toLowerCase().trim();
+    const titleEn = (post.title.en || '').toLowerCase();
+    const titleFr = (post.title.fr || '').toLowerCase();
+    const excerptEn = (post.excerpt.en || '').toLowerCase();
+    const excerptFr = (post.excerpt.fr || '').toLowerCase();
+    const contentEn = (post.content.en || '').toLowerCase();
+    const contentFr = (post.content.fr || '').toLowerCase();
+    const authorEn = (post.author.en || '').toLowerCase();
+    const isSearchMatch = !q || 
+      titleEn.includes(q) || 
+      titleFr.includes(q) || 
+      excerptEn.includes(q) || 
+      excerptFr.includes(q) ||
+      contentEn.includes(q) ||
+      contentFr.includes(q) ||
+      categoryEn.includes(q) ||
+      categoryFr.includes(q) ||
+      authorEn.includes(q);
 
     return isCategoryMatch && isSearchMatch;
   });
