@@ -1329,6 +1329,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .transit-item {
@@ -1341,6 +1343,8 @@ header {
   align-items: center;
   gap: 16px;
   transition: var(--transition-smooth);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .transit-item:hover {
@@ -1353,6 +1357,13 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.transit-left > div {
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .transit-icon-avatar {
@@ -1372,12 +1383,16 @@ header {
   font-size: 18px;
   font-weight: 700;
   color: var(--color-charcoal);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .transit-desc {
   font-size: 13px;
   color: var(--color-charcoal-light);
   margin-top: 2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .transit-fare {
@@ -1390,16 +1405,23 @@ header {
   color: var(--color-chefchaouen-dark);
   border: 1px solid rgba(30, 107, 167, 0.15);
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 @media (max-width: 580px) {
   .transit-item {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .transit-left {
+    width: 100%;
   }
   .transit-fare {
     text-align: left;
     width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -1652,6 +1674,8 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
   background-color: rgba(42, 33, 30, 0.98);
   z-index: 9999;
   display: flex;
@@ -2238,7 +2262,7 @@ footer {
 }
 
 /* RESPONSIVE LAYOUT BREAKPOINT */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .desktop-nav {
     display: none;
   }
@@ -2636,5 +2660,472 @@ body {
   border-top: 2px solid var(--color-border);
 }
 
+/* --- COMPREHENSIVE HOME PAGE MOBILE RESPONSIVENESS AUDIT & FIXES (320px - 768px) --- */
+/* Strictly targeted at mobile screens (<= 768px) preserving desktop layout and styling (> 1024px) */
 
+/* 1. Global Viewport & Horizontal Overflow Prevention */
+@media (max-width: 768px) {
+  html, body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
 
+  *, *::before, *::after {
+    box-sizing: border-box !important;
+  }
+
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. Header & Navigation Adjustments */
+  .header-inner {
+    height: auto !important;
+    min-height: 70px !important;
+    padding: 10px 16px !important;
+    flex-wrap: wrap !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  .logo-section {
+    max-width: calc(100% - 60px) !important;
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+  }
+
+  .app-logo {
+    font-size: 22px !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
+  }
+
+  .logo-sub {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    font-size: 10px !important;
+  }
+
+  .mobile-nav-bar {
+    gap: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 3. Welcome Hero Section */
+  .global-hero-inner {
+    padding: 36px 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .global-hero-tagline {
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+
+  .global-hero-title {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+
+  .global-hero-title span {
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+    display: inline-block !important;
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+
+  .global-hero-desc {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+
+  .cta-group {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .search-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 6px 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .search-input {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 4. Section Headers */
+  .featured-section-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .featured-section-title {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+    word-wrap: break-word !important;
+  }
+
+  /* 5. Featured Cities & Blog Grids (Switching to 1 column on <= 640px below to prevent card clipping) */
+  .featured-grid, #featured-cities-grid, .attractions-list, #attractions-grid, .dir-grid, #cities-directory-grid {
+    gap: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .city-card, .attraction-card, .dir-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* Override previous nowrap rules that clipped city names on mobile */
+  .city-card-name, .dir-card-name, .attraction-name,
+  .city-card-region, .dir-card-region, .attraction-desc {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: 100% !important;
+  }
+
+  /* 6. City Explorer Header Banner */
+  .hero-cover {
+    height: auto !important;
+    min-height: 240px !important;
+    padding: 24px 0 !important;
+  }
+
+  .hero-content {
+    padding: 20px 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-title {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    word-wrap: break-word !important;
+  }
+
+  .hero-title-arabic {
+    font-size: 36px !important;
+    word-wrap: break-word !important;
+  }
+
+  /* 7. Dashboard Grids & Sidebar Panels */
+  .explorer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .sidebar-panel, .main-stage {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .card-frame, .hotel-card, .itinerary-board {
+    padding: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .meta-item {
+    padding: 12px !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .meta-label, .meta-value {
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+  }
+
+  /* 8. Currency Calculator */
+  .calc-input-wrapper {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 8px 12px !important;
+  }
+
+  .calc-input {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  /* 9. Accommodations Section */
+  .hotel-toggle-row {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 6px !important;
+  }
+
+  .hotel-toggle-btn {
+    flex: 1 1 auto !important;
+    text-align: center !important;
+    padding: 8px 12px !important;
+  }
+
+  .hotel-display {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  .hotel-amenity {
+    flex-wrap: wrap !important;
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .hotel-price-badge {
+    width: 100% !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 10. Daily Budget Estimator Table (Eliminating horizontal scroll completely) */
+  .budget-estimator-section {
+    padding: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .budget-table-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: visible !important;
+  }
+
+  .budget-table {
+    min-width: 0 !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    box-sizing: border-box !important;
+  }
+
+  .budget-table th, .budget-table td {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    padding: 8px 4px !important;
+    font-size: 11px !important;
+  }
+
+  /* 11. Transportation Hub */
+  .transit-item {
+    padding: 16px !important;
+    gap: 12px !important;
+    box-sizing: border-box !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  .transit-left {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .transit-left > div {
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+    width: 100% !important;
+  }
+
+  .transit-fare {
+    width: 100% !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 12. Route Itinerary Timeline */
+  .timeline-step {
+    gap: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .timeline-content {
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+    width: 100% !important;
+  }
+
+  /* 13. Footer & Trust Section */
+  .footer-trust-section {
+    padding: 0 16px 32px 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-trust-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding: 0 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-col {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-bottom-container {
+    padding: 0 16px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Specific single-column layout for cards under 640px viewport */
+@media (max-width: 640px) {
+  .featured-grid, #featured-cities-grid, .attractions-list, #attractions-grid, .dir-grid, #cities-directory-grid, #homepage-blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #btn-view-dedicated {
+    white-space: normal !important;
+    text-align: center !important;
+    height: auto !important;
+    padding: 12px 16px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 8px 12px !important;
+  }
+
+  .app-logo {
+    font-size: 20px !important;
+  }
+
+  .logo-sub {
+    font-size: 9px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .global-hero-title {
+    font-size: 26px !important;
+  }
+
+  .global-hero-title span {
+    font-size: 30px !important;
+    display: block !important;
+    margin-right: 0 !important;
+  }
+
+  .global-hero-desc {
+    font-size: 13px !important;
+  }
+
+  .search-container {
+    padding: 6px 10px !important;
+  }
+
+  .search-input {
+    font-size: 13px !important;
+  }
+
+  .hero-title {
+    font-size: 24px !important;
+  }
+
+  .hero-title-arabic {
+    font-size: 32px !important;
+  }
+
+  .card-frame, .hotel-card, .itinerary-board {
+    padding: 16px !important;
+  }
+
+  .cookie-banner {
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    padding: 14px !important;
+  }
+
+  .cookie-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .cookie-actions a, .cookie-actions button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-logo {
+    font-size: 18px !important;
+  }
+
+  .lang-toggle-wrapper-mobile {
+    height: 32px !important;
+  }
+
+  .lang-btn {
+    padding: 2px 6px !important;
+    font-size: 10px !important;
+  }
+
+  .global-hero-title {
+    font-size: 22px !important;
+  }
+
+  .global-hero-title span {
+    font-size: 24px !important;
+  }
+
+  .btn-primary-ai, .btn-secondary {
+    padding: 10px 16px !important;
+    font-size: 12px !important;
+  }
+}

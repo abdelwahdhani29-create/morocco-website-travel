@@ -1,6 +1,7 @@
 // GoMoroccoAI Blog Articles Registry (Bilingual English & French)
 // Modulized and expanded for optimal performance and SEO compliance.
 
+import { postMoroccoBrokeRecords2026 } from "./posts/morocco-broke-tourism-records-2026.js";
 import { postWorldCup2026 } from "./posts/world-cup-2026.js";
 import { postIsMoroccoSafe2026 } from "./posts/is-morocco-safe-2026.js";
 import { postBestTime } from "./posts/best-time.js";
@@ -13,6 +14,7 @@ import { postRabat } from "./posts/rabat.js";
 import { postSafetyEtiquette } from "./posts/safety-etiquette.js";
 
 export const blogPosts = [
+  postMoroccoBrokeRecords2026,
   postWorldCup2026,
   postIsMoroccoSafe2026,
   postSafetyEtiquette,
