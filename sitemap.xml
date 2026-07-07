@@ -142,6 +142,12 @@
 
   <!-- Individual Blog Articles for Search Engine Indexing -->
   <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-travel-tips-30-things-to-know</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gomoroccoai.com/blog.html?id=morocco-broke-tourism-records-2026</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
