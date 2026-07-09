@@ -36,6 +36,36 @@ const translations = {
     festivals_text1: "Throughout Morocco, seasonal festivals (Moussems) commemorate harvests, historic dates, and local saints, turning historical town squares into active canvases of musical expression, dance, and poetry.",
     festivals_text2: "Major events include the fragrant Rose Festival in the desert valleys of Kelaat M'gouna, the spiritual Gnaoua World Music Festival in windswept Essaouira, and legendary, explosive Tbourida (Fantasia) displays—where synchronised riders in white jellabas raise muzzle-loading rifles to the sky and gallop at breakneck speed, unleashing a simultaneous roar of gunpowder that honors cavalry ancestors.",
 
+    // New Category 6: Moroccan Music & Instruments
+    music_title: "Moroccan Music & Instruments",
+    music_subtitle: "Soulful Rhythms of Desert & Medina",
+    music_text1: "Moroccan music is a powerful auditory map of the country’s diverse history. It ranges from the spiritual, hypnotic trance rhythms of Gnawa (brought by sub-Saharan ancestors) to the sophisticated, classical Al-Ala orchestral strings inherited from Moorish Andalusia.",
+    music_text2: "Traditional instruments form the heartbeat of these melodies. Master luthiers craft the wooden Oud (a fretless lute), the Hajhouj or Guembri (a three-stringed skin-covered bass lute played by Gnawa maâlems), the metallic Qraqeb cymbals, and various hand drums like the Bendir and Darbuka, creating an acoustic heritage that resonates across generations.",
+
+    // New Category 7: Moroccan Hospitality & Tea Ceremony
+    hospitality_title: "Hospitality & Tea Ceremony",
+    hospitality_subtitle: "An Unbending Sacred Ritual of Welcome",
+    hospitality_text1: "In Morocco, hospitality is not merely a polite gesture; it is a sacred cultural duty and an art form. Guests are welcomed with open arms, genuine warmth, and a generosity that makes no distinction between family, friends, or weary travelers.",
+    hospitality_text2: "At the heart of this welcoming ritual is the famous Moroccan Mint Tea, affectionately known as 'Moroccan Whiskey'. Brewed with green gunpowder tea, fresh spearmint leaves, and generous sugar, it is ceremoniously poured from silver teapots held high above small decorated glasses. The resulting layer of crown-like foam (Rezza) is a sign of respect and warm welcome to the guest.",
+
+    // New Category 8: Traditional Souks & Artisan Markets
+    souks_title: "Traditional Souks & Artisan Markets",
+    souks_subtitle: "A Sensory Maze of Living Masterpieces",
+    souks_text1: "The historic medinas of Morocco are centered around vibrant 'souks'—labyrinthine markets organized by craft guilds that have operated for over a thousand years. Wandering through these alleyways is a journey back in time, alive with the sounds of hammers on brass and the scent of cedar and spices.",
+    souks_text2: "Each souk specializes in a distinct craft: shimmering copper and brass lanterns in the metalworking souk, colorful hand-dyed wool skeins drying in the sun, fine leather goods, and intricate zellige clay tiles. These markets are not just tourist attractions, but highly structured ecosystems where master artisans (Maâlems) transmit centuries-old skills to the next generation.",
+
+    // New Category 9: Moroccan Weddings & Family Traditions
+    weddings_title: "Moroccan Weddings & Family",
+    weddings_subtitle: "Luxurious Multi-Day Celebrations of Love",
+    weddings_text1: "Family is the cornerstone of Moroccan society, and nowhere is this more beautifully demonstrated than in the grand celebrations of marriage. A traditional Moroccan wedding is a legendary, multi-day feast of music, gastronomy, and high-fashion couture that unites families and communities.",
+    weddings_text2: "The ceremony features ancient steps, beginning with the pre-wedding Henna night where the bride's hands and feet are adorned with intricate protective patterns. On the main night, the bride wears up to seven different traditional kaftans representing various regions of Morocco. She is carried majestically on an ornate platform (Ammariya) by male relatives, while guests dance to traditional love songs under glittering chandeliers.",
+
+    // New Category 10: Storytelling, Halqa & Folk Traditions
+    folklore_title: "Storytelling, Halqa & Folklore",
+    folklore_subtitle: "The Living Library of Jemaa el-Fnaa",
+    folklore_text1: "Morocco possesses an exceptionally rich oral tradition, where history, moral philosophies, and magical legends are kept alive through spoken word. The pinnacle of this art is the 'Halqa' (circle gathering), an ancient form of street theater performed in public squares, most famously Marrakech's Jemaa el-Fnaa.",
+    folklore_text2: "In these circles, master storytellers (Hlayquia) command crowds with dramatic tales from the Arabian Nights, historical epics, and local folklore. Accompanied by musicians, acrobats, and dancers, they transform public spaces into interactive theaters, representing a UNESCO-recognized Masterpiece of the Oral and Intangible Heritage of Humanity.",
+
     // Interactive Proverb section
     proverbs_header: "Traditional Wisdom & Proverbs",
     proverbs_subheader: "Tap below for a timeless spark of Moroccan philosophical guidance",
@@ -78,6 +108,36 @@ const translations = {
     festivals_subtitle: "Les Rythmes Vibrants des Célébrations",
     festivals_text1: "À travers tout le pays, de nombreux festivals saisonniers (Moussems) fêtent les moissons, l'histoire ou les traditions locales, transformant les places publiques en scènes de musique, de danse et d'art oratoire authentiques.",
     festivals_text2: "Parmi les événements majeurs figurent la Fête des Roses dans la vallée saharienne de Kelaat M'gouna, le Festival de musique Gnaoua d'Essaouira et les spectaculaires démonstrations de Tbourida (Fantasia) — où des cavaliers synchronisés en djellabas blanches s'élancent en galop effréné avant de tirer en l'air au même instant un coup de fusil à poudre noire.",
+
+    // New Category 6: Moroccan Music & Instruments
+    music_title: "Musique Marocaine & Instruments",
+    music_subtitle: "Rythmes Envoûtants du Désert et des Médinas",
+    music_text1: "La musique marocaine est une véritable carte sonore retraçant la riche histoire du pays. Elle s'étend des rythmes hypnotiques et spirituels de la musique Gnaoua (héritée des ancêtres subsahariens) aux mélodies orchestrales sophistiquées de l'Al-Ala, legs de l'Andalousie maure.",
+    music_text2: "Les instruments traditionnels constituent le cœur battant de ces mélodies. Les maîtres luthiers façonnent l'Oud en bois de cèdre (un luth sans frettes), le Hajhouj ou Guembri (un luth basse à trois cordes recouvert de peau utilisé par les maâlems Gnaoua), les crotales métalliques Qraqeb, ainsi que divers tambours à main comme le Bendir et la Darbouka.",
+
+    // New Category 7: Moroccan Hospitality & Tea Ceremony
+    hospitality_title: "Hospitalité & Cérémonie du Thé",
+    hospitality_subtitle: "Le Rituel Sacré de la Bienvenue",
+    hospitality_text1: "Au Maroc, l'hospitalité n'est pas un simple geste de politesse ; c'est un devoir culturel sacré et un véritable art de vivre. Les invités sont accueillis à bras ouverts avec une chaleur et une générosité sincères, sans distinction entre proches ou voyageurs.",
+    hospitality_text2: "Le cœur de ce rituel d'accueil bat au rythme du fameux thé à la menthe marocain. Préparé avec du thé vert, des feuilles de menthe fraîche (Naanaâ) et du sucre, il est versé cérémonieusement depuis une théière en argent tenue bien haute au-dessus de verres décorés. La mousse ainsi formée, appelée 'couronne' (Rezza), est un gage de respect et d'hospitalité.",
+
+    // New Category 8: Traditional Souks & Artisan Markets
+    souks_title: "Souks Traditionnels & Marchés d'Artisans",
+    souks_subtitle: "Le Labyrinthe Sensoriel des Métiers d'Art",
+    souks_text1: "Les médinas historiques du Maroc s'articulent autour de souks animés — des marchés labyrinthiques organisés par corporations d'artisans depuis plus d'un millénaire. S'y promener est un véritable voyage dans le temps, bercé par le martèlement du cuivre et l'odeur du cèdre et des épices.",
+    souks_text2: "Chaque souk est spécialisé : lanternes en cuivre ciselé, écheveaux de laine colorés séchant au soleil, maroquinerie fine en cuir souple et carreaux de zellige. Ces marchés sont des écosystèmes structurés où les maîtres artisans (Maâlems) transmettent des savoir-faire séculaires aux apprentis.",
+
+    // New Category 9: Moroccan Weddings & Family Traditions
+    weddings_title: "Mariages & Traditions Familiales",
+    weddings_subtitle: "Les Fastueuses Célébrations de l'Union",
+    weddings_text1: "La famille est la pierre angulaire de la société marocaine, et nulle part cela n'est mieux illustré que lors des célébrations de mariage. Un mariage marocain traditionnel est une fête légendaire étalée sur plusieurs jours, mêlant haute couture, délices culinaires et musiques envoûtantes.",
+    weddings_text2: "La cérémonie suit des rituels ancestraux, à commencer par la nuit du henné où les mains de la mariée sont ornées de motifs protecteurs. Lors de la grande soirée, la mariée revêt jusqu'à sept caftans traditionnels représentant les régions du pays, et est portée sur l'Ammariya, une chaise à porteurs dorée, sous les chants et les youyous.",
+
+    // New Category 10: Storytelling, Halqa & Folk Traditions
+    folklore_title: "Contes, Halqa & Traditions Orales",
+    folklore_subtitle: "La Bibliothèque Vivante de Jemaa el-Fnaa",
+    folklore_text1: "Le Maroc possède une tradition orale exceptionnellement riche, où l'histoire, la philosophie morale et les légendes fantastiques restent vivantes par la parole. Le sommet de cet art est la 'Halqa' (le cercle d'auditeurs), une forme de théâtre de rue ancestrale pratiquée dans les places publiques, principalement à Jemaa el-Fnaa.",
+    folklore_text2: "Dans ces cercles, les maîtres conteurs (Hlayquia) captivent les foules avec des récits épiques et des contes populaires, accompagnés de musiciens et d'acrobates. Ils transforment la place publique en un théâtre interactif, classé chef-d'œuvre du patrimoine oral et immatériel de l'humanité par l'UNESCO.",
 
     proverbs_header: "Sagesse & Proverbes Traditionnels",
     proverbs_subheader: "Cliquez ci-dessous pour découvrir une pensée issue de la sagesse populaire marocaine",
@@ -195,6 +255,36 @@ function renderAllTexts() {
   setElText('subtitle-festivals', t('festivals_subtitle'));
   setElText('p1-festivals', t('festivals_text1'));
   setElText('p2-festivals', t('festivals_text2'));
+
+  // Category 6: Music
+  setElText('title-music', t('music_title'));
+  setElText('subtitle-music', t('music_subtitle'));
+  setElText('p1-music', t('music_text1'));
+  setElText('p2-music', t('music_text2'));
+
+  // Category 7: Hospitality
+  setElText('title-hospitality', t('hospitality_title'));
+  setElText('subtitle-hospitality', t('hospitality_subtitle'));
+  setElText('p1-hospitality', t('hospitality_text1'));
+  setElText('p2-hospitality', t('hospitality_text2'));
+
+  // Category 8: Souks
+  setElText('title-souks', t('souks_title'));
+  setElText('subtitle-souks', t('souks_subtitle'));
+  setElText('p1-souks', t('souks_text1'));
+  setElText('p2-souks', t('souks_text2'));
+
+  // Category 9: Weddings
+  setElText('title-weddings', t('weddings_title'));
+  setElText('subtitle-weddings', t('weddings_subtitle'));
+  setElText('p1-weddings', t('weddings_text1'));
+  setElText('p2-weddings', t('weddings_text2'));
+
+  // Category 10: Folklore
+  setElText('title-folklore', t('folklore_title'));
+  setElText('subtitle-folklore', t('folklore_subtitle'));
+  setElText('p1-folklore', t('folklore_text1'));
+  setElText('p2-folklore', t('folklore_text2'));
 
   // Interactive Proverbs Layout Title
   setElText('proverbs-h2', t('proverbs_header'));
