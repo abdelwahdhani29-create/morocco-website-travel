@@ -4,7 +4,7 @@
 export const postWhyMoroccoFastestGrowingDestination = {
   id: "why-morocco-fastest-growing-destination",
   cityId: null,
-  image: "/src/assets/images/morocco_tourism_growth_1783616078118.jpg",
+  image: "https://images.unsplash.com/photo-1758621655350-344945c215db?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJpYWQlMjBtYXJyYWtlY2h8ZW58MHwwfDB8fHwy",
   date: "2026-07-09",
   categories: {
     en: "Travel Trends & Insights",
@@ -109,7 +109,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>For many travelers, the ultimate highlight of their Moroccan journey is venturing into the legendary Sahara Desert. In southern outposts like <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>, the massive orange dunes of Erg Chebbi rise like waves on a frozen ocean. Travelers can embark on camel treks at sunset, enjoy traditional Amazigh drumming around crackling campfires, and spend the night in luxury glamping tents equipped with hot showers, comfortable beds, and hand-woven carpets, all under an unpolluted canopy of stars.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/morocco_vibrant_travel_1783616094120.jpg" alt="Vibrant Moroccan spice market souk in Marrakech" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <img src="https://images.unsplash.com/photo-1625396697190-fc456b241f97?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BpY2UlMjBzb3Vrc3xlbnwwfDB8MHx8fDI%3D" alt="Vibrant Moroccan spice market souk in Marrakech" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
         <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Morocco's vibrant spice souks showcase a spectacular array of colors, aromas, and traditional hospitality that define the authentic travel experience.</figcaption>
       </figure>
 
@@ -188,7 +188,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>Passer une nuit dans le désert reste une expérience incontournable pour tout visiteur au Maroc. À <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>, les dunes de l'Erg Chebbi se dressent majestueusement. Les voyageurs peuvent monter à dos de dromadaire pour contempler le coucher de soleil, partager un dîner traditionnel autour d'un feu de camp et dormir dans un campement de tentes confortables sous un ciel étoilé d'une pureté exceptionnelle.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/morocco_vibrant_travel_1783616094120.jpg" alt="Marché aux épices traditionnel dans un souk au Maroc" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <img src="https://images.unsplash.com/photo-1625396697190-fc456b241f97?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BpY2UlMjBzb3Vrc3xlbnwwfDB8MHx8fDI%3D" alt="Marché aux épices traditionnel dans un souk au Maroc" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
         <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Les marchés aux épices traditionnels offrent un spectacle haut en couleur et en parfums, incarnant l'hospitalité et l'authenticité de l'art de vivre marocain.</figcaption>
       </figure>
 
