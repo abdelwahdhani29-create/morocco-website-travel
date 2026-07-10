@@ -1,5 +1,6 @@
 // Morocco Tourism - Vanilla JS All Cities Directory Engine (Bilingual English / Français)
 import { getNavLanguage } from './auth-nav.js';
+import { citiesDataFallback } from './cities-data-fallback.js';
 
 const translations = {
   en: {
@@ -141,11 +142,16 @@ if (document.readyState === 'loading') {
 
 async function initCitiesDirectory() {
   try {
-    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
-    if (!response.ok) {
-      throw new Error(`Failed to read cities.json file data: ${response.statusText}`);
+    try {
+      const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to read cities.json file data: ${response.status}`);
+      }
+      allCities = await response.json();
+    } catch (e) {
+      console.warn("Dynamic fetch of cities.json failed in cities.js, falling back to citiesDataFallback:", e);
+      allCities = citiesDataFallback;
     }
-    allCities = await response.json();
     
     // Wire Search Input & Clear actions
     setupSearchListeners();

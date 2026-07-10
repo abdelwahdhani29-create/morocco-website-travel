@@ -2,6 +2,7 @@
 import { translations } from './translations.js';
 import { getNavLanguage } from './auth-nav.js';
 import { blogPosts } from './blog-posts.js';
+import { citiesDataFallback } from './cities-data-fallback.js';
 
 // Global App State
 let appLanguage = getNavLanguage();
@@ -173,11 +174,16 @@ function showSkeletons(gridId, count = 3) {
 
 async function initApp() {
   try {
-    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
-    if (!response.ok) {
-      throw new Error(`Failed to load cities.json: ${response.statusText}`);
+    try {
+      const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to load cities.json: ${response.status}`);
+      }
+      allCitiesData = await response.json();
+    } catch (e) {
+      console.warn("Dynamic fetch of cities.json failed, falling back to static citiesDataFallback:", e);
+      allCitiesData = citiesDataFallback;
     }
-    allCitiesData = await response.json();
     
     // Default selected city
     activeCityData = allCitiesData[0];

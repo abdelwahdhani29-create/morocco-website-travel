@@ -748,10 +748,24 @@
           if (response.ok) {
             databaseCities = await response.json();
           } else {
-            console.error('Failed to load cities JSON profiles database');
+            throw new Error('Failed to fetch cities.json');
           }
         } catch (err) {
-          console.error('Network mistake trying to read data profiles:', err);
+          console.warn('Network issue reading JSON profiles, loading fallback script:', err);
+          try {
+            await new Promise((resolve, reject) => {
+              const script = document.createElement('script');
+              script.src = '/js/cities-data-fallback-global.js';
+              script.onload = () => {
+                databaseCities = window.citiesDataFallback;
+                resolve();
+              };
+              script.onerror = reject;
+              document.head.appendChild(script);
+            });
+          } catch (scriptErr) {
+            console.error('Failed to load global fallback script:', scriptErr);
+          }
         }
 
         // Listener to real-time navbar language toggles

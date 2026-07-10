@@ -1,5 +1,6 @@
 // Morocco Tourism - Vanilla JS City Profile Detail Engine (Bilingual English / Français)
 import { getNavLanguage } from './auth-nav.js';
+import { citiesDataFallback } from './cities-data-fallback.js';
 
 const translations = {
   en: {
@@ -254,11 +255,17 @@ async function initCityDetail() {
   const cityId = urlParams.get('id') || 'marrakech'; 
 
   try {
-    const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
-    if (!response.ok) {
-      throw new Error(`Failed to load cities.json database file: ${response.statusText}`);
+    let cities;
+    try {
+      const response = await fetch('/data/cities.json?v=' + Date.now(), { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to load cities.json database file: ${response.status}`);
+      }
+      cities = await response.json();
+    } catch (e) {
+      console.warn("Dynamic fetch of cities.json failed in city.js, falling back to citiesDataFallback:", e);
+      cities = citiesDataFallback;
     }
-    const cities = await response.json();
     
     // Find matched city
     activeCityData = cities.find(c => c.id.toLowerCase() === cityId.toLowerCase());
