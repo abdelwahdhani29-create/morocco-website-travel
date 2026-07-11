@@ -15,8 +15,10 @@ import { postFez } from "./posts/fez.js";
 import { postEssaouira } from "./posts/essaouira.js";
 import { postRabat } from "./posts/rabat.js";
 import { postSafetyEtiquette } from "./posts/safety-etiquette.js";
+import { postCasablanca } from "./posts/casablanca.js";
 
 export const blogPosts = [
+  postCasablanca,
   postWhatToWearInMorocco,
   postWhyMoroccoFastestGrowingDestination,
   postMoroccoBrokeRecords2026,
