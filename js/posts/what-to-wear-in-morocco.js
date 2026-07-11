@@ -4,7 +4,7 @@
 export const postWhatToWearInMorocco = {
   id: "what-to-wear-in-morocco",
   cityId: null,
-  image: "/src/assets/images/what_to_wear_morocco_1_1783726909959.jpg",
+  image: "https://images.unsplash.com/photo-1783605523388-2194266eecc0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbCUyMG91dGZpdHxlbnwwfDB8MHx8fDI%3D",
   date: "2026-07-10",
   categories: {
     en: "Travel Guides",
@@ -113,8 +113,8 @@ export const postWhatToWearInMorocco = {
       <p>Visiting the golden sands of <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a> is an unforgettable experience, but the Sahara has extreme temperature fluctuations. During the day, the sun is intense, and fine sand can blow in the wind. A lightweight, long-sleeve cotton button-up or linen tunic is perfect to protect your skin from UV rays and sand. At night, the desert cools down dramatically, especially in autumn, winter, and spring. You will need thermal base layers, a warm fleece, and a windproof jacket to stay comfortable around the campfire.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/what_to_wear_morocco_1_1783726909959.jpg" alt="A traveler styled in modest linen clothing walking through Chefchaouen" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">The picturesque blue-washed streets of Chefchaouen call for breezy, comfortable modest styling like linen shirts and loose-fitting trousers paired with a classic sun hat.</figcaption>
+        <img src="https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGRlc2VydCUyMG91dGZpdHxlbnwwfDB8MHx8fDI%3D" alt="A traveler styled in a classic desert outfit amidst dunes" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">A classic desert outfit featuring lightweight long-sleeve clothing and breathable layers, ideal for protecting against the intense Sahara sun and fine sand during the day.</figcaption>
       </figure>
 
       <h2>3. Women's Packing Checklist: Elegant, Modest, & Breeze-Friendly Pieces</h2>
@@ -147,8 +147,8 @@ export const postWhatToWearInMorocco = {
       <p>The historic medinas of cities like <a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a> and Fez are ancient pedestrian zones filled with steep, uneven stairs, slippery stone pathways, and occasional debris. Open-toed sandals or high heels can lead to stubbed toes, slips, or sore arches. Pack a pair of highly supportive, broken-in sneakers with good grip. For warm-weather walking, breathable mesh sneakers are ideal. For the Sahara, closed-toe shoes are essential to keep hot sand and insects away from your feet during camel treks and dune walks.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/what_to_wear_morocco_2_1783726921445.jpg" alt="A traveler wearing an elegant maxi dress exploring a Marrakech riad" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">A beautiful flowing maxi dress with shoulder coverage is both stylish and culturally respectful when exploring the exquisite zellige tilework of traditional Moroccan riads.</figcaption>
+        <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY8fGZvb3R3ZWFyfGVufDB8MHwwfHx8Mg%3D%3D" alt="Comfortable and durable supportive sneakers on historic stone pavement" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Highly supportive, durable, and comfortable footwear is indispensable for safely navigating the steep, slippery, and historic cobblestone alleys of Morocco's ancient medinas.</figcaption>
       </figure>
 
       <h2>6. Seasonal Considerations: Winter vs. Summer Packing</h2>
@@ -209,8 +209,8 @@ export const postWhatToWearInMorocco = {
       <p>Une nuit au milieu des dunes de <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a> est magique, mais le désert connaît des amplitudes thermiques extrêmes. En journée, protégez votre peau du soleil et du sable soufflé avec une chemise légère à manches longues et un chèche (foulard traditionnel). Dès la nuit tombée, le froid s'installe : un pull épais, un bonnet et des chaussettes chaudes sont indispensables autour du feu.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/what_to_wear_morocco_1_1783726909959.jpg" alt="Voyageuse vêtue de vêtements en lin amples à Chefchaouen" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Dans la charmante cité de Chefchaouen, les tenues amples et légères en lin, associées à un chapeau de paille, sont parfaites pour allier style, confort et respect culturel.</figcaption>
+        <img src="https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGRlc2VydCUyMG91dGZpdHxlbnwwfDB8MHx8fDI%3D" alt="Voyageuse vêtue d'une tenue de désert classique dans les dunes" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Une tenue de désert classique avec des vêtements longs et légers et des couches respirantes, idéale pour se protéger de la chaleur saharienne et du sable en journée.</figcaption>
       </figure>
 
       <h2>3. Valise idéale pour les femmes : élégance et légèreté</h2>
@@ -241,8 +241,8 @@ export const postWhatToWearInMorocco = {
       <p>Laissez de côté les sandales plates sans maintien et les talons hauts. Optez pour une bonne paire de baskets confortables et respirantes. Pour le désert, privilégiez des chaussures fermées pour éviter que le sable brûlant ne s'insinue sous vos pieds lors de vos balades dans les dunes.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="/src/assets/images/what_to_wear_morocco_2_1783726921445.jpg" alt="Voyageuse explorant un riad à Marrakech en robe maxi longue" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Une élégante robe longue couvrant les épaules s'intègre à merveille dans le cadre somptueux d'un riad marocain traditionnel.</figcaption>
+        <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY8fGZvb3R3ZWFyfGVufDB8MHwwfHx8Mg%3D%3D" alt="Des baskets confortables et robustes sur un pavé de pierre historique" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Une paire de chaussures confortable, robuste et adhérente est indispensable pour arpenter sereinement les ruelles pavées, sinueuses et parfois glissantes des anciennes médinas du Maroc.</figcaption>
       </figure>
 
       <h2>6. Conseils saisonniers : été vs. hiver</h2>
