@@ -16,7 +16,7 @@ export const citiesDataFallback = [
       {
         "name": "Jardin Majorelle",
         "description": "A botanical oasis designed by painter Jacques Majorelle, featuring electric Cobalt blue villa, towering cacti, and bamboo pathways.",
-        "image": "https://images.unsplash.com/photo-1773501934878-104c1e234ba0?auto=format&fit=crop&w=800&q=80"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2Bgtv2o7hnGK5Vn2oVjrvzwWb01WAswUL1XUeG8jiA&s=10"
       }
     ],
     "hotels": {
@@ -1293,5 +1293,161 @@ export const citiesDataFallback = [
         "activities": "€30 - €80"
       }
     }
+  },
+  {
+    "id": "oujda",
+    "name": "Oujda",
+    "arabic_name": "وجدة",
+    "region": "Oriental",
+    "cover_image": "https://images.unsplash.com/photo-1632658810488-f3581ce5a249?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3VqZGF8ZW58MHx8MHx8fDA%3D",
+    "suggested_days": 2,
+    "cultural_note": "Oujda is the capital of Eastern Morocco, known for its deep hospitality, traditional Gharnati music, and its location near the Algerian border. It is a peaceful city with a rich history and a beautiful historic medina.",
+    "attractions": [
+      {
+        "name": "The Grand Mosque",
+        "description": "Built in the 13th century, this historic Almohad monument is one of the oldest and most beautiful architectural gems in the city.",
+        "image": "https://images.pexels.com/photos/33605163/pexels-photo-33605163.jpeg?_gl=1*2ju3qf*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQ0NjU1ODIkbzIyJGcxJHQxNzg0NDY3NzQwJGoyMiRsMCRoMA.."
+      },
+      {
+        "name": "Lalla Aicha Park",
+        "description": "A pristine, lush green oasis in the heart of the city featuring century-old trees, decorative pools, and peaceful walking pathways.",
+        "image": "https://images.unsplash.com/photo-1664185494794-97cbe900c105?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFsbGElMjBhaWNoYSUyMHBhcmt8ZW58MHx8MHx8fDI%3D"
+      }
+    ],
+    "hotels": {
+      "budget": {
+        "name": "Hotel L'Oasis",
+        "price_approx": 30,
+        "amenity": "Cozy traditional rooms with a simple breakfast and hospitable service"
+      },
+      "mid_range": {
+        "name": "Atlas Orient",
+        "price_approx": 70,
+        "amenity": "Modern hotel with a nice swimming pool and central location next to the medina"
+      },
+      "luxury": {
+        "name": "Terminus City Center",
+        "price_approx": 130,
+        "amenity": "Upscale contemporary hotel with spa amenities, fine dining, and panoramic views"
+      }
+    },
+    "transportation": [
+      {
+        "type": "Petit Taxi",
+        "approx_cost": "10 - 20 MAD ($1 - $2 USD)",
+        "description": "Small red taxis, very affordable for getting around Oujda's modern avenues."
+      },
+      {
+        "type": "ONCF Train",
+        "approx_cost": "120 - 200 MAD ($12 - $20 USD)",
+        "description": "Connects Oujda directly with Fez, Rabat, and Casablanca."
+      }
+    ],
+    "bestTime": {
+      "spring": "Perfectly pleasant with blooming gardens and wonderful weather for sightseeing.",
+      "summer": "Hot and dry, but lively during summer evenings with local outdoor concerts.",
+      "autumn": "Warm days and cool nights, very comfortable for walking through the medina.",
+      "winter": "Cool and crisp, with occasional rainfall. Great for shopping and indoor cultural sights.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €35",
+        "food": "€7 - €12",
+        "transport": "€1 - €4",
+        "activities": "€2 - €8"
+      },
+      "midRange": {
+        "accommodation": "€50 - €85",
+        "food": "€15 - €30",
+        "transport": "€5 - €12",
+        "activities": "€8 - €20"
+      },
+      "luxury": {
+        "accommodation": "€100 - €180",
+        "food": "€35 - €70",
+        "transport": "€15 - €35",
+        "activities": "€15 - €40"
+      }
+    }
+  },
+  {
+    "id": "beni-mellal",
+    "name": "Beni Mellal",
+    "arabic_name": "بني ملال",
+    "region": "Beni Mellal-Khenifra",
+    "cover_image": "https://images.pexels.com/photos/33421278/pexels-photo-33421278.jpeg?_gl=1*buqvyd*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQxMTE0MjUkbzIwJGcxJHQxNzg0MTEyMDM1JGo1NyRsMCRoMA..",
+    "suggested_days": 2,
+    "cultural_note": "Nestled in the agricultural plains beneath the Middle Atlas, Beni Mellal is famous for its olive groves, dynamic water springs, and historic high-perched clay castles.",
+    "attractions": [
+      {
+        "name": "Ain Asserdoun Spring",
+        "description": "A magnificent freshwater mountain spring featuring tiered gardens, waterfalls, and peaceful shaded groves.",
+        "image": "https://images.unsplash.com/photo-1652720187538-b1894af2dc35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVuaSUyMG1lbGxhbHxlbnwwfHwwfHx8Mg%3D%3D"
+      }
+    ],
+    "hotels": {
+      "budget": {
+        "name": "Hotel Paris",
+        "price_approx": 30,
+        "amenity": "Simple classic rooms near the center of town with pleasant local hospitality"
+      },
+      "mid_range": {
+        "name": "Hotel Tazarkount",
+        "price_approx": 65,
+        "amenity": "Traditional spa-resort style lodging surrounded by beautiful olive tree estates"
+      },
+      "luxury": {
+        "name": "Hotel Chems",
+        "price_approx": 110,
+        "amenity": "Luxe hotel with excellent swimming pools, fine dining restaurants, and lush garden grounds"
+      }
+    },
+    "transportation": [
+      {
+        "type": "Petit Taxi",
+        "approx_cost": "10 - 15 MAD ($1 - $1.50 USD)",
+        "description": "Small red taxis, very quick and handy for getting around the city."
+      },
+      {
+        "type": "Grand Taxi",
+        "approx_cost": "40 - 70 MAD ($4 - $7 USD)",
+        "description": "Shared regional taxis, perfect for traveling to nearby Ouzoud Waterfalls or Bin El Ouidane."
+      }
+    ],
+    "bestTime": {
+      "spring": "Incredibly green, with the mountain waterfalls and Asserdoun spring flowing at their highest.",
+      "summer": "Hot and sunny, but refreshing at the higher-elevation water spring locations.",
+      "autumn": "Mild and pleasant, matching the local olive and agricultural harvest season.",
+      "winter": "Cool and brisk, with beautiful snow-capped peaks forming a stunning backdrop.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €35",
+        "food": "€7 - €12",
+        "transport": "€1 - €3",
+        "activities": "€2 - €8"
+      },
+      "midRange": {
+        "accommodation": "€50 - €85",
+        "food": "€15 - €32",
+        "transport": "€5 - €12",
+        "activities": "€8 - €20"
+      },
+      "luxury": {
+        "accommodation": "€95 - €160",
+        "food": "€35 - €70",
+        "transport": "€15 - €35",
+        "activities": "€15 - €40"
+      }
+    }
   }
 ];
+

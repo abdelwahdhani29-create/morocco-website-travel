@@ -26,7 +26,9 @@ const translations = {
       "Rabat-Sale-Kenitra": "Rabat-Sale-Kenitra Region",
       "Souss-Massa": "Souss-Massa Region",
       "Draa-Tafilalet": "Draa-Tafilalet Region",
-      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab Region"
+      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab Region",
+      "Oriental": "Oriental Region",
+      "Beni Mellal-Khenifra": "Beni Mellal-Khenifra Region"
     }
   },
   fr: {
@@ -52,7 +54,9 @@ const translations = {
       "Rabat-Sale-Kenitra": "Rabat-Salé-Kénitra",
       "Souss-Massa": "Souss-Massa",
       "Draa-Tafilalet": "Drâa-Tafilalet",
-      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab"
+      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab",
+      "Oriental": "Région de l'Oriental",
+      "Beni Mellal-Khenifra": "Région de Béni Mellal-Khénifra"
     }
   }
 };
@@ -122,6 +126,14 @@ const cityDescriptions = {
   eljadida: {
     en: "A charming historic ocean harbor containing the UNESCO-listed Portuguese stone cistern, old watchtowers, and Atlantic fortress ramparts.",
     fr: "Un port atlantique historique abritant la magnifique citerne de pierre portugaise classée à l'UNESCO, ses fortifications côtières et ses bastions marins."
+  },
+  oujda: {
+    en: "The historic capital of Eastern Morocco, known for deep hospitality, traditional Gharnati music, a beautiful medina, and Lalla Aicha Park.",
+    fr: "Découvrez Oujda, porte du Maroc oriental, célèbre pour ses jardins paisibles, sa médina authentique et sa musique traditionnelle Gharnati."
+  },
+  "beni-mellal": {
+    en: "An agricultural oasis beneath the Middle Atlas, famous for olive groves, cascading mountain springs, and high-altitude fortress views.",
+    fr: "Découvrez Béni Mellal, célèbre pour ses oliveraies à perte de vue, les sources de Ain Asserdoun et son château fort de Ras el Ain."
   }
 };
 

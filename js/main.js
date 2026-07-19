@@ -19,7 +19,7 @@ const localizedCityData = {
       cultural_note: "Lors de vos visites à Marrakech, négocier dans les souks se fait d'abord avec respect. Commencez par un chaleureux 'Salam Alaykum' (Que la paix soit sur vous), demandez les prix poliment et appréciez l'échange comme une interaction sociale vivante. Une tenue décente est très appréciée, en particulier autour des quartiers historiques.",
       attractions: [
         { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1773501934878-104c1e234ba0?auto=format&fit=crop&w=800&q=80" }
+        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-2Bgtv2o7hnGK5Vn2oVjrvzwWb01WAswUL1XUeG8jiA&s=10" }
       ],
       hotels: {
         budget: { name: "Riad Diana", price_approx: 45, amenity: "Patio traditionnel marocain, bassin de fraîcheur & accueil au thé traditionnel" },
@@ -95,6 +95,45 @@ const localizedCityData = {
         { type: "Calèche Traditionnelle", approx_cost: "80 - 120 MAD (8 - 12 USD)/h", description: "Promenades à cheval pittoresques le long de la grande plage et de la promenade maritime." }
       ]
     }
+  },
+  oujda: {
+    fr: {
+      name: "Oujda",
+      subtitle: "Capitale de l'Oriental",
+      cultural_note: "À Oujda, la musique Gharnati et la convivialité orientale sont reines. Le parc Lalla Aicha est idéal pour une pause sereine auprès des habitants.",
+      attractions: [
+        { name: "La Grande Mosquée", description: "Bâtie au XIIIe siècle, ce monument de l'ère Almohade est un chef-d'œuvre architectural au cœur de la médina.", image: "https://images.pexels.com/photos/33605163/pexels-photo-33605163.jpeg?_gl=1*2ju3qf*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQ0NjU1ODIkbzIyJGcxJHQxNzg0NDY3NzQwJGoyMiRsMCRoMA.." },
+        { name: "Le Parc Lalla Aïcha", description: "Un havre de verdure et de fraîcheur orné de grands arbres centenaires et de jolis bassins.", image: "https://images.unsplash.com/photo-1664185494794-97cbe900c105?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFsbGElMjBhaWNoYSUyMHBhcmt8ZW58MHx8MHx8fDI%3D" }
+      ],
+      hotels: {
+        budget: { name: "Hôtel L'Oasis", price_approx: 30, amenity: "Chambres simples et traditionnelles, accueil familial chaleureux" },
+        mid_range: { name: "Atlas Orient", price_approx: 70, amenity: "Hôtel moderne avec piscine et situation idéale à deux pas de la médina" },
+        luxury: { name: "Terminus City Center", price_approx: 130, amenity: "Hôtel haut de gamme contemporain proposant de superbes spas et vues panoramiques" }
+      },
+      transportation: [
+        { type: "Petit Taxi", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Petits taxis rouges parfaits pour parcourir les boulevards modernes." },
+        { type: "ONCF Train", approx_cost: "120 - 200 MAD (12 - 20 USD)", description: "Liaisons directes confortables reliant Oujda à Fès, Rabat et Casablanca." }
+      ]
+    }
+  },
+  "beni-mellal": {
+    fr: {
+      name: "Béni Mellal",
+      subtitle: "L'Oasis du Moyen Atlas",
+      cultural_note: "La source de Ain Asserdoun est un lieu sacré de détente familiale. Veillez à préserver la pureté de ses eaux fraîches de montagne.",
+      attractions: [
+        { name: "La Source de Aïn Asserdoun", description: "Source d'eau de montagne spectaculaire aménagée en jardins en terrasses avec de magnifiques cascades.", image: "https://images.unsplash.com/photo-1652720187538-b1894af2dc35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVuaSUyMG1lbGxhbHxlbnwwfHwwfHx8Mg%3D%3D" }
+      ],
+      hotels: {
+        budget: { name: "Hôtel Paris", price_approx: 30, amenity: "Chambres simples et soignées en plein cœur de ville" },
+        mid_range: { name: "Hôtel Tazarkount", price_approx: 65, amenity: "Complexe de style riad niché au cœur de magnifiques vergers d'oliviers" },
+        luxury: { name: "Hôtel Chems", price_approx: 110, amenity: "Hôtel de luxe doté d'une grande piscine, de jardins paysagers et de restaurants" }
+      },
+      transportation: [
+        { type: "Petit Taxi", approx_cost: "10 - 15 MAD (1 - 1.50 USD)", description: "Petits taxis rouges très pratiques pour naviguer rapidement en ville." },
+        { type: "Grand Taxi", approx_cost: "40 - 70 MAD (4 - 7 USD)", description: "Taxis collectifs parfaits pour rejoindre les cascades d'Ouzoud ou le lac de Bin el Ouidane." }
+      ]
+    }
   }
 };
 
@@ -141,6 +180,26 @@ const customItineraries = {
     fr: [
       { day: "Jour 1", title: "Les Bastions Royaux & Sentier de Ruelle", desc: "Parcourez les grands bastions garnis de canons de bronze faisant face à l'océan Atlantique et visitez les ateliers d'ébénisterie de thuya." },
       { day: "Jour 2", title: "Chaluts Bleus & Grillades de la Pêche du Jour", desc: "Explorez les pontons de bois bleus du port, dégustez des huîtres ou du poisson frais de la criée et laissez-vous porter par les sonorités Gnaoua." }
+    ]
+  },
+  oujda: {
+    en: [
+      { day: "Day 1", title: "Grand Mosque & Medina", desc: "Stroll through the old Bab Sidi Abdelouahab gateway, inspect traditional garments, and visit the historical 13th-century Grand Mosque." },
+      { day: "Day 2", title: "Oasis Park & Traditional Music", desc: "Relax in the verdant shade of Lalla Aicha Park, and attend an evening performance of classic Gharnati music." }
+    ],
+    fr: [
+      { day: "Jour 1", title: "Grande Mosquée & Médina", desc: "Pénétrez par la porte historique de Bab Sidi Abdelouahab, flânez parmi les marchands de tissus et découvrez la magnifique Grande Mosquée." },
+      { day: "Jour 2", title: "Parc Lalla Aïcha & Musique Gharnati", desc: "Savourez la fraîcheur végétale du parc Lalla Aïcha et laissez-vous transporter par un concert de musique Gharnati traditionnelle." }
+    ]
+  },
+  "beni-mellal": {
+    en: [
+      { day: "Day 1", title: "Water Gardens & Waterfalls", desc: "Walk through the tiered flowerbeds of Ain Asserdoun mountain springs and relax by the waterfalls." },
+      { day: "Day 2", title: "Mountain Fort View & Olive Groves", desc: "Hike up to the high Borj Ras el Ain clay fortress for sweeping valley vistas, then walk among century-old olive groves." }
+    ],
+    fr: [
+      { day: "Jour 1", title: "Jardins Suspendus & Cascades", desc: "Flânez au milieu des parterres de fleurs de la source de Aïn Asserdoun et ressourcez-vous près de ses cascades d'eau pure." },
+      { day: "Jour 2", title: "Forteresse du Borj & Vergers d'Oliviers", desc: "Grimpez jusqu'au Borj de Ras el Aïn pour contempler un panorama unique sur la plaine, puis marchez au cœur d'oliveraies centenaires." }
     ]
   }
 };
@@ -243,6 +302,8 @@ function getLocalizedRegion(regionName, lang) {
     if (regionName === "Souss-Massa") return "Souss-Massa";
     if (regionName === "Draa-Tafilalet") return "Drâa-Tafilalet";
     if (regionName === "Dakhla-Oued Ed-Dahab") return "Dakhla-Oued Ed-Dahab";
+    if (regionName === "Oriental") return "Région de l'Oriental";
+    if (regionName === "Beni Mellal-Khenifra") return "Région de Béni Mellal-Khénifra";
   }
   return regionName;
 }
