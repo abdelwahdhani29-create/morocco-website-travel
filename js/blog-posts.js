@@ -18,8 +18,10 @@ import { postSafetyEtiquette } from "./posts/safety-etiquette.js";
 import { postCasablanca } from "./posts/casablanca.js";
 import { postBestPlaces } from "./posts/best-places-to-visit-in-morocco.js";
 import { postMoroccoItineraryFirstTime } from "./posts/morocco-itinerary-first-time.js";
+import { postMoroccoCostOfTravel } from "./posts/morocco-cost-of-travel.js";
 
 export const blogPosts = [
+  postMoroccoCostOfTravel,
   postMoroccoItineraryFirstTime,
   postBestPlaces,
   postCasablanca,
