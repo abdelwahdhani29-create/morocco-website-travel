@@ -19,8 +19,10 @@ import { postCasablanca } from "./posts/casablanca.js";
 import { postBestPlaces } from "./posts/best-places-to-visit-in-morocco.js";
 import { postMoroccoItineraryFirstTime } from "./posts/morocco-itinerary-first-time.js";
 import { postMoroccoCostOfTravel } from "./posts/morocco-cost-of-travel.js";
+import { postMoroccoVisaRequirements } from "./posts/morocco-visa-requirements.js";
 
 export const blogPosts = [
+  postMoroccoVisaRequirements,
   postMoroccoCostOfTravel,
   postMoroccoItineraryFirstTime,
   postBestPlaces,

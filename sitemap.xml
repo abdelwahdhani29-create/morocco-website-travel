@@ -142,6 +142,12 @@
 
   <!-- Individual Blog Articles for Search Engine Indexing -->
   <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-visa-requirements</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gomoroccoai.com/blog.html?id=morocco-cost-of-travel</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
