@@ -13,125 +13,193 @@ export const postMerzouga = {
     fr: "Rachid Ait-Hamou"
   },
   readTime: {
-    en: "8 min read",
-    fr: "8 min de lecture"
+    en: "10 min read",
+    fr: "10 min de lecture"
   },
   title: {
-    en: "Chasing Dunes: An Overnight Guide to the Merzouga Sahara Desert",
-    fr: "La Quête des Dunes : Guide d'une Nuit au Désert du Sahara à Merzouga"
+    en: "Chasing Dunes: The Complete Overnight Guide to Merzouga & Erg Chebbi Sahara Desert",
+    fr: "La Quête des Dunes : Guide Complet d'une Nuit au Désert de Merzouga & Erg Chebbi"
   },
   excerpt: {
-    en: "Experience the magic of Erg Chebbi dunes in Merzouga. Read about camel trekking under starlit skies, traditional Berber camps, and watching a spectacular Sahara sunrise.",
-    fr: "Vivez la magie des dunes de l'Erg Chebbi à Merzouga. Découvrez les randonnées à dos de dromadaire sous un ciel étoilé et les bivouacs berbères typiques."
+    en: "Experience the magic of Erg Chebbi in Merzouga. Complete guide covering luxury vs standard desert camps, camel treks, 3-day itineraries, packing lists, and transport.",
+    fr: "Vivez la magie de l'Erg Chebbi à Merzouga. Bivouacs de luxe vs économiques, randonnées à dromadaire, itinéraire de 3 jours, liste de paquetage et transports."
   },
   metaTitle: {
-    en: "Merzouga Sahara Guide: Camel Treks & Desert Camp Tips",
-    fr: "Guide Désert Merzouga : Bivouacs Berbères & Randonnée"
+    en: "Merzouga Sahara Desert Guide: Camps, Camel Treks & Itinerary",
+    fr: "Guide Désert Merzouga : Bivouacs, Randonnées & Itinéraire 3 Jours"
   },
   metaDescription: {
-    en: "Everything you need to know about booking a desert camp in Merzouga's Erg Chebbi. Packing tips, camel trekking etiquettes, and stargazing recommendations.",
-    fr: "Le guide indispensable pour votre séjour dans le désert de Merzouga (Erg Chebbi). Conseils de paquetage, choix du bivouac et astuces photo sous les étoiles."
+    en: "Everything you need to know about booking an overnight desert camp in Merzouga's Erg Chebbi. Comparing luxury vs budget camps, camel welfare, packing tips, and 3-day itineraries.",
+    fr: "Le guide indispensable pour votre nuit dans le désert de Merzouga (Erg Chebbi). Bivouacs de luxe ou économiques, bien-être des dromadaires, paquetage et itinéraires."
   },
   faqs: [
     {
       question: {
-        en: "What is the difference between budget and luxury desert camps in Merzouga?",
-        fr: "Quelle est la différence entre les campements économiques et de luxe à Merzouga ?"
+        en: "What is the difference between standard and luxury desert camps in Merzouga?",
+        fr: "Quelle est la différence entre les bivouacs économiques et de luxe à Merzouga ?"
       },
       answer: {
-        en: "Budget desert camps usually offer shared sleeping tents, basic mattresses on the floor, and shared external bathroom facilities. Luxury desert camps feature private canvas suites with comfortable king-sized beds, en-suite flushing toilets and warm showers, gourmet sit-down dinners, and premium electric power.",
-        fr: "Les campements économiques proposent des tentes partagées, des matelas simples au sol et des sanitaires externes communs. Les bivouacs de luxe disposent de tentes individuelles spacieuses avec de vrais lits, de salles de bains privatives avec douche chaude, de dîners gastronomiques et d'électricité."
+        en: "Standard camps feature shared tents, floor mattresses, and communal bathroom facilities outside the tents. Luxury desert camps offer spacious private canvas suites with real king-sized beds, en-suite flushing toilets, private hot showers, solar power outlets, and multi-course gourmet dining.",
+        fr: "Les bivouacs économiques proposent des tentes partagées, des matelas au sol et des sanitaires communs. Les bivouacs de luxe disposent de tentes privatives spacieuses avec de vrais lits king-size, des salles de bains attenantes avec WC et douche chaude, de l'électricité et un dîner gastronomique."
       }
     },
     {
       question: {
-        en: "Is the desert safe to visit, and how do I get to Merzouga?",
-        fr: "Le désert est-il sûr, et comment se rendre à Merzouga ?"
+        en: "How do I travel to Merzouga from Marrakech or Fez?",
+        fr: "Comment se rendre à Merzouga depuis Marrakech ou Fès ?"
       },
       answer: {
-        en: "Yes, Merzouga is extremely safe and peaceful. You can reach the village of Merzouga by driving a rental car from Marrakech (approx. 9 hours) or Fez (approx. 7 hours) over scenic mountain passes, or by booking a comfortable overnight CTM national bus from either city.",
-        fr: "Oui, Merzouga est une destination particulièrement sûre et paisible. Vous pouvez y accéder en voiture de location depuis Marrakech (environ 9h) ou Fès (7h) par des cols magnifiques, ou par le bus de nuit grand confort de la compagnie CTM."
+        en: "From Marrakech, most travelers book a 3-day circuit by private 4x4 or rental car driving through Ouarzazate, Dades Valley, and Todra Gorge (approx. 9-10 hours total). From Fez, it is a 7 to 8 hour drive through the Middle Atlas cedar forests (Ifrane and Midelt) or accessible via overnight CTM/Supratours national buses.",
+        fr: "Depuis Marrakech, la plupart des voyageurs optent pour un circuit de 3 jours en 4x4 ou voiture via Ouarzazate, la vallée du Dadès et les gorges du Todra (9 à 10h). Depuis Fès, comptez 7 à 8h de route à travers le Moyen Atlas (Ifrane, Midelt) ou via les bus CTM/Supratours."
       }
     },
     {
       question: {
-        en: "When is the best season to go to the Sahara Desert in Morocco?",
-        fr: "Quelle est la meilleure saison pour aller dans le désert du Sahara au Maroc ?"
+        en: "When is the best season to visit the Sahara Desert in Morocco?",
+        fr: "Quelle est la meilleure saison pour visiter le désert du Sahara au Maroc ?"
       },
       answer: {
-        en: "The best months to visit the Sahara are from October to April. During these winter and shoulder months, daytime temperatures are warm and comfortable (20°C to 25°C), though nights are cold. Avoid July and August, as temperatures soar above 45°C (115°F).",
-        fr: "La meilleure période s'étend d'octobre à avril. Durant ces mois, les températures en journée sont agréables (20°C à 25°C), bien que les nuits soient froides. Évitez les mois de juillet et août, où le thermomètre dépasse fréquemment les 45°C."
+        en: "The best time to visit Erg Chebbi is between October and April. During these autumn, winter, and spring months, daytime temperatures are pleasantly warm (20°C to 25°C), though winter nights drop near freezing. Avoid July and August when extreme heat exceeds 45°C (113°F).",
+        fr: "La période idéale s'étend d'octobre à avril. Durant ces mois, les températures en journée sont douces (20°C à 25°C), bien que les nuits d'hiver soient très fraîches. Évitez juillet et août où le thermomètre dépasse 45°C."
+      }
+    },
+    {
+      question: {
+        en: "Should I choose a 1-night or 2-night desert stay in Merzouga?",
+        fr: "Faut-il choisir un séjour de 1 nuit ou 2 nuits dans le désert ?"
+      },
+      answer: {
+        en: "A 1-night stay offers the classic camel trek, sunset, stargazing, and sunrise experience. A 2-night stay allows you to relax deeply, explore surrounding Saharan villages like Khamlia (famous for Gnawa musicians), visit authentic nomadic families, and try sandboarding or 4x4 dune excursions.",
+        fr: "Une nuit offre l'expérience classique : dromadaire, coucher de soleil, étoiles et lever de jour. Deux nuits permettent de vous détendre, d'explorer les villages sahariens comme Khamlia (musiciens Gnawa), de rencontrer des familles nomades et d'essayer le sandboard."
+      }
+    },
+    {
+      question: {
+        en: "How are camels treated, and can I enter the camp by 4x4 instead?",
+        fr: "Comment les dromadaires sont-ils traités, et puis-je aller au bivouac en 4x4 ?"
+      },
+      answer: {
+        en: "Reputable desert operators prioritize camel welfare, limiting weight loads and riding times to 1 hour around sunset. If you prefer not to ride a camel or have back issues, all camps provide comfortable 4x4 vehicle transfers directly across the sand dunes to camp.",
+        fr: "Les agences écoresponsables veillent au bien-être des dromadaires en limitant la charge et les trajets à 1 heure au coucher du soleil. Si vous ne souhaitez pas monter à dromadaire, tous les camps proposent un transfert direct en 4x4 à travers les dunes."
       }
     }
   ],
   content: {
     en: `
-      <p class="blog-lead">Few travel experiences compare to standing atop the colossal wind-sculpted sand dunes of the Sahara, watching the horizon melt into a sea of deep crimson and gold. Welcome to Merzouga, the portal to Erg Chebbi.</p>
+      <p class="blog-lead">Few travel experiences compare to standing atop the colossal wind-sculpted sand dunes of Erg Chebbi, watching the vast desert horizon melt into a sea of crimson, gold, and deep violet. Welcome to Merzouga—Morocco's portal to the legendary Sahara Desert.</p>
       
-      <h2>The Majestic Erg Chebbi Dunes: A Natural Sahara Wonder</h2>
-      <p>Spanning an area of 28 kilometers from north to south, the dunes of Erg Chebbi are a geological marvel located in southeastern Morocco, near the Algerian border. Formed by the accumulation of sand blown across the dry desert basins, these dunes rise to heights of over 150 meters, their shapes shifting constantly in response to the desert winds. The sand possesses a unique golden-orange hue, which changes color dynamically throughout the day, glowing yellow in the morning, orange at noon, and a fiery red at sunset.</p>
-      <p>For centuries, this barren wilderness was traversed only by nomadic Amazigh (Berber) caravans transporting goods between sub-Saharan Africa and the northern cities. Today, while tourism has grown, the sense of endless space and absolute quiet remains largely untouched.</p>
-      
-      <h2>Camel Trekking: A Timeless Mode of Transport</h2>
-      <p>Your journey into the dunes typically begins in the late afternoon from a traditional kasbah hotel in Merzouga village. As the heat of the day dissipates, you will be introduced to your camel caravan. Riding a camel (technically a dromedary, having a single hump) is a slow, rocking experience that allows you to absorb the vast silence of the desert.</p>
-      <p>As your camel caravan marches in single file across the steep ridges of the dunes, the shadows lengthen, and the footsteps of the camels are muffled by the sand. Your local guide, clad in a traditional blue robe and turban, lead the way on foot, navigating the trackless sand dunes with expert ease. Halfway through the trek, the caravan will pause on a high crest, allowing you to dismount and watch the sunset cast its final, magical glow over the horizon.</p>
-      
-      <h2>Traditional Berber Camps Under a Star-Dense Sky</h2>
-      <p>As dusk turns to night, you will arrive at your traditional desert encampment, nestled deep within the dunes. Here, you are welcomed with warm hospitality, dating back to centuries of nomadic tradition. You will be served sweet Moroccan mint tea and traditional cookies, followed by a hearty dinner of slow-cooked tagine and couscous served in a central communal tent.</p>
-      <p>The highlight of the overnight experience begins after dinner. Guests gather around an open campfire as your Berber hosts play traditional Gnawa drums and sing ancestral songs. Due to the extreme remoteness of Erg Chebbi, there is zero light pollution. Walking just a few steps away from the camp campfire reveals a night sky of jaw-dropping clarity, where the Milky Way and shooting stars are visible to the naked eye.</p>
+      <h2>The Erg Chebbi Dune Field: A Natural Saharan Wonder</h2>
+      <p>Spanning 28 kilometers from north to south and reaching widths of up to 7 kilometers near the Algerian border, Erg Chebbi is a dramatic sea of sand dunes (<em>erg</em>) in southeastern Morocco. Created by fierce Saharan winds sweeping across rocky desert plains (<em>reg</em>), these majestic wind-sculpted dunes rise to towering heights of over 150 meters.</p>
+      <p>The sand of Erg Chebbi is famous for its rich iron-oxide content, giving it a vibrant orange-gold color that changes dynamically throughout the day. At dawn, the ridges glow soft pale yellow; at noon, they shine bright copper; and at sunset, they ignite in a fiery red hue against the darkening sky.</p>
 
-      <h2>An Essential Packing List for the Desert</h2>
-      <p>The Sahara desert is a land of environmental extremes. To guarantee a comfortable and safe overnight stay, you should pack the following items:</p>
+      <h2>Standard vs Luxury Desert Camps: What to Expect</h2>
+      <p>Choosing the right desert camp is crucial to matching your comfort preferences and budget. Here is how standard and luxury encampments compare:</p>
       <ul>
-        <li><strong>Thermal Layers:</strong> Desert sands do not retain heat. While the daytime can be hot, winter night temperatures can plummet to near freezing. Bring a warm thermal sweater, fleece, and thick socks.</li>
-        <li><strong>A Cotton Scarf (Cheche):</strong> Your guide can help you wrap this long traditional scarf around your head. It is highly functional, shielding your hair, face, and eyes from blowing sand and bright sun.</li>
-        <li><strong>Sun and Eye Protection:</strong> Bring high SPF sunscreen, polarized sunglasses, and a lip balm with UV protection to shield yourself from the desert wind.</li>
-        <li><strong>Camera Protection:</strong> Fine desert sand is highly abrasive and can easily damage camera lenses and charge ports. Keep your devices in sealed ziploc bags when not in use.</li>
+        <li><strong>Standard Desert Camps:</strong> Designed for adventurous and budget-conscious travelers. Guest tents feature heavy woven camel-wool canvas, simple foam mattresses on carpeted floors, and communal external bathroom blocks with shared toilets and basic showers. Electricity is limited to central communal dining tents.</li>
+        <li><strong>Luxury Desert Camps:</strong> Offer glamping luxury amidst the dunes. Private canvas suites feature plush king-sized beds, raised wooden flooring, hand-woven Berber carpets, private en-suite bathrooms with flushing porcelain toilets and running hot showers, solar power outlets for charging devices, and gourmet sit-down dinners with wine options.</li>
+      </ul>
+
+      <h2>The Sunset Camel Trek & Dromedary Welfare</h2>
+      <p>Your journey into the dunes typically begins in the late afternoon from a kasbah base camp in Merzouga village. As the intense midday heat subsides, you will meet your camel caravan. Riding a dromedary (single-humped camel) is a rhythmic, rocking journey that allows you to absorb the vast silence of the desert as your caravan moves in single file across steep dune crests.</p>
+      <p>Ethical tourism operators in Merzouga prioritize camel welfare: dromedaries are rested during hot midday hours, provided abundant water and grain, equipped with padded saddles, and limited to gentle 45 to 60 minute treks. For guests with back sensitivities, mobility constraints, or young children, all desert camps offer direct, comfortable 4x4 transfers across the dunes.</p>
+
+      <h2>Stargazing & Fireside Berber Hospitality</h2>
+      <p>As twilight settles over Erg Chebbi, guests gather in central camp courtyards around crackling hardwood campfires. A traditional multi-course dinner is served in carpeted dining tents, featuring rich vegetable harira soup, slow-cooked lamb or chicken tagine with preserved lemons, and sweet Saharan dates.</p>
+      <p>After dinner, your Berber hosts gather around the campfire, playing rhythmic Gnawa drums and singing ancestral Saharan songs. Because Erg Chebbi is located far from urban light pollution, walking a few steps away into the dark dunes reveals a night sky of staggering clarity. The Milky Way stretches overhead like a glowing banner, and shooting stars streak across the atmosphere every few minutes.</p>
+
+      <h2>An Essential Packing List for the Desert Shift</h2>
+      <p>The Sahara is a land of extreme microclimates, where sunny 24°C afternoons can drop sharply to 2°C on winter nights. Pack smartly to stay comfortable:</p>
+      <ul>
+        <li><strong>Warm Layered Clothing:</strong> Pack thermal underwear, a heavy fleece jacket, a warm beanie, and thick wool socks for winter nights (November to March).</li>
+        <li><strong>Cotton Scarf (Cheche):</strong> A traditional 3-meter cotton Saharan turban shields your head, neck, and face from sun exposure and blowing sand during wind gusts.</li>
+        <li><strong>Footwear:</strong> Closed-toe hiking shoes or sturdy sneakers are essential for climbing steep sand dunes. Avoid open sandals on dune walks, as desert sand retains daytime heat.</li>
+        <li><strong>Electronics Protection:</strong> Fine Saharan sand can damage camera lenses and smartphone charging ports. Keep devices sealed inside ziploc bags when not in use, and carry a high-capacity portable power bank.</li>
+      </ul>
+
+      <h2>Suggested 3-Day Desert Circuit Itinerary (Marrakech to Merzouga)</h2>
+      <p>The classic overland journey from Marrakech to Merzouga spans approximately 560 kilometers through stunning Atlas Mountain landscapes:</p>
+      <div class="blog-highlight">
+        <h3>Classic 3-Day Sahara Circuit</h3>
+        <p><strong>Day 1: Marrakech to Dades Valley:</strong> Cross the High Atlas via the Tizi n'Tichka pass (2,260m). Explore the UNESCO fortress of <strong>Aït Benhaddou</strong> and Ouarzazate film studios. Overnight in Dades Gorge.</p>
+        <p><strong>Day 2: Dades Valley to Merzouga Dunes:</strong> Drive through Tinghir and walk beneath the 300-meter vertical limestone cliffs of <strong>Todra Gorge</strong>. Arrive in Merzouga by 4:00 PM for your sunset camel trek and overnight desert camp.</p>
+        <p><strong>Day 3: Sunrise to Marrakech or Fez:</strong> Climb the dunes at 6:00 AM for sunrise. Return to base camp for breakfast, then drive back to Marrakech via Ouarzazate or north to Fez via the Middle Atlas cedar forests of Ifrane.</p>
+      </div>
+
+      <h2>Daytime Desert Activities: 4x4 Exploration & Sandboarding</h2>
+      <p>If you choose a 2-night desert stay, the daytime offers rich cultural and outdoor activities:</p>
+      <ul>
+        <li><strong>Gnawa Music in Khamlia:</strong> Visit the nearby village of Khamlia, inhabited by descendants of West African sub-Saharan nomads who share mesmerizing Gnawa music performances.</li>
+        <li><strong>Visiting Nomad Families:</strong> Take a guided 4x4 trip across black gravel desert plains (<em>reg</em>) to share mint tea with semi-nomadic Amazigh families living in traditional woven wool tents.</li>
+        <li><strong>Sandboarding & Quad Biking:</strong> Rent a wooden sandboard to surf down steep 100-meter dune slips, or hire guided quad bikes for thrilling off-road rides across designated desert tracks.</li>
       </ul>
 
       <div class="blog-highlight">
-        <h3>Sahara Travel Safety and Ecological Responsibility</h3>
-        <p><strong>Stay Hydrated:</strong> Always carry at least two liters of drinking water per person, even during the cooler winter months.</p>
-        <p><strong>Leave No Trace:</strong> The desert ecosystem is fragile. Please pack out all of your trash, plastic water bottles, and wet wipes. Support eco-certified camps that manage waste responsibly.</p>
+        <h3>Desert Environmental Etiquette</h3>
+        <p><strong>Leave No Trace:</strong> The desert ecosystem is fragile. Pack out all personal trash, plastic water bottles, and wet wipes. Never leave plastic buried in sand dunes.</p>
+        <p><strong>Water Conservation:</strong> Water is precious in Saharan oases. Use camp showers thoughtfully and avoid leaving taps running.</p>
       </div>
-      
-      <p>Waking up at 5:30 AM to climb the tallest dune near your camp, watching the first rays of the sun illuminate the endless ripples of sand, is a spiritual experience that stays with you forever. It is the ultimate testament to the quiet majesty of the natural world.</p>
 
-      <p class="blog-highlight"><strong>Ready to live the Sahara dream?</strong> Access our full Merzouga desert dashboard, featuring local guide options, reliable 4x4 routes, and the best traditional nomad encampments. <a href="/city.html?id=merzouga" class="blog-internal-link">Explore our Merzouga Sahara Guide &rarr;</a></p>
+      <p>Waking up at dawn to watch the first rays of the sun illuminate the silent gold ripples of Erg Chebbi is a humbling experience that connects you with the raw majesty of nature. It is an adventure that stays etched in your heart forever.</p>
+
+      <p class="blog-highlight"><strong>Ready for your Sahara adventure?</strong> Access complete desert maps, 4x4 operator details, and traditional encampment listings in our guide. <a href="/city.html?id=merzouga" class="blog-internal-link">Explore our Merzouga Sahara Guide &rarr;</a> Combine your trip with imperial heritage in our <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech Travel Guide</a> or explore spiritual traditions in our <a href="/city.html?id=fez" class="blog-internal-link">Fez Travel Guide</a>.</p>
     `,
     fr: `
-      <p class="blog-lead">Peu d'expériences de voyage égalent la sensation de se tenir au sommet des dunes colossales du Sahara, sculptées par le vent, alors que l'horizon s'embrase d'or et de pourpre. Bienvenue à Merzouga, la porte de l'Erg Chebbi.</p>
+      <p class="blog-lead">Peu d'expériences de voyage égalent la sensation de se tenir au sommet des dunes colossales de l'Erg Chebbi, contemplant l'horizon infini du Sahara s'embraser de teintes pourpre, ocre et or. Bienvenue à Merzouga—la porte marocaine du désert légendaire.</p>
       
-      <h2>Les Dunes de l'Erg Chebbi : Merveille Naturelle du Désert</h2>
-      <p>S'étendant sur une longueur de 28 kilomètres du nord au sud, l'Erg Chebbi est un massif de dunes spectaculaire situé dans le sud-est du Maroc. Né de l'accumulation de sables charriés par les vents du désert, ce relief d'exception s'élève par endroits à plus de 150 mètres de hauteur. Le sable de l'Erg Chebbi se distingue par sa couleur ocre-orangé unique qui change de tonalité tout au long de la journée : jaune pâle à l'aurore, cuivre étincelant à midi, et rouge flamboyant au crépuscule.</p>
-      <p>Pendant des siècles, ce territoire inhospitalier était exclusivement parcouru par les caravanes nomades berbères (Amazighs) reliant l'Afrique subsaharienne au nord du pays. Aujourd'hui encore, malgré l'essor touristique, le silence absolu du désert reste saisissant.</p>
-      
-      <h2>Randonnée en Dromadaire : Sur les Pas des Nomades</h2>
-      <p>L'immersion dans les sables débute généralement en fin d'après-midi au départ d'une kasbah de Merzouga. Dès que la chaleur commence à retomber, vous faites la rencontre de votre caravane. Monter à dos de dromadaire offre une perspective unique et un rythme de marche propice à la contemplation.</p>
-      <p>Au fil de la progression de la caravane sur les crêtes de sable fin, le silence s'installe. Votre guide local, vêtu d'un grand chèche bleu et d'une djellaba légère, dirige le groupe d'un pas assuré. À mi-chemin, une halte sur une crête élevée vous permet d'admirer l'un des couchers de soleil les plus grandioses de votre vie.</p>
-      
-      <h2>Bivouacs Traditionnels et Nuits sous la Voie Lactée</h2>
-      <p>À la nuit tombée, vous atteignez le bivouac traditionnel établi au creux des dunes. L'accueil y est chaleureux, fidèle à la légendaire hospitalité des nomades. On vous sert d'abord un thé à la menthe brûlant accompagné de dattes, avant de partager un délicieux tajine mijoté sous la tente caïdale.</p>
-      <p>Le point d'orgue de la soirée se déroule autour d'un grand feu de camp. Les guides entonnent des chants berbères au rythme des tambours traditionnels. Grâce à l'éloignement de toute source de pollution lumineuse, le ciel étoilé de Merzouga est d'une pureté incroyable. En vous éloignant de quelques mètres du feu, vous distinguerez la Voie Lactée avec une netteté spectaculaire.</p>
+      <h2>Le Massif Dunaire de l'Erg Chebbi : Une Merveille Saharienne</h2>
+      <p>S'étendant sur 28 kilomètres du nord au sud et atteignant jusqu'à 7 kilomètres de largeur près de la frontière algérienne, l'Erg Chebbi est un massif dunaire spectaculaire (<em>erg</em>) du sud-est marocain. Sculptées par les vents violents traversant les plateaux désertiques rocailleux (<em>reg</em>), ces dunes colossales s'élèvent par endroits à plus de 150 mètres de hauteur.</p>
+      <p>Le sable de l'Erg Chebbi est célèbre pour sa richesse en oxyde de fer, lui conférant une couleur ocre-orangé féerique qui évolue tout au long de la journée : jaune paille à l'aurore, cuivre étincelant à midi, et rouge sang au crépuscule.</p>
 
-      <h2>Ce qu'il faut absolument emporter dans son sac</h2>
-      <p>Le climat désertique est marqué par d'importants écarts thermiques. Voici les indispensables pour votre nuit :</p>
+      <h2>Bivouacs Économiques vs Bivouacs de Luxe : Que Choisir ?</h2>
+      <p>Sélectionner le bivouac adapté est essentiel pour accorder votre séjour à vos attentes de confort et à votre budget :</p>
       <ul>
-        <li><strong>Des vêtements chauds :</strong> Le sable ne conserve pas la chaleur. En hiver, les températures nocturnes peuvent frôler le zéro degré. Prévoyez un pull épais, un bonnet et des chaussettes chaudes.</li>
-        <li><strong>Un chèche en coton :</strong> Ce long foulard traditionnel vous protège à la fois du soleil brûlant en journée et du sable soulevé par les vents.</li>
-        <li><strong>Protections solaires :</strong> Crème solaire haute protection, lunettes de soleil polarisantes et baume à lèvres hydratant sont de rigueur.</li>
-        <li><strong>Protection de vos appareils :</strong> Le sable très fin s'immisce partout. Rangez vos téléphones et appareils photo dans des sacs hermétiques (type congélation) lorsqu'ils ne sont pas utilisés.</li>
+        <li><strong>Bivouacs Économiques :</strong> Idéaux pour les voyageurs adeptes de simplicité. Les tentes en toile de poil de dromadaire disposent de matelas au sol et de sanitaires communs situés à l'extérieur des tentes. L'électricité y est réservée aux espaces repas collectifs.</li>
+        <li><strong>Bivouacs de Luxe (Glamping) :</strong> Offrent un confort hôtelier au milieu des dunes. Les suites privatives en toile disposent de vrais lits king-size, de planchers en bois, de tapis berbères, d'une salle de bains privative avec WC et douche chaude, de prises solaires et d'un dîner gastronomique raffiné.</li>
+      </ul>
+
+      <h2>La Randonnée en Dromadaire & Le Bien-Être Animal</h2>
+      <p>L'aventure vers les dunes débute en fin d'après-midi au départ d'une kasbah de Merzouga. Dès que la chaleur étouffante diminue, vous faites la rencontre de votre caravane. Monter à dos de dromadaire offre une traversée rythmée et contemplative alors que la caravane avance en file indienne sur les crêtes de sable.</p>
+      <p>Les opérateurs écoresponsables de Merzouga veillent au bien-être des dromadaires : les animaux se reposent aux heures chaudes, disposent d'eau et de grain en abondance, et les trajets sont limités à 45-60 minutes au coucher du soleil. Pour les personnes souffrant du dos ou les jeunes enfants, des transferts directs en 4x4 climatisé vers le bivouac sont toujours proposés.</p>
+
+      <h2>Nuit Étoilée & Hospitalité Berbère autour du Feu</h2>
+      <p>À la tombée de la nuit, les hôtes se rassemblent dans la cour du bivouac autour d'un feu de camp crépitant. Un dîner traditionnel servi sous la grande tente caïdale propose la soupe harira, un tajine d'agneau ou de poulet aux citrons confits et des dattes du désert.</p>
+      <p>Après le repas, les guides berbères entonnent des chants sahariens accompagnés par le rythme envoûtant des tambours Gnawa. En l'absence totale de pollution lumineuse, s'éloigner de quelques pas du bivouac révèle une nuit étoilée d'une pureté incroyable : la Voie Lactée se dresse comme une arche lumineuse et les étoiles filantes traversent le ciel en permanence.</p>
+
+      <h2>Paquetage Indispensable pour le Désert</h2>
+      <p>Le Sahara est marqué par de violents écarts thermiques : une journée ensoleillée à 24°C peut céder la place à une nuit d'hiver proche de 2°C. Préparez soigneusement votre sac :</p>
+      <ul>
+        <li><strong>Vêtements Chauds Superposables :</strong> Prévoyez des sous-vêtements thermiques, un pull en laine ou polaire, un bonnet et des chaussettes chaudes pour les nuits d'hiver (novembre à mars).</li>
+        <li><strong>Chèche en Coton :</strong> Ce long foulard traditionnel de 3 mètres protège efficacement la tête, le visage et le cou du soleil et des coups de vent de sable.</li>
+        <li><strong>Chaussures Fermées :</strong> Des chaussures de randonnée légères ou baskets sont indispensables pour gravir les dunes. Évitez les sandales ouvertes, le sable conservant la chaleur solaire.</li>
+        <li><strong>Protection de l'Électronique :</strong> Le sable fin du Sahara s'immisce partout. Conservez vos téléphones et appareils photo dans des sacs de congélation hermétiques et emportez une batterie externe.</li>
+      </ul>
+
+      <h2>Itinéraire Suggéré de 3 Jours dans le Désert (Marrakech à Merzouga)</h2>
+      <p>Le grand parcours classique de Marrakech à Merzouga s'étend sur 560 kilomètres à travers les paysages spectaculaires de l'Atlas :</p>
+      <div class="blog-highlight">
+        <h3>Circuit Sahara Classique en 3 Jours</h3>
+        <p><strong>Jour 1 : Marrakech à la Vallée du Dadès :</strong> Traversez le Haut Atlas par le col du Tizi n'Tichka (2 260m). Visitez la kasbah UNESCO d'<strong>Aït Benhaddou</strong> et Ouarzazate. Nuit dans les gorges du Dadès.</p>
+        <p><strong>Jour 2 : Vallée du Dadès aux Dunes de Merzouga :</strong> Marchez sous les falaises de 300 mètres des <strong>Gorges du Todra</strong>. Arrivée à Merzouga vers 16h00 pour la randonnée à dromadaire et la nuit en bivouac.</p>
+        <p><strong>Jour 3 : Lever de Soleil vers Marrakech ou Fès :</strong> Montée sur les dunes à 6h00 pour le lever du jour. Petit-déjeuner au bivouac, puis retour vers Marrakech via Ouarzazate ou vers Fès par les forêts de cèdres d'Ifrane.</p>
+      </div>
+
+      <h2>Activités de Journée : Excursions en 4x4 & Sandboard</h2>
+      <p>Si vous optez pour un séjour de 2 nuits au désert, la journée offre de belles découvertes :</p>
+      <ul>
+        <li><strong>Musique Gnawa à Khamlia :</strong> Visitez le village saharien de Khamlia, habité par les descendants de nomades subsahariens qui partagent leur musique spirituelle Gnawa.</li>
+        <li><strong>Rencontre avec les Familles Nomades :</strong> Partez en 4x4 à travers les plateaux noirs (<em>reg</em>) partager un thé à la menthe avec des familles nomades amazighes vivant sous des tentes traditionnelles.</li>
+        <li><strong>Sandboard & Quad :</strong> Louez une planche pour dévaler les dunes de 100 mètres en sandboard, ou louez un quad avec guide sur les pistes balisées.</li>
       </ul>
 
       <div class="blog-highlight">
-        <h3>Sécurité et Préservation de l'Écosystème Saharien</h3>
-        <p><strong>Hydratation :</strong> Prévoyez au minimum deux litres d'eau minérale par personne pour la traversée.</p>
-        <p><strong>Zéro déchet :</strong> Le désert est un milieu fragile. Ne laissez aucun déchet derrière vous et privilégiez les bivouacs écoresponsables qui s'engagent à retraiter leurs déchets de façon éthique.</p>
+        <h3>Savoir-Vivre et Écologie au Désert</h3>
+        <p><strong>Zéro Déchet :</strong> L'écosystème saharien est fragile. Emportez tous vos déchets plastiques, lingettes et bouteilles. Ne jetez rien dans le sable.</p>
+        <p><strong>Économie d'Eau :</strong> L'eau est précieuse dans les oasis. Utilisez les douches avec modération.</p>
       </div>
-      
-      <p>Se lever aux aurores pour gravir la dune la plus proche et observer le soleil se lever sur une mer de sable infinie est une expérience presque mystique qui restera gravée dans votre mémoire pour toujours.</p>
 
-      <p class="blog-highlight"><strong>Envie de vivre l'aventure saharienne ?</strong> Retrouvez toutes les informations sur l'Erg Chebbi, les agences de bivouac écoresponsables et les transports en 4x4 dans notre fiche détaillée. <a href="/city.html?id=merzouga" class="blog-internal-link">Consultez notre Guide de Merzouga &rarr;</a></p>
+      <p>Se lever à l'aube pour regarder les premiers rayons du soleil illuminer le silence doré de l'Erg Chebbi est un moment d'humilité face à la majesté de la nature. Une aventure gravée à jamais dans votre mémoire.</p>
+
+      <p class="blog-highlight"><strong>Prêt à vivre la magie du Sahara ?</strong> Retrouvez les cartes du désert, les guides 4x4 et les meilleurs bivouacs dans notre fiche. <a href="/city.html?id=merzouga" class="blog-internal-link">Consultez notre Guide de Merzouga &rarr;</a> Associez votre séjour à la découverte de la ville ocre dans notre <a href="/city.html?id=marrakech" class="blog-internal-link">Guide de Marrakech</a> ou à l'exploration culturelle dans notre <a href="/city.html?id=fez" class="blog-internal-link">Guide de Fès</a>.</p>
     `
   }
 };

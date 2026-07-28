@@ -518,11 +518,11 @@ function renderCityDashboard() {
       const card = document.createElement('div');
       card.className = 'attraction-card';
       card.innerHTML = `
-        <div class="attraction-img-frame">
-          <img class="attraction-img lazy-img" src="${att.image}" alt="${att.name}" loading="lazy" onload="this.classList.add('loaded')" referrerPolicy="no-referrer">
-        </div>
         <div class="attraction-info">
-          <h4 class="attraction-name">${att.name}</h4>
+          <div class="attraction-header" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
+            <h4 class="attraction-name" style="margin: 0;">${att.name}</h4>
+            ${att.duration ? `<span class="attraction-duration-tag"><i data-lucide="clock" style="width: 13px; height: 13px;"></i> ${att.duration}</span>` : ''}
+          </div>
           <p class="attraction-desc">${att.description}</p>
         </div>
       `;

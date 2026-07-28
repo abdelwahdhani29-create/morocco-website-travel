@@ -151,91 +151,81 @@
       /* Detail Sights / Place Cards CSS overrides */
       .places-grid {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
       }
       .place-detail-card {
-        background: var(--color-cream);
-        border: 2px solid var(--color-border);
+        background: #ffffff;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-terracotta);
         border-radius: var(--border-radius-md);
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: 320px minmax(0, 1fr);
+        box-shadow: 0 4px 15px rgba(42, 33, 30, 0.03);
         transition: var(--transition-smooth);
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-      }
-      @media (max-width: 640px) {
-        .place-detail-card {
-          grid-template-columns: 35% minmax(0, 1fr);
-        }
-        .place-detail-img {
-          height: 100%;
-          min-height: 100%;
-          object-fit: cover;
-          width: 100%;
-        }
-        .place-detail-body {
-          padding: 12px 16px;
-          justify-content: flex-start;
-          min-width: 0;
-          overflow: hidden;
-        }
-        .place-detail-name {
-          font-size: 15px;
-          margin-bottom: 4px;
-          line-height: 1.2;
-          white-space: normal !important;
-          word-break: break-word !important;
-        }
-        .place-detail-desc {
-          font-size: 11px;
-          line-height: 1.35;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 4;
-          -webkit-box-orient: vertical;
-          white-space: normal !important;
-          word-break: break-word !important;
-        }
-      }
-      .place-detail-card:hover {
-        border-color: var(--color-terracotta);
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(42, 33, 30, 0.05);
-      }
-      .place-detail-img {
-        width: 100%;
-        height: 100%;
-        min-height: 200px;
-        object-fit: cover;
-      }
-      .place-detail-body {
-        padding: 24px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+      }
+      .place-detail-card:hover {
+        border-color: var(--color-border);
+        border-left-color: var(--color-terracotta);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(42, 33, 30, 0.08);
+      }
+      .place-detail-body {
+        padding: 22px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         min-width: 0;
         box-sizing: border-box;
+        height: 100%;
+      }
+      .place-detail-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
       }
       .place-detail-name {
         font-family: var(--font-serif);
-        font-size: 20px;
+        font-size: 19px;
+        font-weight: 700;
         color: var(--color-charcoal);
-        margin-bottom: 12px;
+        margin: 0;
         white-space: normal;
         word-break: break-word;
+        line-height: 1.3;
       }
       .place-detail-desc {
         font-size: 14px;
         color: var(--color-charcoal-light);
         line-height: 1.6;
+        margin: 0;
         white-space: normal;
         word-break: break-word;
+      }
+      @media (max-width: 640px) {
+        .places-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .place-detail-body {
+          padding: 16px 18px;
+        }
+        .place-detail-name {
+          font-size: 17px;
+        }
+        .place-detail-desc {
+          font-size: 13px;
+          line-height: 1.5;
+        }
       }
 
       /* Hotel Tiers Cards style */
@@ -499,22 +489,10 @@
       
       /* Arabic layout overrides */
       html[dir="rtl"] .place-detail-card {
-        grid-template-columns: minmax(0, 1fr) 320px;
-      }
-      @media (max-width: 640px) {
-        html[dir="rtl"] .place-detail-card {
-          grid-template-columns: minmax(0, 1fr) 35%;
-        }
+        border-right: 4px solid var(--color-terracotta);
+        border-left: 1px solid var(--color-border);
       }
       @media (max-width: 500px) {
-        .place-detail-card, html[dir="rtl"] .place-detail-card {
-          grid-template-columns: 1fr !important;
-        }
-        .place-detail-img {
-          height: 180px !important;
-          min-height: 180px !important;
-          width: 100% !important;
-        }
         .tab-trigger-btn {
           padding: 10px 14px !important;
           font-size: 14px !important;
@@ -673,6 +651,153 @@
           height: 18px;
         }
       }
+
+      /* Neighborhoods & District Guide Styles */
+      .neighborhoods-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .neighborhood-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: var(--transition-smooth);
+      }
+      .neighborhood-card:hover {
+        border-color: var(--color-terracotta);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(42, 33, 30, 0.05);
+      }
+      .neighborhood-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .neighborhood-title {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-charcoal);
+        margin: 0;
+      }
+      .neighborhood-location-tag {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color-terracotta-dark);
+        background: var(--color-terracotta-light);
+        padding: 4px 10px;
+        border-radius: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .neighborhood-pills {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .pill-badge {
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        line-height: 1.4;
+      }
+      .pill-badge strong {
+        color: var(--color-charcoal);
+      }
+      .neighborhood-activities {
+        font-size: 14px;
+        color: var(--color-charcoal-light);
+        line-height: 1.5;
+        margin-top: 4px;
+      }
+
+      /* Travel Tips & Internal Links Styles */
+      .travel-tips-box {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 24px;
+      }
+      .travel-tips-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .travel-tip-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 14px;
+        color: var(--color-charcoal);
+        line-height: 1.6;
+      }
+      .travel-tip-icon {
+        color: var(--color-gold);
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .internal-links-deck {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+      }
+      .internal-link-card {
+        background: var(--color-cream);
+        border: 2px solid var(--color-border);
+        border-radius: var(--border-radius-md);
+        padding: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transition: var(--transition-smooth);
+      }
+      .internal-link-card:hover {
+        border-color: var(--color-terracotta);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(211, 94, 53, 0.08);
+      }
+      .internal-link-title {
+        font-family: var(--font-serif);
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--color-terracotta-dark);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      .internal-link-desc {
+        font-size: 13px;
+        color: var(--color-charcoal-light);
+        line-height: 1.5;
+      }
+      .attraction-duration-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color-terracotta);
+        background: rgba(211, 94, 53, 0.08);
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        width: fit-content;
+      }
     </style>
   </head>
   <body>
@@ -739,6 +864,10 @@
               <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i>
               <span id="lbl-tab-places">Top Places</span>
             </button>
+            <button class="tab-trigger-btn" id="tab-btn-neighborhoods" role="tab" aria-selected="false" data-tab-panel="panel-neighborhoods">
+              <i data-lucide="compass" style="width: 18px; height: 18px;"></i>
+              <span id="lbl-tab-neighborhoods">Neighborhoods</span>
+            </button>
             <button class="tab-trigger-btn" id="tab-btn-hotels" role="tab" aria-selected="false" data-tab-panel="panel-hotels">
               <i data-lucide="hotel" style="width: 18px; height: 18px;"></i>
               <span id="lbl-tab-hotels">Accommodations</span>
@@ -756,14 +885,21 @@
             </div>
           </div>
 
-          <!-- TAB PANEL 2: Accommodations Tier List -->
+          <!-- TAB PANEL 2: Neighborhoods & Districts -->
+          <div class="tab-content-panel" id="panel-neighborhoods" role="tabpanel">
+            <div id="neighborhoods-list" class="neighborhoods-grid">
+              <!-- Inline JavaScript dynamic rendering -->
+            </div>
+          </div>
+
+          <!-- TAB PANEL 3: Accommodations Tier List -->
           <div class="tab-content-panel" id="panel-hotels" role="tabpanel">
             <div id="hotels-deck" class="hotel-tier-deck">
               <!-- Inline JavaScript dynamic rendering -->
             </div>
           </div>
 
-          <!-- TAB PANEL 3: Local Transportation -->
+          <!-- TAB PANEL 4: Local Transportation -->
           <div class="tab-content-panel" id="panel-transit" role="tabpanel">
             <div id="transit-deck" class="transit-tier-deck">
               <!-- Inline JavaScript dynamic rendering -->
@@ -781,6 +917,28 @@
             </h3>
             <div class="seasons-grid" id="seasons-grid">
               <!-- Dynamic population via js/city.js based on selected city details -->
+            </div>
+          </section>
+
+          <!-- LOCAL TRAVEL TIPS SECTION -->
+          <section class="travel-tips-section" id="travel-tips-section" style="margin-top: 40px;">
+            <h3 class="travel-tips-title" style="font-family: var(--font-serif); font-size: 24px; font-weight: 700; color: var(--color-charcoal); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+              <i data-lucide="lightbulb" style="width: 24px; height: 24px; color: var(--color-gold);"></i>
+              <span id="lbl-travel-tips-title">Local Travel Tips & Practical Advice</span>
+            </h3>
+            <div id="travel-tips-content" class="travel-tips-box">
+              <!-- Dynamic population via js/city.js -->
+            </div>
+          </section>
+
+          <!-- FEATURED TRAVEL GUIDES (INTERNAL LINKS) SECTION -->
+          <section class="internal-links-section" id="internal-links-section" style="margin-top: 40px;">
+            <h3 class="internal-links-title" style="font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--color-charcoal); margin-bottom: 16px; display: flex; align-items: center; gap: 10px;">
+              <i data-lucide="book-open" style="width: 22px; height: 22px; color: var(--color-terracotta);"></i>
+              <span id="lbl-internal-links-title">Featured Travel Guides</span>
+            </h3>
+            <div id="internal-links-deck" class="internal-links-deck">
+              <!-- Dynamic population via js/city.js -->
             </div>
           </section>
 

@@ -11,8 +11,11 @@ const translations = {
     loading_lbl: "Loading Selected City...",
     loading_desc: "Fetching authentic historical data, regional details, cultural etiquette protocols, riads lists, and local transportation guidelines...",
     tab_places: "Top Places",
+    tab_neighborhoods: "Neighborhoods",
     tab_hotels: "Accommodations",
     tab_transit: "Transportation",
+    travel_tips_title: "Local Travel Tips & Practical Advice",
+    internal_links_title: "Featured Travel Guides",
     sidebar_title: "Local Fast Facts",
     fact_duration: "Suggested Stay",
     fact_region: "Government Region",
@@ -71,8 +74,11 @@ const translations = {
     loading_lbl: "Chargement de la ville...",
     loading_desc: "Récupération des données historiques authentiques, détails régionaux, guides d'étiquette culturelle, riads et transports...",
     tab_places: "Lieux à Visiter",
+    tab_neighborhoods: "Quartiers",
     tab_hotels: "Où Dormir",
     tab_transit: "Transports Locaux",
+    travel_tips_title: "Conseils Pratiques de Voyage",
+    internal_links_title: "Guides de Voyage Associés",
     sidebar_title: "Infos Pratiques",
     fact_duration: "Durée Conseillée",
     fact_region: "Région Administrative",
@@ -518,8 +524,11 @@ function renderCityProfile() {
   }
   setElText('city-meta-badge', t('explore_tagline'));
   setElText('lbl-tab-places', t('tab_places'));
+  setElText('lbl-tab-neighborhoods', t('tab_neighborhoods'));
   setElText('lbl-tab-hotels', t('tab_hotels'));
   setElText('lbl-tab-transit', t('tab_transit'));
+  setElText('lbl-travel-tips-title', t('travel_tips_title'));
+  setElText('lbl-internal-links-title', t('internal_links_title'));
   setElText('lbl-sidebar-title', t('sidebar_title'));
   setElText('lbl-fact-duration', t('fact_duration'));
   setElText('lbl-fact-region', t('fact_region'));
@@ -539,9 +548,9 @@ function renderCityProfile() {
 
   // Swap content with French localization if active
   let cityName = activeCityData.name;
-  let cityExcerpt = currentLang === 'fr' 
+  let cityExcerpt = activeCityData.overview || (currentLang === 'fr' 
     ? `Un guide complet pour explorer la culture locale de ${activeCityData.name}. Découvrez les secrets de son histoire, réservez des hébergements traditionnels insolites et maîtrisez les moyens de transport locaux.`
-    : `A comprehensive travel blueprint to inspect the dynamic culture in ${activeCityData.name}. Unearth the historical background, locate elegant lodgings, and browse the transport modes.`;
+    : `A comprehensive travel blueprint to inspect the dynamic culture in ${activeCityData.name}. Unearth the historical background, locate elegant lodgings, and browse the transport modes.`);
   let cityCultureNote = activeCityData.cultural_note;
 
   if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
@@ -566,10 +575,13 @@ function renderCityProfile() {
 
   // Tab contents populations
   renderTabPlacesContent();
+  renderTabNeighborhoodsContent();
   renderTabHotelsContent();
   renderTabTransitContent();
   renderBudgetEstimator();
   renderBestTimeContent();
+  renderTravelTipsContent();
+  renderInternalLinksContent();
 
   // Refresh Lucide Icons inside the new views
   if (window.lucide) {
@@ -640,7 +652,7 @@ function renderTabPlacesContent() {
   if (!container) return;
   container.innerHTML = '';
 
-  let attractions = activeCityData.attractions;
+  let attractions = activeCityData.attractions || [];
   if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
     attractions = localizedCityData[activeCityData.id].fr.attractions.map((attr, idx) => ({
       ...attr,
@@ -651,17 +663,108 @@ function renderTabPlacesContent() {
   attractions.forEach(place => {
     let displayName = place.name;
     let displayDesc = place.description;
+    let durationHtml = place.duration ? `<span class="attraction-duration-tag"><i data-lucide="clock" style="width: 13px; height: 13px;"></i> ${place.duration}</span>` : '';
 
     const card = document.createElement('div');
     card.className = 'place-detail-card';
     card.innerHTML = `
-      <div class="attraction-img-frame" style="position: relative; width: 100%; overflow: hidden; background-color: #f7f5f3;">
-        <img class="place-detail-img lazy-img" src="${place.image}" alt="${displayName}" loading="lazy" onload="this.classList.add('loaded')" referrerPolicy="no-referrer" style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
       <div class="place-detail-body">
-        <h4 class="place-detail-name">${displayName}</h4>
+        <div class="place-detail-header">
+          <h4 class="place-detail-name">${displayName}</h4>
+          ${durationHtml}
+        </div>
         <p class="place-detail-desc">${displayDesc}</p>
       </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderTabNeighborhoodsContent() {
+  const container = document.getElementById('neighborhoods-list');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const neighborhoods = activeCityData.neighborhoods;
+  if (!neighborhoods || neighborhoods.length === 0) {
+    const tabBtn = document.getElementById('tab-btn-neighborhoods');
+    if (tabBtn) tabBtn.style.display = 'none';
+    return;
+  } else {
+    const tabBtn = document.getElementById('tab-btn-neighborhoods');
+    if (tabBtn) tabBtn.style.display = 'inline-flex';
+  }
+
+  neighborhoods.forEach(neigh => {
+    const card = document.createElement('div');
+    card.className = 'neighborhood-card';
+    card.innerHTML = `
+      <div class="neighborhood-header">
+        <h4 class="neighborhood-title">${neigh.name}</h4>
+        <span class="neighborhood-location-tag"><i data-lucide="map-pin" style="width: 13px; height: 13px;"></i> ${neigh.location}</span>
+      </div>
+      <div class="neighborhood-pills">
+        <span class="pill-badge"><strong>Known for:</strong> ${neigh.known_for}</span>
+        <span class="pill-badge"><strong>Best for:</strong> ${neigh.best_for}</span>
+      </div>
+      <p class="neighborhood-activities">${neigh.activities}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderTravelTipsContent() {
+  const container = document.getElementById('travel-tips-content');
+  const section = document.getElementById('travel-tips-section');
+  if (!container || !section) return;
+  container.innerHTML = '';
+
+  const tips = activeCityData.travel_tips;
+  if (!tips || tips.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = 'block';
+
+  const list = document.createElement('ul');
+  list.className = 'travel-tips-list';
+
+  tips.forEach(tip => {
+    const item = document.createElement('li');
+    item.className = 'travel-tip-item';
+    item.innerHTML = `
+      <i class="travel-tip-icon" data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+      <span>${tip}</span>
+    `;
+    list.appendChild(item);
+  });
+
+  container.appendChild(list);
+}
+
+function renderInternalLinksContent() {
+  const container = document.getElementById('internal-links-deck');
+  const section = document.getElementById('internal-links-section');
+  if (!container || !section) return;
+  container.innerHTML = '';
+
+  const links = activeCityData.internal_links;
+  if (!links || links.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = 'block';
+
+  links.forEach(link => {
+    const card = document.createElement('a');
+    card.className = 'internal-link-card';
+    card.href = `/blog.html?id=${link.blog_id}`;
+    card.innerHTML = `
+      <div class="internal-link-title">
+        <span>${link.title}</span>
+        <i data-lucide="arrow-right" style="width: 18px; height: 18px; color: var(--color-terracotta);"></i>
+      </div>
+      <p class="internal-link-desc">${link.description}</p>
     `;
     container.appendChild(card);
   });
