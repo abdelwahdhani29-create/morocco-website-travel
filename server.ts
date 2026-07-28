@@ -13,6 +13,42 @@ async function startServer() {
   // JSON parsing middleware
   app.use(express.json());
 
+  // 1. Domain & Protocol Canonicalization (www -> non-www, http -> https)
+  app.use((req, res, next) => {
+    const host = req.headers.host || "";
+    const proto = (req.headers["x-forwarded-proto"] as string) || req.protocol;
+
+    if (host.startsWith("www.gomoroccoai.com")) {
+      const cleanHost = host.replace(/^www\./, "");
+      return res.redirect(301, `https://${cleanHost}${req.originalUrl}`);
+    }
+
+    if (host === "gomoroccoai.com" && proto === "http") {
+      return res.redirect(301, `https://${host}${req.originalUrl}`);
+    }
+
+    next();
+  });
+
+  // 2. Redirect /index.html to canonical root /
+  app.use((req, res, next) => {
+    if (req.path === "/index.html") {
+      const query = req.url.substring(req.path.length);
+      return res.redirect(301, `/${query}`);
+    }
+    next();
+  });
+
+  // 3. Trailing slash normalization (redirect /page/ to /page)
+  app.use((req, res, next) => {
+    if (req.path.length > 1 && req.path.endsWith("/")) {
+      const query = req.url.substring(req.path.length);
+      const cleanPath = req.path.slice(0, -1);
+      return res.redirect(301, `${cleanPath}${query}`);
+    }
+    next();
+  });
+
   // Hot Module Replacement/Middleware setup with Vite
   if (process.env.NODE_ENV !== "production") {
     // Support clean/pretty URLs in development mode by rewriting them to .html before passing to Vite

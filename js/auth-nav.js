@@ -46,7 +46,7 @@ export function updateHeaderNavControls() {
   // Draw Desktop Nav structure
   let desktopHtml = `
     <div class="desktop-nav" style="align-items: center; gap: 8px;">
-      <a href="/index.html" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px;">
+      <a href="/" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px;">
         <span>${t('home')}</span>
       </a>
       <a href="/cities.html" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px;">
@@ -85,7 +85,7 @@ export function updateHeaderNavControls() {
   let overlayHtml = `
     <div id="mobile-nav-overlay" class="mobile-nav-overlay">
       <div class="mobile-nav-overlay-header">
-        <a href="/index.html" class="mobile-nav-overlay-logo">
+        <a href="/" class="mobile-nav-overlay-logo">
           GoMoroccoAI
         </a>
         <button id="mobile-nav-close" class="close-overlay-btn" aria-label="Close global menu">
@@ -93,7 +93,7 @@ export function updateHeaderNavControls() {
         </button>
       </div>
       <nav class="mobile-nav-links">
-        <a href="/index.html" class="mobile-nav-link">
+        <a href="/" class="mobile-nav-link">
           <i data-lucide="home" style="width: 20px; height: 20px; color: var(--color-terracotta);"></i>
           <span>${t('home')}</span>
         </a>
@@ -356,7 +356,7 @@ export function updateGlobalFooterLinks() {
     <div class="footer-grid">
       <!-- Column 1: Brand & Contact & Socials -->
       <div class="footer-col brand-col">
-        <a href="/index.html" class="footer-brand-title" aria-label="GoMoroccoAI Home">
+        <a href="/" class="footer-brand-title" aria-label="GoMoroccoAI Home">
           <svg style="width: 28px; height: 28px; fill: var(--color-gold);" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12,2L14.7,8.6L21.8,7.9L16.8,13L18.6,20L12,16L5.4,20L7.2,13L2.2,7.9L9.3,8.6L12,2Z" />
           </svg>
@@ -430,7 +430,7 @@ export function updateGlobalFooterLinks() {
         <h3>${strings.explore_title}</h3>
         <ul class="footer-nav-links">
           <li>
-            <a href="/index.html">
+            <a href="/">
               <i data-lucide="home"></i>
               <span>${strings.home}</span>
             </a>
