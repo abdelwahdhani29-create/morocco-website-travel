@@ -13,39 +13,44 @@ async function startServer() {
   // JSON parsing middleware
   app.use(express.json());
 
-  // 1. Domain & Protocol Canonicalization (www -> non-www, http -> https)
+  // 1. Consolidated Canonical Redirection Middleware
+  // Enforces non-www HTTPS (gomoroccoai.com), /index.html -> /, and trailing slash normalization in 1 hop
   app.use((req, res, next) => {
-    const host = req.headers.host || "";
+    const rawHost = req.headers.host || "";
     const proto = (req.headers["x-forwarded-proto"] as string) || req.protocol;
 
-    if (host.startsWith("www.gomoroccoai.com")) {
-      const cleanHost = host.replace(/^www\./, "");
-      return res.redirect(301, `https://${cleanHost}${req.originalUrl}`);
+    const isWww = rawHost.startsWith("www.gomoroccoai.com");
+    const isLocalOrContainer = rawHost.includes("localhost") || rawHost.includes("127.0.0.1") || rawHost.includes("run.app");
+
+    let targetHost = rawHost;
+    if (isWww) {
+      targetHost = rawHost.replace(/^www\./, "");
     }
 
-    if (host === "gomoroccoai.com" && proto === "http") {
-      return res.redirect(301, `https://${host}${req.originalUrl}`);
+    let targetProto = proto;
+    if (targetHost === "gomoroccoai.com" && proto === "http") {
+      targetProto = "https";
     }
 
-    next();
-  });
-
-  // 2. Redirect /index.html to canonical root /
-  app.use((req, res, next) => {
-    if (req.path === "/index.html") {
-      const query = req.url.substring(req.path.length);
-      return res.redirect(301, `/${query}`);
+    let targetPath = req.path;
+    if (targetPath === "/index.html") {
+      targetPath = "/";
+    } else if (targetPath.length > 1 && targetPath.endsWith("/")) {
+      targetPath = targetPath.slice(0, -1);
     }
-    next();
-  });
 
-  // 3. Trailing slash normalization (redirect /page/ to /page)
-  app.use((req, res, next) => {
-    if (req.path.length > 1 && req.path.endsWith("/")) {
-      const query = req.url.substring(req.path.length);
-      const cleanPath = req.path.slice(0, -1);
-      return res.redirect(301, `${cleanPath}${query}`);
+    const queryIndex = req.url.indexOf("?");
+    const queryString = queryIndex !== -1 ? req.url.substring(queryIndex) : "";
+
+    const isWwwRedirect = isWww;
+    const isHttpRedirect = (targetHost === "gomoroccoai.com" && proto === "http");
+    const isPathRedirect = targetPath !== req.path;
+
+    if (!isLocalOrContainer && (isWwwRedirect || isHttpRedirect || isPathRedirect)) {
+      const destination = `${targetProto}://${targetHost}${targetPath}${queryString}`;
+      return res.redirect(301, destination);
     }
+
     next();
   });
 
