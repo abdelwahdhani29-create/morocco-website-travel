@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- GoMoroccoAI Portal Main Indexes -->
+  <!-- GoMoroccoAI Core Pages -->
   <url>
     <loc>https://gomoroccoai.com/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/index.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -20,11 +14,49 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gomoroccoai.com/city.html</loc>
+    <loc>https://gomoroccoai.com/culture.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://gomoroccoai.com/trip-planner.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/about.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/contact.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/privacy.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/terms.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- City Destination Guides -->
   <url>
     <loc>https://gomoroccoai.com/city.html?id=marrakech</loc>
     <lastmod>2026-07-04</lastmod>
@@ -122,28 +154,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gomoroccoai.com/culture.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <loc>https://gomoroccoai.com/city.html?id=oujda</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gomoroccoai.com/trip-planner.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <loc>https://gomoroccoai.com/city.html?id=beni-mellal</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/blog.html</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Individual Blog Articles for Search Engine Indexing -->
+  <!-- Individual Blog Articles -->
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-visa-requirements</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-cost-of-travel</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-itinerary-first-time</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=best-places-to-visit-in-morocco</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=casablanca-ultimate-travel-guide</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=what-to-wear-in-morocco</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=why-morocco-fastest-growing-destination</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://gomoroccoai.com/blog.html?id=morocco-broke-tourism-records-2026</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-travel-tips-30-things-to-know</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -152,6 +226,18 @@
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=is-morocco-safe-to-visit-2026</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gomoroccoai.com/blog.html?id=morocco-travel-safety-etiquette-tips</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gomoroccoai.com/blog.html?id=best-time-to-visit-morocco</loc>
@@ -194,43 +280,5 @@
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/blog.html?id=best-places-to-visit-in-morocco</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/blog.html?id=casablanca-ultimate-travel-guide</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Editorial Utility pages -->
-  <url>
-    <loc>https://gomoroccoai.com/about.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/contact.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/privacy.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://gomoroccoai.com/terms.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
 </urlset>
