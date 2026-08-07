@@ -91,7 +91,7 @@ export const postMoroccoTravelTips30Things = {
       <h2>Planning and Logistics Tips</h2>
       
       <h3>1. Time Your Visit Perfectly</h3>
-      <p>Choosing the right season will define your experience. While coastal breezes keep beach destinations pleasant year-round, inland temperatures vary wildly. Spring (March to May) and Autumn (September to November) offer mild, pleasant weather ideal for exploring imperial capitals. Check out our <a href="/blog.html?id=best-time-to-visit-morocco" class="blog-internal-link">best time to visit Morocco guide</a> to plan around seasonal festivals, Sahara desert conditions, and optimal trekking climates.</p>
+      <p>Choosing the right season will define your experience. While coastal breezes keep beach destinations pleasant year-round, inland temperatures vary wildly. Spring (March to May) and Autumn (September to November) offer mild, pleasant weather ideal for exploring imperial capitals. Check out our <a href="/blog/best-time-to-visit-morocco.html" class="blog-internal-link">best time to visit Morocco guide</a> to plan around seasonal festivals, Sahara desert conditions, and optimal trekking climates.</p>
 
       <h3>2. Prepare for a Closed Currency</h3>
       <p>The Moroccan Dirham (MAD) is a closed currency. You cannot officially buy or import it before entering the country. Plan to exchange major currencies (USD, EUR, GBP) at local currency desks or withdraw cash from ATMs immediately upon arrival at international airports. It is highly beneficial to check the latest guidelines from the <a href="https://www.visitmorocco.com/" class="blog-external-link" target="_blank" rel="noopener noreferrer">Moroccan National Tourism Office</a> to verify local banking regulations.</p>
@@ -125,10 +125,10 @@ export const postMoroccoTravelTips30Things = {
       <h2>Navigating Moroccan Cities and Souks</h2>
 
       <h3>11. Master the Art of Haggling</h3>
-      <p>In traditional Moroccan souks, bargaining is not a confrontation—it is a social interaction and a game of wit. Vendors deliberately quote high starting prices. Always remain lighthearted, smile, and offer roughly 30% to 50% of their initial quote, gradually working your way to a mutually satisfying middle ground. If you are exploring the <a href="/city.html?id=marrakech" class="blog-internal-link">vibrant souks of Marrakech</a>, remember that walking away is your most powerful negotiating strategy.</p>
+      <p>In traditional Moroccan souks, bargaining is not a confrontation—it is a social interaction and a game of wit. Vendors deliberately quote high starting prices. Always remain lighthearted, smile, and offer roughly 30% to 50% of their initial quote, gradually working your way to a mutually satisfying middle ground. If you are exploring the <a href="/city/marrakech.html" class="blog-internal-link">vibrant souks of Marrakech</a>, remember that walking away is your most powerful negotiating strategy.</p>
 
       <h3>12. Embrace Getting Lost in the Medinas</h3>
-      <p>The historic medinas of cities like Marrakech, Rabat, and the <a href="/city.html?id=fez" class="blog-internal-link">ancient imperial city of Fez</a> are complex urban mazes built centuries ago. Do not fear getting lost; it is the absolute best way to discover secret courtyards, quiet residential bakeries, and authentic leather tanneries away from commercial crowds.</p>
+      <p>The historic medinas of cities like Marrakech, Rabat, and the <a href="/city/fez.html" class="blog-internal-link">ancient imperial city of Fez</a> are complex urban mazes built centuries ago. Do not fear getting lost; it is the absolute best way to discover secret courtyards, quiet residential bakeries, and authentic leather tanneries away from commercial crowds.</p>
 
       <h3>13. Beware of Self-Appointed Street Guides</h3>
       <p>You will frequently encounter young men offering to guide you through the maze-like medinas or claiming that "this road is closed." Most of the time, they are trying to steer you toward their family’s carpet shop or will demand a heavy cash tip once they lead you into a quiet alley. Politely decline with a firm, smiling "No, Shukran" and continue on your way.</p>
@@ -176,16 +176,16 @@ export const postMoroccoTravelTips30Things = {
       <h2>Bucket-List Experiences and Final Hacks</h2>
 
       <h3>26. Sleep Under the Sahara Stars</h3>
-      <p>No trip to North Africa is complete without exploring the spectacular dunes. Book an <a href="/city.html?id=merzouga" class="blog-internal-link">overnight desert safari in Merzouga</a>, where you can ride camels over golden crests, eat tagine around a bonfire, listen to traditional Berber music, and sleep in cozy desert tents under a brilliant Milky Way canopy.</p>
+      <p>No trip to North Africa is complete without exploring the spectacular dunes. Book an <a href="/city/merzouga.html" class="blog-internal-link">overnight desert safari in Merzouga</a>, where you can ride camels over golden crests, eat tagine around a bonfire, listen to traditional Berber music, and sleep in cozy desert tents under a brilliant Milky Way canopy.</p>
 
       <h3>27. Experience a Traditional Hammam</h3>
       <p>The Hammam is an authentic Moroccan steam bath ritual. It involves relaxing in a heated steam chamber, followed by a vigorous, refreshing full-body scrub using traditional black olive-oil soap (Savon Noir) and an exfoliating Kessa glove. It will leave your skin feeling completely rejuvenated.</p>
 
       <h3>28. Capture the Blue Streets of Chefchaouen</h3>
-      <p>Nestled in the scenic Rif Mountains, the famous blue city is a photographer's dream. Wander through the <a href="/city.html?id=chefchaouen" class="blog-internal-link">iconic blue-washed streets of Chefchaouen</a> early in the morning before crowds arrive to capture the tranquil, artistic bohemian atmosphere at its absolute best.</p>
+      <p>Nestled in the scenic Rif Mountains, the famous blue city is a photographer's dream. Wander through the <a href="/city/chefchaouen.html" class="blog-internal-link">iconic blue-washed streets of Chefchaouen</a> early in the morning before crowds arrive to capture the tranquil, artistic bohemian atmosphere at its absolute best.</p>
 
       <h3>29. Visit a Peaceful Coastal Sanctuary</h3>
-      <p>If the frenetic energy of Marrakech and Fez gets too intense, escape to the Atlantic coast. The charming town of Essaouira offers a laid-back sanctuary characterized by whitewashed houses, blue fishing boats, coastal fortifications, and an incredible fresh seafood harbor. Read our <a href="/city.html?id=essaouira" class="blog-internal-link">Essaouira travel guide</a> to plan your breezy coastal detour.</p>
+      <p>If the frenetic energy of Marrakech and Fez gets too intense, escape to the Atlantic coast. The charming town of Essaouira offers a laid-back sanctuary characterized by whitewashed houses, blue fishing boats, coastal fortifications, and an incredible fresh seafood harbor. Read our <a href="/city/essaouira.html" class="blog-internal-link">Essaouira travel guide</a> to plan your breezy coastal detour.</p>
 
       <h3>30. Stay Aware, Smile, and Enjoy the Ride</h3>
       <p>Morocco will challenge your senses, test your negotiation skills, and reward your curiosity. The most valuable tip is to stay flexible, keep an open mind, maintain a friendly smile, and accept that getting lost is part of the beautiful, unforgettable adventure.</p>
@@ -196,7 +196,7 @@ export const postMoroccoTravelTips30Things = {
       <h2>Planification et Logistique</h2>
       
       <h3>1. Choisissez la Bonne Saison</h3>
-      <p>La période de votre séjour définira votre expérience. Le printemps (de mars à mai) et l'automne (de septembre à novembre) offrent des températures idéales pour explorer les cités impériales. Consultez notre <a href="/blog.html?id=best-time-to-visit-morocco" class="blog-internal-link">guide de la meilleure période pour partir au Maroc</a> pour planifier votre itinéraire.</p>
+      <p>La période de votre séjour définira votre expérience. Le printemps (de mars à mai) et l'automne (de septembre à novembre) offrent des températures idéales pour explorer les cités impériales. Consultez notre <a href="/blog/best-time-to-visit-morocco.html" class="blog-internal-link">guide de la meilleure période pour partir au Maroc</a> pour planifier votre itinéraire.</p>
 
       <h3>2. Préparez-vous à une Monnaie Fermée</h3>
       <p>Le Dirham Marocain (MAD) est une monnaie fermée. Vous ne pouvez pas vous en procurer à l'étranger. Prévoyez de changer vos euros ou de retirer des dirhams dans les bureaux de change et les distributeurs dès votre arrivée à l'aéroport. Vérifiez les conseils officiels de l'office du tourisme sur le portail <a href="https://www.visitmorocco.com/" class="blog-external-link" target="_blank" rel="noopener noreferrer">Visit Morocco</a>.</p>
@@ -230,10 +230,10 @@ export const postMoroccoTravelTips30Things = {
       <h2>S'orienter et Visiter les Souks</h2>
 
       <h3>11. Maîtrisez l'Art de la Négociation</h3>
-      <p>Dans les souks, négocier fait partie intégrante du jeu social et culturel. Les vendeurs annoncent toujours un prix de départ élevé. Souriez, restez courtois, proposez environ 30% à 50% de la mise de départ et trouvez un terrain d'entente. Si vous parcourez les <a href="/city.html?id=marrakech" class="blog-internal-link">souks de Marrakech</a>, n'oubliez pas que savoir partir poliment est votre meilleur atout.</p>
+      <p>Dans les souks, négocier fait partie intégrante du jeu social et culturel. Les vendeurs annoncent toujours un prix de départ élevé. Souriez, restez courtois, proposez environ 30% à 50% de la mise de départ et trouvez un terrain d'entente. Si vous parcourez les <a href="/city/marrakech.html" class="blog-internal-link">souks de Marrakech</a>, n'oubliez pas que savoir partir poliment est votre meilleur atout.</p>
 
       <h3>12. Perdez-vous dans les Médinas</h3>
-      <p>Les médinas historiques de Marrakech, de Rabat ou l'un des plus grands espaces piétons au monde dans la <a href="/city.html?id=fez" class="blog-internal-link">médina de Fès</a> sont de fabuleux labyrinthes. Ne craignez pas de vous perdre, c'est de loin le meilleur moyen de découvrir des ruelles authentiques et des ateliers secrets.</p>
+      <p>Les médinas historiques de Marrakech, de Rabat ou l'un des plus grands espaces piétons au monde dans la <a href="/city/fez.html" class="blog-internal-link">médina de Fès</a> sont de fabuleux labyrinthes. Ne craignez pas de vous perdre, c'est de loin le meilleur moyen de découvrir des ruelles authentiques et des ateliers secrets.</p>
 
       <h3>13. Évitez les Faux Guides Locaux</h3>
       <p>Certains passants vous proposeront gentiment de vous montrer le chemin ou vous diront que la rue est fermée. Souvent, ils cherchent à vous attirer dans un magasin d'épices ou de tapis de leur famille, ou vous réclameront de l'argent. Dites un non ferme et poli : « La, Shukran », et poursuivez votre chemin.</p>
@@ -281,16 +281,16 @@ export const postMoroccoTravelTips30Things = {
       <h2>Expériences Incontournables et Astuces Finales</h2>
 
       <h3>26. Dormez sous les Étoiles du Sahara</h3>
-      <p>Une escapade au désert est indispensable. Offrez-vous une <a href="/city.html?id=merzouga" class="blog-internal-link">nuit dans le désert de Merzouga</a> pour monter à dos de dromadaire, contempler le coucher du soleil et dormir sous un ciel étoilé d'une clarté infinie.</p>
+      <p>Une escapade au désert est indispensable. Offrez-vous une <a href="/city/merzouga.html" class="blog-internal-link">nuit dans le désert de Merzouga</a> pour monter à dos de dromadaire, contempler le coucher du soleil et dormir sous un ciel étoilé d'une clarté infinie.</p>
 
       <h3>27. Testez le Hammam Traditionnel</h3>
       <p>Le hammam est un rituel de bien-être purificateur au Maroc. Offrez-vous un gommage vigoureux au savon noir traditionnel à l'aide d'un gant de kessa pour ressortir détendu et avec une peau d'une douceur absolue.</p>
 
       <h3>28. Photographiez la Ville Bleue</h3>
-      <p>Située dans les montagnes du Rif, Chefchaouen séduit tous ses visiteurs. Parcourez la <a href="/city.html?id=chefchaouen" class="blog-internal-link">médina bleue de Chefchaouen</a> de bon matin avant l'arrivée des foules pour profiter d'une lumière magnifique.</p>
+      <p>Située dans les montagnes du Rif, Chefchaouen séduit tous ses visiteurs. Parcourez la <a href="/city/chefchaouen.html" class="blog-internal-link">médina bleue de Chefchaouen</a> de bon matin avant l'arrivée des foules pour profiter d'une lumière magnifique.</p>
 
       <h3>29. Évadez-vous sur la Côte à Essaouira</h3>
-      <p>Si la chaleur et l'intensité de Marrakech vous fatiguent, partez respirer l'air de l'Atlantique. La charmante ville fortifiée d'Essaouira propose un havre côtier parfait avec son port de pêche actif, ses mouettes et ses excellents poissons grillés. Lisez notre <a href="/city.html?id=essaouira" class="blog-internal-link">guide de voyage d'Essaouira</a> pour préparer votre séjour.</p>
+      <p>Si la chaleur et l'intensité de Marrakech vous fatiguent, partez respirer l'air de l'Atlantique. La charmante ville fortifiée d'Essaouira propose un havre côtier parfait avec son port de pêche actif, ses mouettes et ses excellents poissons grillés. Lisez notre <a href="/city/essaouira.html" class="blog-internal-link">guide de voyage d'Essaouira</a> pour préparer votre séjour.</p>
 
       <h3>30. Soyez Flexible, Gardez le Sourire</h3>
       <p>Le Maroc récompensera votre curiosité. Soyez ouvert d'esprit, patient et souriant : l'imprévu et les rencontres impromptues font partie de la magie incomparable de ce voyage extraordinaire au Royaume.</p>

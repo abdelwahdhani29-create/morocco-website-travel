@@ -145,7 +145,7 @@ export const postChefchaouen = {
 
       <p>Chefchaouen is far more than an Instagram backdrop—it is a resilient, soulful mountain refuge where ancient history, warm hospitality, and natural beauty intertw seamlessly. Taking the time to slow your pace, greet shopkeepers warmly, and appreciate the rhythm of mountain life will make your journey truly unforgettable.</p>
 
-      <p class="blog-highlight"><strong>Planning your journey to the Rif Mountains?</strong> Discover transport options, authentic riads, and mountain hiking trails in our dedicated guide. <a href="/city.html?id=chefchaouen" class="blog-internal-link">Explore our Chefchaouen Tourism Guide &rarr;</a> You can also combine your trip with coastal culture in our <a href="/city.html?id=tangier" class="blog-internal-link">Tangier Travel Guide</a> or explore northern heritage in our <a href="/city.html?id=tetouan" class="blog-internal-link">Tetouan Guide</a>.</p>
+      <p class="blog-highlight"><strong>Planning your journey to the Rif Mountains?</strong> Discover transport options, authentic riads, and mountain hiking trails in our dedicated guide. <a href="/city/chefchaouen.html" class="blog-internal-link">Explore our Chefchaouen Tourism Guide &rarr;</a> You can also combine your trip with coastal culture in our <a href="/city/tangier.html" class="blog-internal-link">Tangier Travel Guide</a> or explore northern heritage in our <a href="/city/tetouan.html" class="blog-internal-link">Tetouan Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Nichée au cœur des sommets escarpés du massif du Rif dans le nord du Maroc, Chefchaouen resplendit comme un joyau de cobalt. Célèbre dans le monde entier pour son labyrinthe de ruelles peintes de mille nuances de bleu, la « Perle Bleue » est une destination incontournable pour les photographes, les randonneurs et les passionnés de culture.</p>
@@ -207,7 +207,7 @@ export const postChefchaouen = {
 
       <p>Chefchaouen est bien plus qu'un simple décor de carte postale—c'est un refuge montagneux authentique où l'histoire, l'hospitalité et la nature s'unissent en toute harmonie. Prendre le temps de ralentir, de saluer les habitants et d'écouter le silence des montagnes rendra votre voyage inoubliable.</p>
 
-      <p class="blog-highlight"><strong>Vous préparez votre séjour dans le Rif ?</strong> Retrouvez toutes les informations sur les transports, les meilleurs riads et les randonnées dans notre guide complet. <a href="/city.html?id=chefchaouen" class="blog-internal-link">Consultez notre Guide Touristique de Chefchaouen &rarr;</a> Vous pouvez aussi combiner votre séjour avec notre <a href="/city.html?id=tangier" class="blog-internal-link">Guide de Tanger</a> ou explorer le patrimoine du nord dans notre <a href="/city.html?id=tetouan" class="blog-internal-link">Guide de Tétouan</a>.</p>
+      <p class="blog-highlight"><strong>Vous préparez votre séjour dans le Rif ?</strong> Retrouvez toutes les informations sur les transports, les meilleurs riads et les randonnées dans notre guide complet. <a href="/city/chefchaouen.html" class="blog-internal-link">Consultez notre Guide Touristique de Chefchaouen &rarr;</a> Vous pouvez aussi combiner votre séjour avec notre <a href="/city/tangier.html" class="blog-internal-link">Guide de Tanger</a> ou explorer le patrimoine du nord dans notre <a href="/city/tetouan.html" class="blog-internal-link">Guide de Tétouan</a>.</p>
     `
   }
 };

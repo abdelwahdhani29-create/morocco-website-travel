@@ -86,7 +86,7 @@ export const postIsMoroccoSafe2026 = {
       </div>
 
       <h2>1. The 2026 Security Landscape: Government Investments & Infrastructure</h2>
-      <p>In preparation for major international events, the Moroccan government has significantly increased investments in security. Visitors to major tourist cities like <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a>, <a href="/city.html?id=fez" class="blog-internal-link">Fes</a>, and <a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a> will immediately notice a highly visible police presence. This includes the specialized <i>Brigade Touristique</i> (Tourist Police), who patrol historical medinas, souks, and monuments in plain clothes and uniforms specifically to protect international travelers.</p>
+      <p>In preparation for major international events, the Moroccan government has significantly increased investments in security. Visitors to major tourist cities like <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, <a href="/city/fez.html" class="blog-internal-link">Fes</a>, and <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> will immediately notice a highly visible police presence. This includes the specialized <i>Brigade Touristique</i> (Tourist Police), who patrol historical medinas, souks, and monuments in plain clothes and uniforms specifically to protect international travelers.</p>
       
       <p>The primary safety concern for travelers in Morocco is petty theft (such as pickpocketing and purse-snatching), rather than violent crime. Incidents of armed robbery or physical assault targeting tourists are extremely rare. The Moroccan penal system deals with crimes against tourists with immense severity, acting as an incredibly powerful deterrent for local criminals.</p>
 
@@ -103,7 +103,7 @@ export const postIsMoroccoSafe2026 = {
       <br><strong>The Threat:</strong> The risk of crime here is minimal, restricted to standard urban pickpocketing near crowded night spots or transit stations.
       <br><strong>The Solution:</strong> Standard city vigilance is sufficient. You can walk comfortably at night in these well-lit, heavily policed modern avenues.</p>
 
-      <h3>Rural Morocco & Desert Outposts (<a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>, High Atlas, Rif)</h3>
+      <h3>Rural Morocco & Desert Outposts (<a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a>, High Atlas, Rif)</h3>
       <p>Contrary to what some might assume, rural Morocco is often the safest part of the entire country. The rural Amazigh (Berber) population is famous for its legendary, deeply ingrained hospitality. 
       <br><strong>The Threat:</strong> The primary hazards here are natural rather than human—such as extreme weather, rough hiking terrain, or flash floods in deep Atlas gorges.
       <br><strong>The Solution:</strong> Always hire local mountain guides when trekking. Check weather reports before driving through mountain passes like Tizi n'Tichka. In desert camps in Merzouga, security is impeccable; camps are heavily guarded and situated far from any regional instabilities.</p>
@@ -216,7 +216,7 @@ export const postIsMoroccoSafe2026 = {
       <p>Staying safe in Morocco also means respecting local laws. The Kingdom has strict, conservative legislation that travelers must adhere to:</p>
       <ul>
         <li><strong>Respect for Monarchy and Religion:</strong> It is illegal to slander or insult King Mohammed VI, the royal family, or Islam. Avoid engaging in heated public discussions regarding these topics or the geopolitical status of the Western Sahara.</li>
-        <li><strong>Strict Drug Laws:</strong> Despite the famous presence of cannabis (Kif) plantations in the Rif Mountains around <a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a>, marijuana remains completely illegal in Morocco. Penalties for possession and trafficking are severe, and police check-points on mountain highways are highly common. Do not buy or transport drugs.</li>
+        <li><strong>Strict Drug Laws:</strong> Despite the famous presence of cannabis (Kif) plantations in the Rif Mountains around <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>, marijuana remains completely illegal in Morocco. Penalties for possession and trafficking are severe, and police check-points on mountain highways are highly common. Do not buy or transport drugs.</li>
         <li><strong>LGBTQ+ Travel:</strong> Same-sex sexual activity is technically illegal under Article 489 of the Moroccan Penal Code. However, the law is rarely enforced against foreign tourists, especially in upscale hotels and private riads. Avoid public displays of affection (applicable to all couples, heterosexual and same-sex) to prevent local friction.</li>
         <li><strong>Exporting Currency:</strong> The Moroccan Dirham is a closed currency. It is illegal to export more than 10,000 MAD (approx. $1,000 USD) out of the country. Exchange your Dirhams back to Euros or Dollars at the airport before checking in for your return flight.</li>
       </ul>
@@ -247,7 +247,7 @@ export const postIsMoroccoSafe2026 = {
       </div>
 
       <h2>1. Le contexte de sécurité en 2026 : investissements de l'État et surveillance</h2>
-      <p>En vue de l'accueil de grands événements sportifs mondiaux, le gouvernement marocain a massivement investi dans la sécurité publique. Les visiteurs arrivant dans les grandes villes impériales telles que <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a>, <a href="/city.html?id=fez" class="blog-internal-link">Fès</a> ou <a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a> remarqueront immédiatement une présence policière rassurante. La <i>Brigade Touristique</i> (Police Touristique), en uniforme ou en civil, patrouille activement les médinas historiques, les souks et les monuments afin de protéger les visiteurs internationaux.</p>
+      <p>En vue de l'accueil de grands événements sportifs mondiaux, le gouvernement marocain a massivement investi dans la sécurité publique. Les visiteurs arrivant dans les grandes villes impériales telles que <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, <a href="/city/fez.html" class="blog-internal-link">Fès</a> ou <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> remarqueront immédiatement une présence policière rassurante. La <i>Brigade Touristique</i> (Police Touristique), en uniforme ou en civil, patrouille activement les médinas historiques, les souks et les monuments afin de protéger les visiteurs internationaux.</p>
       
       <p>Les vols à la tire (pickpocket) et les vols de téléphones portables à l'arraché représentent l'essentiel des délits constatés. Les agressions physiques ou vols à main armée contre les touristes sont extrêmement rares. La justice marocaine punit très sévèrement les crimes et délits commis à l'encontre des touristes, ce qui exerce un pouvoir de dissuasion colossal à l'échelle locale.</p>
 
@@ -264,7 +264,7 @@ export const postIsMoroccoSafe2026 = {
       <br><strong>Le risque :</strong> Pratiquement nul, limité à la vigilance urbaine habituelle près des établissements de nuit ou des gares.
       <br><strong>La solution :</strong> Une prudence classique suffit. Vous pouvez vous y promener de nuit en toute décontraction.</p>
 
-      <h3>Le Maroc rural et les zones désertiques (<a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>, Haut Atlas, Rif)</h3>
+      <h3>Le Maroc rural et les zones désertiques (<a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a>, Haut Atlas, Rif)</h3>
       <p>Contrairement aux idées reçues, le Maroc rural est sans doute la zone la plus sûre et paisible du pays. Les populations amazighes (berbères) y cultivent un sens de l'hospitalité sacré et légendaire.
       <br><strong>Le risque :</strong> Il est ici d'ordre naturel (météo extrême, sentiers escarpés en montagne, crues subites dans les gorges de l'Atlas).
       <br><strong>La solution :</strong> Faites toujours appel à des guides de montagne officiels pour vos randonnées. Consultez la météo avant de franchir des cols comme le Tizi n'Tichka. Dans le désert de Merzouga (Erg Chebbi), la sécurité est totale et rigoureusement encadrée.</p>

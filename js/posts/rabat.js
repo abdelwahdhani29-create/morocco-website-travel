@@ -153,7 +153,7 @@ export const postRabat = {
 
       <p>Whether you sip Atay in a shaded garden in Rabat, on a breezy ocean rampart in Essaouira, or beside a campfire in the Sahara desert, this golden elixir connects you directly to the timeless heart and hospitality of Morocco.</p>
 
-      <p class="blog-highlight"><strong>Eager to experience Moroccan traditions firsthand?</strong> Explore historical sites, coastal tea gardens, and cultural museums in our capital guide. <a href="/city.html?id=rabat" class="blog-internal-link">Explore our Rabat Tourism Guide &rarr;</a> Discover regional traditions in our <a href="/city.html?id=fez" class="blog-internal-link">Fez Gastronomy Guide</a> or our <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech Souks Guide</a>.</p>
+      <p class="blog-highlight"><strong>Eager to experience Moroccan traditions firsthand?</strong> Explore historical sites, coastal tea gardens, and cultural museums in our capital guide. <a href="/city/rabat.html" class="blog-internal-link">Explore our Rabat Tourism Guide &rarr;</a> Discover regional traditions in our <a href="/city/fez.html" class="blog-internal-link">Fez Gastronomy Guide</a> or our <a href="/city/marrakech.html" class="blog-internal-link">Marrakech Souks Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Au Maroc, le thé n'est pas une simple boisson chaude ; c'est une institution culturelle, un art de vivre, un symbole de fraternité et le geste ultime d'hospitalité. Comprendre la culture marocaine exige de s'initier au rituel lent, parfumé et sacré de l'Atay.</p>
@@ -223,7 +223,7 @@ export const postRabat = {
 
       <p>Que vous dégustiez l'Atay dans un jardin de Rabat, sur les remparts d'Essaouira ou autour d'un feu de camp dans le Sahara, ce nectar doré vous connecte directement à l'âme chaleureuse du Maroc.</p>
 
-      <p class="blog-highlight"><strong>Envie de vivre l'art de vivre marocain ?</strong> Retrouvez les plus beaux cafés traditionnels, musées et jardins de la capitale dans notre dossier. <a href="/city.html?id=rabat" class="blog-internal-link">Consultez notre Guide Touristique de Rabat &rarr;</a> Découvrez également nos secrets culinaires dans notre <a href="/city.html?id=fez" class="blog-internal-link">Guide Gastronomique de Fès</a> ou notre <a href="/city.html?id=marrakech" class="blog-internal-link">Guide des Souks de Marrakech</a>.</p>
+      <p class="blog-highlight"><strong>Envie de vivre l'art de vivre marocain ?</strong> Retrouvez les plus beaux cafés traditionnels, musées et jardins de la capitale dans notre dossier. <a href="/city/rabat.html" class="blog-internal-link">Consultez notre Guide Touristique de Rabat &rarr;</a> Découvrez également nos secrets culinaires dans notre <a href="/city/fez.html" class="blog-internal-link">Guide Gastronomique de Fès</a> ou notre <a href="/city/marrakech.html" class="blog-internal-link">Guide des Souks de Marrakech</a>.</p>
     `
   }
 };

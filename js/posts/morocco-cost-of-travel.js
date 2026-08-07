@@ -81,7 +81,7 @@ export const postMoroccoCostOfTravel = {
 
       <p>Compared to Western Europe or North America, Morocco stands out as an incredibly affordable destination offering immense value. However, prices can fluctuate dramatically depending on your travel style, the cities you visit, whether you hire private drivers, and how adeptly you handle local cash transactions. In this definitive 2026 travel budget guide, we break down every single expense category—from boutique riads and street food to high-speed trains, desert glamping, tipping, and hidden fees—so you can budget with total confidence.</p>
 
-      <p>Before diving into the numbers, make sure to read our companion guides on <a href="/blog.html?id=morocco-travel-tips-30-things-to-know" class="blog-internal-link">30 essential Morocco travel tips</a> for practical safety advice, and check out our <a href="/blog.html?id=morocco-itinerary-first-time" class="blog-internal-link">perfect 10-day first-time Morocco itinerary</a> to map out your dream route.</p>
+      <p>Before diving into the numbers, make sure to read our companion guides on <a href="/blog/morocco-travel-tips-30-things-to-know.html" class="blog-internal-link">30 essential Morocco travel tips</a> for practical safety advice, and check out our <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">perfect 10-day first-time Morocco itinerary</a> to map out your dream route.</p>
 
       <h2>The Moroccan Dirham (MAD): Exchange Rates & Currency Basics</h2>
       <p>The official currency of Morocco is the <strong>Moroccan Dirham (MAD)</strong>. To give you an easy mental baseline when calculating expenses on the ground, here are the approximate conversion benchmark rates (updated for 2026):</p>
@@ -142,7 +142,7 @@ export const postMoroccoCostOfTravel = {
       <p>Social hostels are booming in major hubs like Marrakech, Fes, and Tangier. A clean dorm bed in a central medina hostel typically costs 100 to 180 MAD ($10–$18) per night, often including mint tea and a basic pancake breakfast. Private rooms in simple family-run guesthouses (dars) range from 200 to 350 MAD ($20–$35).</p>
 
       <h3>Mid-Range Boutique Riads (600 – 1,500 MAD / $60 – $150 per night)</h3>
-      <p>This is the sweet spot for 90% of travelers. For $70 to $120 per night, two people can stay in a beautifully restored boutique riad with hand-carved stucco, zellige tilework, air conditioning, private en-suite bathroom, and a delicious multi-course Moroccan breakfast served on a sunlit rooftop terrace. For curated recommendations in major cities, explore our <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech accommodation guide</a> and our <a href="/city.html?id=fez" class="blog-internal-link">Fes riad selection</a>.</p>
+      <p>This is the sweet spot for 90% of travelers. For $70 to $120 per night, two people can stay in a beautifully restored boutique riad with hand-carved stucco, zellige tilework, air conditioning, private en-suite bathroom, and a delicious multi-course Moroccan breakfast served on a sunlit rooftop terrace. For curated recommendations in major cities, explore our <a href="/city/marrakech.html" class="blog-internal-link">Marrakech accommodation guide</a> and our <a href="/city/fez.html" class="blog-internal-link">Fes riad selection</a>.</p>
 
       <h3>Luxury Hotels & Palatial Resorts (3,000 – 10,000+ MAD / $300 – $1,000+ per night)</h3>
       <p>If pampering is your priority, Morocco boasts world-class luxury properties like Royal Mansour and La Mamounia in Marrakech, or Hotel Sahrai in Fes. Expect plush suites, heated plunge pools, Michelin-caliber dining, and private butler service.</p>
@@ -268,7 +268,7 @@ export const postMoroccoCostOfTravel = {
         </table>
       </div>
 
-      <p>For deeper activity guides in specific desert regions, read our dedicated <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga Sahara travel guide</a> or explore the stunning sights of <a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a>.</p>
+      <p>For deeper activity guides in specific desert regions, read our dedicated <a href="/city/merzouga.html" class="blog-internal-link">Merzouga Sahara travel guide</a> or explore the stunning sights of <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>.</p>
 
       <h2>5. Souvenir Shopping & Bargaining Guidelines</h2>
       <p>Shopping in Moroccan souks is a vibrant cultural experience. Bargaining is expected and respected. Here are realistic price expectations for high-quality artisan goods:</p>
@@ -311,7 +311,7 @@ export const postMoroccoCostOfTravel = {
       <p><strong>Total Estimated Cost: $320 – $480 USD (3,200 – 4,800 MAD) per person.</strong><br />Includes hostel dorm beds, street food, public buses/trains, free walking tours, and 1 shared day trip.</p>
 
       <h3>10-Day Mid-Range Trip (Couples / Friends)</h3>
-      <p><strong>Total Estimated Cost: $1,100 – $1,600 USD (11,000 – 16,000 MAD) per person.</strong><br />Includes private boutique riads with breakfast, delicious medina rooftop dinners, first-class trains, a 3-day Sahara desert tour, official guide fees, and entrance tickets. Pair this with our <a href="/blog.html?id=morocco-itinerary-first-time" class="blog-internal-link">complete 10-Day Morocco Itinerary</a>.</p>
+      <p><strong>Total Estimated Cost: $1,100 – $1,600 USD (11,000 – 16,000 MAD) per person.</strong><br />Includes private boutique riads with breakfast, delicious medina rooftop dinners, first-class trains, a 3-day Sahara desert tour, official guide fees, and entrance tickets. Pair this with our <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">complete 10-Day Morocco Itinerary</a>.</p>
 
       <h3>10-Day Luxury Trip (High-End)</h3>
       <p><strong>Total Estimated Cost: $3,500 – $7,000+ USD (35,000 – 70,000+ MAD) per person.</strong><br />Includes 5-star luxury palatial riads, fine dining, private 4x4 chauffeur driver, private luxury desert glamping, and luxury spa hammams.</p>
@@ -325,7 +325,7 @@ export const postMoroccoCostOfTravel = {
 
       <p>Comparé à l'Europe occidentale ou à l'Amérique du Nord, le Maroc s'impose comme une destination très abordable offrant un rapport qualité-prix exceptionnel. Cependant, les tarifs peuvent fortement varier selon votre style de voyage, les villes visitées, l'utilisation de chauffeurs privés et votre maîtrise des paiements en espèces locaux. Dans ce guide complet du budget voyage 2026, nous analysons chaque poste de dépense—des riads de charme à la cuisine de rue, en passant par les TGV, le bivouac dans le désert, les pourboires et les frais cachés.</p>
 
-      <p>Avant de plonger dans les chiffres, n'hésitez pas à lire nos articles complémentaires sur les <a href="/blog.html?id=morocco-travel-tips-30-things-to-know" class="blog-internal-link">30 conseils essentiels pour voyager au Maroc</a> et notre <a href="/blog.html?id=morocco-itinerary-first-time" class="blog-internal-link">itinéraire parfait de 10 jours pour un premier séjour</a>.</p>
+      <p>Avant de plonger dans les chiffres, n'hésitez pas à lire nos articles complémentaires sur les <a href="/blog/morocco-travel-tips-30-things-to-know.html" class="blog-internal-link">30 conseils essentiels pour voyager au Maroc</a> et notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">itinéraire parfait de 10 jours pour un premier séjour</a>.</p>
 
       <h2>Le Dirham Marocain (MAD) : Taux de change et règles monétaires</h2>
       <p>La monnaie officielle du Maroc est le <strong>Dirham Marocain (MAD)</strong>. Pour vous aider à calculer vos dépenses sur place, voici les taux de conversion indicatifs (mis à jour pour 2026) :</p>
@@ -386,7 +386,7 @@ export const postMoroccoCostOfTravel = {
       <p>Les auberges de jeunesse fleurissent dans les grandes villes comme Marrakech, Fès et Tanger. Un lit en dortoir coûte entre 100 et 180 MAD (10 € à 16 €) la nuit, souvent avec thé et petit-déjeuner inclus. Une chambre privée en maison d'hôtes familiale (dar) varie de 200 à 350 MAD (18 € à 32 €).</p>
 
       <h3>Riads de Charme de Gamme Moyenne (600 – 1 500 MAD / 55 € – 140 € la nuit)</h3>
-      <p>C'est le choix idéal pour 90 % des voyageurs. Pour 65 € à 110 € la nuit, deux personnes peuvent séjourner dans un magnifique riad restauré avec zelliges, climatisation, salle de bain privée et un copieux petit-déjeuner marocain servi sur le toit-terrasse. Pour réserver les meilleures adresses, consultez notre <a href="/city.html?id=marrakech" class="blog-internal-link">guide d'hébergement à Marrakech</a> et notre sélection pour <a href="/city.html?id=fez" class="blog-internal-link">la médina de Fès</a>.</p>
+      <p>C'est le choix idéal pour 90 % des voyageurs. Pour 65 € à 110 € la nuit, deux personnes peuvent séjourner dans un magnifique riad restauré avec zelliges, climatisation, salle de bain privée et un copieux petit-déjeuner marocain servi sur le toit-terrasse. Pour réserver les meilleures adresses, consultez notre <a href="/city/marrakech.html" class="blog-internal-link">guide d'hébergement à Marrakech</a> et notre sélection pour <a href="/city/fez.html" class="blog-internal-link">la médina de Fès</a>.</p>
 
       <h3>Hôtels de Luxe et Palais (3 000 – 10 000+ MAD / 280 € – 900 €+ la nuit)</h3>
       <p>Pour un séjour somptueux, des établissements mythiques comme le Royal Mansour ou La Mamounia à Marrakech offrent suites d'exception, piscines chauffées, spas de luxe et service de majordome privé.</p>
@@ -498,7 +498,7 @@ export const postMoroccoCostOfTravel = {
         </table>
       </div>
 
-      <p>Pour en savoir plus sur les excursions sahariennes, lisez notre <a href="/city.html?id=merzouga" class="blog-internal-link">guide complet sur Merzouga</a> et découvrez les secrets de <a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a>.</p>
+      <p>Pour en savoir plus sur les excursions sahariennes, lisez notre <a href="/city/merzouga.html" class="blog-internal-link">guide complet sur Merzouga</a> et découvrez les secrets de <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>.</p>
 
       <h2>5. Souvenirs et Conseils de Négociation</h2>
       <p>Faire ses achats dans les souks est une expérience incontournable. La négociation fait partie intégrante de la culture locale. Voici quelques repères de prix équitables :</p>
@@ -530,7 +530,7 @@ export const postMoroccoCostOfTravel = {
       <p><strong>Budget total estimé : 300 € à 450 € (3 200 à 4 800 MAD) par personne.</strong><br />Auberges de jeunesse, street food, bus/trains et visites libres.</p>
 
       <h3>Séjour 10 Jours Gamme Moyenne (Couple / Amis)</h3>
-      <p><strong>Budget total estimé : 1 000 € à 1 500 € (11 000 à 16 000 MAD) par personne.</strong><br />Riads de charme avec petit-déjeuner, dîners en terrasses, TGV, excursion de 3 jours au Sahara, guides officiels et musées. À combiner avec notre <a href="/blog.html?id=morocco-itinerary-first-time" class="blog-internal-link">Itinéraire Ultime de 10 Jours au Maroc</a>.</p>
+      <p><strong>Budget total estimé : 1 000 € à 1 500 € (11 000 à 16 000 MAD) par personne.</strong><br />Riads de charme avec petit-déjeuner, dîners en terrasses, TGV, excursion de 3 jours au Sahara, guides officiels et musées. À combiner avec notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">Itinéraire Ultime de 10 Jours au Maroc</a>.</p>
 
       <p>Pour calculer un budget personnalisé selon votre rythme et vos dates, utilisez notre <a href="/trip-planner.html" class="blog-internal-link">Planificateur IA GoMoroccoAI</a> ou explorez notre <a href="/cities.html" class="blog-internal-link">Annuaire des Villes du Maroc</a>.</p>
 

@@ -468,7 +468,7 @@ function renderCityDashboard() {
   // Open Dedicated profile target text
   const btnDedicated = document.getElementById('btn-view-dedicated');
   if (btnDedicated) {
-    btnDedicated.setAttribute('href', `/city.html?id=${activeCityData.id}`);
+    btnDedicated.setAttribute('href', `/city/${activeCityData.id}.html`);
     const lblDedicated = document.getElementById('lbl-dedicated-btn');
     if (lblDedicated) {
       lblDedicated.textContent = t('dedicated_btn');
@@ -912,14 +912,14 @@ function renderHomepageBlogWidget() {
               <span>${postReadTime}</span>
             </div>
             <h3 style="font-family: var(--font-serif); font-size: 18px; font-weight: 700; line-height: 1.4; margin: 0; color: var(--color-charcoal); transition: var(--transition-smooth);">
-              <a href="/blog.html?id=${post.id}" style="color: inherit; text-decoration: none;">${postTitle}</a>
+              <a href="/blog/${post.id}.html" style="color: inherit; text-decoration: none;">${postTitle}</a>
             </h3>
             <p style="font-size: 13px; color: var(--color-charcoal-light); line-height: 1.6; margin: 8px 0 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
               ${postExcerpt}
             </p>
           </div>
           <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--color-border); display: flex; justify-content: flex-end;">
-            <a href="/blog.html?id=${post.id}" style="font-size: 12px; font-weight: 700; color: var(--color-terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-smooth);">
+            <a href="/blog/${post.id}.html" style="font-size: 12px; font-weight: 700; color: var(--color-terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-smooth);">
               <span>${t('read_more').replace('&rarr;', '').trim()}</span> &rarr;
             </a>
           </div>

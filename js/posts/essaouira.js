@@ -141,7 +141,7 @@ export const postEssaouira = {
 
       <p>Whether you come to listen to the hypnotic rhythms of Gnawa lutes, sample grilled sardines at the harbor, or watch the sun set over historic cannons, Essaouira offers a serene coastal retreat that invites you to slow your pace and breathe in the salt air of the Atlantic.</p>
 
-      <p class="blog-highlight"><strong>Planning your seaside getaway?</strong> Discover top sights, surf schools, and authentic coastal riads in our dedicated guide. <a href="/city.html?id=essaouira" class="blog-internal-link">Explore our Essaouira Tourism Guide &rarr;</a> Combine your trip with imperial culture in our <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech Travel Guide</a> or explore capital sights in our <a href="/city.html?id=rabat" class="blog-internal-link">Rabat Travel Guide</a>.</p>
+      <p class="blog-highlight"><strong>Planning your seaside getaway?</strong> Discover top sights, surf schools, and authentic coastal riads in our dedicated guide. <a href="/city/essaouira.html" class="blog-internal-link">Explore our Essaouira Tourism Guide &rarr;</a> Combine your trip with imperial culture in our <a href="/city/marrakech.html" class="blog-internal-link">Marrakech Travel Guide</a> or explore capital sights in our <a href="/city/rabat.html" class="blog-internal-link">Rabat Travel Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Connue sous le nom historique de Mogador, Essaouira est un sanctuaire côtier fortifié où les brises marines murmurent à travers des ramparts du XVIIIe siècle. Climat océanique tempéré, atmosphère artistique décontractée et port de pêche en pleine activité : la ville offre un contraste enchanteur avec le rythme trépidant des cités impériales intérieures.</p>
@@ -199,7 +199,7 @@ export const postEssaouira = {
 
       <p>Que vous veniez écouter le son mystique du gimbri, savourer des sardines grillées au port ou contempler l'océan depuis les remparts historiques, Essaouira vous offre une parenthèse marine unique empreinte de poésie et de sérénité.</p>
 
-      <p class="blog-highlight"><strong>Prêt pour un bol d'air marin ?</strong> Retrouvez les plus beaux monuments, les écoles de surf et les riads côtiers dans notre dossier complet. <a href="/city.html?id=essaouira" class="blog-internal-link">Consultez notre Guide Touristique d'Essaouira &rarr;</a> Associez votre séjour à la découverte de la ville ocre dans notre <a href="/city.html?id=marrakech" class="blog-internal-link">Guide de Marrakech</a> ou découvrez la capitale dans notre <a href="/city.html?id=rabat" class="blog-internal-link">Guide de Rabat</a>.</p>
+      <p class="blog-highlight"><strong>Prêt pour un bol d'air marin ?</strong> Retrouvez les plus beaux monuments, les écoles de surf et les riads côtiers dans notre dossier complet. <a href="/city/essaouira.html" class="blog-internal-link">Consultez notre Guide Touristique d'Essaouira &rarr;</a> Associez votre séjour à la découverte de la ville ocre dans notre <a href="/city/marrakech.html" class="blog-internal-link">Guide de Marrakech</a> ou découvrez la capitale dans notre <a href="/city/rabat.html" class="blog-internal-link">Guide de Rabat</a>.</p>
     `
   }
 };

@@ -399,7 +399,7 @@ function updateSEO(city) {
   descMeta.content = descText;
 
   // 2. Canonical URL Link
-  const canonicalUrl = `https://gomoroccoai.com/city.html?id=${city.id.toLowerCase()}`;
+  const canonicalUrl = `https://gomoroccoai.com/city/${city.id.toLowerCase()}.html`;
   let canonicalLink = document.querySelector('link[rel="canonical"]');
   if (!canonicalLink) {
     canonicalLink = document.createElement('link');
@@ -770,7 +770,7 @@ function renderInternalLinksContent() {
   links.forEach(link => {
     const card = document.createElement('a');
     card.className = 'internal-link-card';
-    card.href = `/blog.html?id=${link.blog_id}`;
+    card.href = `/blog/${link.blog_id}.html`;
     card.innerHTML = `
       <div class="internal-link-title">
         <span>${link.title}</span>

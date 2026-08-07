@@ -116,9 +116,9 @@ export const postWorldCup2026 = {
   ],
   content: {
     en: `
-      <p class="blog-lead">There's a particular sound that fills the streets of <a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a> and <a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a> when Morocco scores. Car horns. Drums. Strangers hugging strangers. It happened again on July 4, when the Atlas Lions beat co-hosts Canada 3-0 in Houston to reach the quarterfinals of the 2026 FIFA World Cup. For a few hours, the whole country stopped.</p>
+      <p class="blog-lead">There's a particular sound that fills the streets of <a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a> and <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> when Morocco scores. Car horns. Drums. Strangers hugging strangers. It happened again on July 4, when the Atlas Lions beat co-hosts Canada 3-0 in Houston to reach the quarterfinals of the 2026 FIFA World Cup. For a few hours, the whole country stopped.</p>
 
-      <p>If you've landed on this page because you searched "Morocco World Cup 2026," you're probably one of millions of football fans around the world who have started paying close attention to a country you may never have thought much about before. That's the story we want to tell here — not just what's happening on the pitch, but why so many of those same fans are now booking flights to <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a>, browsing riads in <a href="/city.html?id=fez" class="blog-internal-link">Fez</a>, and planning trips to the Sahara.</p>
+      <p>If you've landed on this page because you searched "Morocco World Cup 2026," you're probably one of millions of football fans around the world who have started paying close attention to a country you may never have thought much about before. That's the story we want to tell here — not just what's happening on the pitch, but why so many of those same fans are now booking flights to <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, browsing riads in <a href="/city/fez.html" class="blog-internal-link">Fez</a>, and planning trips to the Sahara.</p>
 
       <p>Morocco isn't just having a good World Cup. It's in the middle of a moment that could shape how the world sees the country for the next decade, right up to when it co-hosts the 2030 World Cup with Spain and Portugal.</p>
 
@@ -209,15 +209,15 @@ export const postWorldCup2026 = {
       <h2>Connecting Football With Travel: What Morocco Actually Feels Like</h2>
       <p>Watching the Atlas Lions play is one thing. Standing in the places that shaped them is another.</p>
 
-      <p><strong><a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a></strong> is where football passion lives loudest. This is Morocco's economic engine, a city of packed cafés, giant murals of national team players, and streets that erupt every time Morocco scores. It's also home to the Hassan II Mosque, one of the largest mosques in the world, sitting right on the Atlantic.</p>
+      <p><strong><a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a></strong> is where football passion lives loudest. This is Morocco's economic engine, a city of packed cafés, giant murals of national team players, and streets that erupt every time Morocco scores. It's also home to the Hassan II Mosque, one of the largest mosques in the world, sitting right on the Atlantic.</p>
 
-      <p><strong><a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a></strong>, the capital, is one of the confirmed host cities for the 2030 World Cup. Quieter and more orderly than Casablanca, it mixes royal palaces, Roman ruins, and a laid-back medina with a growing modern skyline.</p>
+      <p><strong><a href="/city/rabat.html" class="blog-internal-link">Rabat</a></strong>, the capital, is one of the confirmed host cities for the 2030 World Cup. Quieter and more orderly than Casablanca, it mixes royal palaces, Roman ruins, and a laid-back medina with a growing modern skyline.</p>
 
-      <p><strong><a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a></strong> is where a lot of fans picture themselves after the final whistle — the maze-like souks, the nightly theater of Jemaa el-Fnaa square, and the red-walled medina that looks like nowhere else on earth.</p>
+      <p><strong><a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a></strong> is where a lot of fans picture themselves after the final whistle — the maze-like souks, the nightly theater of Jemaa el-Fnaa square, and the red-walled medina that looks like nowhere else on earth.</p>
 
-      <p><strong>The Sahara Desert (<a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>)</strong> offers something no stadium can: silence, endless dunes, and a night sky with more stars than most people have ever seen. Multi-day trips from Marrakech or Fez to Merzouga are one of the most requested experiences among first-time visitors.</p>
+      <p><strong>The Sahara Desert (<a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a>)</strong> offers something no stadium can: silence, endless dunes, and a night sky with more stars than most people have ever seen. Multi-day trips from Marrakech or Fez to Merzouga are one of the most requested experiences among first-time visitors.</p>
 
-      <p><strong><a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a></strong>, the blue city in the Rif Mountains, has become one of the most photographed places in the country — a hillside town painted almost entirely in shades of blue.</p>
+      <p><strong><a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a></strong>, the blue city in the Rif Mountains, has become one of the most photographed places in the country — a hillside town painted almost entirely in shades of blue.</p>
 
       <p>Moroccan food deserves its own mention. Tagines, couscous on Fridays, fresh mint tea poured from a height, and street-side msemen pastries are as much a part of the experience as anything on the pitch.</p>
 
@@ -225,12 +225,12 @@ export const postWorldCup2026 = {
       
       <h3>Best Cities to Visit</h3>
       <ul>
-        <li><strong><a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a></strong> — culture, souks, and desert gateway</li>
-        <li><strong><a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a></strong> — modern Morocco and football energy</li>
-        <li><strong><a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a></strong> — calm capital and 2030 host city</li>
-        <li><strong><a href="/city.html?id=fez" class="blog-internal-link">Fez</a></strong> — the country's spiritual and artisanal heart</li>
-        <li><strong><a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a></strong> — the blue-washed mountain town</li>
-        <li><strong><a href="/city.html?id=tangier" class="blog-internal-link">Tangier</a></strong> — where Africa meets Europe across the strait</li>
+        <li><strong><a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a></strong> — culture, souks, and desert gateway</li>
+        <li><strong><a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a></strong> — modern Morocco and football energy</li>
+        <li><strong><a href="/city/rabat.html" class="blog-internal-link">Rabat</a></strong> — calm capital and 2030 host city</li>
+        <li><strong><a href="/city/fez.html" class="blog-internal-link">Fez</a></strong> — the country's spiritual and artisanal heart</li>
+        <li><strong><a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a></strong> — the blue-washed mountain town</li>
+        <li><strong><a href="/city/tangier.html" class="blog-internal-link">Tangier</a></strong> — where Africa meets Europe across the strait</li>
       </ul>
 
       <h3>Transportation</h3>
@@ -292,17 +292,17 @@ export const postWorldCup2026 = {
         <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-weight: 600;">
           <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a></li>
           <li><a href="/cities.html" class="blog-internal-link">Explore all 16 destinations in the Morocco Cities Guide</a></li>
-          <li><a href="/city.html?id=marrakech" class="blog-internal-link">Get the full Marrakech Guide</a></li>
-          <li><a href="/city.html?id=chefchaouen" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>
-          <li><a href="/city.html?id=merzouga" class="blog-internal-link">Plan a desert trip with the Sahara Desert Guide</a></li>
+          <li><a href="/city/marrakech.html" class="blog-internal-link">Get the full Marrakech Guide</a></li>
+          <li><a href="/city/chefchaouen.html" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>
+          <li><a href="/city/merzouga.html" class="blog-internal-link">Plan a desert trip with the Sahara Desert Guide</a></li>
           <li><a href="/blog.html" class="blog-internal-link">Read more travel stories on the Morocco Travel Blog</a></li>
         </ul>
       </div>
     `,
     fr: `
-      <p class="blog-lead">Il y a un bruit particulier qui résonne dans les rues de <a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a> et de <a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a> lorsque le Maroc marque un but. Klaxons, tambours, inconnus qui s'enlacent spontanément. C'est exactement ce qui s'est produit le 4 juillet, lorsque les Lions de l'Atlas ont battu le pays co-hôte, le Canada, 3-0 à Houston pour se qualifier en quarts de finale de la Coupe du Monde de la FIFA 2026. Pendant quelques heures, tout un pays a retenu son souffle avant de chavirer de bonheur.</p>
+      <p class="blog-lead">Il y a un bruit particulier qui résonne dans les rues de <a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a> et de <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> lorsque le Maroc marque un but. Klaxons, tambours, inconnus qui s'enlacent spontanément. C'est exactement ce qui s'est produit le 4 juillet, lorsque les Lions de l'Atlas ont battu le pays co-hôte, le Canada, 3-0 à Houston pour se qualifier en quarts de finale de la Coupe du Monde de la FIFA 2026. Pendant quelques heures, tout un pays a retenu son souffle avant de chavirer de bonheur.</p>
 
-      <p>Si vous êtes arrivé sur cette page après avoir cherché « Maroc Coupe du Monde 2026 », vous faites probablement partie des millions de passionnés de football à travers le monde qui ont commencé à s'intéresser de très près à un pays auquel ils ne pensaient peut-être pas auparavant. C'est l'histoire que nous voulons raconter ici — pas seulement ce qui se passe sur les terrains de football, mais pourquoi tant de ces mêmes supporters réservent aujourd'hui des vols pour <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a>, explorent les riads de <a href="/city.html?id=fez" class="blog-internal-link">Fès</a> et planifient des expéditions dans le Sahara.</p>
+      <p>Si vous êtes arrivé sur cette page après avoir cherché « Maroc Coupe du Monde 2026 », vous faites probablement partie des millions de passionnés de football à travers le monde qui ont commencé à s'intéresser de très près à un pays auquel ils ne pensaient peut-être pas auparavant. C'est l'histoire que nous voulons raconter ici — pas seulement ce qui se passe sur les terrains de football, mais pourquoi tant de ces mêmes supporters réservent aujourd'hui des vols pour <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, explorent les riads de <a href="/city/fez.html" class="blog-internal-link">Fès</a> et planifient des expéditions dans le Sahara.</p>
 
       <p>Le Maroc ne vit pas simplement un beau tournoi mondial. Le Royaume est au cœur d'un tournant majeur qui va redéfinir la façon dont le monde le perçoit pour la décennie à venir, jusqu'à co-organiser la prestigieuse Coupe du Monde 2030 avec l'Espagne et le Portugal.</p>
 
@@ -393,15 +393,15 @@ export const postWorldCup2026 = {
       <h2>Du football au voyage : L'atmosphère unique des villes marocaines</h2>
       <p>Vibrer devant les exploits des Lions de l'Atlas devant un écran est une chose ; fouler les ruelles des villes qui ont nourri leur passion en est une autre.</p>
 
-      <p><strong><a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a></strong> est le cœur battant du football marocain. Capitale économique et bouillonnante, c'est la ville des grands cafés animés, des fresques murales géantes en hommage aux joueurs et de la majestueuse Mosquée Hassan II érigée face à l'océan Atlantique.</p>
+      <p><strong><a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a></strong> est le cœur battant du football marocain. Capitale économique et bouillonnante, c'est la ville des grands cafés animés, des fresques murales géantes en hommage aux joueurs et de la majestueuse Mosquée Hassan II érigée face à l'océan Atlantique.</p>
 
-      <p><strong><a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a></strong>, la capitale royale, est l'une des villes hôtes confirmées pour le Mondial 2030. Plus paisible et verdoyante, elle conjugue palais impériaux, vestiges antiques de Chellah et avenues élégantes.</p>
+      <p><strong><a href="/city/rabat.html" class="blog-internal-link">Rabat</a></strong>, la capitale royale, est l'une des villes hôtes confirmées pour le Mondial 2030. Plus paisible et verdoyante, elle conjugue palais impériaux, vestiges antiques de Chellah et avenues élégantes.</p>
 
-      <p><strong><a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a></strong> reste la destination plébiscitée par les supporters : les souks colorés, l'effervescence nocturne de la place Jemaa el-Fna et la beauté architecturale de la médina rouge.</p>
+      <p><strong><a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a></strong> reste la destination plébiscitée par les supporters : les souks colorés, l'effervescence nocturne de la place Jemaa el-Fna et la beauté architecturale de la médina rouge.</p>
 
-      <p><strong>Le désert du Sahara (<a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga</a>)</strong> offre un contraste saisissant : le silence absolu, les dunes dorées de l'Erg Chebbi et un ciel étoilé d'une pureté inoubliable.</p>
+      <p><strong>Le désert du Sahara (<a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a>)</strong> offre un contraste saisissant : le silence absolu, les dunes dorées de l'Erg Chebbi et un ciel étoilé d'une pureté inoubliable.</p>
 
-      <p><strong><a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a></strong>, la perle bleue nichée dans les montagnes du Rif, séduit par sa douceur de vivre et ses façades peintes en nuances d'azur.</p>
+      <p><strong><a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a></strong>, la perle bleue nichée dans les montagnes du Rif, séduit par sa douceur de vivre et ses façades peintes en nuances d'azur.</p>
 
       <p>La gastronomie marocaine complète cette immersion sensorelle : tajines mijotés, couscous du vendredi, thé à la menthe servi selon les règles de l'art et crêpes msemen chaudes et croustillantes.</p>
 
@@ -409,12 +409,12 @@ export const postWorldCup2026 = {
       
       <h3>Les meilleures destinations à explorer</h3>
       <ul>
-        <li><strong><a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech</a></strong> — culture, souks authentiques et porte du Sud</li>
-        <li><strong><a href="/city.html?id=casablanca" class="blog-internal-link">Casablanca</a></strong> — modernité urbaine et ferveur footballistique</li>
-        <li><strong><a href="/city.html?id=rabat" class="blog-internal-link">Rabat</a></strong> — capitale royale et future ville hôte 2030</li>
-        <li><strong><a href="/city.html?id=fez" class="blog-internal-link">Fès</a></strong> — capitale spirituelle et joyau de l'artisanat médiéval</li>
-        <li><strong><a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen</a></strong> — la ville bleue des montagnes du Rif</li>
-        <li><strong><a href="/city.html?id=tangier" class="blog-internal-link">Tanger</a></strong> — carrefour fascinant entre l'Europe et l'Afrique</li>
+        <li><strong><a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a></strong> — culture, souks authentiques et porte du Sud</li>
+        <li><strong><a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a></strong> — modernité urbaine et ferveur footballistique</li>
+        <li><strong><a href="/city/rabat.html" class="blog-internal-link">Rabat</a></strong> — capitale royale et future ville hôte 2030</li>
+        <li><strong><a href="/city/fez.html" class="blog-internal-link">Fès</a></strong> — capitale spirituelle et joyau de l'artisanat médiéval</li>
+        <li><strong><a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a></strong> — la ville bleue des montagnes du Rif</li>
+        <li><strong><a href="/city/tangier.html" class="blog-internal-link">Tanger</a></strong> — carrefour fascinant entre l'Europe et l'Afrique</li>
       </ul>
 
       <h3>Transports & Déplacements</h3>
@@ -473,9 +473,9 @@ export const postWorldCup2026 = {
         <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-weight: 600;">
           <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a></li>
           <li><a href="/cities.html" class="blog-internal-link">Explore all 16 destinations in the Morocco Cities Guide</a></li>
-          <li><a href="/city.html?id=marrakech" class="blog-internal-link">Get the full Marrakech Guide</a></li>
-          <li><a href="/city.html?id=chefchaouen" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>
-          <li><a href="/city.html?id=merzouga" class="blog-internal-link">Plan a desert trip with the Sahara Desert Guide</a></li>
+          <li><a href="/city/marrakech.html" class="blog-internal-link">Get the full Marrakech Guide</a></li>
+          <li><a href="/city/chefchaouen.html" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>
+          <li><a href="/city/merzouga.html" class="blog-internal-link">Plan a desert trip with the Sahara Desert Guide</a></li>
           <li><a href="/blog.html" class="blog-internal-link">Read more travel stories on the Morocco Travel Blog</a></li>
         </ul>
       </div>

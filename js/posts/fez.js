@@ -135,7 +135,7 @@ export const postFez = {
 
       <p>The culinary heritage of Fez is a living connection to Morocco's golden imperial history. Exploring its spice lanes, tasting hot street snacks, and sharing a meal in a historic riad courtyard nourishes both the body and the soul.</p>
 
-      <p class="blog-highlight"><strong>Ready to savor the tastes of Fez?</strong> Discover top food tour guides, cooking workshops, and historic riad dining options in our city guide. <a href="/city.html?id=fez" class="blog-internal-link">Explore our Fez Tourism Guide &rarr;</a> Discover capital culture in our <a href="/city.html?id=rabat" class="blog-internal-link">Rabat Travel Guide</a> or explore desert cuisine in our <a href="/city.html?id=merzouga" class="blog-internal-link">Merzouga Travel Guide</a>.</p>
+      <p class="blog-highlight"><strong>Ready to savor the tastes of Fez?</strong> Discover top food tour guides, cooking workshops, and historic riad dining options in our city guide. <a href="/city/fez.html" class="blog-internal-link">Explore our Fez Tourism Guide &rarr;</a> Discover capital culture in our <a href="/city/rabat.html" class="blog-internal-link">Rabat Travel Guide</a> or explore desert cuisine in our <a href="/city/merzouga.html" class="blog-internal-link">Merzouga Travel Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Si Marrakech représente le cœur battant du Maroc, Fès en est sans conteste l'âme spirituelle et gastronomique. Nulle part ailleurs cette profondeur historique ne se ressent autant que dans les cuisines ancestrales de Fès el-Bali, où les recettes médiévales de la cour ont été jalousement préservées et transmises de génération en génération.</p>
@@ -187,7 +187,7 @@ export const postFez = {
 
       <p>Le patrimoine culinaire de Fès est une immersion vivante dans l'histoire impériale du Maroc. Explorer ses ruelles aux épices, déguster des spécialités populaires et partager un festin dans un riad est une expérience mémorable qui nourrit le corps et l'esprit.</p>
 
-      <p class="blog-highlight"><strong>Prêt à savourer la gastronomie fassie ?</strong> Retrouvez les meilleurs cours de cuisine, visites gourmandes et riads dans notre guide. <a href="/city.html?id=fez" class="blog-internal-link">Consultez notre Guide Touristique de Fès &rarr;</a> Découvrez la culture de la capitale dans notre <a href="/city.html?id=rabat" class="blog-internal-link">Guide de Rabat</a> ou explorez les spécialités du désert dans notre <a href="/city.html?id=merzouga" class="blog-internal-link">Guide de Merzouga</a>.</p>
+      <p class="blog-highlight"><strong>Prêt à savourer la gastronomie fassie ?</strong> Retrouvez les meilleurs cours de cuisine, visites gourmandes et riads dans notre guide. <a href="/city/fez.html" class="blog-internal-link">Consultez notre Guide Touristique de Fès &rarr;</a> Découvrez la culture de la capitale dans notre <a href="/city/rabat.html" class="blog-internal-link">Guide de Rabat</a> ou explorez les spécialités du désert dans notre <a href="/city/merzouga.html" class="blog-internal-link">Guide de Merzouga</a>.</p>
     `
   }
 };

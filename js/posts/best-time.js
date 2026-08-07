@@ -257,10 +257,10 @@ export const postBestTime = {
       <h2>Ready to Plan Your Morocco Trip?</h2>
       <p>Use GoMoroccoAI's AI travel planner to customize this itinerary for your exact dates, travel style, and budget — and get personalized recommendations for riads, restaurants, and local guides across every stop on this route.</p>
       <div style="display: flex; flex-direction: column; gap: 8px; margin: 20px 0; padding: 16px; background-color: #fcfbfb; border-left: 4px solid var(--color-terracotta); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-        <a href="/city.html?id=marrakech" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Explore Marrakech</a>
-        <a href="/city.html?id=fez" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Discover Fes</a>
-        <a href="/city.html?id=merzouga" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Plan your Sahara Adventure</a>
-        <a href="/city.html?id=chefchaouen" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Visit Chefchaouen</a>
+        <a href="/city/marrakech.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Explore Marrakech</a>
+        <a href="/city/fez.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Discover Fes</a>
+        <a href="/city/merzouga.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Plan your Sahara Adventure</a>
+        <a href="/city/chefchaouen.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Visit Chefchaouen</a>
         <a href="/cities.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; See all Morocco City Guides</a>
       </div>
 
@@ -428,10 +428,10 @@ export const postBestTime = {
       <h2>Prêt à Planifier votre Voyage au Maroc ?</h2>
       <p>Utilisez notre planificateur de voyage intelligent basé sur l'IA pour personnaliser cet itinéraire selon vos dates de séjour, votre style de voyage et votre budget, et obtenez des recommandations personnalisées de riads de charme et d'adresses secrètes !</p>
       <div style="display: flex; flex-direction: column; gap: 8px; margin: 20px 0; padding: 16px; background-color: #fcfbfb; border-left: 4px solid var(--color-terracotta); border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-        <a href="/city.html?id=marrakech" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Explorer Marrakech</a>
-        <a href="/city.html?id=fez" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Découvrir Fès</a>
-        <a href="/city.html?id=merzouga" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Organiser votre Aventure au Sahara</a>
-        <a href="/city.html?id=chefchaouen" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Visiter Chefchaouen</a>
+        <a href="/city/marrakech.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Explorer Marrakech</a>
+        <a href="/city/fez.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Découvrir Fès</a>
+        <a href="/city/merzouga.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Organiser votre Aventure au Sahara</a>
+        <a href="/city/chefchaouen.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Visiter Chefchaouen</a>
         <a href="/cities.html" class="blog-internal-link" style="color: var(--color-terracotta); font-weight: 700; text-decoration: none;">&rarr; Voir tous les guides des villes du Maroc</a>
       </div>
 

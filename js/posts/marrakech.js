@@ -149,7 +149,7 @@ export const postMarrakech = {
 
       <p>Navigating the souks of Marrakech connects you directly with a thousand years of living history, craftsmanship, and human warmth. Treat every interaction as an exchange of stories, and you will return home with memories far richer than any souvenir.</p>
 
-      <p class="blog-highlight"><strong>Planning your Marrakech adventure?</strong> Discover top sights, historic riads, and guided tour options in our city guide. <a href="/city.html?id=marrakech" class="blog-internal-link">Explore our Marrakech Tourism Guide &rarr;</a> You can also explore coastal culture in our <a href="/city.html?id=essaouira" class="blog-internal-link">Essaouira Travel Guide</a> or mountain charm in our <a href="/city.html?id=chefchaouen" class="blog-internal-link">Chefchaouen Travel Guide</a>.</p>
+      <p class="blog-highlight"><strong>Planning your Marrakech adventure?</strong> Discover top sights, historic riads, and guided tour options in our city guide. <a href="/city/marrakech.html" class="blog-internal-link">Explore our Marrakech Tourism Guide &rarr;</a> You can also explore coastal culture in our <a href="/city/essaouira.html" class="blog-internal-link">Essaouira Travel Guide</a> or mountain charm in our <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen Travel Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Pénétrez dans le labyrinthe vibrant de la médina millénaire de Marrakech, où les ruelles voûtées regorgent de lanternes en laiton ciselé, d'épices parfumées, de sacs en cuir souple et de tapis berbères tissés main. Naviguer dans le plus célèbre marché du monde arabe est un voyage sensoriel inoubliable pour quiconque en maîtrise les codes et l'organisation.</p>
@@ -215,7 +215,7 @@ export const postMarrakech = {
 
       <p>Explorer les souks de Marrakech vous plonge au cœur de mille ans d'histoire et de traditions vivantes. Abordez chaque rencontre avec curiosité, et vous repartirez avec des souvenirs inoubliables.</p>
 
-      <p class="blog-highlight"><strong>Vous préparez votre voyage à Marrakech ?</strong> Découvrez les lieux incontournables, les riads de charme et les visites guidées dans notre guide. <a href="/city.html?id=marrakech" class="blog-internal-link">Consultez notre Guide de Marrakech &rarr;</a> Explorez aussi la côte dans notre <a href="/city.html?id=essaouira" class="blog-internal-link">Guide d'Essaouira</a> ou la cité bleue dans notre <a href="/city.html?id=chefchaouen" class="blog-internal-link">Guide de Chefchaouen</a>.</p>
+      <p class="blog-highlight"><strong>Vous préparez votre voyage à Marrakech ?</strong> Découvrez les lieux incontournables, les riads de charme et les visites guidées dans notre guide. <a href="/city/marrakech.html" class="blog-internal-link">Consultez notre Guide de Marrakech &rarr;</a> Explorez aussi la côte dans notre <a href="/city/essaouira.html" class="blog-internal-link">Guide d'Essaouira</a> ou la cité bleue dans notre <a href="/city/chefchaouen.html" class="blog-internal-link">Guide de Chefchaouen</a>.</p>
     `
   }
 };

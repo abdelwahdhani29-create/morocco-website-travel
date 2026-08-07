@@ -184,7 +184,7 @@ function renderDirectory() {
             </span>
           </div>
           <h2 class="blog-card-title" style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; color: var(--color-charcoal); line-height: 1.4; margin: 0; transition: var(--transition-smooth);">
-            <a href="/blog.html?id=${post.id}" style="color: inherit; text-decoration: none;">${postTitle}</a>
+            <a href="/blog/${post.id}.html" style="color: inherit; text-decoration: none;">${postTitle}</a>
           </h2>
           <p class="blog-card-excerpt" style="font-size: 14px; color: var(--color-charcoal-light); line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
             ${postExcerpt}
@@ -193,7 +193,7 @@ function renderDirectory() {
             <span class="blog-card-author" style="font-size: 13px; font-weight: 600; color: var(--color-charcoal);">
               <span style="color: var(--color-charcoal-light); font-weight: 400;">${t('blog_author')}</span> ${postAuthor}
             </span>
-            <a href="/blog.html?id=${post.id}" class="blog-card-link" style="font-size: 13px; font-weight: 700; color: var(--color-terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-smooth);">
+            <a href="/blog/${post.id}.html" class="blog-card-link" style="font-size: 13px; font-weight: 700; color: var(--color-terracotta); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: var(--transition-smooth);">
               <span>${t('read_more').replace('&rarr;', '')}</span> &rarr;
             </a>
           </div>
@@ -350,7 +350,7 @@ function renderSingleArticle(id) {
   document.title = `${metaTitle} | GoMoroccoAI Blog`;
   
   // Create / Update dynamic meta descriptions
-  updateMetaTags(metaTitle, metaDesc, post.image, `https://gomoroccoai.com/blog.html?id=${post.id}`);
+  updateMetaTags(metaTitle, metaDesc, post.image, `https://gomoroccoai.com/blog/${post.id}.html`);
 
   // 2. Render Article Body
   const titleEl = document.getElementById('article-title');
@@ -415,7 +415,7 @@ function renderSingleArticle(id) {
   }
 
   // 3. Render Share Social Widget
-  renderShareButtons(postTitle, `https://gomoroccoai.com/blog.html?id=${post.id}`);
+  renderShareButtons(postTitle, `https://gomoroccoai.com/blog/${post.id}.html`);
 
   // 4. Render Related articles
   renderRelatedArticles(post);
@@ -611,7 +611,7 @@ function renderRelatedArticles(activePost) {
             <span>${postReadTime}</span>
           </div>
           <h4 style="font-family: var(--font-serif); font-size: 15px; font-weight: 700; line-height: 1.4; margin: 0;">
-            <a href="/blog.html?id=${post.id}" style="color: var(--color-charcoal); text-decoration: none; transition: var(--transition-smooth);">${postTitle}</a>
+            <a href="/blog/${post.id}.html" style="color: var(--color-charcoal); text-decoration: none; transition: var(--transition-smooth);">${postTitle}</a>
           </h4>
         </div>
       </div>
@@ -710,7 +710,7 @@ function injectSEOIndexSchema() {
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",
       "headline": post.title[currentLang] || post.title.en,
-      "url": `https://gomoroccoai.com/blog.html?id=${post.id}`,
+      "url": `https://gomoroccoai.com/blog/${post.id}.html`,
       "datePublished": post.date,
       "image": post.image,
       "description": post.excerpt[currentLang] || post.excerpt.en,
@@ -738,7 +738,7 @@ function injectSEOArticleSchema(post, title, excerpt, formattedDate) {
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://gomoroccoai.com/blog.html?id=${post.id}`
+      "@id": `https://gomoroccoai.com/blog/${post.id}.html`
     },
     "headline": title,
     "description": excerpt,

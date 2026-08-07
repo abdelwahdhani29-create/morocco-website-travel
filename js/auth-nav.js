@@ -398,28 +398,28 @@ export function updateGlobalFooterLinks() {
       <div class="footer-col destinations-col">
         <h3>${strings.destinations_title}</h3>
         <div class="footer-destinations-grid">
-          <a href="/city.html?id=marrakech" class="footer-dest-link">
+          <a href="/city/marrakech.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.marrakech}</span>
           </a>
-          <a href="/city.html?id=fez" class="footer-dest-link">
+          <a href="/city/fez.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.fez}</span>
           </a>
-          <a href="/city.html?id=chefchaouen" class="footer-dest-link">
+          <a href="/city/chefchaouen.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.chefchaouen}</span>
           </a>
-          <a href="/city.html?id=merzouga" class="footer-dest-link">
+          <a href="/city/merzouga.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.merzouga}</span>
           </a>
-          <a href="/city.html?id=essaouira" class="footer-dest-link">
+          <a href="/city/essaouira.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.essaouira}</span>
           </a>
-          <a href="/city.html?id=tangier" class="footer-dest-link">
+          <a href="/city/tangier.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.tangier}</span>
           </a>
-          <a href="/city.html?id=agadir" class="footer-dest-link">
+          <a href="/city/agadir.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.agadir}</span>
           </a>
-          <a href="/city.html?id=casablanca" class="footer-dest-link">
+          <a href="/city/casablanca.html" class="footer-dest-link">
             <i data-lucide="map-pin"></i><span>${strings.casablanca}</span>
           </a>
         </div>

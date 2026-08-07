@@ -141,7 +141,7 @@ export const postMerzouga = {
 
       <p>Waking up at dawn to watch the first rays of the sun illuminate the silent gold ripples of Erg Chebbi is a humbling experience that connects you with the raw majesty of nature. It is an adventure that stays etched in your heart forever.</p>
 
-      <p class="blog-highlight"><strong>Ready for your Sahara adventure?</strong> Access complete desert maps, 4x4 operator details, and traditional encampment listings in our guide. <a href="/city.html?id=merzouga" class="blog-internal-link">Explore our Merzouga Sahara Guide &rarr;</a> Combine your trip with imperial heritage in our <a href="/city.html?id=marrakech" class="blog-internal-link">Marrakech Travel Guide</a> or explore spiritual traditions in our <a href="/city.html?id=fez" class="blog-internal-link">Fez Travel Guide</a>.</p>
+      <p class="blog-highlight"><strong>Ready for your Sahara adventure?</strong> Access complete desert maps, 4x4 operator details, and traditional encampment listings in our guide. <a href="/city/merzouga.html" class="blog-internal-link">Explore our Merzouga Sahara Guide &rarr;</a> Combine your trip with imperial heritage in our <a href="/city/marrakech.html" class="blog-internal-link">Marrakech Travel Guide</a> or explore spiritual traditions in our <a href="/city/fez.html" class="blog-internal-link">Fez Travel Guide</a>.</p>
     `,
     fr: `
       <p class="blog-lead">Peu d'expériences de voyage égalent la sensation de se tenir au sommet des dunes colossales de l'Erg Chebbi, contemplant l'horizon infini du Sahara s'embraser de teintes pourpre, ocre et or. Bienvenue à Merzouga—la porte marocaine du désert légendaire.</p>
@@ -199,7 +199,7 @@ export const postMerzouga = {
 
       <p>Se lever à l'aube pour regarder les premiers rayons du soleil illuminer le silence doré de l'Erg Chebbi est un moment d'humilité face à la majesté de la nature. Une aventure gravée à jamais dans votre mémoire.</p>
 
-      <p class="blog-highlight"><strong>Prêt à vivre la magie du Sahara ?</strong> Retrouvez les cartes du désert, les guides 4x4 et les meilleurs bivouacs dans notre fiche. <a href="/city.html?id=merzouga" class="blog-internal-link">Consultez notre Guide de Merzouga &rarr;</a> Associez votre séjour à la découverte de la ville ocre dans notre <a href="/city.html?id=marrakech" class="blog-internal-link">Guide de Marrakech</a> ou à l'exploration culturelle dans notre <a href="/city.html?id=fez" class="blog-internal-link">Guide de Fès</a>.</p>
+      <p class="blog-highlight"><strong>Prêt à vivre la magie du Sahara ?</strong> Retrouvez les cartes du désert, les guides 4x4 et les meilleurs bivouacs dans notre fiche. <a href="/city/merzouga.html" class="blog-internal-link">Consultez notre Guide de Merzouga &rarr;</a> Associez votre séjour à la découverte de la ville ocre dans notre <a href="/city/marrakech.html" class="blog-internal-link">Guide de Marrakech</a> ou à l'exploration culturelle dans notre <a href="/city/fez.html" class="blog-internal-link">Guide de Fès</a>.</p>
     `
   }
 };

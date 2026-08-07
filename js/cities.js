@@ -340,7 +340,7 @@ function renderAll() {
           </div>
           <p class="dir-card-desc">${displayDesc}</p>
           <div class="dir-card-footer">
-            <a href="/city.html?id=${city.id}" class="dir-card-btn" id="btn-explore-${city.id}">
+            <a href="/city/${city.id}.html" class="dir-card-btn" id="btn-explore-${city.id}">
               <span>${t('view_details')}</span>
             </a>
           </div>
