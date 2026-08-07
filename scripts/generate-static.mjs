@@ -211,8 +211,35 @@ async function run() {
       /id="city-detail-container"\s+style="display:\s*none;"/g,
       'id="city-detail-container" style="display: grid;"'
     );
+    // Explicitly hide error fallback view for valid pre-rendered city pages
+    html = html.replace(
+      /id="error-fallback-view"\s+class="error-card"\s+style="display:\s*[^"]*"/g,
+      'id="error-fallback-view" class="error-card" style="display: none;"'
+    );
 
-    // Pre-render Places / Attractions
+    // Pre-render Fast Facts
+    const suggestedDays = city.suggested_days || city.suggested_stay || 3;
+    const regionName = city.region || 'Morocco';
+    const culturalNote = city.cultural_note || city.cultural_tips || `When visiting ${name}, respect local customs, greet shopkeepers warmly with 'Salam Alaykum', and dress modestly when visiting historic neighborhoods.`;
+
+    html = html.replace(
+      /<span id="fact-duration-val"[^>]*>.*?<\/span>/s,
+      `<span id="fact-duration-val" class="meta-value">${escapeAttr(suggestedDays)} Days</span>`
+    );
+    html = html.replace(
+      /<span id="fact-region-val"[^>]*>.*?<\/span>/s,
+      `<span id="fact-region-val" class="meta-value">${escapeAttr(regionName)}</span>`
+    );
+    html = html.replace(
+      /<span id="fact-languages-val"[^>]*>.*?<\/span>/s,
+      `<span id="fact-languages-val" class="meta-value">Standard Moroccan Arabic, Berber &amp; French</span>`
+    );
+    html = html.replace(
+      /id="cultural-text-display"[^>]*>.*?<\/div>/s,
+      `id="cultural-text-display" class="cultural-note-text">${escapeAttr(culturalNote)}</div>`
+    );
+
+    // 1. Pre-render Places / Attractions
     const attractions = Array.isArray(city.attractions) ? city.attractions : [];
     if (attractions.length > 0) {
       const placesHtml = attractions.map(place => {
@@ -226,7 +253,7 @@ async function run() {
             <div class="place-detail-body">
               <div class="place-detail-header">
                 <h3 class="place-detail-name">${escapeAttr(pName)}</h3>
-                ${pDur ? `<span class="attraction-duration-tag">${escapeAttr(pDur)}</span>` : ''}
+                ${pDur ? `<span class="attraction-duration-tag"><i data-lucide="clock" style="width: 13px; height: 13px;"></i> ${escapeAttr(pDur)}</span>` : ''}
               </div>
               <p class="place-detail-desc">${escapeAttr(pDesc)}</p>
             </div>
@@ -236,7 +263,7 @@ async function run() {
       html = html.replace('<div id="places-list" class="places-grid">', () => `<div id="places-list" class="places-grid">${placesHtml}`);
     }
 
-    // Pre-render Neighborhoods
+    // 2. Pre-render Neighborhoods
     const neighborhoods = Array.isArray(city.neighborhoods) ? city.neighborhoods : [];
     if (neighborhoods.length > 0) {
       const neighHtml = neighborhoods.map(n => {
@@ -249,17 +276,198 @@ async function run() {
           <div class="neighborhood-card">
             <div class="neighborhood-header">
               <h3 class="neighborhood-title">${escapeAttr(nName)}</h3>
-              ${nLoc ? `<span class="neighborhood-location-tag">${escapeAttr(nLoc)}</span>` : ''}
+              ${nLoc ? `<span class="neighborhood-location-tag"><i data-lucide="map-pin" style="width: 13px; height: 13px;"></i> ${escapeAttr(nLoc)}</span>` : ''}
             </div>
             <div class="neighborhood-pills">
-              ${nKnown ? `<div class="pill-badge"><strong>Known for:</strong> ${escapeAttr(nKnown)}</div>` : ''}
-              ${nBest ? `<div class="pill-badge"><strong>Best for:</strong> ${escapeAttr(nBest)}</div>` : ''}
+              ${nKnown ? `<span class="pill-badge"><strong>Known for:</strong> ${escapeAttr(nKnown)}</span>` : ''}
+              ${nBest ? `<span class="pill-badge"><strong>Best for:</strong> ${escapeAttr(nBest)}</span>` : ''}
             </div>
             ${nAct ? `<p class="neighborhood-activities">${escapeAttr(nAct)}</p>` : ''}
           </div>
         `;
       }).join('');
       html = html.replace('<div id="neighborhoods-list" class="neighborhoods-grid">', () => `<div id="neighborhoods-list" class="neighborhoods-grid">${neighHtml}`);
+    }
+
+    // 3. Pre-render Accommodations / Hotels
+    if (city.hotels) {
+      const tiers = ['budget', 'mid_range', 'luxury'];
+      const tierLabels = { budget: 'Budget', mid_range: 'Mid-Range', luxury: 'Luxury' };
+      const hotelCardsHtml = tiers.map(tier => {
+        const h = city.hotels[tier];
+        if (!h) return '';
+        const hName = h.name || 'Hotel';
+        const hPrice = h.price_approx || 50;
+        const hAmenity = h.amenity || 'Comfortable rooms & local breakfast';
+        return `
+          <div class="hotel-tier-box ${tier === 'luxury' ? 'luxury-card' : ''}">
+            <span class="hotel-tier-badge ${tier}">${tierLabels[tier]}</span>
+            <h4 class="hotel-top-name">${escapeAttr(hName)}</h4>
+            <div class="hotel-p-rate">$${hPrice} <span>/ approx. per night</span></div>
+            <div class="hotel-amenity-pill">
+              <i data-lucide="check-circle" style="width: 16px; height: 16px;"></i>
+              <span><strong>Key Amenity:</strong> ${escapeAttr(hAmenity)}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+      html = html.replace('<div id="hotels-deck" class="hotel-tier-deck">', () => `<div id="hotels-deck" class="hotel-tier-deck">${hotelCardsHtml}`);
+    }
+
+    // 4. Pre-render Transportation
+    const transitList = Array.isArray(city.transportation) ? city.transportation : [];
+    if (transitList.length > 0) {
+      const transitHtml = transitList.map(tr => {
+        const tType = tr.type || 'Local Transport';
+        const tCost = tr.approx_cost || 'Metered rate';
+        const tDesc = tr.description || '';
+        let iconName = 'car';
+        if (tType.toLowerCase().includes('bus')) iconName = 'bus';
+        else if (tType.toLowerCase().includes('carriage') || tType.toLowerCase().includes('van')) iconName = 'navigation';
+        else if (tType.toLowerCase().includes('train')) iconName = 'train';
+        return `
+          <div class="transit-card">
+            <div class="transit-details">
+              <div class="transit-avatar"><i data-lucide="${iconName}" style="width: 24px; height: 24px;"></i></div>
+              <div>
+                <div class="transit-title-text">${escapeAttr(tType)}</div>
+                <div class="transit-text-desc">${escapeAttr(tDesc)}</div>
+              </div>
+            </div>
+            <div class="transit-price-tag">${escapeAttr(tCost)}</div>
+          </div>
+        `;
+      }).join('');
+      html = html.replace('<div id="transit-deck" class="transit-tier-deck">', () => `<div id="transit-deck" class="transit-tier-deck">${transitHtml}`);
+    }
+
+    // 5. Pre-render Daily Budget Estimator
+    if (city.budgetEstimate) {
+      const est = city.budgetEstimate;
+      const parseRange = (str) => {
+        if (!str) return { min: 0, max: 0 };
+        const numbers = str.replace(/[^0-9\-]/g, '').split('-');
+        const min = parseInt(numbers[0]) || 0;
+        const max = parseInt(numbers[1]) || min || 0;
+        return { min, max };
+      };
+      const formatRange = (min, max) => (min === max ? `€${min}` : `€${min} - €${max}`);
+
+      const rows = [
+        { name: 'Accommodation', field: 'accommodation' },
+        { name: 'Food & Dining', field: 'food' },
+        { name: 'Local Transport', field: 'transport' },
+        { name: 'Activities & Sightseeing', field: 'activities' }
+      ];
+
+      let bMin = 0, bMax = 0, mMin = 0, mMax = 0, lMin = 0, lMax = 0;
+      let rowsHtml = '';
+      rows.forEach(r => {
+        const bv = parseRange(est.budget?.[r.field]); bMin += bv.min; bMax += bv.max;
+        const mv = parseRange(est.midRange?.[r.field]); mMin += mv.min; mMax += mv.max;
+        const lv = parseRange(est.luxury?.[r.field]); lMin += lv.min; lMax += lv.max;
+        rowsHtml += `
+          <tr>
+            <td style="font-weight: 500;">${r.name}</td>
+            <td>${escapeAttr(est.budget?.[r.field] || '—')}</td>
+            <td>${escapeAttr(est.midRange?.[r.field] || '—')}</td>
+            <td>${escapeAttr(est.luxury?.[r.field] || '—')}</td>
+          </tr>
+        `;
+      });
+      rowsHtml += `
+        <tr class="total-row">
+          <td>Total</td>
+          <td>${formatRange(bMin, bMax)}</td>
+          <td>${formatRange(mMin, mMax)}</td>
+          <td>${formatRange(lMin, lMax)}</td>
+        </tr>
+      `;
+
+      const budgetTableHtml = `
+        <div class="budget-estimator-section">
+          <h3 class="budget-estimator-title">
+            <i data-lucide="calculator" style="width: 20px; height: 20px; color: var(--color-terracotta);"></i>
+            <span>Daily Budget Estimator</span>
+          </h3>
+          <p class="budget-estimator-desc">Estimated daily travel costs per person in Euros (€)</p>
+          <div class="budget-table-wrapper">
+            <table class="budget-table">
+              <thead>
+                <tr>
+                  <th>Expense Category</th>
+                  <th>Budget</th>
+                  <th>Mid-Range</th>
+                  <th>Luxury</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+      html = html.replace('<div id="budget-estimator-section" style="margin-top: 40px;"></div>', () => `<div id="budget-estimator-section" style="margin-top: 40px;">${budgetTableHtml}</div>`);
+    }
+
+    // 6. Pre-render Best Time to Visit
+    if (city.bestTime) {
+      const bt = city.bestTime;
+      const seasons = ['spring', 'summer', 'autumn', 'winter'];
+      const seasonLabels = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
+      const seasonMonths = { spring: 'March - May', summer: 'June - August', autumn: 'September - November', winter: 'December - February' };
+      const seasonIcons = { spring: 'sprout', summer: 'sun', autumn: 'leaf', winter: 'snowflake' };
+
+      const seasonsCardsHtml = seasons.map(s => {
+        const desc = bt[s] || 'Favorable travel weather.';
+        const isRec = Array.isArray(bt.recommended) && bt.recommended.includes(s);
+        return `
+          <div class="season-card ${isRec ? 'recommended-card' : ''}">
+            <div class="season-header">
+              <div class="season-badge-row">${isRec ? '<span class="season-rec-badge">Recommended</span>' : ''}</div>
+              <div class="season-name-row">
+                <i class="season-icon" data-lucide="${seasonIcons[s]}" style="width: 22px; height: 22px;"></i>
+                <h4 class="season-name">${seasonLabels[s]}</h4>
+              </div>
+              <span class="season-months">${seasonMonths[s]}</span>
+            </div>
+            <p class="season-desc">${escapeAttr(desc)}</p>
+          </div>
+        `;
+      }).join('');
+      html = html.replace('<div class="seasons-grid" id="seasons-grid">', () => `<div class="seasons-grid" id="seasons-grid">${seasonsCardsHtml}`);
+    }
+
+    // 7. Pre-render Travel Tips
+    const travelTips = Array.isArray(city.travel_tips) ? city.travel_tips : [];
+    if (travelTips.length > 0) {
+      const tipsListHtml = `
+        <ul class="travel-tips-list">
+          ${travelTips.map(tip => `
+            <li class="travel-tip-item">
+              <i class="travel-tip-icon" data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+              <span>${escapeAttr(tip)}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+      html = html.replace('<div id="travel-tips-content" class="travel-tips-box">', () => `<div id="travel-tips-content" class="travel-tips-box">${tipsListHtml}`);
+    }
+
+    // 8. Pre-render Internal Links (Featured Travel Guides)
+    const internalLinks = Array.isArray(city.internal_links) ? city.internal_links : [];
+    if (internalLinks.length > 0) {
+      const linksHtml = internalLinks.map(link => `
+        <a class="internal-link-card" href="/blog/${escapeAttr(link.blog_id)}.html">
+          <div class="internal-link-title">
+            <span>${escapeAttr(link.title)}</span>
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px; color: var(--color-terracotta);"></i>
+          </div>
+          <p class="internal-link-desc">${escapeAttr(link.description)}</p>
+        </a>
+      `).join('');
+      html = html.replace('<div id="internal-links-deck" class="internal-links-deck">', () => `<div id="internal-links-deck" class="internal-links-deck">${linksHtml}`);
     }
 
     const cityFilePath = path.join(distCityDir, `${id}.html`);

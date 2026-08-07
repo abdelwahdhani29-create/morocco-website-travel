@@ -66,22 +66,22 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Petit Taxi (Beige)",
-        "approx_cost": "15 - 30 MAD (.50 -  USD)",
+        "approx_cost": "15 - 30 MAD ($1.50 - $3.00 USD)",
         "description": "Small beige taxis equipped with meters, ideal for short trips between the Medina gates and Guéliz. Ensure the meter (compteur) is turned on when entering."
       },
       {
         "type": "Airport Express Bus (ALSA Line 19)",
-        "approx_cost": "30 MAD ( USD) single / 50 MAD round-trip",
+        "approx_cost": "30 MAD ($3.00 USD) single / 50 MAD ($5.00 USD) round-trip",
         "description": "Direct express bus linking Marrakech Menara Airport (RAK) to Jemaa el-Fnaa and Guéliz every 20-30 minutes."
       },
       {
         "type": "Horse-Drawn Carriage (Calèche)",
-        "approx_cost": "150 - 200 MAD (5 - 0 USD)/hr",
+        "approx_cost": "150 - 200 MAD ($15.00 - $20.00 USD)/hr",
         "description": "Traditional green carriage rides offering a romantic, slow-paced loop around the 19 km clay city walls and Agdal Gardens."
       },
       {
         "type": "ALSA Public Bus",
-        "approx_cost": "4 MAD (sh.40 USD)",
+        "approx_cost": "4 MAD ($0.40 USD)",
         "description": "Public bus network linking the Medina gates with outer neighborhoods like Majorelle and Palmeraie."
       }
     ],
@@ -213,17 +213,17 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Blue Petit Taxi",
-        "approx_cost": "10 - 15 MAD ( - .50 USD)",
+        "approx_cost": "10 - 15 MAD ($1.00 - $1.50 USD)",
         "description": "Bright blue taxis operating between the lower CTM bus station and Medina gates like Bab el-Ain or Bab Souq at flat city fares."
       },
       {
         "type": "CTM Intercity Coaches",
-        "approx_cost": "45 - 90 MAD (.50 -  USD)",
+        "approx_cost": "45 - 90 MAD ($4.50 - $9.00 USD)",
         "description": "Comfortable scheduled buses connecting Chefchaouen directly to Tangier (3 hrs), Fez (4.5 hrs), and Tetouan (1.5 hrs)."
       },
       {
         "type": "Grand Taxi (Shared Minibus)",
-        "approx_cost": "15 - 30 MAD (.50 -  USD)",
+        "approx_cost": "15 - 30 MAD ($1.50 - $3.00 USD)",
         "description": "Shared grand taxis running fixed routes to regional destinations like Tetouan and Akchour Waterfalls."
       },
       {
@@ -360,17 +360,17 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Red Petit Taxi",
-        "approx_cost": "12 - 25 MAD (.20 - .50 USD)",
+        "approx_cost": "12 - 25 MAD ($1.20 - $2.50 USD)",
         "description": "Compact red cars equipped with meters. Perfect for rides between Ville Nouvelle, Fes el-Jdid, and Medina gates like Bab Bou Jeloud or Bab R'cif."
       },
       {
         "type": "ONCF Railway Station",
-        "approx_cost": "90 - 140 MAD ( - 4 USD)",
+        "approx_cost": "90 - 140 MAD ($9.00 - $14.00 USD)",
         "description": "Located in Ville Nouvelle, connecting Fez directly to Meknes (45 mins), Rabat (3.5 hrs), Casablanca (4 hrs), and Marrakech."
       },
       {
         "type": "CTM Express Buses",
-        "approx_cost": "45 - 120 MAD (.50 - 2 USD)",
+        "approx_cost": "45 - 120 MAD ($4.50 - $12.00 USD)",
         "description": "Comfortable intercity bus services departing from the main CTM terminal toward Chefchaouen, Tangier, and Tetouan."
       },
       {
@@ -507,22 +507,22 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Blue Petit Taxi",
-        "approx_cost": "7 - 12 MAD (sh.70 - .20 USD)",
+        "approx_cost": "7 - 12 MAD ($0.70 - $1.20 USD)",
         "description": "Small blue taxis operating at flat city rates. Convenient for rides between Medina drop-off gates, bus stations, and beach resort hotels."
       },
       {
         "type": "Supratours Express Coach",
-        "approx_cost": "80 - 110 MAD ( - 1 USD)",
+        "approx_cost": "80 - 110 MAD ($8.00 - $11.00 USD)",
         "description": "Direct buses operated by ONCF connecting Essaouira station directly to Marrakech train station (2.5 hrs, multiple daily departures)."
       },
       {
         "type": "CTM Regional Bus",
-        "approx_cost": "70 - 140 MAD ( - 4 USD)",
+        "approx_cost": "70 - 140 MAD ($7.00 - $14.00 USD)",
         "description": "Scheduled bus services connecting Essaouira north to Safi and Casablanca, and south to Agadir."
       },
       {
         "type": "Port Luggage Carts (Chariots)",
-        "approx_cost": "20 - 30 MAD ( -  USD tip)",
+        "approx_cost": "20 - 30 MAD ($2.00 - $3.00 USD tip)",
         "description": "Blue handcarts carry heavy luggage inside the pedestrian-only Medina directly to your riad doorway."
       }
     ],
@@ -654,22 +654,22 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Casa Tramway",
-        "approx_cost": "8 MAD (sh.80 USD) per ride",
+        "approx_cost": "8 MAD ($0.80 USD) per ride",
         "description": "Modern, air-conditioned tram network spanning lines T1, T2, and T3. Excellent for traveling between Casa-Voyageurs station, Place Mohammed V, and Ain Diab."
       },
       {
         "type": "Red Petit Taxi",
-        "approx_cost": "15 - 30 MAD (.50 -  USD)",
+        "approx_cost": "15 - 30 MAD ($1.50 - $3.00 USD)",
         "description": "Red taxis operating on strict meter tariffs (compteur). Minimum fare 7.50 MAD. Plentiful throughout city center districts."
       },
       {
         "type": "Airport Express Train (ONCF)",
-        "approx_cost": "50 MAD ( USD)",
+        "approx_cost": "50 MAD ($5.00 USD)",
         "description": "Direct train linking Mohammed V Airport basement station to Casa-Voyageurs in 35 minutes. Fast and reliable."
       },
       {
         "type": "Al Boraq High-Speed Rail",
-        "approx_cost": "120 - 220 MAD (2 - 2 USD)",
+        "approx_cost": "120 - 220 MAD ($12.00 - $22.00 USD)",
         "description": "High-speed train departing Casa-Voyageurs toward Rabat (50 mins) and Tangier (2.1 hrs) at speeds up to 320 km/h."
       }
     ],
@@ -801,22 +801,22 @@ export const citiesDataFallback = [
     "transportation": [
       {
         "type": "Turquoise Petit Taxi",
-        "approx_cost": "12 - 25 MAD (.20 - .50 USD)",
+        "approx_cost": "12 - 25 MAD ($1.20 - $2.50 USD)",
         "description": "Light blue taxis with yellow stripes. Inexpensive for rides between Medina gates, Marshan, and Tangier Ville train station. Ensure meter is active."
       },
       {
         "type": "Al Boraq High-Speed Train",
-        "approx_cost": "100 - 220 MAD (0 - 2 USD)",
+        "approx_cost": "100 - 220 MAD ($10.00 - $22.00 USD)",
         "description": "High-speed train linking Tangier Ville station directly to Rabat (1 hr 20 mins) and Casablanca (2 hrs 10 mins) at 320 km/h."
       },
       {
         "type": "Ferry Terminals (Tangier Ville & Tangier Med)",
-        "approx_cost": "350 - 450 MAD (5 - 5 USD)",
+        "approx_cost": "350 - 450 MAD ($35.00 - $45.00 USD)",
         "description": "Tangier Ville Port handles fast passenger ferries to Tarifa, Spain (60 mins). Tangier Med Port (45 km east) handles long-distance ferries."
       },
       {
         "type": "Grand Taxi",
-        "approx_cost": "200 - 250 MAD (0 - 5 USD) round trip",
+        "approx_cost": "200 - 250 MAD ($20.00 - $25.00 USD) round trip",
         "description": "Cream grand taxis stationed near Grand Socco for trips out to Cap Spartel and the Caves of Hercules."
       }
     ],

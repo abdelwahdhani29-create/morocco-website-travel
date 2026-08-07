@@ -80,7 +80,7 @@ export const postMoroccoVisaRequirements = {
         fr: "Combien coûte l'e-Visa pour le Maroc et quel est le délai de traitement ?"
       },
       answer: {
-        en: "Standard e-Visa processing takes 3 business days and costs approximately 770 MAD (~$77 USD / €72 EUR). Express e-Visa processing takes 110 business days and costs approximately 1,100 MAD (~$110 USD / €102 EUR). Payments are submitted securely online via credit or debit card on the official government portal.",
+        en: "Standard e-Visa processing takes 3 business days and costs approximately 770 MAD (~$77 USD / €72 EUR). Express e-Visa processing takes 1 business day (24 hours) and costs approximately 1,100 MAD (~$110 USD / €102 EUR). Payments are submitted securely online via credit or debit card on the official government portal.",
         fr: "Le traitement standard de l'e-Visa prend 3 jours ouvrés et coûte environ 770 MAD (~72 €). Le traitement express prend 1 jour ouvré et coûte environ 1 100 MAD (~102 €). Le paiement s'effectue directement en ligne par carte bancaire sur le portail officiel."
       }
     }
