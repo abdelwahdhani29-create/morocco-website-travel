@@ -269,106 +269,93 @@ function renderAll() {
     statsBadge.textContent = `${t('showing_lbl')} ${filtered.length} ${unitText}`;
   }
 
-  // Render Grid with active progressive skeleton shimmers
+  // Render Grid
   const grid = document.getElementById('cities-directory-grid');
   if (!grid) return;
 
-  // Let's render skeleton loader elements first to keep core web vitals pristine
-  grid.innerHTML = `
-    <div class="skeleton-card">
-      <div class="skeleton-media"></div>
-      <div class="skeleton-block skeleton-title"></div>
-      <div class="skeleton-block skeleton-text-lg"></div>
-    </div>
-    <div class="skeleton-card">
-      <div class="skeleton-media"></div>
-      <div class="skeleton-block skeleton-title"></div>
-      <div class="skeleton-block skeleton-text-lg"></div>
-    </div>
-    <div class="skeleton-card">
-      <div class="skeleton-media"></div>
-      <div class="skeleton-block skeleton-title"></div>
-      <div class="skeleton-block skeleton-text-lg"></div>
-    </div>
-    <div class="skeleton-card">
-      <div class="skeleton-media"></div>
-      <div class="skeleton-block skeleton-title"></div>
-      <div class="skeleton-block skeleton-text-lg"></div>
-    </div>
-  `;
-
-  // Render authentic cards with a slight delay
-  setTimeout(() => {
-    grid.innerHTML = '';
-
-    if (filtered.length === 0) {
-      grid.innerHTML = `
-        <div style="text-align: center; grid-column: 1 / -1; padding: 60px 20px; background: var(--color-cream); border: 2px dashed var(--color-border); border-radius: var(--border-radius-md);">
-          <i data-lucide="compass" style="width: 48px; height: 48px; color: var(--color-terracotta); margin: 0 auto 12px auto; display: block;"></i>
-          <p style="font-family: var(--font-serif); font-size: 18px; color: var(--color-charcoal); font-weight: 600; margin-bottom: 8px;">${t('no_results')}</p>
-        </div>
-      `;
-      if (window.lucide) window.lucide.createIcons();
-      return;
-    }
-
-    filtered.forEach((city, index) => {
-      // Choose translated name & description if french is active
-      let displayName = city.name;
-      const descObj = cityDescriptions[city.id.toLowerCase()];
-      const displayDesc = descObj ? (descObj[currentLang] || descObj['en']) : city.cultural_note;
-      const displayRegion = (translations[currentLang]?.regions?.[city.region]) || (translations['en']?.regions?.[city.region]) || city.region;
-
-      const card = document.createElement('div');
-      card.className = 'dir-card';
-      card.setAttribute('id', `card-city-${city.id}`);
-      
-      card.innerHTML = `
-        <div class="dir-card-photo-wrapper">
-          <img class="dir-card-img lazy-img" src="${city.cover_image}" alt="${displayName}" loading="lazy" onload="this.classList.add('loaded')" referrerPolicy="no-referrer" />
-          <span class="dir-card-days-badge">
-            ${city.suggested_days} ${t('days')}
-          </span>
-        </div>
-        <div class="dir-card-body">
-          <div class="dir-card-title-row">
-            <h2 class="dir-card-name">${displayName}</h2>
-          </div>
-          <div class="dir-card-region">
-            <i data-lucide="map" style="width: 14px; height: 14px;"></i>
-            <span>${displayRegion}</span>
-          </div>
-          <p class="dir-card-desc">${displayDesc}</p>
-          <div class="dir-card-footer">
-            <a href="/city/${city.id}.html" class="dir-card-btn" id="btn-explore-${city.id}">
-              <span>${t('view_details')}</span>
-            </a>
-          </div>
-        </div>
-      `;
-      grid.appendChild(card);
-
-      // Insert an ad slot after the first row of cards (usually 3 cards wide on desktop)
-      if (index === 2) {
-        const adContainer = document.createElement('div');
-        adContainer.className = 'ad-slot';
-        adContainer.style.gridColumn = '1 / -1';
-        adContainer.style.width = '100%';
-        adContainer.style.minHeight = '90px';
-        adContainer.style.margin = '20px 0';
-        adContainer.style.boxSizing = 'border-box';
-        grid.appendChild(adContainer);
-      }
-    });
-
-    // Re-generate Icons
+  // Check if static HTML cards are already rendered in English with no active search
+  const existingCardsCount = grid.querySelectorAll('.dir-card').length;
+  if (existingCardsCount === 18 && !searchQuery && currentLang === 'en' && !grid.dataset.renderedByJs) {
+    grid.dataset.renderedByJs = 'true';
     if (window.lucide) {
       window.lucide.createIcons();
     }
-
-    // Trigger reveal trigger
     window.dispatchEvent(new Event('scrollRevealTrigger'));
-  }, 300);
+    return;
+  }
+
+  // Otherwise, render filtered cards directly
+  grid.innerHTML = '';
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div style="text-align: center; grid-column: 1 / -1; padding: 60px 20px; background: var(--color-cream); border: 2px dashed var(--color-border); border-radius: var(--border-radius-md);">
+        <i data-lucide="compass" style="width: 48px; height: 48px; color: var(--color-terracotta); margin: 0 auto 12px auto; display: block;"></i>
+        <p style="font-family: var(--font-serif); font-size: 18px; color: var(--color-charcoal); font-weight: 600; margin-bottom: 8px;">${t('no_results')}</p>
+      </div>
+    `;
+    if (window.lucide) window.lucide.createIcons();
+    return;
+  }
+
+  filtered.forEach((city, index) => {
+    // Choose translated name & description if french is active
+    let displayName = city.name;
+    const descObj = cityDescriptions[city.id.toLowerCase()];
+    const displayDesc = descObj ? (descObj[currentLang] || descObj['en']) : city.cultural_note;
+    const displayRegion = (translations[currentLang]?.regions?.[city.region]) || (translations['en']?.regions?.[city.region]) || city.region;
+
+    const card = document.createElement('div');
+    card.className = 'dir-card';
+    card.setAttribute('id', `card-city-${city.id}`);
+    
+    card.innerHTML = `
+      <div class="dir-card-photo-wrapper">
+        <img class="dir-card-img lazy-img loaded" src="${city.cover_image}" alt="${displayName}" loading="lazy" referrerPolicy="no-referrer" />
+        <span class="dir-card-days-badge">
+          ${city.suggested_days} ${t('days')}
+        </span>
+      </div>
+      <div class="dir-card-body">
+        <div class="dir-card-title-row">
+          <h2 class="dir-card-name">${displayName}</h2>
+        </div>
+        <div class="dir-card-region">
+          <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+          <span>${displayRegion}</span>
+        </div>
+        <p class="dir-card-desc">${displayDesc}</p>
+        <div class="dir-card-footer">
+          <a href="/city/${city.id}.html" class="dir-card-btn" id="btn-explore-${city.id}">
+            <span>${t('view_details')}</span>
+          </a>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+
+    // Insert an ad slot after the first row of cards (usually 3 cards wide on desktop)
+    if (index === 2) {
+      const adContainer = document.createElement('div');
+      adContainer.className = 'ad-slot';
+      adContainer.style.gridColumn = '1 / -1';
+      adContainer.style.width = '100%';
+      adContainer.style.minHeight = '90px';
+      adContainer.style.margin = '20px 0';
+      adContainer.style.boxSizing = 'border-box';
+      grid.appendChild(adContainer);
+    }
+  });
+
+  grid.dataset.renderedByJs = 'true';
+
+  // Re-generate Icons
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+
+  // Trigger reveal trigger
+  window.dispatchEvent(new Event('scrollRevealTrigger'));
 }
 
 // Listeners helper

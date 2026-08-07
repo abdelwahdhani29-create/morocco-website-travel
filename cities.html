@@ -364,15 +364,444 @@
           </button>
         </div>
         <div class="count-badge" id="lbl-count-badge">
-          Showing 4 destinations
+          Showing 18 destinations
         </div>
       </section>
 
       <!-- Dynamic Directory Grid -->
       <section class="dir-grid" id="cities-directory-grid">
-        <!-- Rendered dynamically by js/cities.js -->
-        <div style="text-align: center; grid-column: 1 / -1; padding: 40px;" id="lbl-dir-loading">
-          <p>Loading destination catalogs...</p>
+
+        <div class="dir-card" id="card-city-marrakech">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Marrakech" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              3 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Marrakech</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Marrakech-Safi Region</span>
+            </div>
+            <p class="dir-card-desc">The legendary 'Red City', renowned for its ancient clay walls, vibrant squares, majestic palaces, and the lively souks filled with centuries-old Moroccan crafts.</p>
+            <div class="dir-card-footer">
+              <a href="/city/marrakech.html" class="dir-card-btn" id="btn-explore-marrakech">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-chefchaouen">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80" alt="Chefchaouen" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Chefchaouen</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Tangier-Tetouan-Al Hoceima</span>
+            </div>
+            <p class="dir-card-desc">Morocco's mystical 'Blue Pearl', tucked into the majestic Rif Mountains, boasting pristine indigo pathways and serene, mountain-fresh streams.</p>
+            <div class="dir-card-footer">
+              <a href="/city/chefchaouen.html" class="dir-card-btn" id="btn-explore-chefchaouen">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-fez">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1730581822486-72518b0750ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGZlenxlbnwwfHwwfHx8Mg%3D%3D" alt="Fez" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              3 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Fez</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Fes-Meknes Region</span>
+            </div>
+            <p class="dir-card-desc">The historic spiritual and intellectual soul of the Kingdom, containing the oldest continuously operating university in the world and 9,000 winding medieval lanes.</p>
+            <div class="dir-card-footer">
+              <a href="/city/fez.html" class="dir-card-btn" id="btn-explore-fez">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="ad-slot" style="grid-column: 1 / -1; width: 100%; min-height: 90px; margin: 20px 0; box-sizing: border-border-box;"></div>
+
+        <div class="dir-card" id="card-city-essaouira">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1743963790208-07ce117cdfc6?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8RXNzYW91aXJhfGVufDB8fDB8fHwy" alt="Essaouira" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Essaouira</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Marrakech-Safi Region</span>
+            </div>
+            <p class="dir-card-desc">A beautiful, windswept Atlantic coastal harbor fortress, filled with historical bronze cannons, pristine sandy beaches, and traditional Gnaoua music vibes.</p>
+            <div class="dir-card-footer">
+              <a href="/city/essaouira.html" class="dir-card-btn" id="btn-explore-essaouira">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-casablanca">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1642952568203-7c39131d0bf6?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzYWJsYW5jYXxlbnwwfHwwfHx8Mg%3D%3D" alt="Casablanca" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Casablanca</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Casablanca-Settat Region</span>
+            </div>
+            <p class="dir-card-desc">Morocco's vibrant seaside metropolis, blending towering modern wonders like the Hassan II Mosque with charming art-deco French quarters.</p>
+            <div class="dir-card-footer">
+              <a href="/city/casablanca.html" class="dir-card-btn" id="btn-explore-casablanca">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-tangier">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1682972443785-9934a692cf42?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tangier" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Tangier</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Tangier-Tetouan-Al Hoceima</span>
+            </div>
+            <p class="dir-card-desc">The iconic 'Gateway to Africa', sitting between the sea and ocean, inspiring generations of international writers and artists with its bohemian spirit.</p>
+            <div class="dir-card-footer">
+              <a href="/city/tangier.html" class="dir-card-btn" id="btn-explore-tangier">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-rabat">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1724864944268-3f4e6a96c38d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rabat" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Rabat</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Rabat-Sale-Kenitra Region</span>
+            </div>
+            <p class="dir-card-desc">The stately capital city of Morocco, showcasing wide tree-lined boulevards, immaculate modern gardens, and the ancient seaside Kasbah of the Udayas.</p>
+            <div class="dir-card-footer">
+              <a href="/city/rabat.html" class="dir-card-btn" id="btn-explore-rabat">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-agadir">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg/1920px-South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg" alt="Agadir" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Agadir</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Souss-Massa Region</span>
+            </div>
+            <p class="dir-card-desc">A premier sun-kissed seaside resort looking over a spectacular 10-kilometer golden crescent beach, famous for water sports and rich Amazigh crafts.</p>
+            <div class="dir-card-footer">
+              <a href="/city/agadir.html" class="dir-card-btn" id="btn-explore-agadir">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-ouarzazate">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1737927427538-9f9b4ea4ab02?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ouarzazate" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Ouarzazate</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Draa-Tafilalet Region</span>
+            </div>
+            <p class="dir-card-desc">Morocco's sun-baked 'desert Hollywood', framed by dramatic Atlas peaks and majestic red clay fortresses like UNESCO-listed Ait Benhaddou.</p>
+            <div class="dir-card-footer">
+              <a href="/city/ouarzazate.html" class="dir-card-btn" id="btn-explore-ouarzazate">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-merzouga">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1559586616-361e18714958?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Merzouga" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Merzouga</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Draa-Tafilalet Region</span>
+            </div>
+            <p class="dir-card-desc">An unforgettable desert jewel situated beneath the wind-sculpted golden Erg Chebbi dunes, offering starry Saharan campfires and caravan treks.</p>
+            <div class="dir-card-footer">
+              <a href="/city/merzouga.html" class="dir-card-btn" id="btn-explore-merzouga">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-meknes">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1612171579482-daee4955f5ea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meknes" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Meknes</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Fes-Meknes Region</span>
+            </div>
+            <p class="dir-card-desc">An Imperial city surrounded by massive protective clay bastions, containing exquisite gates, historic granaries, and nearby ancient Roman Volubilis.</p>
+            <div class="dir-card-footer">
+              <a href="/city/meknes.html" class="dir-card-btn" id="btn-explore-meknes">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-tetouan">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://worldheritagesites.net/wp-content/uploads/2024/11/Tetouan-1.jpg" alt="Tetouan" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Tetouan</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Tangier-Tetouan-Al Hoceima</span>
+            </div>
+            <p class="dir-card-desc">The elegant 'White Dove' of northern hills, showcasing beautiful Spanish-Andalusian architectural lanes and UNESCO traditional artisan guilds.</p>
+            <div class="dir-card-footer">
+              <a href="/city/tetouan.html" class="dir-card-btn" id="btn-explore-tetouan">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-alhoceima">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1660972288441-18e89c4ec325?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Al Hoceima" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Al Hoceima</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Tangier-Tetouan-Al Hoceima</span>
+            </div>
+            <p class="dir-card-desc">A spectacular Mediterranean haven tucked into the Rif cliffs, praised for sapphire beaches like Quemado and mountain coastal reserves.</p>
+            <div class="dir-card-footer">
+              <a href="/city/alhoceima.html" class="dir-card-btn" id="btn-explore-alhoceima">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-ifrane">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1611358382200-5baf13de1b40?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ifrane" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Ifrane</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Fes-Meknes Region</span>
+            </div>
+            <p class="dir-card-desc">A unique alpine mountain resort known as 'Little Switzerland', boasting sloped red roofs, snowy winter pine woods, and pure cedar forests.</p>
+            <div class="dir-card-footer">
+              <a href="/city/ifrane.html" class="dir-card-btn" id="btn-explore-ifrane">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-dakhla">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1661426795053-08140bc5c688?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dakhla" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              3 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Dakhla</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Dakhla-Oued Ed-Dahab Region</span>
+            </div>
+            <p class="dir-card-desc">A world-class lagoon paradise where golden desert ridges meet the windy turquoise Atlantic, creating an ultimate sports spot.</p>
+            <div class="dir-card-footer">
+              <a href="/city/dakhla.html" class="dir-card-btn" id="btn-explore-dakhla">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-eljadida">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.pexels.com/photos/19069277/pexels-photo-19069277.jpeg?_gl=1*9x42bw*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODIyMzM3NjUkbzE2JGcwJHQxNzgyMjMzNzY1JGo2MCRsMCRoMA.." alt="El Jadida" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">El Jadida</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Casablanca-Settat Region</span>
+            </div>
+            <p class="dir-card-desc">A charming historic ocean harbor containing the UNESCO-listed Portuguese stone cistern, old watchtowers, and Atlantic fortress ramparts.</p>
+            <div class="dir-card-footer">
+              <a href="/city/eljadida.html" class="dir-card-btn" id="btn-explore-eljadida">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-oujda">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.unsplash.com/photo-1632658810488-f3581ce5a249?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3VqZGF8ZW58MHx8MHx8fDA%3D" alt="Oujda" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Oujda</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Oriental Region</span>
+            </div>
+            <p class="dir-card-desc">The historic capital of Eastern Morocco, known for deep hospitality, traditional Gharnati music, a beautiful medina, and Lalla Aicha Park.</p>
+            <div class="dir-card-footer">
+              <a href="/city/oujda.html" class="dir-card-btn" id="btn-explore-oujda">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dir-card" id="card-city-beni-mellal">
+          <div class="dir-card-photo-wrapper">
+            <img class="dir-card-img lazy-img loaded" src="https://images.pexels.com/photos/33421278/pexels-photo-33421278.jpeg?_gl=1*buqvyd*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQxMTE0MjUkbzIwJGcxJHQxNzg0MTEyMDM1JGo1NyRsMCRoMA.." alt="Beni Mellal" loading="lazy" referrerPolicy="no-referrer" />
+            <span class="dir-card-days-badge">
+              2 Days
+            </span>
+          </div>
+          <div class="dir-card-body">
+            <div class="dir-card-title-row">
+              <h2 class="dir-card-name">Beni Mellal</h2>
+            </div>
+            <div class="dir-card-region">
+              <i data-lucide="map" style="width: 14px; height: 14px;"></i>
+              <span>Beni Mellal-Khenifra Region</span>
+            </div>
+            <p class="dir-card-desc">An agricultural oasis beneath the Middle Atlas, famous for olive groves, cascading mountain springs, and high-altitude fortress views.</p>
+            <div class="dir-card-footer">
+              <a href="/city/beni-mellal.html" class="dir-card-btn" id="btn-explore-beni-mellal">
+                <span>Explore Destination ↗</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
