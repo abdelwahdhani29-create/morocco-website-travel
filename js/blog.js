@@ -694,7 +694,7 @@ function injectSEOIndexSchema() {
       "name": "GoMoroccoAI",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg"
+        "url": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80"
       }
     },
     "blogPost": blogPosts.map(post => ({
@@ -744,7 +744,7 @@ function injectSEOArticleSchema(post, title, excerpt, formattedDate) {
       "name": "GoMoroccoAI",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://media.cntraveler.com/photos/65dfc055e781ac22c9a500e9/16:9/w_2240,c_limit/GettyImages-1450546518.jpg"
+        "url": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80"
       }
     }
   };
