@@ -197,15 +197,15 @@ async function run() {
     // Bake city title, overview, background image, and display grid
     html = html.replace(
       /id="city-title-display"[^>]*>.*?<\/h1>/s,
-      `id="city-title-display">${escapeAttr(name)} ${arabicName ? `<span style="font-size: 0.6em; opacity: 0.8; margin-left: 8px;">(${escapeAttr(arabicName)})</span>` : ''}</h1>`
+      () => `id="city-title-display" class="panoramic-city-title">${escapeAttr(name)} ${arabicName ? `<span style="font-size: 0.6em; opacity: 0.8; margin-left: 8px;">(${escapeAttr(arabicName)})</span>` : ''}</h1>`
     );
     html = html.replace(
       /id="city-desc-display"[^>]*>.*?<\/p>/s,
-      `id="city-desc-display">${escapeAttr(overview)}</p>`
+      () => `id="city-desc-display" class="panoramic-city-desc">${escapeAttr(overview)}</p>`
     );
     html = html.replace(
       /id="city-panoramic-hero"[^>]*style="[^"]*"/s,
-      `id="city-panoramic-hero" style="background-image: url('${escapeAttr(coverImage)}');"`
+      () => `id="city-panoramic-hero" class="city-panoramic-hero" style="background-image: url('${escapeAttr(coverImage)}');"`
     );
     html = html.replace(
       /id="city-detail-container"\s+style="display:\s*none;"/g,
@@ -233,7 +233,7 @@ async function run() {
           </div>
         `;
       }).join('');
-      html = html.replace('<div id="places-list" class="places-grid">', `<div id="places-list" class="places-grid">${placesHtml}`);
+      html = html.replace('<div id="places-list" class="places-grid">', () => `<div id="places-list" class="places-grid">${placesHtml}`);
     }
 
     // Pre-render Neighborhoods
@@ -259,7 +259,7 @@ async function run() {
           </div>
         `;
       }).join('');
-      html = html.replace('<div id="neighborhoods-list" class="neighborhoods-grid">', `<div id="neighborhoods-list" class="neighborhoods-grid">${neighHtml}`);
+      html = html.replace('<div id="neighborhoods-list" class="neighborhoods-grid">', () => `<div id="neighborhoods-list" class="neighborhoods-grid">${neighHtml}`);
     }
 
     const cityFilePath = path.join(distCityDir, `${id}.html`);
@@ -330,35 +330,35 @@ async function run() {
     // Populate Article elements
     html = html.replace(
       /id="article-category"[^>]*>.*?<\/span>/s,
-      `id="article-category" class="article-category-badge">${escapeAttr(categoryStr)}</span>`
+      () => `id="article-category" class="article-category-badge">${escapeAttr(categoryStr)}</span>`
     );
     html = html.replace(
       /id="article-title"[^>]*>.*?<\/h1>/s,
-      `id="article-title" class="article-main-title">${escapeAttr(titleStr)}</h1>`
+      () => `id="article-title" class="article-main-title">${escapeAttr(titleStr)}</h1>`
     );
     html = html.replace(
       /id="article-date">.*?<\/span>/s,
-      `id="article-date"><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> ${escapeAttr(dateStr)}</span>`
+      () => `id="article-date"><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> ${escapeAttr(dateStr)}</span>`
     );
     html = html.replace(
       /id="article-read-time">.*?<\/span>/s,
-      `id="article-read-time"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> ${escapeAttr(readTimeStr)}</span>`
+      () => `id="article-read-time"><i data-lucide="clock" style="width: 14px; height: 14px;"></i> ${escapeAttr(readTimeStr)}</span>`
     );
     html = html.replace(
       /id="article-hero-image"\s+src=""/g,
-      `id="article-hero-image" src="${escapeAttr(imageStr)}" alt="${escapeAttr(titleStr)}"`
+      () => `id="article-hero-image" src="${escapeAttr(imageStr)}" alt="${escapeAttr(titleStr)}"`
     );
     html = html.replace(
       /id="article-content-body"\s+class="article-rich-body">\s*<!--[^>]*-->\s*<\/article>/s,
-      `id="article-content-body" class="article-rich-body">${contentStr + faqHtml}</article>`
+      () => `id="article-content-body" class="article-rich-body">${contentStr + faqHtml}</article>`
     );
     html = html.replace(
       /id="article-author"[^>]*>.*?<\/h4>/s,
-      `id="article-author" style="font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--color-charcoal); margin: 0 0 4px 0;">${escapeAttr(authorStr)}</h4>`
+      () => `id="article-author" style="font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--color-charcoal); margin: 0 0 4px 0;">${escapeAttr(authorStr)}</h4>`
     );
     html = html.replace(
       /id="article-author-subtitle"[^>]*>.*?<\/p>/s,
-      `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published on ${escapeAttr(dateStr)}</p>`
+      () => `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published on ${escapeAttr(dateStr)}</p>`
     );
 
     const blogFilePath = path.join(distBlogDir, `${id}.html`);

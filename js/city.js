@@ -315,7 +315,19 @@ if (document.readyState === 'loading') {
 
 async function initCityDetail() {
   const urlParams = new URLSearchParams(window.location.search);
-  const cityId = urlParams.get('id') || 'marrakech'; 
+  let cityId = urlParams.get('id');
+
+  if (!cityId) {
+    const pathSegments = window.location.pathname.split('/');
+    const lastSegment = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2] || '';
+    if (lastSegment && lastSegment !== 'city.html' && lastSegment !== 'city') {
+      cityId = lastSegment.replace('.html', '');
+    }
+  }
+
+  if (!cityId) {
+    cityId = 'marrakech';
+  } 
 
   try {
     let cities;
