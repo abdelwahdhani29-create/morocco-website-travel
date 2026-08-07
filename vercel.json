@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "vite build && node scripts/generate-static.mjs",
+  "outputDirectory": "dist",
+  "framework": null,
   "redirects": [
     {
       "source": "/:path*",
@@ -16,6 +19,30 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/city.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.*)"
+        }
+      ],
+      "destination": "/city/$id.html"
+    },
+    {
+      "source": "/blog.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.*)"
+        }
+      ],
+      "destination": "/blog/$id.html"
     }
   ]
 }
