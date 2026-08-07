@@ -264,6 +264,7 @@ async function run() {
 
     const cityFilePath = path.join(distCityDir, `${id}.html`);
     fs.writeFileSync(cityFilePath, html, 'utf8');
+    console.log(`✓ Generated: ${cityFilePath}`);
     generatedFiles.push(`dist/city/${id}.html`);
   }
 
@@ -362,6 +363,7 @@ async function run() {
 
     const blogFilePath = path.join(distBlogDir, `${id}.html`);
     fs.writeFileSync(blogFilePath, html, 'utf8');
+    console.log(`✓ Generated: ${blogFilePath}`);
     generatedFiles.push(`dist/blog/${id}.html`);
   }
 
