@@ -179,12 +179,16 @@ async function run() {
     const name = (typeof city.name === 'object' ? (city.name.en || city.name.fr) : city.name) || 'Moroccan City';
     const arabicName = city.arabic_name || '';
     const coverImage = city.cover_image || city.hero_image || 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80';
-    const overview = (typeof city.overview === 'object' ? (city.overview.en || city.overview.fr) : city.overview)
+    const fullOverview = (typeof city.overview === 'object' ? (city.overview.en || city.overview.fr) : city.overview)
       || (typeof city.description === 'object' ? (city.description.en || city.description.fr) : city.description)
       || `Explore ${name}, a premier destination in Morocco featuring historical landmarks, vibrant souks, and cultural experiences.`;
 
+    const shortDesc = fullOverview.length > 155 
+      ? fullOverview.substring(0, 152) + '...' 
+      : fullOverview;
+
     const title = `${name} Travel Guide • GoMoroccoAI`;
-    const description = overview;
+    const description = shortDesc;
     const canonicalUrl = `https://gomoroccoai.com/city/${id}.html`;
 
     let html = updateHeadMeta(cityTemplate, {
@@ -201,7 +205,7 @@ async function run() {
     );
     html = html.replace(
       /id="city-desc-display"[^>]*>.*?<\/p>/s,
-      () => `id="city-desc-display" class="panoramic-city-desc">${escapeAttr(overview)}</p>`
+      () => `id="city-desc-display" class="panoramic-city-desc">${escapeAttr(fullOverview)}</p>`
     );
     html = html.replace(
       /id="city-panoramic-hero"[^>]*style="[^"]*"/s,
@@ -211,10 +215,10 @@ async function run() {
       /id="city-detail-container"\s+style="display:\s*none;"/g,
       'id="city-detail-container" style="display: grid;"'
     );
-    // Explicitly hide error fallback view for valid pre-rendered city pages
+    // Empty error fallback view for valid pre-rendered city pages so error text is not in static HTML
     html = html.replace(
-      /id="error-fallback-view"\s+class="error-card"\s+style="display:\s*[^"]*"/g,
-      'id="error-fallback-view" class="error-card" style="display: none;"'
+      /<div id="error-fallback-view"[^>]*>.*?<\/div>/s,
+      '<div id="error-fallback-view" class="error-card" style="display: none;"></div>'
     );
 
     // Pre-render Fast Facts

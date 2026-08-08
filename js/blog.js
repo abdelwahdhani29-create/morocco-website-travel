@@ -7,8 +7,8 @@ import { getNavLanguage } from './auth-nav.js';
 let currentLanguage = getNavLanguage();
 let selectedCategory = 'all';
 let searchQuery = '';
-let visiblePostsCount = 4; // Pagination limit
-const postsPerPage = 4;
+let visiblePostsCount = 999; // Display all posts
+const postsPerPage = 999;
 
 // Track active view state
 let activePostId = null;
@@ -93,6 +93,12 @@ function renderDirectory() {
   if (searchInput) {
     searchInput.placeholder = t('search_blog');
     searchInput.value = searchQuery;
+  }
+
+  // Hide static fallback list when JS renders dynamic grid
+  const staticList = document.getElementById('static-blog-list');
+  if (staticList) {
+    staticList.style.display = 'none';
   }
 
   // Populate dynamic Categories list
