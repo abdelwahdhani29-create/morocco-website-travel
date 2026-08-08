@@ -17,20 +17,20 @@ export const postSafetyEtiquette = {
     fr: "12 min de lecture"
   },
   title: {
-    en: "Morocco Travel Guide: Essential Safety, Cultural Etiquette, and Practical Tips",
-    fr: "Guide de Voyage Maroc : Sécurité, Étiquette Culturelle et Conseils Pratiques"
+    en: "Morocco Culture & Etiquette Guide: Social Norms, Customs & Respect",
+    fr: "Guide de la Culture et de l'Étiquette au Maroc : Normes Sociales et Respect"
   },
   excerpt: {
-    en: "Planning your first trip to Morocco? Our ultimate bilingual guide covers safety, local customs, dress code, common scams to avoid, and essential financial tips for a seamless experience.",
-    fr: "Vous préparez votre premier voyage au Maroc ? Notre guide bilingue ultime couvre la sécurité, les coutumes locales, le code vestimentaire, les arnaques à éviter et les conseils pratiques."
+    en: "Master Moroccan etiquette and cultural norms. Our comprehensive guide covers local greetings, dining customs, religious respect, tipping rules, and warm hospitality.",
+    fr: "Maîtrisez les codes culturels et l'étiquette au Maroc. Un guide complet couvrant les salutations, la gastronomie, le respect religieux et l'hospitalité."
   },
   metaTitle: {
-    en: "Morocco Travel Safety, Dress Code, Etiquette & Scams Guide",
-    fr: "Sécurité au Maroc : Vêtements, Étiquette et Pièges à Éviter"
+    en: "Morocco Culture & Etiquette Guide: Social Norms, Customs & Respect",
+    fr: "Guide de la Culture et de l'Étiquette au Maroc : Coutumes et Respect"
   },
   metaDescription: {
-    en: "The definitive guide to traveling Morocco safely. Learn about cultural etiquette, what to wear, common tourist scams, currency exchange, and medical tips for first-timers.",
-    fr: "Le guide définitif pour voyager au Maroc en toute sécurité. Découvrez l'étiquette culturelle, la tenue appropriée, les arnaques courantes et les conseils utiles."
+    en: "Master Moroccan customs and etiquette. Essential guide to local greetings, dining customs, religious respect, tipping rules, and cultural hospitality.",
+    fr: "Découvrez les coutumes et l'étiquette au Maroc. Guide essentiel sur les salutations, les repas, le respect des traditions religieuses et le pourboire."
   },
   faqs: [
     {
@@ -78,7 +78,7 @@ export const postSafetyEtiquette = {
     en: `
       <p class="blog-lead">Morocco is an exhilarating assault on the senses. The moment you enter an ancient medina, you are swept into a sensory tapestry of vibrant colors, echoing calls to prayer, and the aromatic scent of roasting spices. However, the intensity of this beautiful North African Kingdom can catch first-time travelers off guard. Navigating Morocco successfully requires more than just a passport and a suitcase; it requires cultural awareness, street smarts, and an understanding of local customs.</p>
 
-      <p>Whether you are wandering the blue alleys of <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>, navigating the bustling souks of <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, or exploring the medieval labyrinth of <a href="/city/fez.html" class="blog-internal-link">Fes</a>, this comprehensive guide will equip you with essential tips on safety, dress code, etiquette, and scams to ensure your Moroccan adventure is smooth, respectful, and unforgettable.</p>
+      <p>Whether you are wandering the blue alleys of <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>, navigating the bustling souks of <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, or exploring the medieval labyrinth of <a href="/city/fez.html" class="blog-internal-link">Fes</a>, this guide focuses on local social customs, dining etiquette, religious respect, and hospitality. For security precautions, scam prevention, and emergency advice, read <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">Is Morocco Safe to Visit in 2026?</a>. For regional packing and clothing guidelines, read <a href="/blog/what-to-wear-in-morocco.html" class="blog-internal-link">What to Wear in Morocco</a>.</p>
 
       <h2>1. Is Morocco Safe for Tourists?</h2>
       <p>The short answer is <strong>yes</strong>. Morocco is classified as a low-threat destination for violent crime. Tourism is a pillar of the national economy, and the Moroccan government invests heavily in security. You will notice a visible police presence in major cities, including specialized "Brigade Touristique" (Tourist Police) officers who patrol historic areas to protect international visitors.</p>

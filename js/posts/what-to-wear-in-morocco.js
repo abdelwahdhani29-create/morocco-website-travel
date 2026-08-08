@@ -19,20 +19,20 @@ export const postWhatToWearInMorocco = {
     fr: "12 min de lecture"
   },
   title: {
-    en: "What to Wear in Morocco: The Ultimate Modest & Comfortable Packing Guide",
-    fr: "Que porter au Maroc : Le guide ultime d'habillement pudique et confortable"
+    en: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
+    fr: "Que Porter au Maroc : Code Vestimentaire, Valise & Conseils Saisonniers"
   },
   excerpt: {
-    en: "Packing for Morocco can be a delicate balancing act between hot desert temperatures and respectful cultural codes. Discover our expert guide on styling modest, stylish, and highly comfortable outfits for every region and season.",
-    fr: "Préparer ses valises pour le Maroc nécessite de concilier la chaleur du climat et le respect des coutumes locales. Découvrez nos conseils pour composer des tenues légères, élégantes et respectueuses pour chaque région."
+    en: "Packing for Morocco made easy. Discover expert rules on modest dress codes, seasonal layers, desert outfits, footwear for medina cobblestones, and regional style tips.",
+    fr: "Préparer sa valise pour le Maroc en toute simplicité. Règles de pudeur, tenues pour le désert, chaussures pour la médina et conseils selon la saison."
   },
   metaTitle: {
-    en: "What to Wear in Morocco: Ultimate Packing & Dress Code Guide (2026)",
-    fr: "Que porter au Maroc : Guide d'habillement et valise idéale (2026)"
+    en: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
+    fr: "Que Porter au Maroc : Code Vestimentaire, Valise & Saisons"
   },
   metaDescription: {
-    en: "Expert advice on what to wear in Morocco. Learn the cultural dress codes, seasonal packing tips, and practical styling ideas for women and men to travel comfortably.",
-    fr: "Conseils d'experts sur les vêtements à porter au Maroc. Règles de pudeur, garde-robe d'été et d'hiver, tenues pour le désert, Marrakech et la côte."
+    en: "What to wear in Morocco for men and women. Complete packing guide covering medina modesty, desert layers, coastal style, and seasonal dress codes.",
+    fr: "Que porter au Maroc pour hommes et femmes. Guide de valise complet : pudeur dans les médinas, tenues pour le désert, la côte et conseils saisonniers."
   },
   faqs: [
     {
@@ -80,7 +80,7 @@ export const postWhatToWearInMorocco = {
     en: `
       <p class="blog-lead">Preparing a suitcase for Morocco can often feel like a puzzle. Travelers must strike a careful, thoughtful balance between staying cool in a warm climate and respecting the conservative, modest clothing standards of a traditional Muslim-majority nation. Whether you are wandering through bustling imperial souks, trekking the High Atlas peaks, or riding a camel into the silent dunes of the Sahara, what you wear has a significant impact on your comfort, your safety, and your interactions with welcoming local communities.</p>
 
-      <p>In this definitive guide, our travel experts break down the essential dress codes, styling strategies, and seasonal essentials for both men and women. We will demystify local customs, explore regional microclimates, and provide a comprehensive, multi-layer checklist to ensure you look elegant, feel incredibly comfortable, and travel with ultimate confidence across the Kingdom.</p>
+      <p>In this guide, our travel experts break down the essential dress codes, styling strategies, and seasonal essentials for both men and women. For broader cultural etiquette, dining norms, and hospitality customs, see our <a href="/blog/morocco-travel-safety-etiquette-tips.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For safety advice and solo travel precautions, consult <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">Is Morocco Safe to Visit in 2026?</a>. Below is your complete packing and wardrobe checklist.</p>
 
       <h2>1. Demystifying the Cultural Context: Respectful Modesty in Morocco</h2>
       <p>Before packing individual garments, it is crucial to understand the cultural landscape. Morocco is deeply rooted in Islamic traditions, where modesty is a highly respected value in daily social interactions. While the major metropolises of Casablanca, Rabat, and parts of modern <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> are highly cosmopolitan, smaller towns and rural mountain villages remain culturally conservative.</p>

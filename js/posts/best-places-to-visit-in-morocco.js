@@ -17,20 +17,20 @@ export const postBestPlaces = {
     fr: "12 min de lecture"
   },
   title: {
-    en: "Best Places to Visit in Morocco: The Ultimate Traveler's Guide",
-    fr: "Les meilleurs endroits à visiter au Maroc : Le guide de voyage ultime"
+    en: "10 Best Places to Visit in Morocco: Top Destinations & Regional Highlights",
+    fr: "10 Meilleurs Endroits à Visiter au Maroc : Incontournables & Régions"
   },
   excerpt: {
-    en: "Embark on an epic journey across Morocco's most iconic destinations. From Marrakech's vibrant souks to Chefchaouen's blue alleys and Erg Chebbi's gold sands.",
-    fr: "Embarquez pour un voyage épique à travers les destinations incontournables du Maroc. Des souks de Marrakech aux sables dorés de Merzouga et aux rues bleues de Chefchaouen."
+    en: "Discover the 10 best places to visit in Morocco. Compare Marrakech, Fes, Chefchaouen, the Sahara Desert, Essaouira, and coastal imperial cities.",
+    fr: "Découvrez les 10 meilleurs endroits à visiter au Maroc. Comparez Marrakech, Fès, Chefchaouen, le désert du Sahara, Essaouira et les villes côtières."
   },
   metaTitle: {
-    en: "Best Places to Visit in Morocco: Ultimate Travel Guide & Tips",
-    fr: "Où aller au Maroc : Les meilleurs endroits et conseils de voyage"
+    en: "10 Best Places to Visit in Morocco: Top Destinations & Regions",
+    fr: "10 Meilleurs Endroits à Visiter au Maroc : Destinations & Régions"
   },
   metaDescription: {
-    en: "Explore the best places to visit in Morocco with our expert guide. Discover top destinations like Marrakech, Fes, Chefchaouen, the Sahara, travel tips, and FAQs.",
-    fr: "Découvrez les meilleurs endroits à visiter au Maroc. Planifiez votre voyage : Marrakech, Fès, Chefchaouen, le désert du Sahara, conseils d'experts et FAQ."
+    en: "Discover the 10 best places to visit in Morocco. Compare Marrakech, Fes, Chefchaouen, the Sahara Desert, Essaouira, and coastal imperial cities.",
+    fr: "Découvrez les 10 meilleurs endroits à visiter au Maroc. Comparez Marrakech, Fès, Chefchaouen, le désert du Sahara, Essaouira et les cités impériales."
   },
   faqs: [
     {
