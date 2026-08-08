@@ -201,7 +201,7 @@ async function run() {
     // Bake city title, overview, background image, and display grid
     html = html.replace(
       /id="city-title-display"[^>]*>.*?<\/h1>/s,
-      () => `id="city-title-display" class="panoramic-city-title">${escapeAttr(name)} ${arabicName ? `<span style="font-size: 0.6em; opacity: 0.8; margin-left: 8px;">(${escapeAttr(arabicName)})</span>` : ''}</h1>`
+      () => `id="city-title-display" class="panoramic-city-title">${escapeAttr(name)}</h1>`
     );
     html = html.replace(
       /id="city-desc-display"[^>]*>.*?<\/p>/s,
