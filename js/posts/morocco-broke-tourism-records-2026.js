@@ -23,8 +23,8 @@ export const postMoroccoBrokeRecords2026 = {
     fr: "Le Maroc pulvérise ses records de tourisme — Voici pourquoi tout le monde réserve un voyage en 2026"
   },
   excerpt: {
-    en: "Morocco has officially shattered global tourism records in 2026. Discover the driving forces behind the boom: high-speed rail expansions, world-class luxury at unbeatable value, digital nomad havens, and preparations for the 2030 World Cup.",
-    fr: "Le Maroc bat officiellement tous les records mondiaux de tourisme en 2026. Découvrez les moteurs de cet essor : trains à grande vitesse, luxe accessible, écosystème nomade digital et préparatifs de la Coupe du Monde 2030."
+    en: "Morocco has officially shattered global visitor arrival records in 2026. Explore the latest official statistics, record-breaking numbers, expanded international flight routes, and market trends driving the surge.",
+    fr: "Le Maroc a officiellement pulvérisé ses records d'arrivées touristiques en 2026. Découvrez les chiffres officiels, les nouvelles liaisons aériennes et les statistiques de fréquentation."
   },
   metaTitle: {
     en: "Morocco Tourism Record 2026: Official Visitor Numbers & Market Growth",
