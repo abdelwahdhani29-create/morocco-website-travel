@@ -535,9 +535,21 @@ async function run() {
     });
 
     // Make body show article view
-    html = html.replace('<body>', '<body class="article-view">');
-    html = html.replace('<section id="blog-directory-section">', '<section id="blog-directory-section" style="display: none;">');
-    html = html.replace('<section id="blog-article-section" style="display: none;">', '<section id="blog-article-section" style="display: block;">');
+    // Make body show article view
+html = html.replace('<body>', '<body class="article-view">');
+
+// Completely remove the master Blog Directory from individual article HTML.
+// Keep it only on /blog.html.
+html = html.replace(
+  /<section id="blog-directory-section"[\s\S]*?(?=<section id="blog-article-section")/,
+  ''
+);
+
+// Show the article section
+html = html.replace(
+  '<section id="blog-article-section" style="display: none;">',
+  '<section id="blog-article-section" style="display: block;">'
+);
 
     // Populate Article elements
     html = html.replace(
