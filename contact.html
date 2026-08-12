@@ -201,7 +201,7 @@
           <div>
             <h1 id="contact-main-title" style="font-family: var(--font-serif); font-size: 32px; color: var(--color-charcoal); margin-bottom: 12px;">Get in Touch</h1>
             <p id="contact-main-desc" style="font-size: 14px; color: var(--color-charcoal-light); line-height: 1.7; margin-bottom: 8px;">
-              Have questions regarding tourist regulations, cultural festivals, or require support listing a verified guide cooperative? Please contact us.
+              Have questions regarding travel recommendations, cultural insights, or general feedback? GoMoroccoAI is an independent travel guide platform providing Morocco travel information and planning resources.
             </p>
           </div>
 
@@ -209,7 +209,7 @@
           <div class="info-item">
             <div class="info-icon"><i data-lucide="mail" style="width: 18px; height: 18px;"></i></div>
             <div>
-              <div id="lbl-contact-email" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Partnerships Email</div>
+              <div id="lbl-contact-email" style="font-size: 11px; font-weight:700; color:var(--color-charcoal-light); text-transform:uppercase; letter-spacing: 0.5px;">Contact Email</div>
               <div style="font-weight: 700; margin-top: 4px; font-size: 15px; color: var(--color-terracotta);">
                 <a href="mailto:gomoroccoai@gmail.com" style="text-decoration: none; color: inherit; transition: var(--transition-smooth);">gomoroccoai@gmail.com</a>
               </div>
@@ -223,8 +223,7 @@
           <div id="contact-success-frame" class="success-box">
             <i data-lucide="badge-check" style="width: 24px; height: 24px; flex-shrink: 0; color: #10b981;"></i>
             <div>
-              <h3 id="lbl-success-title" style="font-size: 14px; font-weight: 700; margin-bottom: 4px;">Thank you! Message Sent Successfully</h3>
-              <p id="lbl-success-desc" style="font-size: 13px; margin: 0; color: #047857;">Our regional support officers will review your proposal and get back to you within 24 working hours.</p>
+              <p id="lbl-success-desc" style="font-size: 14px; font-weight: 600; margin: 0; color: #047857;">Thank you for contacting GoMoroccoAI. We have received your message.</p>
             </div>
           </div>
 
@@ -245,16 +244,16 @@
             <div class="form-group">
               <label class="form-label" id="lbl-form-topic">Topic Interest</label>
               <select id="contact-subject" class="form-input" style="height: 48px; background: white;">
-                <option value="directory" id="topic-opt-1">Tourism Directory Cooperatives</option>
-                <option value="cultural" id="topic-opt-2">Cultural Archives Correction</option>
-                <option value="transit" id="topic-opt-3">Feedback & General tourism</option>
+                <option value="directory" id="topic-opt-1">Travel Recommendations & Guides</option>
+                <option value="cultural" id="topic-opt-2">Cultural Information & Feedback</option>
+                <option value="transit" id="topic-opt-3">Feedback & General Travel</option>
               </select>
             </div>
 
             <!-- Message Details -->
             <div class="form-group">
               <label class="form-label" id="lbl-form-msg">Message Details</label>
-              <textarea id="contact-text" rows="5" class="form-textarea" required placeholder="How can our Morocco Explorer portal help you?"></textarea>
+              <textarea id="contact-text" rows="5" class="form-textarea" required placeholder="How can GoMoroccoAI help you?"></textarea>
             </div>
 
             <button type="submit" class="btn-submit">
@@ -301,10 +300,8 @@
         if (addrVal) addrVal.textContent = t('contact_address_val');
 
         // Success dialog content
-        const successTitle = document.getElementById('lbl-success-title');
         const successDesc = document.getElementById('lbl-success-desc');
-        if (successTitle) successTitle.textContent = t('contact_success_title');
-        if (successDesc) successDesc.textContent = t('contact_success_desc');
+        if (successDesc) successDesc.textContent = "Thank you for contacting GoMoroccoAI. We have received your message.";
 
         // Form fields & submit
         const nameLabel = document.getElementById('lbl-form-name');
@@ -334,7 +331,7 @@
 
         if (nameInput) nameInput.placeholder = currentLang === 'fr' ? 'Par ex. Abdellah El Fassi' : 'e.g. Abdellah El Fassi';
         if (emailInput) emailInput.placeholder = 'you@example.com';
-        if (textInput) textInput.placeholder = currentLang === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can our Morocco Explorer portal help you?';
+        if (textInput) textInput.placeholder = currentLang === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can GoMoroccoAI help you?';
       }
 
       // Handle the contact form submit actions locally and cleanly
