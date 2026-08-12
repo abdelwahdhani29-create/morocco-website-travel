@@ -19,14 +19,31 @@ function initBlog() {
   
   // Parse URL query parameter or pathname for active article
   const params = new URLSearchParams(window.location.search);
-  let activeId = params.get('id');
+  const paramBlogId = params.get('id');
 
-  if (!activeId) {
-    const pathSegments = window.location.pathname.split('/');
-    const lastSegment = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2] || '';
-    if (lastSegment && lastSegment !== 'blog.html' && lastSegment !== 'blog') {
-      activeId = lastSegment.replace('.html', '');
+  const validBlogPosts = [
+    'morocco-visa-requirements', 'morocco-cost-of-travel', 'morocco-itinerary-first-time',
+    'best-places-to-visit-in-morocco', 'casablanca-ultimate-travel-guide', 'what-to-wear-in-morocco',
+    'why-morocco-fastest-growing-destination', 'morocco-broke-tourism-records-2026',
+    'morocco-travel-tips-30-things-to-know', 'morocco-world-cup-2026-atlas-lions-tourism-before-2030',
+    'is-morocco-safe-to-visit-2026', 'morocco-travel-safety-etiquette-tips', 'best-time-to-visit-morocco',
+    'marrakech-souks-guide', 'chefchaouen-azure-streets', 'merzouga-sahara-overnight',
+    'flavors-of-fez-culinary', 'essaouira-coastal-sanctuary', 'moroccan-tea-rituals'
+  ];
+
+  if (paramBlogId) {
+    const slug = paramBlogId.toLowerCase().trim();
+    if (validBlogPosts.includes(slug)) {
+      window.location.replace('/blog/' + slug + '.html');
+      return;
     }
+  }
+
+  let activeId = null;
+  const pathSegments = window.location.pathname.split('/');
+  const lastSegment = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2] || '';
+  if (lastSegment && lastSegment !== 'blog.html' && lastSegment !== 'blog') {
+    activeId = lastSegment.replace('.html', '');
   }
 
   activePostId = activeId;

@@ -19,19 +19,18 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
-    }
-  ],
-  "rewrites": [
+    },
     {
       "source": "/city.html",
       "has": [
         {
           "type": "query",
           "key": "id",
-          "value": "(?<id>.*)"
+          "value": "(?<id>marrakech|chefchaouen|fez|essaouira|casablanca|tangier|rabat|agadir|ouarzazate|merzouga|meknes|tetouan|alhoceima|ifrane|dakhla|eljadida|oujda|beni-mellal)"
         }
       ],
-      "destination": "/city/$id.html"
+      "destination": "/city/:id.html",
+      "permanent": true
     },
     {
       "source": "/blog.html",
@@ -39,10 +38,11 @@
         {
           "type": "query",
           "key": "id",
-          "value": "(?<id>.*)"
+          "value": "(?<id>morocco-visa-requirements|morocco-cost-of-travel|morocco-itinerary-first-time|best-places-to-visit-in-morocco|casablanca-ultimate-travel-guide|what-to-wear-in-morocco|why-morocco-fastest-growing-destination|morocco-broke-tourism-records-2026|morocco-travel-tips-30-things-to-know|morocco-world-cup-2026-atlas-lions-tourism-before-2030|is-morocco-safe-to-visit-2026|morocco-travel-safety-etiquette-tips|best-time-to-visit-morocco|marrakech-souks-guide|chefchaouen-azure-streets|merzouga-sahara-overnight|flavors-of-fez-culinary|essaouira-coastal-sanctuary|moroccan-tea-rituals)"
         }
       ],
-      "destination": "/blog/$id.html"
+      "destination": "/blog/:id.html",
+      "permanent": true
     }
   ]
 }

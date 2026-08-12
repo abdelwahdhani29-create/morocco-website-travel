@@ -315,14 +315,28 @@ if (document.readyState === 'loading') {
 
 async function initCityDetail() {
   const urlParams = new URLSearchParams(window.location.search);
-  let cityId = urlParams.get('id');
+  const paramCityId = urlParams.get('id');
 
-  if (!cityId) {
-    const pathSegments = window.location.pathname.split('/');
-    const lastSegment = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2] || '';
-    if (lastSegment && lastSegment !== 'city.html' && lastSegment !== 'city') {
-      cityId = lastSegment.replace('.html', '');
+  const validCities = [
+    'marrakech', 'chefchaouen', 'fez', 'essaouira', 'casablanca',
+    'tangier', 'rabat', 'agadir', 'ouarzazate', 'merzouga',
+    'meknes', 'tetouan', 'alhoceima', 'ifrane', 'dakhla',
+    'eljadida', 'oujda', 'beni-mellal'
+  ];
+
+  if (paramCityId) {
+    const slug = paramCityId.toLowerCase().trim();
+    if (validCities.includes(slug)) {
+      window.location.replace('/city/' + slug + '.html');
+      return;
     }
+  }
+
+  let cityId = null;
+  const pathSegments = window.location.pathname.split('/');
+  const lastSegment = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2] || '';
+  if (lastSegment && lastSegment !== 'city.html' && lastSegment !== 'city') {
+    cityId = lastSegment.replace('.html', '');
   }
 
   if (!cityId) {
