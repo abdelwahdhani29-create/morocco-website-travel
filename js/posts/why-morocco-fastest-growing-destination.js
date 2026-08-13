@@ -146,7 +146,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>While credit cards are widely accepted in upscale hotels, modern restaurants, and shopping centers in major cities, cash remains essential for shopping in the traditional medina souks, tipping, and taking local taxis. Always keep a supply of Moroccan Dirhams (MAD) in smaller denominations on hand.</p>
 
       <h3>Respect and Cultural Etiquette</h3>
-      <p>Morocco is a safe, stable, and highly welcoming country, as detailed in our comprehensive guide on <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">Moroccan safety and security</a>. You can show respect for local traditions by dressing modestly (covering shoulders and knees when visiting historic or rural areas), asking for permission before taking photos of local artisans, and practicing polite, good-natured bargaining in the souks.</p>
+      <p>Morocco is a safe, stable, and highly welcoming country, as detailed in our comprehensive guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Moroccan safety and security</a>. You can show respect for local traditions by dressing modestly (covering shoulders and knees when visiting historic or rural areas), asking for permission before taking photos of local artisans, and practicing polite, good-natured bargaining in the souks.</p>
 
       <h3>Use Smart AI Travel Tools</h3>
       <p>With so many incredible sights and regions to explore, planning the perfect itinerary can be a challenge. You can easily design your custom dream vacation by utilizing our advanced, interactive <a href="/trip-planner.html" class="blog-internal-link">AI-powered Morocco trip planner</a> to generate optimized daily schedules, transit directions, and curated activities tailored to your exact travel preferences.</p>
@@ -225,7 +225,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>La carte bancaire est d'un usage courant dans les grands établissements, mais les espèces restent indispensables pour régler vos achats dans les souks, vos trajets en taxi et accorder des pourboires. Prévoyez toujours de petites coupures de Dirhams (MAD) sur vous.</p>
 
       <h3>Respect et savoir-vivre culturel</h3>
-      <p>Le Maroc est réputé pour sa sécurité et sa stabilité politique, comme l'explique notre <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">guide complet sur la sécurité au Maroc</a>. Montrer du respect pour les coutumes locales (en adoptant une tenue décente dans les lieux publics et ruraux, et en négociant de manière courtoise dans les souks) rendra vos interactions mémorables.</p>
+      <p>Le Maroc est réputé pour sa sécurité et sa stabilité politique, comme l'explique notre <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">guide complet sur la sécurité au Maroc</a>. Montrer du respect pour les coutumes locales (en adoptant une tenue décente dans les lieux publics et ruraux, et en négociant de manière courtoise dans les souks) rendra vos interactions mémorables.</p>
 
       <h3>Utilisez notre planificateur de voyage par IA</h3>
       <p>Devant la multitude d'étapes fascinantes, organiser son parcours peut sembler complexe. C'est pourquoi nous avons mis à votre disposition un <a href="/trip-planner.html" class="blog-internal-link">générateur d'itinéraire par IA personnalisé pour le Maroc</a>, qui vous concevra instantanément un programme jour par jour sur mesure, adapté à vos centres d'intérêt.</p>

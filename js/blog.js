@@ -26,7 +26,7 @@ function initBlog() {
     'best-places-to-visit-in-morocco', 'casablanca-ultimate-travel-guide', 'what-to-wear-in-morocco',
     'why-morocco-fastest-growing-destination', 'morocco-broke-tourism-records-2026',
     'morocco-travel-tips-30-things-to-know', 'morocco-world-cup-2026-atlas-lions-tourism-before-2030',
-    'is-morocco-safe-to-visit-2026', 'morocco-travel-safety-etiquette-tips', 'best-time-to-visit-morocco',
+    'is-morocco-safe-2026', 'safety-etiquette', 'best-time-to-visit-morocco',
     'marrakech-souks-guide', 'chefchaouen-azure-streets', 'merzouga-sahara-overnight',
     'flavors-of-fez-culinary', 'essaouira-coastal-sanctuary', 'moroccan-tea-rituals'
   ];

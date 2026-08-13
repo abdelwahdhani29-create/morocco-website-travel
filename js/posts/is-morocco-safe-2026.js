@@ -1,6 +1,6 @@
 // Is Morocco Safe to Visit in 2026? - Definitive Bilingual Travel Safety Guide
 export const postIsMoroccoSafe2026 = {
-  id: "is-morocco-safe-to-visit-2026",
+  id: "is-morocco-safe-2026",
   cityId: null,
   image: "https://images.unsplash.com/photo-1440778303588-435521a205bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   date: "2026-06-30",
@@ -78,7 +78,7 @@ export const postIsMoroccoSafe2026 = {
     en: `
       <p class="blog-lead">As global travel rebounds and new destinations vie for international attention, Morocco remains a mesmerizing focal point of culture, history, and raw landscape. With the countdown underway for the 2030 FIFA World Cup (which Morocco will co-host alongside Spain and Portugal), the Kingdom has launched an unprecedented wave of modernization, urban development, and security enhancements. Yet, for first-time visitors and experienced wanderers alike, a fundamental question persists before booking: <strong>Is Morocco safe to visit in 2026?</strong></p>
 
-      <p>The short, objective answer is <strong>yes, Morocco is highly safe for tourists</strong>. In fact, compared to many destinations of similar size, Morocco boasts an exceptionally low rate of violent crime. However, navigating this vibrant North African Kingdom comfortably requires an understanding of regional safety dynamics, street smarts, cultural etiquette, and common scams. For social etiquette, dining customs, and cultural respect, read our dedicated <a href="/blog/morocco-travel-safety-etiquette-tips.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For regional dress code recommendations and packing tips, see <a href="/blog/what-to-wear-in-morocco.html" class="blog-internal-link">What to Wear in Morocco</a>. Below is our comprehensive 2026 safety analysis.</p>
+      <p>The short, objective answer is <strong>yes, Morocco is highly safe for tourists</strong>. In fact, compared to many destinations of similar size, Morocco boasts an exceptionally low rate of violent crime. However, navigating this vibrant North African Kingdom comfortably requires an understanding of regional safety dynamics, street smarts, cultural etiquette, and common scams. For social etiquette, dining customs, and cultural respect, read our dedicated <a href="/blog/safety-etiquette.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For regional dress code recommendations and packing tips, see <a href="/blog/what-to-wear-in-morocco.html" class="blog-internal-link">What to Wear in Morocco</a>. Below is our comprehensive 2026 safety analysis.</p>
 
       <div class="blog-highlight" style="background: var(--color-sand); border-left: 4px solid var(--color-terracotta); padding: 20px; margin: 24px 0; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
         <h4 style="margin: 0 0 8px 0; font-family: var(--font-sans); font-weight: 700; color: var(--color-charcoal);">Key Safety Indicator (2026):</h4>

@@ -80,7 +80,7 @@ export const postWhatToWearInMorocco = {
     en: `
       <p class="blog-lead">Preparing a suitcase for Morocco can often feel like a puzzle. Travelers must strike a careful, thoughtful balance between staying cool in a warm climate and respecting the conservative, modest clothing standards of a traditional Muslim-majority nation. Whether you are wandering through bustling imperial souks, trekking the High Atlas peaks, or riding a camel into the silent dunes of the Sahara, what you wear has a significant impact on your comfort, your safety, and your interactions with welcoming local communities.</p>
 
-      <p>In this guide, our travel experts break down the essential dress codes, styling strategies, and seasonal essentials for both men and women. For broader cultural etiquette, dining norms, and hospitality customs, see our <a href="/blog/morocco-travel-safety-etiquette-tips.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For safety advice and solo travel precautions, consult <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">Is Morocco Safe to Visit in 2026?</a>. Below is your complete packing and wardrobe checklist.</p>
+      <p>In this guide, our travel experts break down the essential dress codes, styling strategies, and seasonal essentials for both men and women. For broader cultural etiquette, dining norms, and hospitality customs, see our <a href="/blog/safety-etiquette.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For safety advice and solo travel precautions, consult <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Is Morocco Safe to Visit in 2026?</a>. Below is your complete packing and wardrobe checklist.</p>
 
       <h2>1. Demystifying the Cultural Context: Respectful Modesty in Morocco</h2>
       <p>Before packing individual garments, it is crucial to understand the cultural landscape. Morocco is deeply rooted in Islamic traditions, where modesty is a highly respected value in daily social interactions. While the major metropolises of Casablanca, Rabat, and parts of modern <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> are highly cosmopolitan, smaller towns and rural mountain villages remain culturally conservative.</p>
@@ -163,7 +163,7 @@ export const postWhatToWearInMorocco = {
       <h2>7. Practical Travel Tips for a Smooth Journey</h2>
       <p>To ensure a flawless packing and travel experience, keep these practical, field-tested tips in mind:</p>
       <ul>
-        <li><strong>Leave Valuables at Home:</strong> Avoid bringing flashy jewelry or expensive designer accessories. Keep your look simple, comfortable, and practical to travel with peace of mind. Refer to our detailed guide on <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">Morocco safety and security</a> for more safety tips.</li>
+        <li><strong>Leave Valuables at Home:</strong> Avoid bringing flashy jewelry or expensive designer accessories. Keep your look simple, comfortable, and practical to travel with peace of mind. Refer to our detailed guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Morocco safety and security</a> for more safety tips.</li>
         <li><strong>Plan Your Itinerary First:</strong> Your wardrobe will depend heavily on your destinations. Make sure to use our advanced, interactive <a href="/trip-planner.html" class="blog-internal-link">AI-powered Morocco trip planner</a> to map out your transit routes, daily activities, and regional packing requirements.</li>
         <li><strong>Hammam Etiquette:</strong> If you plan to visit a traditional hammam, remember to pack a dry change of undergarments or swimwear, as well as waterproof slide sandals.</li>
       </ul>
@@ -256,7 +256,7 @@ export const postWhatToWearInMorocco = {
 
       <h2>7. Recommandations pratiques pour un voyage réussi</h2>
       <ul>
-        <li><strong>Laissez les bijoux de valeur chez vous :</strong> Voyagez l'esprit léger en évitant les accessoires trop voyants ou onéreux. Pour plus de conseils de sécurité, consultez notre article complet sur <a href="/blog/is-morocco-safe-to-visit-2026.html" class="blog-internal-link">la sécurité au Maroc</a>.</li>
+        <li><strong>Laissez les bijoux de valeur chez vous :</strong> Voyagez l'esprit léger en évitant les accessoires trop voyants ou onéreux. Pour plus de conseils de sécurité, consultez notre article complet sur <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">la sécurité au Maroc</a>.</li>
         <li><strong>Planifiez votre parcours :</strong> Votre garde-robe dépendra grandement de vos étapes. Utilisez notre <a href="/trip-planner.html" class="blog-internal-link">générateur d'itinéraire personnalisé par IA</a> pour concevoir votre circuit idéal et adapter vos bagages.</li>
         <li><strong>Rituels du Hammam :</strong> Pour profiter d'un bain traditionnel, prévoyez un maillot de bain ou des sous-vêtements de rechange secs ainsi que des sandales de bain en plastique.</li>
       </ul>
