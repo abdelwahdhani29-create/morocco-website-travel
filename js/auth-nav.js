@@ -239,7 +239,7 @@ export function updateGlobalFooterLinks() {
       explore_title: "Explore Portal",
       legal_title: "Legal Directory",
       destinations_title: "Popular Destinations",
-      powered_by: "Built with AI, Inspired by Morocco.",
+      powered_by: "Built  by abdelwahd hani, Inspired by Morocco.",
       copyright_msg: "© 2026 GoMoroccoAI. All rights reserved.",
       designed_by: "Designed & Developed by Abdelwahd Hani",
       home: "Home Portal",
@@ -274,7 +274,7 @@ export function updateGlobalFooterLinks() {
       explore_title: "Portail d'Exploration",
       legal_title: "Informations Légales",
       destinations_title: "Destinations Populaires",
-      powered_by: "Conçu avec l'IA, Inspiré par le Maroc.",
+      powered_by: "Conçu par abdelwahd hani, Inspiré par le Maroc.",
       copyright_msg: "© 2026 GoMoroccoAI. Tous droits réservés.",
       designed_by: "Conçu & Développé par Abdelwahd Hani",
       home: "Portail d'Accueil",
@@ -371,25 +371,6 @@ export function updateGlobalFooterLinks() {
           <a href="mailto:gomoroccoai@gmail.com" class="footer-email-link" aria-label="Email support: gomoroccoai@gmail.com">
             <i data-lucide="mail"></i>
             <span>gomoroccoai@gmail.com</span>
-          </a>
-        </div>
-
-        <!-- Social Links (Facebook, Instagram, X/Twitter, YouTube, Pinterest) -->
-        <div class="footer-social-links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">
-            <i data-lucide="facebook"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
-            <i data-lucide="instagram"></i>
-          </a>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="X (formerly Twitter)">
-            <i data-lucide="twitter"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube">
-            <i data-lucide="youtube"></i>
-          </a>
-          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Pinterest">
-            <i data-lucide="pinterest"></i>
           </a>
         </div>
       </div>
