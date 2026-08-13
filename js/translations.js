@@ -177,7 +177,7 @@ export const translations = {
     about_val_3: "Economic Support: Encouraging direct support for local cooperatives, riads, and artisans.",
 
     // Contact Page (contact.html)
-    contact_title: "Get in Touch",
+    contact_title: "Contact Us",
     contact_desc: "Have questions regarding tourist regulations, cultural festivals, or require support listing a verified guide cooperative? Please contact us.",
     contact_phone: "Phone Support",
     contact_email: "Partnerships Email",
