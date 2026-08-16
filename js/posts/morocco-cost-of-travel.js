@@ -96,7 +96,7 @@ export const postMoroccoCostOfTravel = {
       <p>For up-to-the-minute official central bank exchange rates and monetary regulations, you can reference <a href="https://www.bkam.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Bank Al-Maghrib (Central Bank of Morocco)</a>.</p>
 
       <div class="blog-highlight">
-        <p><strong>⚠️ Crucial Currency Rule:</strong> The Moroccan Dirham is a restricted closed currency. You cannot officially buy MAD outside of Morocco, nor can you export significant amounts of Dirhams when leaving the country. Always exchange or withdraw cash at official airport counters, bank branches, or ATMs upon arrival.</p>
+        <p><strong>⚠️ Crucial Currency Rule:</strong> The Moroccan Dirham is a restricted closed currency. You cannot officially buy MAD outside of Morocco, nor can you export significant amounts of Dirhams when leaving the country. Always exchange or withdraw cash at official airport counters, bank branches, or ATMs upon arrival. For a comprehensive guide on managing physical dirhams, daily cash amounts, and ATM fees, see our dedicated <a href="/blog/how-much-cash-to-bring-to-morocco.html" class="blog-internal-link">Morocco Cash &amp; Money Guide</a>.</p>
       </div>
 
       <h2>Daily Travel Budget Tiers for Morocco: What Will You Spend?</h2>
@@ -340,7 +340,7 @@ export const postMoroccoCostOfTravel = {
       <p>Pour suivre les taux officiels de la banque centrale en temps réel, vous pouvez consulter le site de la <a href="https://www.bkam.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Banque Al-Maghrib (Banque Centrale du Maroc)</a>.</p>
 
       <div class="blog-highlight">
-        <p><strong>⚠️ Règle monétaire essentielle :</strong> Le Dirham marocain est une monnaie fermée. Il est interdit d'importer ou d'exporter des sommes importantes de dirhams en dehors du territoire national. Retirez ou échangez votre argent à votre arrivée dans les aéroports, banques ou distributeurs automatiques.</p>
+        <p><strong>⚠️ Règle monétaire essentielle :</strong> Le Dirham marocain est une monnaie fermée. Il est interdit d'importer ou d'exporter des sommes importantes de dirhams en dehors du territoire national. Retirez ou échangez votre argent à votre arrivée dans les aéroports, banques ou distributeurs automatiques. Pour des conseils complets sur la gestion des espèces, les distributeurs et le budget liquide, consultez notre <a href="/blog/how-much-cash-to-bring-to-morocco.html" class="blog-internal-link">Guide Pratique Espèces &amp; Devises au Maroc</a>.</p>
       </div>
 
       <h2>Budgets quotidiens par profil de voyageur : Combien dépenser ?</h2>

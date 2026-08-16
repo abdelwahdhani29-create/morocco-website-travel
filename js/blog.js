@@ -22,7 +22,7 @@ function initBlog() {
   const paramBlogId = params.get('id');
 
   const validBlogPosts = [
-    'morocco-visa-requirements', 'morocco-cost-of-travel', 'morocco-itinerary-first-time',
+    'morocco-visa-requirements', 'how-much-cash-to-bring-to-morocco', 'morocco-cost-of-travel', 'morocco-itinerary-first-time',
     'best-places-to-visit-in-morocco', 'casablanca-ultimate-travel-guide', 'what-to-wear-in-morocco',
     'why-morocco-fastest-growing-destination', 'morocco-broke-tourism-records-2026',
     'morocco-travel-tips-30-things-to-know', 'morocco-world-cup-2026-atlas-lions-tourism-before-2030',
