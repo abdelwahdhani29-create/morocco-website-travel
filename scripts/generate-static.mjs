@@ -169,6 +169,14 @@ async function run() {
     blogTemplate = fs.readFileSync(srcBlogTemplatePath, 'utf8');
   }
 
+  // Keep the public blog directory free of the empty single-article template.
+  if (fs.existsSync(distBlogTemplatePath)) {
+    const directoryHtml = blogTemplate
+      .replace(/<section id="blog-article-section"[\s\S]*?<\/section>\s*(?=<\/main>)/, '')
+      .replace('<body>', '<body class="directory-view">');
+    fs.writeFileSync(distBlogTemplatePath, directoryHtml, 'utf8');
+  }
+
   const generatedFiles = [];
 
   // 4. Generate Static City Pages
@@ -236,7 +244,7 @@ async function run() {
     );
     html = html.replace(
       /<span id="fact-languages-val"[^>]*>.*?<\/span>/s,
-      `<span id="fact-languages-val" class="meta-value">Standard Moroccan Arabic, Berber &amp; French</span>`
+      `<span id="fact-languages-val" class="meta-value">Arabic and Amazigh; Darija and French are widely spoken</span>`
     );
     html = html.replace(
       /id="cultural-text-display"[^>]*>.*?<\/div>/s,
@@ -534,6 +542,21 @@ async function run() {
       imageUrl: imageStr
     });
 
+    const verifiedDate = '2026-08-19';
+    const articleSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: titleStr,
+      description: description,
+      image: [imageStr],
+      datePublished: dateStr,
+      dateModified: verifiedDate,
+      author: { '@type': 'Person', name: 'Abdelwahd Hani' },
+      publisher: { '@type': 'Organization', name: 'GoMoroccoAI', url: 'https://gomoroccoai.com/' },
+      mainEntityOfPage: canonicalUrl
+    };
+    html = html.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(articleSchema).replace(/</g, '\\u003c')}</script>\n</head>`);
+
     // Make body show article view
     // Make body show article view
 html = html.replace('<body>', '<body class="article-view">');
@@ -582,7 +605,7 @@ html = html.replace(
     );
     html = html.replace(
       /id="article-author-subtitle"[^>]*>.*?<\/p>/s,
-      () => `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published on ${escapeAttr(dateStr)}</p>`
+      () => `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published ${escapeAttr(dateStr)} · Last verified ${verifiedDate}</p>`
     );
 
     const blogFilePath = path.join(distBlogDir, `${id}.html`);

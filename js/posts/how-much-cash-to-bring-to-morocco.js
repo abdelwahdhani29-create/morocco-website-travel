@@ -9,8 +9,8 @@ export const postHowMuchCashToBringToMorocco = {
     fr: "Budget et Préparatifs"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "14 min read",
@@ -80,7 +80,7 @@ export const postHowMuchCashToBringToMorocco = {
         fr: "Que faut-il choisir lorsque le distributeur propose la conversion de devise ?"
       },
       answer: {
-        en: "Always choose 'Debit in MAD' or 'Without Conversion' (decline Dynamic Currency Conversion / DCC). If you allow the local ATM to perform the conversion into your home currency, the ATM operator applies an unfavorable markup of 5% to 10%. Letting your home bank handle the foreign exchange rate guarantees the interbank rate.",
+        en: "Always choose 'Debit in MAD' or 'Without Conversion' (decline Dynamic Currency Conversion / DCC). If you allow the local ATM to perform the conversion into your home currency, the ATM operator applies an unfavorable markup of 5% to 10%. Letting your home bank handle the foreign exchange rate usually lets your own card issuer set the rate, though its fees and exchange margin may still apply.",
         fr: "Choisissez toujours 'Débiter en MAD' ou 'Sans Conversion' (refusez le DCC - Dynamic Currency Conversion). Si vous acceptez la conversion proposée par le distributeur, une marge défavorable de 5 % à 10 % vous sera facturée. En laissant votre propre banque gérer la conversion, vous bénéficiez du taux de change interbancaire officiel."
       }
     }
@@ -194,7 +194,7 @@ export const postHowMuchCashToBringToMorocco = {
       <p>When planning how much money to take to Morocco, travelers have two main methods for securing local cash: bringing physical foreign banknotes to exchange, or withdrawing dirhams directly from local bank ATMs.</p>
 
       <h3>Option 1: Withdrawing Cash from Morocco ATMs (Recommended)</h3>
-      <p>Using a debit card with low foreign transaction fees at a reputable Moroccan bank ATM is the most convenient and cost-effective approach. Bank ATMs provide the live interbank exchange rate.</p>
+      <p>Using a debit card with low foreign transaction fees at a reputable Moroccan bank ATM is the most convenient and cost-effective approach. ATM withdrawals use a rate set by your card network or issuer and may include fees or a margin.</p>
 
       <ul>
         <li><strong>Major Trusted Moroccan Banks:</strong> <em>Attijariwafa Bank</em>, <em>BMCE Bank of Africa</em>, <em>Banque Populaire</em>, and <em>BMCI</em> (BNP Paribas affiliate).</li>

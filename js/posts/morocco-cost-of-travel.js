@@ -9,8 +9,8 @@ export const postMoroccoCostOfTravel = {
     fr: "Budget et Préparatifs"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "18 min read",

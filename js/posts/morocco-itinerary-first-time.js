@@ -9,8 +9,8 @@ export const postMoroccoItineraryFirstTime = {
     fr: "Guides de Voyage"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",

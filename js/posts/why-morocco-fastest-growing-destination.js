@@ -11,8 +11,8 @@ export const postWhyMoroccoFastestGrowingDestination = {
     fr: "Tendances & Perspectives"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",
@@ -127,7 +127,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>Morocco is exceptionally safe, stable, and welcoming, as detailed in our guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Moroccan safety and security</a>. You can show respect for local traditions by dressing modestly (covering shoulders and knees when exploring historic medinas or rural Atlas villages), asking for permission before taking portraits, and approaching souk negotiations with a friendly smile and polite conversation.</p>
 
       <h3>Use Smart Trip Planning Tools</h3>
-      <p>With so many diverse landscapes to explore, designing the perfect route is key to a relaxing holiday. You can easily map out your custom dream itinerary by using our interactive <a href="/trip-planner.html" class="blog-internal-link">AI-powered Morocco trip planner</a> to generate tailored daily schedules, transit estimates, and curated activities.</p>
+      <p>With so many diverse landscapes to explore, designing the perfect route is key to a relaxing holiday. You can easily map out your custom dream itinerary by using our interactive <a href="/trip-planner.html" class="blog-internal-link">interactive Morocco trip planner</a> to generate tailored daily schedules, transit estimates, and curated activities.</p>
 
       <p style="margin-top: 32px;"><strong>Conclusion:</strong> Morocco's magic lies in its ability to honor its rich heritage while offering a comfortable, inspiring experience for the modern traveler. Whether you are sipping aromatic tea on a quiet rooftop, listening to the wind in the Sahara, or exploring the vibrant alleyways of a medieval medina, the Kingdom of Morocco promises a journey that will stay in your heart forever.</p>
     `,

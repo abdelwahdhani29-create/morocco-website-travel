@@ -11,8 +11,8 @@ export const postWhatToWearInMorocco = {
     fr: "Guides de Voyage"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",
@@ -164,7 +164,7 @@ export const postWhatToWearInMorocco = {
       <p>To ensure a flawless packing and travel experience, keep these practical, field-tested tips in mind:</p>
       <ul>
         <li><strong>Leave Valuables at Home:</strong> Avoid bringing flashy jewelry or expensive designer accessories. Keep your look simple, comfortable, and practical to travel with peace of mind. Refer to our detailed guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Morocco safety and security</a> for more safety tips.</li>
-        <li><strong>Plan Your Itinerary First:</strong> Your wardrobe will depend heavily on your destinations. Make sure to use our advanced, interactive <a href="/trip-planner.html" class="blog-internal-link">AI-powered Morocco trip planner</a> to map out your transit routes, daily activities, and regional packing requirements.</li>
+        <li><strong>Plan Your Itinerary First:</strong> Your wardrobe will depend heavily on your destinations. Make sure to use our advanced, interactive <a href="/trip-planner.html" class="blog-internal-link">interactive Morocco trip planner</a> to map out your transit routes, daily activities, and regional packing requirements.</li>
         <li><strong>Hammam Etiquette:</strong> If you plan to visit a traditional hammam, remember to pack a dry change of undergarments or swimwear, as well as waterproof slide sandals.</li>
       </ul>
 

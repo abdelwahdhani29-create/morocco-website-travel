@@ -11,8 +11,8 @@ export const postMoroccoBrokeRecords2026 = {
     fr: "Tendances & Perspectives"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",
@@ -73,7 +73,7 @@ export const postMoroccoBrokeRecords2026 = {
       <p>This unprecedented surge is backed by official statistical data published by the <a href="https://www.unwto.org/" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">UN World Tourism Organization (UNWTO)</a> and the Moroccan Ministry of Tourism. Under the comprehensive "Tourism Strategic Roadmap 2023-2026," Morocco has successfully leveraged public-private partnerships, fleet expansions, and policy updates to build a highly resilient travel sector. For an experiential guide on why travelers are choosing the country, read our creative analysis of <a href="/blog/why-morocco-fastest-growing-destination.html" class="blog-internal-link">Why Travelers Choose Morocco</a>. Below is the detailed industry data, infrastructure metrics, and economic factors behind this milestone.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="https://www.theagilityeffect.com/app/uploads/2018/02/LVG-MAROC.jpg" alt="Moroccan high-speed rail and architectural modernization" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" alt="Moroccan high-speed rail and architectural modernization" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
         <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Morocco's rapid infrastructure expansion, including sleek high-speed rail corridors, has revolutionized connectivity between historic imperial hubs.</figcaption>
       </figure>
 
@@ -131,7 +131,7 @@ export const postMoroccoBrokeRecords2026 = {
       <p>Cette hausse sans précédent s'appuie sur les statistiques publiées par l'<a href="https://www.unwto.org/" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">Organisation Mondiale du Tourisme (OMT)</a> et le Ministère du Tourisme marocain. Dans le cadre de sa feuille de route stratégique 2023-2026, le pays a développé ses liaisons aériennes et modernisé ses infrastructures de transport. Pour un guide d'inspiration sur les paysages et l'art de vivre au Maroc, consultez notre article sur <a href="/blog/why-morocco-fastest-growing-destination.html" class="blog-internal-link">les atouts culturels du Maroc</a>. Voici une analyse détaillée des données, des chantiers aéroportuaires et des facteurs économiques qui expliquent ce record de fréquentation.</p>
 
       <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="https://www.theagilityeffect.com/app/uploads/2018/02/LVG-MAROC.jpg" alt="Train à grande vitesse marocain et modernisation" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
+        <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" alt="Train à grande vitesse marocain et modernisation" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
         <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">L'essor rapide des infrastructures au Maroc, notamment le réseau ferré à grande vitesse, a révolutionné la connectivité entre les métropoles impériales.</figcaption>
       </figure>
 

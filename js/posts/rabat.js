@@ -9,8 +9,8 @@ export const postRabat = {
     fr: "Culture & Patrimoine"
   },
   author: {
-    en: "Idris Mansouri",
-    fr: "Idris Mansouri"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

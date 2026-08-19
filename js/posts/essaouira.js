@@ -9,8 +9,8 @@ export const postEssaouira = {
     fr: "Guides de Voyage"
   },
   author: {
-    en: "Sofia Bennani",
-    fr: "Sofia Bennani"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

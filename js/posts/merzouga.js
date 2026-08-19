@@ -9,8 +9,8 @@ export const postMerzouga = {
     fr: "Aventure & Nature"
   },
   author: {
-    en: "Rachid Ait-Hamou",
-    fr: "Rachid Ait-Hamou"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

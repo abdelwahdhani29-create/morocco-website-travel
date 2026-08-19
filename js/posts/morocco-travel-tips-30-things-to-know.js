@@ -9,8 +9,8 @@ export const postMoroccoTravelTips30Things = {
     fr: "Guides de Voyage"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "15 min read",

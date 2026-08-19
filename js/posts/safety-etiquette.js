@@ -9,8 +9,8 @@ export const postSafetyEtiquette = {
     fr: "Conseils de Voyage"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",

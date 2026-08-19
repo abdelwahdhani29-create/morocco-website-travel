@@ -9,8 +9,8 @@ export const postMarrakech = {
     fr: "Guides de Voyage"
   },
   author: {
-    en: "Youssef Alami",
-    fr: "Youssef Alami"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

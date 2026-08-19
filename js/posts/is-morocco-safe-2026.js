@@ -9,8 +9,8 @@ export const postIsMoroccoSafe2026 = {
     fr: "Sécurité & Pratique"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "16 min read",
@@ -39,7 +39,7 @@ export const postIsMoroccoSafe2026 = {
         fr: "Quel est le niveau de sécurité officiel du Maroc en 2026 ?"
       },
       answer: {
-        en: "Morocco is classified as a Level 2 ('Exercise Increased Caution') destination by the US State Department, which is the exact same safety tier assigned to major European countries like France, Spain, Germany, and the United Kingdom. Violent crime against tourists is exceptionally rare; the rating is primary due to a general need for vigilance regarding petty crime and street scams.",
+        en: "The US State Department advises travelers to exercise increased caution in Morocco. Advice can change, so check your own government advisory before departure. Petty theft, scams, road risks, occasional violent crime, and terrorism concerns require normal precautions.",
         fr: "Le Maroc est classé au niveau 2 ('Faire preuve d'une vigilance accrue') par le Département d'État américain, ce qui correspond exactement au même niveau de sécurité attribué à des pays européens majeurs comme la France, l'Espagne ou le Royaume-Uni. Les crimes violents envers les touristes y sont extrêmement rares ; cette vigilance concerne principalement la petite délinquance et les arnaques de rue."
       }
     },
@@ -59,7 +59,7 @@ export const postIsMoroccoSafe2026 = {
         fr: "Les zones désertiques comme Merzouga sont-elles sûres ?"
       },
       answer: {
-        en: "Absolutely. Merzouga and the dunes of Erg Chebbi are exceptionally safe and closely monitored by the Moroccan Royal Gendarmerie and military patrols. While Sahara desert areas are near the Algerian border, the border is highly secured and closed, meaning tourist corridors are perfectly peaceful, welcoming, and heavily protected.",
+        en: "Merzouga is a major tourist destination, but no destination is risk-free. Use established accommodation and licensed guides, avoid restricted border areas, follow local instructions, and check current government travel advice before travelling.",
         fr: "Absolument. Merzouga et les dunes de l'Erg Chebbi sont extrêmement sûres et surveillées de près par la Gendarmerie Royale et des patrouilles militaires. Bien que ces zones soient proches de la frontière algérienne, celle-ci est entièrement fermée et hautement sécurisée, de sorte que les couloirs touristiques sont d'un calme absolu et très chaleureux."
       }
     },
@@ -82,7 +82,7 @@ export const postIsMoroccoSafe2026 = {
 
       <div class="blog-highlight" style="background: var(--color-sand); border-left: 4px solid var(--color-terracotta); padding: 20px; margin: 24px 0; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
         <h4 style="margin: 0 0 8px 0; font-family: var(--font-sans); font-weight: 700; color: var(--color-charcoal);">Key Safety Indicator (2026):</h4>
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.6;">The United States Department of State classifies Morocco as a <strong>Level 2: Exercise Increased Caution</strong> destination. This puts Morocco in the exact same security tier as highly popular European travel hubs like France, Spain, Italy, Germany, and the United Kingdom. Security concerns are focused on localized petty crime, not violent threats.</p>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6;">Current official advice recommends increased caution. Petty theft and scams are common in tourist areas, occasional violent crime can occur, and demonstrations or security conditions can change. Review <a href="https://www.gov.uk/foreign-travel-advice/morocco/safety-and-security" target="_blank" rel="noopener noreferrer" class="blog-internal-link">current official travel advice</a> before departure.</p>
       </div>
 
       <h2>1. The 2026 Security Landscape: Government Investments & Infrastructure</h2>
@@ -166,7 +166,7 @@ export const postIsMoroccoSafe2026 = {
 
       <h3>The Food Rules</h3>
       <p>Morocco has one of the world's most spectacular culinary scenes. Do not let fear stop you from enjoying street food! In fact, street food is often fresher than restaurant meals because of the rapid turnover.
-      <br>• Eat at stalls that have long queues of local families—this guarantees the food is freshly cooked and highly popular.
+      <br>• Eat at stalls that have long queues of local families—this may indicate frequent turnover, but it is not a hygiene guarantee.
       <br>• Avoid eating raw, unpeeled fruits and vegetables from street markets; stick to cooked tags, grilled skewers, and fruits you can peel yourself (like bananas or oranges).
       <br>• Pack a small supply of stomach rehydration salts, anti-diarrheal medication, and probiotics to prepare your gut.</p>
 

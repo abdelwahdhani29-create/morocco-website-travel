@@ -9,8 +9,8 @@ export const postMoroccoVisaRequirements = {
     fr: "Budget et Préparatifs"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "22 min read",
@@ -87,7 +87,7 @@ export const postMoroccoVisaRequirements = {
   ],
   content: {
     en: `
-      <p class="blog-lead">Navigating border immigration policies is the essential first step to turning your Moroccan travel dreams into reality. Whether you are planning a weekend escape to the bustling souks of Marrakech, an epic road trip through the High Atlas Mountains, or a luxury desert glamping expedition in Merzouga, understanding <strong>Morocco's visa requirements in 2026</strong> guarantees a seamless, stress-free arrival at the Kingdom's international gateways.</p>
+      <p class="blog-lead">Navigating border immigration policies is the essential first step to turning your Moroccan travel dreams into reality. Whether you are planning a weekend escape to the bustling souks of Marrakech, an epic road trip through the High Atlas Mountains, or a luxury desert glamping expedition in Merzouga, understanding <strong>Morocco's visa requirements in 2026</strong> helps you prepare for arrival at the Kingdom's international gateways.</p>
 
       <p>In recent years, the Kingdom of Morocco has vastly modernized its border control infrastructure. In preparation for co-hosting the <strong>FIFA World Cup 2030</strong> alongside Spain and Portugal, Morocco has streamlined entry protocols, expanded its high-tech electronic visa (e-Visa) portal, and digitized airport clearance procedures. Today, millions of international travelers enjoy hassle-free, visa-exempt entry, while millions more can secure an electronic entry permit online in under 24 hours.</p>
 

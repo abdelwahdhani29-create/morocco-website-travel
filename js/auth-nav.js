@@ -189,8 +189,13 @@ export function updateHeaderNavControls() {
 
 // Localized Cookie Consent Banner injection
 export function mountCookieConsentBanner() {
-  if (localStorage.getItem('cookie_consent_accepted')) {
-    return; // Already accepted
+  const savedConsent = localStorage.getItem('cookie_consent');
+  if (savedConsent === 'accepted') {
+    loadOptionalGoogleServices();
+    return;
+  }
+  if (savedConsent === 'rejected') {
+    return;
   }
 
   let banner = document.getElementById('morocco-cookie-banner');
@@ -204,12 +209,14 @@ export function mountCookieConsentBanner() {
   const currentLang = getNavLanguage();
   const text = translations[currentLang]?.cookie_text || translations['en'].cookie_text;
   const acceptLabel = translations[currentLang]?.cookie_accept || translations['en'].cookie_accept;
+  const rejectLabel = currentLang === 'fr' ? 'Refuser' : 'Reject';
   const policyLabel = translations[currentLang]?.cookie_policy || translations['en'].cookie_policy;
 
   banner.innerHTML = `
     <p class="cookie-text">${text}</p>
     <div class="cookie-actions">
       <a href="/privacy.html" class="btn-cookie-privacy">${policyLabel}</a>
+      <button id="cookie-reject-btn" class="btn-cookie-privacy">${rejectLabel}</button>
       <button id="cookie-accept-btn" class="btn-cookie-accept">${acceptLabel}</button>
     </div>
   `;
@@ -217,12 +224,36 @@ export function mountCookieConsentBanner() {
   const acceptBtn = document.getElementById('cookie-accept-btn');
   if (acceptBtn) {
     acceptBtn.addEventListener('click', () => {
-      localStorage.setItem('cookie_consent_accepted', 'true');
+      localStorage.setItem('cookie_consent', 'accepted');
+      loadOptionalGoogleServices();
       banner.style.opacity = '0';
       banner.style.transform = 'translateY(20px)';
       setTimeout(() => banner.remove(), 400);
     });
   }
+  document.getElementById('cookie-reject-btn')?.addEventListener('click', () => {
+    localStorage.setItem('cookie_consent', 'rejected');
+    banner.remove();
+  });
+}
+
+function loadOptionalGoogleServices() {
+  if (document.querySelector('script[data-google-consented]')) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-B4J96GR996', { anonymize_ip: true });
+  const analytics = document.createElement('script');
+  analytics.async = true;
+  analytics.dataset.googleConsented = 'analytics';
+  analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-B4J96GR996';
+  document.head.appendChild(analytics);
+  const ads = document.createElement('script');
+  ads.async = true;
+  ads.dataset.googleConsented = 'ads';
+  ads.crossOrigin = 'anonymous';
+  ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8177157318365571';
+  document.head.appendChild(ads);
 }
 
 // Dynamically populate footer links globally
@@ -610,4 +641,3 @@ window.addEventListener('scrollRevealTrigger', () => {
 window.addEventListener('languageChanged', () => {
   setTimeout(initViewportReveal, 100);
 });
-

@@ -1,18 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4J96GR996"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-B4J96GR996');
-    </script>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8177157318365571"
-         crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon and App Icons -->
@@ -217,50 +205,14 @@
           </div>
         </div>
 
-        <!-- Form Card Unit -->
-        <div class="form-card">
-          <!-- Successful box status layout -->
-          <div id="contact-success-frame" class="success-box">
-            <i data-lucide="badge-check" style="width: 24px; height: 24px; flex-shrink: 0; color: #10b981;"></i>
-            <div>
-              <p id="lbl-success-desc" style="font-size: 14px; font-weight: 600; margin: 0; color: #047857;">Thank you for contacting GoMoroccoAI. We have received your message.</p>
-            </div>
-          </div>
-
-          <form id="contact-form">
-            <!-- Full Name -->
-            <div class="form-group">
-              <label class="form-label" id="lbl-form-name">Full Name</label>
-              <input type="text" id="contact-name" class="form-input" required placeholder="Abdellah El Fassi" />
-            </div>
-
-            <!-- Email Address -->
-            <div class="form-group">
-              <label class="form-label" id="lbl-form-email">Email Address</label>
-              <input type="email" id="contact-email-input" class="form-input" required placeholder="name@domain.com" />
-            </div>
-
-            <!-- Subject Topic Selection -->
-            <div class="form-group">
-              <label class="form-label" id="lbl-form-topic">Topic Interest</label>
-              <select id="contact-subject" class="form-input" style="height: 48px; background: white;">
-                <option value="directory" id="topic-opt-1">Travel Recommendations & Guides</option>
-                <option value="cultural" id="topic-opt-2">Cultural Information & Feedback</option>
-                <option value="transit" id="topic-opt-3">Feedback & General Travel</option>
-              </select>
-            </div>
-
-            <!-- Message Details -->
-            <div class="form-group">
-              <label class="form-label" id="lbl-form-msg">Message Details</label>
-              <textarea id="contact-text" rows="5" class="form-textarea" required placeholder="How can GoMoroccoAI help you?"></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">
-              <i data-lucide="send" style="width: 16px; height: 16px;"></i>
-              <span id="lbl-form-submit-text">Send Message</span>
-            </button>
-          </form>
+        <div class="form-card" style="display:flex; flex-direction:column; justify-content:center;">
+          <i data-lucide="mail" style="width: 34px; height: 34px; color: var(--color-terracotta); margin-bottom: 18px;"></i>
+          <h2 style="font-family:var(--font-serif); margin:0 0 12px;">Email Abdelwahd directly</h2>
+          <p style="line-height:1.7; color:var(--color-charcoal-light);">Questions, corrections, partnership requests, or feedback are welcome. Clicking the address below opens your email application; this website does not collect messages through a form.</p>
+          <a class="btn-submit" href="mailto:gomoroccoai@gmail.com?subject=GoMoroccoAI%20message" style="text-decoration:none; margin-top:18px; width:max-content;">
+            <i data-lucide="send" style="width:16px;height:16px;"></i>
+            gomoroccoai@gmail.com
+          </a>
         </div>
 
       </div>
@@ -332,27 +284,6 @@
         if (nameInput) nameInput.placeholder = currentLang === 'fr' ? 'Par ex. Abdellah El Fassi' : 'e.g. Abdellah El Fassi';
         if (emailInput) emailInput.placeholder = 'you@example.com';
         if (textInput) textInput.placeholder = currentLang === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can GoMoroccoAI help you?';
-      }
-
-      // Handle the contact form submit actions locally and cleanly
-      const contactForm = document.getElementById('contact-form');
-      const successFrame = document.getElementById('contact-success-frame');
-
-      if (contactForm && successFrame) {
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          
-          // Clear inputs
-          document.getElementById('contact-name').value = '';
-          document.getElementById('contact-email-input').value = '';
-          document.getElementById('contact-text').value = '';
-          
-          // Show successful animation
-          successFrame.style.display = 'flex';
-          
-          // Scroll dynamically
-          successFrame.scrollIntoView({ behavior: 'smooth' });
-        });
       }
 
       applyPageLanguage();

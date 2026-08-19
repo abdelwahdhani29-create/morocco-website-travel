@@ -2,15 +2,15 @@
 export const postWorldCup2026 = {
   id: "morocco-world-cup-2026-atlas-lions-tourism-before-2030",
   cityId: null,
-  image: "https://www.cafonline.com/media/eexck34k/netherlands-v-morocco-round-of-32-fifa-world-cup-2026.jpg?width=1320",
+  image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
   date: "2026-07-04",
   categories: {
     en: "Culture & Events",
     fr: "Culture & Événements"
   },
   author: {
-    en: "GoMoroccoAI",
-    fr: "GoMoroccoAI"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "12 min read",

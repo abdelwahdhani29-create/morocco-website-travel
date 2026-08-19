@@ -9,8 +9,8 @@ export const postFez = {
     fr: "Gastronomie"
   },
   author: {
-    en: "Khadija Benjelloun",
-    fr: "Khadija Benjelloun"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

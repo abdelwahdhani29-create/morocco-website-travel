@@ -9,8 +9,8 @@ export const postChefchaouen = {
     fr: "Culture & Patrimoine"
   },
   author: {
-    en: "Amina El Fassi",
-    fr: "Amina El Fassi"
+    en: "Abdelwahd Hani",
+    fr: "Abdelwahd Hani"
   },
   readTime: {
     en: "10 min read",

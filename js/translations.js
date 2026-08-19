@@ -63,7 +63,7 @@ export const translations = {
     suggested_duration: "Suggested Duration",
     region: "Region",
     language_label: "Official Languages",
-    languages_val: "Arabic & Berber",
+    languages_val: "Arabic and Amazigh",
     cultural_insight: "Cultural Etiquette",
     accommodation: "Suggested Accommodation",
     budget_tier: "Budget",
@@ -98,7 +98,7 @@ export const translations = {
     fact_duration: "Suggested Stay",
     fact_region: "Government Region",
     fact_languages: "Spoken Tongues",
-    fact_languages_val: "Standard Moroccan Arabic, Berber (Tamazight) & French",
+    fact_languages_val: "Arabic and Amazigh; Darija and French are widely spoken",
     cultural_title: "Cultural Insights",
     approx_night: "approx. per night",
     amenity_lbl: "Key Amenity",
@@ -154,9 +154,9 @@ export const translations = {
 
     // About Us Page (about.html)
     about_tourism_title: "About GoMoroccoAI",
-    about_p1: "Welcome to the GoMoroccoAI Portal, your ultimate digital gateway to exploring one of North Africa's most beautiful and vibrant kingdoms. Our goal is to assist travelers in uncovering Morocco's authentic spirit, guiding you from ancient imperial alleyways to sweeping coastal bays.",
-    about_p2: "Whether you want to discover the deep historical traditions of local artisans, search for the best traditional riads and local delicacies, or map out custom tour schedules, our platform provides comprehensive, manually verified local registries to make your journey safe and remarkable.",
-    about_p3: "We are deeply committed to sustainable and respectful travel experiences. By highlighting historical coordinates, correct cultural etiquette guidelines, and local cooperative trade links, we strive to foster tourism that directly supports the communities, guides, and craft industries of Morocco.",
+    about_p1: "GoMoroccoAI is an independent Morocco travel guide founded and edited by Abdelwahd Hani. It offers clear city guides, cultural context, practical checklists, and links to official information.",
+    about_p2: "Articles may use digital and AI-assisted drafting tools, but every published page is researched, reviewed, edited, and approved by Abdelwahd Hani. AI output is never treated as a source.",
+    about_p3: "Time-sensitive claims are checked against official sources and labelled with a verification date. Readers can send corrections directly to gomoroccoai.com.",
     about_offer_title: "What We Offer",
     about_card1_title: "Explore Cities",
     about_card1_desc: "Browse our hand-curated directories of Moroccan destinations, from historic imperial medinas like Marrakech to azure mountain towns like Chefchaouen.",
@@ -373,9 +373,9 @@ export const translations = {
 
     // About Us Page (about.html)
     about_tourism_title: "À Propos de GoMoroccoAI",
-    about_p1: "Bienvenue sur le Portail GoMoroccoAI, votre passerelle numérique ultime pour explorer l'un des royaumes les plus beaux et les plus vibrants d'Afrique du Nord. Notre objectif est d'aider les voyageurs à découvrir l'esprit authentique du Maroc, en vous guidant des ruelles impériales ancestrales aux majestueuses baies côtières sauvages.",
-    about_p2: "Que vous cherchiez à découvrir les profondes traditions historiques des artisans locaux, à rechercher les meilleurs riads traditionnels et spécialités culinaires, ou à planifier des itinéraires personnalisés, notre plateforme vous propose des répertoires locaux complets et vérifiés avec soin pour rendre votre voyage sûr et mémorable.",
-    about_p3: "Nous sommes profondément engagés en faveur d'expériences de voyage durables et respectueuses. En mettant en valeur les repères historiques, les règles de bienséance culturelle et les liens vers les coopératives locales, nous nous efforçons d'encourager un tourisme qui soutient directement les communautés, les guides et le savoir-faire artisanal du Maroc.",
+    about_p1: "GoMoroccoAI is an independent Morocco travel guide founded and edited by Abdelwahd Hani. It offers clear city guides, cultural context, practical checklists, and links to official information.",
+    about_p2: "Articles may use digital and AI-assisted drafting tools, but every published page is researched, reviewed, edited, and approved by Abdelwahd Hani. AI output is never treated as a source.",
+    about_p3: "Time-sensitive claims are checked against official sources and labelled with a verification date. Readers can send corrections directly to gomoroccoai.com.",
     about_offer_title: "Ce Que Nous Offrons",
     about_card1_title: "Découvrir les Villes",
     about_card1_desc: "Visitez nos répertoires méticuleusement organisés des destinations marocaines, des médinas impériales historiques comme Marrakech aux cités bleutées et paisibles de Chefchaouen.",
