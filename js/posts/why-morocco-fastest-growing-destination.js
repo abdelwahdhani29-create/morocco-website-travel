@@ -6,6 +6,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1758621655350-344945c215db?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJpYWQlMjBtYXJyYWtlY2h8ZW58MHwwfDB8fHwy",
   date: "2026-07-09",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Travel Trends & Insights",
     fr: "Tendances & Perspectives"
@@ -124,7 +125,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <p>While cards are widely accepted in modern restaurants and upscale shops, cash (Moroccan Dirhams) remains essential for buying treasures in the medina souks, tipping, and taking local taxis. Keep smaller bills on hand for everyday interactions.</p>
 
       <h3>Embrace Cultural Etiquette</h3>
-      <p>Morocco is exceptionally safe, stable, and welcoming, as detailed in our guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Moroccan safety and security</a>. You can show respect for local traditions by dressing modestly (covering shoulders and knees when exploring historic medinas or rural Atlas villages), asking for permission before taking portraits, and approaching souk negotiations with a friendly smile and polite conversation.</p>
+      <p>Morocco welcomes millions of visitors, but travelers should still follow current official safety advice, as detailed in our guide on <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Moroccan safety and security</a>. You can show respect for local traditions by dressing modestly (covering shoulders and knees when exploring historic medinas or rural Atlas villages), asking for permission before taking portraits, and approaching souk negotiations with a friendly smile and polite conversation.</p>
 
       <h3>Use Smart Trip Planning Tools</h3>
       <p>With so many diverse landscapes to explore, designing the perfect route is key to a relaxing holiday. You can easily map out your custom dream itinerary by using our interactive <a href="/trip-planner.html" class="blog-internal-link">interactive Morocco trip planner</a> to generate tailored daily schedules, transit estimates, and curated activities.</p>

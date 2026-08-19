@@ -4,6 +4,7 @@ export const postHowMuchCashToBringToMorocco = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1200&auto=format&fit=crop&q=80",
   date: "2026-08-16",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"
@@ -148,37 +149,7 @@ export const postHowMuchCashToBringToMorocco = {
       <div class="blog-highlight">
         <p><strong>💡 Key Rule of Thumb:</strong> Use credit cards for high-value transactions (hotel bookings, train tickets, rental cars, upscale dining), and use physical Moroccan Dirham cash for everything on the street (food stalls, souk shopping, transport, gratuities, museum entry tickets).</p>
       </div>
-
-      <h2>2. How Much Cash to Carry Per Day: Daily Spending Breakdown</h2>
-      <p>Your exact daily cash requirement depends on your travel style and whether your accommodation and long-distance transfers were pre-paid online. Below is a realistic guideline for daily <strong>Morocco spending money</strong> in physical cash:</p>
-
-      <h3>A. Budget / Backpacker Travel (250 – 450 MAD / $25 – $45 USD per day)</h3>
-      <p>If you are staying in hostels, eating local tagines at neighborhood canteens, using local buses and city trams, and touring monuments independently, you will need approximately <strong>250 to 450 MAD per person per day in cash</strong>. This covers:</p>
-      <ul>
-        <li>Street food meals &amp; casual restaurant lunches: 80 – 140 MAD</li>
-        <li>Mint teas, bottled water, snacks: 20 – 35 MAD</li>
-        <li>City transit (Petit taxi rides, tramway tickets): 30 – 60 MAD</li>
-        <li>Historic monument &amp; madrasa entry tickets: 70 – 100 MAD</li>
-        <li>Modest tips and miscellaneous cash extras: 20 – 40 MAD</li>
-      </ul>
-
-      <h3>B. Mid-Range Comfort Travel (500 – 950 MAD / $50 – $95 USD per day)</h3>
-      <p>For travelers staying in boutique riads (paid by card) who enjoy rooftop dinners, guided walking tours, coffee breaks, souk artisan shopping, and private taxis, plan for <strong>500 to 950 MAD per person per day in physical cash</strong>. This covers:</p>
-      <ul>
-        <li>Sit-down medina lunches and terrace dinners: 200 – 380 MAD</li>
-        <li>Souk artisan shopping (ceramics, leather, spices, argan oil): 150 – 350 MAD</li>
-        <li>Petit taxis &amp; private airport transfers: 60 – 120 MAD</li>
-        <li>Palace and botanical garden entry fees: 70 – 150 MAD</li>
-        <li>Gratuities for riad staff, servers, and local guides: 50 – 100 MAD</li>
-      </ul>
-
-      <h3>C. Luxury &amp; Private Tours (1,200 – 2,500+ MAD / $120 – $250+ USD per day)</h3>
-      <p>If you are taking private 4x4 excursions, buying handwoven Berber carpets, enjoying spa hammam treatments, and dining at premier establishments, you should keep <strong>1,200 to 2,500+ MAD in cash available</strong>. While luxury venues accept cards, substantial cash is needed for private driver gratuities (150–250 MAD/day), private licensed guides (200–350 MAD/day), and specialized artisan workshops.</p>
-
-      <figure style="margin: 28px 0; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80" alt="Moroccan Souks, Spices, and Artisan Stalls requiring cash payment" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" />
-        <figcaption style="font-size: 13px; color: #666; margin-top: 8px;">Spices, artisan leather goods, and ceramics in medina souks are almost exclusively purchased with Moroccan Dirhams in cash.</figcaption>
-      </figure>
+      <div class="blog-highlight"><strong>How much should you carry?</strong> Carry only the amount needed for the next day or two and keep the rest in secure storage. For total trip budgets covering hotels, meals, and transport, use our <a href="/blog/morocco-cost-of-travel.html" class="blog-internal-link">Morocco cost guide</a>.</div>
 
       <h2>3. The Closed Currency Rule: Understanding the Moroccan Dirham (MAD)</h2>
       <p>The official currency of Morocco is the <strong>Moroccan Dirham (MAD)</strong>. It is essential for international visitors to understand that the dirham is a <strong>closed/restricted currency</strong>.</p>
@@ -223,49 +194,6 @@ export const postHowMuchCashToBringToMorocco = {
         <li><strong>20 MAD and 50 MAD banknotes:</strong> Ideal for taxi fares, casual lunches, and souk souvenirs.</li>
         <li><strong>5 MAD and 10 MAD coins:</strong> Indispensable for cafe mint teas, public restrooms (2–3 MAD), baggage porters (10–20 MAD), and parking guardians (5–10 MAD).</li>
       </ul>
-
-      <h2>6. Total Cash Checklist for 7-Day &amp; 10-Day Morocco Trips</h2>
-      <p>Here is a concise reference summary of physical cash to plan for your journey:</p>
-
-      <div class="blog-table-container">
-        <table>
-          <thead>
-            <tr style="background-color: #f7f6f5; color: var(--color-charcoal); font-weight: 700; border-bottom: 2px solid var(--color-border);">
-              <th style="padding: 12px 16px;">Trip Duration &amp; Style</th>
-              <th style="padding: 12px 16px;">Recommended Total Cash (MAD)</th>
-              <th style="padding: 12px 16px;">Estimated Equivalent (USD / EUR)</th>
-              <th style="padding: 12px 16px;">Best Withdrawal Strategy</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600;">7-Day Solo / Budget Trip</td>
-              <td style="padding: 12px 16px;">2,000 – 3,000 MAD</td>
-              <td style="padding: 12px 16px;">$200 – $300 USD (€180 – €280)</td>
-              <td style="padding: 12px 16px;">1–2 ATM withdrawals on arrival and mid-trip.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border); background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600;">7-Day Mid-Range (Per Person)</td>
-              <td style="padding: 12px 16px;">3,500 – 6,000 MAD</td>
-              <td style="padding: 12px 16px;">$350 – $600 USD (€320 – €550)</td>
-              <td style="padding: 12px 16px;">Withdraw 2,000–3,000 MAD every 3 days as needed.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600;">10-Day Couple / Mid-Range Total</td>
-              <td style="padding: 12px 16px;">8,000 – 12,000 MAD</td>
-              <td style="padding: 12px 16px;">$800 – $1,200 USD (€750 – €1,100)</td>
-              <td style="padding: 12px 16px;">Withdraw 3,000 MAD every 2–3 days; pay hotels with card.</td>
-            </tr>
-            <tr style="border-bottom: none; background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600;">Emergency Foreign Cash Backup</td>
-              <td style="padding: 12px 16px;">$200 – $400 USD / EUR</td>
-              <td style="padding: 12px 16px;">Keep stored separately in your luggage as backup.</td>
-              <td style="padding: 12px 16px;">Crisp, uncreased notes for emergency currency exchange.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <h2>7. What to Do with Leftover Moroccan Dirhams at the End of Your Trip</h2>
       <p>Because the Moroccan Dirham cannot be officially traded abroad, make sure you don't leave the country holding large stacks of MAD banknotes.</p>
 
@@ -339,37 +267,7 @@ export const postHowMuchCashToBringToMorocco = {
       <div class="blog-highlight">
         <p><strong>💡 Règle d'or :</strong> Utilisez votre carte bancaire pour les montants importants (hébergement, trains, location de voiture, restaurants chics), et gardez des dirhams en espèces pour toutes vos dépenses quotidiennes dans la rue.</p>
       </div>
-
-      <h2>2. Quel Budget Espèces Prévoir par Jour selon votre Profil ?</h2>
-      <p>Vos besoins quotidiens en espèces dépendent de votre style de voyage et du prépaiement ou non de vos hébergements :</p>
-
-      <h3>A. Petit Budget / Routard (250 à 450 MAD / 23 € à 42 € par jour)</h3>
-      <p>Pour un voyageur logeant en auberge et mangeant dans les petites cantines locales :</p>
-      <ul>
-        <li>Repas de rue et déjeuners populaires : 80 à 140 MAD</li>
-        <li>Thé à la menthe, bouteilles d'eau, en-cas : 20 à 35 MAD</li>
-        <li>Petits taxis et tramway : 30 à 60 MAD</li>
-        <li>Entrées dans les monuments historiques : 70 à 100 MAD</li>
-        <li>Pourboires et petits imprévus : 20 à 40 MAD</li>
-      </ul>
-
-      <h3>B. Gamme Moyenne / Confort (500 à 950 MAD / 45 € à 90 € par jour)</h3>
-      <p>Pour un couple ou voyageur en riad de charme qui profite des terrasses panoramiques et des souks :</p>
-      <ul>
-        <li>Déjeuners et dîners en terrasse dans la médina : 200 à 380 MAD</li>
-        <li>Achats dans les souks (céramique, cuir, épices, huile d'argan) : 150 à 350 MAD</li>
-        <li>Petits taxis et transferts : 60 à 120 MAD</li>
-        <li>Visites de palais et jardins : 70 à 150 MAD</li>
-        <li>Pourboires au riad, serveurs et guides : 50 à 100 MAD</li>
-      </ul>
-
-      <h3>C. Séjour Haut de Gamme &amp; Circuits Privés (1 200 à 2 500+ MAD / 110 € à 230 €+ par jour)</h3>
-      <p>Pour les voyageurs en circuits privés ou hôtels de luxe : prévoyez des espèces pour les gratifications des chauffeurs privés (150–250 MAD/jour), des guides officiels (200–350 MAD/jour) et les achats artisanaux d'exception.</p>
-
-      <figure style="margin: 28px 0; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&auto=format&fit=crop&q=80" alt="Souks et artisanat marocain" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" />
-        <figcaption style="font-size: 13px; color: #666; margin-top: 8px;">Les produits artisanaux et les épices dans les souks se négocient et se règlent presque exclusivement en espèces.</figcaption>
-      </figure>
+      <div class="blog-highlight"><strong>Combien transporter ?</strong> Gardez uniquement les espèces nécessaires pour un ou deux jours. Pour calculer le budget complet du séjour, consultez notre <a href="/blog/morocco-cost-of-travel.html" class="blog-internal-link">guide du coût de voyage</a>.</div>
 
       <h2>3. La Règle de la Monnaie Fermée : Le Dirham Marocain (MAD)</h2>
       <p>La monnaie officielle du Royaume est le <strong>Dirham Marocain (MAD)</strong>. Il s'agit d'une <strong>monnaie fermée et non convertible</strong> à l'international :</p>

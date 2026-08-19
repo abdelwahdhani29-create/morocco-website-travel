@@ -4,6 +4,7 @@ export const postIsMoroccoSafe2026 = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1440778303588-435521a205bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   date: "2026-06-30",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Safety & Security",
     fr: "Sécurité & Pratique"
@@ -161,7 +162,7 @@ export const postIsMoroccoSafe2026 = {
       <p>Never drink tap water in Morocco. It is treated and safe for locals, but your body is not accustomed to its specific mineral and bacterial structure. 
       <br>• Use bottled water for drinking and even for brushing your teeth.
       <br>• Ensure the plastic seal on bottled water is intact when buying.
-      <br>• Avoid ice cubes in casual, local cafes. High-end restaurants and riads use filtered ice, which is perfectly safe.
+      <br>• Avoid ice cubes in casual, local cafes. Ask how ice was made; no venue type can guarantee water safety.
       <br>• Moroccan hot mint tea is boiled and completely safe to drink anywhere!</p>
 
       <h3>The Food Rules</h3>

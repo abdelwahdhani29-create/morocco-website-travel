@@ -1,4 +1,4 @@
-// Morocco Just Broke Tourism Records — Here's Why Everyone's Booking a Trip in 2026
+// Morocco Tourism Growth: Verified Figures and What They Mean
 // Comprehensive, 2,000+ word bilingual SEO article with responsive imagery, internal linking, external linking, and practical travel advice.
 
 export const postMoroccoBrokeRecords2026 = {
@@ -6,6 +6,7 @@ export const postMoroccoBrokeRecords2026 = {
   cityId: null,
   image: "https://images.pexels.com/photos/18487344/pexels-photo-18487344.jpeg?auto=compress&cs=tinysrgb&w=1470&q=80",
   date: "2026-07-06",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Travel Trends & Insights",
     fr: "Tendances & Perspectives"
@@ -19,8 +20,8 @@ export const postMoroccoBrokeRecords2026 = {
     fr: "12 min de lecture"
   },
   title: {
-    en: "Morocco Just Broke Tourism Records — Here's Why Everyone's Booking a Trip in 2026",
-    fr: "Le Maroc pulvérise ses records de tourisme — Voici pourquoi tout le monde réserve un voyage en 2026"
+    en: "Morocco Tourism Growth: Verified Figures and What They Mean",
+    fr: "Croissance du tourisme au Maroc : chiffres vérifiés et contexte"
   },
   excerpt: {
     en: "Morocco has officially shattered global visitor arrival records in 2026. Explore the latest official statistics, record-breaking numbers, expanded international flight routes, and market trends driving the surge.",
@@ -31,8 +32,8 @@ export const postMoroccoBrokeRecords2026 = {
     fr: "Record de Tourisme au Maroc 2026 : Chiffres Officiels & Analyse du Marché"
   },
   metaDescription: {
-    en: "Official breakdown of Morocco's record-breaking 2026 tourism figures. Explore visitor arrival statistics, new flight routes, World Cup infrastructure, and booking advice.",
-    fr: "Bilan officiel des chiffres records du tourisme au Maroc en 2026. Statistiques de fréquentation, nouvelles liaisons aériennes, infrastructures et conseils."
+    en: "Source-based review of Morocco tourism growth. Explore visitor arrival statistics, new flight routes, World Cup infrastructure, and booking advice.",
+    fr: "Analyse sourcée de la croissance touristique au Maroc. Statistiques de fréquentation, nouvelles liaisons aériennes, infrastructures et conseils."
   },
   faqs: [
     {
@@ -41,8 +42,8 @@ export const postMoroccoBrokeRecords2026 = {
         fr: "Qu'est-ce qui explique la croissance touristique rapide du Maroc en 2026 ?"
       },
       answer: {
-        en: "Morocco has shattered records, crossing the 15 million visitor threshold annually, representing significant double-digit year-over-year growth. The surge is driven by strong markets in France, Spain, the UK, Germany, and a fast-growing North American segment.",
-        fr: "Le Maroc a pulvérisé ses records en dépassant le seuil des 15 millions de visiteurs par an, ce qui représente une croissance à deux chiffres par rapport aux années précédentes. Cet essor est porté par des marchés historiques (France, Espagne, Royaume-Uni, Allemagne) et un segment nord-américain en pleine expansion."
+        en: "Morocco recorded 14,939,963 arrivals from January through September 2025, 14% above the same period in 2024, according to the Moroccan Tourism Observatory. This is a dated comparison, not a final 2026 total.",
+        fr: "L’Observatoire du Tourisme a enregistré 14 939 963 arrivées de janvier à septembre 2025, soit 14 % de plus que sur la même période de 2024. Il ne s’agit pas d’un total définitif pour 2026."
       }
     },
     {
@@ -51,8 +52,8 @@ export const postMoroccoBrokeRecords2026 = {
         fr: "Comment le Maroc prépare-t-il ses infrastructures aéroportuaires ?"
       },
       answer: {
-        en: "The Moroccan National Airports Office (ONDA) has launched massive expansion projects at major gateways, including Marrakech Menara, Casablanca Mohammed V, and Agadir Al Massira, aiming to increase total national airport capacity to over 37 million passengers ahead of the 2030 World Cup.",
-        fr: "L'Office National des Aéroports (ONDA) a lancé des projets d'extension d'envergure dans les principaux hubs, notamment Marrakech-Ménara, Casablanca Mohammed V et Agadir Al Massira, afin de porter la capacité aéroportuaire nationale à plus de 37 millions de passagers en prévision du Mondial 2030."
+        en: "Airport plans and construction schedules change. Consult Morocco's National Airports Office (ONDA) for current projects and passenger notices rather than relying on an undated capacity estimate.",
+        fr: "Les projets et calendriers aéroportuaires évoluent. Consultez l'Office National des Aéroports (ONDA) pour les chantiers et avis voyageurs actuels plutôt qu'une estimation de capacité non datée."
       }
     },
     {
@@ -68,7 +69,7 @@ export const postMoroccoBrokeRecords2026 = {
   ],
   content: {
     en: `
-      <p class="blog-lead">If you monitor the global travel economy, you have likely noticed a series of remarkable statistics coming out of North Africa. Official government registries and market studies confirm a major developmental milestone: <strong>Morocco has shattered international tourism records</strong>, surpassing all historical benchmarks and establishing itself as a leading force in global travel growth.</p>
+      <p class="blog-lead">Morocco's tourism sector has recorded strong recent growth. This article separates a dated official statistic from forecasts and projects that may change.</p>
 
       <p>This unprecedented surge is backed by official statistical data published by the <a href="https://www.unwto.org/" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">UN World Tourism Organization (UNWTO)</a> and the Moroccan Ministry of Tourism. Under the comprehensive "Tourism Strategic Roadmap 2023-2026," Morocco has successfully leveraged public-private partnerships, fleet expansions, and policy updates to build a highly resilient travel sector. For an experiential guide on why travelers are choosing the country, read our creative analysis of <a href="/blog/why-morocco-fastest-growing-destination.html" class="blog-internal-link">Why Travelers Choose Morocco</a>. Below is the detailed industry data, infrastructure metrics, and economic factors behind this milestone.</p>
 
@@ -78,7 +79,7 @@ export const postMoroccoBrokeRecords2026 = {
       </figure>
 
       <h2>1. The Historical Milestone: Breaking the 15 Million Visitor Barrier</h2>
-      <p>The statistical headlines are dominated by a massive increase in raw visitor numbers. According to the Moroccan National Tourism Office (ONMT), annual visitor arrivals have comfortably crossed the 15 million mark, representing significant double-digit growth compared to pre-2024 levels.</p>
+      <p>The statistical headlines are dominated by a massive increase in raw visitor numbers. According to the <a href="https://observatoiredutourisme.ma/en/publication/tableau-de-bord-national-septembre-2025/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Moroccan Tourism Observatory dashboard</a>, arrivals reached 14,939,963 between January and September 2025, 14% above the same period in 2024. The same source reported a 15% rise in travel receipts for that period. These figures should not be presented as a completed 2026 annual total.</p>
 
       <p>The geographic breakdown of these arrivals shows strength across several key source markets:
         <ul>
@@ -93,8 +94,8 @@ export const postMoroccoBrokeRecords2026 = {
 
       <p>State-led partnerships with major European low-cost carriers (LCCs) have transformed the landscape. Ryanair has established a massive domestic and international network within Morocco, deploying aircraft at regional hubs to link smaller cities directly with Europe. Simultaneously, the national carrier, **Royal Air Maroc (RAM)**, has initiated an ambitious long-term fleet expansion plan, aiming to quadruple its active aircraft count to 200 planes by 2037. This fleet growth is supported by new, direct transatlantic flight corridors, including direct connections from New York (JFK), Miami, and Washington D.C. to Casablanca and Marrakech, making travel from North America faster and more convenient than ever before.</p>
 
-      <h2>3. Airport Infrastructure Modernization: Expanding Capacity for 37 Million Passengers</h2>
-      <p>To handle this record influx of visitors without causing delays, the Moroccan National Airports Office (ONDA) has launched a multi-billion dollar modernization program across major hubs.</p>
+      <h2>3. Airport Infrastructure Modernization</h2>
+      <p>Airport works and operational notices should be checked directly with <a href="https://www.onda.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Morocco's National Airports Office (ONDA)</a>. Project scope, capacity and completion dates can change.</p>
 
       <p>Current airport development plans focus on key entry points:
         <ul>
@@ -103,7 +104,7 @@ export const postMoroccoBrokeRecords2026 = {
           <li><strong>Agadir Al Massira and Tangier Ibn Battouta:</strong> Launching comprehensive runway renovations and new terminal constructions designed to handle emerging charter flight volumes.</li>
         </ul>
       </p>
-      <p>This coordinated infrastructure strategy aims to scale total national airport capacity to over 37 million passengers, ensuring smooth operations as demand continues to rise.</p>
+      <p>Travelers should use their airline and ONDA for current terminal, check-in and disruption information.</p>
 
       <h2>4. The 2030 FIFA World Cup Infrastructure Surge</h2>
       <p>Morocco's selection as co-host of the 2030 FIFA World Cup alongside Spain and Portugal has accelerated public infrastructure developments, bringing forward projects that are already benefiting travelers.</p>
@@ -118,7 +119,7 @@ export const postMoroccoBrokeRecords2026 = {
       <h2>5. Economic Impact and Hotel Capital Investments</h2>
       <p>The surge in tourist arrivals has turned Morocco into a major target for global hospitality investment, driving strong economic activity and creating new jobs across the nation.</p>
 
-      <p>Foreign Direct Investment (FDI) in the tourism sector has reached historic highs. Leading international luxury hotel groups—including Four Seasons, Ritz-Carlton, Fairmont, Radisson, and Hilton—are actively expanding their footprints with new properties in Rabat, Casablanca, Marrakech, and coastal Tangier. This commercial investment has driven strong performance metrics across the hospitality industry, with average daily rates (ADR) and revenue per available room (RevPAR) recording steady year-over-year gains. This investment boom also supports local economies, funding training programs for hospitality workers and creating opportunities for local suppliers and artisans.</p>
+      <p>New hotel announcements may increase room supply, but openings, brands and performance figures can change. Verify any property directly before making a booking; this guide does not endorse a hotel or treat a proposed opening as completed.</p>
 
       <h2>6. Strategic Outlook: The Road to 2030</h2>
       <p>Morocco's record-breaking tourism achievements are the direct result of a clear, long-term national strategy backed by strong public and private investment. By modernizing its transport networks, expanding direct flight connections, and preparing for major global events like the 2030 FIFA World Cup, the country has built a highly resilient tourism sector.</p>
@@ -136,7 +137,7 @@ export const postMoroccoBrokeRecords2026 = {
       </figure>
 
       <h2>1. Un jalon historique : franchir la barre des 15 millions de visiteurs</h2>
-      <p>Les données statistiques sont impressionnantes. Selon l'Office National Marocain du Tourisme (ONMT), les arrivées annuelles de visiteurs ont dépassé le seuil des 15 millions, affichant une croissance solide à deux chiffres par rapport aux années précédentes.</p>
+      <p>Les données statistiques sont impressionnantes. Selon le <a href="https://observatoiredutourisme.ma/publication/tableau-de-bord-national-septembre-2025/" target="_blank" rel="noopener noreferrer" class="blog-external-link">tableau de bord de l’Observatoire du Tourisme</a>, 14 939 963 arrivées ont été enregistrées entre janvier et septembre 2025, soit une hausse de 14 % sur un an. Ce chiffre ne doit pas être présenté comme un total annuel définitif pour 2026.</p>
 
       <p>La répartition géographique des flux touristiques montre une belle dynamique sur les marchés émetteurs clés :
         <ul>
@@ -151,7 +152,7 @@ export const postMoroccoBrokeRecords2026 = {
 
       <p>Le partenariat renforcé avec les compagnies low-cost européennes, comme Ryanair, a permis de connecter directement de nombreuses villes moyennes marocaines à l'Europe. Par ailleurs, la compagnie nationale **Royal Air Maroc (RAM)** a lancé un plan d'expansion ambitieux visant à quadrupler sa flotte pour atteindre 200 appareils d'ici 2037. Cette dynamique est soutenue par l'ouverture de nouvelles routes transatlantiques directes reliant New York, Miami et Washington à Casablanca et Marrakech, facilitant grandement l'arrivée des visiteurs nord-américains.</p>
 
-      <h2>3. Modernisation aéroportuaire : viser 37 millions de passagers</h2>
+      <h2>3. Modernisation aéroportuaire</h2>
       <p>Pour gérer ce flux de passagers dans d'excellentes conditions, l'Office National des Aéroports (ONDA) a engagé de grands projets de modernisation et d'agrandissement de ses terminaux.</p>
 
       <p>Les investissements se concentrent sur les principaux points d'entrée :
@@ -161,7 +162,7 @@ export const postMoroccoBrokeRecords2026 = {
           <li><strong>Agadir Al Massira et Tanger Ibn Battouta :</strong> Rénovation des pistes et construction de nouveaux terminaux pour accueillir l'augmentation des vols charters et réguliers.</li>
         </ul>
       </p>
-      <p>Cette stratégie globale permettra de porter la capacité d'accueil des aéroports nationaux à plus de 37 millions de voyageurs par an.</p>
+      <p>Les capacités, travaux et calendriers peuvent changer. Consultez directement <a href="https://www.onda.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">l'ONDA</a> et votre compagnie aérienne pour les informations opérationnelles à jour.</p>
 
       <h2>4. L'accélérateur de la Coupe du Monde de la FIFA 2030</h2>
       <p>La co-organisation de la Coupe du Monde 2030 avec l'Espagne et le Portugal a donné un coup d'accélérateur majeur aux grands chantiers d'infrastructure publique, dont profitent déjà les voyageurs.</p>

@@ -4,6 +4,7 @@ export const postChefchaouen = {
   cityId: "chefchaouen",
   image: "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800",
   date: "2026-06-15",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Culture & Heritage",
     fr: "Culture & Patrimoine"

@@ -4,6 +4,7 @@ export const postBestPlaces = {
   cityId: "all",
   image: "https://images.unsplash.com/flagged/photo-1555169048-3c4845cfcf1c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9yb2NjbyUyMHBsYWNlc3xlbnwwfHwwfHx8Mg%3D%3D",
   date: "2026-07-14",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
@@ -74,7 +75,7 @@ export const postBestPlaces = {
       <p>Universal, vibrant, and incredibly evocative, <strong>Marrakech</strong> is the undisputed crown jewel of Moroccan tourism. Founded in the 11th century, the "Red City" gets its nickname from the beautiful, sun-baked clay and red sandstone walls that frame its historic medina. It is a city that demands your full attention and stimulates every single sense.</p>
 
       <h3>Sights and Sounds of Jemaa el-Fnaa</h3>
-      <p>The beating heart of Marrakech is <strong>Jemaa el-Fnaa</strong>, a massive, ancient square designated as a masterpiece of oral heritage by <a href="https://whc.unesco.org/" target="_blank" class="blog-external-link">UNESCO World Heritage Centre</a>. By day, the square is a wide, open plaza populated by fruit vendors, traditional musicians, and henna artists. As the sun sets, Jemaa el-Fnaa undergoes a magical transformation: dozens of smoke-filled food stalls light up, offering authentic culinary delights, while storytellers, acrobats, and Gnaoua musicians draw eager crowds.</p>
+      <p>The beating heart of Marrakech is <strong>Jemaa el-Fnaa</strong>, a massive, ancient square designated as a masterpiece of oral heritage by <a href="https://whc.unesco.org/" target="_blank" rel="noopener noreferrer" class="blog-external-link">UNESCO World Heritage Centre</a>. By day, the square is a wide, open plaza populated by fruit vendors, traditional musicians, and henna artists. As the sun sets, Jemaa el-Fnaa undergoes a magical transformation: dozens of smoke-filled food stalls light up, offering authentic culinary delights, while storytellers, acrobats, and Gnaoua musicians draw eager crowds.</p>
 
       <p>Wander away from the square into the labyrinthine alleys of the medina to discover the magnificent Bahia Palace, the soaring Koutoubia Minaret, and the peaceful, olive-lined Menara Gardens. To master navigating these winding markets, discover how to navigate the souks with our dedicated <a href="/city/marrakech.html" class="blog-internal-link">Marrakech Tourism Guide</a>.</p>
 
@@ -148,7 +149,7 @@ export const postBestPlaces = {
       <p>Vibrante, colorée et infiniment évocatrice, <strong>Marrakech</strong> est la capitale incontestée du tourisme marocain. Fondée au XIe siècle, la "Ville Rouge" doit son nom à la couleur ocre-rose de ses remparts d'argile et de grès qui abritent une médina historique d'une richesse culturelle inouïe.</p>
 
       <h3>L'effervescence de la Place Jemaa el-Fnaa</h3>
-      <p>La célèbre place <strong>Jemaa el-Fnaa</strong> constitue le cœur vibrant de Marrakech. Classée par l'<a href="https://whc.unesco.org/" target="_blank" class="blog-external-link">UNESCO</a> au patrimoine culturel immatériel de l'humanité, cette esplanade s'anime dès la fin de l'après-midi. Des dizaines de stands de street food s'installent dans une fumée parfumée d'épices, tandis que des charmeurs de serpents, des conteurs traditionnels et des musiciens Gnaoua captivent les spectateurs ébahis.</p>
+      <p>La célèbre place <strong>Jemaa el-Fnaa</strong> constitue le cœur vibrant de Marrakech. Classée par l'<a href="https://whc.unesco.org/" target="_blank" rel="noopener noreferrer" class="blog-external-link">UNESCO</a> au patrimoine culturel immatériel de l'humanité, cette esplanade s'anime dès la fin de l'après-midi. Des dizaines de stands de street food s'installent dans une fumée parfumée d'épices, tandis que des charmeurs de serpents, des conteurs traditionnels et des musiciens Gnaoua captivent les spectateurs ébahis.</p>
 
       <p>Au-delà de la place, perdez-vous dans le dédale des souks, visitez le somptueux Palais de la Bahia, admirez le minaret de la Koutoubia et ressourcez-vous dans les magnifiques jardins de la Ménara. Pour planifier au mieux votre découverte des marchés, consultez notre <a href="/city/marrakech.html" class="blog-internal-link">Guide Touristique de Marrakech</a>.</p>
 

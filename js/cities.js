@@ -45,7 +45,7 @@ const translations = {
     credits: "GoMoroccoAI Explorer • Index complet réalisé en JavaScript pur.",
     no_results: "Aucun résultat ne correspond à votre recherche. Essayez un autre mot !",
     culture_nav: "Culture Marocaine",
-    planner_nav: "Planificateur IA",
+    planner_nav: "Planificateur interactif",
     regions: {
       "Marrakech-Safi": "Région de Marrakech-Safi",
       "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",

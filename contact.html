@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80" />
 
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.468.0"></script>
     <style>
       .contact-container {
         display: grid;
@@ -251,39 +251,6 @@
         if (addrLabel) addrLabel.textContent = t('contact_address_lbl');
         if (addrVal) addrVal.textContent = t('contact_address_val');
 
-        // Success dialog content
-        const successDesc = document.getElementById('lbl-success-desc');
-        if (successDesc) successDesc.textContent = "Thank you for contacting GoMoroccoAI. We have received your message.";
-
-        // Form fields & submit
-        const nameLabel = document.getElementById('lbl-form-name');
-        const emailFormLabel = document.getElementById('lbl-form-email');
-        const topicLabel = document.getElementById('lbl-form-topic');
-        const msgLabel = document.getElementById('lbl-form-msg');
-        const btnSubmitText = document.getElementById('lbl-form-submit-text');
-
-        if (nameLabel) nameLabel.textContent = t('contact_form_name');
-        if (emailFormLabel) emailFormLabel.textContent = t('contact_form_email');
-        if (topicLabel) topicLabel.textContent = t('contact_form_topic');
-        if (msgLabel) msgLabel.textContent = t('contact_form_msg');
-        if (btnSubmitText) btnSubmitText.textContent = t('contact_send_btn');
-
-        // Option categories
-        const opt1 = document.getElementById('topic-opt-1');
-        const opt2 = document.getElementById('topic-opt-2');
-        const opt3 = document.getElementById('topic-opt-3');
-        if (opt1) opt1.textContent = t('topic_opt_1');
-        if (opt2) opt2.textContent = t('topic_opt_2');
-        if (opt3) opt3.textContent = t('topic_opt_3');
-
-        // Placeholders based on language profile
-        const nameInput = document.getElementById('contact-name');
-        const emailInput = document.getElementById('contact-email-input');
-        const textInput = document.getElementById('contact-text');
-
-        if (nameInput) nameInput.placeholder = currentLang === 'fr' ? 'Par ex. Abdellah El Fassi' : 'e.g. Abdellah El Fassi';
-        if (emailInput) emailInput.placeholder = 'you@example.com';
-        if (textInput) textInput.placeholder = currentLang === 'fr' ? 'Comment pouvons-nous vous aider ?' : 'How can GoMoroccoAI help you?';
       }
 
       applyPageLanguage();

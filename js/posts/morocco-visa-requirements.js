@@ -4,6 +4,7 @@ export const postMoroccoVisaRequirements = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1655722725332-9925c96dd627?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlzYXxlbnwwfHwwfHx8MA%3D%3D",
   date: "2026-07-26",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"
@@ -381,7 +382,7 @@ export const postMoroccoVisaRequirements = {
       <h2>5. Prolongation de séjour au Maroc</h2>
       <p>Pour prolonger votre séjour au-delà de 90 jours, vous devez effectuer une demande de <em>Prolongation de séjour</em> auprès de la Préfecture de Police locale au moins <strong>15 jours avant la fin de l'échéance</strong>.</p>
 
-      <p>Préparez votre itinéraire à travers nos <a href="/cities.html" class="blog-internal-link">Guides des Villes du Maroc</a> ou concevez votre circuit sur mesure grâce au <a href="/trip-planner.html" class="blog-internal-link">Planificateur IA GoMoroccoAI</a>.</p>
+      <p>Préparez votre itinéraire à travers nos <a href="/cities.html" class="blog-internal-link">Guides des Villes du Maroc</a> ou concevez votre circuit sur mesure grâce au <a href="/trip-planner.html" class="blog-internal-link">Planificateur interactif GoMoroccoAI</a>.</p>
 
       <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière mise à jour : Juillet 2026 | Réglementations sous réserve de modifications diplomatiques.</p>
     `

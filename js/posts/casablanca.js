@@ -4,6 +4,7 @@ export const postCasablanca = {
   cityId: "casablanca",
   image: "https://images.unsplash.com/photo-1579017461826-8ea20d5cdb28?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FzYWJsYW5jYXxlbnwwfDB8MHx8fDI%3D",
   date: "2026-07-11",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
@@ -106,14 +107,14 @@ export const postCasablanca = {
       <h2>5. Crucial Travel Tips for Your Casablanca Journey</h2>
       <ul>
         <li><strong>Best Time to Visit:</strong> The best time to visit Casablanca is during spring (March to May) or autumn (September to November) when the weather is warm and breezy. For detailed advice, consult our guide on the <a href="/blog/best-time-to-visit-morocco.html" class="blog-internal-link">best time to visit Morocco</a>.</li>
-        <li><strong>Seamless Transport:</strong> Casablanca is highly connected. You can ride the modern, air-conditioned Casatramway across downtown, or catch the ultra-fast <strong>Al Boraq high-speed train</strong>—Africa's first bullet train operated by the <a href="https://www.oncf.ma/en/" target="_blank" class="blog-external-link">Moroccan National Railways (ONCF)</a>—which connects Casablanca to Rabat, Kenitra, and Tangier in record time.</li>
+        <li><strong>Seamless Transport:</strong> Casablanca is highly connected. You can ride the modern, air-conditioned Casatramway across downtown, or catch the ultra-fast <strong>Al Boraq high-speed train</strong>—Africa's first bullet train operated by the <a href="https://www.oncf.ma/en/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Moroccan National Railways (ONCF)</a>—which connects Casablanca to Rabat, Kenitra, and Tangier in record time.</li>
         <li><strong>Cultural Etiquette & Dress:</strong> While Casablanca is very cosmopolitan, dressing modestly is recommended, particularly when visiting historic or religious quarters. For more essential guidance, see our curated checklist of <a href="/blog/safety-etiquette.html" class="blog-internal-link">Morocco travel safety & etiquette tips</a>.</li>
         <li><strong>Plan Your Perfect Route:</strong> Do not miss out on neighboring cultural hotspots. Browse our interactive <a href="/cities.html" class="blog-internal-link">destination explorer</a> to combine Casablanca with historical imperial cities like <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> and Fez.</li>
       </ul>
 
       <div class="blog-highlight">
         <h3>Authoritative Tourism Resources</h3>
-        <p>To ensure your travel plans align with official state guidelines, explore the latest campaigns from the <a href="https://www.visitmorocco.com/en" target="_blank" class="blog-external-link">Moroccan National Tourism Office</a> or check the heritage protections preserved by <a href="https://whc.unesco.org/en/list/" target="_blank" class="blog-external-link">UNESCO World Heritage</a>.</p>
+        <p>To ensure your travel plans align with official state guidelines, explore the latest campaigns from the <a href="https://www.visitmorocco.com/en" target="_blank" rel="noopener noreferrer" class="blog-external-link">Moroccan National Tourism Office</a> or check the heritage protections preserved by <a href="https://whc.unesco.org/en/list/" target="_blank" rel="noopener noreferrer" class="blog-external-link">UNESCO World Heritage</a>.</p>
       </div>
       
       <p>Casablanca is much more than an entry port or a classic Hollywood film title; it is the beating heart of modern Morocco, where the deep-seated traditions of the Kingdom merge gracefully with the bold architectural and lifestyle statements of the 21st century. Savor its sea breezes, marvel at its Atlantic sunsets, and explore the white alleys that define this legendary metropolis.</p>
@@ -159,14 +160,14 @@ export const postCasablanca = {
       <h2>5. Conseils Pratiques de l'Expert Voyage</h2>
       <ul>
         <li><strong>Meilleure Saison :</strong> Les périodes idéales sont le printemps (mars à mai) et l'automne (septembre à novembre) pour profiter de températures agréables et douces. Consultez notre guide complet sur la <a href="/blog/best-time-to-visit-morocco.html" class="blog-internal-link">meilleure période pour visiter le Maroc</a>.</li>
-        <li><strong>Déplacements Faciles :</strong> Casablanca dispose d'un réseau moderne de tramway climatisé. De plus, la gare de Casa-Voyageurs dessert les grandes villes du pays via le train à grande vitesse <strong>Al Boraq</strong>, géré par l'<a href="https://www.oncf.ma/fr/" target="_blank" class="blog-external-link">ONCF</a>.</li>
+        <li><strong>Déplacements Faciles :</strong> Casablanca dispose d'un réseau moderne de tramway climatisé. De plus, la gare de Casa-Voyageurs dessert les grandes villes du pays via le train à grande vitesse <strong>Al Boraq</strong>, géré par l'<a href="https://www.oncf.ma/fr/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF</a>.</li>
         <li><strong>Respect Culturel & Tenue :</strong> Bien que Casablanca soit très libérale, il est d'usage de porter des vêtements décents couvrant les épaules et les genoux lors de la visite des édifices religieux. Pour d'autres conseils, lisez nos <a href="/blog/safety-etiquette.html" class="blog-internal-link">conseils de sécurité et étiquette au Maroc</a>.</li>
         <li><strong>Organiser vos Destinations :</strong> Associez Casablanca à d'autres joyaux du Royaume. Explorez notre <a href="/cities.html" class="blog-internal-link">carte des destinations</a> pour planifier votre voyage vers <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> ou Fès.</li>
       </ul>
 
       <div class="blog-highlight">
         <h3>Ressources Officielles</h3>
-        <p>Afin de planifier au mieux vos vacances, n'hésitez pas à consulter le portail de l'<a href="https://www.visitmorocco.com/fr" target="_blank" class="blog-external-link">Office National Marocain du Tourisme</a> ou l'inventaire du patrimoine mondial de l'<a href="https://whc.unesco.org/fr/list/" target="_blank" class="blog-external-link">UNESCO</a>.</p>
+        <p>Afin de planifier au mieux vos vacances, n'hésitez pas à consulter le portail de l'<a href="https://www.visitmorocco.com/fr" target="_blank" rel="noopener noreferrer" class="blog-external-link">Office National Marocain du Tourisme</a> ou l'inventaire du patrimoine mondial de l'<a href="https://whc.unesco.org/fr/list/" target="_blank" rel="noopener noreferrer" class="blog-external-link">UNESCO</a>.</p>
       </div>
       
       <p>Bien plus qu'un simple port d'entrée ou qu'un titre de chef-d'œuvre du cinéma hollywoodien, Casablanca est le cœur battant du Maroc d'aujourd'hui, une ville inspirante où les traditions séculaires s'unissent à merveille avec l'audace moderne du XXIe siècle.</p>

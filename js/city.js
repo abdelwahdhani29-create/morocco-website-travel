@@ -97,7 +97,7 @@ const translations = {
     days: "jours",
     browse_cities_nav: "Découvrir les Villes",
     culture_nav: "Culture Marocaine",
-    planner_nav: "Planificateur IA",
+    planner_nav: "Planificateur interactif",
     regions: {
       "Marrakech-Safi": "Région de Marrakech-Safi",
       "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",
@@ -142,11 +142,6 @@ const localizedCityData = {
         { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800" },
         { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80" }
       ],
-      hotels: {
-        budget: { name: "Riad Diana", price_approx: 45, amenity: "Patio traditionnel marocain, bassin de fraîcheur & accueil au thé traditionnel" },
-        mid_range: { name: "Riad Kniza", price_approx: 120, amenity: "Riad d'époque datant du XVIIIe siècle, petit-déjeuner exceptionnel" },
-        luxury: { name: "La Mamounia", price_approx: 650, amenity: "Hôtel-palais de réputation mondiale doté de superbes jardins d'oliviers centenaires et spa" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "20 - 50 MAD (2 - 5 USD)", description: "Petits taxis de couleur beige idéaux pour se déplacer rapidement. Activez le compteur." },
         { type: "Calèche Traditionnelle", approx_cost: "120 - 200 MAD (12 - 20 USD)/h", description: "Une promenade romantique et historique entourant les remparts de la Médina." },
@@ -170,11 +165,6 @@ const localizedCityData = {
         { name: "La Médina Bleue", description: "Promenez-vous au cœur d'un labyrinthe de ruelles entièrement baignées de nuances de bleu azuré fardé de chaux.", image: "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800&q=80" },
         { name: "La Cascade de Ras El Maa", description: "Une rafraîchissante source d'eau douce de montagne juste à la sortie des murs de la ville, où les habitants se rassemblent.", image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80" }
       ],
-      hotels: {
-        budget: { name: "Hostel Baraka", price_approx: 25, amenity: "Toit-terrasse de style bohème dominant les crêtes majestueuses du Rif" },
-        mid_range: { name: "Lina Ryad & Spa", price_approx: 95, amenity: "Piscine intérieure chauffée et espace hammam surplombant la terrasse de la vallée" },
-        luxury: { name: "Riad Cherifa", price_approx: 180, amenity: "Suites de luxe restaurées dans un style architectural andalou remarquable" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "15 - 30 MAD (1.50 - 3 USD)", description: "Taxis bleus abordables circulant dans toute la ville et desservant les hauteurs du Rif." },
         { type: "Minibus Partagé (Grand Taxi)", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Navettes de transport partagé à tarif fixe très pratiques pour explorer le Rif." },
@@ -198,11 +188,6 @@ const localizedCityData = {
         { name: "Les Tanneries de Chouara", description: "Les célèbres bassins en nid d'abeille médiévaux où l'on teint le cuir selon des méthodes ancestrales.", image: "https://images.pexels.com/photos/38112658/pexels-photo-38112658.jpeg?auto=compress&cs=tinysrgb&w=800" },
         { name: "L'Université Al-Qarawiyyin", description: "Fondée en 859 par Fatima al-Fihri, elle est officiellement reconnue par l'UNESCO comme la plus ancienne université encore en activité au monde.", image: "https://images.pexels.com/photos/35070809/pexels-photo-35070809.jpeg?auto=compress&cs=tinysrgb&w=800" }
       ],
-      hotels: {
-        budget: { name: "Riad Verus", price_approx: 35, amenity: "Toit-terrasse dynamique offrant une vue à 360° sur toute la Médina" },
-        mid_range: { name: "Riad Dar Bensouda", price_approx: 85, amenity: "Splendide riad historique restauré avec piscine au sein du calme sanctuaire" },
-        luxury: { name: "Hotel Sahrai", price_approx: 220, amenity: "Hôtel design de style contemporain avec piscine à débordement géante sur Fès" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "15 - 35 MAD (1.50 - 3.50 USD)", description: "Taxis rouges très compacts reliant l'ancienne et la nouvelle ville de Fès." },
         { type: "Bus National (CTM)", approx_cost: "100 - 150 MAD (10 - 15 USD)", description: "Réseau national d'autobus tout confort desservant l'ensemble des cités royales." },
@@ -226,11 +211,6 @@ const localizedCityData = {
         { name: "La Sqala de la Kasbah", description: "Une promenade spectaculaire le long des anciens bastions royaux flanqués de fiers canons orientés vers la mer.", image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" },
         { name: "Le Port de Pêche", description: "Un port bleu et animé où chalutiers, odeurs de poisson grillé et harmonies musicales Gnaoua forment un spectacle constant.", image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" }
       ],
-      hotels: {
-        budget: { name: "Riad Zahra", price_approx: 40, amenity: "Riad familial chaleureux situé à quelques mètres de la longue plage de sable" },
-        mid_range: { name: "Heure Bleue Palais", price_approx: 150, amenity: "Élégante oasis historique avec piscine sur toit-terrasse et patio verdoyant" },
-        luxury: { name: "Le Jardin des Douars", price_approx: 240, amenity: "Maison d'hôtes de charme d'une exceptionnelle quiétude au milieu d'un grand jardin luxuriant" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "7 - 15 MAD (0.70 - 1.50 USD)", description: "Petits taxis bleus très abordables pour tous vos déplacements urbains." },
         { type: "Autocar Supratours", approx_cost: "80 - 120 MAD (8 - 12 USD)", description: "Lignes de bus rapides et climatisées assurant des navettes quotidiennes vers Marrakech." },
@@ -254,11 +234,6 @@ const localizedCityData = {
         { name: "La Grande Mosquée", description: "Bâtie au XIIIe siècle, ce monument de l'ère Almohade est un chef-d'œuvre architectural au cœur de la médina.", image: "https://images.pexels.com/photos/33605163/pexels-photo-33605163.jpeg?_gl=1*2ju3qf*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQ0NjU1ODIkbzIyJGcxJHQxNzg0NDY3NzQwJGoyMiRsMCRoMA.." },
         { name: "Le Parc Lalla Aïcha", description: "Un havre de verdure et de fraîcheur orné de grands arbres centenaires et de jolis bassins.", image: "https://images.unsplash.com/photo-1664185494794-97cbe900c105?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFsbGElMjBhaWNoYSUyMHBhcmt8ZW58MHx8MHx8fDI%3D" }
       ],
-      hotels: {
-        budget: { name: "Hôtel L'Oasis", price_approx: 30, amenity: "Chambres simples et traditionnelles, accueil familial chaleureux" },
-        mid_range: { name: "Atlas Orient", price_approx: 70, amenity: "Hôtel moderne avec piscine et situation idéale à deux pas de la médina" },
-        luxury: { name: "Terminus City Center", price_approx: 130, amenity: "Hôtel haut de gamme contemporain proposant de superbes spas et vues panoramiques" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Petits taxis rouges parfaits pour parcourir les boulevards modernes." },
         { type: "ONCF Train", approx_cost: "120 - 200 MAD (12 - 20 USD)", description: "Liaisons directes confortables reliant Oujda à Fès, Rabat et Casablanca." }
@@ -280,11 +255,6 @@ const localizedCityData = {
       attractions: [
         { name: "La Source de Aïn Asserdoun", description: "Source d'eau de montagne spectaculaire aménagée en jardins en terrasses avec de magnifiques cascades.", image: "https://images.unsplash.com/photo-1652720187538-b1894af2dc35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVuaSUyMG1lbGxhbHxlbnwwfHwwfHx8Mg%3D%3D" }
       ],
-      hotels: {
-        budget: { name: "Hôtel Paris", price_approx: 30, amenity: "Chambres simples et soignées en plein cœur de ville" },
-        mid_range: { name: "Hôtel Tazarkount", price_approx: 65, amenity: "Complexe de style riad niché au cœur de magnifiques vergers d'oliviers" },
-        luxury: { name: "Hôtel Chems", price_approx: 110, amenity: "Hôtel de luxe doté d'une grande piscine, de jardins paysagers et de restaurants" }
-      },
       transportation: [
         { type: "Petit Taxi", approx_cost: "10 - 15 MAD (1 - 1.50 USD)", description: "Petits taxis rouges très pratiques pour naviguer rapidement en ville." },
         { type: "Grand Taxi", approx_cost: "40 - 70 MAD (4 - 7 USD)", description: "Taxis collectifs parfaits pour rejoindre les cascades d'Ouzoud ou le lac de Bin el Ouidane." }
@@ -905,10 +875,8 @@ function renderTabHotelsContent() {
   if (!container) return;
   container.innerHTML = '';
 
-  let hotels = activeCityData.hotels;
-  if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
-    hotels = localizedCityData[activeCityData.id].fr.hotels;
-  }
+  // Accommodation names are neutral categories, not endorsements of specific properties.
+  const hotels = activeCityData.hotels;
 
   const tiers = ['budget', 'mid_range', 'luxury'];
   tiers.forEach(tier => {

@@ -4,6 +4,7 @@ export const postRabat = {
   cityId: "rabat",
   image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=800",
   date: "2026-05-25",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Culture & Heritage",
     fr: "Culture & Patrimoine"

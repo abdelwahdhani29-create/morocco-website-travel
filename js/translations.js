@@ -38,7 +38,7 @@ export const translations = {
     load_more: "Load More Articles",
 
     // Cookie Banner
-    cookie_text: "We use cookies and basic telemetry to guarantee a perfect and secure local guide experience on the GoMoroccoAI Portal. By continuing, you agree to our policies.",
+    cookie_text: "We use essential storage for site preferences. Optional analytics or advertising cookies are used only after you choose Accept, where available.",
     cookie_accept: "Accept",
     cookie_policy: "Privacy Policy",
 
@@ -156,7 +156,7 @@ export const translations = {
     about_tourism_title: "About GoMoroccoAI",
     about_p1: "GoMoroccoAI is an independent Morocco travel guide founded and edited by Abdelwahd Hani. It offers clear city guides, cultural context, practical checklists, and links to official information.",
     about_p2: "Articles may use digital and AI-assisted drafting tools, but every published page is researched, reviewed, edited, and approved by Abdelwahd Hani. AI output is never treated as a source.",
-    about_p3: "Time-sensitive claims are checked against official sources and labelled with a verification date. Readers can send corrections directly to gomoroccoai.com.",
+    about_p3: "Time-sensitive claims are checked against official sources and labelled with a verification date. Readers can send corrections to gomoroccoai@gmail.com.",
     about_offer_title: "What We Offer",
     about_card1_title: "Explore Cities",
     about_card1_desc: "Browse our hand-curated directories of Moroccan destinations, from historic imperial medinas like Marrakech to azure mountain towns like Chefchaouen.",
@@ -207,7 +207,7 @@ export const translations = {
     privacy_h2_3: "3. Third-Party Integrations",
     privacy_p3: "Our layouts utilize standard external styles, including Lucide Icons and Unsplash imagery. These CDNs may analyze general access requests in compliance with safety audits, but do not capture user-specific confidential values.",
     privacy_h2_4: "4. Contacting our Privacy Officer",
-    privacy_p4: "For any questions concerning local client-side memory safety, please contact us at privacy@moroccotourism.ma.",
+    privacy_p4: "For privacy questions or requests, contact gomoroccoai@gmail.com.",
 
     // Terms of Service Page (terms.html)
     terms_title_header: "Terms of Service",
@@ -230,7 +230,7 @@ export const translations = {
     contact_nav: "Contact",
     privacy: "Politique de Confidentialité",
     terms: "Conditions d'Utilisation",
-    planner_nav: "Planificateur IA",
+    planner_nav: "Planificateur interactif",
     trip_planner: "Planificateur de Voyage",
     plan_your_trip_btn: "Planifier votre voyage",
     home: "Accueil",
@@ -257,7 +257,7 @@ export const translations = {
     load_more: "Charger plus d'articles",
 
     // Cookie Banner
-    cookie_text: "Nous utilisons des cookies et de la télémétrie de base pour garantir une expérience de guide local parfaite et sécurisée sur le Portail GoMoroccoAI. En continuant, vous acceptez nos politiques.",
+    cookie_text: "Nous utilisons le stockage essentiel pour vos préférences. Les cookies facultatifs d'analyse ou de publicité ne sont utilisés qu'après votre choix Accepter, s'ils sont disponibles.",
     cookie_accept: "Accepter",
     cookie_policy: "Politique de Confidentialité",
 
@@ -373,9 +373,9 @@ export const translations = {
 
     // About Us Page (about.html)
     about_tourism_title: "À Propos de GoMoroccoAI",
-    about_p1: "GoMoroccoAI is an independent Morocco travel guide founded and edited by Abdelwahd Hani. It offers clear city guides, cultural context, practical checklists, and links to official information.",
-    about_p2: "Articles may use digital and AI-assisted drafting tools, but every published page is researched, reviewed, edited, and approved by Abdelwahd Hani. AI output is never treated as a source.",
-    about_p3: "Time-sensitive claims are checked against official sources and labelled with a verification date. Readers can send corrections directly to gomoroccoai.com.",
+    about_p1: "GoMoroccoAI est un guide de voyage indépendant consacré au Maroc, fondé et édité par Abdelwahd Hani. Il propose des guides de villes, des repères culturels, des listes pratiques et des liens officiels.",
+    about_p2: "Des outils numériques et d'aide à la rédaction peuvent être utilisés, mais chaque page publiée est recherchée, vérifiée, corrigée et approuvée par Abdelwahd Hani. Une réponse d'IA n'est jamais utilisée comme source.",
+    about_p3: "Les informations susceptibles de changer sont vérifiées auprès de sources officielles et datées. Envoyez vos corrections à gomoroccoai@gmail.com.",
     about_offer_title: "Ce Que Nous Offrons",
     about_card1_title: "Découvrir les Villes",
     about_card1_desc: "Visitez nos répertoires méticuleusement organisés des destinations marocaines, des médinas impériales historiques comme Marrakech aux cités bleutées et paisibles de Chefchaouen.",
@@ -426,7 +426,7 @@ export const translations = {
     privacy_h2_3: "3. Intégrations de tiers",
     privacy_p3: "Nos pages exploitent des services externes standards tels que des icônes Lucide et des images Unsplash. Ces réseaux CDN partenaires peuvent auditer les accès techniques de manière générale sans collecter d'informations nominatives sensibles.",
     privacy_h2_4: "4. Contact",
-    privacy_p4: "Pour toute question relative à la protection de vos données locales, écrivez-nous à privacy@moroccotourism.ma.",
+    privacy_p4: "Pour toute question ou demande relative à la vie privée, écrivez à gomoroccoai@gmail.com.",
 
     // Terms of Service Page (terms.html)
     terms_title_header: "Conditions d'Utilisation",

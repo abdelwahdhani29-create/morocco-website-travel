@@ -10,14 +10,14 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/site.webmanifest" />
-    <title>Interactive AI Trip Planner • GoMoroccoAI</title>
+    <title>Interactive Morocco Trip Planner • GoMoroccoAI</title>
     <meta name="description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
     
     <!-- Canonical link -->
     <link rel="canonical" href="https://gomoroccoai.com/trip-planner.html" />
 
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Interactive AI Trip Planner • GoMoroccoAI" />
+    <meta property="og:title" content="Interactive Morocco Trip Planner • GoMoroccoAI" />
     <meta property="og:description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
     <meta property="og:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80" />
     <meta property="og:url" content="https://gomoroccoai.com/trip-planner.html" />
@@ -25,7 +25,7 @@
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Interactive AI Trip Planner • GoMoroccoAI" />
+    <meta name="twitter:title" content="Interactive Morocco Trip Planner • GoMoroccoAI" />
     <meta name="twitter:description" content="Generate bespoke travel itineraries across Morocco's imperial cities, golden coastal shores, and pristine desert landscapes using our smart recommendation tool." />
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80" />
 
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     
     <!-- Lucide icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.468.0"></script>
     
     <style>
       /* Page specific enhancements */
@@ -503,7 +503,7 @@
             Your Bespoke Blueprint Awaits
           </h3>
           <p style="color: var(--color-charcoal-light); font-size: 15px; max-width: 480px; margin: 0 auto 28px auto; line-height: 1.6;" id="placeholder-desc">
-            Define your travel dates, maximum budget cap, and favorite activities. Our smart localized scoring router is ready to assemble an optimal itinerary!
+            Choose your dates, budget and interests to create a suggested itinerary. Prices are estimates, not live quotes, and should be verified before booking.
           </p>
           
           <div style="border-top: 1px solid var(--color-border); padding-top: 24px; display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
@@ -620,13 +620,13 @@
           btn_generating_text: "Plotting Itinerary...",
           placeholder_ribbon: "Beta Engine",
           placeholder_title: "Your Bespoke Blueprint Awaits",
-          placeholder_desc: "Define your travel dates, maximum budget cap, and favorite activities. Our smart localized scoring router is ready to assemble an optimal itinerary!",
+          placeholder_desc: "Choose your dates, budget and interests to create a suggested itinerary. Prices are estimates, not live quotes, and should be verified before booking.",
           feat_custom: "Custom Budgeting",
           feat_scoring: "Scoring Match Algorithm",
           feat_itinerary: "Instant Day Timeline",
           flight_title: "Flight Advisory Note",
-          flight_p1: "Direct flights from",
-          flight_p2: "to Morocco typically require approx.",
+          flight_p1: "Live flight prices from",
+          flight_p2: "are not calculated here.",
           time_flow_hdr: "Your Day-by-Day Journey",
           financial_hdr: "Estimated Financial Breakdown",
           hotel_auto_downgrade: "💡 Auto-adjusted to budget lodging rates to fit inside your spending boundaries!",
@@ -664,15 +664,15 @@
           lbl_interests: "Style de Voyage & Intérêts",
           btn_generate_plan: "Générer mon Itinéraire",
           btn_generating_text: "Calcul de l'itinéraire...",
-          placeholder_ribbon: "Moteur IA Bêta",
+          placeholder_ribbon: "Planificateur interactif",
           placeholder_title: "Votre Plan Sur-Mesure est Prêt",
           placeholder_desc: "Indiquez votre point de départ, vos dates idéales ainsi que le budget envisagé pour que notre algorithme vous dresse la route parfaite !",
           feat_custom: "Planification Financière",
           feat_scoring: "Scoring par Centres d'Intérêt",
           feat_itinerary: "Ligne Temporelle Directe",
           flight_title: "Avis sur les Vols Aériens",
-          flight_p1: "Les vols directs depuis",
-          flight_p2: "vers le Maroc requièrent en moyenne",
+          flight_p1: "Les prix en direct des vols depuis",
+          flight_p2: "ne sont pas calculés ici.",
           time_flow_hdr: "Le Déroulement de Votre Voyage",
           financial_hdr: "Estimation du Budget Prévisionnel",
           hotel_auto_downgrade: "💡 Adaptation automatique aux tarifs économiques pour correspondre à votre budget maximum !",
@@ -918,8 +918,7 @@
         const checkedInterests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(cb => cb.value);
 
         // 1. Flight Advisory Note custom calculation (1 EUR = approx 1.10 USD)
-        const avgFlightCost = currency === 'EUR' ? 220 : 250;
-        const flightMsg = `${t('flight_p1')} <strong>${departureLocation}</strong> ${t('flight_p2')} <strong>${symbol}${avgFlightCost}</strong>. ${t('sec_warning')}`;
+        const flightMsg = `${t('flight_p1')} <strong>${departureLocation}</strong> ${t('flight_p2')} ${t('sec_warning')}`;
         document.getElementById('flight-description').innerHTML = flightMsg;
 
         // 2. Score cities based on custom checked interest tags

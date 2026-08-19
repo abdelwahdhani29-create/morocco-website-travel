@@ -4,6 +4,7 @@ export const postMoroccoCostOfTravel = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29zdCUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
   date: "2026-07-22",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"
@@ -532,7 +533,7 @@ export const postMoroccoCostOfTravel = {
       <h3>Séjour 10 Jours Gamme Moyenne (Couple / Amis)</h3>
       <p><strong>Budget total estimé : 1 000 € à 1 500 € (11 000 à 16 000 MAD) par personne.</strong><br />Riads de charme avec petit-déjeuner, dîners en terrasses, TGV, excursion de 3 jours au Sahara, guides officiels et musées. À combiner avec notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">Itinéraire Ultime de 10 Jours au Maroc</a>.</p>
 
-      <p>Pour calculer un budget personnalisé selon votre rythme et vos dates, utilisez notre <a href="/trip-planner.html" class="blog-internal-link">Planificateur IA GoMoroccoAI</a> ou explorez notre <a href="/cities.html" class="blog-internal-link">Annuaire des Villes du Maroc</a>.</p>
+      <p>Pour calculer un budget personnalisé selon votre rythme et vos dates, utilisez notre <a href="/trip-planner.html" class="blog-internal-link">Planificateur interactif GoMoroccoAI</a> ou explorez notre <a href="/cities.html" class="blog-internal-link">Annuaire des Villes du Maroc</a>.</p>
 
       <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière mise à jour : Juillet 2026 | Tarifs indicatifs sujets aux variations saisonnières au Maroc.</p>
     `

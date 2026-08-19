@@ -145,7 +145,7 @@ const translations = {
     proverb_label: "Sagesse Marocaine",
 
     credit: "GoMoroccoAI Explorer • Portail de découverte culturelle réalisé avec soin.",
-    planner_nav: "Planificateur IA"
+    planner_nav: "Planificateur interactif"
   }
 };
 

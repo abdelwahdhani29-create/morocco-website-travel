@@ -4,6 +4,7 @@ export const postWorldCup2026 = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
   date: "2026-07-04",
+  lastUpdated: "2026-08-19",
   categories: {
     en: "Culture & Events",
     fr: "Culture & Événements"
@@ -21,7 +22,7 @@ export const postWorldCup2026 = {
     fr: "Parcours du Maroc à la Coupe du Monde 2026 : Comment les Lions de l'Atlas inspirent le tourisme avant 2030"
   },
   excerpt: {
-    en: "Morocco's Atlas Lions are lighting up the World Cup 2026. Discover why millions of football fans around the globe are falling for Morocco — and why visiting before the 2030 World Cup is the ultimate travel opportunity.",
+    en: "Morocco reached the 2026 World Cup quarter-finals before a 2-0 defeat to France. Here is the verified tournament record and what it means before 2030.",
     fr: "Les Lions de l'Atlas brillent au Mondial 2026. Découvrez pourquoi des millions de fans de football craquent pour le Maroc — et pourquoi visiter le Royaume avant la Coupe du Monde 2030 est une opportunité unique."
   },
   metaTitle: {
@@ -29,7 +30,7 @@ export const postWorldCup2026 = {
     fr: "Maroc Coupe du Monde 2026 : Visiter avant 2030"
   },
   metaDescription: {
-    en: "Morocco's Atlas Lions are lighting up the World Cup 2026. Discover why football fans are falling for Morocco — and why to visit before 2030.",
+    en: "Morocco reached the 2026 World Cup quarter-finals before a 2-0 defeat to France. Read the verified record and the tourism context before 2030.",
     fr: "Les Lions de l'Atlas brillent au Mondial 2026. Découvrez pourquoi les fans de foot craquent pour le Maroc — et pourquoi y voyager avant 2030."
   },
   faqs: [
@@ -39,8 +40,8 @@ export const postWorldCup2026 = {
         fr: "Le Maroc a-t-il remporté la Coupe du Monde 2026 ?"
       },
       answer: {
-        en: "No. As of this writing, the tournament is still in progress. Morocco has reached the quarterfinals and will play the winner of France vs. Paraguay on July 9 in Boston.",
-        fr: "Non. Au moment de la rédaction de cet article, le tournoi est toujours en cours. Le Maroc a atteint les quarts de finale et affrontera le vainqueur du match France - Paraguay le 9 juillet à Boston."
+        en: "Morocco reached the quarter-finals, where France won 2-0 on July 9. The tournament ended on July 19, 2026.",
+        fr: "Le Maroc a atteint les quarts de finale, où la France s'est imposée 2-0 le 9 juillet. Le tournoi s'est terminé le 19 juillet 2026."
       }
     },
     {
@@ -117,6 +118,7 @@ export const postWorldCup2026 = {
   content: {
     en: `
       <p class="blog-lead">There's a particular sound that fills the streets of <a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a> and <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> when Morocco scores. Car horns. Drums. Strangers hugging strangers. It happened again on July 4, when the Atlas Lions beat co-hosts Canada 3-0 in Houston to reach the quarterfinals of the 2026 FIFA World Cup. For a few hours, the whole country stopped.</p>
+      <p><strong>Verified August 19, 2026:</strong> FIFA's official reports confirm Morocco's <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-morocco-match-report-highlights" target="_blank" rel="noopener noreferrer" class="blog-external-link">3-0 win over Canada</a> and its <a href="https://www.fifa.com/en/tournaments/mens/worldcup/2026/articles/knockout-stage-match-schedule-bracket" target="_blank" rel="noopener noreferrer" class="blog-external-link">2-0 quarter-final defeat to France</a>. The tournament has concluded; this page no longer presents it as live coverage.</p>
 
       <p>If you've landed on this page because you searched "Morocco World Cup 2026," you're probably one of millions of football fans around the world who have started paying close attention to a country you may never have thought much about before. That's the story we want to tell here — not just what's happening on the pitch, but why so many of those same fans are now booking flights to <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, browsing riads in <a href="/city/fez.html" class="blog-internal-link">Fez</a>, and planning trips to the Sahara.</p>
 
@@ -137,7 +139,7 @@ export const postWorldCup2026 = {
             <tbody>
               <tr style="border-bottom: 1px solid var(--color-border);">
                 <td style="padding: 10px 12px; font-weight: 700; color: var(--color-charcoal);">Current Stage</td>
-                <td style="padding: 10px 12px; color: var(--color-charcoal-light);">Quarterfinals (World Cup 2026 still in progress)</td>
+                <td style="padding: 10px 12px; color: var(--color-charcoal-light);">Quarterfinals (Quarter-finals)</td>
               </tr>
               <tr style="border-bottom: 1px solid var(--color-border);">
                 <td style="padding: 10px 12px; font-weight: 700; color: var(--color-charcoal);">Group Stage</td>
@@ -171,7 +173,7 @@ export const postWorldCup2026 = {
           </table>
         </div>
         <p style="margin: 14px 0 0 0; font-size: 13px; font-style: italic; color: var(--color-charcoal-light);">
-          Note: The 2026 FIFA World Cup is still underway at the time of writing. This article reflects confirmed results only and will not predict outcomes of matches that haven't been played yet.
+          Verification note: the tournament ended on July 19, 2026. The results below are linked to FIFA's official match reports.
         </p>
       </div>
 
@@ -183,13 +185,13 @@ export const postWorldCup2026 = {
       <p>There's also something deeper going on. The Atlas Lions squad is filled with players who grew up in France, Spain, Belgium, and the Netherlands, sons and daughters of Moroccan families who left home decades ago. Watching them wear the Moroccan crest connects diaspora communities across Europe back to Morocco, and it puts a human face on the country for millions of neutral fans who are simply drawn to a great underdog story.</p>
 
       <h2>Morocco's Performance at the FIFA World Cup 2026 — The Story So Far</h2>
-      <p>It's important to be clear here: the 2026 World Cup is still being played. Nobody knows yet how far Morocco will go this time. What we do know, and can report accurately, is how the Atlas Lions got to where they are right now.</p>
+      <p>Morocco's campaign is complete. The team reached the quarter-finals and was eliminated by France, 2-0, on July 9. The summary below records confirmed results rather than predictions.</p>
       
       <ul>
         <li><strong>Group Stage (Group C):</strong> Morocco was drawn into a tough group alongside five-time champions Brazil, Scotland, and World Cup debutants Haiti. The team opened with a hard-fought 1-1 draw against Brazil, then beat Scotland 1-0, before closing the group stage with a 4-2 win over Haiti. Morocco finished second in the group, just behind Brazil on goal difference, collecting seven points from three matches without a single loss.</li>
         <li><strong>Round of 32:</strong> Morocco faced the Netherlands in a match that went right down to the wire. Trailing late, the Atlas Lions found a dramatic 91st-minute equalizer to force the game to 1-1, then held their nerve to win the penalty shootout 3-2 and advance.</li>
         <li><strong>Round of 16:</strong> On July 4, Morocco faced co-host Canada in Houston. A tense, physical first half ended scoreless, but Morocco came alive after the break. Midfielder Azzedine Ounahi scored twice, and Soufiane Rahimi added a third in stoppage time, sealing a 3-0 win. The result made Morocco the first African team in history to reach the quarterfinals in back-to-back World Cups.</li>
-        <li><strong>What's Next:</strong> Morocco will play the winner of France and Paraguay in the quarterfinals on July 9 in Boston. As of this writing, that match has not yet been played, so we won't speculate on the outcome — only note that a country of roughly 37 million people has once again put itself among the final eight teams on the planet.</li>
+        <li><strong>What's Next:</strong> Morocco faced France in Boston on July 9 and was eliminated after a 2-0 defeat. FIFA confirmed Morocco as the first African nation to reach the World Cup quarter-finals twice.</li>
       </ul>
 
       <p>Whatever happens from here, Morocco has already delivered one of the most talked-about runs of the tournament, and its football story continues to write itself in real time.</p>
@@ -283,7 +285,7 @@ export const postWorldCup2026 = {
       </ul>
 
       <h2>Why This Moment Matters</h2>
-      <p>Right now, a country of climbers, weavers, fishermen, and football fanatics is holding the attention of the entire football world. The Atlas Lions haven't finished their 2026 story yet, and however the quarterfinal in Boston goes, Morocco has already reminded everyone why it captured hearts in 2022. That attention is a gift, and it comes with an invitation: come see the place behind the passion, before the rest of the world does the same in 2030.</p>
+      <p>Right now, a country of climbers, weavers, fishermen, and football fanatics is holding the attention of the entire football world. The Atlas Lions finished their 2026 campaign in the quarter-finals after a 2-0 defeat to France, Morocco has already reminded everyone why it captured hearts in 2022. That attention is a gift, and it comes with an invitation: come see the place behind the passion, before the rest of the world does the same in 2030.</p>
 
       <p>Whether you're chasing the next match highlights or already picturing yourself watching the sunset over the dunes near Merzouga, our comprehensive guides are the best place to start planning your own trip — while the crowds are still smaller and the welcome is just as big.</p>
 
@@ -301,6 +303,7 @@ export const postWorldCup2026 = {
     `,
     fr: `
       <p class="blog-lead">Il y a un bruit particulier qui résonne dans les rues de <a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a> et de <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> lorsque le Maroc marque un but. Klaxons, tambours, inconnus qui s'enlacent spontanément. C'est exactement ce qui s'est produit le 4 juillet, lorsque les Lions de l'Atlas ont battu le pays co-hôte, le Canada, 3-0 à Houston pour se qualifier en quarts de finale de la Coupe du Monde de la FIFA 2026. Pendant quelques heures, tout un pays a retenu son souffle avant de chavirer de bonheur.</p>
+      <p><strong>Vérifié le 19 août 2026 :</strong> les rapports officiels de la FIFA confirment la <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-morocco-match-report-highlights" target="_blank" rel="noopener noreferrer" class="blog-external-link">victoire 3-0 contre le Canada</a> et la <a href="https://www.fifa.com/en/tournaments/mens/worldcup/2026/articles/knockout-stage-match-schedule-bracket" target="_blank" rel="noopener noreferrer" class="blog-external-link">défaite 2-0 face à la France</a> en quart de finale.</p>
 
       <p>Si vous êtes arrivé sur cette page après avoir cherché « Maroc Coupe du Monde 2026 », vous faites probablement partie des millions de passionnés de football à travers le monde qui ont commencé à s'intéresser de très près à un pays auquel ils ne pensaient peut-être pas auparavant. C'est l'histoire que nous voulons raconter ici — pas seulement ce qui se passe sur les terrains de football, mais pourquoi tant de ces mêmes supporters réservent aujourd'hui des vols pour <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, explorent les riads de <a href="/city/fez.html" class="blog-internal-link">Fès</a> et planifient des expéditions dans le Sahara.</p>
 
@@ -321,7 +324,7 @@ export const postWorldCup2026 = {
             <tbody>
               <tr style="border-bottom: 1px solid var(--color-border);">
                 <td style="padding: 10px 12px; font-weight: 700; color: var(--color-charcoal);">Stade Actuel</td>
-                <td style="padding: 10px 12px; color: var(--color-charcoal-light);">Quarts de finale (Coupe du Monde 2026 en cours)</td>
+                <td style="padding: 10px 12px; color: var(--color-charcoal-light);">Quarts de finale</td>
               </tr>
               <tr style="border-bottom: 1px solid var(--color-border);">
                 <td style="padding: 10px 12px; font-weight: 700; color: var(--color-charcoal);">Phase de Groupes</td>
@@ -355,7 +358,7 @@ export const postWorldCup2026 = {
           </table>
         </div>
         <p style="margin: 14px 0 0 0; font-size: 13px; font-style: italic; color: var(--color-charcoal-light);">
-          Remarque : La Coupe du Monde de la FIFA 2026 est toujours en cours au moment de la rédaction. Cet article reflète uniquement les résultats confirmés et ne prédit pas l'issue des futurs matchs.
+          Note de vérification : le tournoi s'est terminé le 19 juillet 2026. Les résultats ci-dessous renvoient aux comptes rendus officiels de la FIFA.
         </p>
       </div>
 
@@ -373,7 +376,7 @@ export const postWorldCup2026 = {
         <li><strong>Phase de Groupes (Groupe C) :</strong> Le Maroc est tombé dans une poule exigeante aux côtés du Brésil (quintuple champion du monde), de l'Écosse et d'Haïti. L'équipe a débuté par un match nul très disputé (1-1) face au Brésil, avant d'emporter une victoire précieuse 1-0 contre l'Écosse et de conclure par un triomphe 4-2 face à Haïti. Invaincu avec 7 points, le Maroc s'est classé 2ᵉ à la différence de buts.</li>
         <li><strong>Seizezièmes de finale :</strong> Le Maroc a affronté les Pays-Bas dans un duel à suspense. Menés au score, les Lions de l'Atlas ont arraché l'égalisation à la 91ᵉ minute (1-1) avant d'emporter une séance de tirs au but haletante (3-2).</li>
         <li><strong>Huitièmes de finale :</strong> Le 4 juillet à Houston, face au Canada co-hôte du tournoi, après une première mi-temps physique et tactique sans but, le Maroc a pris le contrôle total au retour des vestiaires. Le milieu Azzedine Ounahi s'est offert un doublé splendide, complété par un but en temps additionnel de Soufiane Rahimi pour une victoire 3-0 nette et sans bavure.</li>
-        <li><strong>La suite du tournoi :</strong> Le Maroc défiera le vainqueur de France - Paraguay en quart de finale le 9 juillet au stade de Boston. Quel que soit le résultat de ce choc à venir, une nation d'environ 37 millions d'habitants figure à nouveau parmi les huit meilleures équipes du monde.</li>
+        <li><strong>Quart de finale :</strong> La France a battu le Maroc 2-0 à Boston le 9 juillet. La FIFA a ainsi confirmé le parcours du Maroc parmi les huit dernières équipes.</li>
       </ul>
 
       <p>Quoi qu'il advienne désormais, le Maroc a déjà signé l'un des parcours les plus impressionnants et admirés du tournoi 2026.</p>

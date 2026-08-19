@@ -100,19 +100,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad Diana",
+        "name": "Marrakech: Budget guesthouse",
         "price_approx": 45,
-        "amenity": "Traditional patio, dip pool & tea greeting"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad Kniza",
+        "name": "Marrakech: Mid-range riad or hotel",
         "price_approx": 120,
-        "amenity": "Authentic 18th-century riad, exceptional breakfast"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "La Mamounia",
+        "name": "Marrakech: Luxury hotel or resort",
         "price_approx": 650,
-        "amenity": "World-famous luxury palace hotel with legendary gardens and spa"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -247,19 +247,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hostel Baraka",
+        "name": "Chefchaouen: Budget guesthouse",
         "price_approx": 25,
-        "amenity": "Rooftop with mountain views"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Lina Ryad & Spa",
+        "name": "Chefchaouen: Mid-range riad or hotel",
         "price_approx": 95,
-        "amenity": "Indoor heated pool & spa"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Riad Cherifa",
+        "name": "Chefchaouen: Luxury hotel or resort",
         "price_approx": 180,
-        "amenity": "Luxurious Andalusian design"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -394,19 +394,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad Verus",
+        "name": "Fez: Budget guesthouse",
         "price_approx": 35,
-        "amenity": "Vibrant roof terrace with 360-degree medina views"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad Dar Bensouda",
+        "name": "Fez: Mid-range riad or hotel",
         "price_approx": 85,
-        "amenity": "Restored 16th-century palace with pool and courtyard"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Hotel Sahrai",
+        "name": "Fez: Luxury hotel or resort",
         "price_approx": 220,
-        "amenity": "Luxury design hotel with infinity pool overlooking ancient Fez"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -541,19 +541,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad Zahra",
+        "name": "Essaouira: Budget guesthouse",
         "price_approx": 40,
-        "amenity": "Family riad close to the main beach"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Heure Bleue Palais",
+        "name": "Essaouira: Mid-range riad or hotel",
         "price_approx": 150,
-        "amenity": "Rooftop pool & historic courtyard"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Le Jardin des Douars",
+        "name": "Essaouira: Luxury hotel or resort",
         "price_approx": 240,
-        "amenity": "Luxury botanical sanctuary guest house"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -688,19 +688,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hotel Melliber",
+        "name": "Casablanca: Budget guesthouse",
         "price_approx": 40,
-        "amenity": "Near Hassan II Mosque"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Mövenpick Hotel",
+        "name": "Casablanca: Mid-range riad or hotel",
         "price_approx": 110,
-        "amenity": "Rooftop pool & city views"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Four Seasons Casablanca",
+        "name": "Casablanca: Luxury hotel or resort",
         "price_approx": 450,
-        "amenity": "Oceanfront luxury resort"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -835,19 +835,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Nord-Pinus Tanger",
+        "name": "Tangier: Budget guesthouse",
         "price_approx": 50,
-        "amenity": "Kasbah location with ocean views"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Hotel El Minzah",
+        "name": "Tangier: Mid-range riad or hotel",
         "price_approx": 130,
-        "amenity": "Historic 1930s hotel with gardens"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Fairmont Tazi Palace",
+        "name": "Tangier: Luxury hotel or resort",
         "price_approx": 400,
-        "amenity": "Palatial luxury hilltop resort"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "bestTime": {
@@ -923,19 +923,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Medina Social Club",
+        "name": "Rabat: Budget guesthouse",
         "price_approx": 30,
-        "amenity": "Restored medina guesthouse hosting regular art and music shows"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad Kalaa",
+        "name": "Rabat: Mid-range riad or hotel",
         "price_approx": 90,
-        "amenity": "1815-built traditional riad with heated pool and hammam"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Sofitel Jardin des Roses",
+        "name": "Rabat: Luxury hotel or resort",
         "price_approx": 260,
-        "amenity": "Luxurious property with sprawling gardens, spa, and pools"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1071,19 +1071,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Atlantic Hostel",
+        "name": "Agadir: Budget guesthouse",
         "price_approx": 18,
-        "amenity": "Beach-social vibe with affordable surfboard renting"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Hotel Timoulay & Spa",
+        "name": "Agadir: Mid-range riad or hotel",
         "price_approx": 70,
-        "amenity": "Boutique hotel with salted saltwater pool and organic spa"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Hyatt Regency Taghazout",
+        "name": "Agadir: Luxury hotel or resort",
         "price_approx": 250,
-        "amenity": "Stunning luxury oceanfront resort popular with pro surfers"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1220,19 +1220,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Cinema Riad",
+        "name": "Ouarzazate: Budget guesthouse",
         "price_approx": 32,
-        "amenity": "Movie-themed rooms with classic props, homemade clay tajines"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Dar Rita",
+        "name": "Ouarzazate: Mid-range riad or hotel",
         "price_approx": 65,
-        "amenity": "Cozy clay guesthouse with starry night-gazing rooftop deck"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Le Berbere Palace",
+        "name": "Ouarzazate: Luxury hotel or resort",
         "price_approx": 165,
-        "amenity": "5-star resort mimicking ancient clay castles with royal pools"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1367,19 +1367,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Desert Hotel Yasmina",
+        "name": "Merzouga: Budget guesthouse",
         "price_approx": 45,
-        "amenity": "Clay kasbah lodge directly beside sand dunes and small seasonal lake"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Luxury Desert Camp",
+        "name": "Merzouga: Mid-range riad or hotel",
         "price_approx": 110,
-        "amenity": "Comfortable canvas glamping with hot showers and fireside drumming"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Caravan by Habitas",
+        "name": "Merzouga: Luxury hotel or resort",
         "price_approx": 290,
-        "amenity": "Ultra-private desert eco-villas with meditation and yoga decks"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1514,19 +1514,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad Zahrea",
+        "name": "Meknes: Budget guesthouse",
         "price_approx": 38,
-        "amenity": "Cozy courtyard patio serving homebaked flatbreads and mint tea"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad D'Or",
+        "name": "Meknes: Mid-range riad or hotel",
         "price_approx": 75,
-        "amenity": "A plaster-carved ancient merchant house with a shallow pool"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Chateau Roslane",
+        "name": "Meknes: Luxury hotel or resort",
         "price_approx": 220,
-        "amenity": "Splendid resort framed by regional valleys, private gardens"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1661,19 +1661,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad El Reducto",
+        "name": "Tetouan: Budget guesthouse",
         "price_approx": 45,
-        "amenity": "Charming rebuilt Spanish consulate structure in Moorish tiles"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad Blanco",
+        "name": "Tetouan: Mid-range riad or hotel",
         "price_approx": 80,
-        "amenity": "Peaceful white-themed hotel with beautiful tearoom garden"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Banyan Tree Tamouda Bay",
+        "name": "Tetouan: Luxury hotel or resort",
         "price_approx": 450,
-        "amenity": "Ultra-luxury seaside private pool villas in M'diq district"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1809,19 +1809,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hotel National",
+        "name": "Al Hoceima: Budget guesthouse",
         "price_approx": 35,
-        "amenity": "Pleasant family-run hotel with sea views next to harbor griddle houses"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Mercure Quemado Resort",
+        "name": "Al Hoceima: Mid-range riad or hotel",
         "price_approx": 95,
-        "amenity": "Cliffside resort looking over Quemado bay, panoramic ocean windows"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Radisson Blu Resort",
+        "name": "Al Hoceima: Luxury hotel or resort",
         "price_approx": 180,
-        "amenity": "Bungalow resort nestled between cedar forests and pristine waves"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -1956,19 +1956,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hotel Chamonix",
+        "name": "Ifrane: Budget guesthouse",
         "price_approx": 45,
-        "amenity": "Alpine chalet style lodge with open fireplace and rich warm stews"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Farah Inn",
+        "name": "Ifrane: Mid-range riad or hotel",
         "price_approx": 85,
-        "amenity": "Splendid stone bungalows with pools, very warm during snowy seasons"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Michlifen Resort & Golf",
+        "name": "Ifrane: Luxury hotel or resort",
         "price_approx": 320,
-        "amenity": "Luxe alpine palace offering premier mountain spas and golf courses"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -2103,19 +2103,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Dakhla Club Guesthouse",
+        "name": "Dakhla: Budget guesthouse",
         "price_approx": 55,
-        "amenity": "Surfer-friendly bungalows with direct lagoon entry, board storage"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "PK25 Dakhla",
+        "name": "Dakhla: Mid-range riad or hotel",
         "price_approx": 120,
-        "amenity": "Eco-bungalows built on beachfront, glass doors onto kitesurf bays"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Dakhla Attitude",
+        "name": "Dakhla: Luxury hotel or resort",
         "price_approx": 280,
-        "amenity": "Luxe windsurf retreat below desert bluffs, beach dinners & spa"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -2251,19 +2251,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Riad Dar Mazagan",
+        "name": "El Jadida: Budget guesthouse",
         "price_approx": 40,
-        "amenity": "Cozy family-run riad inside old Portuguese fortress walls"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Riad Corail",
+        "name": "El Jadida: Mid-range riad or hotel",
         "price_approx": 75,
-        "amenity": "Oceanward-facing rooms with cool sea breezes and colorful tiling"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Mazagan Beach & Golf Resort",
+        "name": "El Jadida: Luxury hotel or resort",
         "price_approx": 280,
-        "amenity": "Massive 5-star ocean compound offering first-class golf spas"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -2399,19 +2399,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hotel L'Oasis",
+        "name": "Oujda: Budget guesthouse",
         "price_approx": 30,
-        "amenity": "Cozy traditional rooms with a simple breakfast and hospitable service"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Atlas Orient",
+        "name": "Oujda: Mid-range riad or hotel",
         "price_approx": 70,
-        "amenity": "Modern hotel with a nice swimming pool and central location next to the medina"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Terminus City Center",
+        "name": "Oujda: Luxury hotel or resort",
         "price_approx": 130,
-        "amenity": "Upscale contemporary hotel with spa amenities, fine dining, and panoramic views"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [
@@ -2546,19 +2546,19 @@
     ],
     "hotels": {
       "budget": {
-        "name": "Hotel Paris",
+        "name": "Beni Mellal: Budget guesthouse",
         "price_approx": 30,
-        "amenity": "Simple classic rooms near the center of town with pleasant local hospitality"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "mid_range": {
-        "name": "Hotel Tazarkount",
+        "name": "Beni Mellal: Mid-range riad or hotel",
         "price_approx": 65,
-        "amenity": "Traditional spa-resort style lodging surrounded by beautiful olive tree estates"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       },
       "luxury": {
-        "name": "Hotel Chems",
+        "name": "Beni Mellal: Luxury hotel or resort",
         "price_approx": 110,
-        "amenity": "Luxe hotel with excellent swimming pools, fine dining restaurants, and lush garden grounds"
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms on the property or booking provider website before reserving."
       }
     },
     "transportation": [

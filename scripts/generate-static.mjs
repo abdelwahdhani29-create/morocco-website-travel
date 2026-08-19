@@ -206,6 +206,29 @@ async function run() {
       imageUrl: coverImage
     });
 
+    const citySchema = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'TouristDestination',
+          name,
+          description,
+          image: coverImage,
+          url: canonicalUrl,
+          containedInPlace: { '@type': 'Country', name: 'Morocco' }
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gomoroccoai.com/' },
+            { '@type': 'ListItem', position: 2, name: 'Cities', item: 'https://gomoroccoai.com/cities.html' },
+            { '@type': 'ListItem', position: 3, name, item: canonicalUrl }
+          ]
+        }
+      ]
+    };
+    html = html.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(citySchema).replace(/</g, '\\u003c')}</script>\n</head>`);
+
     // Bake city title, overview, background image, and display grid
     html = html.replace(
       /id="city-title-display"[^>]*>.*?<\/h1>/s,
@@ -542,7 +565,7 @@ async function run() {
       imageUrl: imageStr
     });
 
-    const verifiedDate = '2026-08-19';
+    const updatedDate = post.lastUpdated || post.date;
     const articleSchema = {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -550,7 +573,7 @@ async function run() {
       description: description,
       image: [imageStr],
       datePublished: dateStr,
-      dateModified: verifiedDate,
+      dateModified: updatedDate,
       author: { '@type': 'Person', name: 'Abdelwahd Hani' },
       publisher: { '@type': 'Organization', name: 'GoMoroccoAI', url: 'https://gomoroccoai.com/' },
       mainEntityOfPage: canonicalUrl
@@ -605,7 +628,7 @@ html = html.replace(
     );
     html = html.replace(
       /id="article-author-subtitle"[^>]*>.*?<\/p>/s,
-      () => `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published ${escapeAttr(dateStr)} · Last verified ${verifiedDate}</p>`
+      () => `id="article-author-subtitle" style="font-size: 12px; color: var(--color-charcoal-light); margin: 0;">Published ${escapeAttr(dateStr)} · Last updated ${escapeAttr(updatedDate)}</p>`
     );
 
     const blogFilePath = path.join(distBlogDir, `${id}.html`);
