@@ -26,6 +26,19 @@ export default defineConfig(() => {
           planner: path.resolve(__dirname, 'trip-planner.html'),
           404: path.resolve(__dirname, '404.html'),
         },
+        output: {
+          manualChunks(id) {
+            if (!id.includes('/js/posts/')) return undefined;
+            const filename = path.basename(id);
+            const planning = ['visa', 'cash', 'cost', 'itinerary', 'best-places'];
+            const practical = ['wear', 'safe', 'safety', 'best-time', 'travel-tips'];
+            const news = ['world-cup', 'tourism-records', 'fastest-growing', 'casablanca'];
+            if (planning.some(key => filename.includes(key))) return 'posts-planning';
+            if (practical.some(key => filename.includes(key))) return 'posts-practical';
+            if (news.some(key => filename.includes(key))) return 'posts-current';
+            return 'posts-destinations';
+          },
+        },
       },
     },
     server: {

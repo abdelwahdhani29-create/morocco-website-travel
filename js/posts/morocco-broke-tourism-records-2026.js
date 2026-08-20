@@ -6,7 +6,7 @@ export const postMoroccoBrokeRecords2026 = {
   cityId: null,
   image: "https://images.pexels.com/photos/18487344/pexels-photo-18487344.jpeg?auto=compress&cs=tinysrgb&w=1470&q=80",
   date: "2026-07-06",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Trends & Insights",
     fr: "Tendances & Perspectives"

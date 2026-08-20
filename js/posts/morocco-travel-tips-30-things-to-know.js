@@ -4,7 +4,7 @@ export const postMoroccoTravelTips30Things = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=1470&auto=format&fit=crop",
   date: "2026-07-07",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
@@ -14,8 +14,8 @@ export const postMoroccoTravelTips30Things = {
     fr: "Abdelwahd Hani"
   },
   readTime: {
-    en: "15 min read",
-    fr: "15 min de lecture"
+    en: "6 min read",
+    fr: "6 min de lecture"
   },
   title: {
     en: "30 Essential Morocco Travel Tips: First-Timer Gateway Checklist",
@@ -129,6 +129,28 @@ export const postMoroccoTravelTips30Things = {
         <li><strong>Exchange or spend remaining dirhams lawfully</strong> and keep enough for the final transfer.</li>
       </ol>
 
+      <h2>Ten practical details first-time visitors often miss</h2>
+      <ol start="21">
+        <li><strong>Carry small notes and coins:</strong> they are useful for cafés, public toilets, short taxi rides, and modest tips. Do not rely on a shopkeeper having change for a large banknote.</li>
+        <li><strong>Confirm taxi pricing before moving:</strong> ask for the meter in cities where one is used, or agree on the total fare before entering when a fixed fare applies.</li>
+        <li><strong>Buy a SIM only from an identifiable outlet:</strong> compare the current data package, keep the receipt, and ask the seller to confirm that mobile data works before you leave.</li>
+        <li><strong>Expect different weekend rhythms:</strong> Friday prayer time, public holidays, and Ramadan can affect small businesses and transport. Verify an important visit directly.</li>
+        <li><strong>Pack for temperature changes:</strong> even after a warm day, Atlantic evenings, mountain stops, and desert nights can feel cool. A light layer is useful in several seasons.</li>
+        <li><strong>Do not follow an unsolicited “guide”:</strong> use a licensed guide booked through your accommodation or a recognised operator when you want a guided medina visit.</li>
+        <li><strong>Ask before accepting a service:</strong> directions, photos, luggage help, or demonstrations may be offered for payment. Clarify whether there is a charge first.</li>
+        <li><strong>Keep medicine in original packaging:</strong> bring enough for the trip, carry a prescription for controlled medication, and check current customs guidance before departure.</li>
+        <li><strong>Choose drinking water according to local conditions:</strong> water quality and traveller tolerance vary. Ask your accommodation for current advice; sealed bottled water is a cautious option when uncertain.</li>
+        <li><strong>Leave a safety margin:</strong> return to your departure city the day before an early international flight when weather, road conditions, or long transfers could cause delays.</li>
+      </ol>
+
+      <h2>Official links to verify before departure</h2>
+      <ul>
+        <li><a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Accès Maroc</a> for entry and e-Visa eligibility.</li>
+        <li><a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages</a> for current train schedules and fares.</li>
+        <li><a href="https://www.onda.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONDA</a> for Moroccan airport information.</li>
+        <li>Your own government's Morocco travel advisory for current safety and health notices.</li>
+      </ul>
+
       <div class="blog-highlight"><strong>Use this page as a checklist, not a substitute for official information.</strong> Visa, safety, health, transport, and currency rules can change. Follow the linked specialist guides and primary sources for details.</div>
     `,
     fr: `
@@ -173,6 +195,28 @@ export const postMoroccoTravelTips30Things = {
         <li><strong>Conservez les reçus importants</strong> et respectez les règles douanières.</li>
         <li><strong>Utilisez ou échangez légalement les dirhams restants</strong> en gardant le nécessaire pour le dernier trajet.</li>
       </ol>
+
+      <h2>Dix détails souvent oubliés lors d'un premier séjour</h2>
+      <ol start="21">
+        <li><strong>Gardez de petites coupures</strong> pour les cafés, toilettes, petits trajets et pourboires raisonnables.</li>
+        <li><strong>Confirmez le prix du taxi :</strong> demandez le compteur lorsqu'il s'applique ou convenez du tarif total avant le départ.</li>
+        <li><strong>Achetez la carte SIM dans un point identifiable</strong> et vérifiez que les données fonctionnent avant de partir.</li>
+        <li><strong>Anticipez les changements d'horaires</strong> le vendredi, pendant les fêtes et durant le Ramadan.</li>
+        <li><strong>Prévoyez une couche légère :</strong> les soirées atlantiques, les montagnes et le désert peuvent être frais.</li>
+        <li><strong>Évitez les guides non sollicités</strong> et réservez un guide agréé par un hébergement ou un opérateur identifiable.</li>
+        <li><strong>Demandez si un service est payant</strong> avant d'accepter une aide, une photo ou une démonstration.</li>
+        <li><strong>Gardez les médicaments dans leur emballage d'origine</strong> avec l'ordonnance si nécessaire.</li>
+        <li><strong>Adaptez votre choix d'eau aux conditions locales :</strong> demandez conseil à l'hébergement ; l'eau capsulée reste une option prudente en cas de doute.</li>
+        <li><strong>Gardez une marge avant le vol retour</strong> lorsque votre dernière étape implique un long trajet.</li>
+      </ol>
+
+      <h2>Liens officiels à vérifier</h2>
+      <ul>
+        <li><a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Accès Maroc</a> pour les formalités d'entrée.</li>
+        <li><a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages</a> pour les trains.</li>
+        <li><a href="https://www.onda.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONDA</a> pour les aéroports.</li>
+        <li>Les conseils aux voyageurs de votre gouvernement pour la sécurité et la santé.</li>
+      </ul>
 
       <div class="blog-highlight"><strong>Cette page est une checklist et non une source officielle.</strong> Les règles de visa, sécurité, santé, transport et change peuvent évoluer.</div>
     `

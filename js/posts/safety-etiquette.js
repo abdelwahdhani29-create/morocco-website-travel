@@ -4,7 +4,7 @@ export const postSafetyEtiquette = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsJTIwZ3VpZGV8ZW58MHx8MHx8fDA%3D",
   date: "2026-06-29",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Tips",
     fr: "Conseils de Voyage"
@@ -14,8 +14,8 @@ export const postSafetyEtiquette = {
     fr: "Abdelwahd Hani"
   },
   readTime: {
-    en: "12 min read",
-    fr: "12 min de lecture"
+    en: "5 min read",
+    fr: "5 min de lecture"
   },
   title: {
     en: "Morocco Culture & Etiquette Guide: Social Norms, Customs & Respect",
@@ -40,8 +40,8 @@ export const postSafetyEtiquette = {
         fr: "Le Maroc est-il sûr pour une femme voyageant seule ?"
       },
       answer: {
-        en: "Yes, Morocco is generally safe for solo female travelers, but you will likely experience catcalling or persistent attention from street vendors. Dressing modestly (covering shoulders and knees), ignoring unwanted comments with confidence, and staying in well-populated areas after dark will help you avoid most issues.",
-        fr: "Oui, le Maroc est généralement sûr pour les voyageuses solo, mais l'insistance des vendeurs et les interpellations de rue sont fréquentes. S'habiller pudiquement, ignorer les remarques d'un air assuré et rester dans des zones fréquentées à la nuit tombée évite la majorité des désagréments."
+        en: "Many women travel independently in Morocco, but experiences vary and unwanted attention can occur. Review your government's current travel advisory, use reputable transport and accommodation, and avoid isolated or poorly lit areas at night. Our separate safety guide covers risk and emergency planning.",
+        fr: "De nombreuses femmes voyagent seules au Maroc, mais les expériences varient et des attentions non désirées peuvent survenir. Consultez les conseils aux voyageurs de votre gouvernement, choisissez des transports et hébergements identifiables et évitez les zones isolées ou mal éclairées la nuit."
       }
     },
     {
@@ -50,8 +50,8 @@ export const postSafetyEtiquette = {
         fr: "Peut-on boire l'eau du robinet au Maroc ?"
       },
       answer: {
-        en: "It is highly recommended to avoid tap water in Morocco. Stick to bottled water (ensure the seal is intact), and use it even for brushing your teeth. In high-end riads, tap water may be filtered, but bottled water is always the safest option.",
-        fr: "Il est vivement conseillé d'éviter l'eau du robinet au Maroc. Privilégiez l'eau minérale en bouteille capsulée (vérifiez que l'opercule est intact), y compris pour vous brosser les dents."
+        en: "Water quality and individual tolerance can vary by location. Ask your accommodation for current local advice. Sealed bottled or properly filtered water is a cautious option when you are uncertain, especially in remote areas.",
+        fr: "La qualité de l'eau et la tolérance individuelle varient selon les lieux. Demandez un avis local récent à votre hébergement. En cas de doute, notamment dans les zones isolées, choisissez de l'eau capsulée ou correctement filtrée."
       }
     },
     {
@@ -104,6 +104,15 @@ export const postSafetyEtiquette = {
       <h2>How to handle uncertainty</h2>
       <p>Customs differ between families, generations, cities, and rural communities. Observe what local people do, ask your host when unsure, and respond without defensiveness if someone corrects you. Courtesy matters more than perfect knowledge.</p>
 
+      <h2>Public affection, alcohol, and private boundaries</h2>
+      <p>Public behaviour is generally more reserved than in many European or North American destinations. Keep displays of affection discreet, especially in smaller communities and near religious sites. Alcohol is available in licensed venues, but drinking in the street or arriving intoxicated in a family setting is inappropriate. Never assume an invitation into a shop, workshop, or home creates an obligation to buy.</p>
+
+      <h2>Responsible visits to communities and markets</h2>
+      <p>Choose experiences that identify the guide or operator and explain where your payment goes. Avoid treating neighbourhoods as open-air sets: keep doorways clear, limit noise, and ask before entering a work area. When buying crafts, ask about materials and origin instead of repeating claims such as “handmade” or “cooperative” without evidence.</p>
+
+      <h2>Useful official context</h2>
+      <p>The <a href="https://www.constituteproject.org/constitution/Morocco_2011" target="_blank" rel="noopener noreferrer" class="blog-external-link">2011 Moroccan Constitution</a> recognises Arabic and Amazigh as official languages. For current security matters, consult your government's travel advisory rather than relying on cultural advice alone. For heritage context, use the <a href="https://whc.unesco.org/en/statesparties/ma" target="_blank" rel="noopener noreferrer" class="blog-external-link">UNESCO Morocco profile</a>.</p>
+
       <div class="blog-highlight"><strong>Editorial scope:</strong> This page explains social etiquette. It intentionally excludes crime, emergency numbers, visa rules, packing lists, and detailed money guidance so each GoMoroccoAI guide answers a distinct travel question.</div>
     `,
     fr: `
@@ -133,6 +142,15 @@ export const postSafetyEtiquette = {
 
       <h2>En cas de doute</h2>
       <p>Observez les usages, demandez conseil à votre hôte et acceptez avec simplicité une éventuelle correction. La bonne volonté compte davantage qu'une connaissance parfaite des coutumes.</p>
+
+      <h2>Affection en public, alcool et limites privées</h2>
+      <p>Les comportements publics sont souvent plus réservés que dans certaines destinations européennes ou nord-américaines. Restez discret près des lieux religieux et dans les petites communautés. L'alcool est disponible dans des établissements autorisés, mais boire dans la rue ou se présenter ivre dans un cadre familial est inapproprié. Une invitation dans une boutique ou un atelier ne vous oblige jamais à acheter.</p>
+
+      <h2>Visites responsables des quartiers et marchés</h2>
+      <p>Choisissez des expériences qui identifient clairement le guide ou l'opérateur. Ne traitez pas les quartiers comme des décors : ne bloquez pas les portes, limitez le bruit et demandez avant d'entrer dans un espace de travail. Pour l'artisanat, posez des questions sur les matériaux et l'origine sans reprendre des affirmations non vérifiées.</p>
+
+      <h2>Contexte officiel utile</h2>
+      <p>La <a href="https://www.constituteproject.org/constitution/Morocco_2011" target="_blank" rel="noopener noreferrer" class="blog-external-link">Constitution marocaine de 2011</a> reconnaît l'arabe et l'amazighe comme langues officielles. Pour la sécurité, consultez les conseils aux voyageurs de votre gouvernement. Pour le patrimoine, utilisez la <a href="https://whc.unesco.org/en/statesparties/ma" target="_blank" rel="noopener noreferrer" class="blog-external-link">fiche UNESCO du Maroc</a>.</p>
 
       <div class="blog-highlight"><strong>Périmètre éditorial :</strong> cette page traite uniquement des usages sociaux et exclut volontairement la sécurité, les visas, les listes de bagages et les conseils financiers détaillés.</div>
     `

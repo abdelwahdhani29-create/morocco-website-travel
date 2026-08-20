@@ -124,7 +124,7 @@ export const translations = {
     
     amazigh_title: "Amazigh Heritage",
     amazigh_subtitle: "The Foundation of Moroccan Identity",
-    amazigh_text1: "The Amazigh (meaning 'free people') are the indigenous inhabitants of Morocco, with archaeological roots extending back thousands of years. Their resilient mountain spirit, language, and worldview form the absolute bedrock of Moroccan society.",
+    amazigh_text1: "Amazigh communities have deep roots across Morocco and North Africa. Amazigh languages, arts, agricultural knowledge, and regional traditions are important parts of Morocco's diverse cultural life; practices and identities vary between communities.",
     amazigh_text2: "This rich culture is proudly preserved through dynamic customs, unique regional Amazigh dialects (Tachelhit, Tamazight, Tarifit), and exquisite artifacts. From the geometric protection symbols stamped in crimson clay pottery to stunning tribal silver talismans adorned with amber and real coral, and the traditional flat-weave tribal carpets woven with local wool, Amazigh craftsmanship represents an unbroken legacy of historical artistry.",
 
     andalusian_title: "Arab & Andalusian Artistry",

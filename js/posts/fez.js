@@ -4,7 +4,7 @@ export const postFez = {
   cityId: "fez",
   image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-05",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Gastronomy",
     fr: "Gastronomie"

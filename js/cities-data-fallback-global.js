@@ -153,7 +153,7 @@ window.citiesDataFallback = [
     "region": "Tanger-Tetouan-Al Hoceima",
     "cover_image": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?auto=format&fit=crop&w=1200&q=80",
     "suggested_days": 2,
-    "overview": "Chefchaouen, nestled in the fold of the dramatic Rif Mountains between two horn-shaped peaks, is famed worldwide for its dreamy powder-blue washed streets. Founded in 1471 as a mountain fortress for Andalusian exiles, the town offers a tranquil contrast to Morocco's fast-paced imperial cities. Its distinctive blue paint—originally applied by Jewish refugees in the 1930s symbolizing heaven—lines peaceful staircases, painted doorways, and mountain-view terraces. Chefchaouen attracts nature enthusiasts, photographers, and travelers seeking mountain air, hiking trails, and a relaxed, bohemian rhythm.",
+    "overview": "Chefchaouen, nestled in the fold of the Rif Mountains between two horn-shaped peaks, is famed for its powder-blue streets. Founded in 1471 as a mountain fortress that later received Andalusian exiles, the town offers a quieter contrast to Morocco's larger imperial cities. Several explanations are given for the blue paint—including religious symbolism, cooling, and insect deterrence—but no single origin is universally established. The painted staircases, doorways, terraces, nearby trails, and mountain air attract photographers, hikers, and visitors seeking a slower rhythm.",
     "cultural_note": "Chefchaouen is known for its quiet, slow-paced atmosphere. It is custom to politely ask permission before taking close-up photos of residents or their private home doorways. Enjoying tea slowly on public square terraces is a local way of life.",
     "attractions": [
       {
@@ -329,7 +329,7 @@ window.citiesDataFallback = [
       },
       {
         "name": "Marinid Tombs Sunset Viewpoint",
-        "description": "Ruined 14th-century royal tombs perched on a hill above the Medina ramparts. Offers the ultimate panoramic sunset view over the sprawling sea of 9,000 minarets, courtyards, and rooftops of Fes el-Bali.",
+        "description": "Ruined 14th-century royal tombs perched on a hill above the Medina ramparts. The site offers a broad sunset view over the dense network of lanes, courtyards, rooftops, and minarets of Fes el-Bali.",
         "duration": "1 hour",
         "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1200&auto=format&fit=crop"
       }

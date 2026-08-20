@@ -4,7 +4,7 @@ export const postWorldCup2026 = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
   date: "2026-07-04",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Culture & Events",
     fr: "Culture & Événements"
@@ -254,7 +254,7 @@ export const postWorldCup2026 = {
         <li><strong>Rabat</strong> — royal palaces, Chellah ruins, and the Atlantic coastline</li>
         <li><strong>Casablanca</strong> — visit the Hassan II Mosque before departure</li>
       </ol>
-      <p>For a route built around your own dates and interests, you can easily <a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a> to generate a personalized itinerary in minutes.</p>
+      <p>For a route built around your own dates and interests, you can easily <a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco Interactive Trip Planner</a> to generate a personalized itinerary in minutes.</p>
 
       <h2>Why Visit Morocco Before Everyone Else</h2>
       <p>Home World Cups change countries. Prices rise, popular sites get busier, and the quiet corners that make a destination special start to feel more like theme parks. Morocco in 2026 still offers something increasingly rare: globally famous football, globally significant history, and relatively uncrowded access to both.</p>
@@ -292,7 +292,7 @@ export const postWorldCup2026 = {
       <div class="blog-highlight" style="background: white; border: 2px solid var(--color-terracotta); border-radius: var(--border-radius-md); padding: 24px; margin: 36px 0;">
         <h3 style="margin: 0 0 16px 0; font-family: var(--font-serif); font-size: 22px; color: var(--color-charcoal);">Explore More & Plan Your Trip</h3>
         <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-weight: 600;">
-          <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a></li>
+          <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco Interactive Trip Planner</a></li>
           <li><a href="/cities.html" class="blog-internal-link">Explore all 16 destinations in the Morocco Cities Guide</a></li>
           <li><a href="/city/marrakech.html" class="blog-internal-link">Get the full Marrakech Guide</a></li>
           <li><a href="/city/chefchaouen.html" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>
@@ -439,7 +439,7 @@ export const postWorldCup2026 = {
         <li><strong>Rabat</strong> — palais impériaux et promenade en bord d'océan</li>
         <li><strong>Casablanca</strong> — visite de la Mosquée Hassan II et départ</li>
       </ol>
-      <p>Pour concevoir un parcours sur mesure selon votre rythme, vous pouvez facilement <a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a> en quelques secondes.</p>
+      <p>Pour concevoir un parcours sur mesure selon votre rythme, vous pouvez facilement <a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco Interactive Trip Planner</a> en quelques secondes.</p>
 
       <h2>Pourquoi visiter le Maroc avant tout le monde</h2>
       <p>Accueillir une Coupe du Monde transforme un pays. Les tarifs augmentent, les sites prisés attirent davantage de visiteurs et l'expérience change d'échelle. En 2026, le Maroc offre un équilibre exceptionnel : une passion footballistique planétaire, un patrimoine historique intact et un accès fluide et authentique à l'ensemble du territoire.</p>
@@ -474,7 +474,7 @@ export const postWorldCup2026 = {
       <div class="blog-highlight" style="background: white; border: 2px solid var(--color-terracotta); border-radius: var(--border-radius-md); padding: 24px; margin: 36px 0;">
         <h3 style="margin: 0 0 16px 0; font-family: var(--font-serif); font-size: 22px; color: var(--color-charcoal);">Explorez plus et préparez votre séjour</h3>
         <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-weight: 600;">
-          <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco AI Trip Planner</a></li>
+          <li><a href="/trip-planner.html" class="blog-internal-link">Plan your route with the Morocco Interactive Trip Planner</a></li>
           <li><a href="/cities.html" class="blog-internal-link">Explore all 16 destinations in the Morocco Cities Guide</a></li>
           <li><a href="/city/marrakech.html" class="blog-internal-link">Get the full Marrakech Guide</a></li>
           <li><a href="/city/chefchaouen.html" class="blog-internal-link">Discover the blue streets in the Chefchaouen Guide</a></li>

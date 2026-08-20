@@ -6,7 +6,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1758621655350-344945c215db?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJpYWQlMjBtYXJyYWtlY2h8ZW58MHwwfDB8fHwy",
   date: "2026-07-09",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Trends & Insights",
     fr: "Tendances & Perspectives"
@@ -191,7 +191,7 @@ export const postWhyMoroccoFastestGrowingDestination = {
       <h3>Respectez les coutumes locales</h3>
       <p>Le Maroc est un pays sûr et accueillant, comme l'explique notre <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">guide de sécurité au Maroc</a>. Vous pouvez honorer les traditions en adoptant une tenue décente (épaules et genoux couverts dans les médinas ou les villages de montagne), en demandant l'autorisation avant de photographier les artisans et en abordant les négociations dans les souks avec le sourire.</p>
 
-      <h3>Utilisez notre planificateur d'itinéraire intelligent</h3>
+      <h3>Utilisez notre planificateur d'itinéraire interactif</h3>
       <p>Avec tant de paysages variés à explorer, bien concevoir votre trajet est essentiel. Vous pouvez créer votre programme sur mesure en utilisant notre <a href="/trip-planner.html" class="blog-internal-link">planificateur d'itinéraire par IA pour le Maroc</a>, qui génère instantanément des plannings quotidiens et des conseils adaptés à vos centres d'intérêt.</p>
 
       <p style="margin-top: 32px;"><strong>En conclusion :</strong> La magie du Maroc réside dans sa capacité à honorer son passé tout en offrant un séjour chaleureux et confortable au voyageur moderne. Des terrasses paisibles de la médina au silence majestueux du désert, le Royaume du Maroc vous réserve une aventure inoubliable qui habitera votre esprit longtemps après votre retour.</p>

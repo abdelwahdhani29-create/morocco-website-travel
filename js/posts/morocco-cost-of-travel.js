@@ -4,7 +4,7 @@ export const postMoroccoCostOfTravel = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29zdCUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
   date: "2026-07-22",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"
@@ -317,9 +317,9 @@ export const postMoroccoCostOfTravel = {
       <h3>10-Day Luxury Trip (High-End)</h3>
       <p><strong>Total Estimated Cost: $3,500 – $7,000+ USD (35,000 – 70,000+ MAD) per person.</strong><br />Includes 5-star luxury palatial riads, fine dining, private 4x4 chauffeur driver, private luxury desert glamping, and luxury spa hammams.</p>
 
-      <p>To calculate custom budget estimates customized to your personal travel speed, style, and travel dates, try GoMoroccoAI's interactive <a href="/trip-planner.html" class="blog-internal-link">AI Trip Planner</a> or browse destination highlights in our <a href="/cities.html" class="blog-internal-link">Morocco Cities Directory</a>.</p>
+      <p>To calculate custom budget estimates customized to your personal travel speed, style, and travel dates, try GoMoroccoAI's interactive <a href="/trip-planner.html" class="blog-internal-link">Interactive Trip Planner</a> or browse destination highlights in our <a href="/cities.html" class="blog-internal-link">Morocco Cities Directory</a>.</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last updated: July 2026 | Price ranges are estimates based on average seasonal market rates in Morocco.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last verified: August 20, 2026 | Price ranges are estimates based on average seasonal market rates in Morocco.</p>
     `,
     fr: `
       <p class="blog-lead">Planifier un voyage au Maroc est une perspective passionnante, mais une question cruciale revient systématiquement : <strong>combien d'argent faut-il vraiment prévoir pour un voyage au Maroc ?</strong> Que vous rêviez de séjourner dans un riad somptueux à Marrakech, de faire une méharée dans les dunes dorées du Sahara ou de déguster un thé à la menthe à 2 Dirhams dans une ruelle paisible de Chefchaouen, le Maroc offre une variété d'expériences adaptées à tous les budgets.</p>
@@ -535,7 +535,7 @@ export const postMoroccoCostOfTravel = {
 
       <p>Pour calculer un budget personnalisé selon votre rythme et vos dates, utilisez notre <a href="/trip-planner.html" class="blog-internal-link">Planificateur interactif GoMoroccoAI</a> ou explorez notre <a href="/cities.html" class="blog-internal-link">Annuaire des Villes du Maroc</a>.</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière mise à jour : Juillet 2026 | Tarifs indicatifs sujets aux variations saisonnières au Maroc.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière vérification : 20 août 2026 | Tarifs indicatifs sujets aux variations saisonnières au Maroc.</p>
     `
   }
 };

@@ -4,7 +4,7 @@ export const postCasablanca = {
   cityId: "casablanca",
   image: "https://images.unsplash.com/photo-1579017461826-8ea20d5cdb28?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FzYWJsYW5jYXxlbnwwfDB8MHx8fDI%3D",
   date: "2026-07-11",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
@@ -69,7 +69,7 @@ export const postCasablanca = {
     en: `
       <p class="blog-lead">Often bypassed by travelers rushing towards the ancient alleyways of Fes or the bustling squares of Marrakech, Casablanca is a dynamic coastal city that deserves a prominent spot on your itinerary. As Morocco’s largest city and financial heartbeat, it offers a fascinating, high-contrast blend of traditional Moorish architecture, French colonial Art Deco designs, and modern cosmopolitan lifestyle.</p>
       
-      <p>Whether you are arriving in Morocco through the busy Mohammed V International Airport or planning your route with our interactive <a href="/trip-planner.html" class="blog-internal-link">AI Trip Planner</a>, Casablanca serves as the perfect introduction to the modern face of North Africa. Let’s dive into the ultimate guide to exploring this legendary coastal metropolis.</p>
+      <p>Whether you are arriving in Morocco through the busy Mohammed V International Airport or planning your route with our interactive <a href="/trip-planner.html" class="blog-internal-link">Interactive Trip Planner</a>, Casablanca serves as the perfect introduction to the modern face of North Africa. Let’s dive into the ultimate guide to exploring this legendary coastal metropolis.</p>
 
       <h2>1. The Crowning Jewel: Hassan II Mosque</h2>
       <p>No trip to Casablanca is complete without witnessing the breathtaking <strong>Hassan II Mosque</strong>. Completed in 1993, this architectural masterpiece is one of the largest mosques in the world and stands as an eternal tribute to Moroccan craftsmanship. Built on a rocky outcrop reclaiming land from the Atlantic Ocean, half of the mosque’s giant prayer hall sits over water, offering worshippers a direct view of the ocean tides.</p>

@@ -4,7 +4,7 @@ export const postHowMuchCashToBringToMorocco = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1200&auto=format&fit=crop&q=80",
   date: "2026-08-16",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"

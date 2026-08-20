@@ -4,7 +4,7 @@ export const postMoroccoVisaRequirements = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1655722725332-9925c96dd627?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlzYXxlbnwwfHwwfHx8MA%3D%3D",
   date: "2026-07-26",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Budget & Planning",
     fr: "Budget et Préparatifs"
@@ -14,24 +14,24 @@ export const postMoroccoVisaRequirements = {
     fr: "Abdelwahd Hani"
   },
   readTime: {
-    en: "22 min read",
-    fr: "22 min de lecture"
+    en: "10 min read",
+    fr: "10 min de lecture"
   },
   title: {
     en: "Morocco Visa Requirements (2026): Everything Travelers Need to Know",
     fr: "Visa Maroc 2026 : Conditions d'Entrée, e-Visa & Formalités Simplifiées"
   },
   excerpt: {
-    en: "Do you need a visa to visit Morocco in 2026? Complete expert guide covering visa-exempt countries, the Accès-Maroc e-Visa portal, AEVM authorization, passport validity rules, extensions, transit, and border customs.",
-    fr: "Faut-il un visa pour voyager au Maroc en 2026 ? Guide complet d'expert : pays exemptés, portail e-Visa Accès-Maroc, autorisation AEVM, validité du passeport, extensions de séjour et douanes."
+    en: "Learn how to verify Morocco entry requirements through Accès Maroc, prepare an e-Visa or consular application, and check passport, customs, transit, and extension questions.",
+    fr: "Apprenez à vérifier les conditions d'entrée via Accès Maroc et à préparer les questions liées à l'e-Visa, au passeport, au transit, à la douane et à la prolongation."
   },
   metaTitle: {
     en: "Morocco Visa Requirements 2026: Exemptions, e-Visa & Entry Rules",
     fr: "Visa Maroc 2026 : Exemption, e-Visa Accès Maroc & Guide Entrée"
   },
   metaDescription: {
-    en: "Planning a trip to Morocco in 2026? Discover complete visa rules, 90-day visa-free country list, Accès-Maroc e-Visa application steps, AEVM authorization, passport validity, and extension procedures.",
-    fr: "Vous prévoyez un voyage au Maroc en 2026 ? Découvrez les règles de visa, la liste des pays exemptés, les étapes de l'e-Visa Accès-Maroc, la validité du passeport et la prolongation de séjour."
+    en: "Verify Morocco visa and entry requirements for 2026 using Accès Maroc, with practical guidance on e-Visas, passports, customs, transit, and extensions.",
+    fr: "Vérifiez les formalités d'entrée au Maroc en 2026 via Accès Maroc : e-Visa, passeport, douane, transit et prolongation de séjour."
   },
   keywords: "Morocco visa requirements 2026, do I need a visa for Morocco, Morocco e-Visa Acces-Maroc, AEVM Morocco, Morocco visa-free countries, Morocco entry requirements, Morocco passport validity, extend Morocco visa, Morocco customs rules",
   faqs: [
@@ -41,8 +41,8 @@ export const postMoroccoVisaRequirements = {
         fr: "Les citoyens des États-Unis, du Royaume-Uni, du Canada et de l'UE ont-ils besoin d'un visa pour le Maroc ?"
       },
       answer: {
-        en: "No, citizens holding passports from the United States, Canada, United Kingdom, European Union member states, Australia, New Zealand, Japan, and several other visa-exempt nations do not need a visa for tourist stays up to 90 days. You only require a valid passport with at least 6 months of validity beyond your intended date of departure.",
-        fr: "Non, les ressortissants des États-Unis, du Canada, du Royaume-Uni, des pays membres de l'Union européenne, d'Australie, de Nouvelle-Zélande, du Japon et d'autres nations exemptées n'ont pas besoin de visa pour un séjour touristique de 90 jours maximum. Un passeport valide au moins 6 mois après la date de départ est suffisant."
+        en: "These passport holders are commonly visa-exempt for short tourist visits, but eligibility and document-validity rules can change. Check your exact passport nationality and travel dates on the official Accès Maroc portal or with a Moroccan consulate before booking.",
+        fr: "Ces passeports bénéficient généralement d'une exemption pour les courts séjours touristiques, mais les conditions peuvent changer. Vérifiez votre nationalité et vos dates sur le portail officiel Accès Maroc ou auprès d'un consulat marocain avant de réserver."
       }
     },
     {
@@ -51,8 +51,8 @@ export const postMoroccoVisaRequirements = {
         fr: "Qu'est-ce que l'e-Visa Accès-Maroc et qui peut en faire la demande ?"
       },
       answer: {
-        en: "The Morocco e-Visa (available via the official Accès-Maroc portal) is an electronic entry authorization for foreign nationals who require a visa but qualify for streamlined online processing. Eligible travelers include citizens of specified countries (such as India, Thailand, Jordan, Azerbaijan, etc.) or travelers of any nationality who possess a valid visa or residence permit from the US, UK, Schengen Zone, Canada, Australia, or Japan.",
-        fr: "L'e-Visa Maroc (accessible via le portail officiel Accès-Maroc) est une autorisation d'entrée électronique simplifiée. Il s'adresse aux ressortissants de pays éligibles (comme l'Inde, la Thaïlande, la Jordanie, l'Azerbaïdjan, etc.) ou à toute personne titulaire d'un visa ou titre de séjour valide des États-Unis, du Royaume-Uni, de l'espace Schengen, du Canada, d'Australie ou du Japon."
+        en: "The e-Visa is an online entry document for travelers who meet the current conditions shown by the official Accès Maroc eligibility checker. Do not rely on a copied country list: enter your nationality and supporting-document status on the official portal.",
+        fr: "L'e-Visa est un document d'entrée en ligne destiné aux voyageurs qui remplissent les conditions affichées par le vérificateur officiel Accès Maroc. Ne vous fiez pas à une liste recopiée : saisissez votre nationalité et vos justificatifs sur le portail officiel."
       }
     },
     {
@@ -61,8 +61,8 @@ export const postMoroccoVisaRequirements = {
         fr: "Combien de temps puis-je rester au Maroc en tant que touriste ?"
       },
       answer: {
-        en: "Standard tourist stays for visa-exempt travelers and single-entry visa holders are granted for up to 90 consecutive days. If you wish to stay longer, you must apply for an official extension (prolongation de séjour) at a local Moroccan police station (Préfecture de Police) at least 15 days before your 90-day limit expires.",
-        fr: "La durée maximale autorisée pour un séjour touristique est de 90 jours consécutifs. Si vous souhaitez prolonger votre séjour, vous devez faire une demande officielle auprès de la Préfecture de Police locale au moins 15 jours avant l'expiration de votre période de 90 jours."
+        en: "Many short tourist admissions are granted for up to 90 days, but the period written or stamped by border authorities governs your stay. Ask the competent Moroccan authority about an extension well before that period expires; procedures are case-specific.",
+        fr: "De nombreux séjours touristiques sont autorisés jusqu'à 90 jours, mais la durée accordée par les autorités frontalières fait foi. Renseignez-vous suffisamment tôt auprès de l'autorité marocaine compétente pour toute prolongation."
       }
     },
     {
@@ -71,8 +71,8 @@ export const postMoroccoVisaRequirements = {
         fr: "Les drones sont-ils autorisés au Maroc pour les vidéos de voyage ?"
       },
       answer: {
-        en: "No. Drones are strictly regulated in Morocco. Bringing an unauthorized drone into Morocco without prior official approval from the Ministry of Transport and Civil Aviation will result in immediate confiscation at customs (airport or ferry port), potential administrative fines, and extensive border delays. Do not bring drones on a leisure vacation.",
-        fr: "Non. L'importation de drones au Maroc est strictement réglementée. Sans autorisation préalable expresse du Ministère des Transports et de l'Aviation Civile, votre drone sera immédiatement confisqué à la douane de l'aéroport ou du port, assorti d'amendes administratives potentielles."
+        en: "Drone import and use are regulated and may require prior authorisation. Do not travel with one until you have checked the current requirements with Moroccan customs and the relevant aviation authority; unauthorised equipment may be held at the border.",
+        fr: "L'importation et l'utilisation des drones sont réglementées et peuvent nécessiter une autorisation préalable. Vérifiez les règles actuelles auprès de la douane marocaine et de l'autorité aéronautique avant de voyager avec cet équipement."
       }
     },
     {
@@ -81,18 +81,19 @@ export const postMoroccoVisaRequirements = {
         fr: "Combien coûte l'e-Visa pour le Maroc et quel est le délai de traitement ?"
       },
       answer: {
-        en: "Standard e-Visa processing takes 3 business days and costs approximately 770 MAD (~$77 USD / €72 EUR). Express e-Visa processing takes 1 business day (24 hours) and costs approximately 1,100 MAD (~$110 USD / €102 EUR). Payments are submitted securely online via credit or debit card on the official government portal.",
-        fr: "Le traitement standard de l'e-Visa prend 3 jours ouvrés et coûte environ 770 MAD (~72 €). Le traitement express prend 1 jour ouvré et coûte environ 1 100 MAD (~102 €). Le paiement s'effectue directement en ligne par carte bancaire sur le portail officiel."
+        en: "Processing options, fees, validity, and permitted stay are displayed during an application on the official Accès Maroc portal and can change. Check them there before paying and apply early enough for possible requests for additional documents.",
+        fr: "Les délais, frais, durées de validité et séjours autorisés sont affichés pendant la demande sur le portail officiel Accès Maroc et peuvent évoluer. Vérifiez-les avant le paiement et déposez la demande suffisamment tôt."
       }
     }
   ],
   content: {
     en: `
+      <div class="blog-highlight"><strong>Verified guidance, not legal advice:</strong> Entry rules depend on passport nationality, residence status, supporting visas, purpose of travel, and the decision of border authorities. This article deliberately avoids presenting a copied country list as definitive. Confirm your case through the official <a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Accès Maroc eligibility checker</a> or a Moroccan embassy.</div>
       <p class="blog-lead">Navigating border immigration policies is the essential first step to turning your Moroccan travel dreams into reality. Whether you are planning a weekend escape to the bustling souks of Marrakech, an epic road trip through the High Atlas Mountains, or a luxury desert glamping expedition in Merzouga, understanding <strong>Morocco's visa requirements in 2026</strong> helps you prepare for arrival at the Kingdom's international gateways.</p>
 
-      <p>In recent years, the Kingdom of Morocco has vastly modernized its border control infrastructure. In preparation for co-hosting the <strong>FIFA World Cup 2030</strong> alongside Spain and Portugal, Morocco has streamlined entry protocols, expanded its high-tech electronic visa (e-Visa) portal, and digitized airport clearance procedures. Today, millions of international travelers enjoy hassle-free, visa-exempt entry, while millions more can secure an electronic entry permit online in under 24 hours.</p>
+      <p>Morocco provides an official online eligibility checker and e-Visa application service through Accès Maroc. Availability, processing time, and supporting-document requirements depend on the applicant's circumstances and can change, so the portal result—not a travel blog—should guide an application.</p>
 
-      <p>This comprehensive 2026 entry guide breaks down every single visa category, passport validity rule, e-Visa application step, AEVM clearance, extension protocol, and customs restriction. Before boarding your flight, combine this legal checklist with our companion guides on <a href="/blog/morocco-travel-tips-30-things-to-know.html" class="blog-internal-link">30 essential Morocco travel tips</a>, plan your financial allowance with our <a href="/blog/morocco-cost-of-travel.html" class="blog-internal-link">Morocco travel cost breakdown</a>, and organize your route using our <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">perfect 10-day first-time Morocco itinerary</a>.</p>
+      <p>This guide explains how to verify the main pathways and prepare questions for the competent authority. Before boarding, combine it with our <a href="/blog/morocco-travel-tips-30-things-to-know.html" class="blog-internal-link">30-item travel checklist</a> and <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">sample 10-day itinerary</a>.</p>
 
       <h2>1. Overview of Morocco Entry Policy in 2026</h2>
       <p>Morocco welcomes visitors with open arms, operating one of the most accessible and traveler-friendly entry regimes in North Africa. Standard tourist access allows foreign visitors to remain in the country for up to <strong>90 consecutive days</strong> for leisure, cultural exploration, or business meetings.</p>
@@ -100,7 +101,7 @@ export const postMoroccoVisaRequirements = {
       <p>All foreign travelers entering Morocco—regardless of whether they need a visa or are visa-exempt—must satisfy the following baseline entry conditions at the border checkpoint:</p>
 
       <ul>
-        <li><strong>Valid Passport:</strong> Must have a minimum validity of 6 months remaining from the date of your intended departure from Morocco.</li>
+        <li><strong>Valid Passport:</strong> Check the validity required for your passport nationality with Accès Maroc, your airline, and the competent Moroccan consulate.</li>
         <li><strong>Blank Passport Pages:</strong> At least one clean, un-stamped passport page for arrival and departure entry stamps.</li>
         <li><strong>Proof of Onward or Return Travel:</strong> A confirmed return airline ticket or ferry passage ticket departing Morocco within 90 days.</li>
         <li><strong>Proof of Accommodation:</strong> A confirmed hotel or riad reservation for at least your initial nights, or an official invitation letter from a resident host.</li>
@@ -135,7 +136,7 @@ export const postMoroccoVisaRequirements = {
             </tr>
             <tr style="border-bottom: 1px solid var(--color-border); background-color: #fdfdfd;">
               <td style="padding: 12px 16px; font-weight: 600; color: var(--color-terracotta);">Asia & Middle East</td>
-              <td style="padding: 12px 16px;">Japan, South Korea, Singapore, Hong Kong (SAR), United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Kuwait, Oman, Turkey, Indonesia, Malaysia, Philippines.</td>
+              <td style="padding: 12px 16px;">Examples may change. Use the official Accès Maroc eligibility checker for your exact passport rather than relying on this regional summary.</td>
             </tr>
             <tr style="border-bottom: none;">
               <td style="padding: 12px 16px; font-weight: 600; color: var(--color-terracotta);">Africa & South America</td>
@@ -146,7 +147,7 @@ export const postMoroccoVisaRequirements = {
       </div>
 
       <div class="blog-highlight">
-        <p><strong>⚠️ Passport Inspection Tip at Airport Clearance:</strong> When entering Morocco, the border officer will stamp your passport with an official entry date stamp containing a unique national identification number (known locally as your <em>CIN / Registration Number</em>). Always double-check that the stamp date is clearly legible before leaving the immigration desk, as hotel check-in desks and internal security checks require this number.</p>
+        <p><strong>Passport inspection tip:</strong> Check that any entry stamp or admission notation is legible before leaving border control. Accommodation providers may request the entry reference shown in your passport. It is not a Moroccan national identity card (CIN).</p>
       </div>
 
       <h2>3. The Morocco e-Visa System (Accès-Maroc): Who Qualifies & How to Apply</h2>
@@ -161,7 +162,7 @@ export const postMoroccoVisaRequirements = {
       <p>The Moroccan e-Visa is available to two distinct categories of international travelers:</p>
 
       <ol>
-        <li><strong>Category 1 – Direct Country Eligibility:</strong> Passport holders of specific countries including India, Thailand, Israel, Azerbaijan, Jordan, Guatemala, Colombia, and the Philippines.</li>
+        <li><strong>Direct eligibility:</strong> The qualifying nationalities can change. Select your passport country in the official Accès Maroc checker for the current result.</li>
         <li><strong>Category 2 – Equivalent Visa/Residence Permit Holders (Global Eligibility):</strong> Citizens of <em>ANY</em> country who hold a valid, unexpired visa or residence permit issued by any of the following jurisdictions:
           <ul>
             <li>United States of America (US Green Card or valid US Visa)</li>
@@ -179,16 +180,12 @@ export const postMoroccoVisaRequirements = {
       <ul>
         <li><strong>Standard e-Visa Processing:</strong>
           <ul>
-            <li><strong>Processing Time:</strong> 3 business days (72 hours).</li>
-            <li><strong>Cost:</strong> 770 MAD (~$77 USD / €72 EUR).</li>
-            <li><strong>Validity:</strong> Single entry, valid for 180 days from the date of issue, allowing a maximum stay of up to 30 days in Morocco (extendable on site).</li>
+            <li><strong>Processing, cost, and validity:</strong> Confirm the option shown in your official application before payment. Do not book non-refundable travel around an estimated approval time.</li>
           </ul>
         </li>
         <li><strong>Express / Urgent e-Visa Processing:</strong>
           <ul>
-            <li><strong>Processing Time:</strong> 1 business day (24 hours).</li>
-            <li><strong>Cost:</strong> 1,100 MAD (~$110 USD / €102 EUR).</li>
-            <li><strong>Validity:</strong> Single entry, valid for 180 days, permitting up to 30 days stay.</li>
+            <li><strong>Urgent option:</strong> Availability, fee, and indicated processing time appear on the official portal when offered. An urgent request is not a guarantee of entry.</li>
           </ul>
         </li>
       </ul>
@@ -224,7 +221,7 @@ export const postMoroccoVisaRequirements = {
       <h3>Required Documents for a Consular Visa Application:</h3>
       <ul>
         <li><strong>Visa Application Form:</strong> Duly completed and signed (downloadable from official consular portals).</li>
-        <li><strong>Original Passport:</strong> Valid for at least 6 months with two blank pages, plus photocopies of main pages.</li>
+        <li><strong>Original Passport:</strong> Meet the validity and blank-page requirements stated by the consulate handling your application, with the requested copies.</li>
         <li><strong>Identity Photographs:</strong> Two recent passport-sized color photos (3.5 cm x 4.5 cm) on a white background.</li>
         <li><strong>Proof of Status in Country of Residence:</strong> Copy of residence permit or work visa.</li>
         <li><strong>Proof of Employment / Financial Support:</strong> Recent 3-month bank statements, employment contract, or official pay slips.</li>
@@ -244,7 +241,7 @@ export const postMoroccoVisaRequirements = {
       <p>The Moroccan Customs Administration (<em>Administration des Douanes et Impôts Indirects</em>) maintains strict border policies regarding specific personal equipment and monetary declarations:</p>
 
       <ul>
-        <li><strong>Strict Drone Ban:</strong> Drones of any size are strictly illegal to import for recreational use. Unapproved drones will be confiscated at customs and held in secure storage until departure (incurring daily storage fees and bureaucratic paperwork).</li>
+        <li><strong>Regulated drones:</strong> Import and operation may require prior authorisation. Verify the current procedure with Moroccan customs and the relevant aviation authority before travelling with a drone.</li>
         <li><strong>Cash Currency Declarations:</strong> Foreign currency exceeding the equivalent of <strong>100,000 MAD (~$10,000 USD)</strong> must be declared upon arrival at customs. Furthermore, taking more than 2,000 MAD in local currency out of the country is strictly prohibited due to closed currency regulations.</li>
         <li><strong>Alcohol & Tobacco Allowance:</strong> Adult travelers (18+) may import duty-free up to 1 liter of spirits (or 1 bottle of wine) and 200 cigarettes (or 25 cigars).</li>
       </ul>
@@ -258,7 +255,7 @@ export const postMoroccoVisaRequirements = {
       <p>You can apply for an official extension of your stay at the central police station (<em>Préfecture de Police</em> or <em>Commissariat Central</em>) in the city where you are currently residing (e.g. Marrakech, Casablanca, Rabat, Fes, or Tangier).</p>
 
       <div class="blog-highlight">
-        <p><strong>🕒 Crucial Extension Deadline:</strong> You MUST submit your application for <em>Prolongation de Séjour</em> at least <strong>15 days BEFORE</strong> your 90-day initial period expires. Late applications are routinely rejected by immigration officials.</p>
+        <p><strong>Extension planning:</strong> Contact the competent local authority well before your authorised stay expires. Required timing, documents, and the outcome are case-specific; this site cannot guarantee an extension.</p>
       </div>
 
       <p><strong>Required Extension Documents:</strong></p>
@@ -288,7 +285,7 @@ export const postMoroccoVisaRequirements = {
       <p>To ensure a flawless arrival experience at border control, follow this simple pre-flight checklist:</p>
 
       <ol>
-        <li><strong>Verify Passport Expiry:</strong> Ensure your passport has at least 6 months of validity beyond your planned return date.</li>
+        <li><strong>Verify Passport Expiry:</strong> Confirm the rule for your exact passport and itinerary with official sources and your carrier.</li>
         <li><strong>Confirm Visa Status:</strong> Check whether your nationality is visa-exempt or if you need an e-Visa from <a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Accès-Maroc</a>.</li>
         <li><strong>Print Approvals:</strong> Keep printed physical paper copies of your e-Visa authorization, round-trip flight confirmation, and initial riad bookings.</li>
         <li><strong>Prepare Riad Address:</strong> Have the exact address and telephone number of your first night's accommodation ready to present on arrival.</li>
@@ -299,11 +296,12 @@ export const postMoroccoVisaRequirements = {
       <p>For official destination inspiration and cultural guidelines across all regions of Morocco, consult the <a href="https://www.visitmorocco.com/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Moroccan National Tourism Office (VisitMorocco)</a>.</p>
 
       <h2>10. Plan Your Dream Morocco Trip with GoMoroccoAI</h2>
-      <p>Now that your visa formalities are clear, it is time to map out your dream Moroccan journey! Explore our curated <a href="/cities.html" class="blog-internal-link">Morocco Cities Directory</a> to discover top highlights in Marrakech, Fes, Chefchaouen, and Essaouira, or craft a custom day-by-day travel plan with GoMoroccoAI's intelligent <a href="/trip-planner.html" class="blog-internal-link">AI Trip Planner</a>.</p>
+      <p>After verifying your entry formalities, explore our <a href="/cities.html" class="blog-internal-link">Morocco Cities Directory</a> or create a draft route with the rule-based <a href="/trip-planner.html" class="blog-internal-link">Interactive Trip Planner</a>.</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last updated: July 2026 | Entry regulations and diplomatic policies are subject to change. Always verify current rules with official embassy portals prior to departure.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last verified: August 20, 2026 | Entry rules can change. Always verify your individual case with Accès Maroc or a Moroccan embassy before departure.</p>
     `,
     fr: `
+      <div class="blog-highlight"><strong>Informations vérifiées, sans valeur de conseil juridique :</strong> les règles dépendent de la nationalité, du statut de résidence, des visas justificatifs, du motif du séjour et de la décision des autorités frontalières. Confirmez votre situation via le <a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">vérificateur officiel Accès Maroc</a> ou une ambassade marocaine.</div>
       <p class="blog-lead">Comprendre les formalités administratives et les conditions d'entrée aux frontières est la première étape essentielle pour concrétiser votre voyage au Maroc. Que vous prépariez une escapade dans les souks de Marrakech, une traversée du Haut Atlas ou une expédition dans le désert de Merzouga, maîtriser <strong>les règles de visa pour le Maroc en 2026</strong> vous garantit une arrivée fluide et sereine.</p>
 
       <p>À l'approche de la <strong>Coupe du Monde FIFA 2030</strong> co-organisée avec l'Espagne et le Portugal, le Royaume du Maroc a modernisé ses infrastructures frontalières. Le portail électronique e-Visa (Accès-Maroc) permet désormais à des millions de voyageurs d'obtenir leur autorisation d'entrée en ligne en moins de 24 heures.</p>
@@ -316,7 +314,7 @@ export const postMoroccoVisaRequirements = {
       <p>Tout voyageur étranger entrant au Maroc doit respecter les conditions suivantes :</p>
 
       <ul>
-        <li><strong>Passeport valide :</strong> Validité minimale de 6 mois à compter de la date de départ prévue du Maroc.</li>
+        <li><strong>Passeport valide :</strong> vérifiez la durée exigée pour votre nationalité auprès d'Accès Maroc, de votre transporteur et du consulat compétent.</li>
         <li><strong>Pages vierges :</strong> Au moins une page vierge pour le tampon d'entrée et de sortie.</li>
         <li><strong>Billet de retour ou de continuation :</strong> Billet confirmé dans la limite des 90 jours.</li>
         <li><strong>Justificatif d'hébergement :</strong> Réservation d'hôtel ou de riad confirmée pour les premières nuits.</li>
@@ -370,21 +368,21 @@ export const postMoroccoVisaRequirements = {
 
       <h3>Tarifs et délais e-Visa :</h3>
       <ul>
-        <li><strong>Traitement Standard (3 jours ouvrés) :</strong> ~770 MAD (~72 €). Valable 180 jours pour un séjour de 30 jours max.</li>
-        <li><strong>Traitement Express (24 heures) :</strong> ~1 100 MAD (~102 €).</li>
+        <li><strong>Traitement standard :</strong> vérifiez le délai, le coût, la validité et la durée de séjour affichés dans votre demande officielle avant de payer.</li>
+        <li><strong>Traitement urgent :</strong> sa disponibilité et son tarif sont indiqués sur le portail lorsqu'il est proposé ; il ne garantit pas l'entrée.</li>
       </ul>
 
       <p>Déposez votre demande exclusivement sur le site officiel <a href="https://www.acces-maroc.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">www.acces-maroc.ma</a>.</p>
 
-      <h2>4. Réglementation douanière et interdiction des drones</h2>
-      <p>À l'arrivée dans des aéroports comme <a href="/city/casablanca.html" class="blog-internal-link">Casablanca</a> ou <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, la douane marocaine applique une tolérance zéro sur l'importation non autorisée de drones. Sans autorisation préalable du Ministère des Transports, tout drone sera systématiquement confisqué à la frontière.</p>
+      <h2>4. Réglementation douanière des drones</h2>
+      <p>L'importation et l'utilisation des drones sont réglementées et peuvent nécessiter une autorisation préalable. Avant de voyager avec cet équipement, vérifiez la procédure actuelle auprès de la douane marocaine et de l'autorité aéronautique compétente.</p>
 
       <h2>5. Prolongation de séjour au Maroc</h2>
-      <p>Pour prolonger votre séjour au-delà de 90 jours, vous devez effectuer une demande de <em>Prolongation de séjour</em> auprès de la Préfecture de Police locale au moins <strong>15 jours avant la fin de l'échéance</strong>.</p>
+      <p>Pour prolonger un séjour, contactez l'autorité locale compétente bien avant l'expiration de la durée qui vous a été accordée. Les délais, documents et décisions dépendent de chaque dossier.</p>
 
       <p>Préparez votre itinéraire à travers nos <a href="/cities.html" class="blog-internal-link">Guides des Villes du Maroc</a> ou concevez votre circuit sur mesure grâce au <a href="/trip-planner.html" class="blog-internal-link">Planificateur interactif GoMoroccoAI</a>.</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière mise à jour : Juillet 2026 | Réglementations sous réserve de modifications diplomatiques.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière vérification : 20 août 2026 | Confirmez toujours votre situation auprès d'Accès Maroc ou d'une ambassade marocaine.</p>
     `
   }
 };

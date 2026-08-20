@@ -4,7 +4,7 @@ export const postMoroccoItineraryFirstTime = {
   cityId: null,
   image: "https://images.unsplash.com/photo-1542650742-d3150fb66298?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXRpbmVyYXJ5fGVufDB8fDB8fHwy",
   date: "2026-07-19",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
@@ -204,7 +204,7 @@ export const postMoroccoItineraryFirstTime = {
       <strong>Transit Duration:</strong> 2 to 4 hours depending on your chosen departure hub.</p>
       <p>Depending on your international flight arrangements, you can depart from Tangier Airport (TNG). Alternatively, take a shared taxi or CTM bus to the Tangier Ville train station, and board the ultra-fast **Al Boraq high-speed bullet train** operated by the ONCF. The train glides to Casablanca at 320 km/h. <strong>Logistics Tip:</strong> You must purchase your Al Boraq tickets in advance via the ONCF website or app, especially for weekend departures, as seat allocations are strictly reserved. Connect from Casablanca Voyagers station directly to Mohammed V International Airport (CMN) via the airport rail link (shuttle train running every hour).</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last updated: July 2026 | Timetables and highway toll rates are subject to local transit updates.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last verified: August 20, 2026 | Timetables and highway toll rates are subject to local transit updates.</p>
     `,
     fr: `
       <p class="blog-lead">Planifier un itinéraire de voyage réussi au Maroc demande une attention particulière à la logistique des transports. Les distances sont souvent trompeuses, et les routes montagneuses de l'Atlas imposent une conduite prudente. Sans un parcours optimisé et planifié, vous risquez de passer plus de temps sur l'asphalte que dans les destinations elles-mêmes.</p>
@@ -353,7 +353,7 @@ export const postMoroccoItineraryFirstTime = {
       <strong>Durée du trajet :</strong> 2 à 4 heures selon votre aéroport de retour.</p>
       <p>Selon vos vols, vous pouvez décoller directement de l'aéroport de Tanger (TNG). Sinon, rejoignez la gare ferroviaire Tanger Ville et montez à bord du **TGV Al Boraq** opéré par l'ONCF vers la gare de Casablanca Voyageurs. <strong>Conseil logistique :</strong> Vous devez impérativement acheter vos billets Al Boraq en ligne à l'avance sur le site de l'ONCF pour réserver votre place assise, en particulier pour les trajets du week-end. Un train navette relie directement la gare de Casablanca Voyageurs à l'aéroport Mohammed V (CMN) toutes les heures.</p>
 
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière mise à jour : Juillet 2026 | Les horaires de train et les tarifs de péage sont sujets à modification locale.</p>
+      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière vérification : 20 août 2026 | Les horaires de train et les tarifs de péage sont sujets à modification locale.</p>
     `
   }
 };

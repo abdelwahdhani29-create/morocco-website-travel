@@ -13,7 +13,7 @@ const translations = {
     // Core Topics
     amazigh_title: "Amazigh Heritage",
     amazigh_subtitle: "The Foundation of Moroccan Identity",
-    amazigh_text1: "The Amazigh (meaning 'free people') are the indigenous inhabitants of Morocco, with archaeological roots extending back thousands of years. Their resilient mountain spirit, language, and worldview form the absolute bedrock of Moroccan society.",
+    amazigh_text1: "Amazigh communities have deep roots across Morocco and North Africa. Amazigh languages, arts, agricultural knowledge, and regional traditions are important parts of Morocco's diverse cultural life; practices and identities vary between communities.",
     amazigh_text2: "This rich culture is proudly preserved through dynamic customs, unique regional Amazigh dialects (Tachelhit, Tamazight, Tarifit), and exquisite artifacts. From the geometric protection symbols stamped in crimson clay pottery to stunning tribal silver talismans adorned with amber and real coral, and the traditional flat-weave tribal carpets woven with local wool, Amazigh craftsmanship represents an unbroken legacy of historical artistry.",
 
     andalusian_title: "Arab & Andalusian Artistry",
@@ -45,7 +45,7 @@ const translations = {
     // New Category 7: Moroccan Hospitality & Tea Ceremony
     hospitality_title: "Hospitality & Tea Ceremony",
     hospitality_subtitle: "An Unbending Sacred Ritual of Welcome",
-    hospitality_text1: "In Morocco, hospitality is not merely a polite gesture; it is a sacred cultural duty and an art form. Guests are welcomed with open arms, genuine warmth, and a generosity that makes no distinction between family, friends, or weary travelers.",
+    hospitality_text1: "Hospitality is valued in many Moroccan homes and communities, often expressed through greetings, tea, or a shared meal. Customs differ by family, region, generation, and setting, so visitors should follow their host's lead rather than expect one universal ritual.",
     hospitality_text2: "At the heart of this welcoming ritual is the famous Moroccan Mint Tea, affectionately known as 'Moroccan Whiskey'. Brewed with green gunpowder tea, fresh spearmint leaves, and generous sugar, it is ceremoniously poured from silver teapots held high above small decorated glasses. The resulting layer of crown-like foam (Rezza) is a sign of respect and warm welcome to the guest.",
 
     // New Category 8: Traditional Souks & Artisan Markets
@@ -58,7 +58,7 @@ const translations = {
     weddings_title: "Moroccan Weddings & Family",
     weddings_subtitle: "Luxurious Multi-Day Celebrations of Love",
     weddings_text1: "Family is the cornerstone of Moroccan society, and nowhere is this more beautifully demonstrated than in the grand celebrations of marriage. A traditional Moroccan wedding is a legendary, multi-day feast of music, gastronomy, and high-fashion couture that unites families and communities.",
-    weddings_text2: "The ceremony features ancient steps, beginning with the pre-wedding Henna night where the bride's hands and feet are adorned with intricate protective patterns. On the main night, the bride wears up to seven different traditional kaftans representing various regions of Morocco. She is carried majestically on an ornate platform (Ammariya) by male relatives, while guests dance to traditional love songs under glittering chandeliers.",
+    weddings_text2: "Moroccan wedding celebrations vary widely. Some include a henna gathering, several outfits chosen by the couple, regional music, and an ornate platform known as an Ammariya; others are shorter or combine local and contemporary customs. No single sequence or number of kaftans applies to every family.",
 
     // New Category 10: Storytelling, Halqa & Folk Traditions
     folklore_title: "Storytelling, Halqa & Folklore",
@@ -118,7 +118,7 @@ const translations = {
     // New Category 7: Moroccan Hospitality & Tea Ceremony
     hospitality_title: "Hospitalité & Cérémonie du Thé",
     hospitality_subtitle: "Le Rituel Sacré de la Bienvenue",
-    hospitality_text1: "Au Maroc, l'hospitalité n'est pas un simple geste de politesse ; c'est un devoir culturel sacré et un véritable art de vivre. Les invités sont accueillis à bras ouverts avec une chaleur et une générosité sincères, sans distinction entre proches ou voyageurs.",
+    hospitality_text1: "L'hospitalité est appréciée dans de nombreux foyers et communautés marocains, souvent par les salutations, le thé ou un repas partagé. Les usages varient selon les familles, régions, générations et contextes ; suivez les indications de votre hôte.",
     hospitality_text2: "Le cœur de ce rituel d'accueil bat au rythme du fameux thé à la menthe marocain. Préparé avec du thé vert, des feuilles de menthe fraîche (Naanaâ) et du sucre, il est versé cérémonieusement depuis une théière en argent tenue bien haute au-dessus de verres décorés. La mousse ainsi formée, appelée 'couronne' (Rezza), est un gage de respect et d'hospitalité.",
 
     // New Category 8: Traditional Souks & Artisan Markets
@@ -131,7 +131,7 @@ const translations = {
     weddings_title: "Mariages & Traditions Familiales",
     weddings_subtitle: "Les Fastueuses Célébrations de l'Union",
     weddings_text1: "La famille est la pierre angulaire de la société marocaine, et nulle part cela n'est mieux illustré que lors des célébrations de mariage. Un mariage marocain traditionnel est une fête légendaire étalée sur plusieurs jours, mêlant haute couture, délices culinaires et musiques envoûtantes.",
-    weddings_text2: "La cérémonie suit des rituels ancestraux, à commencer par la nuit du henné où les mains de la mariée sont ornées de motifs protecteurs. Lors de la grande soirée, la mariée revêt jusqu'à sept caftans traditionnels représentant les régions du pays, et est portée sur l'Ammariya, une chaise à porteurs dorée, sous les chants et les youyous.",
+    weddings_text2: "Les mariages marocains varient fortement. Certains comprennent une soirée du henné, plusieurs tenues choisies par le couple, des musiques régionales et une Ammariya ; d'autres sont plus courts ou associent usages locaux et contemporains. Aucun nombre de caftans ne s'applique à toutes les familles.",
 
     // New Category 10: Storytelling, Halqa & Folk Traditions
     folklore_title: "Contes, Halqa & Traditions Orales",

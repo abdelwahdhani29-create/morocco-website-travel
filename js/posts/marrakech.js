@@ -4,7 +4,7 @@ export const postMarrakech = {
   cityId: "marrakech",
   image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-20",
-  lastUpdated: "2026-08-19",
+  lastUpdated: "2026-08-20",
   categories: {
     en: "Travel Guides",
     fr: "Guides de Voyage"
