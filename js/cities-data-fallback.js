@@ -2650,5 +2650,152 @@ export const citiesDataFallback = [
         "blog_id": "best-places-to-visit-in-morocco"
       }
     ]
+  },
+  {
+    "id": "azilal",
+    "name": "Azilal",
+    "arabic_name": "أزيلال",
+    "region": "Béni Mellal-Khénifra",
+    "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1600&q=80",
+    "suggested_days": 2,
+    "overview": "Azilal is a small High Atlas town and the administrative center of a province known for some of central Morocco's most dramatic mountain scenery. Rather than a monument-heavy city break, Azilal works best as a gateway to waterfalls, valleys, lakes, gorges and Amazigh villages. The wider province includes Ouzoud Waterfalls, Bin El Ouidane reservoir, Aït Bouguemez Valley, the Ahansal area and routes toward the M'Goun massif. The Moroccan National Tourist Office highlights the region for nature-based and responsible tourism, making Azilal a useful base for travelers who want a quieter, outdoor-focused side of Morocco.",
+    "cultural_note": "Azilal province includes many Amazigh communities where village life is quieter and more conservative than in Morocco's large tourist centers. Ask before photographing people, dress respectfully in villages, and treat mountain paths, farmland and water sources as local working landscapes rather than tourist sets.",
+    "attractions": [
+      {
+        "name": "Ouzoud Waterfalls",
+        "description": "One of Morocco's best-known natural sights: a multi-level waterfall landscape surrounded by olive groves. It is in Azilal Province and is commonly visited as a day trip, but staying nearby allows a slower visit outside the busiest hours.",
+        "duration": "3 - 4 hours"
+      },
+      {
+        "name": "Aït Bouguemez Valley",
+        "description": "A broad High Atlas valley of terraced fields, earthen villages and walking routes beneath the M'Goun massif. Often called the Valley of Happiness, it is one of the province's strongest bases for village walks and multi-day mountain trekking.",
+        "duration": "1 - 2 days"
+      },
+      {
+        "name": "Bin El Ouidane Lake",
+        "description": "A large reservoir set among mountain slopes, known for wide blue-water views and outdoor activities. The Moroccan National Tourist Office highlights the lake as one of the key natural attractions of the Azilal region.",
+        "duration": "Half day"
+      },
+      {
+        "name": "Imi N'Ifri Natural Bridge",
+        "description": "A dramatic natural rock bridge and gorge near Demnate, formed by water erosion. Paths descend into the ravine for close views; sturdy footwear is useful because surfaces can be uneven.",
+        "duration": "1 - 2 hours"
+      },
+      {
+        "name": "Oued Ahansal Gorges",
+        "description": "A remote mountain landscape of deep gorges and river corridors associated with trekking, rafting and canyoning. Organized activities should be arranged with experienced local operators because access and water conditions vary.",
+        "duration": "Full day"
+      },
+      {
+        "name": "Tamga Nature Reserve",
+        "description": "A protected mountain area in the wider Azilal region valued for rugged scenery and biodiversity. It suits travelers interested in hiking and less-developed natural landscapes rather than conventional urban sightseeing.",
+        "duration": "Full day"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Azilal Town Center",
+        "known_for": "Everyday local life, shops, cafés, services and a practical base for arranging onward transport.",
+        "activities": "Walking the center, eating at local cafés, buying supplies and organizing trips into the province.",
+        "best_for": "Travelers using Azilal as a regional base.",
+        "location": "Central Azilal."
+      },
+      {
+        "name": "Ouzoud Area",
+        "known_for": "Waterfalls, olive groves, walking paths and guesthouses.",
+        "activities": "Waterfall viewpoints, walking and overnight stays near the falls.",
+        "best_for": "Nature travelers and photographers.",
+        "location": "Northwest of Azilal in the wider province."
+      },
+      {
+        "name": "Aït Bouguemez & High Atlas Valleys",
+        "known_for": "Amazigh villages, terraced agriculture, mountain scenery and trekking routes.",
+        "activities": "Village walks, guided hikes and longer mountain itineraries.",
+        "best_for": "Hikers, slow travelers and rural tourism.",
+        "location": "High Atlas countryside south and southeast of Azilal."
+      }
+    ],
+    "hotels": {
+      "budget": {
+        "name": "Azilal: Budget guesthouse",
+        "price_approx": 30,
+        "amenity": "Example accommodation category. Compare current prices, location, reviews, and cancellation terms before reserving."
+      },
+      "mid_range": {
+        "name": "Azilal region: Mid-range guesthouse or lodge",
+        "price_approx": 65,
+        "amenity": "Example accommodation category. Mountain lodges and guesthouses can be more practical than city hotels for nature-focused stays."
+      },
+      "luxury": {
+        "name": "Bin El Ouidane / High Atlas: Upscale lodge",
+        "price_approx": 140,
+        "amenity": "Example accommodation category. Upscale options are more likely around scenic lake and mountain areas than central Azilal."
+      }
+    },
+    "bestTime": {
+      "spring": "Green valleys, active waterfalls and comfortable temperatures make spring especially attractive for nature trips.",
+      "summer": "Hot in lower areas but useful for higher-altitude trekking; midday heat can be strong around exposed sites.",
+      "autumn": "Generally pleasant for hiking and road trips, with cooler evenings in mountain areas.",
+      "winter": "Cold mountain conditions are possible, and snow can affect high-elevation routes; check local conditions before trekking.",
+      "recommended": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "budgetEstimate": {
+      "budget": {
+        "accommodation": "€20 - €35",
+        "food": "€7 - €15",
+        "transport": "€5 - €15",
+        "activities": "€0 - €15"
+      },
+      "midRange": {
+        "accommodation": "€45 - €80",
+        "food": "€15 - €30",
+        "transport": "€15 - €35",
+        "activities": "€15 - €40"
+      },
+      "luxury": {
+        "accommodation": "€100 - €180",
+        "food": "€35 - €65",
+        "transport": "€40 - €90",
+        "activities": "€40 - €100"
+      }
+    },
+    "travel_tips": [
+      "Treat Azilal as a gateway to a large mountain province: several headline sights are outside the town itself.",
+      "Check road and weather conditions before heading into high valleys, especially in winter or after heavy rain.",
+      "For remote hikes, canyoning or rafting, use an experienced local guide or operator rather than relying only on phone navigation.",
+      "Carry some cash outside the main town because card acceptance and ATM access can be limited in smaller villages."
+    ],
+    "internal_links": [
+      {
+        "title": "Best Places to Visit in Morocco",
+        "blog_id": "best-places-to-visit-in-morocco",
+        "description": "Compare Azilal and the High Atlas with Morocco’s other major destinations."
+      }
+    ],
+    "transportation": [
+      {
+        "type": "Intercity Bus / Coach",
+        "approx_cost": "Check current operator fare",
+        "description": "Road transport is the main way to reach Azilal and surrounding towns. Check current schedules directly with operators or at the station because services can change."
+      },
+      {
+        "type": "Grand Taxi",
+        "approx_cost": "Shared fare varies by route",
+        "description": "Shared grand taxis connect Azilal with nearby towns and are useful where there is no rail service. Confirm the destination and fare before departure."
+      },
+      {
+        "type": "Private Transfer / Rental Car",
+        "approx_cost": "Varies by route and vehicle",
+        "description": "Useful for reaching dispersed natural sites such as mountain valleys, trailheads and lake areas where public transport is limited."
+      },
+      {
+        "type": "On Foot / Guided Trek",
+        "approx_cost": "Free or guide fee",
+        "description": "Walking is central to exploring valleys and mountain areas. For remote or technical routes, arrange a qualified local guide."
+      }
+    ]
   }
 ];

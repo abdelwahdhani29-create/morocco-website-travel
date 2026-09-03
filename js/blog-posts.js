@@ -21,8 +21,10 @@ import { postMoroccoItineraryFirstTime } from "./posts/morocco-itinerary-first-t
 import { postMoroccoCostOfTravel } from "./posts/morocco-cost-of-travel.js";
 import { postHowMuchCashToBringToMorocco } from "./posts/how-much-cash-to-bring-to-morocco.js";
 import { postMoroccoVisaRequirements } from "./posts/morocco-visa-requirements.js";
+import { postMoroccoWithoutACar } from "./posts/morocco-without-a-car.js";
 
 export const blogPosts = [
+  postMoroccoWithoutACar,
   postMoroccoVisaRequirements,
   postHowMuchCashToBringToMorocco,
   postMoroccoCostOfTravel,
