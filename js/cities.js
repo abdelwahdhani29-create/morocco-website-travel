@@ -275,7 +275,7 @@ function renderAll() {
 
   // Check if static HTML cards are already rendered in English with no active search
   const existingCardsCount = grid.querySelectorAll('.dir-card').length;
-  if (existingCardsCount === 18 && !searchQuery && currentLang === 'en' && !grid.dataset.renderedByJs) {
+  if (existingCardsCount === allCities.length && !searchQuery && currentLang === 'en' && !grid.dataset.renderedByJs) {
     grid.dataset.renderedByJs = 'true';
     if (window.lucide) {
       window.lucide.createIcons();
