@@ -26,7 +26,7 @@
         {
           "type": "query",
           "key": "id",
-          "value": "(?<id>marrakech|chefchaouen|fez|essaouira|casablanca|tangier|rabat|agadir|ouarzazate|merzouga|meknes|tetouan|alhoceima|ifrane|dakhla|eljadida|oujda|beni-mellal)"
+          "value": "(?<id>marrakech|chefchaouen|fez|essaouira|casablanca|tangier|rabat|agadir|ouarzazate|merzouga|meknes|tetouan|alhoceima|ifrane|dakhla|eljadida|oujda|beni-mellal|azilal)"
         }
       ],
       "destination": "/city/:id.html",
@@ -38,7 +38,7 @@
         {
           "type": "query",
           "key": "id",
-          "value": "(?<id>morocco-visa-requirements|how-much-cash-to-bring-to-morocco|morocco-cost-of-travel|morocco-itinerary-first-time|best-places-to-visit-in-morocco|casablanca-ultimate-travel-guide|what-to-wear-in-morocco|why-morocco-fastest-growing-destination|morocco-broke-tourism-records-2026|morocco-travel-tips-30-things-to-know|morocco-world-cup-2026-atlas-lions-tourism-before-2030|is-morocco-safe-2026|safety-etiquette|best-time-to-visit-morocco|marrakech-souks-guide|chefchaouen-azure-streets|merzouga-sahara-overnight|flavors-of-fez-culinary|essaouira-coastal-sanctuary|moroccan-tea-rituals)"
+          "value": "(?<id>morocco-without-a-car|morocco-visa-requirements|how-much-cash-to-bring-to-morocco|morocco-cost-of-travel|morocco-itinerary-first-time|best-places-to-visit-in-morocco|casablanca-ultimate-travel-guide|what-to-wear-in-morocco|why-morocco-fastest-growing-destination|morocco-broke-tourism-records-2026|morocco-travel-tips-30-things-to-know|morocco-world-cup-2026-atlas-lions-tourism-before-2030|is-morocco-safe-2026|safety-etiquette|best-time-to-visit-morocco|marrakech-souks-guide|chefchaouen-azure-streets|merzouga-sahara-overnight|flavors-of-fez-culinary|essaouira-coastal-sanctuary|moroccan-tea-rituals)"
         }
       ],
       "destination": "/blog/:id.html",

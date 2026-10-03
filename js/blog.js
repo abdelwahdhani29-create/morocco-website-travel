@@ -18,6 +18,7 @@ function initBlog() {
   const paramBlogId = params.get('id');
 
   const validBlogPosts = [
+    'morocco-without-a-car',
     'morocco-visa-requirements', 'how-much-cash-to-bring-to-morocco', 'morocco-cost-of-travel', 'morocco-itinerary-first-time',
     'best-places-to-visit-in-morocco', 'casablanca-ultimate-travel-guide', 'what-to-wear-in-morocco',
     'why-morocco-fastest-growing-destination', 'morocco-broke-tourism-records-2026',
@@ -650,7 +651,7 @@ function renderBreadcrumbs() {
 
   let html = `
     <li>
-      <a href="/index.html" class="crumb-link" style="color: var(--color-charcoal-light); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; font-weight: 500;">
+      <a href="/" class="crumb-link" style="color: var(--color-charcoal-light); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; font-weight: 500;">
         <i data-lucide="home" style="width: 14px; height: 14px;"></i> ${t('home')}
       </a>
     </li>

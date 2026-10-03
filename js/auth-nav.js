@@ -197,12 +197,6 @@ function loadOptionalGoogleServices() {
   analytics.dataset.googleConsented = 'analytics';
   analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-B4J96GR996';
   document.head.appendChild(analytics);
-  const ads = document.createElement('script');
-  ads.async = true;
-  ads.dataset.googleConsented = 'ads';
-  ads.crossOrigin = 'anonymous';
-  ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8177157318365571';
-  document.head.appendChild(ads);
 }
 
 // Dynamically populate footer links globally

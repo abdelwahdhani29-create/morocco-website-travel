@@ -14,9 +14,6 @@
     <title>Page Not Found • GoMoroccoAI</title>
     <meta name="description" content="Oops! The page you are looking for on GoMoroccoAI cannot be found. Navigate back to discover the beautiful cities, heritage, and culture of Morocco." />
     <meta name="robots" content="noindex" />
-    
-    <!-- Canonical link -->
-    <link rel="canonical" href="https://gomoroccoai.com/404.html" />
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Page Not Found • GoMoroccoAI" />
@@ -31,9 +28,9 @@
     <meta name="twitter:description" content="Oops! The page you are looking for on GoMoroccoAI cannot be found. Navigate back to discover the beautiful cities, heritage, and culture of Morocco." />
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80" />
 
-    <!-- Google AdSense Verification -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8177157318365571"
-     crossorigin="anonymous"></script>
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://unpkg.com/lucide@0.468.0"></script>
@@ -89,7 +86,7 @@
     <header id="app-header">
       <div class="container header-inner">
         <div class="logo-section">
-          <a href="/index.html" class="app-logo">GoMoroccoAI</a>
+          <a href="/" class="app-logo">GoMoroccoAI</a>
           <div class="logo-sub">Morocco Travel Guide</div>
         </div>
         <div class="nav-controls" id="header-nav-controls">
@@ -107,7 +104,7 @@
         <p class="error-text" id="error-desc">
           The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Let us guide you back to the treasures of Morocco.
         </p>
-        <a href="/index.html" class="btn-primary-ai" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 25px; font-weight: 700;">
+        <a href="/" class="btn-primary-ai" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 25px; font-weight: 700;">
           <i data-lucide="home" style="width: 16px; height: 16px;"></i>
           <span id="btn-back-home">Back to Homepage</span>
         </a>
@@ -151,7 +148,7 @@
         const linksContainer = document.getElementById('app-footer-links');
         if (linksContainer) {
           const links = [
-            { href: `/index.html`, text: 'Home' },
+            { href: `/`, text: 'Home' },
             { href: `/about.html`, text: 'About Us' },
             { href: `/contact.html`, text: 'Contact' },
             { href: `/privacy.html`, text: 'Privacy Policy' },

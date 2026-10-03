@@ -85,7 +85,7 @@ async function initCityDetail() {
     'marrakech', 'chefchaouen', 'fez', 'essaouira', 'casablanca',
     'tangier', 'rabat', 'agadir', 'ouarzazate', 'merzouga',
     'meknes', 'tetouan', 'alhoceima', 'ifrane', 'dakhla',
-    'eljadida', 'oujda', 'beni-mellal'
+    'eljadida', 'oujda', 'beni-mellal', 'azilal'
   ];
 
   if (paramCityId) {
