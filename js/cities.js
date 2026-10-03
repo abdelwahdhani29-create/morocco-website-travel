@@ -1,5 +1,4 @@
-// Morocco Tourism - Vanilla JS All Cities Directory Engine (Bilingual English / Français)
-import { getNavLanguage } from './auth-nav.js';
+// Morocco Tourism - Vanilla JS All Cities Directory Engine (English-only)
 import { citiesDataFallback } from './cities-data-fallback.js';
 
 const translations = {
@@ -30,117 +29,31 @@ const translations = {
       "Oriental": "Oriental Region",
       "Beni Mellal-Khenifra": "Beni Mellal-Khenifra Region"
     }
-  },
-  fr: {
-    back_home: "Retour à l'Accueil",
-    dir_title: "Découvrir toutes les Villes",
-    dir_desc: "Explorez notre répertoire de cités impériales majestueuses, de sommets azurés, de ports côtiers balayés par le vent et de médinas millénaires pour préparer votre voyage.",
-    search_placeholder: "Rechercher par nom de ville, région, sites...",
-    showing_lbl: "Affichage de",
-    destinations_lbl: "destinations",
-    loading_lbl: "Chargement des destinations...",
-    suggested_stay: "Séjour Conseillé",
-    days: "jours",
-    view_details: "Explorer la destination ↗",
-    credits: "GoMoroccoAI Explorer • Index complet réalisé en JavaScript pur.",
-    no_results: "Aucun résultat ne correspond à votre recherche. Essayez un autre mot !",
-    culture_nav: "Culture Marocaine",
-    planner_nav: "Planificateur interactif",
-    regions: {
-      "Marrakech-Safi": "Région de Marrakech-Safi",
-      "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",
-      "Fes-Meknes": "Fès-Meknès",
-      "Casablanca-Settat": "Région de Casablanca-Settat",
-      "Rabat-Sale-Kenitra": "Rabat-Salé-Kénitra",
-      "Souss-Massa": "Souss-Massa",
-      "Draa-Tafilalet": "Drâa-Tafilalet",
-      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab",
-      "Oriental": "Région de l'Oriental",
-      "Beni Mellal-Khenifra": "Région de Béni Mellal-Khénifra"
-    }
   }
 };
 
-// Beautiful bilingual descriptions for all 16 catalog cities
+// English descriptions for catalog cities
 const cityDescriptions = {
-  marrakech: {
-    en: "The legendary 'Red City', renowned for its ancient clay walls, vibrant squares, majestic palaces, and the lively souks filled with centuries-old Moroccan crafts.",
-    fr: "La légendaire 'Ville Rouge', célèbre pour ses anciens remparts de pisé, ses places animées, ses palais majestueux et ses souks débordant d'artisanat marocain séculaire."
-  },
-  chefchaouen: {
-    en: "Morocco's mystical 'Blue Pearl', tucked into the majestic Rif Mountains, boasting pristine indigo pathways and serene, mountain-fresh streams.",
-    fr: "La mystique 'Perle Bleue' du Maroc, nichée dans les hauteurs du Rif, renommée pour ses ruelles indigo étincelantes et ses sources d'eau de montagne fraîches."
-  },
-  fez: {
-    en: "The historic spiritual and intellectual soul of the Kingdom, containing the oldest continuously operating university in the world and 9,000 winding medieval lanes.",
-    fr: "Le cœur historique, spirituel et intellectuel du Royaume, abritant la plus ancienne université en activité au monde et plus de 9 000 ruelles médiévales."
-  },
-  essaouira: {
-    en: "A beautiful, windswept Atlantic coastal harbor fortress, filled with historical bronze cannons, pristine sandy beaches, and traditional Gnaoua music vibes.",
-    fr: "Une superbe forteresse portuaire sur l'Atlantique, dotée de canons de bronze historiques, de plages de sable fin et bercée par la musique spirituelle Gnaoua."
-  },
-  casablanca: {
-    en: "Morocco's vibrant seaside metropolis, blending towering modern wonders like the Hassan II Mosque with charming art-deco French quarters.",
-    fr: "La vibrante métropole côtière du Maroc, mariant de modernes chefs-d'œuvre comme la mosquée Hassan II avec de charmants quartiers de style Art déco."
-  },
-  tangier: {
-    en: "The iconic 'Gateway to Africa', sitting between the sea and ocean, inspiring generations of international writers and artists with its bohemian spirit.",
-    fr: "L'emblématique 'Porte de l'Afrique', entre mer et océan, inspirant des générations d'écrivains et d'artistes internationaux par son esprit bohème."
-  },
-  rabat: {
-    en: "The stately capital city of Morocco, showcasing wide tree-lined boulevards, immaculate modern gardens, and the ancient seaside Kasbah of the Udayas.",
-    fr: "La majestueuse capitale du Maroc, arborant de larges boulevards ombragés, des parcs modernes impeccables et l'antique Kasbah des Oudayas face au large."
-  },
-  agadir: {
-    en: "A premier sun-kissed seaside resort looking over a spectacular 10-kilometer golden crescent beach, famous for water sports and rich Amazigh crafts.",
-    fr: "Une importante station balnéaire du sud bordée par un superbe croissant de sable doré de 10 kilomètres, appréciée pour ses vagues et son artisanat amazigh."
-  },
-  ouarzazate: {
-    en: "Morocco's sun-baked 'desert Hollywood', framed by dramatic Atlas peaks and majestic red clay fortresses like UNESCO-listed Ait Benhaddou.",
-    fr: "Le fameux 'Hollywood du désert' marocain, encadré par les hauts sommets de l'Atlas et d'imposantes forteresses d'argile rouge classées à l'UNESCO comme Aït-ben-Haddou."
-  },
-  merzouga: {
-    en: "An unforgettable desert jewel situated beneath the wind-sculpted golden Erg Chebbi dunes, offering starry Saharan campfires and caravan treks.",
-    fr: "Un joyau inoubliable du désert au pied des immenses dunes de l'Erg Chebbi, proposant des nuitées étoilées en bivouac et d'authentiques balades à dromadaire."
-  },
-  meknes: {
-    en: "An Imperial city surrounded by massive protective clay bastions, containing exquisite gates, historic granaries, and nearby ancient Roman Volubilis.",
-    fr: "Une cité impériale ceinte de remparts protecteurs monumentaux, abritant de splendides portes ornées, des greniers à blé géants et le site antique romain de Volubilis."
-  },
-  tetouan: {
-    en: "The elegant 'White Dove' of northern hills, showcasing beautiful Spanish-Andalusian architectural lanes and UNESCO traditional artisan guilds.",
-    fr: "L'élégante 'Colombe Blanche' des collines du nord, ornée de remarquables édifices hispano-mauresques et d'ateliers d'artisans classés à l'UNESCO."
-  },
-  alhoceima: {
-    en: "A spectacular Mediterranean haven tucked into the Rif cliffs, praised for sapphire beaches like Quemado and mountain coastal reserves.",
-    fr: "Un havre méditerranéen spectaculaire blotti dans les falaises du Rif, réputé pour ses plages saphir comme Quemado et ses criques vierges."
-  },
-  ifrane: {
-    en: "A unique alpine mountain resort known as 'Little Switzerland', boasting sloped red roofs, snowy winter pine woods, and pure cedar forests.",
-    fr: "Une station alpine de montagne unique surnommée la 'Petite Suisse', célèbre pour ses toitures de tuiles rouges, ses sapins enneigés et ses forêts de cèdres."
-  },
-  dakhla: {
-    en: "A world-class lagoon paradise where golden desert ridges meet the windy turquoise Atlantic, creating an ultimate sports spot.",
-    fr: "Un lagon paradisiaque d'envergure mondiale où les dunes dorées du désert rencontrent l'Atlantique, formant le temple ultime du kitesurf."
-  },
-  eljadida: {
-    en: "A charming historic ocean harbor containing the UNESCO-listed Portuguese stone cistern, old watchtowers, and Atlantic fortress ramparts.",
-    fr: "Un port atlantique historique abritant la magnifique citerne de pierre portugaise classée à l'UNESCO, ses fortifications côtières et ses bastions marins."
-  },
-  oujda: {
-    en: "The historic capital of Eastern Morocco, known for deep hospitality, traditional Gharnati music, a beautiful medina, and Lalla Aicha Park.",
-    fr: "Découvrez Oujda, porte du Maroc oriental, célèbre pour ses jardins paisibles, sa médina authentique et sa musique traditionnelle Gharnati."
-  },
-  "beni-mellal": {
-    en: "An agricultural oasis beneath the Middle Atlas, famous for olive groves, cascading mountain springs, and high-altitude fortress views.",
-    fr: "Découvrez Béni Mellal, célèbre pour ses oliveraies à perte de vue, les sources de Ain Asserdoun et son château fort de Ras el Ain."
-  }
+  marrakech: "The legendary 'Red City', renowned for its ancient clay walls, vibrant squares, majestic palaces, and the lively souks filled with centuries-old Moroccan crafts.",
+  chefchaouen: "Morocco's mystical 'Blue Pearl', tucked into the majestic Rif Mountains, boasting pristine indigo pathways and serene, mountain-fresh streams.",
+  fez: "The historic spiritual and intellectual soul of the Kingdom, containing the oldest continuously operating university in the world and 9,000 winding medieval lanes.",
+  essaouira: "A beautiful, windswept Atlantic coastal harbor fortress, filled with historical bronze cannons, pristine sandy beaches, and traditional Gnaoua music vibes.",
+  casablanca: "Morocco's vibrant seaside metropolis, blending towering modern wonders like the Hassan II Mosque with charming art-deco French quarters.",
+  tangier: "The iconic 'Gateway to Africa', sitting between the sea and ocean, inspiring generations of international writers and artists with its bohemian spirit.",
+  rabat: "The stately capital city of Morocco, showcasing wide tree-lined boulevards, immaculate modern gardens, and the ancient seaside Kasbah of the Udayas.",
+  agadir: "A premier sun-kissed seaside resort looking over a spectacular 10-kilometer golden crescent beach, famous for water sports and rich Amazigh crafts.",
+  ouarzazate: "Morocco's sun-baked 'desert Hollywood', framed by dramatic Atlas peaks and majestic red clay fortresses like UNESCO-listed Ait Benhaddou.",
+  merzouga: "An unforgettable desert jewel situated beneath the wind-sculpted golden Erg Chebbi dunes, offering starry Saharan campfires and caravan treks.",
+  meknes: "An Imperial city surrounded by massive protective clay bastions, containing exquisite gates, historic granaries, and nearby ancient Roman Volubilis.",
+  tetouan: "The elegant 'White Dove' of northern hills, showcasing beautiful Spanish-Andalusian architectural lanes and UNESCO traditional artisan guilds.",
+  alhoceima: "A spectacular Mediterranean haven tucked into the Rif cliffs, praised for sapphire beaches like Quemado and mountain coastal reserves.",
+  ifrane: "A unique alpine mountain resort known as 'Little Switzerland', boasting sloped red roofs, snowy winter pine woods, and pure cedar forests.",
+  dakhla: "A world-class lagoon paradise where golden desert ridges meet the windy turquoise Atlantic, creating an ultimate sports spot.",
+  eljadida: "A charming historic ocean harbor containing the UNESCO-listed Portuguese stone cistern, old watchtowers, and Atlantic fortress ramparts.",
+  oujda: "The historic capital of Eastern Morocco, known for deep hospitality, traditional Gharnati music, a beautiful medina, and Lalla Aicha Park.",
+  "beni-mellal": "An agricultural oasis beneath the Middle Atlas, famous for olive groves, cascading mountain springs, and high-altitude fortress views."
 };
 
-let currentLang = getNavLanguage();
-if (currentLang !== 'en' && currentLang !== 'fr') {
-  currentLang = 'en';
-}
 let allCities = [];
 let searchQuery = '';
 
@@ -169,17 +82,6 @@ async function initCitiesDirectory() {
     setupSearchListeners();
     // Render the layout
     renderAll();
-    
-    // Listen to real-time navbar language toggling event
-    window.addEventListener('languageChanged', (e) => {
-      let lang = e.detail.lang;
-      if (lang !== 'en' && lang !== 'fr') {
-        lang = 'en';
-      }
-      currentLang = lang;
-      renderAll();
-    });
-
   } catch (err) {
     console.error("Error setting up cities directory dashboard:", err);
     const grid = document.getElementById('cities-directory-grid');
@@ -195,7 +97,7 @@ async function initCitiesDirectory() {
 }
 
 function t(key) {
-  return translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  return translations.en?.[key] || key;
 }
 
 // Global text utility
@@ -206,7 +108,7 @@ function setElText(id, value) {
 
 function renderAll() {
   // Update direction and lang attributes
-  document.documentElement.setAttribute('lang', currentLang);
+  document.documentElement.setAttribute('lang', 'en');
   document.documentElement.setAttribute('dir', 'ltr');
 
   // Translate static UI elements
@@ -245,27 +147,17 @@ function renderAll() {
     // Check English attributes
     const matchesEnName = city.name.toLowerCase().includes(term);
     const matchesRegion = city.region.toLowerCase().includes(term);
-    
-    // Also check French translated fields if active
-    let matchesFrName = false;
-    let matchesFrDesc = false;
-
-    if (currentLang === 'fr' && cityDescriptions[city.id]) {
-      matchesFrName = city.name.toLowerCase().includes(term);
-      matchesFrDesc = cityDescriptions[city.id].fr.toLowerCase().includes(term);
-    }
-    
     const matchesAttraction = city.attractions.some(attr => 
       attr.name.toLowerCase().includes(term) || attr.description.toLowerCase().includes(term)
     );
 
-    return matchesEnName || matchesRegion || matchesAttraction || matchesFrName || matchesFrDesc;
+    return matchesEnName || matchesRegion || matchesAttraction;
   });
 
   // Render Stats Counter
   const statsBadge = document.getElementById('lbl-count-badge');
   if (statsBadge) {
-    const unitText = filtered.length === 1 ? (currentLang === 'fr' ? 'destination' : 'destination') : t('destinations_lbl');
+    const unitText = filtered.length === 1 ? 'destination' : t('destinations_lbl');
     statsBadge.textContent = `${t('showing_lbl')} ${filtered.length} ${unitText}`;
   }
 
@@ -275,7 +167,7 @@ function renderAll() {
 
   // Check if static HTML cards are already rendered in English with no active search
   const existingCardsCount = grid.querySelectorAll('.dir-card').length;
-  if (existingCardsCount === allCities.length && !searchQuery && currentLang === 'en' && !grid.dataset.renderedByJs) {
+  if (existingCardsCount === allCities.length && !searchQuery && !grid.dataset.renderedByJs) {
     grid.dataset.renderedByJs = 'true';
     if (window.lucide) {
       window.lucide.createIcons();
@@ -299,11 +191,9 @@ function renderAll() {
   }
 
   filtered.forEach((city, index) => {
-    // Choose translated name & description if french is active
     let displayName = city.name;
-    const descObj = cityDescriptions[city.id.toLowerCase()];
-    const displayDesc = descObj ? (descObj[currentLang] || descObj['en']) : city.cultural_note;
-    const displayRegion = (translations[currentLang]?.regions?.[city.region]) || (translations['en']?.regions?.[city.region]) || city.region;
+    const displayDesc = cityDescriptions[city.id.toLowerCase()] || city.cultural_note;
+    const displayRegion = translations.en.regions?.[city.region] || city.region;
 
     const card = document.createElement('div');
     card.className = 'dir-card';

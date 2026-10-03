@@ -171,28 +171,6 @@ header {
 .dot.blue { background-color: var(--color-chefchaouen); }
 .dot.gold { background-color: var(--color-gold); }
 
-/* Language Switcher Button */
-.lang-switch-btn {
-  background: var(--color-cream);
-  border: 1px solid var(--color-border);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-charcoal);
-  transition: var(--transition-smooth);
-}
-
-.lang-switch-btn:hover {
-  background: var(--color-terracotta-light);
-  border-color: var(--color-terracotta);
-  color: var(--color-terracotta-dark);
-}
-
 /* --- NEW GLOBAL MOROCCO WELCOME HERO --- */
 .global-hero {
   position: relative;
@@ -2342,12 +2320,12 @@ body {
 }
 
 /* Subtle micro-animations and tap states */
-.city-card, .dir-card, .attraction-card, .transit-item, .btn-primary, .btn-secondary, .lang-btn {
+.city-card, .dir-card, .attraction-card, .transit-item, .btn-primary, .btn-secondary {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background-color 0.3s ease !important;
 }
 
 /* Active tap effects */
-.city-card:active, .dir-card:active, .attraction-card:active, .transit-item:active, .btn-primary:active, .btn-secondary:active, .lang-btn:active {
+.city-card:active, .dir-card:active, .attraction-card:active, .transit-item:active, .btn-primary:active, .btn-secondary:active {
   transform: scale(0.97) !important;
 }
 
@@ -3106,15 +3084,6 @@ body {
 @media (max-width: 360px) {
   .app-logo {
     font-size: 18px !important;
-  }
-
-  .lang-toggle-wrapper-mobile {
-    height: 32px !important;
-  }
-
-  .lang-btn {
-    padding: 2px 6px !important;
-    font-size: 10px !important;
   }
 
   .global-hero-title {

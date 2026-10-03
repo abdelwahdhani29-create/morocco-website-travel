@@ -1,4 +1,4 @@
-// GoMoroccoAI Blog Articles Registry (Bilingual English & French)
+// GoMoroccoAI Blog Articles Registry (English)
 // Modulized and expanded for optimal performance and SEO compliance.
 
 import { postWhatToWearInMorocco } from "./posts/what-to-wear-in-morocco.js";
@@ -92,17 +92,19 @@ const verificationSourcesById = {
 };
 
 for (const post of blogPosts) {
-  const englishText = String(post.content?.en || "").replace(/<[^>]*>/g, " ").replace(/&[a-z0-9#]+;/gi, " ");
-  const frenchText = String(post.content?.fr || "").replace(/<[^>]*>/g, " ").replace(/&[a-z0-9#]+;/gi, " ");
+  const contentStr = typeof post.content === 'object' ? (post.content.en || '') : String(post.content || '');
+  const englishText = contentStr.replace(/<[^>]*>/g, " ").replace(/&[a-z0-9#]+;/gi, " ");
   const minutes = text => Math.max(1, Math.ceil((text.trim().match(/\S+/g) || []).length / 220));
-  post.readTime = {
-    en: `${minutes(englishText)} min read`,
-    fr: `${minutes(frenchText)} min de lecture`
-  };
+  const calculatedReadTime = `${minutes(englishText)} min read`;
+  post.readTime = calculatedReadTime;
 
   const sources = verificationSourcesById[post.id];
   if (!sources || !post.content) continue;
   const links = sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer" class="blog-external-link">${label}</a></li>`).join("");
-  post.content.en += `<section class="article-sources"><h2>Verification sources</h2><p>Use these primary or institutional sources to confirm time-sensitive details before travel:</p><ul>${links}</ul></section>`;
-  post.content.fr += `<section class="article-sources"><h2>Sources de vérification</h2><p>Utilisez ces sources officielles ou institutionnelles pour confirmer les informations susceptibles d'évoluer :</p><ul>${links}</ul></section>`;
+  const sourcesHtml = `<section class="article-sources"><h2>Verification sources</h2><p>Use these primary or institutional sources to confirm time-sensitive details before travel:</p><ul>${links}</ul></section>`;
+  if (typeof post.content === 'object' && post.content.en) {
+    post.content.en += sourcesHtml;
+  } else if (typeof post.content === 'string') {
+    post.content += sourcesHtml;
+  }
 }

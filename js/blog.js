@@ -1,10 +1,8 @@
-// GoMoroccoAI Blog System (Bilingual English / Français)
+// GoMoroccoAI Blog System (English-only)
 import { blogPosts } from './blog-posts.js';
 import { translations } from './translations.js';
-import { getNavLanguage } from './auth-nav.js';
 
 // Setup state
-let currentLanguage = getNavLanguage();
 let selectedCategory = 'all';
 let searchQuery = '';
 let visiblePostsCount = 999; // Display all posts
@@ -15,8 +13,6 @@ let activePostId = null;
 
 // Initialize
 function initBlog() {
-  currentLanguage = getNavLanguage();
-  
   // Parse URL query parameter or pathname for active article
   const params = new URLSearchParams(window.location.search);
   const paramBlogId = params.get('id');
@@ -50,12 +46,6 @@ function initBlog() {
 
   // Render correct view
   renderView();
-
-  // Listen for language changes to keep everything dynamic and aligned
-  window.addEventListener('languageChanged', (e) => {
-    currentLanguage = e.detail.lang;
-    renderView();
-  });
 }
 
 function renderView() {
@@ -93,8 +83,7 @@ function renderView() {
 // 1. Directory View Renderer (Catalog, Filter, Search, Pagination)
 // --------------------------------------------------------------------------
 function renderDirectory() {
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   // Set page headers
   document.title = `${t('blog')} | GoMoroccoAI`;
@@ -124,31 +113,23 @@ function renderDirectory() {
   // Filter posts
   const filteredPosts = blogPosts.filter(post => {
     // Category match
-    const categoryEn = post.categories.en.toLowerCase();
-    const categoryFr = post.categories.fr.toLowerCase();
+    const postCategory = typeof post.categories === 'object' ? post.categories.en : post.categories;
     const isCategoryMatch = selectedCategory === 'all' || 
-      categoryEn === selectedCategory.toLowerCase() || 
-      categoryFr === selectedCategory.toLowerCase();
+      postCategory.toLowerCase() === selectedCategory.toLowerCase();
 
-    // Search query match (bilingual titles / excerpts / content / categories / author)
+    // Search query match (titles / excerpts / content / categories / author)
     const q = searchQuery.toLowerCase().trim();
-    const titleEn = (post.title.en || '').toLowerCase();
-    const titleFr = (post.title.fr || '').toLowerCase();
-    const excerptEn = (post.excerpt.en || '').toLowerCase();
-    const excerptFr = (post.excerpt.fr || '').toLowerCase();
-    const contentEn = (post.content.en || '').toLowerCase();
-    const contentFr = (post.content.fr || '').toLowerCase();
-    const authorEn = (post.author.en || '').toLowerCase();
+    const title = (typeof post.title === 'object' ? post.title.en : post.title || '').toLowerCase();
+    const excerpt = (typeof post.excerpt === 'object' ? post.excerpt.en : post.excerpt || '').toLowerCase();
+    const content = (typeof post.content === 'object' ? post.content.en : post.content || '').toLowerCase();
+    const author = (typeof post.author === 'object' ? post.author.en : post.author || '').toLowerCase();
+
     const isSearchMatch = !q || 
-      titleEn.includes(q) || 
-      titleFr.includes(q) || 
-      excerptEn.includes(q) || 
-      excerptFr.includes(q) ||
-      contentEn.includes(q) ||
-      contentFr.includes(q) ||
-      categoryEn.includes(q) ||
-      categoryFr.includes(q) ||
-      authorEn.includes(q);
+      title.includes(q) || 
+      excerpt.includes(q) || 
+      content.includes(q) ||
+      postCategory.toLowerCase().includes(q) ||
+      author.includes(q);
 
     return isCategoryMatch && isSearchMatch;
   });
@@ -177,12 +158,12 @@ function renderDirectory() {
 
   let gridHtml = '';
   postsToDisplay.forEach(post => {
-    const postTitle = post.title[currentLang] || post.title.en;
-    const postExcerpt = post.excerpt[currentLang] || post.excerpt.en;
-    const postCategory = post.categories[currentLang] || post.categories.en;
-    const postReadTime = post.readTime[currentLang] || post.readTime.en;
-    const postAuthor = post.author[currentLang] || post.author.en;
-    const formattedDate = new Date(post.date).toLocaleDateString(currentLang === 'fr' ? 'fr-FR' : 'en-US', {
+    const postTitle = typeof post.title === 'object' ? post.title.en : post.title;
+    const postExcerpt = typeof post.excerpt === 'object' ? post.excerpt.en : post.excerpt;
+    const postCategory = typeof post.categories === 'object' ? post.categories.en : post.categories;
+    const postReadTime = typeof post.readTime === 'object' ? post.readTime.en : post.readTime;
+    const postAuthor = typeof post.author === 'object' ? post.author.en : post.author;
+    const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -271,20 +252,17 @@ function renderDirectory() {
 }
 
 function renderCategoriesFilter() {
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   const filterContainer = document.getElementById('blog-categories-filter');
   if (!filterContainer) return;
 
-  // Extract categories in current language
-  const categoriesMap = new Map(); // categoryKey => localizedLabel
+  const categoriesMap = new Map();
   categoriesMap.set('all', t('all_categories'));
   
   blogPosts.forEach(post => {
-    const key = post.categories.en; // We keep English as standard key
-    const localizedLabel = post.categories[currentLang] || post.categories.en;
-    categoriesMap.set(key, localizedLabel);
+    const key = typeof post.categories === 'object' ? post.categories.en : post.categories;
+    categoriesMap.set(key, key);
   });
 
   let filterHtml = '';
@@ -342,8 +320,7 @@ if (document.readyState === 'loading') {
 // 2. Single Article Details View Renderer
 // --------------------------------------------------------------------------
 function renderSingleArticle(id) {
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   // Find article
   const post = blogPosts.find(p => p.id === id);
@@ -353,21 +330,21 @@ function renderSingleArticle(id) {
     return;
   }
 
-  const postTitle = post.title[currentLang] || post.title.en;
-  const postExcerpt = post.excerpt[currentLang] || post.excerpt.en;
-  const postContent = post.content[currentLang] || post.content.en;
-  const postCategory = post.categories[currentLang] || post.categories.en;
-  const postReadTime = post.readTime[currentLang] || post.readTime.en;
-  const postAuthor = post.author[currentLang] || post.author.en;
-  const formattedDate = new Date(post.date).toLocaleDateString(currentLang === 'fr' ? 'fr-FR' : 'en-US', {
+  const postTitle = typeof post.title === 'object' ? post.title.en : post.title;
+  const postExcerpt = typeof post.excerpt === 'object' ? post.excerpt.en : post.excerpt;
+  const postContent = typeof post.content === 'object' ? post.content.en : post.content;
+  const postCategory = typeof post.categories === 'object' ? post.categories.en : post.categories;
+  const postReadTime = typeof post.readTime === 'object' ? post.readTime.en : post.readTime;
+  const postAuthor = typeof post.author === 'object' ? post.author.en : post.author;
+  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   });
 
   // Fetch specialized meta fields for maximum SEO precision
-  const metaTitle = (post.metaTitle && post.metaTitle[currentLang]) || post.metaTitle?.en || postTitle;
-  const metaDesc = (post.metaDescription && post.metaDescription[currentLang]) || post.metaDescription?.en || postExcerpt;
+  const metaTitle = (typeof post.metaTitle === 'object' ? post.metaTitle.en : post.metaTitle) || postTitle;
+  const metaDesc = (typeof post.metaDescription === 'object' ? post.metaDescription.en : post.metaDescription) || postExcerpt;
 
   // 1. Override meta tags dynamically for pure SEO-optimized views
   document.title = `${metaTitle} | GoMoroccoAI Blog`;
@@ -403,15 +380,15 @@ function renderSingleArticle(id) {
   if (contentEl) {
     let html = postContent;
     if (post.faqs && post.faqs.length > 0) {
-      const faqTitle = currentLang === 'fr' ? 'Questions Fréquentes (FAQ)' : 'Frequently Asked Questions (FAQ)';
+      const faqTitle = 'Frequently Asked Questions (FAQ)';
       let faqHtml = `
         <div class="blog-faq-section" style="margin-top: 48px; border-top: 2px solid var(--color-border); padding-top: 36px; margin-bottom: 24px;">
           <h2 style="font-family: var(--font-serif); font-size: 28px; font-weight: 700; color: var(--color-charcoal); margin-bottom: 24px;">${faqTitle}</h2>
           <div style="display: flex; flex-direction: column; gap: 16px;">
       `;
       post.faqs.forEach(faq => {
-        const q = faq.question[currentLang] || faq.question.en;
-        const a = faq.answer[currentLang] || faq.answer.en;
+        const q = typeof faq.question === 'object' ? faq.question.en : faq.question;
+        const a = typeof faq.answer === 'object' ? faq.answer.en : faq.answer;
         faqHtml += `
           <details style="background: var(--color-sand); border: 2px solid var(--color-border); border-radius: var(--border-radius-md); overflow: hidden; transition: var(--transition-smooth);" class="faq-item">
             <summary style="font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--color-charcoal); padding: 18px 24px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
@@ -511,8 +488,7 @@ function renderShareButtons(title, url) {
   const container = document.getElementById('article-share-links');
   if (!container) return;
 
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(url);
@@ -532,7 +508,7 @@ function renderShareButtons(title, url) {
       <button id="btn-copy-article-link" class="share-icon-btn" aria-label="Copy link" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--color-border); color: var(--color-charcoal); cursor: pointer; transition: var(--transition-smooth); background: white; outline: none; position: relative;">
         <i data-lucide="copy" id="icon-copy-link" style="width: 14px; height: 14px;"></i>
         <span id="copy-tooltip" style="position: absolute; bottom: 42px; left: 50%; transform: translateX(-50%) scale(0.9); background: var(--color-charcoal); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px; pointer-events: none; opacity: 0; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); white-space: nowrap; z-index: 10;">
-          ${currentLang === 'fr' ? 'Lien copié !' : 'Link copied!'}
+          Link copied!
         </span>
       </button>
     </div>
@@ -589,8 +565,7 @@ function renderRelatedArticles(activePost) {
   const container = document.getElementById('related-articles-grid');
   if (!container) return;
 
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   // Header translation
   const headerEl = document.getElementById('related-articles-heading');
@@ -600,7 +575,11 @@ function renderRelatedArticles(activePost) {
   let related = blogPosts.filter(p => p.id !== activePost.id);
   
   // Try to recommend articles from the same category first
-  const sameCategory = related.filter(p => p.categories.en === activePost.categories.en);
+  const activeCat = typeof activePost.categories === 'object' ? activePost.categories.en : activePost.categories;
+  const sameCategory = related.filter(p => {
+    const cat = typeof p.categories === 'object' ? p.categories.en : p.categories;
+    return cat === activeCat;
+  });
   if (sameCategory.length >= 2) {
     related = sameCategory;
   }
@@ -610,10 +589,10 @@ function renderRelatedArticles(activePost) {
 
   let relatedHtml = '';
   recommendations.forEach(post => {
-    const postTitle = post.title[currentLang] || post.title.en;
-    const postCategory = post.categories[currentLang] || post.categories.en;
-    const postReadTime = post.readTime[currentLang] || post.readTime.en;
-    const formattedDate = new Date(post.date).toLocaleDateString(currentLang === 'fr' ? 'fr-FR' : 'en-US', {
+    const postTitle = typeof post.title === 'object' ? post.title.en : post.title;
+    const postCategory = typeof post.categories === 'object' ? post.categories.en : post.categories;
+    const postReadTime = typeof post.readTime === 'object' ? post.readTime.en : post.readTime;
+    const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'short',
       day: 'numeric'
@@ -664,8 +643,7 @@ function renderRelatedArticles(activePost) {
 // 3. Breadcrumbs Dynamic Generator
 // --------------------------------------------------------------------------
 function renderBreadcrumbs() {
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   const breadcrumbsList = document.getElementById('blog-breadcrumbs-list');
   if (!breadcrumbsList) return;
@@ -681,7 +659,7 @@ function renderBreadcrumbs() {
 
   if (activePostId) {
     const post = blogPosts.find(p => p.id === activePostId);
-    const postTitle = post ? (post.title[currentLang] || post.title.en) : '';
+    const postTitle = post ? (typeof post.title === 'object' ? post.title.en : post.title) : '';
 
     html += `
       <li>
@@ -712,8 +690,7 @@ function renderBreadcrumbs() {
 function injectSEOIndexSchema() {
   removeExistingSchema();
 
-  const currentLang = currentLanguage;
-  const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  const t = (key) => translations['en']?.[key] || key;
 
   // Blog catalog schema
   const schema = {
@@ -732,14 +709,14 @@ function injectSEOIndexSchema() {
     },
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",
-      "headline": post.title[currentLang] || post.title.en,
+      "headline": typeof post.title === 'object' ? post.title.en : post.title,
       "url": `https://gomoroccoai.com/blog/${post.id}.html`,
       "datePublished": post.date,
       "image": post.image,
-      "description": post.excerpt[currentLang] || post.excerpt.en,
+      "description": typeof post.excerpt === 'object' ? post.excerpt.en : post.excerpt,
       "author": {
         "@type": "Person",
-        "name": post.author[currentLang] || post.author.en
+        "name": typeof post.author === 'object' ? post.author.en : post.author
       }
     }))
   };
@@ -753,8 +730,6 @@ function injectSEOIndexSchema() {
 
 function injectSEOArticleSchema(post, title, excerpt, formattedDate) {
   removeExistingSchema();
-
-  const currentLang = currentLanguage;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -770,7 +745,7 @@ function injectSEOArticleSchema(post, title, excerpt, formattedDate) {
     "dateModified": post.date,
     "author": {
       "@type": "Person",
-      "name": post.author[currentLang] || post.author.en
+      "name": typeof post.author === 'object' ? post.author.en : post.author
     },
     "publisher": {
       "@type": "Organization",
@@ -791,10 +766,10 @@ function injectSEOArticleSchema(post, title, excerpt, formattedDate) {
       "@type": "FAQPage",
       "mainEntity": post.faqs.map(faq => ({
         "@type": "Question",
-        "name": faq.question[currentLang] || faq.question.en,
+        "name": typeof faq.question === 'object' ? faq.question.en : faq.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": faq.answer[currentLang] || faq.answer.en
+          "text": typeof faq.answer === 'object' ? faq.answer.en : faq.answer
         }
       }))
     };

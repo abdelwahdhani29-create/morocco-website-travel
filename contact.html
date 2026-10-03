@@ -228,12 +228,10 @@
 
     <!-- Form Handler and Page Language helper -->
     <script type="module">
-      import { getNavLanguage } from "/js/auth-nav.js";
       import { translations } from "/js/translations.js";
 
       function applyPageLanguage() {
-        const currentLang = getNavLanguage();
-        const t = (key) => translations[currentLang]?.[key] || translations['en']?.[key] || key;
+        const t = (key) => translations.en?.[key] || key;
 
         // Apply page title
         document.title = t('contact_nav') + " | GoMoroccoAI";
@@ -259,7 +257,6 @@
 
       applyPageLanguage();
       document.addEventListener('DOMContentLoaded', applyPageLanguage);
-      document.addEventListener('languageChanged', applyPageLanguage);
     </script>
     <script type="module" src="/js/auth-nav.js"></script>
   </body>

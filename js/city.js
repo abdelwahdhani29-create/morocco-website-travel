@@ -1,5 +1,4 @@
-// Morocco Tourism - Vanilla JS City Profile Detail Engine (Bilingual English / Français)
-import { getNavLanguage } from './auth-nav.js';
+// Morocco Tourism - Vanilla JS City Profile Detail Engine (English-only)
 import { citiesDataFallback } from './cities-data-fallback.js';
 
 const translations = {
@@ -65,214 +64,9 @@ const translations = {
     row_transport: "Local Transport",
     row_activities: "Activities & Sightseeing",
     row_total: "Total"
-  },
-  fr: {
-    back_home: "Retour",
-    back_home_text: "Retour à l'Accueil",
-    palette_label: "Palette :",
-    explore_tagline: "Destination Impériale Marocaine",
-    loading_lbl: "Chargement de la ville...",
-    loading_desc: "Récupération des données historiques authentiques, détails régionaux, guides d'étiquette culturelle, riads et transports...",
-    tab_places: "Lieux à Visiter",
-    tab_neighborhoods: "Quartiers",
-    tab_hotels: "Où Dormir",
-    tab_transit: "Transports Locaux",
-    travel_tips_title: "Conseils Pratiques de Voyage",
-    internal_links_title: "Guides de Voyage Associés",
-    sidebar_title: "Infos Pratiques",
-    fact_duration: "Durée Conseillée",
-    fact_region: "Région Administrative",
-    fact_languages: "Langues Parlées",
-    fact_languages_val: "Arabe Marocain (Darija), Berbère (Tamazight) et Français",
-    cultural_title: "Conseils de Visite",
-    error_title: "Cité introuvable",
-    error_desc: "Le profil de cette destination n'a pas pu être trouvé. Veuillez retourner à la page d'accueil pour explorer un autre catalogue.",
-    error_btn: "Retourner à l'Accueil",
-    approx_night: "environ par nuit",
-    amenity_lbl: "Atout Principal",
-    credits: "GoMoroccoAI Explorer • Répertoire détaillé développé en JavaScript Pur.",
-    budget: "Budget",
-    mid_range: "Standard",
-    luxury: "Luxe",
-    days: "jours",
-    browse_cities_nav: "Découvrir les Villes",
-    culture_nav: "Culture Marocaine",
-    planner_nav: "Planificateur interactif",
-    regions: {
-      "Marrakech-Safi": "Région de Marrakech-Safi",
-      "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",
-      "Fes-Meknes": "Fès-Meknès",
-      "Casablanca-Settat": "Région de Casablanca-Settat",
-      "Rabat-Sale-Kenitra": "Rabat-Salé-Kénitra",
-      "Souss-Massa": "Souss-Massa",
-      "Draa-Tafilalet": "Drâa-Tafilalet",
-      "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab",
-      "Oriental": "Région de l'Oriental",
-      "Beni Mellal-Khenifra": "Région de Béni Mellal-Khénifra"
-    },
-    best_time_title: "Meilleure Période pour Visiter",
-    spring: "Printemps",
-    summer: "Été",
-    autumn: "Automne",
-    winter: "Hiver",
-    recommended: "Recommandé",
-    months_spring: "Mars - Mai",
-    months_summer: "Juin - Août",
-    months_autumn: "Septembre - Novembre",
-    months_winter: "Décembre - Février",
-    budget_estimator_title: "Estimateur de Budget Quotidien",
-    budget_estimator_subtitle: "Coûts quotidiens estimés par personne en Euros (€)",
-    col_expense: "Catégorie de Dépense",
-    row_accommodation: "Hébergement",
-    row_food: "Restauration",
-    row_transport: "Transports Locaux",
-    row_activities: "Activités & Loisirs",
-    row_total: "Total"
   }
 };
 
-const localizedCityData = {
-  marrakech: {
-    fr: {
-      name: "Marrakech",
-      subtitle: "La Perle du Sud",
-      desc: "Découvrez Marrakech, joyau impérial mondialement célèbre. Admirez ses palais d'argile, aventurez-vous au gré des souks traditionnels et savourez la légendaire hospitalité marocaine.",
-      cultural_note: "Lors de vos visites à Marrakech, négocier dans les souks se fait d'abord avec respect. Commencez par un chaleureux 'Salam Alaykum' (Que la paix soit sur vous), demandez les prix poliment et appréciez l'échange comme une interaction sociale vivante. Une tenue décente est très appréciée, en particulier autour des quartiers historiques.",
-      attractions: [
-        { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "20 - 50 MAD (2 - 5 USD)", description: "Petits taxis de couleur beige idéaux pour se déplacer rapidement. Activez le compteur." },
-        { type: "Calèche Traditionnelle", approx_cost: "120 - 200 MAD (12 - 20 USD)/h", description: "Une promenade romantique et historique entourant les remparts de la Médina." },
-        { type: "Bus ALSA", approx_cost: "4 MAD (0.40 USD)", description: "Trajets de transports publics reliant la Médina à Guéliz et Majorelle." }
-      ],
-      bestTime: {
-        spring: "Journées douces et soirées fraîches, jardins en fleurs. Idéal pour les visites.",
-        summer: "Très chaud et sec, dépassant souvent 40°C. Privilégiez les visites tôt le matin ou tard le soir.",
-        autumn: "Agréablement chaud et ensoleillé. Excellent pour les balades et festivals culturels.",
-        winter: "Journées fraîches sous un grand soleil, mais les nuits sont froides. Parfait pour les petits budgets."
-      }
-    }
-  },
-  chefchaouen: {
-    fr: {
-      name: "Chefchaouen",
-      subtitle: "La Cité Bleue",
-      desc: "Embarquez vers le calme envoûtant du Rif. Une balade inoubliable au milieu de ruelles blanchies d'un bleu magique et des sommets montagneux verdoyants.",
-      cultural_note: "Chefchaouen est célèbre pour son atmosphère sereine. Il convient ici de solliciter l'accord des habitants avant de photographier les façades ou les jolies portes bleutées.",
-      attractions: [
-        { name: "La Médina Bleue", description: "Promenez-vous au cœur d'un labyrinthe de ruelles entièrement baignées de nuances de bleu azuré fardé de chaux.", image: "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800&q=80" },
-        { name: "La Cascade de Ras El Maa", description: "Une rafraîchissante source d'eau douce de montagne juste à la sortie des murs de la ville, où les habitants se rassemblent.", image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "15 - 30 MAD (1.50 - 3 USD)", description: "Taxis bleus abordables circulant dans toute la ville et desservant les hauteurs du Rif." },
-        { type: "Minibus Partagé (Grand Taxi)", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Navettes de transport partagé à tarif fixe très pratiques pour explorer le Rif." },
-        { type: "Lignes CTM", approx_cost: "45 MAD (4.50 USD)", description: "Service d'autocars confortables et réguliers desservant Fès, Tanger et Tétouan." }
-      ],
-      bestTime: {
-        spring: "Collines verdoyantes et douces journées ensoleillées. Idéal pour la randonnée dans le Rif.",
-        summer: "Chaud et agréable, offrant une échappée fraîche par rapport aux plaines intérieures.",
-        autumn: "Climat doux avec moins de touristes. Superbe pour explorer la ville dans le calme.",
-        winter: "Froid et souvent pluvieux avec parfois de la neige. Prévoir des vêtements chauds."
-      }
-    }
-  },
-  fez: {
-    fr: {
-      name: "Fès",
-      subtitle: "Athènes de l'Afrique",
-      desc: "Visitez Fès, mémoire vivante de l'art de vivre et de l'artisanat du Maroc. Flânez à l'ombre de la plus monumentale médina préservée au monde.",
-      cultural_note: "Fès est le sanctuaire de la spiritualité et de l'artisanat marocain. Prenez votre temps dans les ruelles étroites, parlez de manière posée et respectez la quiétude des édifices religieux.",
-      attractions: [
-        { name: "Les Tanneries de Chouara", description: "Les célèbres bassins en nid d'abeille médiévaux où l'on teint le cuir selon des méthodes ancestrales.", image: "https://images.pexels.com/photos/38112658/pexels-photo-38112658.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { name: "L'Université Al-Qarawiyyin", description: "Fondée en 859 par Fatima al-Fihri, elle est officiellement reconnue par l'UNESCO comme la plus ancienne université encore en activité au monde.", image: "https://images.pexels.com/photos/35070809/pexels-photo-35070809.jpeg?auto=compress&cs=tinysrgb&w=800" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "15 - 35 MAD (1.50 - 3.50 USD)", description: "Taxis rouges très compacts reliant l'ancienne et la nouvelle ville de Fès." },
-        { type: "Bus National (CTM)", approx_cost: "100 - 150 MAD (10 - 15 USD)", description: "Réseau national d'autobus tout confort desservant l'ensemble des cités royales." },
-        { type: "Trains ONCF", approx_cost: "90 - 140 MAD (9 - 14 USD)", description: "Réseau ferroviaire direct très confortable de la gare de Fès vers Meknès et Rabat." }
-      ],
-      bestTime: {
-        spring: "Délicieusement doux et ensoleillé. Idéal pour parcourir les milliers de ruelles de la médina.",
-        summer: "Chaleur intense et sèche. À éviter pour les longues marches en plein soleil.",
-        autumn: "Le retour de températures agréables. Fantastique pour les circuits culturels.",
-        winter: "Frais et parfois humide, mais les belles après-midis ensoleillées sont fréquentes."
-      }
-    }
-  },
-  essaouira: {
-    fr: {
-      name: "Essaouira",
-      subtitle: "L'ancienne Mogador",
-      desc: "Respirez le parfum de la mer à Essaouira. Admirez ses fortifications portugaises, son port d'embarcation bleu et laissez-vous emporter par ses galeries de peinture.",
-      cultural_note: "Essaouira se distingue par sa douceur de vivre marine. Adressez des saluts chaleureux aux pêcheurs du port historique et encouragez les sculpteurs de bois précieux de thuya.",
-      attractions: [
-        { name: "La Sqala de la Kasbah", description: "Une promenade spectaculaire le long des anciens bastions royaux flanqués de fiers canons orientés vers la mer.", image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" },
-        { name: "Le Port de Pêche", description: "Un port bleu et animé où chalutiers, odeurs de poisson grillé et harmonies musicales Gnaoua forment un spectacle constant.", image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "7 - 15 MAD (0.70 - 1.50 USD)", description: "Petits taxis bleus très abordables pour tous vos déplacements urbains." },
-        { type: "Autocar Supratours", approx_cost: "80 - 120 MAD (8 - 12 USD)", description: "Lignes de bus rapides et climatisées assurant des navettes quotidiennes vers Marrakech." },
-        { type: "Calèche Traditionnelle", approx_cost: "80 - 120 MAD (8 - 12 USD)/h", description: "Promenades à cheval pittoresques le long de la grande plage et de la promenade maritime." }
-      ],
-      bestTime: {
-        spring: "Agréablement doux mais venteux. Idéal pour flâner sur la plage et les remparts.",
-        summer: "Doux et venté, offrant un refuge idéal contre les fortes chaleurs de l'intérieur.",
-        autumn: "Ensoleillé avec des vents apaisés. Parfait pour admirer l'océan et déguster du poisson frais.",
-        winter: "Doux et humide avec quelques tempêtes atlantiques. Les paysages marins y sont spectaculaires."
-      }
-    }
-  },
-  oujda: {
-    fr: {
-      name: "Oujda",
-      subtitle: "Capitale de l'Oriental",
-      desc: "Découvrez Oujda, porte du Maroc oriental. Admirez ses jardins paisibles, sa médina authentique et laissez-vous charmer par sa musique traditionnelle Gharnati.",
-      cultural_note: "À Oujda, la musique Gharnati et la convivialité orientale sont reines. Le parc Lalla Aicha est idéal pour une pause sereine auprès des habitants.",
-      attractions: [
-        { name: "La Grande Mosquée", description: "Bâtie au XIIIe siècle, ce monument de l'ère Almohade est un chef-d'œuvre architectural au cœur de la médina.", image: "https://images.pexels.com/photos/33605163/pexels-photo-33605163.jpeg?_gl=1*2ju3qf*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQ0NjU1ODIkbzIyJGcxJHQxNzg0NDY3NzQwJGoyMiRsMCRoMA.." },
-        { name: "Le Parc Lalla Aïcha", description: "Un havre de verdure et de fraîcheur orné de grands arbres centenaires et de jolis bassins.", image: "https://images.unsplash.com/photo-1664185494794-97cbe900c105?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFsbGElMjBhaWNoYSUyMHBhcmt8ZW58MHx8MHx8fDI%3D" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Petits taxis rouges parfaits pour parcourir les boulevards modernes." },
-        { type: "ONCF Train", approx_cost: "120 - 200 MAD (12 - 20 USD)", description: "Liaisons directes confortables reliant Oujda à Fès, Rabat et Casablanca." }
-      ],
-      bestTime: {
-        spring: "Climat très agréable, idéal pour se promener dans les parcs fleuris de la ville.",
-        summer: "Chaud et sec, mais les soirées s'animent de concerts de musique Gharnati en plein air.",
-        autumn: "Journées ensoleillées et douces, parfaites pour explorer la médina.",
-        winter: "Frais avec des ondées passagères, propice aux emplettes de produits locaux."
-      }
-    }
-  },
-  "beni-mellal": {
-    fr: {
-      name: "Béni Mellal",
-      subtitle: "L'Oasis du Moyen Atlas",
-      desc: "Découvrez Béni Mellal, au pied du Moyen Atlas. Une ville célèbre pour ses oliveraies à perte de vue, ses sources jaillissantes et ses châteaux d'argile.",
-      cultural_note: "La source de Ain Asserdoun est un lieu sacré de détente familiale. Veillez à préserver la pureté de ses eaux fraîches de montagne.",
-      attractions: [
-        { name: "La Source de Aïn Asserdoun", description: "Source d'eau de montagne spectaculaire aménagée en jardins en terrasses avec de magnifiques cascades.", image: "https://images.unsplash.com/photo-1652720187538-b1894af2dc35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVuaSUyMG1lbGxhbHxlbnwwfHwwfHx8Mg%3D%3D" }
-      ],
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "10 - 15 MAD (1 - 1.50 USD)", description: "Petits taxis rouges très pratiques pour naviguer rapidement en ville." },
-        { type: "Grand Taxi", approx_cost: "40 - 70 MAD (4 - 7 USD)", description: "Taxis collectifs parfaits pour rejoindre les cascades d'Ouzoud ou le lac de Bin el Ouidane." }
-      ],
-      bestTime: {
-        spring: "La nature est florissante et la source de Aïn Asserdoun coule à plein régime.",
-        summer: "Chaud et ensoleillé, mais très agréable à l'ombre des jardins de la source fraîche.",
-        autumn: "Températures de saison clémentes, coïncidant avec la cueillette traditionnelle des olives.",
-        winter: "Frais avec une magnifique vue sur les cimes enneigées de l'Atlas."
-      }
-    }
-  }
-};
-
-let currentLang = getNavLanguage();
-if (currentLang !== 'en' && currentLang !== 'fr') {
-  currentLang = 'en';
-}
 let activeCityData = null;
 
 if (document.readyState === 'loading') {
@@ -344,17 +138,6 @@ async function initCityDetail() {
     // Initial render of page
     renderCityProfile();
     setupTabListeners();
-
-    // Listen to real-time navbar language toggling event
-    window.addEventListener('languageChanged', (e) => {
-      let lang = e.detail.lang;
-      if (lang !== 'en' && lang !== 'fr') {
-        lang = 'en';
-      }
-      currentLang = lang;
-      renderCityProfile();
-    });
-
   } catch (error) {
     console.error('Error fetching city profile details:', error);
     showErrorState();
@@ -363,16 +146,11 @@ async function initCityDetail() {
 
 // Dynamically sets title, metadata and description for SEO compliance
 function updateSEO(city) {
-  const isFr = currentLang === 'fr';
-  const titleText = isFr 
-    ? `Voyage à ${city.name} - Meilleurs Lieux, Hébergements & Guide Local`
-    : `Explore ${city.name} - Best Sights, Riad Lodgings & Local Guides • Portal`;
+  const titleText = `Explore ${city.name} - Best Sights, Riad Lodgings & Local Guides • Portal`;
   document.title = titleText;
 
   // 1. Meta description (between 120 and 160 characters)
-  const descText = isFr
-    ? `Découvrez ${city.name}, Maroc. Explorez les meilleurs lieux historiques, les recommandations de riads authentiques et les transports locaux.`
-    : `Discover ${city.name}, Morocco. Explore top historical sights, authentic traditional riad lodging recommendations, and local transit networks for a safe journey.`;
+  const descText = `Discover ${city.name}, Morocco. Explore top historical sights, authentic traditional riad lodging recommendations, and local transit networks for a safe journey.`;
   
   let descMeta = document.querySelector('meta[name="description"]');
   if (!descMeta) {
@@ -442,13 +220,13 @@ function updateSEO(city) {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": isFr ? "Accueil" : "Home",
+        "name": "Home",
         "item": "https://gomoroccoai.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": isFr ? "Villes" : "Cities",
+        "name": "Cities",
         "item": "https://gomoroccoai.com/cities.html"
       },
       {
@@ -471,14 +249,14 @@ function updateSEO(city) {
 }
 
 function t(key) {
-  return translations[currentLang]?.[key] || translations['en']?.[key] || key;
+  return translations.en?.[key] || key;
 }
 
 function renderCityProfile() {
   if (!activeCityData) return;
 
   // Set Language and Direction
-  document.documentElement.setAttribute('lang', currentLang);
+  document.documentElement.setAttribute('lang', 'en');
   document.documentElement.setAttribute('dir', 'ltr');
 
   const setElText = (id, val) => {
@@ -542,19 +320,9 @@ function renderCityProfile() {
     bannerHero.style.backgroundImage = `url('${activeCityData.cover_image}')`;
   }
 
-  // Swap content with French localization if active
   let cityName = activeCityData.name;
-  let cityExcerpt = activeCityData.overview || (currentLang === 'fr' 
-    ? `Un guide complet pour explorer la culture locale de ${activeCityData.name}. Découvrez les secrets de son histoire, réservez des hébergements traditionnels insolites et maîtrisez les moyens de transport locaux.`
-    : `A comprehensive travel blueprint to inspect the dynamic culture in ${activeCityData.name}. Unearth the historical background, locate elegant lodgings, and browse the transport modes.`);
+  let cityExcerpt = activeCityData.overview || `A comprehensive travel blueprint to inspect the dynamic culture in ${activeCityData.name}. Unearth the historical background, locate elegant lodgings, and browse the transport modes.`;
   let cityCultureNote = activeCityData.cultural_note;
-
-  if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
-    const loc = localizedCityData[activeCityData.id].fr;
-    if (loc.name) cityName = loc.name;
-    if (loc.desc) cityExcerpt = loc.desc;
-    if (loc.cultural_note) cityCultureNote = loc.cultural_note;
-  }
 
   // Render Names & Description
   setElHtml('city-title-display', cityName);
@@ -563,7 +331,7 @@ function renderCityProfile() {
   // Render Sidebar Facts
   setElText('fact-duration-val', `${activeCityData.suggested_days} ${t('days')}`);
   
-  const displayRegion = (translations[currentLang]?.regions?.[activeCityData.region]) || (translations['en']?.regions?.[activeCityData.region]) || activeCityData.region;
+  const displayRegion = translations.en?.regions?.[activeCityData.region] || activeCityData.region;
   setElText('fact-region-val', displayRegion);
 
   // Render Cultural note
@@ -614,11 +382,6 @@ function renderBestTimeContent() {
 
   seasons.forEach(season => {
     let desc = bestTime[season];
-    if (currentLang === 'fr') {
-      if (localizedCityData[activeCityData.id]?.fr?.bestTime?.[season]) {
-        desc = localizedCityData[activeCityData.id].fr.bestTime[season];
-      }
-    }
 
     const isRec = bestTime.recommended && bestTime.recommended.includes(season);
 
@@ -642,19 +405,13 @@ function renderBestTimeContent() {
   });
 }
 
-// 1. Renders the Top Places view of Attractions (with French support if active)
+// 1. Renders the Top Places view of Attractions
 function renderTabPlacesContent() {
   const container = document.getElementById('places-list');
   if (!container) return;
   container.innerHTML = '';
 
   let attractions = activeCityData.attractions || [];
-  if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
-    attractions = localizedCityData[activeCityData.id].fr.attractions.map((attr, idx) => ({
-      ...attr,
-      image: activeCityData.attractions[idx]?.image || attr.image
-    }));
-  }
 
   attractions.forEach(place => {
     let displayName = place.name;
@@ -880,7 +637,7 @@ function renderTabHotelsContent() {
 
   const tiers = ['budget', 'mid_range', 'luxury'];
   tiers.forEach(tier => {
-    const hotel = hotels[tier] || activeCityData.hotels[tier]; // fallback to raw json if french is partial
+    const hotel = hotels[tier] || activeCityData.hotels[tier];
     if (!hotel) return;
 
     let displayHotelName = hotel.name;
@@ -908,16 +665,13 @@ function renderTabHotelsContent() {
   });
 }
 
-// 3. Renders the Transportation system list (with French support if active)
+// 3. Renders the Transportation system list
 function renderTabTransitContent() {
   const container = document.getElementById('transit-deck');
   if (!container) return;
   container.innerHTML = '';
 
-  let transportation = activeCityData.transportation;
-  if (currentLang === 'fr' && localizedCityData[activeCityData.id]) {
-    transportation = localizedCityData[activeCityData.id].fr.transportation;
-  }
+  let transportation = activeCityData.transportation || [];
 
   transportation.forEach(tr => {
     let displayType = tr.type;
@@ -980,8 +734,7 @@ function showErrorState() {
   document.getElementById('city-detail-container').style.display = 'none';
   document.getElementById('error-fallback-view').style.display = 'block';
   
-  const fallbackTitle = currentLang === 'fr' ? "Cité Introuvable • Portail" : "City Profile Not Found • GoMoroccoAI Portal";
-  document.title = fallbackTitle;
+  document.title = "City Profile Not Found • GoMoroccoAI Portal";
   
   setElText('lbl-error-title', t('error_title'));
   setElText('lbl-error-desc', t('error_desc'));

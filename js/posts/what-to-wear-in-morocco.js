@@ -1,85 +1,37 @@
-// What to Wear in Morocco: The Ultimate Modest & Comfortable Packing Guide
-// Bilingual, high-quality, comprehensive SEO resource exceeding 2,000 words.
-
+// What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips Travel Guide
 export const postWhatToWearInMorocco = {
   id: "what-to-wear-in-morocco",
   cityId: null,
   image: "https://images.unsplash.com/photo-1783605523388-2194266eecc0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbCUyMG91dGZpdHxlbnwwfDB8MHx8fDI%3D",
   date: "2026-07-10",
   lastUpdated: "2026-08-20",
-  categories: {
-    en: "Travel Guides",
-    fr: "Guides de Voyage"
-  },
-  author: {
-    en: "Abdelwahd Hani",
-    fr: "Abdelwahd Hani"
-  },
-  readTime: {
-    en: "12 min read",
-    fr: "12 min de lecture"
-  },
-  title: {
-    en: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
-    fr: "Que Porter au Maroc : Code Vestimentaire, Valise & Conseils Saisonniers"
-  },
-  excerpt: {
-    en: "Packing for Morocco made easy. Discover expert rules on modest dress codes, seasonal layers, desert outfits, footwear for medina cobblestones, and regional style tips.",
-    fr: "Préparer sa valise pour le Maroc en toute simplicité. Règles de pudeur, tenues pour le désert, chaussures pour la médina et conseils selon la saison."
-  },
-  metaTitle: {
-    en: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
-    fr: "Que Porter au Maroc : Code Vestimentaire, Valise & Saisons"
-  },
-  metaDescription: {
-    en: "What to wear in Morocco for men and women. Complete packing guide covering medina modesty, desert layers, coastal style, and seasonal dress codes.",
-    fr: "Que porter au Maroc pour hommes et femmes. Guide de valise complet : pudeur dans les médinas, tenues pour le désert, la côte et conseils saisonniers."
-  },
+  categories: "Travel Guides",
+  author: "Abdelwahd Hani",
+  readTime: "12 min read",
+  title: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
+  excerpt: "Packing for Morocco made easy. Discover expert rules on modest dress codes, seasonal layers, desert outfits, footwear for medina cobblestones, and regional style tips.",
+  metaTitle: "What to Wear in Morocco: Dress Code, Packing List & Seasonal Tips",
+  metaDescription: "What to wear in Morocco for men and women. Complete packing guide covering medina modesty, desert layers, coastal style, and seasonal dress codes.",
   faqs: [
-    {
-      question: {
-        en: "Do female travelers have to wear a headscarf (hijab) in Morocco?",
-        fr: "Les voyageuses doivent-elles porter un voile (hijab) au Maroc ?"
-      },
-      answer: {
-        en: "No, non-Muslim female travelers are not required by law or custom to cover their heads in public streets, restaurants, or hotels. You only need to cover your head if you are planning to enter active religious sites (such as the outer courtyard of the Hassan II Mosque in Casablanca, as non-Muslims are generally not permitted inside most active mosques). However, keeping a lightweight scarf in your daypack is highly recommended to protect yourself from strong desert sun, dusty winds, or to show respect in highly conservative rural villages.",
-        fr: "Non, les voyageuses non musulmanes ne sont aucunement tenues de se couvrir la tête dans la rue, les restaurants ou les hôtels. Le port du voile n'est requis que lors de visites exceptionnelles de certains édifices religieux autorisés. Cependant, garder un foulard léger dans votre sac est très pratique pour vous protéger du soleil intense, de la poussière ou du vent dans le désert."
-      }
-    },
-    {
-      question: {
-        en: "Can I wear shorts, tank tops, or short skirts in public?",
-        fr: "Puis-je porter des shorts, des débardeurs ou des jupes courtes en public ?"
-      },
-      answer: {
-        en: "While you will see some tourists wearing shorts and tank tops in highly commercialized resort areas or around private hotel pools, doing so in public medinas, local souks, or rural areas can attract unwanted staring or feel disrespectful. For both men and women, the general golden rule is to keep your shoulders and knees covered. Capris, midi or maxi skirts, linen trousers, and short-sleeve t-shirts are excellent, comfortable alternatives that respect local sensibilities.",
-        fr: "Bien que les shorts courts et débardeurs soient tolérés autour des piscines privées ou dans les complexes hôteliers, ils sont déconseillés dans les ruelles des médinas historiques et les zones rurales. La règle d'or pour les hommes comme pour les femmes est de couvrir les épaules et les genoux. Privilégiez les pantalons en lin légers, les jupes midi ou maxi, et les t-shirts à manches courtes."
-      }
-    },
-    {
-      question: {
-        en: "What should I wear for a Sahara Desert trek or overnight camp?",
-        fr: "Que porter pour une excursion ou une nuit dans le désert du Sahara ?"
-      },
-      answer: {
-        en: "For a desert trek, layering is absolutely vital. During the day, wear loose, lightweight, long-sleeve cotton or linen clothing to protect your skin from intense UV rays and blowing sand, paired with a wide sun hat and sturdy closed-toe shoes. Once the sun goes down, temperatures in the dunes drop dramatically. You will need a fleece jacket, warm thermal base layers, socks, and a windbreaker to stay comfortable around the campfire.",
-        fr: "Pour le désert, la superposition de couches est essentielle. En journée, optez pour des vêtements amples à manches longues en lin ou en coton pour vous prémunir du soleil et du sable, des chaussures fermées et des lunettes de soleil. Dès le coucher du soleil, la température chute fortement : prévoyez un pull chaud, une veste coupe-vent et des chaussettes épaisses."
-      }
-    },
-    {
-      question: {
-        en: "What kind of footwear is best suited for walking in Morocco?",
-        fr: "Quel type de chaussures est le plus adapté pour marcher au Maroc ?"
-      },
-      answer: {
-        en: "We highly recommend packing comfortable, supportive, closed-toe walking shoes or durable sneakers. The historic medinas feature uneven cobblestones, steep stairs, dusty alleys, and occasional debris, which can make open-toe sandals or high heels uncomfortable and unsafe. Sturdy sports sandals with secure ankle straps are acceptable for coastal areas, but supportive sneakers are the best choice for everyday exploration.",
-        fr: "Nous recommandons vivement des baskets confortables ou des chaussures de marche fermées. Les pavés inégaux, les marches d'escalier usées et la poussière des ruelles des médinas rendent les sandales plates et les talons inconfortables. Des sandales de marche robustes conviennent pour la côte, mais les baskets restent reines."
-      }
-    }
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">Preparing a suitcase for Morocco can often feel like a puzzle. Travelers must strike a careful, thoughtful balance between staying cool in a warm climate and respecting the conservative, modest clothing standards of a traditional Muslim-majority nation. Whether you are wandering through bustling imperial souks, trekking the High Atlas peaks, or riding a camel into the silent dunes of the Sahara, what you wear has a significant impact on your comfort, your safety, and your interactions with welcoming local communities.</p>
+  {
+    "question": "Do female travelers have to wear a headscarf (hijab) in Morocco?",
+    "answer": "No, non-Muslim female travelers are not required by law or custom to cover their heads in public streets, restaurants, or hotels. You only need to cover your head if you are planning to enter active religious sites (such as the outer courtyard of the Hassan II Mosque in Casablanca, as non-Muslims are generally not permitted inside most active mosques). However, keeping a lightweight scarf in your daypack is highly recommended to protect yourself from strong desert sun, dusty winds, or to show respect in highly conservative rural villages."
+  },
+  {
+    "question": "Can I wear shorts, tank tops, or short skirts in public?",
+    "answer": "While you will see some tourists wearing shorts and tank tops in highly commercialized resort areas or around private hotel pools, doing so in public medinas, local souks, or rural areas can attract unwanted staring or feel disrespectful. For both men and women, the general golden rule is to keep your shoulders and knees covered. Capris, midi or maxi skirts, linen trousers, and short-sleeve t-shirts are excellent, comfortable alternatives that respect local sensibilities."
+  },
+  {
+    "question": "What should I wear for a Sahara Desert trek or overnight camp?",
+    "answer": "For a desert trek, layering is absolutely vital. During the day, wear loose, lightweight, long-sleeve cotton or linen clothing to protect your skin from intense UV rays and blowing sand, paired with a wide sun hat and sturdy closed-toe shoes. Once the sun goes down, temperatures in the dunes drop dramatically. You will need a fleece jacket, warm thermal base layers, socks, and a windbreaker to stay comfortable around the campfire."
+  },
+  {
+    "question": "What kind of footwear is best suited for walking in Morocco?",
+    "answer": "We highly recommend packing comfortable, supportive, closed-toe walking shoes or durable sneakers. The historic medinas feature uneven cobblestones, steep stairs, dusty alleys, and occasional debris, which can make open-toe sandals or high heels uncomfortable and unsafe. Sturdy sports sandals with secure ankle straps are acceptable for coastal areas, but supportive sneakers are the best choice for everyday exploration."
+  }
+],
+  content: `
+<p class="blog-lead">Preparing a suitcase for Morocco can often feel like a puzzle. Travelers must strike a careful, thoughtful balance between staying cool in a warm climate and respecting the conservative, modest clothing standards of a traditional Muslim-majority nation. Whether you are wandering through bustling imperial souks, trekking the High Atlas peaks, or riding a camel into the silent dunes of the Sahara, what you wear has a significant impact on your comfort, your safety, and your interactions with welcoming local communities.</p>
 
       <p>In this guide, our travel experts break down the essential dress codes, styling strategies, and seasonal essentials for both men and women. For broader cultural etiquette, dining norms, and hospitality customs, see our <a href="/blog/safety-etiquette.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>. For safety advice and solo travel precautions, consult <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">Is Morocco Safe to Visit in 2026?</a>. Below is your complete packing and wardrobe checklist.</p>
 
@@ -170,99 +122,5 @@ export const postWhatToWearInMorocco = {
       </ul>
 
       <p style="margin-top: 32px;"><strong>Conclusion:</strong> Packing for Morocco doesn't mean sacrificing your personal style; it is an invitation to embrace elegant, comfortable, and versatile fashion. By focusing on breathable fabrics, loose silhouettes, and respectful lengths, you will stay cool under the North African sun, show respect for the local culture, and feel perfectly prepared for every unforgettable adventure the Kingdom has to offer.</p>
-    `,
-    fr: `
-      <p class="blog-lead">Préparer sa valise pour le Maroc ressemble parfois à un véritable casse-tête. Les voyageurs doivent trouver le juste équilibre entre le besoin de fraîcheur sous un soleil généreux et le respect des normes d'habillement pudiques d'un pays de tradition musulmane. Que vous exploriez les souks animés des cités impériales, randonniez dans les montagnes du Haut Atlas ou chevauchiez un dromadaire dans le Sahara, vos vêtements influencent votre confort et vos échanges avec la population locale.</p>
-
-      <p>Dans ce guide complet, nos experts décryptent les codes vestimentaires, les spécificités régionales et les indispensables de la garde-robe pour les hommes et les femmes. Suivez nos conseils pratiques pour voyager l'esprit tranquille, dans le confort et le respect mutuel.</p>
-
-      <h2>1. Comprendre le contexte culturel : la pudeur au Maroc</h2>
-      <p>Le Maroc est un pays accueillant, fier de son histoire et de sa culture imprégnée de valeurs islamiques. Si les grandes métropoles comme Casablanca, Rabat et les quartiers modernes de <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> sont cosmopolites, les zones rurales, les montagnes et les petites villes restent attachées à des modes de vie plus traditionnels.</p>
-
-      <p>La règle d'or pour tout visiteur est simple : <strong>couvrir les épaules et garder les genoux dissimulés.</strong> C'est la marque de respect la plus simple et la plus appréciée pour s'intégrer en toute sérénité.</p>
-
-      <h3>La pudeur en pratique pour les voyageuses</h3>
-      <p>Pour les femmes, voyager au Maroc ne nécessite pas de se couvrir la tête avec un voile (hijab) dans l'espace public (rues, restaurants, hôtels), sauf pour la visite de sites religieux spécifiques autorisés. L'essentiel est de privilégier des vêtements amples qui ne moulent pas excessivement la silhouette, et d'éviter les décolletés plongeants, les hauts courts (crop tops) et les shorts très courts.</p>
-
-      <p>De plus, les coupes amples sont extrêmement fonctionnelles : elles favorisent la circulation de l'air autour de la peau et agissent comme un excellent bouclier thermique naturel contre la chaleur accablante.</p>
-
-      <h3>La pudeur pour les voyageurs</h3>
-      <p>Les hommes sont également invités à soigner leur tenue. Bien que les t-shirts à manches courtes soient courants, les débardeurs sans manches et les shorts très courts portés en dehors des plages ou des piscines privées sont peu habituels pour les adultes locaux et peuvent paraître trop décontractés dans les quartiers traditionnels ou administratifs.</p>
-
-      <div class="blog-highlight" style="background: var(--color-sand); border-left: 4px solid var(--color-terracotta); padding: 20px; margin: 24px 0; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-        <h4 style="margin: 0 0 8px 0; font-family: var(--font-sans); font-weight: 700; color: var(--color-charcoal);">La règle d'or des textiles :</h4>
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.6;">Optez pour des matières naturelles et respirantes comme le lin, le coton léger, le bambou ou la soie. Les pantalons amples, les jupes longues et les chemises légères à manches longues vous protègent du soleil tout en vous assurant un accueil chaleureux et respectueux.</p>
-      </div>
-
-      <h2>2. S'adapter aux microclimats régionaux</h2>
-      <p>Grâce à sa diversité géographique, le Maroc propose des climats très variés. Votre valise doit donc s'adapter aux différentes étapes de votre itinéraire.</p>
-
-      <h3>Le littoral atlantique : Essaouira et Taghazout</h3>
-      <p>Sur la côte, des cités comme <a href="/city/essaouira.html" class="blog-internal-link">Essaouira</a> sont rafraîchies par l'alizé de l'Atlantique. Si les journées sont douces et ensoleillées, les matinées et les soirées s'avèrent fraîches et venteuses. Prévoyez toujours une veste en jean, un pull léger ou un coupe-vent pour vos promenades le long des remparts.</p>
-
-      <h3>Les médinas impériales : Marrakech et Fès</h3>
-      <p>L'exploration des ruelles pavées de <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a> et de <a href="/city/fez.html" class="blog-internal-link">Fès</a> implique de marcher activement. Les zones ombragées des souks peuvent être fraîches, tandis que les grandes places exposées au soleil, comme Jemaa el-Fnaa, chauffent rapidement. Les vêtements fluides et des chaussures fermées très confortables sont indispensables pour déambuler sur les pavés irréguliers.</p>
-
-      <h3>Le massif de l'Atlas</h3>
-      <p>En montagne, l'altitude rafraîchit considérablement l'atmosphère. Même en été, les nuits en altitude sont fraîches. Pour le trekking ou les nuits en gîte chez l'habitant, emportez des vêtements thermiques, une polaire chaude, des chaussures de marche robustes et un coupe-vent imperméable.</p>
-
-      <h3>Le désert du Sahara</h3>
-      <p>Une nuit au milieu des dunes de <a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a> est magique, mais le désert connaît des amplitudes thermiques extrêmes. En journée, protégez votre peau du soleil et du sable soufflé avec une chemise légère à manches longues et un chèche (foulard traditionnel). Dès la nuit tombée, le froid s'installe : un pull épais, un bonnet et des chaussettes chaudes sont indispensables autour du feu.</p>
-
-      <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGRlc2VydCUyMG91dGZpdHxlbnwwfDB8MHx8fDI%3D" alt="Voyageuse vêtue d'une tenue de désert classique dans les dunes" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Une tenue de désert classique avec des vêtements longs et légers et des couches respirantes, idéale pour se protéger de la chaleur saharienne et du sable en journée.</figcaption>
-      </figure>
-
-      <h2>3. Valise idéale pour les femmes : élégance et légèreté</h2>
-      <p>Privilégiez des vêtements modulables que vous pourrez superposer facilement :</p>
-      <ul>
-        <li><strong>Pantalons en lin ou coton :</strong> Amples et fluides, ils offrent une excellente respirabilité et sèchent rapidement.</li>
-        <li><strong>Jupes longues et midi :</strong> Parfaites pour les journées chaudes, elles permettent de rester au frais tout en couvrant élégamment les jambes.</li>
-        <li><strong>Kimonos et cardigans légers :</strong> Très pratiques pour couvrir instantanément les épaules au-dessus d'un débardeur simple lors des visites.</li>
-        <li><strong>Tuniques et chemises à manches longues :</strong> Les chemises blanches en coton ou les tuniques d'inspiration bohème protègent du soleil avec style.</li>
-        <li><strong>Robes maxi à manches :</strong> Idéales pour de doux dîners sur les toits-terrasses des riads.</li>
-      </ul>
-
-      <h3>Le foulard ou l'écharpe légère : l'accessoire magique</h3>
-      <p>Une écharpe légère (en coton ou viscose) est indispensable. Elle vous servira à couvrir vos épaules dans les édifices historiques, à protéger votre visage du vent de sable dans le désert, ou à vous réchauffer dans les transports climatisés.</p>
-
-      <h2>4. Valise idéale pour les hommes : confort et élégance décontractée</h2>
-      <p>Pour un style à la fois frais et adapté aux coutumes locales :</p>
-      <ul>
-        <li><strong>Pantalons légers :</strong> Les chinos fins et les pantalons de lin sont bien plus agréables à porter que des jeans épais sous la chaleur.</li>
-        <li><strong>Shorts longs (au genou) :</strong> Privilégiez des bermudas de coupe classique arrivant au niveau du genou pour vos journées de visites actives.</li>
-        <li><strong>Polos et t-shirts en coton :</strong> Respirants et soignés, ils conviennent à toutes les situations du quotidien.</li>
-        <li><strong>Chemises à manches longues légères :</strong> Parfaites pour se protéger du soleil en journée et s'habiller élégamment pour le dîner.</li>
-      </ul>
-
-      <h2>5. Choix des chaussures : affronter les pavés et le sable</h2>
-      <p>Le confort de vos pieds doit être votre priorité absolue. Dans les médinas comme celle de <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a> ou Fès, vous marcherez des kilomètres sur des pavés irréguliers, des marches glissantes et des pentes raides.</p>
-
-      <p>Laissez de côté les sandales plates sans maintien et les talons hauts. Optez pour une bonne paire de baskets confortables et respirantes. Pour le désert, privilégiez des chaussures fermées pour éviter que le sable brûlant ne s'insinue sous vos pieds lors de vos balades dans les dunes.</p>
-
-      <figure style="margin: 32px 0; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); background: #fff;">
-        <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY8fGZvb3R3ZWFyfGVufDB8MHwwfHx8Mg%3D%3D" alt="Des baskets confortables et robustes sur un pavé de pierre historique" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block;" loading="lazy" referrerPolicy="no-referrer" />
-        <figcaption style="padding: 12px 16px; font-size: 13px; color: var(--color-charcoal-light); background: var(--color-sand); border-top: 1px solid var(--color-border); text-align: center; font-style: italic;">Une paire de chaussures confortable, robuste et adhérente est indispensable pour arpenter sereinement les ruelles pavées, sinueuses et parfois glissantes des anciennes médinas du Maroc.</figcaption>
-      </figure>
-
-      <h2>6. Conseils saisonniers : été vs. hiver</h2>
-      <p>Le climat marocain varie fortement au cours de l'année. Prenez soin de consulter les prévisions météorologiques officielles avant de partir. Pour des conseils fiables, vous pouvez vous référer aux recommandations officielles du gouvernement sur la <a href="https://www.gov.uk/foreign-travel-advice/morocco" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">sécurité et les voyages au Maroc (FCDO)</a> ou les fiches sanitaires de l'<a href="https://www.who.int/travel-advice" target="_blank" rel="noopener noreferrer" style="color: var(--color-terracotta); font-weight: 600;">Organisation Mondiale de la Santé (OMS)</a>.</p>
-
-      <h3>L'été caniculaire (juin à août)</h3>
-      <p>À l'intérieur des terres (Marrakech, Fès), les températures dépassent souvent 40°C. Privilégiez les tissus les plus légers possibles, un chapeau à larges bords, des lunettes de soleil de qualité et une crème solaire haute protection. Portez des teintes claires (blanc, beige) qui réfléchissent la chaleur.</p>
-
-      <h3>L'hiver frais (novembre à février)</h3>
-      <p>L'hiver marocain surprend souvent par sa fraîcheur. Si le littoral reste doux, les nuits en intérieur sont froides et les maisons d'hôtes traditionnelles (riads) ne disposent pas toujours de chauffage centralisé. Emportez des pulls chauds, une veste isolante et des chaussettes épaisses pour marcher sur les sols en carrelage froids.</p>
-
-      <h2>7. Recommandations pratiques pour un voyage réussi</h2>
-      <ul>
-        <li><strong>Laissez les bijoux de valeur chez vous :</strong> Voyagez l'esprit léger en évitant les accessoires trop voyants ou onéreux. Pour plus de conseils de sécurité, consultez notre article complet sur <a href="/blog/is-morocco-safe-2026.html" class="blog-internal-link">la sécurité au Maroc</a>.</li>
-        <li><strong>Planifiez votre parcours :</strong> Votre garde-robe dépendra grandement de vos étapes. Utilisez notre <a href="/trip-planner.html" class="blog-internal-link">générateur d'itinéraire personnalisé par IA</a> pour concevoir votre circuit idéal et adapter vos bagages.</li>
-        <li><strong>Rituels du Hammam :</strong> Pour profiter d'un bain traditionnel, prévoyez un maillot de bain ou des sous-vêtements de rechange secs ainsi que des sandales de bain en plastique.</li>
-      </ul>
-
-      <p style="margin-top: 32px;"><strong>En conclusion :</strong> Composer sa garde-robe pour le Maroc n'implique pas de renoncer à son style personnel, mais invite plutôt à adopter une mode fluide, légère et respectueuse. En privilégiant les tissus respirants et les coupes adaptées, vous resterez confortablement au frais tout en vivant une immersion culturelle inoubliable au cœur du Royaume.</p>
-    `
-  }
+  `
 };

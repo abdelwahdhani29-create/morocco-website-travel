@@ -1,83 +1,37 @@
-// Is Morocco Safe to Visit in 2026? - Definitive Bilingual Travel Safety Guide
+// Is Morocco Safe to Visit in 2026? A Complete Travel Safety Guide Travel Guide
 export const postIsMoroccoSafe2026 = {
   id: "is-morocco-safe-2026",
   cityId: null,
   image: "https://images.unsplash.com/photo-1440778303588-435521a205bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   date: "2026-06-30",
   lastUpdated: "2026-08-20",
-  categories: {
-    en: "Safety & Security",
-    fr: "Sécurité & Pratique"
-  },
-  author: {
-    en: "Abdelwahd Hani",
-    fr: "Abdelwahd Hani"
-  },
-  readTime: {
-    en: "16 min read",
-    fr: "16 min de lecture"
-  },
-  title: {
-    en: "Is Morocco Safe to Visit in 2026? A Complete Travel Safety Guide",
-    fr: "Le Maroc est-il sûr à visiter en 2026 ? Guide de Sécurité Complet"
-  },
-  excerpt: {
-    en: "A practical Morocco safety guide covering current official advice, common scams, solo travel, road awareness, health precautions, and emergency planning.",
-    fr: "Vous préparez un voyage au Maroc en 2026 ? Retrouvez notre analyse approfondie de la sécurité, des transports, de l'eau, du voyage en solo pour les femmes et des arnaques de rue pour un séjour serein."
-  },
-  metaTitle: {
-    en: "Is Morocco Safe to Visit in 2026? Safety Tips, Scams & Solo Travel",
-    fr: "Le Maroc est-il sûr en 2026 ? Conseils Sécurité, Arnaques & Femmes Seules"
-  },
-  metaDescription: {
-    en: "Practical 2026 Morocco safety guide with official-advisory links, common scams, solo travel precautions, health guidance, and emergency numbers.",
-    fr: "Guide complet de sécurité au Maroc pour 2026. Conseils d'experts sur la sécurité, les arnaques de rue, les voyages pour femmes seules et les numéros d'urgence."
-  },
+  categories: "Safety & Security",
+  author: "Abdelwahd Hani",
+  readTime: "16 min read",
+  title: "Is Morocco Safe to Visit in 2026? A Complete Travel Safety Guide",
+  excerpt: "A practical Morocco safety guide covering current official advice, common scams, solo travel, road awareness, health precautions, and emergency planning.",
+  metaTitle: "Is Morocco Safe to Visit in 2026? Safety Tips, Scams & Solo Travel",
+  metaDescription: "Practical 2026 Morocco safety guide with official-advisory links, common scams, solo travel precautions, health guidance, and emergency numbers.",
   faqs: [
-    {
-      question: {
-        en: "What is the official safety rating for Morocco in 2026?",
-        fr: "Quel est le niveau de sécurité officiel du Maroc en 2026 ?"
-      },
-      answer: {
-        en: "The US State Department advises travelers to exercise increased caution in Morocco. Advice can change, so check your own government advisory before departure. Petty theft, scams, road risks, occasional violent crime, and terrorism concerns require normal precautions.",
-        fr: "Le Département d'État américain recommande actuellement une vigilance accrue au Maroc. Les avis peuvent changer : consultez aussi les conseils de votre propre gouvernement avant le départ et tenez compte des risques de vols, d'arnaques, de circulation, de criminalité occasionnelle et de terrorisme."
-      }
-    },
-    {
-      question: {
-        en: "How safe is solo female travel in Morocco?",
-        fr: "Le voyage en solo pour les femmes est-il sûr au Maroc ?"
-      },
-      answer: {
-        en: "Many women travel independently in Morocco, but experiences vary and unwanted attention can occur. Review current travel advice, choose reputable transport and accommodation, share plans with someone you trust, and avoid isolated or poorly lit areas at night.",
-        fr: "De nombreuses femmes voyagent seules au Maroc, mais les expériences varient et des attentions non désirées peuvent survenir. Consultez les avis récents, choisissez des transports et hébergements identifiables, partagez votre itinéraire et évitez les zones isolées ou mal éclairées la nuit."
-      }
-    },
-    {
-      question: {
-        en: "Are the desert areas near Merzouga safe from border conflicts?",
-        fr: "Les zones désertiques comme Merzouga sont-elles sûres ?"
-      },
-      answer: {
-        en: "Merzouga is a major tourist destination, but no destination is risk-free. Use established accommodation and licensed guides, avoid restricted border areas, follow local instructions, and check current government travel advice before travelling.",
-        fr: "Merzouga est une destination touristique importante, mais aucun lieu n'est sans risque. Choisissez des hébergements et guides identifiables, évitez les zones frontalières interdites, respectez les instructions locales et vérifiez les avis officiels avant le déplacement."
-      }
-    },
-    {
-      question: {
-        en: "Can I use tap water for brushing teeth or drinking in Morocco?",
-        fr: "Peut-on utiliser l'eau du robinet au Maroc ?"
-      },
-      answer: {
-        en: "Water quality and individual tolerance vary by place. Ask your accommodation for current local guidance. Sealed bottled or properly filtered water is a cautious option when uncertain, and anyone with specific health needs should seek medical advice.",
-        fr: "La qualité de l'eau et la tolérance individuelle varient selon les lieux. Demandez un avis local récent. En cas de doute, choisissez de l'eau capsulée ou correctement filtrée et demandez un avis médical si votre santé l'exige."
-      }
-    }
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">Safety depends on current conditions, itinerary, behaviour, and individual circumstances. This guide separates official-advisory information from practical precautions so travelers can make an informed decision before visiting Morocco in 2026.</p>
+  {
+    "question": "What is the official safety rating for Morocco in 2026?",
+    "answer": "The US State Department advises travelers to exercise increased caution in Morocco. Advice can change, so check your own government advisory before departure. Petty theft, scams, road risks, occasional violent crime, and terrorism concerns require normal precautions."
+  },
+  {
+    "question": "How safe is solo female travel in Morocco?",
+    "answer": "Many women travel independently in Morocco, but experiences vary and unwanted attention can occur. Review current travel advice, choose reputable transport and accommodation, share plans with someone you trust, and avoid isolated or poorly lit areas at night."
+  },
+  {
+    "question": "Are the desert areas near Merzouga safe from border conflicts?",
+    "answer": "Merzouga is a major tourist destination, but no destination is risk-free. Use established accommodation and licensed guides, avoid restricted border areas, follow local instructions, and check current government travel advice before travelling."
+  },
+  {
+    "question": "Can I use tap water for brushing teeth or drinking in Morocco?",
+    "answer": "Water quality and individual tolerance vary by place. Ask your accommodation for current local guidance. Sealed bottled or properly filtered water is a cautious option when uncertain, and anyone with specific health needs should seek medical advice."
+  }
+],
+  content: `
+<p class="blog-lead">Safety depends on current conditions, itinerary, behaviour, and individual circumstances. This guide separates official-advisory information from practical precautions so travelers can make an informed decision before visiting Morocco in 2026.</p>
 
       <p>Morocco receives many international visitors, but no destination is risk-free and conditions can change. Review your government's current travel advisory, use normal urban precautions, and adapt plans to regional notices. For social customs, read our separate <a href="/blog/safety-etiquette.html" class="blog-internal-link">Morocco Culture & Etiquette Guide</a>; for packing, see <a href="/blog/what-to-wear-in-morocco.html" class="blog-internal-link">What to Wear in Morocco</a>.</p>
 
@@ -236,100 +190,5 @@ export const postIsMoroccoSafe2026 = {
       <h2>Conclusion: Is Morocco Ready for Your 2026 Visit?</h2>
       <p>Without a doubt, Morocco is ready. The country is more prepared, secure, and infrastructure-optimized than ever before. If you travel with an open mind, respect the local cultural codes, dress modestly, and keep a confident eye on your belongings, you will experience one of the most enriching, breathtaking, and hospitable journeys of your life.</p>
       <p>Don't let minor street hustlers deter you from exploring the majesty of Morocco. Step into the medina, sip a glass of hot mint tea, and let the magic of the Kingdom unfold safely before you!</p>
-    `,
-    fr: `
-      <p class="blog-lead">Alors que le tourisme mondial se réinvente, le Maroc demeure un pôle d'attraction incontournable pour les amateurs de culture, d'histoire et de paysages grandioses. À l'approche de la Coupe du Monde de la FIFA 2030 (que le Maroc co-organisera avec l'Espagne et le Portugal), le Royaume a lancé une vague historique de modernisation, de développement urbain et de renforcement de la sécurité. Pour autant, une question fondamentale demeure pour les voyageurs : <strong>Le Maroc est-il un pays sûr à visiter en 2026 ?</strong></p>
-
-      <p>La réponse objective est un <strong>oui retentissant : le Maroc est extrêmement sûr pour les touristes</strong>. En comparaison avec de nombreuses destinations de taille similaire, le pays affiche un taux de criminalité violente particulièrement bas. Cependant, voyager sereinement dans ce magnifique Royaume d'Afrique du Nord nécessite de comprendre la dynamique de sécurité régionale, les coutumes locales, d'adopter des réflexes de bon sens et de savoir éviter les pièges classiques. Cette analyse complète de 2 000 mots vous donne toutes les clés pour explorer le Maroc en toute tranquillité.</p>
-
-      <div class="blog-highlight" style="background: var(--color-sand); border-left: 4px solid var(--color-terracotta); padding: 20px; margin: 24px 0; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
-        <h4 style="margin: 0 0 8px 0; font-family: var(--font-sans); font-weight: 700; color: var(--color-charcoal);">Indicateur clé de sécurité (2026) :</h4>
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.6;">Le Département d'État américain classe le Maroc au <strong>Niveau 2 : Faire preuve d'une vigilance accrue</strong>. C'est exactement la même classification de sécurité que celle attribuée à de grands pays européens comme la France, l'Espagne, l'Italie ou le Royaume-Uni. Les préoccupations concernent la petite délinquance, pas les menaces violentes.</p>
-      </div>
-
-      <h2>1. Le contexte de sécurité en 2026 : investissements de l'État et surveillance</h2>
-      <p>En vue de l'accueil de grands événements sportifs mondiaux, le gouvernement marocain a massivement investi dans la sécurité publique. Les visiteurs arrivant dans les grandes villes impériales telles que <a href="/city/marrakech.html" class="blog-internal-link">Marrakech</a>, <a href="/city/fez.html" class="blog-internal-link">Fès</a> ou <a href="/city/rabat.html" class="blog-internal-link">Rabat</a> remarqueront immédiatement une présence policière rassurante. La <i>Brigade Touristique</i> (Police Touristique), en uniforme ou en civil, patrouille activement les médinas historiques, les souks et les monuments afin de protéger les visiteurs internationaux.</p>
-      
-      <p>Les vols à la tire (pickpocket) et les vols de téléphones portables à l'arraché représentent l'essentiel des délits constatés. Les agressions physiques ou vols à main armée contre les touristes sont extrêmement rares. La justice marocaine punit très sévèrement les crimes et délits commis à l'encontre des touristes, ce qui exerce un pouvoir de dissuasion colossal à l'échelle locale.</p>
-
-      <h2>2. Analyse de la sécurité par région : Médinas, villes modernes et zones rurales</h2>
-      <p>La sécurité au Maroc dépend grandement du quartier ou de l'environnement où vous vous trouvez :</p>
-
-      <h3>Les Médinas historiques (Marrakech, Fès, Meknès)</h3>
-      <p>Les médinas marocaines sont des chefs-d'œuvre d'urbanisme médiéval, mais leurs ruelles étroites et leurs hauts murs bloquent souvent les signaux GPS, favorisant la désorientation et la petite délinquance d'opportunité.
-      <br><strong>Le risque :</strong> Le vol à la tire dans les marchés bondés (comme la place Jemaa el-Fna à Marrakech ou les ruelles de Fès). Des motocyclistes traversent parfois imprudemment les ruelles étroites pour arracher les téléphones des mains des touristes distraits.
-      <br><strong>La solution :</strong> Rangez votre téléphone dans une poche fermée. Si vous devez regarder un plan, adossez-vous à un mur ou entrez dans un commerce. Portez votre sac en bandoulière sur le buste.</p>
-
-      <h3>Les quartiers modernes (Guéliz, L'Hivernage, la Corniche de Casablanca)</h3>
-      <p>Ces quartiers n'ont rien à envier aux grandes avenues européennes : larges boulevards arborés, boutiques de luxe, cafés branchés et éclairage public performant.
-      <br><strong>Le risque :</strong> Pratiquement nul, limité à la vigilance urbaine habituelle près des établissements de nuit ou des gares.
-      <br><strong>La solution :</strong> Une prudence classique suffit. Vous pouvez vous y promener de nuit en toute décontraction.</p>
-
-      <h3>Le Maroc rural et les zones désertiques (<a href="/city/merzouga.html" class="blog-internal-link">Merzouga</a>, Haut Atlas, Rif)</h3>
-      <p>Contrairement aux idées reçues, le Maroc rural est sans doute la zone la plus sûre et paisible du pays. Les populations amazighes (berbères) y cultivent un sens de l'hospitalité sacré et légendaire.
-      <br><strong>Le risque :</strong> Il est ici d'ordre naturel (météo extrême, sentiers escarpés en montagne, crues subites dans les gorges de l'Atlas).
-      <br><strong>La solution :</strong> Faites toujours appel à des guides de montagne officiels pour vos randonnées. Consultez la météo avant de franchir des cols comme le Tizi n'Tichka. Dans le désert de Merzouga (Erg Chebbi), la sécurité est totale et rigoureusement encadrée.</p>
-
-      <h2>3. Voyage au féminin et solo en 2026 : réalité et conseils pratiques</h2>
-      <p>Le Maroc est une destination fascinante pour les voyageuses solo, mais il requiert une bonne dose de confiance en soi et de répartie. La société marocaine reste traditionnelle et patriarcale, et une femme voyageant seule fera face à des interpellations verbales de rue (drague insistante, sifflements, regards appuyés).</p>
-
-      <p>Bien que ces comportements soient agaçants et parfois fatigants, ils restent d'ordre verbal et ne dégénèrent pratiquement jamais en agression physique. La sécurité physique des femmes est très largement respectée.</p>
-
-      <div class="blog-highlight" style="background: #faf6f0; border: 2px solid var(--color-border); border-radius: var(--border-radius-md); padding: 24px; margin: 28px 0;">
-        <h4 style="margin: 0 0 12px 0; font-family: var(--font-serif); font-size: 18px; color: var(--color-charcoal);">Conseils pratiques pour les voyageuses :</h4>
-        <ul style="margin: 0; padding-left: 20px; font-size: 14.5px; line-height: 1.7; display: flex; flex-direction: column; gap: 8px;">
-          <li><strong>Respectez les codes vestimentaires :</strong> Couvrir vos épaules, votre décolleté et vos genoux est le moyen le plus efficace d'éviter les regards pesants. Les pantalons amples en lin et les chemises légères sont parfaits.</li>
-          <li><strong>L'atout du foulard :</strong> Ayez toujours une étole légère dans votre sac. Elle s'avère très utile pour couvrir vos épaules ou votre tête lors de la visite de villages traditionnels.</li>
-          <li><strong>Affichez de l'assurance :</strong> Marchez d'un pas décidé comme si vous connaissiez votre chemin. Évitez les regards soutenus avec les groupes d'hommes inactifs dans la rue pour ne pas susciter de conversation non désirée.</li>
-          <li><strong>Ignorez et avancez :</strong> Si l'on vous interpelle, ne répondez pas et ne vous excusez pas. Ignorez complètement l'interlocuteur et tracez votre route. S'il insiste, entrez dans un commerce ou adressez-vous à un policier.</li>
-          <li><strong>Privilégiez les Riads avec réception 24h/24 :</strong> Loger dans des établissements réputés et surveillés vous garantit une tranquillité totale et une aide précieuse pour vos déplacements.</li>
-        </ul>
-      </div>
-
-      <h2>4. Les pièges de la médina : comment déjouer les arnaques courantes</h2>
-      <p>Pour un séjour réussi, apprenez à identifier et esquiver les classiques combines de rue :</p>
-
-      <ol style="font-size: 15px; line-height: 1.8; padding-left: 20px; display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
-        <li>
-          <strong>L'arnaque de la "rue fermée" :</strong> 
-          <p style="margin: 4px 0 0 0;">Un jeune homme vous aborde gentiment en vous prévenant que la rue où vous allez est fermée pour cause de prières ou de travaux, et vous propose de vous guider.
-          <br><strong>La réalité :</strong> La rue est parfaitement ouverte. S'il vous guide, il vous perdra volontairement pour exiger une somme importante (100 à 200 MAD) ou vous emmener de force dans la boutique d'un complice.
-          <br><strong>Comment l'éviter :</strong> Poursuivez votre chemin sans l'écouter. Fiez-vous à une application GPS hors ligne (comme Maps.me ou Google Maps hors connexion) qui fonctionne parfaitement dans les ruelles.</p>
-        </li>
-        <li>
-          <strong>Le faux guide non agréé :</strong> 
-          <p style="margin: 4px 0 0 0;">Des hommes vous abordent près des portes historiques en vous proposant des visites guidées à bas coût.
-          <br><strong>La réalité :</strong> Exercer le métier de guide sans carte officielle est un délit au Maroc. Ces faux guides n'ont aucune formation et vous traîneront uniquement de boutique en boutique pour toucher des commissions.
-          <br><strong>Comment l'éviter :</strong> Demandez toujours un guide officiel titulaire d'un badge métallique délivré par le Ministère du Tourisme (votre riad s'occupera volontiers de la réservation).</p>
-        </li>
-        <li>
-          <strong>Le piège du tatouage au henné :</strong> 
-          <p style="margin: 4px 0 0 0;">Sur la place Jemaa el-Fna, des femmes vous saisissent la main pour commencer un dessin "cadeau".
-          <br><strong>La réalité :</strong> Une fois le tatouage fini, elles exigeront de manière agressive des sommes astronomiques (300 à 500 MAD).
-          <br><strong>Comment l'éviter :</strong> Gardez vos mains dans vos poches dans les zones denses. Si vous voulez un henné, allez au Henna Art Cafe de Marrakech : les tarifs y sont fixes et le henné est 100 % naturel (le henné noir de rue contient des produits chimiques provoquant de graves brûlures cutanées).</p>
-        </li>
-      </ol>
-
-      <h2>5. Santé, eau et hygiène alimentaire</h2>
-      <p>Prendre soin de sa santé fait partie intégrante de la sécurité en voyage. Le changement de régime alimentaire et d'eau peut provoquer des troubles gastriques légers. Suivez ces quelques règles d'or :</p>
-      <p>
-      • Ne buvez jamais l'eau du robinet. Utilisez de l'eau en bouteille capsulée, y compris pour vous brosser les dents.
-      <br>• Évitez les glaçons dans les petits cafés de rue. Les hôtels et riads de standing filtrent leur eau, leurs glaçons sont donc sûrs.
-      <br>• Mangez dans les stands de rue populaires où la file d'attente locale est longue : c'est la garantie d'ingrédients frais et d'un renouvellement constant.
-      <br>• Emportez des probiotiques, des sels de réhydratation et un traitement anti-diarrhéique classique pour parer à toute éventualité.
-      </p>
-
-      <h2>6. Transports et sécurité routière au Maroc</h2>
-      <p>La sécurité routière est un facteur clé à prendre en compte. Le réseau de transport marocain s'est considérablement développé :</p>
-      <p>
-      <strong>Le train à grande vitesse (Al Boraq) :</strong> Une référence absolue en matière de sécurité et de confort pour relier Tanger, Rabat et Casablanca.
-      <br><strong>Les Petits Taxis :</strong> Pratiques en ville. Exigez toujours la mise en marche du compteur ("Compteur") dès la montée. S'il refuse, changez de taxi.
-      <br><strong>Les Autocars (CTM, Supratours) :</strong> Très sûrs, fiables et abordables pour les trajets interurbains.
-      <br><strong>La location de voiture :</strong> Idéale pour la liberté, mais la conduite de nuit est vivement déconseillée en montagne en raison du manque d'éclairage et du comportement imprévisible de certains usagers.
-      </p>
-
-      <h2>Conclusion : Le Maroc est-il prêt à vous accueillir en 2026 ?</h2>
-      <p>Sans aucun doute. Le Maroc est aujourd'hui plus accueillant, moderne et sécurisé que jamais. En voyageant avec un esprit ouvert, en respectant les coutumes locales, en vous habillant décemment et en gardant un œil sur vos effets personnels, vous vivrez l'un des voyages les plus mémorables, magiques et chaleureux de votre vie.</p>
-    `
-  }
+  `
 };

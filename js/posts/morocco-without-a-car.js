@@ -1,39 +1,38 @@
-// Morocco Without a Car: Trains, Buses & Shared Taxis (Bilingual English & Français)
+// Morocco Without a Car: Trains, Buses & Shared Taxis Travel Guide
 export const postMoroccoWithoutACar = {
   id: "morocco-without-a-car",
   cityId: null,
   image: "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1400&q=80",
   date: "2026-09-03",
   lastUpdated: "2026-09-03",
-  categories: { en: "Transport & Planning", fr: "Transport et Préparatifs" },
-  author: { en: "Abdelwahd Hani", fr: "Abdelwahd Hani" },
-  readTime: { en: "12 min read", fr: "13 min de lecture" },
-  title: {
-    en: "Morocco Without a Car: Trains, Buses & Shared Taxis",
-    fr: "Voyager au Maroc sans voiture : trains, autocars et grands taxis"
-  },
-  excerpt: {
-    en: "A practical guide to traveling around Morocco without renting a car: when to use ONCF trains, intercity coaches, shared grand taxis, and how to connect places beyond the rail network.",
-    fr: "Un guide pratique pour voyager au Maroc sans louer de voiture : trains ONCF, autocars interurbains, grands taxis collectifs et correspondances vers les destinations sans gare ferroviaire."
-  },
-  metaTitle: {
-    en: "Morocco Without a Car: Train, Bus & Taxi Guide (2026)",
-    fr: "Maroc sans voiture : guide train, autocar et taxi 2026"
-  },
-  metaDescription: {
-    en: "Travel Morocco without a car using trains, buses and shared taxis. Learn which transport works best, how transfers work, and what to check before travel.",
-    fr: "Voyagez au Maroc sans voiture en train, autocar et grand taxi. Découvrez quel transport choisir, comment organiser les correspondances et quoi vérifier avant le départ."
-  },
+  categories: "Transport & Planning",
+  author: "Abdelwahd Hani",
+  readTime: "12 min read",
+  title: "Morocco Without a Car: Trains, Buses & Shared Taxis",
+  excerpt: "A practical guide to traveling around Morocco without renting a car: when to use ONCF trains, intercity coaches, shared grand taxis, and how to connect places beyond the rail network.",
+  metaTitle: "Morocco Without a Car: Train, Bus & Taxi Guide (2026)",
+  metaDescription: "Travel Morocco without a car using trains, buses and shared taxis. Learn which transport works best, how transfers work, and what to check before travel.",
   keywords: "Morocco without a car, Morocco public transport, Morocco train travel, Morocco buses, Morocco shared taxi, ONCF Morocco, CTM Morocco, getting around Morocco",
   faqs: [
-    { question:{en:"Can you travel around Morocco without renting a car?",fr:"Peut-on voyager au Maroc sans louer de voiture ?"}, answer:{en:"Yes. Major rail corridors connect cities including Tangier, Rabat, Casablanca, Marrakech, Meknes and Fes, while intercity coaches and shared taxis extend access to many places without train stations. The best approach is usually to combine modes rather than rely on only one.",fr:"Oui. Les grands axes ferroviaires relient notamment Tanger, Rabat, Casablanca, Marrakech, Meknès et Fès, tandis que les autocars interurbains et les grands taxis permettent d'atteindre de nombreuses destinations sans gare. Le plus pratique est souvent de combiner plusieurs modes."}},
-    { question:{en:"What is the best way to travel between major Moroccan cities?",fr:"Quel est le meilleur moyen de voyager entre les grandes villes marocaines ?"}, answer:{en:"Use the train when your route is on the ONCF network, especially on the Tangier–Rabat–Casablanca corridor and the rail axes serving Marrakech, Meknes and Fes. For cities outside the rail network, intercity coaches are often the simplest alternative.",fr:"Privilégiez le train lorsque votre itinéraire se trouve sur le réseau ONCF, notamment sur l'axe Tanger–Rabat–Casablanca et les lignes desservant Marrakech, Meknès et Fès. Pour les villes sans gare, l'autocar interurbain est souvent l'alternative la plus simple."}},
-    { question:{en:"What is a grand taxi in Morocco?",fr:"Qu'est-ce qu'un grand taxi au Maroc ?"}, answer:{en:"A grand taxi is a licensed taxi used for longer urban or interurban journeys. On many routes, seats are shared with other passengers and the vehicle leaves according to local operating practices. Ask the fare and whether the price is per seat before boarding.",fr:"Un grand taxi est un taxi agréé utilisé pour des trajets urbains plus longs ou interurbains. Sur de nombreux itinéraires, les places sont partagées entre plusieurs passagers. Demandez le tarif et vérifiez s'il s'agit d'un prix par place avant de monter."}},
-    { question:{en:"Should I book Moroccan trains and buses in advance?",fr:"Faut-il réserver les trains et autocars marocains à l'avance ?"}, answer:{en:"For popular routes, weekends, holidays and busy travel periods, advance booking is sensible when the operator offers it. Always check the current timetable directly with ONCF or the coach company because schedules and fares can change.",fr:"Pour les itinéraires populaires, les week-ends, les jours fériés et les périodes chargées, il est prudent de réserver à l'avance lorsque l'opérateur le permet. Vérifiez toujours les horaires actuels directement auprès de l'ONCF ou de la compagnie d'autocars."}}
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">You can travel surprisingly far across Morocco without renting a car. The country does not have one single public-transport system that reaches every destination, but that is exactly why car-free travel works: <strong>trains handle the strongest rail corridors, intercity coaches fill many of the gaps, and shared grand taxis cover shorter regional connections.</strong></p>
+  {
+    "question": "Can you travel around Morocco without renting a car?",
+    "answer": "Yes. Major rail corridors connect cities including Tangier, Rabat, Casablanca, Marrakech, Meknes and Fes, while intercity coaches and shared taxis extend access to many places without train stations. The best approach is usually to combine modes rather than rely on only one."
+  },
+  {
+    "question": "What is the best way to travel between major Moroccan cities?",
+    "answer": "Use the train when your route is on the ONCF network, especially on the Tangier–Rabat–Casablanca corridor and the rail axes serving Marrakech, Meknes and Fes. For cities outside the rail network, intercity coaches are often the simplest alternative."
+  },
+  {
+    "question": "What is a grand taxi in Morocco?",
+    "answer": "A grand taxi is a licensed taxi used for longer urban or interurban journeys. On many routes, seats are shared with other passengers and the vehicle leaves according to local operating practices. Ask the fare and whether the price is per seat before boarding."
+  },
+  {
+    "question": "Should I book Moroccan trains and buses in advance?",
+    "answer": "For popular routes, weekends, holidays and busy travel periods, advance booking is sensible when the operator offers it. Always check the current timetable directly with ONCF or the coach company because schedules and fares can change."
+  }
+],
+  content: `
+<p class="blog-lead">You can travel surprisingly far across Morocco without renting a car. The country does not have one single public-transport system that reaches every destination, but that is exactly why car-free travel works: <strong>trains handle the strongest rail corridors, intercity coaches fill many of the gaps, and shared grand taxis cover shorter regional connections.</strong></p>
       <p>This guide is about choosing the right mode rather than listing fragile timetables or prices. Schedules, fares and departure points can change, so use the official operator websites linked below for the final check before you travel.</p>
 
       <h2>Can You Really Travel Morocco Without a Car?</h2>
@@ -127,73 +126,5 @@ export const postMoroccoWithoutACar = {
       <p>The most important habit is simple: <strong>plan the network in advance, but verify the exact timetable and fare shortly before travel.</strong> That gives you the freedom of a car-free trip without relying on outdated transport information.</p>
 
       <section class="article-sources"><h2>Verification sources</h2><p>Check these official sources for current schedules, routes and destination information:</p><ul><li><a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages — official rail booking and schedules</a></li><li><a href="https://www.oncf.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF — Morocco's national railway operator</a></li><li><a href="https://ctm.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">CTM — official intercity coach information</a></li><li><a href="https://www.visitmorocco.com/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Moroccan National Tourist Office</a></li></ul></section>
-    `,
-    fr: `
-      <p class="blog-lead">Il est tout à fait possible de parcourir une grande partie du Maroc sans louer de voiture. Le pays ne dispose pas d'un seul réseau de transport public couvrant toutes les destinations, mais c'est justement la combinaison des modes qui rend le voyage efficace : <strong>le train dessert les grands axes ferroviaires, les autocars complètent le réseau et les grands taxis assurent de nombreuses liaisons régionales.</strong></p>
-      <p>Ce guide vous aide à choisir le bon moyen de transport sans transformer l'article en liste d'horaires ou de prix rapidement périmés. Les horaires, tarifs et lieux de départ peuvent changer : vérifiez toujours les informations finales auprès de l'opérateur officiel.</p>
-
-      <h2>Peut-on vraiment voyager au Maroc sans voiture ?</h2>
-      <p>Oui, surtout si votre itinéraire passe par les grandes villes. Tanger, Rabat, Casablanca, Marrakech, Meknès et Fès se combinent facilement grâce au rail. Pour les destinations hors réseau ferroviaire, il faut ajouter un autocar, un grand taxi, un bus local ou parfois un transfert organisé.</p>
-      <p>La voiture de location offre davantage de liberté pour les vallées isolées, les départs de randonnée et les sites ruraux dispersés. Le voyage sans voiture évite le stress de la conduite et du stationnement, mais demande de prévoir les correspondances et de ne pas surcharger les journées.</p>
-
-      <h2>1. Le train : idéal pour les grands axes urbains</h2>
-      <p>L'opérateur ferroviaire national est <a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages</a>. C'est le premier site à consulter lorsque vous voyagez entre les grandes villes du nord et du centre du pays.</p>
-      <p>Le service à grande vitesse Al Boraq relie Tanger à Kénitra, Rabat et Casablanca. Les trains classiques Al Atlas et les correspondances prolongent le réseau utile vers Marrakech, Meknès, Fès, Oujda et d'autres gares. Le train est donc particulièrement adapté aux itinéraires reliant plusieurs villes impériales et atlantiques.</p>
-      <div class="blog-highlight"><p><strong>Règle simple :</strong> si votre ville de départ et votre destination disposent toutes deux d'une gare ONCF pratique, vérifiez d'abord le train.</p></div>
-      <h3>Quand privilégier le train ?</h3>
-      <ul><li><strong>Tanger ↔ Rabat ↔ Casablanca :</strong> l'axe Al Boraq est conçu pour les déplacements interurbains rapides.</li><li><strong>Casablanca ↔ Marrakech :</strong> le rail permet d'éviter la conduite sur autoroute et arrive directement en ville.</li><li><strong>Casablanca/Rabat ↔ Meknès/Fès :</strong> les liaisons ferroviaires rendent ces étapes naturelles dans un voyage sans voiture.</li><li><strong>Circuits multi-villes :</strong> le train est particulièrement efficace lorsque plusieurs étapes successives se trouvent sur le réseau.</li></ul>
-      <p>Ne vous fiez pas à un ancien horaire trouvé sur un blog. Recherchez votre date exacte sur ONCF avant le départ.</p>
-
-      <h2>2. Les autocars interurbains : indispensables au-delà du rail</h2>
-      <p>L'autocar n'est pas seulement une solution économique. Il est souvent le moyen le plus logique d'atteindre les destinations sans gare voyageurs. <a href="https://ctm.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">CTM</a>, l'un des opérateurs interurbains établis du pays, indique desservir plus de 100 destinations. Parmi les liaisons mises en avant figurent Marrakech–Essaouira, Marrakech–Agadir, Rabat–Chefchaouen et Casablanca–Agadir.</p>
-      <p>C'est ce réseau routier qui rend un itinéraire sans voiture beaucoup plus souple : train pour le grand axe, puis autocar vers la côte, les montagnes ou un centre régional.</p>
-      <h3>L'autocar est particulièrement utile pour :</h3>
-      <ul><li>Essaouira, généralement accessible par la route plutôt que par le train.</li><li>Chefchaouen, où le transport routier joue un rôle central.</li><li>Agadir et de nombreuses liaisons du sud et de l'Atlantique hors des grands axes ferroviaires voyageurs.</li><li>Les villes régionales où un autocar direct évite plusieurs correspondances locales.</li></ul>
-      <p>Une grande ville peut avoir plusieurs gares routières ou agences. Vérifiez le lieu de départ indiqué sur votre billet.</p>
-
-      <h2>3. Les grands taxis : le maillon régional flexible</h2>
-      <p>Le <strong>grand taxi</strong> est l'un des éléments les plus utiles du système de transport marocain. Contrairement aux petits taxis destinés aux courts trajets urbains, les grands taxis peuvent assurer des parcours plus longs, y compris entre villes. Sur les services collectifs, les voyageurs partagent le véhicule avec d'autres passagers.</p>
-      <p>Ils sont utiles lorsqu'un horaire d'autocar ne convient pas, lorsque la destination finale est relativement proche ou lorsqu'il faut relier un grand hub de transport à une petite ville.</p>
-      <p>Le fonctionnement est moins standardisé que celui du train. Avant de monter, confirmez la destination, le tarif, demandez si le prix est par place et vérifiez s'il s'agit d'un départ collectif ou de la location du véhicule entier.</p>
-
-      <h2>4. Les petits taxis restent un transport urbain</h2>
-      <p>Dans de nombreuses villes marocaines, les petits taxis assurent les trajets courts : gare-hôtel, hôtel-porte de médina ou déplacement entre quartiers. Leur couleur varie selon la ville. Ils ne remplacent pas les transports interurbains.</p>
-      <p>Un trajet complet peut donc associer petit taxi, train ou autocar, puis un autre transport local à l'arrivée.</p>
-
-      <h2>Construire un itinéraire sans voiture</h2>
-      <p>La méthode la plus simple consiste à penser en <strong>couches de transport</strong>.</p>
-      <ol><li><strong>Le rail comme colonne vertébrale :</strong> reliez les grandes villes situées naturellement sur le réseau ONCF.</li><li><strong>Les branches en autocar :</strong> ajoutez les destinations hors réseau ferroviaire.</li><li><strong>Les taxis pour le dernier tronçon :</strong> utilisez grands taxis et taxis locaux pour les liaisons plus courtes.</li><li><strong>Les transferts organisés seulement quand ils sont utiles :</strong> certains camps désertiques, hébergements isolés ou départs de randonnée justifient une prise en charge réservée.</li></ol>
-
-      <h2>Exemples d'itinéraires pratiques</h2>
-      <h3>Tanger → Rabat → Casablanca</h3><p>C'est l'un des trajets les plus simples sans voiture. Les trois villes se trouvent sur l'axe Al Boraq : le train est donc le premier choix à vérifier.</p>
-      <h3>Casablanca → Marrakech</h3><p>Utilisez le réseau ONCF et vérifiez les départs disponibles à votre date. À Marrakech, les petits taxis et les transports locaux suffisent pour la plupart des déplacements urbains.</p>
-      <h3>Marrakech → Essaouira</h3><p>Essaouira n'est pas desservie par le train voyageurs. CTM répertorie Marrakech–Essaouira parmi ses liaisons ; consultez le système de réservation pour votre date.</p>
-      <h3>Rabat → Chefchaouen</h3><p>Chefchaouen dépend également du réseau routier. CTM répertorie Rabat–Chefchaouen parmi ses trajets. Selon votre circuit, un autocar direct ou une correspondance via un autre hub du nord peut convenir.</p>
-      <h3>Fès → région de Merzouga</h3><p>Ici, il faut sortir de la logique ferroviaire. La porte du désert se situe au-delà du principal réseau voyageurs. Comparez les autocars sérieux et les informations de transfert de votre hébergement, et évitez une correspondance trop serrée sans vérification préalable.</p>
-
-      <h2>Bagages : simplifiez les correspondances</h2>
-      <p>Le voyage sans voiture est plus facile avec des bagages raisonnables. Une grande valise reste possible dans les trains et autocars principaux, mais chaque correspondance supplémentaire la rend plus encombrante. Gardez documents, objets de valeur, médicaments et appareils électroniques avec vous.</p>
-      <p>Arrivez assez tôt pour identifier le quai, la porte ou l'emplacement de l'autocar et vérifiez le nom exact de la gare indiqué sur le billet.</p>
-
-      <h2>Réserver à l'avance : quand est-ce utile ?</h2>
-      <p>Il n'est pas nécessaire de réserver chaque déplacement des mois à l'avance, mais certains départs peuvent se remplir. La réservation anticipée est judicieuse sur les lignes populaires, les week-ends, les jours fériés, lors de grands événements ou lorsqu'un départ manqué perturberait fortement votre itinéraire.</p>
-      <p>Pour les trains, consultez <a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages</a>. Pour CTM, utilisez <a href="https://booking.ctm.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">le portail officiel de réservation</a>.</p>
-
-      <h2>Erreurs fréquentes à éviter</h2>
-      <ul><li><strong>Penser que chaque destination touristique possède une gare.</strong> Le réseau ferroviaire est utile mais ne couvre pas tout le pays.</li><li><strong>Prévoir des correspondances trop serrées.</strong> Gardez une marge lors du passage du rail à la route.</li><li><strong>Se rendre à la mauvaise gare routière.</strong> Vérifiez l'opérateur et le point de départ exact.</li><li><strong>Accepter un prix de taxi ambigu.</strong> Demandez si le tarif du grand taxi est par place ou pour tout le véhicule.</li><li><strong>Considérer d'anciens prix comme actuels.</strong> Vérifiez les tarifs auprès de l'opérateur.</li><li><strong>Surcharger l'itinéraire.</strong> Les routes de montagne et les correspondances peuvent rallonger fortement un trajet.</li></ul>
-
-      <h2>Quand une voiture reste plus pratique</h2>
-      <p>Une voiture n'est pas indispensable pour un circuit classique entre grandes villes, mais elle peut être utile pour les villages isolés, les départs de randonnée, les sites naturels dispersés et les arrêts fréquents sur des routes panoramiques. Il ne s'agit pas de savoir si la voiture est « meilleure », mais si votre itinéraire bénéficie réellement d'une liberté porte-à-porte.</p>
-      <p>Si vos principales étapes sont Marrakech, Casablanca, Rabat, Tanger, Meknès et Fès, les transports publics sont très adaptés. Pour une exploration centrée sur les montagnes reculées, une voiture, un chauffeur ou un transfert organisé peut faire gagner beaucoup de temps.</p>
-
-      <h2>Compléter la préparation du voyage</h2>
-      <p>Si vous hésitez encore entre plusieurs étapes, consultez notre guide des <a href="/blog/best-places-to-visit-in-morocco.html" class="blog-internal-link">meilleurs endroits à visiter au Maroc</a>. Pour un circuit déjà structuré, voyez notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">itinéraire pour un premier voyage au Maroc</a>. Et pour les dépenses, utilisez notre guide séparé sur le <a href="/blog/morocco-cost-of-travel.html" class="blog-internal-link">budget d'un voyage au Maroc</a>.</p>
-
-      <h2>À retenir</h2>
-      <p>Le Maroc se prête très bien à un voyage sans voiture lorsque chaque trajet est associé au bon mode : ONCF pour les grands axes ferroviaires, autocars interurbains au-delà du rail, grands taxis pour les liaisons régionales et taxis locaux pour le premier ou le dernier tronçon.</p>
-      <p>L'habitude la plus importante est simple : <strong>préparez le réseau à l'avance, mais vérifiez l'horaire et le tarif exacts peu avant le voyage.</strong></p>
-
-      <section class="article-sources"><h2>Sources de vérification</h2><p>Consultez ces sources officielles pour les horaires, itinéraires et informations à jour :</p><ul><li><a href="https://www.oncf-voyages.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF Voyages — réservation et horaires ferroviaires</a></li><li><a href="https://www.oncf.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">ONCF — opérateur ferroviaire national</a></li><li><a href="https://ctm.ma/" target="_blank" rel="noopener noreferrer" class="blog-external-link">CTM — informations officielles sur les autocars</a></li><li><a href="https://www.visitmorocco.com/" target="_blank" rel="noopener noreferrer" class="blog-external-link">Office National Marocain du Tourisme</a></li></ul></section>
-    `
-  }
+  `
 };

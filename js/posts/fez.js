@@ -1,93 +1,41 @@
-// Fez Culinary Gastronomy Travel Guide (Bilingual English & Français)
+// The Flavors of Fez: A Gastronomic Journey Through Morocco's Spiritual Capital Travel Guide
 export const postFez = {
   id: "flavors-of-fez-culinary",
   cityId: "fez",
   image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-05",
   lastUpdated: "2026-08-20",
-  categories: {
-    en: "Gastronomy",
-    fr: "Gastronomie"
-  },
-  author: {
-    en: "Abdelwahd Hani",
-    fr: "Abdelwahd Hani"
-  },
-  readTime: {
-    en: "10 min read",
-    fr: "10 min de lecture"
-  },
-  title: {
-    en: "The Flavors of Fez: A Gastronomic Journey Through Morocco's Spiritual Capital",
-    fr: "Les Saveurs de Fès : Un Voyage Gastronomique dans la Capitale Spirituelle"
-  },
-  excerpt: {
-    en: "Delve into the complex culinary heritage of Fez. Discover the secrets of slow-cooked Fassi tagines, sweet-and-savory Pastilla, street food tours, cooking classes, and spice markets.",
-    fr: "Plongez dans le patrimoine culinaire de Fès. Secrets des tajines fassis, pastilla sucrée-salée, street food, cours de cuisine et souks aux épices de la médina."
-  },
-  metaTitle: {
-    en: "Fez Culinary Guide: Authentic Fassi Food, Pastilla & Food Tours",
-    fr: "Guide Gastronomique Fès : Cuisine Fassie, Pastilla & Street Food"
-  },
-  metaDescription: {
-    en: "Discover the rich culinary history of Fez, Morocco's spiritual capital. Learn secret recipes for Pigeon Pastilla, Khlea, Fassi tagines, cooking classes, and food tours.",
-    fr: "Découvrez la richesse culinaire de Fès, capitale spirituelle du Maroc. Secrets de la pastilla au pigeon, du Khliî, des tajines fassis et des meilleurs cours de cuisine."
-  },
+  categories: "Gastronomy",
+  author: "Abdelwahd Hani",
+  readTime: "10 min read",
+  title: "The Flavors of Fez: A Gastronomic Journey Through Morocco's Spiritual Capital",
+  excerpt: "Delve into the complex culinary heritage of Fez. Discover the secrets of slow-cooked Fassi tagines, sweet-and-savory Pastilla, street food tours, cooking classes, and spice markets.",
+  metaTitle: "Fez Culinary Guide: Authentic Fassi Food, Pastilla & Food Tours",
+  metaDescription: "Discover the rich culinary history of Fez, Morocco's spiritual capital. Learn secret recipes for Pigeon Pastilla, Khlea, Fassi tagines, cooking classes, and food tours.",
   faqs: [
-    {
-      question: {
-        en: "What makes traditional Fassi cuisine unique in Morocco?",
-        fr: "Qu'est-ce qui rend la cuisine fassie unique au Maroc ?"
-      },
-      answer: {
-        en: "Fassi cuisine is world-famous for its complex, layered balance of sweet and savory flavors, tracing back to Andalusian Moorish, Arab, and Jewish royal court traditions. Signature dishes feature tender slow-cooked meats paired with caramelized fruits (prunes, quinces, figs), floral distillates (orange blossom water), and complex spice blends like Ras el Hanout.",
-        fr: "La cuisine fassie est célèbre pour son équilibre subtil entre sucré et salé, issu des traditions Andalouses, Arabes et Juives de la cour impériale. Ses plats phares associent des viandes mijotées à des fruits caramélisés (pruneaux, coings, figues), des eaux florales et des épices comme le Ras el Hanout."
-      }
-    },
-    {
-      question: {
-        en: "Is street food safe to eat in the Fez Medina?",
-        fr: "Peut-on manger de la street food en toute sécurité dans la médina de Fès ?"
-      },
-      answer: {
-        en: "Yes, street food in Fez is exceptionally fresh and delicious if you follow practical rules: choose high-turnover stalls packed with local families, ensure meats are grilled hot over charcoal right in front of you, drink bottled water, and enjoy hot cooked breads like Msemen and Sfenj.",
-        fr: "Oui, la street food à Fès est très fraîche si vous respectez quelques règles : privilégiez les échoppes fréquentées par les familles locales, vérifiez que les viandes soient grillées sous vos yeux, buvez de l'eau en bouteille et privilégiez les pains chauds comme les Msemen et Sfenj."
-      }
-    },
-    {
-      question: {
-        en: "What is Pigeon Pastilla, and how is it prepared?",
-        fr: "Qu'est-ce que la Pastilla au pigeon, et comment est-elle préparée ?"
-      },
-      answer: {
-        en: "Pastilla (or Bastilla) is the pinnacle of Fassi festive cuisine. It is a round pie constructed with paper-thin warka pastry sheets, stuffed with shredded slow-cooked pigeon or chicken meat seasoned with saffron and ginger, layered with toasted crushed almonds, sugar, and orange blossom water, baked crisp, and dusted with cinnamon and powdered sugar.",
-        fr: "La Pastilla est le chef-d'œuvre de la gastronomie fassie. C'est une tourte feuilletée de feuilles de ouarka ultrafines, garnie de chair de pigeon ou poulet effilochée au safran et gingembre, d'amandes grillées concassées, de sucre et d'eau de fleur d'oranger, saupoudrée de cannelle et sucre glace."
-      }
-    },
-    {
-      question: {
-        en: "Are there good vegetarian options in Fez?",
-        fr: "Existe-t-il de bonnes options végétariennes à Fès ?"
-      },
-      answer: {
-        en: "Yes! Fassi cuisine features an extraordinary array of cooked vegetable salads, such as Zaalouk (spiced eggplant and tomato), Tektouka (roasted bell peppers), sweet carrot puree with orange blossom, sept-légumes vegetable couscous, and vegetable tagines with artichoke hearts and green peas.",
-        fr: "Oui ! La cuisine fassie propose une grande variété de salades de légumes cuits, comme le Zaalouk (aubergine et tomate), la Tektouka (poivrons grillés), la purée de carottes à la fleur d'oranger, le couscous sept légumes et des tajines de fond d'artichaut et petits pois."
-      }
-    },
-    {
-      question: {
-        en: "How much does eating out cost in Fez?",
-        fr: "Combien coûte un repas au restaurant à Fès ?"
-      },
-      answer: {
-        en: "Street food snacks (Sfenj, Msemen, brochettes) cost between 10 to 30 MAD ($1 to $3 USD). Casual medina restaurants serve hearty tagines and soups for 50 to 110 MAD ($5 to $11 USD). Multi-course royal Fassi feasts in historic riad courtyards range from 250 to 450 MAD ($25 to $45 USD) per person.",
-        fr: "La street food (Sfenj, Msemen, brochettes) coûte de 10 à 30 DH. Les petits restaurants de la médina proposent des tajines généreux pour 50 à 110 DH. Un grand repas royal fassi dans un riad historique varie entre 250 et 450 DH par personne."
-      }
-    }
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">If Marrakech represents the vibrant pulse of Morocco, Fez is its undisputed spiritual and culinary soul. Nowhere is this historical depth more evident than in the ancestral kitchens of Fez el-Bali, where medieval royal recipes have been refined, preserved, and handed down through generations of Fassi families.</p>
+  {
+    "question": "What makes traditional Fassi cuisine unique in Morocco?",
+    "answer": "Fassi cuisine is world-famous for its complex, layered balance of sweet and savory flavors, tracing back to Andalusian Moorish, Arab, and Jewish royal court traditions. Signature dishes feature tender slow-cooked meats paired with caramelized fruits (prunes, quinces, figs), floral distillates (orange blossom water), and complex spice blends like Ras el Hanout."
+  },
+  {
+    "question": "Is street food safe to eat in the Fez Medina?",
+    "answer": "Yes, street food in Fez is exceptionally fresh and delicious if you follow practical rules: choose high-turnover stalls packed with local families, ensure meats are grilled hot over charcoal right in front of you, drink bottled water, and enjoy hot cooked breads like Msemen and Sfenj."
+  },
+  {
+    "question": "What is Pigeon Pastilla, and how is it prepared?",
+    "answer": "Pastilla (or Bastilla) is the pinnacle of Fassi festive cuisine. It is a round pie constructed with paper-thin warka pastry sheets, stuffed with shredded slow-cooked pigeon or chicken meat seasoned with saffron and ginger, layered with toasted crushed almonds, sugar, and orange blossom water, baked crisp, and dusted with cinnamon and powdered sugar."
+  },
+  {
+    "question": "Are there good vegetarian options in Fez?",
+    "answer": "Yes! Fassi cuisine features an extraordinary array of cooked vegetable salads, such as Zaalouk (spiced eggplant and tomato), Tektouka (roasted bell peppers), sweet carrot puree with orange blossom, sept-légumes vegetable couscous, and vegetable tagines with artichoke hearts and green peas."
+  },
+  {
+    "question": "How much does eating out cost in Fez?",
+    "answer": "Street food snacks (Sfenj, Msemen, brochettes) cost between 10 to 30 MAD ($1 to $3 USD). Casual medina restaurants serve hearty tagines and soups for 50 to 110 MAD ($5 to $11 USD). Multi-course royal Fassi feasts in historic riad courtyards range from 250 to 450 MAD ($25 to $45 USD) per person."
+  }
+],
+  content: `
+<p class="blog-lead">If Marrakech represents the vibrant pulse of Morocco, Fez is its undisputed spiritual and culinary soul. Nowhere is this historical depth more evident than in the ancestral kitchens of Fez el-Bali, where medieval royal recipes have been refined, preserved, and handed down through generations of Fassi families.</p>
       
       <h2>Fez: The Undisputed Capital of High Moroccan Gastronomy</h2>
       <p>While every Moroccan region boasts rich culinary traditions, Fez (Fès) remains the undisputed gastronomic crown jewel of the Kingdom. Founded in 789 AD by Moulay Idriss I and elevated as an imperial capital under the Marinid and Wattasid dynasties, Fez became a melting pot of Andalusian Moorish refugees, Arab scholars, Sephardic Jewish artisans, and Amazigh traders.</p>
@@ -137,58 +85,5 @@ export const postFez = {
       <p>The culinary heritage of Fez is a living connection to Morocco's golden imperial history. Exploring its spice lanes, tasting hot street snacks, and sharing a meal in a historic riad courtyard nourishes both the body and the soul.</p>
 
       <p class="blog-highlight"><strong>Ready to savor the tastes of Fez?</strong> Discover top food tour guides, cooking workshops, and historic riad dining options in our city guide. <a href="/city/fez.html" class="blog-internal-link">Explore our Fez Tourism Guide &rarr;</a> Discover capital culture in our <a href="/city/rabat.html" class="blog-internal-link">Rabat Travel Guide</a> or explore desert cuisine in our <a href="/city/merzouga.html" class="blog-internal-link">Merzouga Travel Guide</a>.</p>
-    `,
-    fr: `
-      <p class="blog-lead">Si Marrakech représente le cœur battant du Maroc, Fès en est sans conteste l'âme spirituelle et gastronomique. Nulle part ailleurs cette profondeur historique ne se ressent autant que dans les cuisines ancestrales de Fès el-Bali, où les recettes médiévales de la cour ont été jalousement préservées et transmises de génération en génération.</p>
-      
-      <h2>Fès : L'Incontestable Capitale de la Haute Gastronomie Marocaine</h2>
-      <p>Si chaque région marocaine s'enorgueillit de ses spécialités, Fès (Fez) demeure la référence absolue en matière de haute cuisine marocaine. Fondée en 789 par Moulay Idriss Ier et élevée au rang de capitale impériale sous les dynasties mérinide et wattaside, la cité est devenue un carrefour de réfugiés andalous, de savants arabes, d'artisans juifs séfarades et de commerçants amazighs.</p>
-      <p>Les cuisinières royales des palais fassis ont fusionné ces influences pour créer une haute cuisine raffinée, caractérisée par des alliances sucrées-salées complexes, un mijotage patient en plat de terre cuite, des eaux florales distillées et des mélanges d'épices précieux. Contrairement à la cuisine rapide, la grande gastronomie fassie exige des heures de préparation méticuleuse.</p>
-
-      <h2>L'Alchimie Aromatique du Souk El-Attarine</h2>
-      <p>Pour percer le secret des saveurs fassies, il faut franchir les portes du souk aux épices de <strong>Souk El-Attarine</strong>. Les cuisinières fassies n'utilisent pas les épices pour pimenter, mais pour composer des harmonies aromatiques d'une grande finesse. L'épice reine est le <strong>Ras el Hanout</strong> (littéralement « le haut de la boutique »), un mélange légendaire d'une trentaine d'ingrédients séchés : cannelle, gingembre, cardamome, clou de girofle, macis, curcuma et boutons de rose séchés.</p>
-      <p>La cuisine fassie s'appuie également sur l'utilisation d'eaux florales distillées. L'eau de fleur d'oranger (<em>ma' zhar</em>) et l'eau de rose parfument les pâtisseries, les salades de fruits et certains tajines de poulet. Quant au safran pur récolté à la main à Taliouine, il confère aux bouillons une couleur dorée et un parfum boisé inimitable, tandis que les citrons confits (<em>l'hamd marqad</em>) apportent une note d'acidité rafraîchissante.</p>
-
-      <h2>Les Plats Emblématiques de la Table Fassie</h2>
-      <p>Lors d'un repas dans les somptueux riads historiques de Fès, voici les spécialités gastronomiques incontournables :</p>
-      
-      <h3>1. La Pastilla au Pigeon ou au Poulet (Bstilla)</h3>
-      <p>La Pastilla est le chef-d'œuvre de la gastronomie marocaine. C'est un grand feuilleté rond fait de feuilles de <em>ouarka</em> ultrafines. À l'intérieur se cache une farce de pigeon (ou poulet) mijotée avec des oignons doux, du safran, du gingembre et de la coriandre fraîche. Cette farce est couverte d'une couche d'amandes grillées concassées, mélangées à du sucre, de la cannelle et de l'eau de fleur d'oranger. Après cuisson au four, le dessus est saupoudré de sucre glace et de cannelle dessinant des motifs géométriques. La première bouchée offre un contraste saisissant de feuilleté croustillant, d'amandes croquantes, de cannelle douce et de viande savoureuse.</p>
-
-      <h3>2. Le Tajine Slaoui : Agneau Mijoté aux Coings ou Pruneaux</h3>
-      <p>Un classique fassi réunit des morceaux d'agneau ou de bœuf braisés lentement dans un plat en argile avec des coings de saison (<em>slaoui</em>), des pruneaux caramélisés, du miel sauvage et des graines de sésame torréfiées. Le mijotage attendrit la viande jusqu'à ce qu'elle se détache à la cuillère, tandis que l'acidité du coing équilibre idéalement la douceur du miel.</p>
-
-      <h3>3. Le Khliî : Le Confit de Bœuf Ancestral</h3>
-      <p>Le Khliî (ou Khlea) est une méthode ancestrale de conservation de la viande originaire de Fès. La viande de bœuf est marinée dans de l'ail, du cumin et de la coriandre, séchée au soleil sur les terrasses puis confite dans la graisse et l'huile d'olive. À Fès, le Khliî est traditionnellement servi au petit-déjeuner, réchauffé avec des œufs au plat dans un plat en terre cuite—un début de journée très gourmand.</p>
-
-      <h2>Tour d'Horizon de la Street Food Fassie</h2>
-      <p>En flânant le long des grandes artères commerçantes de Tala'a Kebira et Tala'a Seghira, découvrez une street food populaire et authentique :</p>
-      <ul>
-        <li><strong>Le Sfenj :</strong> Beignets marocains dorés et croustillants façonnés à la main. Servis brûlants à la sortie de la friture, ils se dégustent saupoudrés de sucre ou trempés dans le miel avec le thé du matin.</li>
-        <li><strong>Les Msemen & Melwi :</strong> Galettes feuilletées cuites sur plaque en fonte. À déguster sucrées avec du miel et du fromage frais, ou salées farcies d'oignons épicés et de viande hachée.</li>
-        <li><strong>Les Brochettes :</strong> Brochettes d'agneau, bœuf ou kefta grillées au charbon de bois, servies dans un pain chaud avec une compotée de tomates et oignons.</li>
-        <li><strong>La Harira & Le Bouillon de Babouche :</strong> La Harira est une soupe veloutée de tomates, lentilles et pois chiches. Pour les gastronomes curieux, les marchands ambulants proposent des bols de escargots (<em>babouche</em>) mijotés dans un bouillon pimenté aux plantes médicinales.</li>
-      </ul>
-
-      <h2>Proposition d'Itinéraire Gourmand d'une Journée à Fès</h2>
-      <ol>
-        <li><strong>8h30 – 10h00 :</strong> Petit-déjeuner fassi avec œufs au Khliî, Msemen chauds, fromage de chèvre et thé à la menthe près de Bab Bou Jeloud (La Porte Bleue).</li>
-        <li><strong>10h00 – 13h00 :</strong> Balade gourmande le long de Tala'a Kebira. Visite des boulangeries de quartier (<em>Ferran</em>), dégustation d'olives au Souk El-Attarine et achat d'épices.</li>
-        <li><strong>13h00 – 14h30 :</strong> Déjeuner léger de salades marocaine cuites (Zaalouk, Tektouka, carottes au miel) et tajine de légumes dans un jardin de la médina.</li>
-        <li><strong>15h00 – 18h00 :</strong> Atelier pratique de cuisine marocaine dans un riad historique. Achat des ingrédients au marché et apprentissage du pliage des feuilles de ouarka.</li>
-        <li><strong>19h30 – 22h00 :</strong> Grand dîner royal fassi proposant la Pastilla maison, le tajine d'agneau aux pruneaux et les Cornes de Gazelle (<em>Kaab el Ghazal</em>) à la pâte d'amande.</li>
-      </ol>
-
-      <div class="blog-highlight">
-        <h3>Rituels de Table & Savoir-Vivre Fassi</h3>
-        <p><strong>Le Pain est Sacré :</strong> Au Maroc, le pain rond (<em>Khobz</em>) est une bénédiction. Il sert de couvert pour saucer les plats. Ne jetez jamais de pain et ne le posez pas à l'envers sur la table.</p>
-        <p><strong>Manger avec la Main Droite :</strong> Lors d'un repas collectif, utilisez uniquement votre main droite (le pouce et les deux premiers doigts) pour saisir le pain et pincer les aliments.</p>
-        <p><strong>Période de Ramadan :</strong> Durant le mois de Ramadan, la street food fait pause en journée, mais la médina s'anime d'une énergie joyeuse au coucher du soleil lors de la rupture du jeune (<em>Iftar</em>).</p>
-      </div>
-
-      <p>Le patrimoine culinaire de Fès est une immersion vivante dans l'histoire impériale du Maroc. Explorer ses ruelles aux épices, déguster des spécialités populaires et partager un festin dans un riad est une expérience mémorable qui nourrit le corps et l'esprit.</p>
-
-      <p class="blog-highlight"><strong>Prêt à savourer la gastronomie fassie ?</strong> Retrouvez les meilleurs cours de cuisine, visites gourmandes et riads dans notre guide. <a href="/city/fez.html" class="blog-internal-link">Consultez notre Guide Touristique de Fès &rarr;</a> Découvrez la culture de la capitale dans notre <a href="/city/rabat.html" class="blog-internal-link">Guide de Rabat</a> ou explorez les spécialités du désert dans notre <a href="/city/merzouga.html" class="blog-internal-link">Guide de Merzouga</a>.</p>
-    `
-  }
+  `
 };

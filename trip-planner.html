@@ -654,52 +654,6 @@
             "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab Region"
           },
           amenity_title: "Key Included Feature"
-        },
-        fr: {
-          nav_logo: "GoMoroccoAI",
-          beta_badge: "Planificateur de Voyage • Version Bêta",
-          main_title: "Planifiez Votre Voyage d'Évasion au Maroc",
-          main_desc: "Spécifiez votre budget, durée et activités favorites. Notre algorithme d'ajustement local assemblera des merveilles impériales, des sables fins ou des brises marines en un itinéraire visuel complet.",
-          input_header: "Configuration",
-          lbl_departure: "Ville de départ",
-          lbl_currency: "Devise",
-          lbl_max_budget: "Budget Maximum",
-          lbl_duration: "Durée de Séjour",
-          lbl_interests: "Style de Voyage & Intérêts",
-          btn_generate_plan: "Générer mon Itinéraire",
-          btn_generating_text: "Calcul de l'itinéraire...",
-          placeholder_ribbon: "Planificateur interactif",
-          placeholder_title: "Votre Plan Sur-Mesure est Prêt",
-          placeholder_desc: "Indiquez votre point de départ, vos dates idéales ainsi que le budget envisagé pour que notre algorithme vous dresse la route parfaite !",
-          feat_custom: "Planification Financière",
-          feat_scoring: "Scoring par Centres d'Intérêt",
-          feat_itinerary: "Ligne Temporelle Directe",
-          flight_title: "Avis sur les Vols Aériens",
-          flight_p1: "Les prix en direct des vols depuis",
-          flight_p2: "ne sont pas calculés ici.",
-          time_flow_hdr: "Le Déroulement de Votre Voyage",
-          financial_hdr: "Estimation du Budget Prévisionnel",
-          hotel_auto_downgrade: "💡 Adaptation automatique aux tarifs économiques pour correspondre à votre budget maximum !",
-          spent_hotels: "Estimation Hébergements",
-          spent_transit: "Transports & Liaisons",
-          spent_spending: "Argent de Poche Restant",
-          label_target: "Budget Souhaité",
-          label_total: "Coût Local Estimé",
-          btn_reset: "Planifier une nouvelle évasion",
-          days_text: "jours",
-          nights_text: "par nuit",
-          sec_warning: "Le prix indicatif des billets d'avion est exclu de cette évaluation locale.",
-          regions: {
-            "Marrakech-Safi": "Région de Marrakech-Safi",
-            "Tanger-Tetouan-Al Hoceima": "Tanger-Tétouan-Al Hoceïma",
-            "Fes-Meknes": "Fès-Meknès",
-            "Casablanca-Settat": "Région de Casablanca-Settat",
-            "Rabat-Sale-Kenitra": "Rabat-Salé-Kénitra",
-            "Souss-Massa": "Souss-Massa",
-            "Draa-Tafilalet": "Drâa-Tafilalet",
-            "Dakhla-Oued Ed-Dahab": "Dakhla-Oued Ed-Dahab"
-          },
-          amenity_title: "Atout Majeur de l'Hôtel"
         }
       };
 
@@ -723,7 +677,6 @@
         eljadida: ["history_arch", "beaches_ocean"]
       };
 
-      let activeLanguage = localStorage.getItem('preferred_language') || 'en';
       let databaseCities = [];
 
       // Load initial local data
@@ -762,20 +715,10 @@
             console.error('Failed to load global fallback script:', scriptErr);
           }
         }
-
-        // Listener to real-time navbar language toggles
-        window.addEventListener('languageChanged', (e) => {
-          activeLanguage = e.detail.lang;
-          renderStaticTexts();
-          // If already has outputs, recheck and regenerate to change result translation
-          if (document.getElementById('planner-blueprint-result').style.display === 'block') {
-            generateBespokePlanLogic();
-          }
-        });
       });
 
       function t(key) {
-        return translations[activeLanguage]?.[key] || translations['en']?.[key] || key;
+        return translations.en?.[key] || key;
       }
 
       function renderStaticTexts() {
@@ -817,34 +760,19 @@
         setEl('lbl-grand-spent', t('label_total'));
         setEl('btn-reset-text', t('btn_reset'));
 
-        // Style tile strings translation
-        if (activeLanguage === 'fr') {
-          setEl('text-style-history', 'Histoire & Architecture');
-          setEl('desc-style-history', 'Palais impériaux, ruelles de médinas millénaires et portes monumentales');
-          setEl('text-style-desert', 'Sahara & Dunes de Sable');
-          setEl('desc-style-desert', 'Dromadaire, bivouacs sous les étoiles et paysages désertiques grandioses');
-          setEl('text-style-nature', 'Montagnes & Nature sauvage');
-          setEl('desc-style-nature', 'Randonnées de l\'Atlas, vallées, lacs glaciaires et chemins verdoyants');
-          setEl('text-style-beaches', 'Littoral & Brise Marine');
-          setEl('desc-style-beaches', 'Dégustations de poissons frais, ports bleutés et vagues de windsurf');
-          setEl('text-style-souks', 'Souks, Artisanat & Échoppes');
-          setEl('desc-style-souks', 'Épices dorées, tanneries médiévales, maroquinerie et tapis tissés main');
-          setEl('text-style-food', 'Gastronomie, Tajines & Thés');
-          setEl('desc-style-food', 'Cours de cuisine marocaine, rituels du thé à la menthe et stands salés-sucrés');
-        } else {
-          setEl('text-style-history', 'History & Architecture');
-          setEl('desc-style-history', 'Imperial palaces, historic medina lanes & monumental gates');
-          setEl('text-style-desert', 'Sahara & Desert Dunes');
-          setEl('desc-style-desert', 'Camel riding, starry nights in oasis camps & grand canyons');
-          setEl('text-style-nature', 'Mountains & Nature');
-          setEl('desc-style-nature', 'Atlas hiking paths, valleys, waterfalls & blue-washed trails');
-          setEl('text-style-beaches', 'Beaches & Ocean coasts');
-          setEl('desc-style-beaches', 'Seafood dinings, old seaside ramparts, surfing & sea winds');
-          setEl('text-style-souks', 'Souks, Crafts & Shopping');
-          setEl('desc-style-souks', 'Spices stalls, woven rugs, leather slippers & artisan guilds');
-          setEl('text-style-food', 'Food, Tajines & Spices');
-          setEl('desc-style-food', 'Bespoke street food courts, traditional tea riads & tajines cooking');
-        }
+        // Style tile strings
+        setEl('text-style-history', 'History & Architecture');
+        setEl('desc-style-history', 'Imperial palaces, historic medina lanes & monumental gates');
+        setEl('text-style-desert', 'Sahara & Desert Dunes');
+        setEl('desc-style-desert', 'Camel riding, starry nights in oasis camps & grand canyons');
+        setEl('text-style-nature', 'Mountains & Nature');
+        setEl('desc-style-nature', 'Atlas hiking paths, valleys, waterfalls & blue-washed trails');
+        setEl('text-style-beaches', 'Beaches & Ocean coasts');
+        setEl('desc-style-beaches', 'Seafood dinings, old seaside ramparts, surfing & sea winds');
+        setEl('text-style-souks', 'Souks, Crafts & Shopping');
+        setEl('desc-style-souks', 'Spices stalls, woven rugs, leather slippers & artisan guilds');
+        setEl('text-style-food', 'Food, Tajines & Spices');
+        setEl('desc-style-food', 'Bespoke street food courts, traditional tea riads & tajines cooking');
 
         // Sync duration text indicator template
         const sliderValue = document.getElementById('trip-days-slider').value;
@@ -1104,7 +1032,7 @@
 
           // Localized name & parameters
           let localizedCityName = city.name;
-          let localizedTextRegion = translations[activeLanguage].regions[city.region] || city.region;
+          let localizedTextRegion = translations.en.regions[city.region] || city.region;
 
           // Hotel lodging info
           const selectedHotel = city.hotels[hotelTierPreference] || city.hotels['mid_range'];

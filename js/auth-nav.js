@@ -1,47 +1,24 @@
-// Morocco Tourism - Vanilla JS Header, Footer, and Cookie consent engine (English / Français)
+// Morocco Tourism - Vanilla JS Header, Footer, and Cookie consent engine (English-only)
 import { translations } from './translations.js';
 
-// Retrieve active language preference safely from storage, defaulting to English
+// Language preference safely fixed to English
 export function getNavLanguage() {
-  return localStorage.getItem('preferred_language') || 'en';
-}
-
-// Persist language settings across page views and alert dynamic listeners
-export function saveNavLanguage(lang) {
-  localStorage.setItem('preferred_language', lang);
-  // Dispatch dynamic event to switch vocabulary without a reload
-  window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+  return 'en';
 }
 
 export function updateHeaderNavControls() {
   const navContainer = document.getElementById('header-nav-controls');
   if (!navContainer) return;
 
-  const currentLang = getNavLanguage();
   const t = (key) => {
-    return translations[currentLang]?.[key] || translations['en']?.[key] || key;
+    return translations['en']?.[key] || key;
   };
 
   document.documentElement.dir = 'ltr';
-  document.documentElement.lang = currentLang;
+  document.documentElement.lang = 'en';
 
   // Track if mobile overlays were active to preserve across dynamic re-draw
   const overlayWasOpen = document.getElementById('mobile-nav-overlay')?.classList.contains('open');
-
-  // Render a beautifully crafted, pixel-perfect language toggle pill
-  const desktopLangToggleHtml = `
-    <div class="lang-toggle-wrapper" style="display: flex; align-items: center; gap: 4px; border: 2px solid var(--color-border); border-radius: var(--border-radius-md); padding: 2px; background: white; height: 38px; box-sizing: border-box; margin-right: 8px;">
-      <button id="lang-btn-en" class="lang-btn ${currentLang === 'en' ? 'active' : ''}" style="border: none; background: ${currentLang === 'en' ? 'var(--color-terracotta)' : 'transparent'}; color: ${currentLang === 'en' ? 'white' : 'var(--color-charcoal-light)'}; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: var(--transition-smooth); height: 100%; display: flex; align-items: center; justify-content: center;">EN</button>
-      <button id="lang-btn-fr" class="lang-btn ${currentLang === 'fr' ? 'active' : ''}" style="border: none; background: ${currentLang === 'fr' ? 'var(--color-terracotta)' : 'transparent'}; color: ${currentLang === 'fr' ? 'white' : 'var(--color-charcoal-light)'}; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: var(--transition-smooth); height: 100%; display: flex; align-items: center; justify-content: center;">FR</button>
-    </div>
-  `;
-
-  const mobileLangToggleHtml = `
-    <div class="lang-toggle-wrapper-mobile" style="display: flex; align-items: center; gap: 4px; border: 2px solid var(--color-border); border-radius: var(--border-radius-md); padding: 2px; background: white; height: 38px; box-sizing: border-box;">
-      <button id="lang-btn-en-mob" class="lang-btn ${currentLang === 'en' ? 'active' : ''}" style="border: none; background: ${currentLang === 'en' ? 'var(--color-terracotta)' : 'transparent'}; color: ${currentLang === 'en' ? 'white' : 'var(--color-charcoal-light)'}; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: var(--transition-smooth); height: 100%; display: flex; align-items: center; justify-content: center;">EN</button>
-      <button id="lang-btn-fr-mob" class="lang-btn ${currentLang === 'fr' ? 'active' : ''}" style="border: none; background: ${currentLang === 'fr' ? 'var(--color-terracotta)' : 'transparent'}; color: ${currentLang === 'fr' ? 'white' : 'var(--color-charcoal-light)'}; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: var(--transition-smooth); height: 100%; display: flex; align-items: center; justify-content: center;">FR</button>
-    </div>
-  `;
 
   // Draw Desktop Nav structure
   let desktopHtml = `
@@ -68,7 +45,6 @@ export function updateHeaderNavControls() {
       <a href="/contact.html" class="nav-link-desktop" style="font-size: 14px; text-decoration: none; font-weight: 600; color: var(--color-charcoal); transition: var(--transition-smooth); padding: 8px 10px; margin-right: 8px;">
         <span>${t('contact_nav')}</span>
       </a>
-      ${desktopLangToggleHtml}
     </div>
   `;
 
@@ -121,9 +97,6 @@ export function updateHeaderNavControls() {
           <i data-lucide="mail" style="width: 20px; height: 20px; color: var(--color-chefchaouen);"></i>
           <span>${t('contact_nav')}</span>
         </a>
-        <div style="margin-top: 16px; display: flex; justify-content: center; width: 100%;">
-          ${mobileLangToggleHtml}
-        </div>
       </nav>
     </div>
   `;
@@ -138,29 +111,6 @@ export function updateHeaderNavControls() {
       document.body.style.overflow = 'hidden';
     }
   }
-
-  // Add click events to language toggle buttons
-  const wireToggles = (enBtnId, frBtnId) => {
-    const enBtn = document.getElementById(enBtnId);
-    const frBtn = document.getElementById(frBtnId);
-
-    if (enBtn) {
-      enBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        saveNavLanguage('en');
-      });
-    }
-
-    if (frBtn) {
-      frBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        saveNavLanguage('fr');
-      });
-    }
-  };
-
-  wireToggles('lang-btn-en', 'lang-btn-fr');
-  wireToggles('lang-btn-en-mob', 'lang-btn-fr-mob');
 
   // Listeners for Hamburger trigger menu toggle
   const hamburgerTrigger = document.getElementById('nav-hamburger-trigger');
@@ -206,11 +156,10 @@ export function mountCookieConsentBanner() {
     document.body.appendChild(banner);
   }
 
-  const currentLang = getNavLanguage();
-  const text = translations[currentLang]?.cookie_text || translations['en'].cookie_text;
-  const acceptLabel = translations[currentLang]?.cookie_accept || translations['en'].cookie_accept;
-  const rejectLabel = currentLang === 'fr' ? 'Refuser' : 'Reject';
-  const policyLabel = translations[currentLang]?.cookie_policy || translations['en'].cookie_policy;
+  const text = translations['en'].cookie_text;
+  const acceptLabel = translations['en'].cookie_accept;
+  const rejectLabel = 'Reject';
+  const policyLabel = translations['en'].cookie_policy;
 
   banner.innerHTML = `
     <p class="cookie-text">${text}</p>
@@ -260,8 +209,6 @@ function loadOptionalGoogleServices() {
 export function updateGlobalFooterLinks() {
   const footer = document.querySelector('footer');
   if (!footer) return;
-
-  const currentLang = getNavLanguage();
   
   const footerVocabulary = {
     en: {
@@ -298,45 +245,10 @@ export function updateGlobalFooterLinks() {
       tangier: "Tangier",
       agadir: "Agadir",
       casablanca: "Casablanca"
-    },
-    fr: {
-      brand_title: "GoMoroccoAI",
-      tagline: "Découvrez la magie des cités impériales, des sables fins du Sahara et de l'héritage d'hospitalité du Royaume marocain.",
-      explore_title: "Portail d'Exploration",
-      legal_title: "Informations Légales",
-      destinations_title: "Destinations Populaires",
-      powered_by: "Conçu par abdelwahd hani, Inspiré par le Maroc.",
-      copyright_msg: "© 2026 GoMoroccoAI. Tous droits réservés.",
-      designed_by: "Conçu & Développé par Abdelwahd Hani",
-      home: "Portail d'Accueil",
-      browse_cities: "Découvrir les Villes",
-      culture: "Culture Marocaine",
-      plan_your_trip: "Planificateur de Voyage",
-      blog: "Blog",
-      about: "À Propos de Nous",
-      contact: "Contactez-nous",
-      privacy: "Politique de Confidentialité",
-      terms: "Conditions d'Utilisation",
-      trust_ai_title: "Planificateur d'IA",
-      trust_ai_desc: "Itinéraires personnalisés sur mesure",
-      trust_local_title: "Conseils Locaux",
-      trust_local_desc: "Lieux vérifiés & trésors cachés",
-      trust_weekly_title: "Mis à Jour Hebdomadaire",
-      trust_weekly_desc: "Des infos de voyage fraîches",
-      trust_guides_title: "Guides de Voyage Gratuits",
-      trust_guides_desc: "Aucun frais, planification illimitée",
-      marrakech: "Marrakech",
-      fez: "Fès",
-      chefchaouen: "Chefchaouen",
-      merzouga: "Merzouga",
-      essaouira: "Essaouira",
-      tangier: "Tanger",
-      agadir: "Agadir",
-      casablanca: "Casablanca"
     }
   };
 
-  const strings = footerVocabulary[currentLang] || footerVocabulary['en'];
+  const strings = footerVocabulary.en;
 
   // Update outer footer styling and replace inner HTML
   footer.className = 'site-footer';
@@ -548,13 +460,6 @@ export function updateGlobalFooterLinks() {
   }
 }
 
-// Register global update event listener so toggle reacts in real time across the script
-window.addEventListener('languageChanged', () => {
-  updateHeaderNavControls();
-  updateGlobalFooterLinks();
-  mountCookieConsentBanner();
-});
-
 // Automatically update controls when the DOM is ready or when script loads
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
@@ -636,8 +541,4 @@ export function initViewportReveal() {
 // Apply reveal animations on page changes or dynamic content refreshes
 window.addEventListener('scrollRevealTrigger', () => {
   initViewportReveal();
-});
-
-window.addEventListener('languageChanged', () => {
-  setTimeout(initViewportReveal, 100);
 });

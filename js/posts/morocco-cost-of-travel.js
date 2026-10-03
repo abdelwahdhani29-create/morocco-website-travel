@@ -1,84 +1,38 @@
-// Morocco Cost of Travel: How Much Money Do You Really Need? (Bilingual English & Français)
+// Morocco Cost of Travel: How Much Money Do You Really Need? Travel Guide
 export const postMoroccoCostOfTravel = {
   id: "morocco-cost-of-travel",
   cityId: null,
   image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29zdCUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
   date: "2026-07-22",
   lastUpdated: "2026-08-20",
-  categories: {
-    en: "Budget & Planning",
-    fr: "Budget et Préparatifs"
-  },
-  author: {
-    en: "Abdelwahd Hani",
-    fr: "Abdelwahd Hani"
-  },
-  readTime: {
-    en: "18 min read",
-    fr: "18 min de lecture"
-  },
-  title: {
-    en: "Morocco Cost of Travel: How Much Money Do You Really Need?",
-    fr: "Budget Voyage Maroc : Combien d'Argent Faut-il Vraiment Prévoir ?"
-  },
-  excerpt: {
-    en: "How much does a trip to Morocco really cost? Detailed 2026 travel budget breakdown covering accommodation, food, transportation, Sahara tours, hidden costs, tipping, and daily expense estimates.",
-    fr: "Combien coûte réellement un voyage au Maroc ? Guide complet du budget 2026 : hébergements, repas, transports, excursions au désert, pourboires, frais cachés et dépenses quotidiennes."
-  },
-  metaTitle: {
-    en: "Morocco Cost of Travel 2026: Daily Budgets & Price Guide",
-    fr: "Budget Voyage Maroc 2026 : Combien Coûte un Séjour au Maroc ?"
-  },
-  metaDescription: {
-    en: "How much money do you need for Morocco? Complete 2026 price guide covering riads, street food, desert tours, trains, ATMs, tipping, and total trip cost estimates.",
-    fr: "Combien d'argent prévoir pour un voyage au Maroc ? Guide complet des prix 2026 : riads, repas, excursions Sahara, trains, carte bancaire, pourboires et budgets types."
-  },
+  categories: "Budget & Planning",
+  author: "Abdelwahd Hani",
+  readTime: "18 min read",
+  title: "Morocco Cost of Travel: How Much Money Do You Really Need?",
+  excerpt: "How much does a trip to Morocco really cost? Detailed 2026 travel budget breakdown covering accommodation, food, transportation, Sahara tours, hidden costs, tipping, and daily expense estimates.",
+  metaTitle: "Morocco Cost of Travel 2026: Daily Budgets & Price Guide",
+  metaDescription: "How much money do you need for Morocco? Complete 2026 price guide covering riads, street food, desert tours, trains, ATMs, tipping, and total trip cost estimates.",
   keywords: "Morocco cost of travel, Morocco budget guide, how much money for Morocco, Morocco prices 2026, Moroccan dirham budget, cost of riad in Morocco, Sahara tour cost, Morocco travel expenses",
   faqs: [
-    {
-      question: {
-        en: "Is Morocco an expensive destination to visit?",
-        fr: "Le Maroc est-il une destination chère à visiter ?"
-      },
-      answer: {
-        en: "No, Morocco remains one of the highest-value destinations in North Africa and Europe's vicinity. Budget travelers can easily comfortably get by on $35 to $50 (350–500 MAD) per day, while mid-range travelers enjoying private boutique riads, sit-down dinners, and guided tours typically spend between $90 and $180 (900–1,800 MAD) per day.",
-        fr: "Non, le Maroc demeure l'une des destinations offrant le meilleur rapport qualité-prix à proximité de l'Europe. Un voyageur à petit budget peut aisément s'en sortir avec 35 à 50 $ (350 à 500 MAD) par jour, tandis qu'un séjour de gamme moyenne avec riads de charme, bons restaurants et visites guidées coûte entre 90 et 180 $ (900 à 1 800 MAD) par jour."
-      }
-    },
-    {
-      question: {
-        en: "Can I use credit cards in Morocco, or do I need cash?",
-        fr: "Peut-on utiliser la carte bancaire au Maroc ou faut-il uniquement des espèces ?"
-      },
-      answer: {
-        en: "Morocco is predominantly a cash-based economy. While high-end hotels, modern supermarkets, and tourist restaurants accept Visa and Mastercard, cash (Moroccan Dirham - MAD) is strictly required for local taxis, medina souks, street food stalls, tipping, and rural attractions. Always keep small notes (20, 50 MAD) handy.",
-        fr: "Le Maroc est une économie fonctionnant principalement au comptant. Bien que les hôtels haut de gamme, supermarchés modernes et grands restaurants acceptent les cartes bancaires, les dirhams marocains (MAD) en espèces sont indispensables pour les petits taxis, les souks des médinas, la nourriture de rue et les pourboires."
-      }
-    },
-    {
-      question: {
-        en: "How much should I tip (baksheesh) in Morocco?",
-        fr: "Combien faut-il donner en pourboire (baksheesh) au Maroc ?"
-      },
-      answer: {
-        en: "Tipping is deeply woven into Moroccan social etiquette. In casual restaurants, leave 10% of the bill. For cafe waiters, 2 to 5 MAD is standard. For hotel luggage porters, 10 to 20 MAD per bag. For private drivers, plan 100 to 200 MAD per day, and for licensed tour guides, 150 to 300 MAD per day depending on group size.",
-        fr: "Le pourboire est ancré dans la culture marocaine. Dans les restaurants classiques, laissez environ 10 % de l'addition. Pour un café, 2 à 5 MAD suffisent. Comptez 10 à 20 MAD pour un bagagiste, 100 à 200 MAD par jour pour un chauffeur privé et 150 à 300 MAD par jour pour un guide touristique certifié."
-      }
-    },
-    {
-      question: {
-        en: "How much does a Sahara desert tour cost?",
-        fr: "Combien coûte une excursion dans le désert du Sahara ?"
-      },
-      answer: {
-        en: "A standard 3-day budget shared Sahara tour from Marrakech to Merzouga typically costs between $150 and $250 (1,500–2,500 MAD) per person, including transport, camel treks, dinner, and basic camp lodging. Mid-range to luxury private desert glamping tours range from $400 to $1,200+ (4,000–12,000+ MAD) per person depending on private transfer vehicles and luxury tent amenities.",
-        fr: "Une excursion partagée de 3 jours dans le désert au départ de Marrakech vers Merzouga coûte généralement entre 150 et 250 $ (1 500 à 2 500 MAD) par personne, incluant transport, dromadaire, repas et bivouac. Les circuits privés haut de gamme en campement de luxe varient de 400 à 1 200 $ (4 000 à 12 000 MAD) par personne selon le confort et le véhicule privé."
-      }
-    }
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">Planning a trip to Morocco is a thrilling prospect, but one question inevitably tops every traveler's mind: <strong>how much money do you really need for a trip to Morocco?</strong> Whether you are dreaming of staying in a lavish palatial riad in Marrakech, trekking across the golden sand dunes of the Sahara, or sipping 2-Dirham mint tea in a quiet alley of Chefchaouen, Morocco offers an extraordinary range of travel experiences suited for every wallet size.</p>
+  {
+    "question": "Is Morocco an expensive destination to visit?",
+    "answer": "No, Morocco remains one of the highest-value destinations in North Africa and Europe's vicinity. Budget travelers can easily comfortably get by on $35 to $50 (350–500 MAD) per day, while mid-range travelers enjoying private boutique riads, sit-down dinners, and guided tours typically spend between $90 and $180 (900–1,800 MAD) per day."
+  },
+  {
+    "question": "Can I use credit cards in Morocco, or do I need cash?",
+    "answer": "Morocco is predominantly a cash-based economy. While high-end hotels, modern supermarkets, and tourist restaurants accept Visa and Mastercard, cash (Moroccan Dirham - MAD) is strictly required for local taxis, medina souks, street food stalls, tipping, and rural attractions. Always keep small notes (20, 50 MAD) handy."
+  },
+  {
+    "question": "How much should I tip (baksheesh) in Morocco?",
+    "answer": "Tipping is deeply woven into Moroccan social etiquette. In casual restaurants, leave 10% of the bill. For cafe waiters, 2 to 5 MAD is standard. For hotel luggage porters, 10 to 20 MAD per bag. For private drivers, plan 100 to 200 MAD per day, and for licensed tour guides, 150 to 300 MAD per day depending on group size."
+  },
+  {
+    "question": "How much does a Sahara desert tour cost?",
+    "answer": "A standard 3-day budget shared Sahara tour from Marrakech to Merzouga typically costs between $150 and $250 (1,500–2,500 MAD) per person, including transport, camel treks, dinner, and basic camp lodging. Mid-range to luxury private desert glamping tours range from $400 to $1,200+ (4,000–12,000+ MAD) per person depending on private transfer vehicles and luxury tent amenities."
+  }
+],
+  content: `
+<p class="blog-lead">Planning a trip to Morocco is a thrilling prospect, but one question inevitably tops every traveler's mind: <strong>how much money do you really need for a trip to Morocco?</strong> Whether you are dreaming of staying in a lavish palatial riad in Marrakech, trekking across the golden sand dunes of the Sahara, or sipping 2-Dirham mint tea in a quiet alley of Chefchaouen, Morocco offers an extraordinary range of travel experiences suited for every wallet size.</p>
 
       <p>Compared to Western Europe or North America, Morocco stands out as an incredibly affordable destination offering immense value. However, prices can fluctuate dramatically depending on your travel style, the cities you visit, whether you hire private drivers, and how adeptly you handle local cash transactions. In this definitive 2026 travel budget guide, we break down every single expense category—from boutique riads and street food to high-speed trains, desert glamping, tipping, and hidden fees—so you can budget with total confidence.</p>
 
@@ -320,222 +274,5 @@ export const postMoroccoCostOfTravel = {
       <p>To calculate custom budget estimates customized to your personal travel speed, style, and travel dates, try GoMoroccoAI's interactive <a href="/trip-planner.html" class="blog-internal-link">Interactive Trip Planner</a> or browse destination highlights in our <a href="/cities.html" class="blog-internal-link">Morocco Cities Directory</a>.</p>
 
       <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Last verified: August 20, 2026 | Price ranges are estimates based on average seasonal market rates in Morocco.</p>
-    `,
-    fr: `
-      <p class="blog-lead">Planifier un voyage au Maroc est une perspective passionnante, mais une question cruciale revient systématiquement : <strong>combien d'argent faut-il vraiment prévoir pour un voyage au Maroc ?</strong> Que vous rêviez de séjourner dans un riad somptueux à Marrakech, de faire une méharée dans les dunes dorées du Sahara ou de déguster un thé à la menthe à 2 Dirhams dans une ruelle paisible de Chefchaouen, le Maroc offre une variété d'expériences adaptées à tous les budgets.</p>
-
-      <p>Comparé à l'Europe occidentale ou à l'Amérique du Nord, le Maroc s'impose comme une destination très abordable offrant un rapport qualité-prix exceptionnel. Cependant, les tarifs peuvent fortement varier selon votre style de voyage, les villes visitées, l'utilisation de chauffeurs privés et votre maîtrise des paiements en espèces locaux. Dans ce guide complet du budget voyage 2026, nous analysons chaque poste de dépense—des riads de charme à la cuisine de rue, en passant par les TGV, le bivouac dans le désert, les pourboires et les frais cachés.</p>
-
-      <p>Avant de plonger dans les chiffres, n'hésitez pas à lire nos articles complémentaires sur les <a href="/blog/morocco-travel-tips-30-things-to-know.html" class="blog-internal-link">30 conseils essentiels pour voyager au Maroc</a> et notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">itinéraire parfait de 10 jours pour un premier séjour</a>.</p>
-
-      <h2>Le Dirham Marocain (MAD) : Taux de change et règles monétaires</h2>
-      <p>La monnaie officielle du Maroc est le <strong>Dirham Marocain (MAD)</strong>. Pour vous aider à calculer vos dépenses sur place, voici les taux de conversion indicatifs (mis à jour pour 2026) :</p>
-
-      <ul>
-        <li><strong>1,00 € EUR</strong> ≈ 10,60 – 11,00 MAD</li>
-        <li><strong>1,00 $ USD</strong> ≈ 9,80 – 10,20 MAD</li>
-        <li><strong>1,00 £ GBP</strong> ≈ 12,50 – 13,00 MAD</li>
-        <li><strong>1,00 $ CAD</strong> ≈ 7,20 – 7,60 MAD</li>
-      </ul>
-
-      <p>Pour suivre les taux officiels de la banque centrale en temps réel, vous pouvez consulter le site de la <a href="https://www.bkam.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Banque Al-Maghrib (Banque Centrale du Maroc)</a>.</p>
-
-      <div class="blog-highlight">
-        <p><strong>⚠️ Règle monétaire essentielle :</strong> Le Dirham marocain est une monnaie fermée. Il est interdit d'importer ou d'exporter des sommes importantes de dirhams en dehors du territoire national. Retirez ou échangez votre argent à votre arrivée dans les aéroports, banques ou distributeurs automatiques. Pour des conseils complets sur la gestion des espèces, les distributeurs et le budget liquide, consultez notre <a href="/blog/how-much-cash-to-bring-to-morocco.html" class="blog-internal-link">Guide Pratique Espèces &amp; Devises au Maroc</a>.</p>
-      </div>
-
-      <h2>Budgets quotidiens par profil de voyageur : Combien dépenser ?</h2>
-      <p>Pour vous aider à établir un budget quotidien adapté, nous avons divisé les dépenses en trois catégories claires : <strong>Petit Budget / Routard</strong>, <strong>Gamme Moyenne / Confort</strong>, et <strong>Luxe / Haut de Gamme</strong>.</p>
-
-      <div class="blog-table-container">
-        <table>
-          <thead>
-            <tr style="background-color: #f7f6f5; color: var(--color-charcoal); font-weight: 700; border-bottom: 2px solid var(--color-border);">
-              <th style="padding: 12px 16px;">Profil de Voyage</th>
-              <th style="padding: 12px 16px;">Budget / Jour (MAD)</th>
-              <th style="padding: 12px 16px;">Budget / Jour (EUR)</th>
-              <th style="padding: 12px 16px;">Prestations Incluses</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600; color: #16a34a;">Petit Budget / Routard</td>
-              <td style="padding: 12px 16px;">350 – 550 MAD</td>
-              <td style="padding: 12px 16px; font-weight: 600;">32 € – 50 €</td>
-              <td style="padding: 12px 16px;">Lit en dortoir ou maison d'hôtes simple, street food, cantines locales, bus/tramway, visites libres.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border); background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600; color: #2563eb;">Gamme Moyenne (Idéal)</td>
-              <td style="padding: 12px 16px;">900 – 1 800 MAD</td>
-              <td style="padding: 12px 16px; font-weight: 600;">85 € – 165 €</td>
-              <td style="padding: 12px 16px;">Chambre privée en riad de charme avec petit-déjeuner, dîners en terrasse, train 1ère classe, musées, excursion désert partagée.</td>
-            </tr>
-            <tr style="border-bottom: none;">
-              <td style="padding: 12px 16px; font-weight: 600; color: #7c3aed;">Luxe / Haut de Gamme</td>
-              <td style="padding: 12px 16px;">3 500 – 8 000+ MAD</td>
-              <td style="padding: 12px 16px; font-weight: 600;">320 € – 750 €+</td>
-              <td style="padding: 12px 16px;">Riad palatial ou hôtel 5 étoiles, gastronomie, chauffeur privé en 4x4, bivouac de luxe privé au Sahara, spa hammam.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2>1. Coût des Hébergements : Auberges, Riads Traditionnels et Palais</h2>
-      <p>L'hébergement constitue la principale dépense de votre séjour. Heureusement, l'offre hôtelière au Maroc est d'une richesse exceptionnelle. Loger dans un <strong>Riad</strong>—une demeure traditionnelle organisée autour d'un patio intérieur verdoyant—est une expérience inoubliable.</p>
-
-      <h3>Auberges de Jeunesse et Maisons d'Hôtes (100 – 300 MAD / 10 € – 28 € la nuit)</h3>
-      <p>Les auberges de jeunesse fleurissent dans les grandes villes comme Marrakech, Fès et Tanger. Un lit en dortoir coûte entre 100 et 180 MAD (10 € à 16 €) la nuit, souvent avec thé et petit-déjeuner inclus. Une chambre privée en maison d'hôtes familiale (dar) varie de 200 à 350 MAD (18 € à 32 €).</p>
-
-      <h3>Riads de Charme de Gamme Moyenne (600 – 1 500 MAD / 55 € – 140 € la nuit)</h3>
-      <p>C'est le choix idéal pour 90 % des voyageurs. Pour 65 € à 110 € la nuit, deux personnes peuvent séjourner dans un magnifique riad restauré avec zelliges, climatisation, salle de bain privée et un copieux petit-déjeuner marocain servi sur le toit-terrasse. Pour réserver les meilleures adresses, consultez notre <a href="/city/marrakech.html" class="blog-internal-link">guide d'hébergement à Marrakech</a> et notre sélection pour <a href="/city/fez.html" class="blog-internal-link">la médina de Fès</a>.</p>
-
-      <h3>Hôtels de Luxe et Palais (3 000 – 10 000+ MAD / 280 € – 900 €+ la nuit)</h3>
-      <p>Pour un séjour somptueux, des établissements mythiques comme le Royal Mansour ou La Mamounia à Marrakech offrent suites d'exception, piscines chauffées, spas de luxe et service de majordome privé.</p>
-
-      <div class="blog-highlight">
-        <p><strong>📌 Taxe de séjour :</strong> La plupart des établissements prélèvent une taxe de séjour municipale obligatoire de 20 à 45 MAD (2 € à 4 €) par personne et par nuit, payable en espèces lors du départ.</p>
-      </div>
-
-      <h2>2. Restauration et Repas : De la Street Food aux Tables Gastronomiques</h2>
-      <p>La cuisine marocaine est réputée dans le monde entier pour ses tajines mijotés, son couscous dominical et ses pâtisseries au miel. Bien manger au Maroc est extrêmement accessible !</p>
-
-      <figure style="margin: 28px 0; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1672477179695-7276b0602fa9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhZGl0aW9uYWwlMjBmb29kfGVufDB8fDB8fHww" alt="Plat traditionnel marocain et tajine" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" />
-      </figure>
-
-      <h3>Street Food et Encas (10 – 35 MAD / 1 € – 3,20 €)</h3>
-      <p>La cuisine de rue marocaine est un régal quotidien :</p>
-
-      <ul>
-        <li><strong>Jus d'orange frais pressé :</strong> 5 à 10 MAD (0,50 € à 0,90 €) sur les stands de Jemaa el-Fna.</li>
-        <li><strong>Soupe Harira avec dattes et Chebakia :</strong> 10 à 15 MAD (0,90 € à 1,40 €).</li>
-        <li><strong>Brochettes de viande grillée :</strong> 25 à 40 MAD (2,30 € à 3,60 €) avec pain frais.</li>
-        <li><strong>Beignet Sfenj chaud :</strong> 2 à 3 MAD (0,20 €).</li>
-        <li><strong>Pastilla individuelle :</strong> 20 à 35 MAD (1,80 € à 3,20 €).</li>
-      </ul>
-
-      <h3>Cantines et Restaurants Locaux (40 – 90 MAD / 3,80 € – 8,20 €)</h3>
-      <p>Dans les petits restaurants populaires fréquentés par les habitants, un tajine complet de poulet au citron confit ou d'agneau aux pruneaux coûte entre 40 et 60 MAD (3,60 € à 5,50 €).</p>
-
-      <h3>Restaurants en Terrasse dans la Médina (120 – 280 MAD / 11 € – 25 €)</h3>
-      <p>Dîner dans un restaurant raffiné en toit-terrasse surplombant la médina coûte généralement entre 120 et 220 MAD (11 € à 20 €) pour un repas complet.</p>
-
-      <h2>3. Transports : Trains, Bus, Taxis et Location de Voiture</h2>
-      <p>Se déplacer au Maroc est facile et très bon marché grâce à des infrastructures modernes de qualité.</p>
-
-      <h3>Trains à Grande Vitesse (Al Boraq) et Trains Classiques ONCF</h3>
-      <p>Le Maroc abrite le premier TGV d'Afrique, <strong>Al Boraq</strong>, reliant Tanger à Casablanca en moins de deux heures :</p>
-
-      <ul>
-        <li><strong>Tanger à Casablanca (TGV Al Boraq) :</strong> 150 à 250 MAD (14 € à 23 €) en 2nde classe ; 220 à 350 MAD (20 € à 32 €) en 1ère classe.</li>
-        <li><strong>Casablanca à Marrakech (Train classique) :</strong> 110 à 160 MAD (10 € à 15 €).</li>
-        <li><strong>Fès à Marrakech (Train classique) :</strong> 210 à 310 MAD (19 € à 28 €).</li>
-      </ul>
-
-      <p>Consultez les horaires et achetez vos billets directement sur le portail de l'<a href="https://www.oncf.ma/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">ONCF (Office National des Chemins de Fer)</a>.</p>
-
-      <h3>Autocars Interurbains (CTM & Supratours)</h3>
-      <p>Pour les destinations non desservies par le rail—comme Chefchaouen ou Merzouga—les bus <strong>CTM</strong> et <strong>Supratours</strong> offrent confort, climatisation et ponctualité :</p>
-
-      <ul>
-        <li><strong>Fès à Chefchaouen (Bus CTM) :</strong> 75 à 100 MAD (7 € à 9 €).</li>
-        <li><strong>Marrakech à Merzouga (Bus de nuit Supratours) :</strong> environ 280 MAD (25 €).</li>
-      </ul>
-
-      <h3>Taxis en Ville : Petits Taxis et Grands Taxis</h3>
-      <p>En ville, les <strong>Petits Taxis</strong> sont équipés d'un compteur (<em>compteur</em>). Une course moyenne coûte entre 15 et 35 MAD (1,40 € à 3,20 €). Exigez toujours l'enclenchement du compteur dès votre montée !</p>
-
-      <h2>4. Excursions, Musées et Activités</h2>
-      <p>Les tarifs des visites culturelles au Maroc restent très abordables. La plupart des monuments historiques ont des tarifs d'entrée réglementés par l'État.</p>
-
-      <div class="blog-table-container">
-        <table>
-          <thead>
-            <tr style="background-color: #f7f6f5; color: var(--color-charcoal); font-weight: 700; border-bottom: 2px solid var(--color-border);">
-              <th style="padding: 12px 16px;">Visite / Activité</th>
-              <th style="padding: 12px 16px;">Tarif (MAD)</th>
-              <th style="padding: 12px 16px;">Tarif (EUR)</th>
-              <th style="padding: 12px 16px;">Conseil Pratique</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600;">Palais de la Bahia / Tombeaux Saadiens</td>
-              <td style="padding: 12px 16px;">70 MAD</td>
-              <td style="padding: 12px 16px;">~6,50 €</td>
-              <td style="padding: 12px 16px;">Arrivez dès 8h30 à l'ouverture pour éviter les groupes.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border); background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600;">Jardin Majorelle + Musée YSL</td>
-              <td style="padding: 12px 16px;">150 – 220 MAD</td>
-              <td style="padding: 12px 16px;">~14 € – 20 €</td>
-              <td style="padding: 12px 16px;">Réservation en ligne obligatoire au moins 24h à l'avance.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600;">Guide officiel de la médina (Demi-journée)</td>
-              <td style="padding: 12px 16px;">300 – 500 MAD</td>
-              <td style="padding: 12px 16px;">~28 € – 45 € total</td>
-              <td style="padding: 12px 16px;">Tarif par groupe (et non par personne). Réservez via l'Office du Tourisme.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border); background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600;">Hammam populaire traditionnel</td>
-              <td style="padding: 12px 16px;">20 MAD + 50 MAD gommage</td>
-              <td style="padding: 12px 16px;">~6,50 € total</td>
-              <td style="padding: 12px 16px;">Apportez votre savon noir et votre gant de gommage (kessa).</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--color-border);">
-              <td style="padding: 12px 16px; font-weight: 600;">Excursion 3 Jours Sahara (Partagée)</td>
-              <td style="padding: 12px 16px;">1 500 – 2 500 MAD</td>
-              <td style="padding: 12px 16px;">~140 € – 230 € p/p</td>
-              <td style="padding: 12px 16px;">Inclut minibus, dromadaire, repas et nuit en bivouac dans les dunes.</td>
-            </tr>
-            <tr style="border-bottom: none; background-color: #fdfdfd;">
-              <td style="padding: 12px 16px; font-weight: 600;">Circuits Bivouac de Luxe Privé</td>
-              <td style="padding: 12px 16px;">4 000 – 10 000+ MAD</td>
-              <td style="padding: 12px 16px;">~370 € – 900 €+ p/p</td>
-              <td style="padding: 12px 16px;">Transport en 4x4 privé, tente avec salle de bain privée, repas gastronomique.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>Pour en savoir plus sur les excursions sahariennes, lisez notre <a href="/city/merzouga.html" class="blog-internal-link">guide complet sur Merzouga</a> et découvrez les secrets de <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen</a>.</p>
-
-      <h2>5. Souvenirs et Conseils de Négociation</h2>
-      <p>Faire ses achats dans les souks est une expérience incontournable. La négociation fait partie intégrante de la culture locale. Voici quelques repères de prix équitables :</p>
-
-      <ul>
-        <li><strong>Babouches en cuir traditionnelles :</strong> 100 à 220 MAD (9 € à 20 €).</li>
-        <li><strong>Tapis berbère en laine (Moyen modèle) :</strong> 600 à 1 800 MAD (55 € à 165 €).</li>
-        <li><strong>Huile d'Argan pure cosmétique (100ml) :</strong> 100 à 180 MAD (9 € à 16 €) en coopérative féminine certifiée.</li>
-        <li><strong>Bol en céramique peint à la main :</strong> 40 à 120 MAD (3,60 € à 11 €).</li>
-      </ul>
-
-      <h2>6. Pourboires (Baksheesh), Distributeurs et Sécurité Financiére</h2>
-      <p>Le pourboire (<em>Baksheesh</em>) est une tradition très ancrée au Maroc :</p>
-
-      <ul>
-        <li><strong>Restaurants :</strong> environ 10 % de l'addition.</li>
-        <li><strong>Garçons de café :</strong> 2 à 5 MAD.</li>
-        <li><strong>Bagagistes d'hôtel :</strong> 10 à 20 MAD par bagage.</li>
-        <li><strong>Chauffeur privé :</strong> 100 à 200 MAD par jour pour le groupe.</li>
-        <li><strong>Guide touristique officiel :</strong> 150 à 300 MAD par jour pour le groupe.</li>
-      </ul>
-
-      <p>Pour les démarches touristiques officielles, référez-vous au <a href="https://www.visitmorocco.com/" target="_blank" rel="noopener noreferrer" class="blog-internal-link">Portail Officiel du Tourisme Marocain (VisitMorocco)</a>.</p>
-
-      <h2>7. Budget Total Estimé pour un Séjour de 7 à 10 Jours</h2>
-      <p>Voici des estimations globales pour vous aider à planifier votre budget total (hors billets d'avion internationaux) :</p>
-
-      <h3>Séjour 7 Jours Petit Budget (Routard)</h3>
-      <p><strong>Budget total estimé : 300 € à 450 € (3 200 à 4 800 MAD) par personne.</strong><br />Auberges de jeunesse, street food, bus/trains et visites libres.</p>
-
-      <h3>Séjour 10 Jours Gamme Moyenne (Couple / Amis)</h3>
-      <p><strong>Budget total estimé : 1 000 € à 1 500 € (11 000 à 16 000 MAD) par personne.</strong><br />Riads de charme avec petit-déjeuner, dîners en terrasses, TGV, excursion de 3 jours au Sahara, guides officiels et musées. À combiner avec notre <a href="/blog/morocco-itinerary-first-time.html" class="blog-internal-link">Itinéraire Ultime de 10 Jours au Maroc</a>.</p>
-
-      <p>Pour calculer un budget personnalisé selon votre rythme et vos dates, utilisez notre <a href="/trip-planner.html" class="blog-internal-link">Planificateur interactif GoMoroccoAI</a> ou explorez notre <a href="/cities.html" class="blog-internal-link">Annuaire des Villes du Maroc</a>.</p>
-
-      <p style="font-size: 12px; color: var(--color-charcoal-light); margin-top: 32px;">Dernière vérification : 20 août 2026 | Tarifs indicatifs sujets aux variations saisonnières au Maroc.</p>
-    `
-  }
+  `
 };

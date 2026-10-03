@@ -1,207 +1,40 @@
-// Morocco Tourism - Vanilla JS Application Core (Bilingual English / Français)
+// Morocco Tourism - Vanilla JS Application Core (English-only)
 import { translations } from './translations.js';
-import { getNavLanguage } from './auth-nav.js';
 import { blogPosts } from './blog-posts.js';
 import { citiesDataFallback } from './cities-data-fallback.js';
 
 // Global App State
-let appLanguage = getNavLanguage();
 let allCitiesData = [];
 let activeCityData = null;
 let activeHotelTier = 'mid_range';
 
-// Localized mapping for city components to avoid English database values when browsing in French
-const localizedCityData = {
-  marrakech: {
-    fr: {
-      name: "Marrakech",
-      subtitle: "Médina Rouge Impériale",
-      cultural_note: "Lors de vos visites à Marrakech, négocier dans les souks se fait d'abord avec respect. Commencez par un chaleureux 'Salam Alaykum' (Que la paix soit sur vous), demandez les prix poliment et appréciez l'échange comme une interaction sociale vivante. Une tenue décente est très appréciée, en particulier autour des quartiers historiques.",
-      attractions: [
-        { name: "La Place Jemaa el-Fnaa", description: "Une place de légende qui se transforme au couchant en théâtre à ciel ouvert avec conteurs, musiciens et étals de cuisine parfumée.", image: "https://images.pexels.com/photos/34793906/pexels-photo-34793906.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { name: "Le Jardin Majorelle", description: "Un paradis botanique créé par la ferveur du peintre Jacques Majorelle, arborant sa céleste villa bleu cobalt outremer.", image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      hotels: {
-        budget: { name: "Riad Diana", price_approx: 45, amenity: "Patio traditionnel marocain, bassin de fraîcheur & accueil au thé traditionnel" },
-        mid_range: { name: "Riad Kniza", price_approx: 120, amenity: "Riad d'époque datant du XVIIIe siècle, petit-déjeuner exceptionnel" },
-        luxury: { name: "La Mamounia", price_approx: 650, amenity: "Hôtel-palais de réputation mondiale doté de superbes jardins d'oliviers centenaires et spa" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "20 - 50 MAD (2 - 5 USD)", description: "Petits taxis de couleur beige idéaux pour se déplacer rapidement. Activez le compteur." },
-        { type: "Calèche Traditionnelle", approx_cost: "120 - 200 MAD (12 - 20 USD)/h", description: "Une promenade romantique et historique entourant les remparts de la Médina." },
-        { type: "Bus ALSA", approx_cost: "4 MAD (0.40 USD)", description: "Trajets de transports publics reliant la Médina à Guéliz et Majorelle." }
-      ]
-    }
-  },
-  chefchaouen: {
-    fr: {
-      name: "Chefchaouen",
-      subtitle: "La Perle Bleue du Rif",
-      cultural_note: "Chefchaouen est célèbre pour son atmosphère sereine. Il convient ici de solliciter l'accord des habitants avant de photographier les façades ou les jolies portes bleutées.",
-      attractions: [
-        { name: "La Médina Bleue", description: "Promenez-vous au cœur d'un labyrinthe de ruelles entièrement baignées de nuances de bleu azuré fardé de chaux.", image: "https://images.unsplash.com/photo-1538600838042-6a0c694ffab5?auto=format&fit=crop&w=800&q=80" },
-        { name: "La Cascade de Ras El Maa", description: "Une rafraîchissante source d'eau douce de montagne juste à la sortie des murs de la ville, où les habitants se rassemblent.", image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      hotels: {
-        budget: { name: "Hostel Baraka", price_approx: 25, amenity: "Toit-terrasse de style bohème dominant les crêtes majestueuses du Rif" },
-        mid_range: { name: "Lina Ryad & Spa", price_approx: 95, amenity: "Piscine intérieure chauffée et espace hammam surplombant la terrasse de la vallée" },
-        luxury: { name: "Riad Cherifa", price_approx: 180, amenity: "Suites de luxe restaurées dans un style architectural andalou remarquable" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "15 - 30 MAD (1.50 - 3 USD)", description: "Taxis bleus abordables circulant dans toute la ville et desservant les hauteurs du Rif." },
-        { type: "Minibus Partagé (Grand Taxi)", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Navettes de transport partagé à tarif fixe très pratiques pour explorer le Rif." },
-        { type: "Lignes CTM", approx_cost: "45 MAD (4.50 USD)", description: "Service d'autocars confortables et réguliers desservant Fès, Tanger et Tétouan." }
-      ]
-    }
-  },
-  fez: {
-    fr: {
-      name: "Fès",
-      subtitle: "La Capitale Spirituelle",
-      cultural_note: "Fès est le sanctuaire de la spiritualité et de l'artisanat marocain. Prenez votre temps dans les ruelles étroites, parlez de manière posée et respectez la quiétude des édifices religieux.",
-      attractions: [
-        { name: "Les Tanneries de Chouara", description: "Les célèbres bassins en nid d'abeille médiévaux où l'on teint le cuir selon des méthodes ancestrales.", image: "https://images.pexels.com/photos/38112658/pexels-photo-38112658.jpeg?auto=compress&cs=tinysrgb&w=800" },
-        { name: "L'Université Al-Qarawiyyin", description: "Fondée en 859 par Fatima al-Fihri, elle est officiellement reconnue par l'UNESCO comme la plus ancienne université encore en activité au monde.", image: "https://images.pexels.com/photos/35070809/pexels-photo-35070809.jpeg?auto=compress&cs=tinysrgb&w=800" }
-      ],
-      hotels: {
-        budget: { name: "Riad Verus", price_approx: 35, amenity: "Toit-terrasse dynamique offrant une vue à 360° sur toute la Médina" },
-        mid_range: { name: "Riad Dar Bensouda", price_approx: 85, amenity: "Splendide riad historique restauré avec piscine au sein du calme sanctuaire" },
-        luxury: { name: "Hotel Sahrai", price_approx: 220, amenity: "Hôtel design de style contemporain avec piscine à débordement géante sur Fès" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "15 - 35 MAD (1.50 - 3.50 USD)", description: "Taxis rouges très compacts reliant l'ancienne et la nouvelle ville de Fès." },
-        { type: "Bus National (CTM)", approx_cost: "100 - 150 MAD (10 - 15 USD)", description: "Réseau national d'autobus tout confort desservant l'ensemble des cités royales." },
-        { type: "Trains ONCF", approx_cost: "90 - 140 MAD (9 - 14 USD)", description: "Réseau ferroviaire direct très confortable de la gare de Fès vers Meknès et Rabat." }
-      ]
-    }
-  },
-  essaouira: {
-    fr: {
-      name: "Essaouira",
-      subtitle: "La Cité du Vent",
-      cultural_note: "Essaouira se distingue par sa douceur de vivre marine. Adressez des saluts chaleureux aux pêcheurs du port historique et encouragez les sculpteurs de bois précieux de thuya.",
-      attractions: [
-        { name: "La Sqala de la Kasbah", description: "Une promenade spectaculaire le long des anciens bastions royaux flanqués de fiers canons orientés vers la mer.", image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80" },
-        { name: "Le Port de Pêche", description: "Un port bleu et animé où chalutiers, odeurs de poisson grillé et harmonies musicales Gnaoua forment un spectacle constant.", image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" }
-      ],
-      hotels: {
-        budget: { name: "Riad Zahra", price_approx: 40, amenity: "Riad familial chaleureux situé à quelques mètres de la longue plage de sable" },
-        mid_range: { name: "Heure Bleue Palais", price_approx: 150, amenity: "Élégante oasis historique avec piscine sur toit-terrasse et patio verdoyant" },
-        luxury: { name: "Le Jardin des Douars", price_approx: 240, amenity: "Maison d'hôtes de charme d'une exceptionnelle quiétude au milieu d'un grand jardin luxuriant" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "7 - 15 MAD (0.70 - 1.50 USD)", description: "Petits taxis bleus très abordables pour tous vos déplacements urbains." },
-        { type: "Autocar Supratours", approx_cost: "80 - 120 MAD (8 - 12 USD)", description: "Lignes de bus rapides et climatisées assurant des navettes quotidiennes vers Marrakech." },
-        { type: "Calèche Traditionnelle", approx_cost: "80 - 120 MAD (8 - 12 USD)/h", description: "Promenades à cheval pittoresques le long de la grande plage et de la promenade maritime." }
-      ]
-    }
-  },
-  oujda: {
-    fr: {
-      name: "Oujda",
-      subtitle: "Capitale de l'Oriental",
-      cultural_note: "À Oujda, la musique Gharnati et la convivialité orientale sont reines. Le parc Lalla Aicha est idéal pour une pause sereine auprès des habitants.",
-      attractions: [
-        { name: "La Grande Mosquée", description: "Bâtie au XIIIe siècle, ce monument de l'ère Almohade est un chef-d'œuvre architectural au cœur de la médina.", image: "https://images.pexels.com/photos/33605163/pexels-photo-33605163.jpeg?_gl=1*2ju3qf*_ga*MTM4MjQ0MjExNS4xNzMxMjU3OTAx*_ga_8JE65Q40S6*czE3ODQ0NjU1ODIkbzIyJGcxJHQxNzg0NDY3NzQwJGoyMiRsMCRoMA.." },
-        { name: "Le Parc Lalla Aïcha", description: "Un havre de verdure et de fraîcheur orné de grands arbres centenaires et de jolis bassins.", image: "https://images.unsplash.com/photo-1664185494794-97cbe900c105?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGFsbGElMjBhaWNoYSUyMHBhcmt8ZW58MHx8MHx8fDI%3D" }
-      ],
-      hotels: {
-        budget: { name: "Hôtel L'Oasis", price_approx: 30, amenity: "Chambres simples et traditionnelles, accueil familial chaleureux" },
-        mid_range: { name: "Atlas Orient", price_approx: 70, amenity: "Hôtel moderne avec piscine et situation idéale à deux pas de la médina" },
-        luxury: { name: "Terminus City Center", price_approx: 130, amenity: "Hôtel haut de gamme contemporain proposant de superbes spas et vues panoramiques" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "10 - 20 MAD (1 - 2 USD)", description: "Petits taxis rouges parfaits pour parcourir les boulevards modernes." },
-        { type: "ONCF Train", approx_cost: "120 - 200 MAD (12 - 20 USD)", description: "Liaisons directes confortables reliant Oujda à Fès, Rabat et Casablanca." }
-      ]
-    }
-  },
-  "beni-mellal": {
-    fr: {
-      name: "Béni Mellal",
-      subtitle: "L'Oasis du Moyen Atlas",
-      cultural_note: "La source de Ain Asserdoun est un lieu sacré de détente familiale. Veillez à préserver la pureté de ses eaux fraîches de montagne.",
-      attractions: [
-        { name: "La Source de Aïn Asserdoun", description: "Source d'eau de montagne spectaculaire aménagée en jardins en terrasses avec de magnifiques cascades.", image: "https://images.unsplash.com/photo-1652720187538-b1894af2dc35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVuaSUyMG1lbGxhbHxlbnwwfHwwfHx8Mg%3D%3D" }
-      ],
-      hotels: {
-        budget: { name: "Hôtel Paris", price_approx: 30, amenity: "Chambres simples et soignées en plein cœur de ville" },
-        mid_range: { name: "Hôtel Tazarkount", price_approx: 65, amenity: "Complexe de style riad niché au cœur de magnifiques vergers d'oliviers" },
-        luxury: { name: "Hôtel Chems", price_approx: 110, amenity: "Hôtel de luxe doté d'une grande piscine, de jardins paysagers et de restaurants" }
-      },
-      transportation: [
-        { type: "Petit Taxi", approx_cost: "10 - 15 MAD (1 - 1.50 USD)", description: "Petits taxis rouges très pratiques pour naviguer rapidement en ville." },
-        { type: "Grand Taxi", approx_cost: "40 - 70 MAD (4 - 7 USD)", description: "Taxis collectifs parfaits pour rejoindre les cascades d'Ouzoud ou le lac de Bin el Ouidane." }
-      ]
-    }
-  }
-};
-
 const customItineraries = {
-  marrakech: {
-    en: [
-      { day: "Day 1", title: "Souks Labyrinth & Jemaa el-Fnaa", desc: "Wander the old clay alleys, inspect metal lanterns, dine at a high terrace watching snake charmers on Jemaa el-Fnaa." },
-      { day: "Day 2", title: "Jardin Majorelle & Gueliz Style", desc: "Enjoy the crisp visual contrast of cobalt blue at Jardin Majorelle, visit Yves Saint Laurent museum, eat dinner in Gueliz." },
-      { day: "Day 3", title: "Saadian Tombs & Sunset Gardens", desc: "Explore tilework at Saadian Tombs, admire terracotta clay fortress portals, and sunset walk around Menara orchards." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Labyrinthe des Souks & Jemaa el-Fnaa", desc: "Déambulez dans les ruelles d'argile, observez les lanternes en bronze et dînez sur une terrasse haute face au spectacle de la place." },
-      { day: "Jour 2", title: "Jardin Majorelle & Style Guéliz", desc: "Saisissez les parfaits contrastes cobalt du Jardin Majorelle, explorez le musée Yves Saint Laurent et profitez des bistrots de Guéliz." },
-      { day: "Jour 3", title: "Tombeaux Saadiens & Promenade de la Ménara", desc: "Contemplez l'art des zelliges des Tombeaux Saadiens, puis offrez-vous un coucher de soleil serein dans l'oliveraie de la Ménara." }
-    ]
-  },
-  chefchaouen: {
-    en: [
-      { day: "Day 1", title: "Blue Medina Photo Safari", desc: "Climb cobblestone stairs, admire custom blue turquoise doors, and have lunch at Plaza Uta el-Hammam." },
-      { day: "Day 2", title: "Ras El Maa Spring & Spanish Mosque", desc: "Hike up to the sweet freshwater waterfall, observe laundry washing, and watch sunset from the Spanish Mosque crest." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Exploration de la Médina Bleue", desc: "Arpentez les ruelles pavées bleues, découvrez l'artisanat de laine et déjeunez sur la grande terrasse de la place Outa el-Hammam." },
-      { day: "Jour 2", title: "Cascade Ras El Maa & Mosquée Espagnole", desc: "Marchez jusqu'à la cascade d'eau douce fraîche, puis gravissez les collines pour contempler le panorama divin depuis la Mosquée Espagnole." }
-    ]
-  },
-  fez: {
-    en: [
-      { day: "Day 1", title: "Fes El Bali & Tanneries Portal", desc: "Venture deep into the 9,400 carless lanes with a guide, inspect Chouara honeycomb leather basins, buy authentic slippers." },
-      { day: "Day 2", title: "Fatima Al-Fihri Legacy & Qarawiyyin", desc: "Contemplate majestic inner wood carvings of Madrasa Bou Inania, and peer inside historic Al-Qarawiyyin entrance." },
-      { day: "Day 3", title: "Blue Gate & Marinid Tombs Panorama", desc: "Photograph classic Bab Boujloud mosaic, sample goat cheese with wild honey, hike up to Marinid Tombs ruins." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Fès el-Bali & Les Tanneries Royales", desc: "Pénétrez dans le dédale millénaire de la Médina, admirez la vue des cuves de teinture de Chouara et achetez de superbes babouches." },
-      { day: "Jour 2", title: "Fondation Al-Qarawiyyin & Chef-d'œuvre de Bois", desc: "Admirez le savoir-faire géométrique de la Médersa Bou Inania, puis passez devant les arcades sacrées de la célèbre université Al-Qarawiyyin." },
-      { day: "Jour 3", title: "Porte Bab Boujloud & Vue des Tombeaux Mérinides", desc: "Photographiez les faïences bleues de la célèbre grande porte, puis offrez-vous un panorama inoubliable sur les hauteurs des ruines des Tombeaux Mérinides." }
-    ]
-  },
-  essaouira: {
-    en: [
-      { day: "Day 1", title: "Sea Fortress Cannon Walk", desc: "Walk on the sea fortress bastions, photograph traditional brass cannons, watch woodcarvers sculpt aromatic thuya wood workshops." },
-      { day: "Day 2", title: "Blue Boats Port & Fresh Seagrills", desc: "Stroll blue armada fishing berths, sample local oysters and ocean scallops, and listen to soulful street Gnaoua music." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Les Bastions Royaux & Sentier de Ruelle", desc: "Parcourez les grands bastions garnis de canons de bronze faisant face à l'océan Atlantique et visitez les ateliers d'ébénisterie de thuya." },
-      { day: "Jour 2", title: "Chaluts Bleus & Grillades de la Pêche du Jour", desc: "Explorez les pontons de bois bleus du port, dégustez des huîtres ou du poisson frais de la criée et laissez-vous porter par les sonorités Gnaoua." }
-    ]
-  },
-  oujda: {
-    en: [
-      { day: "Day 1", title: "Grand Mosque & Medina", desc: "Stroll through the old Bab Sidi Abdelouahab gateway, inspect traditional garments, and visit the historical 13th-century Grand Mosque." },
-      { day: "Day 2", title: "Oasis Park & Traditional Music", desc: "Relax in the verdant shade of Lalla Aicha Park, and attend an evening performance of classic Gharnati music." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Grande Mosquée & Médina", desc: "Pénétrez par la porte historique de Bab Sidi Abdelouahab, flânez parmi les marchands de tissus et découvrez la magnifique Grande Mosquée." },
-      { day: "Jour 2", title: "Parc Lalla Aïcha & Musique Gharnati", desc: "Savourez la fraîcheur végétale du parc Lalla Aïcha et laissez-vous transporter par un concert de musique Gharnati traditionnelle." }
-    ]
-  },
-  "beni-mellal": {
-    en: [
-      { day: "Day 1", title: "Water Gardens & Waterfalls", desc: "Walk through the tiered flowerbeds of Ain Asserdoun mountain springs and relax by the waterfalls." },
-      { day: "Day 2", title: "Mountain Fort View & Olive Groves", desc: "Hike up to the high Borj Ras el Ain clay fortress for sweeping valley vistas, then walk among century-old olive groves." }
-    ],
-    fr: [
-      { day: "Jour 1", title: "Jardins Suspendus & Cascades", desc: "Flânez au milieu des parterres de fleurs de la source de Aïn Asserdoun et ressourcez-vous près de ses cascades d'eau pure." },
-      { day: "Jour 2", title: "Forteresse du Borj & Vergers d'Oliviers", desc: "Grimpez jusqu'au Borj de Ras el Aïn pour contempler un panorama unique sur la plaine, puis marchez au cœur d'oliveraies centenaires." }
-    ]
-  }
+  marrakech: [
+    { day: "Day 1", title: "Souks Labyrinth & Jemaa el-Fnaa", desc: "Wander the old clay alleys, inspect metal lanterns, dine at a high terrace watching snake charmers on Jemaa el-Fnaa." },
+    { day: "Day 2", title: "Jardin Majorelle & Gueliz Style", desc: "Enjoy the crisp visual contrast of cobalt blue at Jardin Majorelle, visit Yves Saint Laurent museum, eat dinner in Gueliz." },
+    { day: "Day 3", title: "Saadian Tombs & Sunset Gardens", desc: "Explore tilework at Saadian Tombs, admire terracotta clay fortress portals, and sunset walk around Menara orchards." }
+  ],
+  chefchaouen: [
+    { day: "Day 1", title: "Blue Medina Photo Safari", desc: "Climb cobblestone stairs, admire custom blue turquoise doors, and have lunch at Plaza Uta el-Hammam." },
+    { day: "Day 2", title: "Ras El Maa Spring & Spanish Mosque", desc: "Hike up to the sweet freshwater waterfall, observe laundry washing, and watch sunset from the Spanish Mosque crest." }
+  ],
+  fez: [
+    { day: "Day 1", title: "Fes El Bali & Tanneries Portal", desc: "Venture deep into the 9,400 carless lanes with a guide, inspect Chouara honeycomb leather basins, buy authentic slippers." },
+    { day: "Day 2", title: "Fatima Al-Fihri Legacy & Qarawiyyin", desc: "Contemplate majestic inner wood carvings of Madrasa Bou Inania, and peer inside historic Al-Qarawiyyin entrance." },
+    { day: "Day 3", title: "Blue Gate & Marinid Tombs Panorama", desc: "Photograph classic Bab Boujloud mosaic, sample goat cheese with wild honey, hike up to Marinid Tombs ruins." }
+  ],
+  essaouira: [
+    { day: "Day 1", title: "Sea Fortress Cannon Walk", desc: "Walk on the sea fortress bastions, photograph traditional brass cannons, watch woodcarvers sculpt aromatic thuya wood workshops." },
+    { day: "Day 2", title: "Blue Boats Port & Fresh Seagrills", desc: "Stroll blue armada fishing berths, sample local oysters and ocean scallops, and listen to soulful street Gnaoua music." }
+  ],
+  oujda: [
+    { day: "Day 1", title: "Grand Mosque & Medina", desc: "Stroll through the old Bab Sidi Abdelouahab gateway, inspect traditional garments, and visit the historical 13th-century Grand Mosque." },
+    { day: "Day 2", title: "Oasis Park & Traditional Music", desc: "Relax in the verdant shade of Lalla Aicha Park, and attend an evening performance of classic Gharnati music." }
+  ],
+  "beni-mellal": [
+    { day: "Day 1", title: "Water Gardens & Waterfalls", desc: "Walk through the tiered flowerbeds of Ain Asserdoun mountain springs and relax by the waterfalls." },
+    { day: "Day 2", title: "Mountain Fort View & Olive Groves", desc: "Hike up to the high Borj Ras el Ain clay fortress for sweeping valley vistas, then walk among century-old olive groves." }
+  ]
 };
 
 if (document.readyState === 'loading') {
@@ -259,14 +92,6 @@ async function initApp() {
       renderFeaturedCitiesGrid();
       renderHomepageBlogWidget();
     }, 450);
-    
-    // Listen to bilingual real-time updates from Navbar toggle
-    window.addEventListener('languageChanged', (e) => {
-      appLanguage = e.detail.lang;
-      renderCityDashboard();
-      renderFeaturedCitiesGrid();
-      renderHomepageBlogWidget();
-    });
 
   } catch (error) {
     console.error('Error initializing Morocco Guide:', error);
@@ -275,10 +100,10 @@ async function initApp() {
       grid.innerHTML = `
         <div style="text-align: center; grid-column: 1 / -1; padding: 40px; border: 2px dashed var(--color-terracotta-dark); border-radius: 12px; background-color: rgba(211, 94, 53, 0.05);">
           <p style="color: var(--color-terracotta-dark); font-weight: bold; font-family: var(--font-serif); font-size: 18px;">
-            ${appLanguage === 'fr' ? "Impossible de charger la base de données des villes" : "Could not load cities database"}
+            Could not load cities database
           </p>
           <p style="color: var(--color-charcoal-light); margin-top: 8px; font-size: 14px;">
-            ${appLanguage === 'fr' ? "Veuillez vérifier que le fichier de données '/data/cities.json' existe et est accessible." : "Please ensure the data file '/data/cities.json' is present and fully accessible."}
+            Please ensure the data file '/data/cities.json' is present and fully accessible.
           </p>
         </div>
       `;
@@ -288,24 +113,12 @@ async function initApp() {
 
 // Global translator lookup 
 function t(key) {
-  return translations[appLanguage]?.[key] || translations['en']?.[key] || key;
+  return translations.en?.[key] || key;
 }
 
 // Local helper to translate administrative regions on-the-fly
-function getLocalizedRegion(regionName, lang) {
-  if (lang === 'fr') {
-    if (regionName === "Marrakech-Safi") return "Région de Marrakech-Safi";
-    if (regionName === "Tanger-Tetouan-Al Hoceima") return "Tanger-Tétouan-Al Hoceïma";
-    if (regionName === "Fes-Meknes") return "Fès-Meknès";
-    if (regionName === "Casablanca-Settat") return "Région de Casablanca-Settat";
-    if (regionName === "Rabat-Sale-Kenitra") return "Rabat-Salé-Kénitra";
-    if (regionName === "Souss-Massa") return "Souss-Massa";
-    if (regionName === "Draa-Tafilalet") return "Drâa-Tafilalet";
-    if (regionName === "Dakhla-Oued Ed-Dahab") return "Dakhla-Oued Ed-Dahab";
-    if (regionName === "Oriental") return "Région de l'Oriental";
-    if (regionName === "Beni Mellal-Khenifra") return "Région de Béni Mellal-Khénifra";
-  }
-  return regionName;
+function getLocalizedRegion(regionName) {
+  return translations.en?.regions?.[regionName] || regionName;
 }
 
 // Generate featured city cards on homepage (Marrakech, Chefchaouen, Fez)
@@ -326,14 +139,8 @@ function renderFeaturedCitiesGrid() {
     }
 
     let cityName = city.name;
-    let cityRegion = getLocalizedRegion(city.region, appLanguage);
+    let cityRegion = getLocalizedRegion(city.region);
     let cityCultureNote = city.cultural_note;
-
-    if (appLanguage === 'fr' && localizedCityData[city.id]) {
-      const loc = localizedCityData[city.id].fr;
-      if (loc.name) cityName = loc.name;
-      if (loc.cultural_note) cityCultureNote = loc.cultural_note;
-    }
 
     // Lazy load image with progressive fade-in
     card.innerHTML = `
@@ -421,7 +228,7 @@ function renderCityDashboard() {
   if (!activeCityData) return;
 
   // Language & Direction Updates
-  document.documentElement.setAttribute('lang', appLanguage);
+  document.documentElement.setAttribute('lang', 'en');
   document.documentElement.setAttribute('dir', 'ltr');
 
   const setElText = (id, val) => {
@@ -483,22 +290,6 @@ function renderCityDashboard() {
   let currentCityHotels = activeCityData.hotels;
   let currentCityTransit = activeCityData.transportation;
 
-  // Swap to translated data structure if French
-  if (appLanguage === 'fr' && localizedCityData[activeCityData.id]) {
-    const loc = localizedCityData[activeCityData.id].fr;
-    if (loc.name) currentCityName = loc.name;
-    if (loc.subtitle) currentCitySubtitle = loc.subtitle;
-    if (loc.cultural_note) currentCityCulture = loc.cultural_note;
-    if (loc.attractions) {
-      currentCityAttractions = loc.attractions.map((attr, idx) => ({
-        ...attr,
-        image: activeCityData.attractions[idx]?.image || attr.image
-      }));
-    }
-    if (loc.hotels) currentCityHotels = loc.hotels;
-    if (loc.transportation) currentCityTransit = loc.transportation;
-  }
-
   const heroImgBg = document.getElementById('hero-img-bg');
   if (heroImgBg) {
     heroImgBg.style.backgroundImage = `url('${activeCityData.cover_image}')`;
@@ -506,7 +297,7 @@ function renderCityDashboard() {
 
   setElText('hero-title-en', currentCityName);
   setElText('hero-title-sub', currentCitySubtitle);
-  setElText('val-region', getLocalizedRegion(activeCityData.region, appLanguage));
+  setElText('val-region', getLocalizedRegion(activeCityData.region));
   setElText('val-days', `${activeCityData.suggested_days} ${t('days_duration')}`);
   setElText('val-culture-text', currentCityCulture);
 
@@ -615,12 +406,7 @@ function renderCityDashboard() {
 function renderHotelTier() {
   if (!activeCityData) return;
   
-  // Choose standard or French hotels
   let currentHotels = activeCityData.hotels;
-  if (appLanguage === 'fr' && localizedCityData[activeCityData.id]) {
-    currentHotels = localizedCityData[activeCityData.id].fr.hotels;
-  }
-
   const hotelData = currentHotels[activeHotelTier];
   if (!hotelData) return;
 
@@ -653,28 +439,15 @@ function renderItineraryTimeline() {
   if (!container) return;
   container.innerHTML = '';
   
-  let itineraries = customItineraries[activeCityData.id]?.[appLanguage] || customItineraries[activeCityData.id]?.['en'];
+  let itineraries = customItineraries[activeCityData.id];
   
   if (!itineraries) {
-    // Generate dynamic fallback itinerary based on current city attractions
     let attractions = activeCityData.attractions || [];
-    if (appLanguage === 'fr' && localizedCityData[activeCityData.id]) {
-      const loc = localizedCityData[activeCityData.id].fr;
-      if (loc.attractions) {
-        attractions = loc.attractions.map((attr, idx) => ({
-          ...attr,
-          image: activeCityData.attractions[idx]?.image || attr.image
-        }));
-      }
-    }
-    
     itineraries = attractions.map((attr, idx) => {
       const dayNum = idx + 1;
-      const dayLabel = appLanguage === 'fr' ? `Jour ${dayNum}` : `Day ${dayNum}`;
-      const titlePrefix = appLanguage === 'fr' ? "Explorer " : "Explore ";
       return {
-        day: dayLabel,
-        title: `${titlePrefix}${attr.name}`,
+        day: `Day ${dayNum}`,
+        title: `Explore ${attr.name}`,
         desc: attr.description
       };
     });
@@ -886,11 +659,11 @@ function renderHomepageBlogWidget() {
   
   let html = '';
   latestPosts.forEach(post => {
-    const postTitle = post.title[appLanguage] || post.title.en;
-    const postExcerpt = post.excerpt[appLanguage] || post.excerpt.en;
-    const postCategory = post.categories[appLanguage] || post.categories.en;
-    const postReadTime = post.readTime[appLanguage] || post.readTime.en;
-    const formattedDate = new Date(post.date).toLocaleDateString(appLanguage === 'fr' ? 'fr-FR' : 'en-US', {
+    const postTitle = typeof post.title === 'object' ? (post.title.en || '') : (post.title || '');
+    const postExcerpt = typeof post.excerpt === 'object' ? (post.excerpt.en || '') : (post.excerpt || '');
+    const postCategory = typeof post.categories === 'object' ? (post.categories.en || '') : (post.categories || '');
+    const postReadTime = typeof post.readTime === 'object' ? (post.readTime.en || '') : (post.readTime || '');
+    const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'

@@ -1,93 +1,41 @@
-// Marrakech Souks Travel Guide (Bilingual English & Français)
+// The Ultimate Guide to Navigating Marrakech's Historic Souks: Craft Quarters, Bargaining & Routes Travel Guide
 export const postMarrakech = {
   id: "marrakech-souks-guide",
   cityId: "marrakech",
   image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1000&auto=format&fit=crop",
   date: "2026-06-20",
   lastUpdated: "2026-08-20",
-  categories: {
-    en: "Travel Guides",
-    fr: "Guides de Voyage"
-  },
-  author: {
-    en: "Abdelwahd Hani",
-    fr: "Abdelwahd Hani"
-  },
-  readTime: {
-    en: "10 min read",
-    fr: "10 min de lecture"
-  },
-  title: {
-    en: "The Ultimate Guide to Navigating Marrakech's Historic Souks: Craft Quarters, Bargaining & Routes",
-    fr: "Le Guide Ultime des Souks Historiques de Marrakech : Quartiers Artisans, Négociation & Parcours"
-  },
-  excerpt: {
-    en: "Step into the vibrant labyrinth of Marrakech's ancient Medina. Discover specialized craft quarters, expert bargaining strategies, quality inspection tips, navigation advice, and a walking route.",
-    fr: "Plongez dans le labyrinthe de la médina de Marrakech. Découvrez les quartiers d'artisans, les techniques de négociation, l'inspection de la qualité, la navigation et un itinéraire à pied."
-  },
-  metaTitle: {
-    en: "Guide to Marrakech Souks: Shopping, Craft Quarters & Walking Map",
-    fr: "Guide Souks Marrakech : Quartiers Artisans, Achats & Négociation"
-  },
-  metaDescription: {
-    en: "The definitive travel guide to Marrakech's historic souks. Learn how to bargain respectfully, navigate specialized craft quarters, inspect leather and carpets, and avoid common scams.",
-    fr: "Le guide ultime sur les souks de Marrakech. Apprenez à négocier avec respect, trouvez les meilleurs artisans du cuir et des tapis, et parcourez la médina en toute sérénité."
-  },
+  categories: "Travel Guides",
+  author: "Abdelwahd Hani",
+  readTime: "10 min read",
+  title: "The Ultimate Guide to Navigating Marrakech's Historic Souks: Craft Quarters, Bargaining & Routes",
+  excerpt: "Step into the vibrant labyrinth of Marrakech's ancient Medina. Discover specialized craft quarters, expert bargaining strategies, quality inspection tips, navigation advice, and a walking route.",
+  metaTitle: "Guide to Marrakech Souks: Shopping, Craft Quarters & Walking Map",
+  metaDescription: "The definitive travel guide to Marrakech's historic souks. Learn how to bargain respectfully, navigate specialized craft quarters, inspect leather and carpets, and avoid common scams.",
   faqs: [
-    {
-      question: {
-        en: "What is the best time of day to visit the souks of Marrakech?",
-        fr: "Quel est le meilleur moment de la journée pour visiter les souks ?"
-      },
-      answer: {
-        en: "The best time to shop calmly is between 9:30 AM and 11:30 AM when stalls open, the air is cool, and crowds are sparse. For a vibrant sensory atmosphere, visit between 4:00 PM and 7:00 PM. Note that many traditional artisans close on Friday afternoons for congregational prayers.",
-        fr: "Le meilleur moment pour acheter dans le calme se situe entre 9h30 et 11h30 lorsque les échoppes ouvrent et que la foule est rare. Pour une ambiance vibrante, préférez la fin d'après-midi entre 16h00 et 19h00. Notez que de nombreux artisans ferment le vendredi après-midi."
-      }
-    },
-    {
-      question: {
-        en: "Is bargaining mandatory in Marrakech, and how much should I offer?",
-        fr: "La négociation est-elle obligatoire à Marrakech, et combien dois-je proposer ?"
-      },
-      answer: {
-        en: "Bargaining (Sh'tar) is a cultural norm in open-air markets. Start by countering a vendor's initial quote with roughly 40% to 50% lower, then negotiate upward in small steps. Treat it as a pleasant, friendly social exchange, remaining polite and smiling throughout.",
-        fr: "La négociation (Sh'tar) est un rituel culturel incontournable dans les marchés. Proposez d'abord 40 % à 50 % de moins que le prix annoncé, puis augmentez progressivement. Gardez le sourire et considérez cela comme un échange amical plutôt qu'un conflit."
-      }
-    },
-    {
-      question: {
-        en: "How do I avoid getting lost in the Marrakech Medina?",
-        fr: "Comment éviter de se perdre dans la médina de Marrakech ?"
-      },
-      answer: {
-        en: "Download offline map applications like Maps.me or Google Maps before entering. Use major landmarks like Jemaa el-Fnaa square, Koutoubia minaret, or Ben Youssef Mosque as anchor points. When in doubt, follow signs toward 'Jemaa el-Fnaa' or ask shopkeepers inside fixed stalls.",
-        fr: "Téléchargez des applications de cartes hors ligne (Maps.me ou Google Maps). Prenez la place Jemaa el-Fnaa ou la Koutoubia comme repères centraux. En cas de doute, suivez les panneaux indiquant 'Jemaa el-Fnaa' ou demandez votre chemin aux commerçants établis dans leurs boutiques."
-      }
-    },
-    {
-      question: {
-        en: "How can I tell if a Moroccan carpet or leather bag is good quality?",
-        fr: "Comment reconnaître un tapis ou un sac en cuir de qualité ?"
-      },
-      answer: {
-        en: "For carpets, check the backside for hand-knotted density and burn a single loose wool thread—pure wool singes slowly with a protein smell, whereas synthetic threads melt instantly like plastic. For leather, genuine camel or goat hide should feel supple and smell faintly of natural tannins, avoiding harsh chemical or harsh ammonia odors.",
-        fr: "Pour les tapis, vérifiez la densité des nœuds au dos et brûlez un brin de laine—la vraie laine brûle lentement avec une odeur de corne, tandis que le synthétique fond comme du plastique. Pour le cuir, le vrai cuir de chèvre ou dromadaire doit être souple et sentir le tanin naturel sans odeur d'ammoniac."
-      }
-    },
-    {
-      question: {
-        en: "Are credit cards accepted in the Marrakech souks?",
-        fr: "Les cartes bancaires sont-elles acceptées dans les souks ?"
-      },
-      answer: {
-        en: "Credit cards are accepted in high-end carpet showrooms and fixed-price artisan boutiques, but cash in Moroccan Dirhams (MAD) is required for small medina stalls, food vendors, and street craftsmen. Always carry smaller 20, 50, and 100 DH notes for change.",
-        fr: "Les cartes sont acceptées dans les grands magasins de tapis et galeries à prix fixes, mais les espèces en Dirhams (MAD) sont indispensables dans les échoppes, chez les bouchers et les artisans. Prévoyez de petites coupures de 20, 50 et 100 DH."
-      }
-    }
-  ],
-  content: {
-    en: `
-      <p class="blog-lead">Step into the vibrant labyrinth of Marrakech's ancient Medina, where narrow vaulted alleys brim with glowing brass lamps, fragrant spice cones, supple leather satchels, and hand-woven Amazigh carpets. Navigating the world's most famous bazaar can feel intense, but with spatial knowledge, cultural etiquette, and a clear route, it becomes an unforgettable highlight of your Moroccan journey.</p>
+  {
+    "question": "What is the best time of day to visit the souks of Marrakech?",
+    "answer": "The best time to shop calmly is between 9:30 AM and 11:30 AM when stalls open, the air is cool, and crowds are sparse. For a vibrant sensory atmosphere, visit between 4:00 PM and 7:00 PM. Note that many traditional artisans close on Friday afternoons for congregational prayers."
+  },
+  {
+    "question": "Is bargaining mandatory in Marrakech, and how much should I offer?",
+    "answer": "Bargaining (Sh'tar) is a cultural norm in open-air markets. Start by countering a vendor's initial quote with roughly 40% to 50% lower, then negotiate upward in small steps. Treat it as a pleasant, friendly social exchange, remaining polite and smiling throughout."
+  },
+  {
+    "question": "How do I avoid getting lost in the Marrakech Medina?",
+    "answer": "Download offline map applications like Maps.me or Google Maps before entering. Use major landmarks like Jemaa el-Fnaa square, Koutoubia minaret, or Ben Youssef Mosque as anchor points. When in doubt, follow signs toward 'Jemaa el-Fnaa' or ask shopkeepers inside fixed stalls."
+  },
+  {
+    "question": "How can I tell if a Moroccan carpet or leather bag is good quality?",
+    "answer": "For carpets, check the backside for hand-knotted density and burn a single loose wool thread—pure wool singes slowly with a protein smell, whereas synthetic threads melt instantly like plastic. For leather, genuine camel or goat hide should feel supple and smell faintly of natural tannins, avoiding harsh chemical or harsh ammonia odors."
+  },
+  {
+    "question": "Are credit cards accepted in the Marrakech souks?",
+    "answer": "Credit cards are accepted in high-end carpet showrooms and fixed-price artisan boutiques, but cash in Moroccan Dirhams (MAD) is required for small medina stalls, food vendors, and street craftsmen. Always carry smaller 20, 50, and 100 DH notes for change."
+  }
+],
+  content: `
+<p class="blog-lead">Step into the vibrant labyrinth of Marrakech's ancient Medina, where narrow vaulted alleys brim with glowing brass lamps, fragrant spice cones, supple leather satchels, and hand-woven Amazigh carpets. Navigating the world's most famous bazaar can feel intense, but with spatial knowledge, cultural etiquette, and a clear route, it becomes an unforgettable highlight of your Moroccan journey.</p>
       
       <h2>The Guild System: Spatial Organization of the Souks</h2>
       <p>Founded in 1070 by the Almoravid dynasty, Marrakech grew as a critical desert trade hub connecting trans-Saharan gold and salt caravans with European merchant fleets. The souks of the Medina are organized under a strict medieval guild system (<em>Corporations d'Artisans</em>). Each craft quarter operates under a master guild leader (<em>Amin</em>), who oversees trade quality, disputes, and training.</p>
@@ -151,72 +99,5 @@ export const postMarrakech = {
       <p>Navigating the souks of Marrakech connects you directly with a thousand years of living history, craftsmanship, and human warmth. Treat every interaction as an exchange of stories, and you will return home with memories far richer than any souvenir.</p>
 
       <p class="blog-highlight"><strong>Planning your Marrakech adventure?</strong> Discover top sights, historic riads, and guided tour options in our city guide. <a href="/city/marrakech.html" class="blog-internal-link">Explore our Marrakech Tourism Guide &rarr;</a> You can also explore coastal culture in our <a href="/city/essaouira.html" class="blog-internal-link">Essaouira Travel Guide</a> or mountain charm in our <a href="/city/chefchaouen.html" class="blog-internal-link">Chefchaouen Travel Guide</a>.</p>
-    `,
-    fr: `
-      <p class="blog-lead">Pénétrez dans le labyrinthe vibrant de la médina millénaire de Marrakech, où les ruelles voûtées regorgent de lanternes en laiton ciselé, d'épices parfumées, de sacs en cuir souple et de tapis berbères tissés main. Naviguer dans le plus célèbre marché du monde arabe est un voyage sensoriel inoubliable pour quiconque en maîtrise les codes et l'organisation.</p>
-      
-      <h2>L'OrganisationCorporative : La Structure des Souks</h2>
-      <p>Fondée en 1070 par la dynastie almoravide, Marrakech est devenue un carrefour commercial majeur reliant les caravanes sahariennes de sel et d'or aux ports marchands européens. Les souks de la médina obéissent à un système médiéval rigoureux de corporations d'artisans (<em>Corporations d'Artisans</em>). Chaque corps de métier est dirigé par un maître (<em>l'Amin</em>), garant de la qualité et des traditions.</p>
-      <p>L'urbanisme répond à une logique sociale précise : les métiers nobles, précieux et inodores (soie, tapis, bijoux, épices) occupent les artères couvertes centrales près de la mosquée historique Ben Youssef. En revanche, les métiers bruyants ou odorants (forgerons, tanneurs, tourneurs sur bois) sont relégués près des remparts et des portes extérieures de la médina.</p>
-
-      <h2>Visite Guidée des Quartiers d'Artisans Spécialisés</h2>
-      <p>Pour apprécier toute la richesse de l'artisanat marocain, aventurez-vous au-delà des grands axes touristiques et explorez ces souks spécialisés :</p>
-      
-      <h3>1. Le Souk Semmarine & Le Souk El Kebir : Les Grandes Artères</h3>
-      <p>Partant de la place Jemaa el-Fnaa vers le nord, le Souk Semmarine est une large voie couverte sous une charpente en bois. Bordé de grands magasins de tapis, de bijouteries anciennes, de kaftans brodés et de luminaires en laiton, c'est l'axe commerçant le plus accessible de la médina.</p>
-
-      <h3>2. Le Souk El Attarine : Épices, Laiton & Herboristerie</h3>
-      <p>Célèbre pour ses lanternes étincelantes et ses pyramides d'épices (safran, cumin, paprika, <em>Ras el Hanout</em>). Les herboristes traditionnels y proposent l'huile d'argan pure, l'eau de rose, les cristaux d'eucalyptus et le savon noir du hammam.</p>
-
-      <h3>3. Le Souk Cherratine : Le Souk du Cuir</h3>
-      <p>Baigné par l'odeur boisée du cuir tanné aux essences végétales, le Souk Cherratine est le royaume de la maroquinerie. Les artisans y confectionnent des <em>babouches</em> traditionnelles, des sacs de voyage robustes, des ceintures et des poufs en cuir de chèvre ou de dromadaire.</p>
-
-      <h3>4. Le Souk Haddaddine & Le Souk Chouari : Fer Forge & Bois</h3>
-      <p>Au Souk Haddaddine, le tintement des marteaux résonne autour des foyers à charbon où les forgerons façonnent le fer. À côté, au Souk Chouari, les tourneurs sur bois travaillent le cèdre et le citronnier pour fabriquer du mobilier d'art et des jeux d'échecs.</p>
-
-      <h3>5. Le Souk des Teinturiers & La Place Rahba Kedima</h3>
-      <p>Au Souk des Teinturiers, des écheveaux de laine fraîchement teints en bleu indigo, jaune safran et rouge coquelicot sèchent au soleil. Quelques pas plus loin, la place Rahba Kedima (Place des Épices) regorge de paniers en paille tressée, de chapeaux et de mélanges de thé.</p>
-
-      <h2>Inspecter la Qualité Artisanale : Tapis, Cuir & Épices</h2>
-      <p>Distinguer le véritable travail fait main des importations industrielles garantit des achats authentiques :</p>
-      <ul>
-        <li><strong>Tapis Fait Main :</strong> Retournez le tapis pour examiner l'envers. Les vrais tapis berbères présentent des nœuds manuels légèrement irréguliers et des fils de trame en pure laine. Faites le test du feu : brûlez un fil isolé—la vraie laine brûle lentement avec une odeur de corne, tandis que le synthétique fond rapidement comme du plastique.</li>
-        <li><strong>Cuir Authentique :</strong> Le cuir marocain de qualité est tanné à l'ancienne avec des écorces de mimosa et de chêne, offrant un toucher souple et une odeur agréable. Évitez les sacs ayant une forte odeur d'ammoniac, signe d'un traitement chimique bâclé.</li>
-        <li><strong>Safran & Ras El Hanout :</strong> Le vrai safran de Taliouine se compose de stigmates rouge foncé ; le faux safran (poudre de carthame) colore l'eau en jaune instantanément sans parfum. Pour le Ras el Hanout, demandez à l'herboriste de moudre les épices entières sous vos yeux.</li>
-      </ul>
-
-      <h2>L'Art de la Négociation Respectueuse (Le Sh'tar)</h2>
-      <p>Au Maroc, le <em>Sh'tar</em> (la négociation) n'est pas un conflit, mais un échange social bienveillant rythmé par la courtoisie et l'humour. Appliquez cette méthode en 4 étapes :</p>
-      <ol>
-        <li><strong>Saluer avec Chaleur :</strong> Commencez toujours par un sourire et un <em>« Salam Alaykum »</em>. S'intéresser au travail du marchand établit une relation de confiance.</li>
-        <li><strong>La Première Contre-Offre :</strong> Lorsque le commerçant annonce un prix, proposez environ 40 % à 50 % de sa somme. Le vendeur feindra la surprise mais fera un premier geste.</li>
-        <li><strong>Trouver un Juste Milieu :</strong> Augmentez progressivement votre offre. Payer entre 60 % et 70 % du prix initial constitue généralement un excellent compromis équitable pour l'artisan comme pour vous.</li>
-        <li><strong>Le Départ Courtois :</strong> Si le prix dépasse votre budget, mettez la main sur le cœur, dites <em>« Shukran »</em> (Merci) et éloignez-vous. Si votre proposition était raisonnable, le marchand vous rappellera bien souvent pour conclure la vente.</li>
-      </ol>
-
-      <h2>Circuit d'Une Journée à Pied dans les Souks</h2>
-      <p>Parcourez les plus beaux quartiers d'artisans grâce à cette boucle logique de 2 heures :</p>
-      <div class="blog-highlight">
-        <h3>Parcours Artisanal de la Médina</h3>
-        <p><strong>1. Départ Jemaa el-Fnaa :</strong> Pénétrez dans la médina par la voûte couverte du <strong>Souk Semmarine</strong>.</p>
-        <p><strong>2. Laiton & Épices :</strong> Poursuivez dans le <strong>Souk El Attarine</strong> pour admirer les lanternes en cuivre et les épices.</p>
-        <p><strong>3. Rahba Kedima :</strong> Tournez à droite vers la Place des Épices pour les vanneries et les terrasses de thés.</p>
-        <p><strong>4. Laine & Cuir :</strong> Traversez le <strong>Souk des Teinturiers</strong> et le <strong>Souk Cherratine</strong> pour la maroquinerie.</p>
-        <p><strong>5. Fin Culturelle :</strong> Terminez devant la <strong>Médersa Ben Youssef</strong> ou revenez vers Jemaa el-Fnaa.</p>
-      </div>
-
-      <h2>Conseils de Navigation & Pièges à Éviter</h2>
-      <p>Se perdre un peu dans la médina fait partie du charme, mais ces conseils vous garantiront une visite sereine :</p>
-      <ul>
-        <li><strong>Cartes Hors Ligne :</strong> Téléchargez votre carte sur <em>Maps.me</em> ou Google Maps. Le signal GPS fonctionne très bien dans la plupart des ruelles.</li>
-        <li><strong>Ignorer les Faux Orientations :</strong> Si quelqu'un affirme que "cette rue est fermée" ou que "les tanneries ferment", poursuivez votre chemin d'un ton calme. Il s'agit souvent de rabatteurs cherchant une commission.</li>
-        <li><strong>Attention aux Motos :</strong> Les motos circulent vite dans les ruelles. Dès que vous entendez <em>« Balak ! Balak ! »</em> (Attention !), serrez votre droite le long des murs.</li>
-        <li><strong>Contraintes de Bagages :</strong> Évitez les poteries lourdes non émaillées ou les grands lustres en verre sans service d'expédition internationale certifié.</li>
-      </ul>
-
-      <p>Explorer les souks de Marrakech vous plonge au cœur de mille ans d'histoire et de traditions vivantes. Abordez chaque rencontre avec curiosité, et vous repartirez avec des souvenirs inoubliables.</p>
-
-      <p class="blog-highlight"><strong>Vous préparez votre voyage à Marrakech ?</strong> Découvrez les lieux incontournables, les riads de charme et les visites guidées dans notre guide. <a href="/city/marrakech.html" class="blog-internal-link">Consultez notre Guide de Marrakech &rarr;</a> Explorez aussi la côte dans notre <a href="/city/essaouira.html" class="blog-internal-link">Guide d'Essaouira</a> ou la cité bleue dans notre <a href="/city/chefchaouen.html" class="blog-internal-link">Guide de Chefchaouen</a>.</p>
-    `
-  }
+  `
 };

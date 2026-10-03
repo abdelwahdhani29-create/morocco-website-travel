@@ -184,11 +184,11 @@ async function run() {
     const id = city.id || '';
     if (!id) continue;
 
-    const name = (typeof city.name === 'object' ? (city.name.en || city.name.fr) : city.name) || 'Moroccan City';
+    const name = (typeof city.name === 'object' ? city.name.en : city.name) || 'Moroccan City';
     const arabicName = city.arabic_name || '';
     const coverImage = city.cover_image || city.hero_image || 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80';
-    const fullOverview = (typeof city.overview === 'object' ? (city.overview.en || city.overview.fr) : city.overview)
-      || (typeof city.description === 'object' ? (city.description.en || city.description.fr) : city.description)
+    const fullOverview = (typeof city.overview === 'object' ? city.overview.en : city.overview)
+      || (typeof city.description === 'object' ? city.description.en : city.description)
       || `Explore ${name}, a premier destination in Morocco featuring historical landmarks, vibrant souks, and cultural experiences.`;
 
     const shortDesc = fullOverview.length > 155 
@@ -516,17 +516,17 @@ async function run() {
     const id = post.id || '';
     if (!id) continue;
 
-    const titleStr = (typeof post.title === 'object' ? (post.title.en || post.title.fr) : post.title) || 'Morocco Travel Article';
-    const metaTitleStr = (typeof post.metaTitle === 'object' ? (post.metaTitle.en || post.metaTitle.fr) : post.metaTitle) || titleStr;
-    const metaDescStr = (typeof post.metaDescription === 'object' ? (post.metaDescription.en || post.metaDescription.fr) : post.metaDescription)
-      || (typeof post.excerpt === 'object' ? (post.excerpt.en || post.excerpt.fr) : post.excerpt)
+    const titleStr = (typeof post.title === 'object' ? post.title.en : post.title) || 'Morocco Travel Article';
+    const metaTitleStr = (typeof post.metaTitle === 'object' ? post.metaTitle.en : post.metaTitle) || titleStr;
+    const metaDescStr = (typeof post.metaDescription === 'object' ? post.metaDescription.en : post.metaDescription)
+      || (typeof post.excerpt === 'object' ? post.excerpt.en : post.excerpt)
       || 'Discover expert travel insights on GoMoroccoAI.';
-    const categoryStr = (typeof post.categories === 'object' ? (post.categories.en || post.categories.fr) : post.categories) || 'Travel Guide';
-    const authorStr = (typeof post.author === 'object' ? (post.author.en || post.author.fr) : post.author) || 'GoMoroccoAI';
+    const categoryStr = (typeof post.categories === 'object' ? post.categories.en : post.categories) || 'Travel Guide';
+    const authorStr = (typeof post.author === 'object' ? post.author.en : post.author) || 'GoMoroccoAI';
     const dateStr = post.date || '2026-07-30';
-    const readTimeStr = (typeof post.readTime === 'object' ? (post.readTime.en || post.readTime.fr) : post.readTime) || '5 min read';
+    const readTimeStr = (typeof post.readTime === 'object' ? post.readTime.en : post.readTime) || '5 min read';
     const imageStr = post.image || 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80';
-    const contentStr = (typeof post.content === 'object' ? (post.content.en || post.content.fr) : post.content) || '';
+    const contentStr = (typeof post.content === 'object' ? post.content.en : post.content) || '';
     const faqs = Array.isArray(post.faqs) ? post.faqs : [];
 
     let faqHtml = '';
@@ -537,8 +537,8 @@ async function run() {
           <div style="display: flex; flex-direction: column; gap: 16px;">
       `;
       faqs.forEach(faq => {
-        const q = (typeof faq.question === 'object' ? (faq.question.en || faq.question.fr) : faq.question) || '';
-        const a = (typeof faq.answer === 'object' ? (faq.answer.en || faq.answer.fr) : faq.answer) || '';
+        const q = (typeof faq.question === 'object' ? faq.question.en : faq.question) || '';
+        const a = (typeof faq.answer === 'object' ? faq.answer.en : faq.answer) || '';
         faqHtml += `
           <details style="background: var(--color-sand); border: 2px solid var(--color-border); border-radius: var(--border-radius-md); overflow: hidden;" class="faq-item">
             <summary style="font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--color-charcoal); padding: 18px 24px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
