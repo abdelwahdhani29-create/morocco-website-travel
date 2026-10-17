@@ -1646,7 +1646,25 @@ footer {
   color: white;
 }
 
+.hamburger-btn:focus-visible,
+.close-overlay-btn:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+body:has(#mobile-nav-toggle:checked) {
+  overflow: hidden;
+}
+
 /* Mobile Fullscreen Overlay */
+.mobile-nav-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
 .mobile-nav-overlay {
   position: fixed;
   top: 0;
@@ -1667,6 +1685,7 @@ footer {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+#mobile-nav-toggle:checked ~ .mobile-nav-overlay,
 .mobile-nav-overlay.open {
   opacity: 1;
   pointer-events: auto;
@@ -1869,7 +1888,8 @@ footer {
   justify-content: center;
 }
 
-.trust-badge-icon i {
+.trust-badge-icon i,
+.trust-badge-icon svg {
   width: 20px;
   height: 20px;
 }
@@ -1953,7 +1973,8 @@ footer {
   transition: var(--transition-smooth);
 }
 
-.footer-email-link i {
+.footer-email-link i,
+.footer-email-link svg {
   width: 16px;
   height: 16px;
   color: var(--color-gold);
@@ -2022,7 +2043,8 @@ footer {
   transition: var(--transition-smooth);
 }
 
-.footer-dest-link i {
+.footer-dest-link i,
+.footer-dest-link svg {
   width: 13px;
   height: 13px;
   color: var(--color-terracotta);
@@ -2036,7 +2058,8 @@ footer {
   outline: none;
 }
 
-.footer-dest-link:hover i {
+.footer-dest-link:hover i,
+.footer-dest-link:hover svg {
   color: var(--color-gold-hover);
   transform: scale(1.2);
   opacity: 1;
@@ -2063,7 +2086,8 @@ footer {
   gap: 8px;
 }
 
-.footer-nav-links a i {
+.footer-nav-links a i,
+.footer-nav-links a svg {
   width: 14px;
   height: 14px;
   color: var(--color-chefchaouen);
@@ -2076,7 +2100,8 @@ footer {
   outline: none;
 }
 
-.footer-nav-links a:hover i {
+.footer-nav-links a:hover i,
+.footer-nav-links a:hover svg {
   transform: scale(1.15);
 }
 
@@ -2091,7 +2116,8 @@ footer {
   width: fit-content;
 }
 
-.planner-highlight-link i {
+.planner-highlight-link i,
+.planner-highlight-link svg {
   color: var(--color-gold-hover) !important;
 }
 
@@ -2144,7 +2170,8 @@ footer {
   font-weight: 500;
 }
 
-.footer-powered-by i {
+.footer-powered-by i,
+.footer-powered-by svg {
   width: 16px;
   height: 16px;
   color: var(--color-gold);

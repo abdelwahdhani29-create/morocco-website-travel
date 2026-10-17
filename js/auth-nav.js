@@ -17,6 +17,87 @@ export function updateHeaderNavControls() {
   document.documentElement.dir = 'ltr';
   document.documentElement.lang = 'en';
 
+  const wireInteractions = () => {
+    const trigger = document.getElementById('nav-hamburger-trigger');
+    const overlay = document.getElementById('mobile-nav-overlay');
+    const closeBtn = document.getElementById('mobile-nav-close');
+    const toggle = document.getElementById('mobile-nav-toggle');
+
+    if (trigger && overlay && !trigger.dataset.bound) {
+      trigger.dataset.bound = 'true';
+      trigger.addEventListener('click', () => {
+        if (toggle) toggle.checked = true;
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden'; 
+      });
+      trigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          if (toggle) toggle.checked = !toggle.checked;
+          if (toggle?.checked) {
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+          } else {
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+        }
+      });
+    }
+
+    if (closeBtn && overlay && !closeBtn.dataset.bound) {
+      closeBtn.dataset.bound = 'true';
+      closeBtn.addEventListener('click', () => {
+        if (toggle) toggle.checked = false;
+        overlay.classList.remove('open');
+        document.body.style.overflow = ''; 
+      });
+      closeBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          if (toggle) toggle.checked = false;
+          overlay.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+
+    if (overlay && !overlay.dataset.bound) {
+      overlay.dataset.bound = 'true';
+      overlay.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (toggle) toggle.checked = false;
+          overlay.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    if (!document.body.dataset.navEscBound) {
+      document.body.dataset.navEscBound = 'true';
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const ov = document.getElementById('mobile-nav-overlay');
+          const tg = document.getElementById('mobile-nav-toggle');
+          if (ov && (ov.classList.contains('open') || tg?.checked)) {
+            if (tg) tg.checked = false;
+            ov.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+        }
+      });
+    }
+  };
+
+  // If already statically present in delivered HTML, do not wipe out!
+  if (navContainer.querySelector('.desktop-nav')) {
+    wireInteractions();
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+    return;
+  }
+
   // Track if mobile overlays were active to preserve across dynamic re-draw
   const overlayWasOpen = document.getElementById('mobile-nav-overlay')?.classList.contains('open');
 
@@ -112,24 +193,7 @@ export function updateHeaderNavControls() {
     }
   }
 
-  // Listeners for Hamburger trigger menu toggle
-  const hamburgerTrigger = document.getElementById('nav-hamburger-trigger');
-  const mobileOverlay = document.getElementById('mobile-nav-overlay');
-  const overlayClose = document.getElementById('mobile-nav-close');
-
-  if (hamburgerTrigger && mobileOverlay) {
-    hamburgerTrigger.addEventListener('click', () => {
-      mobileOverlay.classList.add('open');
-      document.body.style.overflow = 'hidden'; 
-    });
-  }
-
-  if (overlayClose && mobileOverlay) {
-    overlayClose.addEventListener('click', () => {
-      mobileOverlay.classList.remove('open');
-      document.body.style.overflow = ''; 
-    });
-  }
+  wireInteractions();
 
   // Refresh lucide icons
   if (window.lucide) {
@@ -203,6 +267,19 @@ function loadOptionalGoogleServices() {
 export function updateGlobalFooterLinks() {
   const footer = document.querySelector('footer');
   if (!footer) return;
+
+  initBackToTopButton();
+
+  // If footer is already populated in static HTML, preserve it without overwriting!
+  if (footer.querySelector('.footer-grid')) {
+    if (!footer.classList.contains('site-footer')) {
+      footer.classList.add('site-footer');
+    }
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+    return;
+  }
   
   const footerVocabulary = {
     en: {
@@ -424,34 +501,38 @@ export function updateGlobalFooterLinks() {
     </div>
   `;
 
-  // Dynamically initialize the "Back to Top" smooth button if it doesn't already exist in document
-  if (!document.getElementById('back-to-top-btn')) {
-    const bttBtn = document.createElement('button');
-    bttBtn.id = 'back-to-top-btn';
-    bttBtn.className = 'back-to-top-btn';
-    bttBtn.setAttribute('aria-label', 'Back to top');
-    bttBtn.innerHTML = `<i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>`;
-    document.body.appendChild(bttBtn);
-
-    // Click handler to scroll back smoothly
-    bttBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Check visibility on scroll
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        bttBtn.classList.add('visible');
-      } else {
-        bttBtn.classList.remove('visible');
-      }
-    }, { passive: true });
-  }
+  initBackToTopButton();
 
   // Dynamic Lucide parsing of newly added elements
   if (window.lucide) {
     window.lucide.createIcons();
   }
+}
+
+// Dynamically initialize the "Back to Top" smooth button if it doesn't already exist in document
+function initBackToTopButton() {
+  if (document.getElementById('back-to-top-btn')) return;
+
+  const bttBtn = document.createElement('button');
+  bttBtn.id = 'back-to-top-btn';
+  bttBtn.className = 'back-to-top-btn';
+  bttBtn.setAttribute('aria-label', 'Back to top');
+  bttBtn.innerHTML = `<i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>`;
+  document.body.appendChild(bttBtn);
+
+  // Click handler to scroll back smoothly
+  bttBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Check visibility on scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      bttBtn.classList.add('visible');
+    } else {
+      bttBtn.classList.remove('visible');
+    }
+  }, { passive: true });
 }
 
 // Automatically update controls when the DOM is ready or when script loads
